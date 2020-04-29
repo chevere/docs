@@ -104,7 +104,7 @@ The argument `$argument` is passed by reference and it can be of any type. It is
 
 > 👍 Chevere checks that the argument passed by reference doesn't alter its type after running any hook instruction.
 
-Type `array` or better, type `object` can be used to provide more _context_ like services, arguments or data that you want to expose and allow to be used by hookable logic.
+Type `array` or better, type `object` can be used to provide more _context_ like services, arguments or data that you want to expose and allow to be used by hook logic.
 
 ## Defining Hooks
 
@@ -121,9 +121,11 @@ Hooks are designed to be short sets of instructions that should be executed with
 
 declare(strict_types=1);
 
+use App\Stuff\DoesSomething;
 use Chevere\Components\Controller\Controller;
 use Chevere\Components\Hooks\Interfaces\HookInterface;
-use App\Stuff\DoesSomething;
+use Chevere\Components\Str\Str;
+use Chevere\Components\Str\StrBool;
 
 final class TheirHook implements HookInterface
 {
@@ -145,11 +147,10 @@ final class TheirHook implements HookInterface
     public function __invoke(&$value): void
     {
         // $value=rodolfo
-        $str = (new Str($value));
-        if(!$str->endsWith('lfo')) {
+        if(!(new StrBool($value))->endsWith('lfo')) {
             return;
         }
-        $str
+        $value = (new Str($value))
             ->replaceLast('lfo', '') // chop lfo
             ->toString(); // rodo
     }
@@ -190,3 +191,5 @@ In the example above, a hooks runner is attached to the hookable. From there, ex
 ## Registering Hooks
 
 Registering hooks refers to the practice of register and cache the known hooks available for the application. This process is carried by a hooks register, which is a class implementing the [HooksRegisterInterface](Chevere\Components\Hooks\Interfaces\HooksRegisterInterface).
+
+// TODO
