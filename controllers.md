@@ -68,7 +68,7 @@ The `getParameters` method is used to describe the controller parameters. Each c
 public function getParameters(): ControllerParametersInterface
 {
     return (new ControllerParameters)
-        ->with(
+        ->withParameter(
             new ControllerParameter('name', new Regex('/^\w+$/'))
         );
 }
@@ -86,7 +86,7 @@ private resource $resource;
 
 public function setUp(): void
 {
-    $this->resource = fopen(fopen('php://output', 'r+'));
+    $this->resource = fopen('php://output', 'r+');
 }
 
 public function tearDown(): void
@@ -123,7 +123,7 @@ The [ControllerParameters](Chevere\Components\Controller\ControllerParameters) c
 
 ```php
 $parameters = (new ControllerParameters)
-    ->with($parameter);
+    ->withParameter($parameter);
 ```
 
 ### Controller Parameter
@@ -185,13 +185,13 @@ final class HelloYouController extends Controller
     public function getParameters(): ControllerParametersInterface
     {
         return (new ControllerParameters)
-            ->with(
+            ->withParameter(
                 new ControllerParameter(
                     'name',
                     new Regex('/^\w+$/')
                 )
             )
-            ->with(
+            ->withParameter(
                 (new ControllerParameter(
                     'alias',
                     new Regex('/\S+/')

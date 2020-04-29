@@ -45,8 +45,8 @@ final class DoesSomething implements HookableInterface
     public static function getHookAnchors(): HookAnchors
     {
         return (new HookAnchors)
-            ->with('do:before')
-            ->with('do:after');
+            ->withAnchor('do:before')
+            ->withAnchor('do:after');
     }
     
     public function do(string $value): void
