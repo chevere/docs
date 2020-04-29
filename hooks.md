@@ -2,7 +2,8 @@
 - [Hooks](#hooks)
   - [Introduction](#introduction)
   - [Defining Hookables](#defining-hookables)
-    - [Example hookeable](#example-hookeable)
+    - [Example not-hookable](#example-not-hookable)
+    - [Example hookable](#example-hookable)
     - [Defining hook anchors](#defining-hook-anchors)
     - [Using hook anchors](#using-hook-anchors)
   - [Defining Hooks](#defining-hooks)
@@ -16,14 +17,22 @@ Hooks are anchors in the logic where is intended to allow third-party logic to b
 
 > 👍 Chevere includes both hook registering and managing, making applications to be extended with ease.
 
+Using hooks, applications can extend in ways that no-one figured before crafting the application and ship it to real users. Any software which you can easily plug will increase its delivered value.
+
 ## Defining Hookables
 
-In the code below the the `do` method sets the value of `$string` property.
+Hookables are classes implementing the [HookableInterface](Chevere\Components\Hooks\Interfaces\HookableInterface).
+
+> 👍 Chevere includes a base trait to easily provive hook-ability to any class.
+
+### Example not-hookable
+
+In the code below the `DoesSomething` defines a `do` method which sets the value of the `$string` property.
 
 ```php
 final class DoesSomething
 {
-    protected string $string = '';
+    private string $string = '';
     
     public function do(string $value): void
     {
@@ -32,12 +41,11 @@ final class DoesSomething
 }
 ```
 
-If the argument is `rodolfo` it will set the property to `do=rodolfo`. By implementing the [HookableInterface](Chevere\Components\Hooks\Interfaces\HookableInterface) the `do` method can now _do something extra_.
+If the argument is `rodolfo` it will set the property to `do=rodolfo`. It will do the same for any `$value`.
 
+### Example hookable
 
-> 👍 Chevere includes a base trait to easily provive hook-ability to any class.
-
-### Example hookeable
+By implementing hooks on `DoesSomething`, the `do` method can now _do something extra_.
 
 ```php
 <?php
@@ -54,7 +62,7 @@ final class DoesSomething implements HookableInterface
 {
     use HookableTrait;
 
-    protected string $string = '';
+    private string $string = '';
 
     public static function getHookAnchors(): HookAnchors
     {
