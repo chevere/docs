@@ -8,19 +8,16 @@
     - [Using hook anchors](#using-hook-anchors)
   - [Defining Hooks](#defining-hooks)
     - [Example hook](#example-hook)
-  - [Running Hooks on Hookables](#running-hooks-on-hookables)
+  - [Manually executing Hooks](#manually-executing-hooks)
   - [Registering Hooks](#registering-hooks)
 
 ## Introduction
 
 Hooks are anchors in the logic where is intended to allow third-party logic to be executed. Classes defining hookable logic are known as _hookables_ and a class providing a hook logic is known as a _hook_. 
 
-> 👍 Chevere includes both hook registering and managing, making applications to be extended with ease.
-
 Using hooks, applications can extend in ways that no-one figured before crafting the application and ship it to real users. Any software which you can easily plug will increase its delivered value.
 
 ## Defining Hookables
-
 Hookables are classes implementing the [HookableInterface](Chevere\Components\Hooks\Interfaces\HookableInterface).
 
 > 👍 Chevere includes a base trait to easily provive hook-ability to any class.
@@ -128,7 +125,7 @@ use Chevere\Components\Controller\Controller;
 use Chevere\Components\Hooks\Interfaces\HookInterface;
 use App\Stuff\DoesSomething;
 
-final class MyHook implements HookInterface
+final class TheirHook implements HookInterface
 {
     public function anchor(): string
     {
@@ -161,8 +158,35 @@ final class MyHook implements HookInterface
 
 In the example above, the `__invoke` method adds functionality by removing `lfo` if `$value` ends with it. If you pass `rodolfo` will return `rodo`.
 
-## Running Hooks on Hookables
+## Manually executing Hooks
 
+A hookable needs to be injected with a hook runner to execute the hook anchors and inject the hook logic. A hook runner is a class implementing the [HooksRunnerInterface](Chevere\Components\Hooks\Interfaces\HooksRunnerInterface) and is in charge of running the hooks queue.
 
+A hooks queue is a class implementing the [HooksQueueInterface](Chevere\Components\Hooks\Interfaces\HooksQueueInterface) and it is a collection of registered hooks for a given hookable.
+
+```php
+<?php
+
+use Chevere\Components\Hooks\HooksRunner;
+use App\Stuff\DoesSomething;
+
+// queue registered hooks
+$queue = (new HooksQueue)
+    ->withHook(new TheirHook)
+    ->withHook(new TheirOtherHook);
+
+// pass the queue to hookable
+$hookable  = (new DoesSomething)
+    ->withHooksRunner(
+        new HooksRunner($queue)
+    );
+
+$argument = 'argument';
+$hookable->do($argument); // $hookable->string = 'do=argument';
+```
+
+In the example above, a hooks runner is attached to the hookable. From there, executing `do` will `__invoke` on `TheirHook`.
 
 ## Registering Hooks
+
+Registering hooks refers to the practice of register and cache the known hooks available for the application. This process is carried by a hooks register, which is a class implementing the [HooksRegisterInterface](Chevere\Components\Hooks\Interfaces\HooksRegisterInterface).
