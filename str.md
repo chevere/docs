@@ -1,0 +1,72 @@
+# Str
+
+- [Str](#str)
+  - [Introduction](#introduction)
+  - [String Manipulation](#string-manipulation)
+    - [Str](#str-1)
+  - [String Asserting](#string-asserting)
+    - [StrAssert](#strassert)
+  - [String Bool](#string-bool)
+    - [StrBool](#strbool)
+
+## Introduction
+
+Str is a collection of classes that interact with strings. Namespace `Chevere\Components\Str` holds all the Str classes, offering a myriad of string related functionalies.
+
+## String Manipulation
+
+Manipulating strings refers to the proccess of altering an argument of type `string`.
+
+### Str
+
+A Str is a class implementing the [StrInterface](Chevere\Components\Str\Interfaces\StrInterface). A Str class is in charge of string manipulation.
+
+```php
+use Chevere\Components\Str\Str;
+
+$str = (new Str('  THE STRING  '))
+    ->lowercase()
+    ->stripWhitespace();
+
+$result = $str->toString(); // = "thestring";
+```
+
+In the code above, `THE STRING` is manipulated  to result in `thestring`.
+
+## String Asserting
+
+Asserting strings refers to the proccess of asserting an argument of type `string` against methods that throws `Throwable` when failing to assert.
+
+### StrAssert
+
+A StrAssert is a class implementing the [StrAssertInterface](Chevere\Components\Str\Interfaces\StrAssertInterface). A StrAssert class is in charge of string asserting.
+
+```php
+use new Chevere\Components\Str\StrAssert;
+
+(new StrAssert('A String'))
+    ->notEmpty() // OK (no asserts)
+    ->notCtypeSpace(); // Throws StrCtypeSpaceException
+```
+
+In the code above, executing `notEmpty` won't raise any exception as `$string` is not empty, but executing `notCtypeSpace` will raise an exception as `$string` contains c-type spaces.
+
+## String Bool
+
+Bool string refers to the proccess of validate an argument of type `string` agains methods that returns `bool`.
+
+### StrBool
+
+A StrBool is a class implementing the [StrBoolInterface](Chevere\Components\Str\Interfaces\StrBoolInterface). A StrBool class is in charge of string validation.
+
+```php
+use new Chevere\Components\Str\StrBool;
+
+$string = 'Chévere es magnífico!';
+$strBool = new StrBool($string);
+$strBool->endsWith('Rodo'); // =false
+$strBool->contains('es'); // =true
+$strBool->startsWith('Chévere'); // =true
+```
+
+In the code above, `endsWith` returns `false` as `$string` doesn't ends with `Rodo`. Passing `es` to `contains` method and passing `Chévere` to `startsWith` method returns true as the conditions are meet.
