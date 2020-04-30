@@ -45,7 +45,7 @@ A StrAssert is a class implementing the [StrAssertInterface](Chevere\Components\
 use new Chevere\Components\Str\StrAssert;
 
 (new StrAssert('A String'))
-    ->notEmpty() // OK (no asserts)
+    ->notEmpty() // string isn't empty
     ->notCtypeSpace(); // Throws StrCtypeSpaceException
 ```
 
@@ -64,9 +64,9 @@ use new Chevere\Components\Str\StrBool;
 
 $string = 'Chévere es magnífico!';
 $strBool = new StrBool($string);
-$strBool->endsWith('Rodo'); // =false
-$strBool->contains('es'); // =true
-$strBool->startsWith('Chévere'); // =true
+$strBool->endsWith('Rodo'); // false
+$strBool->contains('es'); // true
+$strBool->startsWith('Chévere'); // true
 ```
 
 In the code above, `endsWith` returns `false` as `$string` doesn't ends with `Rodo`. Passing `es` to `contains` method and passing `Chévere` to `startsWith` method returns true as the conditions are meet.
