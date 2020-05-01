@@ -20,6 +20,7 @@ Hooks are anchors in the logic where is intended to allow third-party logic to b
 Using hooks, applications can extend in ways that no-one figured before crafting the application and ship it to real users. Any software which you can easily plug will increase its delivered value.
 
 ## Defining Hookables
+
 Hookables are classes implementing the [HookableInterface](Chevere\Components\Hooks\Interfaces\HookableInterface).
 
 > 👍 Chevere includes a base trait to easily provive hook-ability to any class.
