@@ -35,7 +35,7 @@ A Message can be formatted using `emphasis`, `strong`, `underline` and `code`. T
 $message = (new Message('$0 $1 "%say" [**output**]'))
     ->emphasis('$0', 'ERROR')
     ->strong('$1', '/where-it-happened.php')
-    ->underline('say', 'Por la cresta!')
+    ->underline('%say', 'Por la cresta!')
     ->code('**output**', 'WhatChuchaHappen');
 ```
 
@@ -48,11 +48,9 @@ The `toConsole` method returns a console highlighted string.
 ```php
 $message->toConsole();
 ```
-> 👍 The console output is raw ASCII, with color if supported.
-
-```bash
-ERROR /where-it-happened.php "Por la cresta!" [WhatChuchaHappen]
-```
+> 👍 The console output is raw ASCII string which looks like the example below.
+> 
+> <em>ERROR</em> <strong>/where-it-happened.php</strong> <u>"Por la cresta!"</u> <code>[WhatChuchaHappen]</code>
 
 #### To HTML
 
