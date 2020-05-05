@@ -60,12 +60,12 @@ The `withPut` method is used to cache a variable. The code below shows how to ca
 ```php
 use Chevere\Components\Cache\Cache;
 use Chevere\Components\Cache\CacheKey;
-use Chevere\Components\Variable\VariableExport;
+use Chevere\Components\Variable\VarExportable;
 
 $key = new CacheKey('the_cache_key');
 $cache = $cache->withPut(
     $key,
-    new VariableExport($var)
+    new VarExportable($var)
 );
 ```
 

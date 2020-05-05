@@ -322,8 +322,8 @@ $filePhpReturn->var();
 The `put` method puts the contents of a variable export into the PHP file as `<?php return $var;`. Type `object` will be stored with serialize.
 
 ```php
-use Chevere\Components\Variable\VariableExport;
+use Chevere\Components\Variable\VarExportable;
 
-$variableExport = new VariableExport($var);
-$filePhpReturn->put($variableExport);
+$varExportable = new VarExportable($var);
+$filePhpReturn->put($varExportable);
 ```
