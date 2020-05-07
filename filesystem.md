@@ -119,9 +119,13 @@ A Dir is a class implementing [DirInterface](Chevere\Components\Filesystem\Inter
 
 ```php
 use Chevere\Components\Filesystem\Dir;
+use Chevere\Components\Filesystem\Path;
+use Chevere\Components\Filesystem\DirFromString;
 
-$absolute = '/home/var/';
-$dir = new Dir(new Path($absolute));
+$path = '/home/var/';
+$dir = new Dir(new Path($path))
+// It can be also created with...
+$dir = new DirFromString($path);
 ```
 
 ### Creating a Directory
@@ -177,9 +181,13 @@ A File is a class implementing [FileInterface](Chevere\Components\Filesystem\Int
 
 ```php
 use Chevere\Components\Filesystem\File;
+use Chevere\Components\Filesystem\Path;
+use Chevere\Components\Filesystem\FileFromString;
 
-$absolute = '/home/var/the-file.php';
-$file = new File(new Path($absolute));
+$path = '/home/var/the-file.php';
+$file = new File(new Path($path));
+// It can be also created with...
+$file = new FileFromString($path);
 ```
 
 ### Creating a File

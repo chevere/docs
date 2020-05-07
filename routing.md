@@ -100,7 +100,7 @@ Wildcards in a route will be automatically configured to reflect the [Controller
 
 ### Console
 
-The [Console](console.md) includes a built-in command to generate routes. The command makes trivial to bla bla.
+The [Console](console.md) includes a built-in command to generate routes.
 
 ```bash
 vendor/bin/chevere route-create /articles/{id}
@@ -108,3 +108,17 @@ vendor/bin/chevere route-push -r /articles/{id} -m GET -c SomeController
 ```
 
 ### Code
+
+```php
+
+use Chevere\Components\Router\RouterMaker;
+use Chevere\Components\Routing\FsRoutesMaker;
+use Chevere\Components\Routing\Routing;
+
+$dir = new DirFromString('/var/routes/');
+$routing = new Routing(
+    new FsRoutesMaker($dir),
+    new RouterMaker
+);
+$router = $routing->router();
+```

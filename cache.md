@@ -45,11 +45,10 @@ The Cache instance is created by passing the target cache directory.
 
 ```php
 use Chevere\Components\Cache\Cache;
-use Chevere\Components\FileSystem\Dir;
-use Chevere\Components\FileSystem\Path;
+use Chevere\Components\FileSystem\DirFromString;
 
 $cache = new Cache(
-    new Dir(new Path('/to-cache/'))
+    new DirFromString('/to-cache/')
 );
 ```
 

@@ -207,7 +207,7 @@ $hooksRegister = (new HooksRegister)
 Cache for registered hooks gets made by calling the `withHookablesClassMap` method with the target directory.
 
 ```php
-$dir = new Dir(new Path('/hooks_cache/'));
+$dir = new DirFromString('/hooks_cache/');
 $hooksRegister = $hooksRegister
     ->withHookablesClassMap($dir);
 ```
