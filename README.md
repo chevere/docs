@@ -1,3 +1,3 @@
-# The Chevere documentation
+# Chevere documentation
 
 **Status**:*Work in progress*
