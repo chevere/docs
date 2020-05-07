@@ -2,39 +2,40 @@
 
 - [Routing](#routing)
   - [Introduction](#introduction)
-  - [Routing spec](#routing-spec)
+  - [How it works](#how-it-works)
     - [Tree](#tree)
     - [Paths](#paths)
     - [Route names](#route-names)
     - [HTTP Endpoints](#http-endpoints)
-      - [Wildcard parameters](#wildcard-parameters)
+      - [Wildcards from Controller parameters](#wildcards-from-controller-parameters)
   - [Generating Routing Spec](#generating-routing-spec)
     - [Console](#console)
     - [Code](#code)
 
 ## Introduction
 
-The Routing class is in charge of automatically generating HTTP routing, wich refers to the system that describes how HTTP requests resolve to application instructions. A Routing is a class implementing [RoutingInterface](Chevere\Components\Routing\Interfaces\RoutingInterface).
+The Routing class is in charge of automatically generating HTTP routing. A Routing is a class implementing [RoutingInterface](Chevere\Components\Routing\Interfaces\RoutingInterface).
 
-Generated HTTP routing will be cached, and used to resolve incoming HTTP requests and to generate the [Spec](OmgWhatSTHESPEC?).
+Generated HTTP routing will be cached, and used to resolve HTTP requests to application instructions and to generate the [Spec](OmgWhatSTHESPEC?).
 
-## Routing spec
+## How it works
 
-The routing spec refers to how routes must be defined in order to be able to use Routing. 
+Routing works with routes defined in the file system. It makes routing by taking advantage of the file system and naming conventions. 
 
 ### Tree
 
-Tree below shows how a routing spec directory looks like.
+Tree below shows how a routing spec directory looks like. Routes are defined in a folder-based structure.
+
 
 ```bash
 /var/routes
-├── articles
-│   ├── {id}
+├── articles <- route /articles
+│   ├── {id} <- route /articles/{id}
 │   │   ├── GET.php
 │   │   └── RouteName.php
 │   ├── GET.php
 │   └── RouteName.php
-└── signup
+└── signup <- route /signup
     ├── POST.php
     └── RouteName.php
 ```
@@ -43,20 +44,20 @@ Tree below shows how a routing spec directory looks like.
 
 File system folders will reflect HTTP routes, the table below shows how system paths are interpreted as HTTP route paths for the tree above.
 
-| Path                       | HTTP route    | HTTP method |
-| -------------------------- | ------------- | ----------- |
-| /var/routes/articles/      | /articles     | GET         |
-| /var/routes/articles/{id}/ | /articles/123 | GET         |
-| /var/routes/signup/        | /signup       | POST        |
+| Path                       | Name          | HTTP route    | HTTP method |
+| -------------------------- | ------------- | ------------- | ----------- |
+| /var/routes/articles/      | articles      | /articles     | GET         |
+| /var/routes/articles/{id}/ | article-by-id | /articles/123 | GET         |
+| /var/routes/signup/        | signup        | /signup       | POST        |
 
-Each folder must define a `RouteName.php` file and one `<methodName>.php` for each HTTP method.
-
-> 👍 The system support wildcards using curly braces like `{id}`.
+Each folder must define a `RouteName.php` file and one `<methodName>.php` for each applicable HTTP method.
 
 ### Route names
 
-A `RouteName.php` defines the route name, it must return an object implementing [RouteNameInterface](Chevere\Components\Routes\Interfaces\RouteNameInterface).
+A `RouteName.php` must return an object implementing [RouteNameInterface](Chevere\Components\Routes\Interfaces\RouteNameInterface).
 
+> ⚠ Route names must be unique for each `RouteName.php`
+ 
 ```php
 <?php
 
@@ -67,34 +68,33 @@ return new RouteName('article-by-id');
 
 The code above names route `/articles/{id}` as `article-by-id`.
 
-> ⚠ Route names must be unique for each `RouteName.php`
-
 ### HTTP Endpoints
 
-A HTTP endpoint is the binding of a HTTP method to a Controller.
+> 🧞 A HTTP endpoint is the binding of a HTTP method to a Controller.
 
-A HTTP endpoint is defined by using `<methodName>.php` naming convention, where `<methodName>` is the HTTP method name according to [RFC 7231](https://tools.ietf.org/html/rfc7231) and it must return an object implementing [ControllerInterface](Chevere\Components\Controller\Interfaces\ControllerInterface).
+HTTP endpoints are defined by using `<methodName>.php` naming convention, where `<methodName>` is the HTTP method name according to [RFC 7231](https://tools.ietf.org/html/rfc7231) and it must return an object implementing [ControllerInterface](Chevere\Components\Controller\Interfaces\ControllerInterface).
 
 Accepted HTTP methods are `CONNECT, DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT, TRACE`.
+
+> 🧙 HTTP HEAD method will be automatically wired when declaring HTTP GET method and missing the `HEAD.php` HTTP endpoint.
 
 ```php
 <?php
 
-use App\Controllers\TheController;
+use App\Controllers\SignupController;
 
-return TheController;
+return SignupController;
 ```
 
-The code above binds HTTP request `POST /signup` to `TheController`.
+The `POST.php` file above binds HTTP request `POST /signup` to `SignupController`.
 
-#### Wildcard parameters
+> 👍 It is recommended to create a _different_ controller for each HTTP endpoint. A controller resolving multiple HTTP endpoints is a bad practice.
 
-All route wildcards will be configured to match the [controller paramaters](controllers.md) defined for the given route.
+#### Wildcards from Controller parameters
 
-If a route implements the wildcard `{wildcard}`, the controllers must define the parameter `wildcard`.
+Wildcards in a route will be automatically configured to reflect the [Controller paramaters](controllers.md) defined for the given route endpoints. If a route defines the wildcard `{id}`, Controllers in the route must at least declare the parameter `id`.
 
-> 🙃 When implementing two or more HTTP endpoints all controllers must define the same wildcard parameters.
-
+> ⚠ Controllers in the alleged route must define the same base wildcard paramaters.
 
 ## Generating Routing Spec
 
@@ -104,7 +104,7 @@ The [Console](console.md) includes a built-in command to generate routes. The co
 
 ```bash
 vendor/bin/chevere route-create /articles/{id}
-vendor/bin/chevere route-push -r /articles/{id} -m GET -c TheController
+vendor/bin/chevere route-push -r /articles/{id} -m GET -c SomeController
 ```
 
 ### Code
