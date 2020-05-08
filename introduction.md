@@ -17,8 +17,7 @@ Chevere is a PHP development framework for building extensible server side appli
 
 ### Extensibility
 
-Chevere eases the process of crafting pluggable applications by providing an architecture which allows to safely extend the application logic. Extensible applications not only do more, they also engage more users and provide a solid fundation for the application own eco-system.
-
+Chevere aims to ease the process of crafting pluggable applications by providing an architecture allowing to safely extend the application logic. Extensible applications not only do more, it also engage more users and provide a solid fundation for the application own ecosystem.
 
 ### Clean Code
 
@@ -29,11 +28,11 @@ Chevere follows the Clean Code principles, which can be resumed as the practice 
 
 ### Strongly Typed
 
-Chevere embraces strict strong-types, taking advantage of type checking for safe run-time operations. It also makes the code more expressive without the boilerplate needed to validate dynamic types.
+Chevere embraces strict strong-types, taking advantage of type checking for safe run-time operations. It relies mostly on the language to avoid boilerplate code needed to validate dynamic types.
 
 ### Console first
 
-Chevere is built around the console, not the web. On its core Chevere is a simple command runner which can me mapped to generate anything. This approach makes Chevere flexible enough to provide all the building blocks needed to create modern applications.
+Chevere is built around the console. On its core Chevere is a simple command runner which can me mapped to generate anything. This approach makes Chevere flexible enough to provide all the building blocks needed to create a modern application of any type.
 
 ## Origin
 

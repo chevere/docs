@@ -75,7 +75,7 @@ final class DoesSomething implements HookableInterface
     {
         $this->hook('do:before', $value); // value*alter
         $this->string = 'do' . $value; // do=value*alter
-        $this->hook('do:after', $value); // do=value*alter*again
+        $this->hook('do:after', $value); // do=value*`alter*again
     }
 }
 ```
@@ -97,10 +97,10 @@ The code below declares hook anchors for different purposes. A hook anchor can b
 
 ### Using hook anchors
 
-Hookables use `hook` method to define a hookable code entry which allows to hook anywhere on it.
+Hookables use the `hook` method to define a hookable code entry which will run hooks (if-any).
 
 ```php
-$this->hook('anchor', $argument);
+$this->hook('anchor-name', $argument);
 ```
 
 The argument `$argument` is passed by reference and it can be of any type. It is intended to be susceptible to be modified by potentially unknown logic instructions.
