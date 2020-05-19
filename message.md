@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Message class is in charge of providing a common message standard for system messages. A Message is a class implementing [MessageInterface](Chevere\Components\Message\Interfaces\MessageInterface).
+The Message class is in charge of providing a common message standard for system messages. A Message is a class implementing [MessageInterface](Chevere\Interfaces\Message\MessageInterface).
 
 Message provide rich formatting support and output for console, HTML and plain text.
 

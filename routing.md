@@ -14,7 +14,7 @@
 
 ## Introduction
 
-The Routing class is in charge of automatically generating HTTP routing. A Routing is a class implementing [RoutingInterface](Chevere\Components\Routing\Interfaces\RoutingInterface).
+The Routing class is in charge of automatically generating HTTP routing. A Routing is a class implementing [RoutingInterface](Chevere\Interfaces\Routing\RoutingInterface).
 
 Generated HTTP routing will be cached, and used to resolve HTTP requests to application instructions and to generate the [Spec](OmgWhatSTHESPEC?).
 
@@ -72,7 +72,7 @@ The code above names route `/articles/{id}` as `article-by-id`.
 
 > 🧞 A HTTP endpoint is the binding of a HTTP method to a Controller.
 
-HTTP endpoints are defined by using `<methodName>.php` naming convention, where `<methodName>` is the HTTP method name according to [RFC 7231](https://tools.ietf.org/html/rfc7231) and it must return an object implementing [ControllerInterface](Chevere\Components\Controller\Interfaces\ControllerInterface).
+HTTP endpoints are defined by using `<methodName>.php` naming convention, where `<methodName>` is the HTTP method name according to [RFC 7231](https://tools.ietf.org/html/rfc7231) and it must return an object implementing [ControllerInterface](Chevere\Interfaces\Controller\ControllerInterface).
 
 Accepted HTTP methods are `CONNECT, DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT, TRACE`.
 

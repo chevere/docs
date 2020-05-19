@@ -23,7 +23,7 @@ Controllers are the basic building block for incoming actions to your applicatio
 
 ## Defining Controllers
 
-A Controller is a class implementing the [ControllerInterface](Chevere\Components\Controller\Interfaces\ControllerInterface). For convinience, a [base controller]() class is included with Chevere.
+A Controller is a class implementing the [ControllerInterface](Chevere\Interfaces\Controller\ControllerInterface). For convinience, a [base controller]() class is included with Chevere.
 
 ```php
 <?php
@@ -34,8 +34,8 @@ namespace App\Controllers;
 
 use Chevere\Components\Controller\Controller;
 use Chevere\Components\Controller\ControllerResponse;
-use Chevere\Components\Controller\Interfaces\ControllerArgumentsInterface;
-use Chevere\Components\Controller\Interfaces\ControllerResponseInterface;
+use Chevere\Interfaces\Controller\ControllerArgumentsInterface;
+use Chevere\Interfaces\Controller\ControllerResponseInterface;
 
 final class SampleController extends Controller
 {
@@ -111,15 +111,15 @@ public function run(ControllerArgumentsInterface $args): ControllerResponseInter
 
 #### Arguments passed 
 
-The argument passed to `run` method (`$args`) implements the [ControllerArgumentsInterface](Chevere\Components\Controller\Interfaces\ControllerArgumentsInterface) and it will always reflect the parameters declaration.
+The argument passed to `run` method (`$args`) implements the [ControllerArgumentsInterface](Chevere\Interfaces\Controller\ControllerArgumentsInterface) and it will always reflect the parameters declaration.
 
 #### Response
 
-Response of `run` method is an object implementing the [ControllerResponseInterface](Chevere\Components\Controller\Interfaces\ControllerResponseInterface), which can be success or fail and optionally append an `array` of data by using the `withData` method.
+Response of `run` method is an object implementing the [ControllerResponseInterface](Chevere\Interfaces\Controller\ControllerResponseInterface), which can be success or fail and optionally append an `array` of data by using the `withData` method.
 
 ## Parameters
 
-The [ControllerParameters](Chevere\Components\Controller\ControllerParameters) class is used to create the controller parameters collection. It is a simple data structure that implements the [ControllerParametersInterface](Chevere\Components\Controller\Interfaces\ControllerParametersInterface).
+The [ControllerParameters](Chevere\Components\Controller\ControllerParameters) class is used to create the controller parameters collection. It is a simple data structure that implements the [ControllerParametersInterface](Chevere\Interfaces\Controller\ControllerParametersInterface).
 
 ```php
 $parameters = (new ControllerParameters)
@@ -128,7 +128,7 @@ $parameters = (new ControllerParameters)
 
 ### Controller Parameter
 
-The [ControllerParameter](Chevere\Components\Controller\ControllerParameter) class is used to create a controller parameter by passing the parameter name and its regex. It implements the [ControllerParameterInterface](Chevere\Components\Controller\Interfaces\ControllerParameterInterface).
+The [ControllerParameter](Chevere\Components\Controller\ControllerParameter) class is used to create a controller parameter by passing the parameter name and its regex. It implements the [ControllerParameterInterface](Chevere\Interfaces\Controller\ControllerParameterInterface).
 
 ```php
 $regex = new Regex('/^[0-9]+$/');
@@ -155,7 +155,7 @@ $parameter = $parameter
 
 ## Arguments
 
-The [ControllerArguments](Chevere\Components\Controller\ControllerArguments) class is used to interact with the controller passed arguments. It implements the [ControllerArgumentsInterface](Chevere\Components\Controller\Interfaces\ControllerArgumentsInterface).
+The [ControllerArguments](Chevere\Components\Controller\ControllerArguments) class is used to interact with the controller passed arguments. It implements the [ControllerArgumentsInterface](Chevere\Interfaces\Controller\ControllerArgumentsInterface).
 
 Arguments will be passed in the `run` method which will be executed only if the parameters provided meets the requirements.
 
@@ -176,9 +176,9 @@ use Chevere\Components\Controller\Controller;
 use Chevere\Components\Controller\ControllerParameter;
 use Chevere\Components\Controller\ControllerParameters;
 use Chevere\Components\Controller\ControllerResponse;
-use Chevere\Components\Controller\Interfaces\ControllerArgumentsInterface;
-use Chevere\Components\Controller\Interfaces\ControllerParametersInterface;
-use Chevere\Components\Controller\Interfaces\ControllerResponseInterface;
+use Chevere\Interfaces\Controller\ControllerArgumentsInterface;
+use Chevere\Interfaces\Controller\ControllerParametersInterface;
+use Chevere\Interfaces\Controller\ControllerResponseInterface;
 
 final class HelloYouController extends Controller
 {
@@ -219,7 +219,7 @@ If the passed arguments are  `name=rodolfo` and `alias=Don*Chevere` it will retu
 
 ## Running a Controller
 
-The [ControllerRunner](Chevere\Components\Controller\ControllerRunner) class is in charge of executing the controller instructions. It can be used to run any controller in the system. It implements the [ControllerRunnerInterface](Chevere\Components\Controller\Interfaces\ControllerRunnerInterface).
+The [ControllerRunner](Chevere\Components\Controller\ControllerRunner) class is in charge of executing the controller instructions. It can be used to run any controller in the system. It implements the [ControllerRunnerInterface](Chevere\Interfaces\Controller\ControllerRunnerInterface).
 
 ```php
 $controller = new HelloYouController;
@@ -239,7 +239,7 @@ echo $ran->hasThrowable()
 exit $ran->code();
 ```
 
-The controller runner `ran` method returns an object implementing the [ControllerRanInterface]((Chevere\Components\Controller\Interfaces\ControllerRunner)). This object will contain the response and data for the controller `run` for the passed `$args`.
+The controller runner `ran` method returns an object implementing the [ControllerRanInterface]((Chevere\Interfaces\Controller\ControllerRunner)). This object will contain the response and data for the controller `run` for the passed `$args`.
 
 Controllers can be also _wired_ to several different types of actors, and Chevere includes wiring for its [Routing](), [Console]() and [Worker]().
 

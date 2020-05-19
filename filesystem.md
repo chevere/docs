@@ -44,7 +44,7 @@ Filesystem is a collection of classes that interact with the filesystem. Namespa
 
 ## Path
 
-A Path is a class implementing [PathInterface](Chevere\Components\Filesystem\Interfaces\PathInterface). A Path is in charge of interact with filesystem paths.
+A Path is a class implementing [PathInterface](Chevere\Interfaces\Filesystem\PathInterface). A Path is in charge of interact with filesystem paths.
 
 ```php
 use Chevere\Components\Filesystem\Path;
@@ -115,7 +115,7 @@ $childPathFile  = $path->getChild('child-2/some-file.php'); // /home/var/child-2
 
 ## Dir
 
-A Dir is a class implementing [DirInterface](Chevere\Components\Filesystem\Interfaces\DirInterface). A Dir is in charge of interact with filesystem directories.
+A Dir is a class implementing [DirInterface](Chevere\Interfaces\Filesystem\DirInterface). A Dir is in charge of interact with filesystem directories.
 
 ```php
 use Chevere\Components\Filesystem\Dir;
@@ -151,7 +151,7 @@ $dirExists = $dir->exists();
 The `assertExists` method asserts if the directory exists. Throws exception when the directory doesn't exists in the filesystem.
 
 ```php
-use Chevere\Components\Filesystem\Exceptions\DirNotExistsException;
+use Chevere\Exceptions\Filesystem\DirNotExistsException;
 
 $dir->assertExists(); // Throws DirNotExistsException
 ```
@@ -177,7 +177,7 @@ $childDir  = $dir->getChild('child/'); // /home/var/child/
 
 ## File
 
-A File is a class implementing [FileInterface](Chevere\Components\Filesystem\Interfaces\FileInterface). A File is in charge of interact with filesystem files.
+A File is a class implementing [FileInterface](Chevere\Interfaces\Filesystem\FileInterface). A File is in charge of interact with filesystem files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -221,7 +221,7 @@ $fileExists = $file->exists();
 The `assertExists` method asserts if the file exists. Throws exception when the file doesn't exists in the filesystem.
 
 ```php
-use Chevere\Components\Filesystem\Exceptions\FileNotExistsException;
+use Chevere\Exceptions\Filesystem\FileNotExistsException;
 
 $file->assertExists(); // Throws FileNotExistsException
 ```
@@ -265,7 +265,7 @@ $file->remove(); // file is gone
 
 ## File PHP
 
-A File PHP is a class implementing [FilePhpInterface](Chevere\Components\Filesystem\Interfaces\FilePhpInterface). A File PHP is in charge of interact with PHP files.
+A File PHP is a class implementing [FilePhpInterface](Chevere\Interfaces\Filesystem\FilePhpInterface). A File PHP is in charge of interact with PHP files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -291,7 +291,7 @@ $filePhp->flush(); // OPCache is gone
 
 ## File PHP Return
 
-A File PHP Return is a class implementing [FilePhpReturnInterface](Chevere\Components\Filesystem\Interfaces\FilePhpReturnInterface). A File PHP Return is in charge of interact with the return value of PHP files.
+A File PHP Return is a class implementing [FilePhpReturnInterface](Chevere\Interfaces\Filesystem\FilePhpReturnInterface). A File PHP Return is in charge of interact with the return value of PHP files.
 
 ```php
 use Chevere\Components\Filesystem\File;
