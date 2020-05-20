@@ -1,5 +1,4 @@
 # Cache
-
 - [Cache](#cache)
   - [Introduction](#introduction)
     - [How it works](#how-it-works)

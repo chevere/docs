@@ -1,5 +1,4 @@
 # Str
-
 - [Str](#str)
   - [Introduction](#introduction)
   - [String Manipulation](#string-manipulation)
