@@ -8,7 +8,7 @@
     - [Method naming](#method-naming)
       - [Getters](#getters)
       - [Immutables](#immutables)
-      - [General actions](#general-actions)
+      - [Actions](#actions)
 
 ## Casing
 
@@ -35,11 +35,11 @@ The `use` keyword at the top of the document **must** be used to import all the 
 ```php
 use Chevere\Components\Message\Message;
 
-new Message('Prefer importing');
+new Message('Prefer to import');
 ```
 
 ```php
-new Chevere\Components\Message\Message('Instead of fully-qualified');
+new Chevere\Components\Message\Message('...Instead of fully-qualified');
 ```
 
 ## Classes
@@ -92,11 +92,16 @@ public function withAddedString(int $pos, string $string): MyInterface;
 public function withoutAddedString(int $pos): MyInterface;
 ```
 
-#### General actions
+#### Actions
 
-General actions refers to when we ask the object _to do something_. These actions could return something or just `void`.
+General actions refers to when the object must **do something**. These actions could return _anything_ or just `void`.
 
 A verb **should** be prefixed for any given action. For example, `getSome`, `setValue` or `doStuff`.
 
-> ⚡ The use of a verb indicates that an action will be performed rather than just read a property.
+> 🧐 The use of a verb indicates that an action will be performed
 
+In the example below, we do the evolution.
+
+```php
+public function doTheEvolution(): void;
+```
