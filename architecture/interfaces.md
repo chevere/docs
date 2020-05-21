@@ -5,6 +5,10 @@
     - [Typing](#typing)
     - [Documenting](#documenting)
   - [Conventions](#conventions)
+    - [Method naming](#method-naming)
+      - [Accessors](#accessors)
+      - [Actions](#actions)
+      - [Immutables](#immutables)
   - [Implementing interfaces](#implementing-interfaces)
 
 ## Introduction
@@ -31,11 +35,47 @@ Documentation for public method parameters, return and thrown exceptions **must*
 
 * Must be named with `Interface` suffix
 
+### Method naming
+
+#### Accessors
+
+Accessors refers to methods that **access to** an object property.
+
+Accessors **must be nouns** and named as the name of the property it retrieves. For example, the method `something` should be used to retrieve the value of `$this->something`.
+
+```php
+public function something(): string;
+```
+
+> 🧔 Accessors = nouns
+
+#### Actions
+
+Actions refers to when the object must **do something**. These actions could return _anything_ or just `void`.
+
+A verb **should** be prefixed for any given action. For example, `getSome`, `setValue` or `doStuff`.
+
+> 🧔 Actions = verbs
+
+In the example below, we do the evolution.
+
+```php
+public function doTheEvolution(): void;
+```
+
+#### Immutables
+
+Immmutables refers to methods that **returns an altered copy** of the original object.
+
+The `with` prefix is associated with immutables. For example, `withSomething`, `withoutSomething`, `withAddedStuff`, `withRemovedStuff`, etc.
+
+> 🧔 Immutables = with*
+
+More about immutables at [Immutability](./immutability.md).
+
 ## Implementing interfaces
 
 ```php
-<?php
-
 use Chevere\Exceptions\Core\Exception;
 use Chevere\Exceptions\Str\StrEmptyException;
 use Chevere\Components\Message\Message;
@@ -52,8 +92,6 @@ interface HelloWorldInterface
 ```
 
 ```php
-<?php
-
 use Chevere\Components\Str\StrAssert;
 
 class HelloWorld implements HelloWorldInterface
