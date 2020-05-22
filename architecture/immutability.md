@@ -1,4 +1,3 @@
-
 # Immutability
 - [Immutability](#immutability)
   - [Introduction](#introduction)
@@ -7,14 +6,14 @@
   - [Language considerations](#language-considerations)
   - [Conventions](#conventions)
     - [Method naming](#method-naming)
-  - [Implementing immutables](#implementing-immutables)
+  - [Implementing](#implementing)
     - [Cloning (shallow copy)](#cloning-shallow-copy)
     - [Deep copy](#deep-copy)
       - [Passing objects](#passing-objects)
       - [Accesing objects](#accesing-objects)
 ## Introduction
 
-Immutability is the concept of that the state of an object, once constructed, cannot be modified throughout the lifetime of the object. In other words, an immutable object cant't change.
+Immutability is the concept of that an object, once constructed, cannot be modified throughout the lifetime of the object. In other words, an immutable object can't change.
 
 ### Mutables vs Immutables
 
@@ -34,15 +33,22 @@ $service = new Service($mutable);
 $mutable->prop = 'altered-value';
 ```
 
-As `$mutable` can change, it is unknown if its safe or not to use `$service`. The object id (reference) is the same regardless of who triggered these changes.
+As `$mutable` can change, is unknown if is safe or not to use `$service` as `Service` isn't aware of the possible changes in the `$mutable` object.
+
+When `Service` rely in a mutable object its processes are not thread safe. Also, it delegate towards the implementation the responsibility of checking if the dependencies are safe to use or not.
+
+An immutable version of `Service` shouldn't allow alteration and consumers of this class won't have to mind about the uncertainty of mutable objects.
 
 > 👍 Immutables will always provide more thread safety
 
 ## State
 
-The immutability concept is all about dealing with object state, which refers to the characteristic values of a given object at a given time like its properties and reference.
+The immutability concept is all about dealing with the object state, which
+is the characteristic values of a given object at a given time. In immutability, states are each different version of an object.
 
-Immutable objects can't be modified, but **a modified copy** can be used to achieve immutability. The copy won't share the same reference, it will be another object with a different state.
+> 🧔🏾 Think about states as a snapshots of the object at different times
+
+The way to provide immutable objects by always creating **a modified copy** of the object intended to alter.
 
 ## Language considerations
 
@@ -57,7 +63,7 @@ Immutable refers to classes which methods **returns an altered copy** of the ori
 
 ### Method naming
 
-The `with` prefix **must** be used in methods that set something in the object.
+The `with` prefix **must** be used in methods that modify the object.
 
 In the example below the `withString` method sets the value of `$this->string`.
 
@@ -83,15 +89,13 @@ public function withAddedString(int $pos, string $string): MyInterface;
 public function withoutAddedString(int $pos): MyInterface;
 ```
 
-## Implementing immutables
-
-> 🧔 Everything immutable is prefixed with `with`
+## Implementing
 
 ### Cloning (shallow copy)
 
 Chevere uses [object cloning](https://www.php.net/manual/en/language.oop5.cloning.php) for pseudo-immutability. It is called pseudo because it is a shallow copy.
 
-By cloning, a new reference (id) will be associated with the shallow copy. As scalars aren't passed by reference, cloning is enough for simple immutability.
+By cloning, a new reference (id) will be associated with the shallow copy. As scalars are passed by value, cloning is enough for simple immutability.
 
 ```php
 class MyImmutable implements MyImmutableInterface
@@ -118,15 +122,20 @@ $immutable->string(); // ref#1 default
 $clone->string(); // ref#2 val
 ```
 
-In the example above, `$clone` is assigned to the cloned copy of `$immutable`, which has a different state and reference.
+In the example above, `$clone` is assigned to the new copy of `$immutable`, which has a different state and reference. 
+
+As properties are protected/private by [convention](./conventions.md), the property `string` of `$immutable` can't be altered in public context without creating a new copy of the original object.
+
+> 👴🏿 Classes with properties of type `object` will be immutable depending on each given `object` property
+
 
 ### Deep copy
 
 Chevere uses [DeepCopy](https://github.com/myclabs/DeepCopy) to provide deep copies of objects.
 
-By deep copying, a new reference (id) will be associated with a deep copy of the entire object.
+> 🧙🏾 Deep copy is needed when is not possible to rely in cloning
 
-Depending on context, `deep_copy` should be used when passing and/or when accessing objects.
+By deep copying, a new id will be associated with a deep copy of the entire object. It should be used when passing and/or when accessing objects that change the behavior of the parent implementation.
 
 #### Passing objects
 
@@ -149,8 +158,8 @@ class MyImmutable implements MyImmutableInterface
 }
 
 $service = new Service;
-$immutable = new MyImmutable;
-$immutableService = deep_copy($service);
+$immutable = new MyImmutable; // ref#1
+$immutableService = deep_copy($service); // ref#2
 $clone = $immutable->withService($immutableService);
 $immutable->service(); // === as $immutableService
 ```
@@ -181,4 +190,5 @@ $immutable = new MyImmutable;
 $service = $immutable->readService();
 ```
 
-In the example above, `new MyImmutable` defines a `$service` property which is accessed as a deep copy using `readService` method. Any alteration on `$service` won't affect the `service` property of `$immutable`.
+In the example above, `new MyImmutable` sets a `$service` property which is accessed as a deep copy using `readService` method. Any alteration on `$service` won't affect the `service` property within `$immutable`.
+
