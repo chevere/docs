@@ -41,7 +41,7 @@ Chevere uses strict strong-types for safe run-time operations. It relies mostly 
 
 ### Console First
 
-Chevere is built for the console first, not web. On its core Chevere is a simple command runner which can me mapped to generate anything. This approach makes Chevere flexible enough to provide all the building blocks needed to create modern applications of any kind. It also gets rid of the need of a web server for development.
+Chevere is built for the console first, not web. On its core, Chevere is a simple command runner which can me mapped to generate anything. This approach makes Chevere flexible enough to provide all the building blocks needed to create modern applications of any kind. It also gets rid of the need of a web server for development.
 
 > 👨‍💻 It is about time to start using PHP in the console
 
