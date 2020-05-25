@@ -33,27 +33,32 @@ Snippets provide an easy way to define templates for code. It is a productivity 
 
 ### Working with snippets
 
-In the following two-steps, a new test will be created in seconds.
+Snippets are designed to be context-aware, to parse information from the file system. That way, a lot of code can be autocompleted and prompt for easier editing.
+
+In the following two-steps, a new test will be created following the snippets workflow.
 
 #### Step 1: Create the file
 
-An empty `ExampleTest.php` file must be created at `./Tests/Example/ExampleTest.php`. The tree should look like as below.
+An empty `ExampleTest.php` file must be created at `Tests/Example/ExampleTest.php`. The tree should look like as below.
 
 ```bash
-./Tests
+Tests
 └── Example
     └── ExampleTest.php
 ```
+> 🧙🏾 `Example` will be implemented in the namespace path and `ExampleTest` will be taken used as class name.
 
 #### Step 2: Inserting the snippet
 
-Triggering snippets is easy as typing the snippet prefix in the editor. The screen below shows how snippets are triggered for `test` and `test-method`.
+Triggering snippets is easy as typing the snippet prefix in the editor. Alternatively, snippets can be triggered by using the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
-> 🤷🏾 Snippets can be also inserted using the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), but it slower you know?
+The screen below shows triggering `test` right after typing it, then the `test-method` snippet is triggered, which prompt to edit method's `Name`.
+
+Class name and namespace path is automatically resolved by the IDE.
 
 ![Snippets in action](./../src/screen/snippets-in-action.gif "Snippets in action")
 
-> 🧙🏾 Both header comment and `strict_types` declaration are automatically inserted on save
+> 🧙🏾 Header comment and `strict_types` declaration are automatically formatted on save
 
 Table below shows the prefix and description for built-in snippets.
 
@@ -80,7 +85,7 @@ The VSCode extension [php cs fixer](https://marketplace.visualstudio.com/items?i
 
 ## Testing
 
-[PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit) allows to easily handle all tests. Providing inline tools for code execution and reviewing.
+[PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit) provides inline tools for code execution and reviewing. It allows to easily handle all tests.
 
 ### Configuration
 
