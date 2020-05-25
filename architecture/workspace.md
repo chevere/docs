@@ -1,5 +1,19 @@
 # Workspace
 
+- [Workspace](#workspace)
+  - [Introduction](#introduction)
+  - [IDE](#ide)
+    - [Settings](#settings)
+    - [Extensions](#extensions)
+  - [Snippets](#snippets)
+    - [Working with snippets](#working-with-snippets)
+      - [Step 1: Create the file](#step-1-create-the-file)
+      - [Step 2: Inserting the snippet](#step-2-inserting-the-snippet)
+  - [Coding Standards](#coding-standards)
+  - [Testing](#testing)
+    - [Configuration](#configuration)
+    - [Running tests](#running-tests)
+
 ## Introduction
 
 The workspace refers to the working directory where Chevere is developed. 
