@@ -1,8 +1,14 @@
 # Core concepts
 
+- [Core concepts](#core-concepts)
+  - [Extensibility](#extensibility)
+  - [Clean Code](#clean-code)
+  - [Strongly Typed](#strongly-typed)
+  - [Console First](#console-first)
+
 ## Extensibility
 
-Chevere ease the process of crafting pluggable applications by providing an architecture allowing to safely extend the application logic. Extensible applications not only do more, but engage more users and provide a solid fundation for your own application ecosystem.
+Chevere ease the process of crafting pluggable applications by providing an architecture allowing to safely extend the application logic. Extensible applications not only do more, but engage more users and provide a solid foundation for your own application ecosystem.
 
 > 🤯 Pluggable logic allows to be open to do *more*.
 

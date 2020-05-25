@@ -17,6 +17,6 @@ The term *[chévere](https://en.wiktionary.org/wiki/ch%C3%A9vere)* is an slang u
 
 Chevere begun as the supporting framework for [Chevereto 4](https://github.com/chevereto/chevereto). Development started about mid-2018, carrying a complete modernization of the previous Chevereto's supporting framework ([G\ Library](https://g.chevereto.com/)).
 
-While Chevereto drove initial development, Chevere is a different organization with their own goals, shapped by their contributors and users.
+While Chevereto drove initial development, Chevere is a different organization with their own goals, shaped by contributors and users.
 
 > Both Chevere and Chevereto are projects started by the same developer, [Rodolfo Berrios](https://github.com/rodolfoberrios) (😉 hi!).

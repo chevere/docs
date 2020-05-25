@@ -1,11 +1,17 @@
 # Conventions
+
 - [Conventions](#conventions)
   - [Introductions](#introductions)
   - [Casing](#casing)
-  - [General](#general)
-    - [Strict types](#strict-types)
-    - [Code Style](#code-style)
+  - [Code Style](#code-style)
     - [Use imports](#use-imports)
+  - [Typing](#typing)
+    - [Strict Types](#strict-types)
+    - [Type Hinting](#type-hinting)
+  - [Comments](#comments)
+    - [DocBlocks](#docblocks)
+    - [Logic](#logic)
+  - [Data Structures](#data-structures)
   - [Components](#components)
 
 ## Introductions
@@ -20,17 +26,7 @@ In Chevere, we keep it simple:
 * `SCREAMING_SNAKE_CASE` for constants
 * `camelCase` for everything else
 
-## General
-
-### Strict types
-
-To declare strict types is a **must**.
-
-```php
-declare(strict_types=1);
-```
-
-### Code Style
+## Code Style
 
 Code style is defined at `.php_cs.dist`
 
@@ -50,6 +46,42 @@ new Message('Prefer to import');
 new Chevere\Components\Message\Message('...Instead of fully-qualified');
 ```
 
+## Typing
+
+### Strict Types
+
+To declare strict types is a **must**.
+
+```php
+declare(strict_types=1);
+```
+
+### Type Hinting
+
+* All parameters, properties and return expressions **should** be type hinted
+* Objects **should** be typed against its interface
+
+## Comments
+
+### DocBlocks
+
+DocBlock comments in signatures should be **short** as possible, **relevant** and **omit** the obvious.
+
+* `@param` and `@return` should be used only if is required to provide more context
+* `@throws` must be provided for all applicable exceptions
+
+### Logic
+
+Comments in logic are **discouraged** and it should be used only in the following cases:
+
+* `@codeCoverage` tags
+* Type hinting (for example, in a loop)
+* Warn about a critical situation
+
+## Data Structures
+
+[Data Structures](https://www.php.net/manual/en/book.ds.phps) **should** be preferred instead of `array`.
+
 ## Components
 
 All components must follow the [Interfaces](./interfaces.md), [Exceptions](./exceptions.md) and [Tests](./tests.md) spec. On top of that, components have the following conventions.
@@ -57,13 +89,11 @@ All components must follow the [Interfaces](./interfaces.md), [Exceptions](./exc
 Components **must**:
 
 * Have one single responsibility
-* Avoid code comments as possible
 * Name properties as nouns
 * Declare private/protected properties only
-* Prefer composition when possible
 
 Components **should**:
 
+* Prefer composition over inherence
 * Prefer to implement immutability
-* Provide their own namespaced exceptions
-* Prefer to use data structures and `Generators` instead of `array`
+* Provide exceptions in the same namespaceS

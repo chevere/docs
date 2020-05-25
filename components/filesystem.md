@@ -36,11 +36,11 @@
     - [Reading File PHP](#reading-file-php)
       - [Raw contents](#raw-contents)
       - [Var contents](#var-contents)
-    - [Puting contents](#puting-contents)
+    - [Putting contents](#putting-contents)
 
 ## Introduction
 
-Filesystem is a collection of classes that interact with the filesystem. Namespace `Chevere\Components\Filesystem` holds all the Filesystem classes, offering a myriad of filesystem related functionalies.
+Filesystem is a collection of classes that interact with the filesystem. Namespace `Chevere\Components\Filesystem` holds all the Filesystem classes, offering a myriad of filesystem related functionalities.
 
 ## Path
 
@@ -252,7 +252,7 @@ The `checksum` method retrieve the checksum of the file. It returns `string` wit
 $checksum = $file->checksum(); // sha256'd
 ```
 
-> 👍 FileInterface::CHECKSUM_ALGO determines the algo used for file hashing.
+> 👍 FileInterface::CHECKSUM_ALGO determines the algorithm used for file hashing.
 
 
 ### Removing a File
@@ -282,8 +282,8 @@ $filePhp = new FilePhp($file);
 The `cache` method will cache the PHP file. The `flush` method will destroy the cache.
 
 ```php
-$filePhp->cache(); // OPCache'd
-$filePhp->flush(); // OPCache is gone
+$filePhp->cache(); // OPCache cache
+$filePhp->flush(); // OPCache cache is gone
 
 ```
 
@@ -325,7 +325,7 @@ The `var` method retuns a PHP variable. If the return value of the PHP file is a
 $filePhpReturn->var();
 ```
 
-### Puting contents
+### Putting contents
 
 The `put` method puts the contents of a variable export into the PHP file as `<?php return $var;`. Type `object` will be stored with serialize.
 

@@ -1,13 +1,14 @@
 # Plugin
+
 - [Plugin](#plugin)
   - [Introduction](#introduction)
   - [Defining Pluggables](#defining-pluggables)
     - [Example not-pluggable](#example-not-pluggable)
     - [Pluggable Events](#pluggable-events)
-      - [Definining pluggable event anchors](#definining-pluggable-event-anchors)
+      - [Defining pluggable event anchors](#defining-pluggable-event-anchors)
       - [Using pluggable event anchors](#using-pluggable-event-anchors)
     - [Pluggable Hooks](#pluggable-hooks)
-      - [Definining pluggable hook anchors](#definining-pluggable-hook-anchors)
+      - [Defining pluggable hook anchors](#defining-pluggable-hook-anchors)
       - [Using pluggable hook anchors](#using-pluggable-hook-anchors)
   - [Defining Plugs](#defining-plugs)
     - [Event Plug](#event-plug)
@@ -89,7 +90,7 @@ final class DoesSomething implements PluggableEventsInterface
 
 In the example above, the class implements the pluggable event `onSet` which is emitted after the value of `$string` is set.
 
-#### Definining pluggable event anchors
+#### Defining pluggable event anchors
 
 The `getEventAnchors` method is used to define the event anchors available to implement in the pluggable class.
 
@@ -144,7 +145,7 @@ final class DoesSomething implements PluggableHooksInterface
 
 In the example above, `App\DoesSomething` implements pluggable hooks with two anchors which alter `$value` before and after the base logic sets the value of `$string` property.
 
-#### Definining pluggable hook anchors
+#### Defining pluggable hook anchors
 
 The `getHookAnchors` method is used to define the hook anchors available to implement in the pluggable class.
 
@@ -175,7 +176,7 @@ Built-in Plugs are:
 
 A Event Plug is a class implementing the [EventPlugInterface]().
 
-In the code below, the `__invoke` triggers extra functionality if `$value` ends with `lfo`. If you pass `rodolfo` will perfom extra logic.
+In the code below, the `__invoke` triggers extra functionality if `$value` ends with `lfo`. If you pass `rodolfo` will perform extra logic.
 
 ```php
 <?php

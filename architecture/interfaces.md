@@ -1,4 +1,5 @@
 # Interfaces
+
 - [Interfaces](#interfaces)
   - [Introduction](#introduction)
   - [Design decisions](#design-decisions)
@@ -34,6 +35,7 @@ Documentation for public method parameters, return and thrown exceptions **must*
 ## Conventions
 
 * Must be named with `Interface` suffix
+* Must be located at `Interfaces/<component>/`
 
 ### Method naming
 

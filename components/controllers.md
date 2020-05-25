@@ -1,4 +1,5 @@
 # Controllers
+
 - [Controllers](#controllers)
   - [Introduction](#introduction)
   - [Defining Controllers](#defining-controllers)
@@ -23,7 +24,7 @@ Controllers are the basic building block for incoming actions to your applicatio
 
 ## Defining Controllers
 
-A Controller is a class implementing the [ControllerInterface](Chevere\Interfaces\Controller\ControllerInterface). For convinience, a [base controller]() class is included with Chevere.
+A Controller is a class implementing the [ControllerInterface](Chevere\Interfaces\Controller\ControllerInterface). For convenience, a [base controller]() class is included with Chevere.
 
 ```php
 <?php

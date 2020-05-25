@@ -1,4 +1,5 @@
 # Cache
+
 - [Cache](#cache)
   - [Introduction](#introduction)
     - [How it works](#how-it-works)
@@ -11,7 +12,7 @@
 
 ## Introduction
 
-Cache refers to a system in charge of storing application states. It provides the ability to store _parts_ of the application, making easier to create performant running routines.
+Cache refers to a system in charge of storing application states. It provides the ability to store _parts_ of the application, making easier to create performing running routines.
 
 ### How it works
 
@@ -22,7 +23,7 @@ Since a `.php` file can return _something_, it can be used to store _anything_. 
 return 'Hey there!';
 ```
 
-Fron there, the return value can be assigned to a variable.
+From there, the return value can be assigned to a variable.
 
 ```php
 $var = include 'file.php'; // Hey there!
@@ -30,7 +31,7 @@ $var = include 'file.php'; // Hey there!
 
 As the return can be any scalar, an object, a serialized string, etc, it can be used to store _anything_. The cache system wraps around this concept, providing an easy way to create, and interact with cached entries.
 
-As cache file-system based, it is both portable and performant thanks to [OPcache](https://www.php.net/manual/en/book.opcache.php).
+As cache file-system based, it is both portable and performing thanks to [OPCache](https://www.php.net/manual/en/book.opcache.php).
 
 ## Working with Cache
 

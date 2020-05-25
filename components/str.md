@@ -1,4 +1,5 @@
 # Str
+
 - [Str](#str)
   - [Introduction](#introduction)
   - [String Manipulation](#string-manipulation)
@@ -10,11 +11,11 @@
 
 ## Introduction
 
-Str is a collection of classes that interact with strings. Namespace `Chevere\Components\Str` holds all the Str classes, offering a myriad of string related functionalies.
+Str is a collection of classes that interact with strings. Namespace `Chevere\Components\Str` holds all the Str classes, offering a myriad of string related functionalities.
 
 ## String Manipulation
 
-Manipulating strings refers to the proccess of altering an argument of type `string`.
+Manipulating strings refers to the process of altering an argument of type `string`.
 
 ### Str
 
@@ -34,7 +35,7 @@ In the code above, `THE STRING` is manipulated  to result in `thestring`.
 
 ## String Asserting
 
-Asserting strings refers to the proccess of asserting an argument of type `string` against methods that throws `Throwable` when failing to assert.
+Asserting strings refers to the process of asserting an argument of type `string` against methods that throws `Throwable` when failing to assert.
 
 ### StrAssert
 
@@ -52,7 +53,7 @@ In the code above, executing `notEmpty` won't raise any exception as `$string` i
 
 ## String Bool
 
-Bool string refers to the proccess of validate an argument of type `string` agains methods that returns `bool`.
+Bool string refers to the process of validate an argument of type `string` against methods that returns `bool`.
 
 ### StrBool
 
