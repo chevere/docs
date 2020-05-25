@@ -252,7 +252,7 @@ The `checksum` method retrieve the checksum of the file. It returns `string` wit
 $checksum = $file->checksum(); // sha256'd
 ```
 
-> 👍 FileInterface::CHECKSUM_ALGO determines the algorithm used for file hashing.
+> 👍🏾 FileInterface::CHECKSUM_ALGO determines the algorithm used for file hashing.
 
 
 ### Removing a File
@@ -287,7 +287,7 @@ $filePhp->flush(); // OPCache cache is gone
 
 ```
 
-> 👍 Cache works with OPCache.
+> 👍🏾 Cache works with OPCache.
 
 ## File PHP Return
 

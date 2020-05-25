@@ -88,7 +88,7 @@ return SignupController;
 
 The `POST.php` file above binds HTTP request `POST /signup` to `SignupController`.
 
-> 👍 It is recommended to create a _different_ controller for each HTTP endpoint. A controller resolving multiple HTTP endpoints is a bad practice.
+> 👍🏾 It is recommended to create a _different_ controller for each HTTP endpoint. A controller resolving multiple HTTP endpoints is a bad practice.
 
 #### Wildcards from Controller parameters
 

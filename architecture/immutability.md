@@ -41,7 +41,7 @@ When `Service` rely in a mutable object its processes are not thread safe. Also,
 
 An immutable version of `Service` shouldn't allow alteration and consumers of this class won't have to mind about the uncertainty of mutable objects.
 
-> 👍 Immutables will always provide more thread safety
+> 👍🏾 Immutables will always provide more thread safety
 
 ## State
 

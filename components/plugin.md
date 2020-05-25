@@ -53,7 +53,7 @@ If the argument is `rodolfo` it will set the property to `set=rodolfo`.
 
 Events are used when it is intended to broadcast that something took place. A class must implement the [PluggableEventsInterface]() to allow pluggable events.
 
-> 👍 The [PluggableEventsTrait](Chevere\Components\Plugs\Events\Traits\PluggableEventsTrait) allows to easily implement the `PluggableEventsInterface`
+> 👍🏾 The [PluggableEventsTrait](Chevere\Components\Plugs\Events\Traits\PluggableEventsTrait) allows to easily implement the `PluggableEventsInterface`
 
 In the code below, implementing `PluggableEventsInterface` on `App\DoesSomething` allows to emit an event once `set` method logic was executed.
 
@@ -106,7 +106,7 @@ $this->event('anchor-name', EventInterface $event);
 
 Hooks are used when it is intended to allow modification on variables.
 
-> 👍 The [PluggableHooksTrait](Chevere\Components\Plugs\Hooks\Traits\PluggableHooksTrait) allows to easily implement the `PluggableHooksInterface`
+> 👍🏾 The [PluggableHooksTrait](Chevere\Components\Plugs\Hooks\Traits\PluggableHooksTrait) allows to easily implement the `PluggableHooksInterface`
 
 In the code below, implementing [PluggableHooksInterface]() on `App\DoesSomething` allows to alter the behavior of `set` method.
 
@@ -159,7 +159,7 @@ $this->hook('anchor-name', $argument);
 
 The argument `$argument` is passed by reference and it can be of any type. It is intended to be susceptible to be modified by potentially unknown logic instructions.
 
-> 👍 Chevere checks that the argument passed by reference doesn't alter its type after running any hook instruction.
+> 👍🏾 Chevere checks that the argument passed by reference doesn't alter its type after running any hook instruction.
 
 ## Defining Plugs
 
@@ -170,7 +170,7 @@ Built-in Plugs are:
 - [EventPlugInterface](#event-plug)
 - [HookPlugInterface](#hook-plug)
 
-> 🧔 Plugs are designed to be short sets of instructions that should be executed without persistent memory and decoupled as possible from the application.
+> 🧔🏾 Plugs are designed to be short sets of instructions that should be executed without persistent memory and decoupled as possible from the application.
 
 ### Event Plug
 

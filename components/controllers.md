@@ -59,7 +59,7 @@ public function getDescription(): string
     return 'It says "Hello, <name>!"';
 }
 ```
-> 👍 It is generally a good practice to explicit define what a controller does.
+> 👍🏾 It is generally a good practice to explicit define what a controller does.
 
 ### Parameters
 
@@ -244,7 +244,7 @@ The controller runner `ran` method returns an object implementing the [Controlle
 
 Controllers can be also _wired_ to several different types of actors, and Chevere includes wiring for its [Routing](), [Console]() and [Worker]().
 
-> 👍 It is a good practice to create different controllers for each actor you may need. Don't do magic all-in-one controllers aiming to be used by different actors. Don't fall into the laziness.
+> 👍🏾 It is a good practice to create different controllers for each actor you may need. Don't do magic all-in-one controllers aiming to be used by different actors. Don't fall into the laziness.
 
 
 ## Implementing Hooks

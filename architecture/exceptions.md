@@ -10,9 +10,9 @@
 
 ## Introduction
 
-Exceptions are events that happens on runtime, that disrupts the execution of the software. Chevere extends both [PHP exceptions](https://www.php.net/manual/en/language.exceptions.php) & [SPL exceptions](https://www.php.net/manual/en/spl.exceptions.php) with support for [Message](./../components/message.md).
+Exceptions are events that happens on runtime, that disrupts the execution of the software. Chevere extends all [SPL exceptions](https://www.php.net/manual/en/spl.exceptions.php) with support for [Message](./../components/message.md).
 
-> 👍 Chevere exceptions are located at [Chevere\Exceptions]() namespace.
+> 👍🏾 Chevere exceptions are located at [Chevere\Exceptions](https://github.com/chevere/chevere/tree/master/Exceptions) namespace
 
 ## Design decisions
 
@@ -44,7 +44,7 @@ The exception message *must* explain the event.
 
 Provide rich messages with plenty context for the event, like arguments, how exactly the event was triggered, paths or any additional context. It is encouraged to provide a *hint* for the developer dealing with the situation.
 
-> 🧔 Assume that you will deal with the event. Make sure to make happy your future self.
+> 🧔🏾 Assume that you will deal with the event. Make sure to make happy your future self.
 
 ```php
 <?php

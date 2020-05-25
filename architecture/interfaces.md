@@ -16,7 +16,7 @@
 
 Interfaces describe the public methods implemented by a given class. In Chevere, all components *must* define their own interfaces.
 
-> 👍 Chevere interfaces are located at [Chevere\Interfaces]() namespace.
+> 👍🏾 Chevere interfaces are located at [Chevere\Interfaces](https://github.com/chevere/chevere/tree/master/Interfaces) namespace
 
 ## Design decisions
 
@@ -24,11 +24,11 @@ Interfaces describe the public methods implemented by a given class. In Chevere,
 
 Parameters and return types **must** be typed against an scalar or an interface. This is related to [DIP](https://en.wikipedia.org/wiki/Dependency_inversion_principle) as in Chevere everything is programmed with interfaces.
 
-> 🧔 Parameters and return types **must not** be typed against concrete implementations
+> 🧔🏾 Parameters and return types **must not** be typed against concrete implementations
 
 ### Documenting
 
-Documentation for public method parameters, return and thrown exceptions **must** be on the interface. Classes implementing interfaces will automatically inherith the documentation.
+Documentation for public method parameters, return and thrown exceptions **must** be on the interface. Classes implementing interfaces will automatically inherits the documentation.
 
 > 🧐 Concrete implementations **should** contain next-to zero comments
 
@@ -49,7 +49,7 @@ Accessors **must be nouns** and named as the name of the property it retrieves. 
 public function something(): string;
 ```
 
-> 🧔 Accessors = nouns
+> 🧔🏾 Accessors = nouns
 
 #### Actions
 
@@ -57,7 +57,7 @@ Actions refers to when the object must **do something**. These actions could ret
 
 A verb **should** be prefixed for any given action. For example, `getSome`, `setValue` or `doStuff`.
 
-> 🧔 Actions = verbs
+> 🧔🏾 Actions = verbs
 
 In the example below, we do the evolution.
 
@@ -67,11 +67,11 @@ public function doTheEvolution(): void;
 
 #### Immutables
 
-Immmutables refers to methods that **returns an altered copy** of the original object.
+Immutables refers to methods that **returns an altered copy** of the original object.
 
 The `with` prefix is associated with immutables. For example, `withSomething`, `withoutSomething`, `withAddedStuff`, `withRemovedStuff`, etc.
 
-> 🧔 Immutables = with*
+> 🧔🏾 Immutables = with*
 
 More about immutables at [Immutability](./immutability.md).
 

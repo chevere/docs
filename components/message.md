@@ -20,7 +20,7 @@ Message provide rich formatting support and output for console, HTML and plain t
 
 A Message is created by passing a message template. In the code below a Message is created with `Hello, %to%!`.
 
-> 👍 A message template can be any string.
+> 👍🏾 A message template can be any string.
 
 ```php
 use Chevere\Components\Message\Message;
@@ -58,7 +58,7 @@ The `toConsole` method returns a console highlighted string.
 ```php
 $message->toConsole();
 ```
-> 👍 The console output is raw ASCII string which looks like the example below.
+> 👍🏾 The console output is raw ASCII string which looks like the example below.
 > 
 > <em>ERROR</em> <strong>/where-it-happened.php</strong> <u>"Por la cresta!"</u> <code>[WhatChuchaHappen]</code>
 

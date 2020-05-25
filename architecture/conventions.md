@@ -1,7 +1,7 @@
 # Conventions
 
 - [Conventions](#conventions)
-  - [Introductions](#introductions)
+  - [Introduction](#introduction)
   - [Casing](#casing)
   - [Code Style](#code-style)
     - [Use imports](#use-imports)
@@ -14,7 +14,7 @@
   - [Data Structures](#data-structures)
   - [Components](#components)
 
-## Introductions
+## Introduction
 
 Conventions exists as good practice for keeping the source cohesive as possible. That way, Chevere removes lots of "ifs" by sticking to its own standards.
 

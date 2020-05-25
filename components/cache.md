@@ -70,7 +70,7 @@ $cache = $cache->withPut(
 
 The `puts` method provides access to the cache put, which is a string containing the cache keys, file path name and hash.
 
-> 👍 It is a good practice to store the file hashes and run frequent checks on these to avoid unwanted modifications.
+> 👍🏾 It is a good practice to store the file hashes and run frequent checks on these to avoid unwanted modifications.
 
 ### Cache: EXISTS
 
