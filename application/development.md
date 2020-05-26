@@ -9,8 +9,6 @@
 
 This specification should be considered as a **base recommendation** on how applications **could be** developed on top of the framework.
 
-> 👴🏾 Don't make me say: _I told you_
-
 ## Recommendations
 
 ??

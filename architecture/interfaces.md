@@ -10,6 +10,7 @@
       - [Accessors](#accessors)
       - [Actions](#actions)
       - [Immutables](#immutables)
+      - [Conditionals](#conditionals)
   - [Implementing interfaces](#implementing-interfaces)
 
 ## Introduction
@@ -74,6 +75,12 @@ The `with` prefix is associated with immutables. For example, `withSomething`, `
 > 🧔🏾 Immutables = with*
 
 More about immutables at [Immutability](./immutability.md).
+
+#### Conditionals
+
+Conditionals refers to methods that **returns boolean**, usually for object flagging.
+
+The `is` prefix is used in methods returning `bool`.
 
 ## Implementing interfaces
 
