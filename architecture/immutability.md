@@ -8,10 +8,9 @@
   - [Conventions](#conventions)
     - [Method naming](#method-naming)
   - [Implementing](#implementing)
-    - [Cloning (shallow copy)](#cloning-shallow-copy)
+    - [Cloning](#cloning)
     - [Deep copy](#deep-copy)
-      - [Passing objects](#passing-objects)
-      - [Accesing objects](#accesing-objects)
+      - [Passing and accessing objects](#passing-and-accessing-objects)
 
 ## Introduction
 
@@ -56,7 +55,7 @@ The way to provide immutable objects by always creating **a modified copy** of t
 
 In PHP, objects are passed by reference and immutability is still on [RFC](https://wiki.php.net/rfc/immutability).
 
-As an answer to this, Chevere implements pseudo-immutability using [cloning](#cloning) and proper immutability using [deep copy](#deep-copy).
+As an answer to this, Chevere implements using [cloning](#cloning) and proper [deep copy](#deep-copy).
 
 
 ## Conventions
@@ -93,11 +92,9 @@ public function withoutAddedString(int $pos): MyInterface;
 
 ## Implementing
 
-### Cloning (shallow copy)
+### Cloning
 
-Chevere uses [object cloning](https://www.php.net/manual/en/language.oop5.cloning.php) for pseudo-immutability. It is called pseudo because it is a shallow copy.
-
-By cloning, a new reference (id) will be associated with the shallow copy. As scalars are passed by value, cloning is enough for simple immutability.
+Chevere uses [object cloning](https://www.php.net/manual/en/language.oop5.cloning.php) for pseudo-immutability. It is called _pseudo_ because `clone` creates a shallow copy.
 
 ```php
 class MyImmutable implements MyImmutableInterface
@@ -124,73 +121,53 @@ $immutable->string(); // ref#1 default
 $clone->string(); // ref#2 val
 ```
 
-In the example above, `$clone` is assigned to the new copy of `$immutable`, which has a different state and reference. 
+In the example above, `$clone` is assigned to the new cloned copy of `$immutable`, which has a different state and reference.
 
-As properties are protected/private by [convention](./conventions.md), the property `string` of `$immutable` can't be altered in public context without creating a new copy of the original object.
-
-> 👴🏿 Classes with properties of type `object` will be immutable depending on each given `object` property
-
+As properties are protected/private by [convention](./conventions.md), the property `$string` of `$immutable` can't be altered in public context without creating a new copy of the original object, which implies a new reference thus immutability.
 
 ### Deep copy
 
-Chevere uses [DeepCopy](https://github.com/myclabs/DeepCopy) to provide deep copies of objects.
+Chevere uses [DeepCopy](https://github.com/myclabs/DeepCopy) to provide deep copies of objects, which is needed when is not possible to rely in cloning for immutability.
 
-> 🧙🏾 Deep copy is needed when is not possible to rely in cloning
+> 👍🏾 By deep copying, a new reference will be associated with a deep copy of the entire object
 
-By deep copying, a new id will be associated with a deep copy of the entire object. It should be used when passing and/or when accessing objects that change the behavior of the parent implementation.
+#### Passing and accessing objects
 
-#### Passing objects
-
-```php
-use function DeepCopy\deep_copy;
-
-class MyImmutable implements MyImmutableInterface
-{
-    private ServiceInterface $service;
-
-    public function withService(ServiceInterface $service): void
-    {
-        $this->service = $service;
-    }
-
-    public function service(): MyImmutableInterface
-    {
-        return $this->service;
-    }
-}
-
-$service = new Service;
-$immutable = new MyImmutable; // ref#1
-$immutableService = deep_copy($service); // ref#2
-$clone = $immutable->withService($immutableService);
-$immutable->service(); // === as $immutableService
-```
-
-In the example above, `$immutableService` is a deep copy of `$service` with a different reference. The `service` property of `$clone` references `$immutableService` not `$service`.
-
-#### Accesing objects
+The caveats of working with objects can be summarized in that exposed properties shouldn't allow the object to change.
 
 ```php
 use function DeepCopy\deep_copy;
+use Ds\Map;
 
 class MyImmutable implements MyImmutableInterface
 {
+    private Map $map;
+
     private ServiceInterface $service;
 
-    public function __construct(): void
+    public function __construct()
     {
-        $this->service = new Service;
+        $this->map = new Map;
     }
 
-    public function readService(): MyImmutableInterface
+    public function __clone()
     {
-        return deep_copy($this->service);
+        $this->map = $this->map();
+    }
+
+    public function withAddedService(ServiceInterface $service): void
+    {
+        $new = clone $this;
+        $new->map->put($service->name(), $service);
+    }
+
+    public function map(): Map
+    {
+        return deep_copy($this->map);
     }
 }
-
-$immutable = new MyImmutable;
-$service = $immutable->readService();
 ```
 
-In the example above, `new MyImmutable` sets a `$service` property which is accessed as a deep copy using `readService` method. Any alteration on `$service` won't affect the `service` property within `$immutable`.
+For the example above, the `map` method accessor provides a deep copy of `$map` on the fly, and any manipulation on it won't affect the original object. The `__clone` method is used to create a deep copying of `$map` property after every `clone`.
 
+> 🤔 Note that the use of `deep_copy` will vary depending on each given case, the above is just an example case
