@@ -8,9 +8,9 @@
     - [Route names](#route-names)
     - [HTTP Endpoints](#http-endpoints)
       - [Wildcards from Controller parameters](#wildcards-from-controller-parameters)
-  - [Generating Routing Spec](#generating-routing-spec)
+  - [Generating Routing](#generating-routing)
     - [Console](#console)
-    - [Code](#code)
+    - [Programmatically](#programmatically)
 
 ## Introduction
 
@@ -83,7 +83,7 @@ Accepted HTTP methods are `CONNECT, DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT
 
 use App\Controllers\SignupController;
 
-return SignupController;
+return new SignupController;
 ```
 
 The `POST.php` file above binds HTTP request `POST /signup` to `SignupController`.
@@ -92,22 +92,19 @@ The `POST.php` file above binds HTTP request `POST /signup` to `SignupController
 
 #### Wildcards from Controller parameters
 
-Wildcards in a route will be automatically configured to reflect the [Controller paramaters](controllers.md) defined for the given route endpoints. If a route defines the wildcard `{id}`, Controllers in the route must at least declare the parameter `id`.
+Wildcards in a route will be automatically configured to reflect the [Controller parameters](controllers.md) defined for the given route endpoints. If a route defines the wildcard `{id}`, Controllers in the route must at least declare the parameter `id`.
 
 > ⚠ Controllers in the alleged route must define the same base wildcard parameters.
 
-## Generating Routing Spec
+## Generating Routing
 
 ### Console
 
-The [Console](console.md) includes a built-in command to generate routes.
+The [Console](console.md#routing) includes a section for built-in routing commands to ease the routing process.
 
-```bash
-vendor/bin/chevere route-create /articles/{id}
-vendor/bin/chevere route-push -r /articles/{id} -m GET -c SomeController
-```
+### Programmatically
 
-### Code
+Routing can be also created programmatically as Chevere includes a Routing iterator. In the example below, a Router object is created from route endpoints at `/var/routes/`.
 
 ```php
 
