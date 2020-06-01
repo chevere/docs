@@ -29,4 +29,3 @@ The web application developer **should** take the responsibility of the applicat
 
 Web applications **should** be preferred to be delivered as headless APIs as these applications are decoupled from the user interface. This allows the application to be presented under endless interface configurations and software.
 
-> 😉 Chevere includes support for automatically generating these APIs and its spec, which exposes the API interaction for consumers
