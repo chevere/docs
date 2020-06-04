@@ -3,84 +3,152 @@
 - [Console](#console)
   - [Introduction](#introduction)
     - [Command Help](#command-help)
+    - [Interactive Modes](#interactive-modes)
   - [Controller](#controller)
-    - [`coninspect`](#coninspect)
-    - [`conlist`](#conlist)
-    - [`conrun`](#conrun)
-  - [Routing](#routing)
-    - [`routeput`](#routeput)
-    - [`routeen`](#routeen)
-    - [`routedis`](#routedis)
-    - [`routermake`](#routermake)
-  - [Plugin](#plugin)
-    - [`pluginen`](#pluginen)
-    - [`plugindis`](#plugindis)
-    - [`pluginlist`](#pluginlist)
+    - [`controller:make`](#controllermake)
+    - [`controller:make-interactive`](#controllermake-interactive)
+    - [`controller:list`](#controllerlist)
+    - [`controller:inspect`](#controllerinspect)
+    - [`controller:run`](#controllerrun)
+  - [Route](#route)
+    - [`route:make`](#routemake)
+    - [`route:enable`](#routeenable)
+    - [`route:disable`](#routedisable)
+    - [`route:enable-all`](#routeenable-all)
+    - [`route:disable-all`](#routedisable-all)
+    - [`route:status`](#routestatus)
+    - [`route:list`](#routelist)
   - [HTTP](#http)
-    - [`httprequest`](#httprequest)
+    - [`http:make`](#httpmake)
+    - [`http:view`](#httpview)
+    - [`http:for`](#httpfor)
+  - [Plugin](#plugin)
+    - [`plugin:make`](#pluginmake)
+    - [`plugin:make-interactive`](#pluginmake-interactive)
+    - [`plugin:run`](#pluginrun)
+    - [`plugin:enable`](#pluginenable)
+    - [`plugin:disable`](#plugindisable)
+    - [`plugin:enable-all`](#pluginenable-all)
+    - [`plugin:disable-all`](#plugindisable-all)
+    - [`plugin:list`](#pluginlist)
 
 ## Introduction
 
-The Chevere console provides access to tools and commands designed to ease the application development process.
+The Chevere console application is designed to ease the application development process of chevere-based applications.
 
-It is located located at `vendor/bin/chevere` and is built on top of [php-cli](https://github.com/adhocore/php-cli).
-
-```bash
-vendor/bin/chevere --help
-```
-
-> 🧐 The above assumes CWD at application root
+The console is located located at `vendor/bin/chevere` and is made on top of [php-cli](https://github.com/adhocore/php-cli).
 
 ### Command Help
 
-All commands contains a description and use cases. Try running:
+All commands contains a description and use cases. Try running the command below to get more information of each available command.
 
 ```bash
 vendor/bin/chevere <command> --help
 ```
 
-From your terminal to get more information of any available commands in this page.
+> 👴🏾 Command help includes a description, arguments, options and example use cases.
+
+
+### Interactive Modes
+
+Some commands include interactive modes, which prompt the user in order to build an instruction. The prompts are generated using code reflection and it aims to leverage the workflow of human-made tasks.
 
 ## Controller
 
-### `coninspect`
+### `controller:make`
 
-Returns information about the given controller.
+⚡`cM` Makes a controller.
 
-### `conlist`
+### `controller:make-interactive`
 
-List controllers implementing the [ControllerInterface]() at the given directory.
+⚡`cMi` Makes a controller, interactive mode.
 
-### `conrun`
+### `controller:list`
 
-Runs the given controller.
+⚡`cL` List controllers implementing the [ControllerInterface]().
 
-## Routing
+### `controller:inspect`
 
-### `routeput`
+⚡`cI` Returns information about the given controller.
 
-Puts a route endpoint at the given directory.
+### `controller:run`
 
-### `routeen`
+⚡`cR` Runs the given controller.
 
-Enavbles the specified route endpoint.
+## Route
 
-### `routedis`
+### `route:make`
 
-Disables the specified route endpoint.
+⚡`rP` Makes a route endpoint.
 
-### `routermake`
+### `route:enable`
 
-Generates HTTP routing at the given directory for the target route directory.
+⚡`rE` Enables the given route endpoints.
 
-## Plugin
+### `route:disable`
 
-### `pluginen`
-### `plugindis`
-### `pluginlist`
+⚡`rD` Disables the given route endpoints.
+
+### `route:enable-all`
+
+⚡`rEa` Enables all route endpoints.
+
+### `route:disable-all`
+
+⚡`rDa` Disables all route endpoints.
+
+### `route:status`
+
+⚡`rS` Shows the status of the given route endpoint.
+
+### `route:list`
+
+⚡`rL` List routes.
 
 ## HTTP
 
-### `httprequest`
+### `http:make`
 
-Mimic an HTTP request.
+⚡`hM` Generates HTTP routing.
+
+### `http:view`
+
+⚡`hO` Shows an overview of generated HTTP routing.
+
+### `http:for`
+
+⚡`hF` Shows HTTP routing for the given path URI.
+
+## Plugin
+
+### `plugin:make`
+
+⚡`pM` Makes a plugin for the given pluggable.
+
+### `plugin:make-interactive`
+
+⚡`pMi` Makes a plugin for the given pluggable, interactive mode.
+
+### `plugin:run`
+
+⚡`pR` Runs the given plugin. 
+
+### `plugin:enable`
+
+⚡`pE` Enables the specified plugins.
+
+### `plugin:disable`
+
+⚡`pD` Disables the specified plugins.
+
+### `plugin:enable-all`
+
+⚡`pEa` Enables all plugins.
+
+### `plugin:disable-all`
+
+⚡`pDa` Disables all plugins.
+
+### `plugin:list`
+
+⚡`pL` List plugins implementing the [PluggableInterface]() at the given directory.
