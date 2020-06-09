@@ -31,6 +31,12 @@
     - [`plugin:enable-all`](#pluginenable-all)
     - [`plugin:disable-all`](#plugindisable-all)
     - [`plugin:list`](#pluginlist)
+  - [State](#state)
+    - [`state:make`](#statemake)
+    - [`state:make-interactive`](#statemake-interactive)
+    - [`state:list`](#statelist)
+    - [`state:inspect`](#stateinspect)
+    - [`state:run`](#staterun)
 
 ## Introduction
 
@@ -152,3 +158,11 @@ Some commands include interactive modes, which prompt the user in order to build
 ### `plugin:list`
 
 ⚡`pL` List plugins implementing the [PluggableInterface]() at the given directory.
+
+## State
+
+### `state:make`
+### `state:make-interactive`
+### `state:list`
+### `state:inspect`
+### `state:run`
