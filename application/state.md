@@ -17,7 +17,7 @@ The application state is made to be re-used. It allows to re-run the application
 
 Conventional PHP applications usually rely in just one state. For example, an `index.php` [entry point](https://en.wikipedia.org/wiki/Entry_point) serving under an HTTP web server. In Chevere we do the opposite, we build **many** different application states.
 
-> 👴🏾 Each different state should be optimized to **one** single task
+> 🧔🏾 Each different state should be optimized to **one** single task
 
 A Chevere application may have one state for public HTTP traffic, another state for background processing, another for logged users, etc. Each state is built around the same business, it just changes how it will be used.
 

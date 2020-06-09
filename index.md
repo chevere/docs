@@ -1,7 +1,9 @@
 - ## Introduction
     - [Chevere](introduction/chevere.md)
-    - [Core concepts](introduction/core-concepts.md)
     - [Overview](architecture/overview.md)
+- ## Application
+    - [Recommendations](application/recommendations.md)
+    - [State](application/state.md)
 - ## Architecture
     - [Conventions](architecture/conventions.md)
     - [Workspace](architecture/workspace.md)
@@ -11,6 +13,7 @@
     - [Testing](architecture/testing.md)
 - ## Components
     - [Cache](components/cache.md)
+    - [Console](components/console.md)
     - [Controllers](components/controllers.md)
     - [Filesystem](components/filesystem.md)
     - [Message](components/message.md)

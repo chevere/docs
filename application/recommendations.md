@@ -1,27 +1,22 @@
-# Development
+# Recommendations
 
-- [Development](#development)
+- [Recommendations](#recommendations)
   - [Introduction](#introduction)
-  - [Recommendations](#recommendations)
     - [🔌 Pluggable](#-pluggable)
     - [🎠 Stay in memory](#-stay-in-memory)
-    - [📥 Message Queues](#-message-queues)
+    - [📥 Message queues](#-message-queues)
     - [🤖 Headless](#-headless)
-      - [🗿 Static generator](#-static-generator)
+    - [🗿 Static generator](#-static-generator)
 
 ## Introduction
 
-This specification should be considered as a **base recommendation** on how applications **could be** developed on top of Chevere.
-
-## Recommendations
-
-The following recommendations have been crafted taking in consideration the scope of the PHP programing language and availability of software assets.
+This specification should be considered as a **base recommendation** on how applications **could be** developed on top of Chevere. The following recommendations have been crafted taking in consideration the scope of the PHP programing language and availability of software assets.
 
 > 👍🏾 As a rule of thumb, Chevere suits better this way because it was crafted for being used this way
 
 ### 🔌 Pluggable 
 
-Chevere was made for creating pluggable applications, I encourage you to _abuse_ it under that requirement. Pluggable is what defines Chevere in one sentence, don't hesitate to plug-in.
+Chevere was made for creating pluggable applications, it is encouraged to _abuse_ it under that requirement. Pluggable is what defines Chevere in one sentence, don't hesitate to plug-in.
 
 ### 🎠 Stay in memory 
 
@@ -31,7 +26,7 @@ Software like [Swoole](https://www.swoole.co.uk/), [ReactPHP](https://reactphp.o
 
 > 🚧 I owe you examples. ―_Rodolfo_
 
-### 📥 Message Queues
+### 📥 Message queues
 
 Time expensive processes should be implemented under a queueing system, which notifies back once the process is completed. 
 
@@ -45,7 +40,7 @@ Decouple the user interface by creating [headless software](https://en.wikipedia
 
 > 👍🏾 Chevere includes support for automatically generating headless REST APIs and its spec, which exposes the API interaction for consumers
 
-#### 🗿 Static generator
+### 🗿 Static generator
 
 In cases where you need to present HTML it is encouraged to generate these files rather than have PHP serving every request. There is a large collection of static generators at [StaticGen](https://www.staticgen.com/).
 
