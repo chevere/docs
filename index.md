@@ -14,7 +14,7 @@
 - ## Components
     - [Cache](components/cache.md)
     - [Console](components/console.md)
-    - [Controllers](components/controllers.md)
+    - [Controller](components/controller.md)
     - [Filesystem](components/filesystem.md)
     - [Message](components/message.md)
     - [Plugin](components/plugin.md)

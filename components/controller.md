@@ -1,6 +1,6 @@
-# Controllers
+# Controller
 
-- [Controllers](#controllers)
+- [Controller](#controller)
   - [Introduction](#introduction)
   - [Defining Controllers](#defining-controllers)
     - [Description](#description)
