@@ -65,8 +65,8 @@ declare(strict_types=1);
 namespace App;
 
 use Chevere\Interfaces\Plugin\PlugAnchorsInterface;
-use Chevere\Components\Plugs\Events\Traits\PluggableEventsTrait;
-use Chevere\Interfaces\Plugs\Hooks\PluggableHooksInterface;
+use Chevere\Components\Plugin\Plugs\Events\Traits\PluggableEventsTrait;
+use Chevere\Interfaces\Plugin\Plugs\Hooks\PluggableHooksInterface;
 
 final class DoesSomething implements PluggableEventsInterface
 {
@@ -118,8 +118,8 @@ declare(strict_types=1);
 namespace App;
 
 use Chevere\Interfaces\Plugin\PlugAnchorsInterface;
-use Chevere\Components\Plugs\Hooks\Traits\PluggableHooksTrait;
-use Chevere\Interfaces\Plugs\Hooks\PluggableHooksInterface;
+use Chevere\Components\Plugin\Plugs\Hooks\Traits\PluggableHooksTrait;
+use Chevere\Interfaces\Plugin\Plugs\Hooks\PluggableHooksInterface;
 
 final class DoesSomething implements PluggableHooksInterface
 {
@@ -187,7 +187,7 @@ namespace App;
 
 use App\DoesSomething;
 use Chevere\Components\Controller\Controller;
-use Chevere\Components\Plugs\Events\Interfaces\EventPlugInterface;
+use Chevere\Components\Plugin\Plugs\Events\Interfaces\EventPlugInterface;
 use Chevere\Components\Str\Str;
 use Chevere\Components\Str\StrBool;
 
@@ -233,7 +233,7 @@ namespace App;
 
 use App\DoesSomething;
 use Chevere\Components\Controller\Controller;
-use Chevere\Interfaces\Plugs\Hooks\HookPlugInterface;
+use Chevere\Interfaces\Plugin\Plugs\Hooks\HookPlugInterface;
 use Chevere\Components\Str\Str;
 use Chevere\Components\Str\StrBool;
 
