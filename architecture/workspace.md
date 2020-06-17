@@ -55,7 +55,7 @@ In the following two-steps, a new test will be created following the snippets wo
 
 An empty `ExampleTest.php` file must be created at `Tests/Example/ExampleTest.php`. The tree should look like as below.
 
-```bash
+```shell
 Tests
 └── Example
     └── ExampleTest.php
@@ -108,7 +108,7 @@ The VSCode extension [php cs fixer](https://marketplace.visualstudio.com/items?i
 
 ### Running tests
 
-```bash
+```shell
 vendor/bin/phpunit -c <configuration file>
 ```
 

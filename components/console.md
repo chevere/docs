@@ -48,7 +48,7 @@ The console is located located at `vendor/bin/chevere` and is made on top of [ph
 
 All commands contains a description and use cases. Try running the command below to get more information of each available command.
 
-```bash
+```shell
 vendor/bin/chevere <command> --help
 ```
 

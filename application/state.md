@@ -34,7 +34,7 @@ The following conventions applies:
 
 The example belows shows hows `./states` tree looks like. Both `web` and `api` are application states.
 
-```bash
+```shell
 ./states
 ├── web
 │   ├── cache/

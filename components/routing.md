@@ -27,7 +27,7 @@ Routing works with routes defined in the file system. It makes routing by taking
 Tree below shows how a routing spec directory looks like. Routes are defined in a folder-based structure.
 
 
-```bash
+```shell
 /var/routes
 ├── articles <- route /articles
 │   ├── {id} <- route /articles/{id}
