@@ -37,7 +37,7 @@ declare(strict_types=1);
 use Chevere\Components\VarDump\Formatters\ConsoleFormatter;
 use Chevere\Components\VarDump\Outputters\ConsoleOutputter;
 use Chevere\Components\VarDump\VarDump;
-use Chevere\Components\Writers\StreamWriterFromString;
+use Chevere\Components\Writer\StreamWriterFromString;
 use function Chevere\Components\VarDump\getVarDumpConsole;
 
 $varDump = new VarDump(
@@ -61,7 +61,7 @@ $varDump = $varDump->withVars('a var', [], null);
 The method `process` is used to trigger the var dumping process. It requires to pass a [writer](./writer.md) where the dump information will be written.
 
 ```php
-use use Chevere\Components\Writers\StreamWriterFromString;
+use use Chevere\Components\Writer\StreamWriterFromString;
 
 $writer = new StreamWriterFromString('php://stdout', 'w');
 $varDump->process($writer);
