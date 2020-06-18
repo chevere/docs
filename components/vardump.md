@@ -3,7 +3,7 @@
 - [VarDump](#vardump)
   - [Introduction](#introduction)
   - [Learn by Examples](#learn-by-examples)
-  - [Using VarDump](#using-vardump)
+  - [Usage](#usage)
     - [Initialization](#initialization)
     - [Passing variables](#passing-variables)
     - [Processing the dump](#processing-the-dump)
@@ -21,11 +21,11 @@ It is an alternative to [var_dump](https://www.php.net/manual/en/function.var-du
 
 > 🧔🏾 Check the VarDump [examples](https://github.com/chevere/examples/tree/master/02.VarDump).
 
-## Using VarDump
+## Usage
 
 ### Initialization
 
-A VarDump requires a [formatter]() implementing [FormatterInterface]() and a [outputter]() implementing [OutputterInterface]().
+It requires a [formatter]() implementing [FormatterInterface]() and a [outputter]() implementing [OutputterInterface]().
 
 In the example below, a VarDump is created with console colored formatting and output.
 
