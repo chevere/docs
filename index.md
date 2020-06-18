@@ -20,3 +20,4 @@
     - [Plugin](components/plugin.md)
     - [Routing](components/routing.md)
     - [Str](components/str.md)
+    - [VarDump](components/vardump.md)
