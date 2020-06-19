@@ -8,7 +8,7 @@
     - [Passing debug flag](#passing-debug-flag)
     - [Document](#document)
 
-## Introduction
+
 
 The ThrowableHandler component is in charge of parsing thrown [throwable](https://www.php.net/manual/en/class.throwable.php). A ThrowableHandler is a class implementing [ThrowableHandlerInterface](Chevere\Interfaces\ThrowableHandler\ThrowableHandlerInterface).
 

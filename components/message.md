@@ -10,7 +10,7 @@
       - [To HTML](#to-html)
       - [To string](#to-string)
 
-## Introduction
+
 
 The Message class is in charge of providing a common message standard for system messages. A Message is a class implementing [MessageInterface](Chevere\Interfaces\Message\MessageInterface).
 

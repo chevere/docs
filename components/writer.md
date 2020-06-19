@@ -6,7 +6,7 @@
   - [Concrete writers](#concrete-writers)
     - [StreamWriter](#streamwriter)
 
-## Introduction
+
 
 A writer is in charge of writing strings to some context and to retrieve the contents written. A writer is a class implementing [WriterInterface]().
 

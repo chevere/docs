@@ -18,7 +18,7 @@
   - [Running a Controller](#running-a-controller)
   - [Implementing Hooks](#implementing-hooks)
   
-## Introduction
+
 
 Controllers are the basic building block for incoming actions to your application. They are in charge of handling the user input arguments and to drive it towards your application instructions.
 

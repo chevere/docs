@@ -12,7 +12,7 @@
     - [Console](#console)
     - [Programmatically](#programmatically)
 
-## Introduction
+
 
 The Routing class is in charge of automatically generating HTTP routing. A Routing is a class implementing [RoutingInterface](Chevere\Interfaces\Routing\RoutingInterface).
 

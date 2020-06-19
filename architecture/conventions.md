@@ -14,7 +14,7 @@
   - [Data Structures](#data-structures)
   - [Components](#components)
 
-## Introduction
+
 
 Conventions exists as good practice for keeping the source cohesive as possible. That way, Chevere removes lots of "ifs" by sticking to its own standards.
 

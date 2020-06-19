@@ -1,14 +1,11 @@
 # Recommendations
 
 - [Recommendations](#recommendations)
-  - [Introduction](#introduction)
     - [🔌 Pluggable](#-pluggable)
     - [🎠 Stay in memory](#-stay-in-memory)
     - [📥 Message queues](#-message-queues)
     - [🤖 Headless](#-headless)
     - [🗿 Static generator](#-static-generator)
-
-## Introduction
 
 This specification should be considered as a **base recommendation** on how applications **could be** developed on top of Chevere. The following recommendations have been crafted taking in consideration the scope of the PHP programing language and availability of software assets.
 

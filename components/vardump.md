@@ -11,7 +11,7 @@
     - [Helper functions](#helper-functions)
   - [Replacing var_dump](#replacing-var_dump)
 
-## Introduction
+
 
 The VarDump component is in charge of providing the ability to dump any variable. A VarDump is a class implementing [VarDumpInterface](Chevere\Interfaces\VarDump\VarDumpInterface).
 

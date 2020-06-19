@@ -10,7 +10,7 @@
     - [Cache: GET](#cache-get)
     - [Cache: REMOVE](#cache-remove)
 
-## Introduction
+
 
 Cache refers to a system in charge of storing application states. It provides the ability to store _parts_ of the application, making easier to create performing running routines.
 

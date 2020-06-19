@@ -38,7 +38,7 @@
       - [Var contents](#var-contents)
     - [Putting contents](#putting-contents)
 
-## Introduction
+
 
 Filesystem is a collection of classes that interact with the filesystem. Namespace `Chevere\Components\Filesystem` holds all the Filesystem classes, offering a myriad of filesystem related functionalities.
 

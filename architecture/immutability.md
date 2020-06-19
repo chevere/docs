@@ -12,7 +12,7 @@
     - [Deep copy](#deep-copy)
       - [Passing and accessing objects](#passing-and-accessing-objects)
 
-## Introduction
+
 
 Immutability is the concept of that an object, once constructed, cannot be modified throughout the lifetime of the object. In other words, an immutable object can't change.
 

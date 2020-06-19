@@ -14,7 +14,7 @@
     - [Configuration](#configuration)
     - [Running tests](#running-tests)
 
-## Introduction
+
 
 The workspace refers to the working directory where Chevere is developed. 
 

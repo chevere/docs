@@ -38,7 +38,7 @@
     - [`state:inspect`](#stateinspect)
     - [`state:run`](#staterun)
 
-## Introduction
+
 
 The Chevere console application is designed to ease the application development process of chevere-based applications.
 

@@ -14,7 +14,7 @@
     - [Event Plug](#event-plug)
     - [Hook Plug](#hook-plug)
 
-## Introduction
+
 
 The Plugin component consists in a set of tools providing pluggable logic, allowing applications to be extended, by any vendor or source.
 
