@@ -1,17 +1,5 @@
 # Cache
 
-- [Cache](#cache)
-  - [Introduction](#introduction)
-    - [How it works](#how-it-works)
-  - [Working with Cache](#working-with-cache)
-    - [Creating the Cache instance](#creating-the-cache-instance)
-    - [Cache: PUT](#cache-put)
-    - [Cache: EXISTS](#cache-exists)
-    - [Cache: GET](#cache-get)
-    - [Cache: REMOVE](#cache-remove)
-
-
-
 Cache refers to a system in charge of storing application states. It provides the ability to store _parts_ of the application, making easier to create performing running routines.
 
 ### How it works

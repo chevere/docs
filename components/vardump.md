@@ -1,18 +1,5 @@
 # VarDump
 
-- [VarDump](#vardump)
-  - [Introduction](#introduction)
-  - [Learn by Examples](#learn-by-examples)
-  - [Usage](#usage)
-    - [Initialization](#initialization)
-    - [Passing variables](#passing-variables)
-    - [Processing the dump](#processing-the-dump)
-    - [Shifting traces](#shifting-traces)
-    - [Helper functions](#helper-functions)
-  - [Replacing var_dump](#replacing-var_dump)
-
-
-
 The VarDump component is in charge of providing the ability to dump any variable. A VarDump is a class implementing [VarDumpInterface](Chevere\Interfaces\VarDump\VarDumpInterface).
 
 It is an alternative to [var_dump](https://www.php.net/manual/en/function.var-dump.php), but with a richer feature set including formatting for the generation of different type of documents.

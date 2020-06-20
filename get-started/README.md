@@ -1,14 +1,4 @@
-# Chevere
-
-- [Chevere](#chevere)
-  - [What is Chevere?](#what-is-chevere)
-    - [Name meaning](#name-meaning)
-  - [Core concepts](#core-concepts)
-    - [Extensibility](#extensibility)
-    - [Clean Code](#clean-code)
-    - [Strongly Typed](#strongly-typed)
-    - [Console First](#console-first)
-  - [Origin](#origin)
+# Introduction
 
 ## What is Chevere?
 
@@ -37,7 +27,7 @@ Chevere follows the Clean Code principles, which can be resumed as the practice 
 
 Chevere uses strict strong-types for safe run-time operations. It relies mostly on the language to avoid boilerplate code needed to validate dynamic types. This also helps to better understand the code as everything is typed.
 
-> 😘 IDEs and code tools love typed code
+> 💎 IDEs and code tools love typed code
 
 ### Console First
 

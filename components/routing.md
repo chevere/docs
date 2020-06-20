@@ -1,19 +1,5 @@
 # Routing
 
-- [Routing](#routing)
-  - [Introduction](#introduction)
-  - [How it works](#how-it-works)
-    - [Tree](#tree)
-    - [Paths](#paths)
-    - [Route names](#route-names)
-    - [HTTP Endpoints](#http-endpoints)
-      - [Wildcards from Controller parameters](#wildcards-from-controller-parameters)
-  - [Generating Routing](#generating-routing)
-    - [Console](#console)
-    - [Programmatically](#programmatically)
-
-
-
 The Routing class is in charge of automatically generating HTTP routing. A Routing is a class implementing [RoutingInterface](Chevere\Interfaces\Routing\RoutingInterface).
 
 Generated HTTP routing will be cached, and used to resolve HTTP requests to application instructions and to generate the [Spec](OmgWhatSTHESPEC?).

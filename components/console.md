@@ -1,45 +1,5 @@
 # Console
 
-- [Console](#console)
-  - [Introduction](#introduction)
-    - [Command Help](#command-help)
-    - [Interactive Modes](#interactive-modes)
-  - [Controller](#controller)
-    - [`controller:make`](#controllermake)
-    - [`controller:make-interactive`](#controllermake-interactive)
-    - [`controller:list`](#controllerlist)
-    - [`controller:inspect`](#controllerinspect)
-    - [`controller:run`](#controllerrun)
-  - [Route](#route)
-    - [`route:make`](#routemake)
-    - [`route:enable`](#routeenable)
-    - [`route:disable`](#routedisable)
-    - [`route:enable-all`](#routeenable-all)
-    - [`route:disable-all`](#routedisable-all)
-    - [`route:status`](#routestatus)
-    - [`route:list`](#routelist)
-  - [HTTP](#http)
-    - [`http:make`](#httpmake)
-    - [`http:view`](#httpview)
-    - [`http:for`](#httpfor)
-  - [Plugin](#plugin)
-    - [`plugin:make`](#pluginmake)
-    - [`plugin:make-interactive`](#pluginmake-interactive)
-    - [`plugin:run`](#pluginrun)
-    - [`plugin:enable`](#pluginenable)
-    - [`plugin:disable`](#plugindisable)
-    - [`plugin:enable-all`](#pluginenable-all)
-    - [`plugin:disable-all`](#plugindisable-all)
-    - [`plugin:list`](#pluginlist)
-  - [State](#state)
-    - [`state:make`](#statemake)
-    - [`state:make-interactive`](#statemake-interactive)
-    - [`state:list`](#statelist)
-    - [`state:inspect`](#stateinspect)
-    - [`state:run`](#staterun)
-
-
-
 The Chevere console application is designed to ease the application development process of chevere-based applications.
 
 The console is located located at `vendor/bin/chevere` and is made on top of [php-cli](https://github.com/adhocore/php-cli).

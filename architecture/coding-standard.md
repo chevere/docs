@@ -1,22 +1,6 @@
-# Conventions
+# Coding Standard
 
-- [Conventions](#conventions)
-  - [Introduction](#introduction)
-  - [Casing](#casing)
-  - [Code Style](#code-style)
-    - [Use imports](#use-imports)
-  - [Typing](#typing)
-    - [Strict Types](#strict-types)
-    - [Type Hinting](#type-hinting)
-  - [Comments](#comments)
-    - [DocBlocks](#docblocks)
-    - [Logic](#logic)
-  - [Data Structures](#data-structures)
-  - [Components](#components)
-
-
-
-Conventions exists as good practice for keeping the source cohesive as possible. That way, Chevere removes lots of "ifs" by sticking to its own standards.
+The coding standard exists as good practice for keeping the source cohesive as possible. That way, Chevere removes lots of "ifs" by sticking to its own set of rules.
 
 ## Casing
 
@@ -28,11 +12,11 @@ In Chevere, we keep it simple:
 
 ## Code Style
 
-Code style is defined at `.php_cs.dist`
+Code style is defined at [`.php_cs.dist`]()
 
 > 😘 You can use it to let your IDE automatically format on save
 
-### Use imports
+### Use Imports
 
 The `use` keyword at the top of the document **must** be used to import all the dependencies. Fully-qualified imports should be avoided in favor of imports and aliases.
 
@@ -77,23 +61,3 @@ Comments in logic are **discouraged** and it should be used only in the followin
 * `@codeCoverage` tags
 * Type hinting (for example, in a loop)
 * Warn about a critical situation
-
-## Data Structures
-
-[Data Structures](https://www.php.net/manual/en/book.ds.phps) **should** be preferred instead of `array`.
-
-## Components
-
-All components must follow the [Interfaces](./interfaces.md), [Exceptions](./exceptions.md) and [Tests](./tests.md) spec. On top of that, components have the following conventions.
-
-Components **must**:
-
-* Have one single responsibility
-* Name properties as nouns
-* Declare private/protected properties only
-
-Components **should**:
-
-* Prefer composition over inherence
-* Prefer to implement immutability
-* Provide exceptions in the same namespaceS

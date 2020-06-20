@@ -1,13 +1,5 @@
 # Writer
 
-- [Writer](#writer)
-  - [Introduction](#introduction)
-  - [Writers service container](#writers-service-container)
-  - [Concrete writers](#concrete-writers)
-    - [StreamWriter](#streamwriter)
-
-
-
 A writer is in charge of writing strings to some context and to retrieve the contents written. A writer is a class implementing [WriterInterface]().
 
 ## Writers service container

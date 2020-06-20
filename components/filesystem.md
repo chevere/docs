@@ -1,45 +1,5 @@
 # Filesystem
 
-- [Filesystem](#filesystem)
-  - [Introduction](#introduction)
-  - [Path](#path)
-    - [Checking a Path](#checking-a-path)
-      - [Path Exists](#path-exists)
-      - [Path is Writable](#path-is-writable)
-      - [Path is Readable](#path-is-readable)
-      - [Path is a Directory](#path-is-a-directory)
-      - [Path is a File](#path-is-a-file)
-    - [Altering a Path](#altering-a-path)
-      - [CHMOD](#chmod)
-    - [Getting Child Path](#getting-child-path)
-  - [Dir](#dir)
-    - [Creating a Directory](#creating-a-directory)
-    - [Checking a Directory](#checking-a-directory)
-      - [Directory Exists](#directory-exists)
-      - [Assert Directory Exists](#assert-directory-exists)
-    - [Removing a Directory](#removing-a-directory)
-    - [Getting Child Dir](#getting-child-dir)
-  - [File](#file)
-    - [Creating a File](#creating-a-file)
-    - [Putting Contents to a File](#putting-contents-to-a-file)
-    - [Checking a File](#checking-a-file)
-      - [File Exists](#file-exists)
-      - [Assert File Exists](#assert-file-exists)
-      - [File is PHP](#file-is-php)
-    - [Reading a File](#reading-a-file)
-      - [File Contents](#file-contents)
-      - [File Checksum](#file-checksum)
-    - [Removing a File](#removing-a-file)
-  - [File PHP](#file-php)
-    - [Caching](#caching)
-  - [File PHP Return](#file-php-return)
-    - [Reading File PHP](#reading-file-php)
-      - [Raw contents](#raw-contents)
-      - [Var contents](#var-contents)
-    - [Putting contents](#putting-contents)
-
-
-
 Filesystem is a collection of classes that interact with the filesystem. Namespace `Chevere\Components\Filesystem` holds all the Filesystem classes, offering a myriad of filesystem related functionalities.
 
 ## Path

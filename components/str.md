@@ -1,16 +1,5 @@
 # Str
 
-- [Str](#str)
-  - [Introduction](#introduction)
-  - [String Manipulation](#string-manipulation)
-    - [Str](#str-1)
-  - [String Asserting](#string-asserting)
-    - [StrAssert](#strassert)
-  - [String Bool](#string-bool)
-    - [StrBool](#strbool)
-
-
-
 Str is a collection of classes that interact with strings. Namespace `Chevere\Components\Str` holds all the Str classes, offering a myriad of string related functionalities.
 
 ## String Manipulation

@@ -1,21 +1,5 @@
 # Plugin
 
-- [Plugin](#plugin)
-  - [Introduction](#introduction)
-  - [Defining Pluggables](#defining-pluggables)
-    - [Example not-pluggable](#example-not-pluggable)
-    - [Pluggable Events](#pluggable-events)
-      - [Defining pluggable event anchors](#defining-pluggable-event-anchors)
-      - [Using pluggable event anchors](#using-pluggable-event-anchors)
-    - [Pluggable Hooks](#pluggable-hooks)
-      - [Defining pluggable hook anchors](#defining-pluggable-hook-anchors)
-      - [Using pluggable hook anchors](#using-pluggable-hook-anchors)
-  - [Defining Plugs](#defining-plugs)
-    - [Event Plug](#event-plug)
-    - [Hook Plug](#hook-plug)
-
-
-
 The Plugin component consists in a set of tools providing pluggable logic, allowing applications to be extended, by any vendor or source.
 
 The system works with classes that define pluggable anchors and registered plugs that *plug-in* these classes.

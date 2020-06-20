@@ -1,19 +1,5 @@
 # Immutability
 
-- [Immutability](#immutability)
-  - [Introduction](#introduction)
-    - [Mutables vs Immutables](#mutables-vs-immutables)
-  - [State](#state)
-  - [Language considerations](#language-considerations)
-  - [Conventions](#conventions)
-    - [Method naming](#method-naming)
-  - [Implementing](#implementing)
-    - [Cloning](#cloning)
-    - [Deep copy](#deep-copy)
-      - [Passing and accessing objects](#passing-and-accessing-objects)
-
-
-
 Immutability is the concept of that an object, once constructed, cannot be modified throughout the lifetime of the object. In other words, an immutable object can't change.
 
 ### Mutables vs Immutables

@@ -1,15 +1,5 @@
 # ThrowableHandler
 
-- [ThrowableHandler](#throwablehandler)
-  - [Introduction](#introduction)
-  - [Learn by Examples](#learn-by-examples)
-  - [Usage](#usage)
-    - [Initialization](#initialization)
-    - [Passing debug flag](#passing-debug-flag)
-    - [Document](#document)
-
-
-
 The ThrowableHandler component is in charge of parsing thrown [throwable](https://www.php.net/manual/en/class.throwable.php). A ThrowableHandler is a class implementing [ThrowableHandlerInterface](Chevere\Interfaces\ThrowableHandler\ThrowableHandlerInterface).
 
 It is another exception handling replacement, but with a richer feature set including formatting for the generation of different type of documents.

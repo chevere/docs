@@ -1,25 +1,5 @@
 # Controller
 
-- [Controller](#controller)
-  - [Introduction](#introduction)
-  - [Defining Controllers](#defining-controllers)
-    - [Description](#description)
-    - [Parameters](#parameters)
-    - [setUp & tearDown](#setup--teardown)
-    - [Run](#run)
-      - [Arguments passed](#arguments-passed)
-      - [Response](#response)
-  - [Parameters](#parameters-1)
-    - [Controller Parameter](#controller-parameter)
-      - [Parameter optional](#parameter-optional)
-      - [Parameter description](#parameter-description)
-  - [Arguments](#arguments)
-  - [Example Controller](#example-controller)
-  - [Running a Controller](#running-a-controller)
-  - [Implementing Hooks](#implementing-hooks)
-  
-
-
 Controllers are the basic building block for incoming actions to your application. They are in charge of handling the user input arguments and to drive it towards your application instructions.
 
 ## Defining Controllers

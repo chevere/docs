@@ -1,22 +1,10 @@
 # Message
 
-- [Message](#message)
-  - [Introduction](#introduction)
-    - [Creating the Message](#creating-the-message)
-    - [Replacing Sub-strings](#replacing-sub-strings)
-    - [Formatting the Message](#formatting-the-message)
-    - [Outputting the Message](#outputting-the-message)
-      - [To Console](#to-console)
-      - [To HTML](#to-html)
-      - [To string](#to-string)
-
-
-
 The Message class is in charge of providing a common message standard for system messages. A Message is a class implementing [MessageInterface](Chevere\Interfaces\Message\MessageInterface).
 
 Message provide rich formatting support and output for console, HTML and plain text.
 
-### Creating the Message
+## Creating the Message
 
 A Message is created by passing a message template. In the code below a Message is created with `Hello, %to%!`.
 
@@ -28,7 +16,7 @@ use Chevere\Components\Message\Message;
 $message = new Message('Hello, %to%!');
 ```
 
-### Replacing Sub-strings
+## Replacing Sub-strings
 
 The `replace` method allows to replace a sub-string, without formatting.
 
@@ -37,7 +25,7 @@ $message = $message
     ->replace('%to%', 'Rodolfo'); // Hello, Rodolfo!
 ```
 
-### Formatting the Message
+## Formatting the Message
 
 A Message can be formatted using `emphasis`, `strong`, `underline` and `code`. These methods take a `$search` needle and replace it with `$replace`, applying the desired formatting. 
 
@@ -49,9 +37,9 @@ $message = (new Message('$0 $1 "%say" [**output**]'))
     ->code('**output**', 'WhatChuchaHappen');
 ```
 
-### Outputting the Message
+## Outputting the Message
 
-#### To Console
+### To Console
 
 The `toConsole` method returns a console highlighted string.
 
@@ -62,7 +50,7 @@ $message->toConsole();
 > 
 > <em>ERROR</em> <strong>/where-it-happened.php</strong> <u>"Por la cresta!"</u> <code>[WhatChuchaHappen]</code>
 
-#### To HTML
+### To HTML
 
 The `toHtml` method returns a HTML highlighted string.
 
@@ -74,7 +62,7 @@ $message->toHtml();
 <em>ERROR</em> <strong>/where-it-happened.php</strong> <u>"Por la cresta!"</u> <code>[WhatChuchaHappen]</code>
 ```
 
-#### To string
+### To string
 
 The `toString` method returns a plain string, no formatting.
 

@@ -1,13 +1,5 @@
 # State
 
-- [State](#state)
-  - [States in Chevere](#states-in-chevere)
-  - [Working with States](#working-with-states)
-    - [Conventions](#conventions)
-    - [Console](#console)
-
-
-
 An [application state](https://en.wikipedia.org/wiki/State_(computer_science)) refers to an application with all the config, variables, objects and so forth previously stored. On runtime, the system loads an already made application state and performs tasks under this context.
 
 The application state is made to be re-used. It allows to re-run the application without the expensive bootstrapping required to build the state from scratch.

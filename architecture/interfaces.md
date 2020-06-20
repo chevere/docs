@@ -1,20 +1,5 @@
 # Interfaces
 
-- [Interfaces](#interfaces)
-  - [Introduction](#introduction)
-  - [Design decisions](#design-decisions)
-    - [Typing](#typing)
-    - [Documenting](#documenting)
-  - [Conventions](#conventions)
-    - [Method naming](#method-naming)
-      - [Accessors](#accessors)
-      - [Actions](#actions)
-      - [Immutables](#immutables)
-      - [Conditionals](#conditionals)
-  - [Implementing interfaces](#implementing-interfaces)
-
-
-
 Interfaces describe the public methods implemented by a given class. In Chevere, all components *must* define their own interfaces.
 
 > 👍🏾 Chevere interfaces are located at [Chevere\Interfaces](https://github.com/chevere/chevere/tree/master/Interfaces) namespace

@@ -1,15 +1,5 @@
 # Exceptions
 
-- [Exceptions](#exceptions)
-  - [Introduction](#introduction)
-  - [Design decisions](#design-decisions)
-    - [Uniqueness](#uniqueness)
-    - [Descriptive](#descriptive)
-  - [Conventions](#conventions)
-  - [Throwing exceptions](#throwing-exceptions)
-
-
-
 Exceptions are events that happens on runtime, that disrupts the execution of the software. Chevere extends all [SPL exceptions](https://www.php.net/manual/en/spl.exceptions.php) with support for [Message](./../components/message.md).
 
 > 👍🏾 Chevere exceptions are located at [Chevere\Exceptions](https://github.com/chevere/chevere/tree/master/Exceptions) namespace
