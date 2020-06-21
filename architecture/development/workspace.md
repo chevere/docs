@@ -54,7 +54,7 @@ The screen below shows triggering `test` right after typing it, then the `test-m
 
 Class name and namespace path is automatically resolved by the IDE.
 
-![Snippets in action](./../src/screen/snippets-in-action.gif "Snippets in action")
+![Snippets in action](./../../src/screen/snippets-in-action.gif "Snippets in action")
 
 > 🧙🏾 Header comment and `strict_types` declaration are automatically formatted on save
 
