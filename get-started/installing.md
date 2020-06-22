@@ -1,5 +1,0 @@
-# Installing
-
-```shell
-composer install
-```

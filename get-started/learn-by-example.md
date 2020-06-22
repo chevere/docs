@@ -18,7 +18,7 @@ git clone git@github.com:chevere/examples.git
 
 Will clone it to `examples/`
 
-2. Build the repository dependencies (requires [composer](https://getcomposer.org/)).
+2. Build the repository dependencies (requires [Composer](https://getcomposer.org/)).
 
 ```shell
 composer install
