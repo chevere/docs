@@ -44,6 +44,12 @@ To run the ubiquitous "Hello, World":
 php 00.HelloWorld/00.controller.php 
 ```
 
+## Recommendations
+
+* Use an IDE for code and reference highlighting
+* Check [Chevere\Interfaces](https://github.com/chevere/chevere/tree/master/interfaces) namespace
+* Check [Chevere\Tests](https://github.com/chevere/chevere/tree/master/tests) namespace which contains unit [testing](../architecture/spec/testing.md) on everything
+
 ## Contributing
 
 The examples repo is a playground, everything concerning potential uses is welcome.
