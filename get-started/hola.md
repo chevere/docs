@@ -1,5 +1,0 @@
-# Hola
-
-ykepasa.
-
-nada.
