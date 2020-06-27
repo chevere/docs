@@ -1,6 +1,6 @@
 # Introduction
 
-## 🤔 What is Chevere?
+## What is Chevere?
 
 Chevere is a development framework for building **extensible** server side applications. Unlike almost all other PHP frameworks, Chevere is designed for *everything*, not just web. The core library provides the tooling needed to organize and run the logic of any given application like Content Management Systems, headless-APIs and more.
 
