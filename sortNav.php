@@ -1,1 +1,1 @@
-<?php return ['/get-started/', '/architecture/', '/components/'];
+<?php return ['/get-started/', '/architecture/', '/components/', '/dummy/'];
