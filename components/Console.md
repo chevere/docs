@@ -31,7 +31,7 @@ Some commands include interactive modes, which prompt the user in order to build
 
 ### `controller:list`
 
-⚡`cL` List controllers implementing the [ControllerInterface]().
+⚡`cL` List controllers implementing the `Chevere\Interfaces\Controller\ControllerInterface`
 
 ### `controller:inspect`
 
@@ -117,7 +117,7 @@ Some commands include interactive modes, which prompt the user in order to build
 
 ### `plugin:list`
 
-⚡`pL` List plugins implementing the [PluggableInterface]() at the given directory.
+⚡`pL` List plugins implementing the `Chevere\Interfaces\Pluggable\PlugInterface` at the given directory.
 
 ## State
 

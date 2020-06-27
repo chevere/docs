@@ -1,13 +1,12 @@
 # Writer
 
-A writer is in charge of writing strings to some context and to retrieve the contents written. A writer is a class implementing [WriterInterface]().
+A Writer is in charge of writing strings to some context and to retrieve the contents written. A Writer is a class implementing `Chevere\Interfaces\Writer\WriterInterface`.
 
-## Writers service container
+## Writers Container
 
-Writers is a service container providing access to `out`, `error`, `debug` and `log` writers. Writers implements the [WritersInterface]().
+The class `Chevere\Componets\Writer\Writers` is a service container providing access to `out`, `error`, `debug` and `log` writers.
 
 > 🧔🏾 Writers are intended to be used for providing multi-channel output
-
 
 ```php
 use Chevere\Components\Writer\Writers;

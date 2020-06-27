@@ -23,8 +23,6 @@ As cache file-system based, it is both portable and performing thanks to [OPCach
 
 ## Working with Cache
 
-Working with cache is made with a [Cache](Chevere\Components\Cache\Interfaces\Cache) class implementing the [CacheInterface](Chevere\Components\Cache\Interfaces\CacheInterface).
-
 > 🚧 The system supports all variable types except type `resource`.
 
 ### Creating the Cache instance

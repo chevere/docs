@@ -4,7 +4,7 @@ Filesystem is a collection of classes that interact with the filesystem. Namespa
 
 ## Path
 
-A Path is a class implementing [PathInterface](Chevere\Interfaces\Filesystem\PathInterface). A Path is in charge of interact with filesystem paths.
+The `Chevere\Components\Filesystem\Path` class is in charge of interact with filesystem paths.
 
 ```php
 use Chevere\Components\Filesystem\Path;
@@ -75,7 +75,7 @@ $childPathFile  = $path->getChild('child-2/some-file.php'); // /home/var/child-2
 
 ## Dir
 
-A Dir is a class implementing [DirInterface](Chevere\Interfaces\Filesystem\DirInterface). A Dir is in charge of interact with filesystem directories.
+The `Chevere\Components\Filesystem\Dir` class in charge of interact with filesystem directories.
 
 ```php
 use Chevere\Components\Filesystem\Dir;
@@ -137,7 +137,7 @@ $childDir  = $dir->getChild('child/'); // /home/var/child/
 
 ## File
 
-A File is a class implementing [FileInterface](Chevere\Interfaces\Filesystem\FileInterface). A File is in charge of interact with filesystem files.
+The `Chevere\Components\Filesystem\File` class is in charge of interact with filesystem files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -225,7 +225,7 @@ $file->remove(); // file is gone
 
 ## File PHP
 
-A File PHP is a class implementing [FilePhpInterface](Chevere\Interfaces\Filesystem\FilePhpInterface). A File PHP is in charge of interact with PHP files.
+The `Chevere\Components\Filesystem\FilePhp` is in charge of interact with PHP files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -251,7 +251,7 @@ $filePhp->flush(); // OPCache cache is gone
 
 ## File PHP Return
 
-A File PHP Return is a class implementing [FilePhpReturnInterface](Chevere\Interfaces\Filesystem\FilePhpReturnInterface). A File PHP Return is in charge of interact with the return value of PHP files.
+The `Chevere\Components\Filesystem\FilePhpReturn` is in charge of interact with the return value of PHP files.
 
 ```php
 use Chevere\Components\Filesystem\File;

@@ -4,8 +4,6 @@ Controllers are the basic building block for incoming actions to your applicatio
 
 ## Defining Controllers
 
-A Controller is a class implementing the [ControllerInterface](Chevere\Interfaces\Controller\ControllerInterface). For convenience, a [base controller]() class is included with Chevere.
-
 ```php
 <?php
 
@@ -92,15 +90,15 @@ public function run(ControllerArgumentsInterface $args): ControllerResponseInter
 
 #### Arguments passed 
 
-The argument passed to `run` method (`$args`) implements the [ControllerArgumentsInterface](Chevere\Interfaces\Controller\ControllerArgumentsInterface) and it will always reflect the parameters declaration.
+The argument passed to `run` method (`$args`) implements `Chevere\Interfaces\Controller\ControllerArgumentsInterface` and it will always reflect the parameters declaration.
 
 #### Response
 
-Response of `run` method is an object implementing the [ControllerResponseInterface](Chevere\Interfaces\Controller\ControllerResponseInterface), which can be success or fail and optionally append an `array` of data by using the `withData` method.
+Response of `run` method is an object implementing `Chevere\Interfaces\Controller\ControllerResponseInterface`, which can be success or fail and optionally append an `array` of data by using the `withData` method.
 
 ## Parameters
 
-The [ControllerParameters](Chevere\Components\Controller\ControllerParameters) class is used to create the controller parameters collection. It is a simple data structure that implements the [ControllerParametersInterface](Chevere\Interfaces\Controller\ControllerParametersInterface).
+The `Chevere\Components\Controller\ControllerParameters` class is a simple data structure used to create the controller parameters collection. 
 
 ```php
 $parameters = (new ControllerParameters)
@@ -109,7 +107,7 @@ $parameters = (new ControllerParameters)
 
 ### Controller Parameter
 
-The [ControllerParameter](Chevere\Components\Controller\ControllerParameter) class is used to create a controller parameter by passing the parameter name and its regex. It implements the [ControllerParameterInterface](Chevere\Interfaces\Controller\ControllerParameterInterface).
+The `Chevere\Components\Controller\ControllerParameter` class is used to create a controller parameter by passing the parameter name and its regex.
 
 ```php
 $regex = new Regex('/^[0-9]+$/');
@@ -136,7 +134,7 @@ $parameter = $parameter
 
 ## Arguments
 
-The [ControllerArguments](Chevere\Components\Controller\ControllerArguments) class is used to interact with the controller passed arguments. It implements the [ControllerArgumentsInterface](Chevere\Interfaces\Controller\ControllerArgumentsInterface).
+The `Chevere\Components\Controller\ControllerArguments` class is used to interact with the controller passed arguments.
 
 Arguments will be passed in the `run` method which will be executed only if the parameters provided meets the requirements.
 
@@ -200,7 +198,7 @@ If the passed arguments are  `name=rodolfo` and `alias=Don*Chevere` it will retu
 
 ## Running a Controller
 
-The [ControllerRunner](Chevere\Components\Controller\ControllerRunner) class is in charge of executing the controller instructions. It can be used to run any controller in the system. It implements the [ControllerRunnerInterface](Chevere\Interfaces\Controller\ControllerRunnerInterface).
+The `Chevere\Components\Controller\ControllerRunner` class is in charge of executing the controller instructions. It can be used to run any controller in the system.
 
 ```php
 $controller = new HelloYouController;
@@ -220,13 +218,10 @@ echo $ran->hasThrowable()
 exit $ran->code();
 ```
 
-The controller runner `ran` method returns an object implementing the [ControllerRanInterface]((Chevere\Interfaces\Controller\ControllerRunner)). This object will contain the response and data for the controller `run` for the passed `$args`.
-
-Controllers can be also _wired_ to several different types of actors, and Chevere includes wiring for its [Routing](), [Console]() and [Worker]().
+The controller runner `ran` method returns an object implementing `Chevere\Interfaces\Controller\ControllerRanInterface`. This object will contain the response and data for the controller `run` for the passed `$args`.
 
 > 👍🏾 It is a good practice to create different controllers for each actor you may need. Don't do magic all-in-one controllers aiming to be used by different actors. Don't fall into the laziness.
 
+## Implementing Plugins
 
-## Implementing Hooks
-
-Controllers may be extended using [Hooks](), which can be used to alter the controller parameters and its response.
+TODO.

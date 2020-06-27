@@ -31,4 +31,4 @@ Once installed Chevere will be available project-wide. Just make sure to load `v
 require 'vendor/autoload.php';
 ```
 
-From now you can head to [Learn by Example](./learn-by-example.md) and start with [Controller](./../components/Controller.md) and [Plugin](./../components/Plugin.md) components.
+From now you can head to [Learn by Example](./learn-by-example.md) and start learning the [Controller](./../components/Controller.md) component.

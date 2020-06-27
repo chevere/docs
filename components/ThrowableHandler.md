@@ -1,6 +1,6 @@
 # ThrowableHandler
 
-The ThrowableHandler component is in charge of parsing thrown [throwable](https://www.php.net/manual/en/class.throwable.php). A ThrowableHandler is a class implementing [ThrowableHandlerInterface](Chevere\Interfaces\ThrowableHandler\ThrowableHandlerInterface).
+The `Chevere\Components\ThrowableHandler\ThrowableHandler` class is in charge of parsing thrown [throwable](https://www.php.net/manual/en/class.throwable.php).
 
 It is another exception handling replacement, but with a richer feature set including formatting for the generation of different type of documents.
 
@@ -12,7 +12,7 @@ It is another exception handling replacement, but with a richer feature set incl
 
 ### Initialization
 
-In the example below, a [`ThrowableHandler`]() is created by passing a [`ThrowableRead`]().
+In the example below, a `Chevere\Components\ThrowableHandler\ThrowableHandler` object is created by passing a `Chevere\Components\ThrowableHandler\ThrowableRead` object.
 
 ```php
 <?php

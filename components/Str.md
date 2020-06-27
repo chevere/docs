@@ -8,7 +8,7 @@ Manipulating strings refers to the process of altering an argument of type `stri
 
 ### Str
 
-A Str is a class implementing the [StrInterface](Chevere\Interfaces\Str\StrInterface). A Str class is in charge of string manipulation.
+The `Chevere\Components\Str\Str` class is in charge of string manipulation.
 
 ```php
 use Chevere\Components\Str\Str;
@@ -28,7 +28,7 @@ Asserting strings refers to the process of asserting an argument of type `string
 
 ### StrAssert
 
-A StrAssert is a class implementing the [StrAssertInterface](Chevere\Interfaces\Str\StrAssertInterface). A StrAssert class is in charge of string asserting.
+The `Chevere\Components\Str\StrAssert` is in charge of string asserting.
 
 ```php
 use new Chevere\Components\Str\StrAssert;
@@ -46,7 +46,7 @@ Bool string refers to the process of validate an argument of type `string` again
 
 ### StrBool
 
-A StrBool is a class implementing the [StrBoolInterface](Chevere\Interfaces\Str\StrBoolInterface). A StrBool class is in charge of string validation.
+The `Chevere\Components\Str\StrBool` class is in charge of string validation.
 
 ```php
 use new Chevere\Components\Str\StrBool;
