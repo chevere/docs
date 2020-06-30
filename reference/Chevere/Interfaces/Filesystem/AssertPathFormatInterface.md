@@ -2,23 +2,44 @@
 
 `Chevere\Interfaces\Filesystem\AssertPathFormatInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Filesystem/AssertPathFormatInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/AssertPathFormatInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$path`
+1. string `$path`
+::: danger THROWS
+[PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
+ 
+:::
+
+::: danger THROWS
+[PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
+ 
+:::
+
+::: danger THROWS
+[PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
+ 
+:::
+
+::: danger THROWS
+[PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
+ 
+:::
+
 
 ---
 
 ### path()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

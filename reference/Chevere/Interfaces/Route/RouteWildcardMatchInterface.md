@@ -2,23 +2,29 @@
 
 `Chevere\Interfaces\Route\RouteWildcardMatchInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Route/RouteWildcardMatchInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteWildcardMatchInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$match`
+1. string `$match`
+::: danger THROWS
+[RegexException](./RegexException.md)
+ If $match is an invalid regex matcher
+:::
+
 
 ---
 
 ### toString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

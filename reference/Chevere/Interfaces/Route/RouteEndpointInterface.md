@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Route\RouteEndpointInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Route/RouteEndpointInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteEndpointInterface.php)
 
 ## Constants
 
@@ -28,66 +28,72 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [MethodInterface](../Http/MethodInterface.md) `$method`
-- [ControllerInterface](../Controller/ControllerInterface.md) `$controller`
+1. [MethodInterface](../Http/MethodInterface.md) `$method`
+2. [ControllerInterface](../Controller/ControllerInterface.md) `$controller`
 
 ---
 
 ### method()
 
-#### Return
-
+::: tip RETURN
 [MethodInterface](../Http/MethodInterface.md)
+:::
+
 
 ---
 
 ### controller()
 
-#### Return
-
+::: tip RETURN
 [ControllerInterface](../Controller/ControllerInterface.md)
+:::
+
 
 ---
 
 ### withDescription()
 
-#### Parameters
+**Parameters**
 
-- string `$description`
+1. string `$description`
 
-#### Return
-
+::: tip RETURN
 RouteEndpointInterface
+:::
+
 
 ---
 
 ### description()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### withoutParameter()
 
-#### Parameters
+**Parameters**
 
-- string `$parameter`
+1. string `$parameter`
 
-#### Return
-
+::: tip RETURN
 RouteEndpointInterface
+:::
+
 
 ---
 
 ### parameters()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

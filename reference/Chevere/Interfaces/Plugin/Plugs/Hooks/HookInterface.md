@@ -2,47 +2,50 @@
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\HookInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/Plugs/Hooks/HookInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/Hooks/HookInterface.php)
 
-## Extends
+## Implements
 
-- [PlugInterface]()
-
+- [PlugInterface](../../PlugInterface.md)
 ## Methods
 
 ### __invoke()
 
-#### Parameters
+**Parameters**
 
--  `$argument`
+1.  `$argument`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### anchor()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### at()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### priority()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 

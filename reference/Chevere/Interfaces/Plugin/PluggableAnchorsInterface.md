@@ -2,39 +2,47 @@
 
 `Chevere\Interfaces\Plugin\PluggableAnchorsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PluggableAnchorsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PluggableAnchorsInterface.php)
 
 ## Methods
 
 ### withAddedAnchor()
 
-#### Parameters
+**Parameters**
 
-- string `$anchor`
+1. string `$anchor`
 
-#### Return
+::: danger THROWS
+[PluggableAnchorExistsException](../../Exceptions/Plugin/PluggableAnchorExistsException.md)
+ 
+:::
 
+::: tip RETURN
 PluggableAnchorsInterface
+:::
+
 
 ---
 
 ### has()
 
-#### Parameters
+**Parameters**
 
-- string `$anchor`
+1. string `$anchor`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### set()
 
-#### Return
-
+::: tip RETURN
 Ds\Set
+:::
+
 
 ---
 

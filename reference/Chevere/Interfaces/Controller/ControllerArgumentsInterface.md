@@ -2,52 +2,56 @@
 
 `Chevere\Interfaces\Controller\ControllerArgumentsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Controller/ControllerArgumentsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerArgumentsInterface.php)
 
 ## Methods
 
 ### arguments()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### withArgument()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
-- string `$value`
+1. string `$name`
+2. string `$value`
 
-#### Return
-
+::: tip RETURN
 ControllerArgumentsInterface
+:::
+
 
 ---
 
 ### has()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 

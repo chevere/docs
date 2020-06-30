@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableReadInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/ThrowableHandler/ThrowableReadInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableReadInterface.php)
 
 ## Constants
 
@@ -67,91 +67,100 @@ array (
 
 ### className()
 
-> Provides access to the exception class name.
+Provides access to the exception class name.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### code()
 
-> Provides access to the exception code.
+Provides access to the exception code.
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### severity()
 
-> Provides access to the exception severity.
+Provides access to the exception severity.
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### loggerLevel()
 
-> Provides access to the exception logger level.
+Provides access to the exception logger level.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### type()
 
-> Provides access to the exception type.
+Provides access to the exception type.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### message()
 
-> Provides access to the exception message.
+Provides access to the exception message.
 
-#### Return
-
+::: tip RETURN
 [MessageInterface](../Message/MessageInterface.md)
+:::
+
 
 ---
 
 ### file()
 
-> Provides access to the exception file.
+Provides access to the exception file.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### line()
 
-> Provides access to the exception line.
+Provides access to the exception line.
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### trace()
 
-> Provides access to the exception trace.
+Provides access to the exception trace.
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

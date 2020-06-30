@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Router\RouterCacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Router/RouterCacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouterCacheInterface.php)
 
 ## Constants
 
@@ -27,85 +27,94 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [CacheInterface](../Cache/CacheInterface.md) `$cache`
+1. [CacheInterface](../Cache/CacheInterface.md) `$cache`
 
 ---
 
 ### routesCache()
 
-#### Return
-
+::: tip RETURN
 [RoutesCacheInterface](./RoutesCacheInterface.md)
+:::
+
 
 ---
 
 ### routeResolvesCache()
 
-#### Return
-
+::: tip RETURN
 [RouteResolvesCacheInterface](./RouteResolvesCacheInterface.md)
+:::
+
 
 ---
 
 ### hasRegex()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### hasIndex()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### getRegex()
 
-#### Return
-
+::: tip RETURN
 [RouterRegexInterface](./RouterRegexInterface.md)
+:::
+
 
 ---
 
 ### getIndex()
 
-#### Return
-
+::: tip RETURN
 [RouterIndexInterface](./RouterIndexInterface.md)
+:::
+
 
 ---
 
 ### withPut()
 
-#### Parameters
+**Parameters**
 
-- [RouterInterface](./RouterInterface.md) `$router`
+1. [RouterInterface](./RouterInterface.md) `$router`
 
-#### Return
-
+::: tip RETURN
 RouterCacheInterface
+:::
+
 
 ---
 
 ### remove()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### puts()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

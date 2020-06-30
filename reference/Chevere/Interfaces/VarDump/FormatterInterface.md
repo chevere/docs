@@ -2,56 +2,60 @@
 
 `Chevere\Interfaces\VarDump\FormatterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarDump/FormatterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/FormatterInterface.php)
 
 ## Methods
 
 ### indent()
 
-#### Parameters
+**Parameters**
 
-- int `$indent`
+1. int `$indent`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### emphasis()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### filterEncodedChars()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### highlight()
 
-#### Parameters
+**Parameters**
 
-- string `$key`
-- string `$string`
+1. string `$key`
+2. string `$string`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

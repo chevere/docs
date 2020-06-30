@@ -2,79 +2,88 @@
 
 `Chevere\Interfaces\ThrowableHandler\ExceptionInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/ThrowableHandler/ExceptionInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ExceptionInterface.php)
 
 ## Methods
 
 ### message()
 
-#### Return
-
+::: tip RETURN
 [MessageInterface](../Message/MessageInterface.md)
+:::
+
 
 ---
 
 ### getMessage()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getPrevious()
 
-#### Return
+::: tip RETURN
+[Throwable](https://www.php.net/manual/class.throwable)
+:::
 
-Throwable
 
 ---
 
 ### getCode()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### getFile()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getLine()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### getTrace()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### getTraceAsString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### __toString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

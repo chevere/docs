@@ -2,175 +2,271 @@
 
 `Chevere\Interfaces\Str\StrAssertInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Str/StrAssertInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Str/StrAssertInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
 ---
 
 ### empty()
 
-#### Return
+::: danger THROWS
+[StrNotEmptyException](../../Exceptions/Str/StrNotEmptyException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### notEmpty()
 
-#### Return
+::: danger THROWS
+[StrEmptyException](../../Exceptions/Str/StrEmptyException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### ctypeSpace()
 
-#### Return
+::: danger THROWS
+[StrNotCtypeSpaceException](../../Exceptions/Str/StrNotCtypeSpaceException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### notCtypeSpace()
 
-#### Return
+::: danger THROWS
+[StrCtypeSpaceException](../../Exceptions/Str/StrCtypeSpaceException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### ctypeDigit()
 
-#### Return
+::: danger THROWS
+[StrNotCtypeDigitException](../../Exceptions/Str/StrNotCtypeDigitException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### notCtypeDigit()
 
-#### Return
+::: danger THROWS
+[StrCtypeDigitException](../../Exceptions/Str/StrCtypeDigitException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### startsWithCtypeDigit()
 
-#### Return
+::: danger THROWS
+[StrNotStartsWithCtypeDigitException](../../Exceptions/Str/StrNotStartsWithCtypeDigitException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### notStartsWithCtypeDigit()
 
-#### Return
+::: danger THROWS
+[StrStartsWithCtypeDigitException](../../Exceptions/Str/StrStartsWithCtypeDigitException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### startsWith()
 
-#### Parameters
+**Parameters**
 
-- string `$needle`
+1. string `$needle`
 
-#### Return
+::: danger THROWS
+[StrNotStartsWithException](../../Exceptions/Str/StrNotStartsWithException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### notStartsWith()
 
-#### Parameters
+**Parameters**
 
-- string `$needle`
+1. string `$needle`
 
-#### Return
+::: danger THROWS
+[StrStartsWithException](../../Exceptions/Str/StrStartsWithException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### endsWith()
 
-#### Parameters
+**Parameters**
 
-- string `$needle`
+1. string `$needle`
 
-#### Return
+::: danger THROWS
+[StrNotEndsWithException](../../Exceptions/Str/StrNotEndsWithException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### notEndsWith()
 
-#### Parameters
+**Parameters**
 
-- string `$needle`
+1. string `$needle`
 
-#### Return
+::: danger THROWS
+[StrEndsWithException](../../Exceptions/Str/StrEndsWithException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### same()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
+::: danger THROWS
+[StrNotSameException](../../Exceptions/Str/StrNotSameException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### notSame()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
+::: danger THROWS
+[StrSameException](../../Exceptions/Str/StrSameException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### contains()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
+::: danger THROWS
+[StrNotContainsException](../../Exceptions/Str/StrNotContainsException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 
 ### notContains()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
+::: danger THROWS
+[StrContainsException](../../Exceptions/Str/StrContainsException.md)
+ 
+:::
 
+::: tip RETURN
 StrAssertInterface
+:::
+
 
 ---
 

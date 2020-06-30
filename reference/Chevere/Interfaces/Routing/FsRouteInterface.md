@@ -2,31 +2,34 @@
 
 `Chevere\Interfaces\Routing\FsRouteInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Routing/FsRouteInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Routing/FsRouteInterface.php)
 
 ## Methods
 
 ### dir()
 
-#### Return
-
+::: tip RETURN
 [DirInterface](../Filesystem/DirInterface.md)
+:::
+
 
 ---
 
 ### routePath()
 
-#### Return
-
+::: tip RETURN
 [RoutePathInterface](../Route/RoutePathInterface.md)
+:::
+
 
 ---
 
 ### routeDecorator()
 
-#### Return
-
+::: tip RETURN
 [RouteDecoratorInterface](../Route/RouteDecoratorInterface.md)
+:::
+
 
 ---
 

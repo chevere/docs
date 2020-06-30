@@ -2,81 +2,76 @@
 
 `Chevere\Interfaces\Route\RouteEndpointsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Route/RouteEndpointsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteEndpointsInterface.php)
 
-## Extends
+## Implements
 
-- [DsMapInterface]()
-- [Countable]()
-
+- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- Countable
 ## Methods
 
 ### keys()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### withPut()
 
-> Return an instance with the specified RouteEndpoint.
+Return an instance with the specified RouteEndpoint.
+
+**Parameters**
+
+1. [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
+
+::: tip RETURN
+RouteEndpointsInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified RouteEndpoint.
-
-#### Parameters
-
-- [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
-
-#### Return
-
-RouteEndpointsInterface
 
 ---
 
 ### hasKey()
 
-> Returns a boolean indicating whether the instance has $key.
+Returns a boolean indicating whether the instance has $key.
 
-#### Parameters
+**Parameters**
 
-- string `$key`
+1. string `$key`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-> Provides access to the RouteEndpointInterface identified by $key.
+Provides access to the RouteEndpointInterface identified by $key.
 
-#### Parameters
+**Parameters**
 
-- string `$key`
+1. string `$key`
 
-#### Return
-
+::: tip RETURN
 [RouteEndpointInterface](./RouteEndpointInterface.md)
+:::
+
 
 ---
 
 ### map()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

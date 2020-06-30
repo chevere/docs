@@ -2,22 +2,28 @@
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\HooksRunnerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/Plugs/Hooks/HooksRunnerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/Hooks/HooksRunnerInterface.php)
 
 ## Methods
 
 ### run()
 
-> Run the registered hooks at the given anchor.
+Run the registered hooks at the given anchor.
 
-#### Parameters
+**Parameters**
 
-- string `$anchor`
--  `$argument`
+1. string `$anchor`
+2.  `$argument`
 
-#### Return
+::: danger THROWS
+[RuntimeException](./RuntimeException.md)
+ If the $argument type changes.
+:::
 
+::: tip RETURN
 void
+:::
+
 
 ---
 

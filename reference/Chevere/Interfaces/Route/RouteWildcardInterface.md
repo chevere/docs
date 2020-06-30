@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Route\RouteWildcardInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Route/RouteWildcardInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteWildcardInterface.php)
 
 ## Constants
 
@@ -35,70 +35,84 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
 ---
 
 ### withMatch()
 
-> Return an instance with the specified WildcardMatchInterface.
+Return an instance with the specified WildcardMatchInterface.
+
+**Parameters**
+
+1. [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md) `$regexMatch`
+
+::: danger THROWS
+[RouteWildcardInvalidRegexException](../../Exceptions/Route/RouteWildcardInvalidRegexException.md)
+ if $match is an invalid regex match
+:::
+
+::: tip RETURN
+RouteWildcardInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified WildcardMatchInterface.
-
-#### Parameters
-
-- [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md) `$regexMatch`
-
-#### Return
-
-RouteWildcardInterface
 
 ---
 
 ### name()
 
-> Provides access to the name.
+Provides access to the name.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### toString()
 
-> Provides access to the braced name `{name}`
+Provides access to the braced name `{name}`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### match()
 
-> Provides access to the WildcardMatchInterface instance.
+Provides access to the WildcardMatchInterface instance.
 
-#### Return
-
+::: tip RETURN
 [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md)
+:::
+
 
 ---
 
 ### assertRoutePath()
 
-> Asserts that a given RoutePathInterface contains the wildcard.
+Asserts that a given RoutePathInterface contains the wildcard.
 
-#### Parameters
+**Parameters**
 
-- [RoutePathInterface](./RoutePathInterface.md) `$routePath`
+1. [RoutePathInterface](./RoutePathInterface.md) `$routePath`
 
-#### Return
+::: danger THROWS
+[RouteWildcardNotFoundException](../../Exceptions/Route/RouteWildcardNotFoundException.md)
+ if the wildcard doesn't exists in the path
+:::
 
+::: tip RETURN
 void
+:::
+
 
 ---
 

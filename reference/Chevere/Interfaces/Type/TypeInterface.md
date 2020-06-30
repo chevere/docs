@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Type\TypeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Type/TypeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Type/TypeInterface.php)
 
 ## Constants
 
@@ -128,55 +128,58 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$type`
+1. string `$type`
 
 ---
 
 ### primitive()
 
-> Returns the type primitive (array, bool, object, ..., className, interfaceName).
+Returns the type primitive (array, bool, object, ..., className, interfaceName).
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### typeHinting()
 
-> Returns the type hinting.
+Returns the type hinting.
+
+::: tip RETURN
+string
+:::
 
 It will return either the class name, interface, or simply the primitive.
-
-#### Return
-
-string
 
 ---
 
 ### validate()
 
-> Returns a boolean indicating if $var validates against the type.
+Returns a boolean indicating if $var validates against the type.
 
-#### Parameters
+**Parameters**
 
--  `$var`
+1.  `$var`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### validator()
 
-> Returns the type validator callable.
+Returns the type validator callable.
 
-#### Return
-
+::: tip RETURN
 callable
+:::
+
 
 ---
 

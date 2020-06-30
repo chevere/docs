@@ -2,36 +2,29 @@
 
 `Chevere\Interfaces\Spec\SpecIndexMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Spec/SpecIndexMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecIndexMapInterface.php)
 
-## Extends
+## Implements
 
-- [DsMapInterface]()
-- [Countable]()
-
+- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- Countable
 ## Methods
 
 ### keys()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### map()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

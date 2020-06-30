@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Router\RoutedInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Router/RoutedInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RoutedInterface.php)
 
 ## Description
 
@@ -12,26 +12,28 @@ Describes a resolved route.
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [RouteNameInterface](../Route/RouteNameInterface.md) `$routeName`
-- array `$wildcards`
+1. [RouteNameInterface](../Route/RouteNameInterface.md) `$routeName`
+2. array `$wildcards`
 
 ---
 
 ### name()
 
-#### Return
-
+::: tip RETURN
 [RouteNameInterface](../Route/RouteNameInterface.md)
+:::
+
 
 ---
 
 ### arguments()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

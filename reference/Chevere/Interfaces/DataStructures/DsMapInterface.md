@@ -2,35 +2,28 @@
 
 `Chevere\Interfaces\DataStructures\DsMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/DataStructures/DsMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/DataStructures/DsMapInterface.php)
 
-## Extends
+## Implements
 
-- [Countable]()
-
+- Countable
 ## Methods
 
 ### keys()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### map()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

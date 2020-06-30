@@ -2,31 +2,33 @@
 
 `Chevere\Interfaces\Plugin\PlugDetectInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PlugDetectInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugDetectInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [PlugInterface](./PlugInterface.md) `$plug`
+1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ---
 
 ### type()
 
-#### Return
-
+::: tip RETURN
 [PlugTypeInterface](./PlugTypeInterface.md)
+:::
+
 
 ---
 
 ### accept()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

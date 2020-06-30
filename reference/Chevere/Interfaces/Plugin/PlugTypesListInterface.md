@@ -2,15 +2,16 @@
 
 `Chevere\Interfaces\Plugin\PlugTypesListInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PlugTypesListInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugTypesListInterface.php)
 
 ## Methods
 
 ### getGenerator()
 
-#### Return
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
+:::
 
-Generator
 
 ---
 

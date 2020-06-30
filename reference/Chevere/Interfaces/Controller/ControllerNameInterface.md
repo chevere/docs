@@ -2,19 +2,19 @@
 
 `Chevere\Interfaces\Controller\ControllerNameInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Controller/ControllerNameInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerNameInterface.php)
 
-## Extends
+## Implements
 
-- [ToStringInterface]()
-
+- [ToStringInterface](../To/ToStringInterface.md)
 ## Methods
 
 ### toString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

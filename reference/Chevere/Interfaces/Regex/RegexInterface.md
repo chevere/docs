@@ -2,12 +2,11 @@
 
 `Chevere\Interfaces\Regex\RegexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Regex/RegexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Regex/RegexInterface.php)
 
-## Extends
+## Implements
 
-- [ToStringInterface]()
-
+- [ToStringInterface](../To/ToStringInterface.md)
 ## Constants
 
 ### ERRORS
@@ -30,41 +29,45 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
 ---
 
 ### assertNoCapture()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### toString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### toNoDelimiters()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### toNoDelimitersNoAnchors()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

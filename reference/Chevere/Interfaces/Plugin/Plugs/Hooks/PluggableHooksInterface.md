@@ -2,44 +2,47 @@
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\PluggableHooksInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/Plugs/Hooks/PluggableHooksInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/Hooks/PluggableHooksInterface.php)
 
 ## Methods
 
 ### getHookAnchors()
 
-#### Return
-
+::: tip RETURN
 [PluggableAnchorsInterface](../../PluggableAnchorsInterface.md)
+:::
+
 
 ---
 
 ### withHooksRunner()
 
-> Attach the hooks runner for this hookable.
+Attach the hooks runner for this hookable.
 
-#### Parameters
+**Parameters**
 
-- [HooksRunnerInterface](./HooksRunnerInterface.md) `$runner`
+1. [HooksRunnerInterface](./HooksRunnerInterface.md) `$runner`
 
-#### Return
-
+::: tip RETURN
 PluggableHooksInterface
+:::
+
 
 ---
 
 ### hook()
 
-> Run hooks for the given anchor (if-any).
+Run hooks for the given anchor (if-any).
 
-#### Parameters
+**Parameters**
 
-- string `$anchor`
--  `$argument`
+1. string `$anchor`
+2.  `$argument`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 

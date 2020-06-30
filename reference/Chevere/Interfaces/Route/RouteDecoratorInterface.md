@@ -2,23 +2,25 @@
 
 `Chevere\Interfaces\Route\RouteDecoratorInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Route/RouteDecoratorInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteDecoratorInterface.php)
 
 ## Methods
 
 ### name()
 
-#### Return
-
+::: tip RETURN
 [RouteNameInterface](./RouteNameInterface.md)
+:::
+
 
 ---
 
 ### wildcards()
 
-#### Return
-
+::: tip RETURN
 [RouteWildcardsInterface](./RouteWildcardsInterface.md)
+:::
+
 
 ---
 

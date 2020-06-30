@@ -2,83 +2,90 @@
 
 `Chevere\Interfaces\Str\StrBoolInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Str/StrBoolInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Str/StrBoolInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
 ---
 
 ### empty()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### ctypeSpace()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### ctypeDigit()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### startsWithCtypeDigit()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### startsWith()
 
-#### Parameters
+**Parameters**
 
-- string `$needle`
+1. string `$needle`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### endsWith()
 
-#### Parameters
+**Parameters**
 
-- string `$needle`
+1. string `$needle`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### same()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 

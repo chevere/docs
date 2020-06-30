@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Routing\FsRoutesMakerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Routing/FsRoutesMakerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Routing/FsRoutesMakerInterface.php)
 
 ## Constants
 
@@ -18,17 +18,18 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [DirInterface](../Filesystem/DirInterface.md) `$dir`
+1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 
 ---
 
 ### fsRoutes()
 
-#### Return
-
+::: tip RETURN
 [FsRoutesInterface](./FsRoutesInterface.md)
+:::
+
 
 ---
 

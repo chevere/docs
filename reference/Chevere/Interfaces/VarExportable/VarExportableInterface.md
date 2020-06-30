@@ -2,39 +2,42 @@
 
 `Chevere\Interfaces\VarExportable\VarExportableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarExportable/VarExportableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarExportable/VarExportableInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
--  `$var`
+1.  `$var`
 
 ---
 
 ### var()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### toExport()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### toSerialize()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

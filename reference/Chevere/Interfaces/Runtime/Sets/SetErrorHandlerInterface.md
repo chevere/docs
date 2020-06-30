@@ -2,45 +2,47 @@
 
 `Chevere\Interfaces\Runtime\Sets\SetErrorHandlerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Runtime/Sets/SetErrorHandlerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Runtime/Sets/SetErrorHandlerInterface.php)
 
-## Extends
+## Implements
 
-- [SetInterface]()
-
+- [SetInterface](../SetInterface.md)
 ## Methods
 
 ### __construct()
 
-> Uhh no!
+Uhh no!
 
-#### Parameters
+**Parameters**
 
-- string `$value`
+1. string `$value`
 
 ---
 
 ### handler()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### value()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### name()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

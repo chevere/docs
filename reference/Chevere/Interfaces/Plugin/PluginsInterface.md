@@ -2,27 +2,29 @@
 
 `Chevere\Interfaces\Plugin\PluginsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PluginsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PluginsInterface.php)
 
 ## Methods
 
 ### classMap()
 
-#### Return
-
+::: tip RETURN
 [ClassMapInterface](../ClassMap/ClassMapInterface.md)
+:::
+
 
 ---
 
 ### getPlugsQueue()
 
-#### Parameters
+**Parameters**
 
-- string `$pluggableName`
+1. string `$pluggableName`
 
-#### Return
-
+::: tip RETURN
 [PlugsQueueInterface](./PlugsQueueInterface.md)
+:::
+
 
 ---
 

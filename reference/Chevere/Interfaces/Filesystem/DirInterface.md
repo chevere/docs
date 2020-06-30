@@ -2,83 +2,110 @@
 
 `Chevere\Interfaces\Filesystem\DirInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Filesystem/DirInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/DirInterface.php)
 
 ## Methods
 
 ### path()
 
-> Provides access to the PathInterface instance.
+Provides access to the PathInterface instance.
 
-#### Return
-
+::: tip RETURN
 [PathInterface](./PathInterface.md)
+:::
+
 
 ---
 
 ### create()
 
-> Creates the directory.
+Creates the directory.
 
-#### Parameters
+**Parameters**
 
-- int `$mode`
+1. int `$mode`
 
-#### Return
+::: danger THROWS
+[DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
+ if unable to create the directory
+:::
 
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### exists()
 
-> Returns a boolean indicating whether the directory exists.
+Returns a boolean indicating whether the directory exists.
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### assertExists()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### removeContents()
 
-> Removes the contents from a path without deleting the path.
+Removes the contents from a path without deleting the path.
 
-#### Return
+::: danger THROWS
+[DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
+ if unable to remove the directory
+:::
 
+::: danger THROWS
+[FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
+ if unable to remove a file in the directory
+:::
+
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### remove()
 
-> Removes the directory.
+Removes the directory.
 
-#### Return
+::: danger THROWS
+[DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
+ if unable to remove the directory
+:::
 
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### getChild()
 
-> Gets a child DirInterface for the added path.
+Gets a child DirInterface for the added path.
 
-#### Parameters
+**Parameters**
 
-- string `$path`
+1. string `$path`
 
-#### Return
-
+::: tip RETURN
 DirInterface
+:::
+
 
 ---
 

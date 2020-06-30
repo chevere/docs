@@ -2,43 +2,45 @@
 
 `Chevere\Interfaces\Runtime\Sets\SetExceptionHandlerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Runtime/Sets/SetExceptionHandlerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Runtime/Sets/SetExceptionHandlerInterface.php)
 
-## Extends
+## Implements
 
-- [SetInterface]()
-
+- [SetInterface](../SetInterface.md)
 ## Methods
 
 ### handler()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$value`
+1. string `$value`
 
 ---
 
 ### value()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### name()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\ThrowableHandler\TraceEntryInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/ThrowableHandler/TraceEntryInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/TraceEntryInterface.php)
 
 ## Constants
 
@@ -35,57 +35,64 @@ array (
 
 ### file()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### line()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### fileLine()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### function()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### class()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### type()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### args()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

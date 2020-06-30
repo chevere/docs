@@ -2,24 +2,25 @@
 
 `Chevere\Interfaces\Routing\RoutingInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Routing/RoutingInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Routing/RoutingInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [FsRoutesMakerInterface](./FsRoutesMakerInterface.md) `$routePathIterator`
-- [RouterMakerInterface](../Router/RouterMakerInterface.md) `$routerMaker`
+1. [FsRoutesMakerInterface](./FsRoutesMakerInterface.md) `$routePathIterator`
+2. [RouterMakerInterface](../Router/RouterMakerInterface.md) `$routerMaker`
 
 ---
 
 ### router()
 
-#### Return
-
+::: tip RETURN
 [RouterInterface](../Router/RouterInterface.md)
+:::
+
 
 ---
 

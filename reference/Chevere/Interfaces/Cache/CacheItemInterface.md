@@ -2,35 +2,37 @@
 
 `Chevere\Interfaces\Cache\CacheItemInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Cache/CacheItemInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Cache/CacheItemInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [FilePhpReturnInterface](../Filesystem/FilePhpReturnInterface.md) `$phpFileReturn`
+1. [FilePhpReturnInterface](../Filesystem/FilePhpReturnInterface.md) `$phpFileReturn`
 
 ---
 
 ### raw()
 
-> Provides raw access to the FileReturnInterface "as-is"
+Provides raw access to the FileReturnInterface "as-is"
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### var()
 
-> Provides access to the FileReturnInterface file return variable
+Provides access to the FileReturnInterface file return variable
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 

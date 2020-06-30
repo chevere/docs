@@ -2,63 +2,69 @@
 
 `Chevere\Interfaces\Controller\ControllerParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Controller/ControllerParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerParameterInterface.php)
 
 ## Methods
 
 ### withDescription()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
-
+::: tip RETURN
 ControllerParameterInterface
+:::
+
 
 ---
 
 ### withIsRequired()
 
-#### Parameters
+**Parameters**
 
-- bool `$bool`
+1. bool `$bool`
 
-#### Return
-
+::: tip RETURN
 ControllerParameterInterface
+:::
+
 
 ---
 
 ### isRequired()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### name()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### regex()
 
-#### Return
-
+::: tip RETURN
 [RegexInterface](../Regex/RegexInterface.md)
+:::
+
 
 ---
 
 ### description()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

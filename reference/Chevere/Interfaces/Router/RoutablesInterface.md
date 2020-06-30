@@ -2,72 +2,68 @@
 
 `Chevere\Interfaces\Router\RoutablesInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Router/RoutablesInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RoutablesInterface.php)
 
-## Extends
+## Implements
 
-- [DsMapInterface]()
-- [Countable]()
-
+- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- Countable
 ## Methods
 
 ### withPut()
 
-#### Parameters
+**Parameters**
 
-- [RoutableInterface](./RoutableInterface.md) `$routable`
+1. [RoutableInterface](./RoutableInterface.md) `$routable`
 
-#### Return
-
+::: tip RETURN
 RoutablesInterface
+:::
+
 
 ---
 
 ### hasKey()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 [RoutableInterface](./RoutableInterface.md)
+:::
+
 
 ---
 
 ### keys()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### map()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

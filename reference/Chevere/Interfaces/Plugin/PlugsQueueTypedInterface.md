@@ -2,43 +2,47 @@
 
 `Chevere\Interfaces\Plugin\PlugsQueueTypedInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PlugsQueueTypedInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugsQueueTypedInterface.php)
 
 ## Methods
 
 ### withAdded()
 
-#### Parameters
+**Parameters**
 
-- [PlugInterface](./PlugInterface.md) `$plug`
+1. [PlugInterface](./PlugInterface.md) `$plug`
 
-#### Return
-
+::: tip RETURN
 PlugsQueueTypedInterface
+:::
+
 
 ---
 
 ### accept()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getPlugType()
 
-#### Return
-
+::: tip RETURN
 [PlugTypeInterface](./PlugTypeInterface.md)
+:::
+
 
 ---
 
 ### plugsQueue()
 
-#### Return
-
+::: tip RETURN
 [PlugsQueueInterface](./PlugsQueueInterface.md)
+:::
+
 
 ---
 

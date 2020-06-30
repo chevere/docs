@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\VarDump\HighlightInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarDump/HighlightInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/HighlightInterface.php)
 
 ## Constants
 
@@ -34,21 +34,22 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$key`
+1. string `$key`
 
 ---
 
 ### wrap()
 
-#### Parameters
+**Parameters**
 
-- string `$dump`
+1. string `$dump`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

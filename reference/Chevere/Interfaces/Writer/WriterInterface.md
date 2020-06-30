@@ -2,35 +2,36 @@
 
 `Chevere\Interfaces\Writer\WriterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Writer/WriterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Writer/WriterInterface.php)
 
-## Extends
+## Implements
 
-- [ToStringInterface]()
-
+- [ToStringInterface](../To/ToStringInterface.md)
 ## Methods
 
 ### write()
 
-> Writes the given string.
+Writes the given string.
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### toString()
 
-> Returns the contents written. Should not alter the file cursor.
+Returns the contents written. Should not alter the file cursor.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

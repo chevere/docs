@@ -2,12 +2,11 @@
 
 `Chevere\Interfaces\Routing\FsRoutesInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Routing/FsRoutesInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Routing/FsRoutesInterface.php)
 
-## Extends
+## Implements
 
-- [Countable]()
-
+- Countable
 ## Methods
 
 ### __construct()
@@ -17,45 +16,49 @@
 
 ### withDecorated()
 
-#### Parameters
+**Parameters**
 
-- [FsRouteInterface](./FsRouteInterface.md) `$decoratedRoute`
+1. [FsRouteInterface](./FsRouteInterface.md) `$decoratedRoute`
 
-#### Return
-
+::: tip RETURN
 FsRoutesInterface
+:::
+
 
 ---
 
 ### count()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### contains()
 
-#### Parameters
+**Parameters**
 
-- [FsRouteInterface](./FsRouteInterface.md) `$decoratedRoute`
+1. [FsRouteInterface](./FsRouteInterface.md) `$decoratedRoute`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- int `$position`
+1. int `$position`
 
-#### Return
-
+::: tip RETURN
 [FsRouteInterface](./FsRouteInterface.md)
+:::
+
 
 ---
 

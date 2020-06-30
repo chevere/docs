@@ -2,25 +2,26 @@
 
 `Chevere\Interfaces\Serialize\SerializeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Serialize/SerializeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Serialize/SerializeInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
+1. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
 
 ---
 
 ### toString()
 
-> Provides access to the serialized string.
+Provides access to the serialized string.
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 

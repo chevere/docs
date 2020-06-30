@@ -2,48 +2,51 @@
 
 `Chevere\Interfaces\Plugin\Plugs\EventListener\EventListenerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/Plugs/EventListener/EventListenerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/EventListener/EventListenerInterface.php)
 
-## Extends
+## Implements
 
-- [PlugInterface]()
-
+- [PlugInterface](../../PlugInterface.md)
 ## Methods
 
 ### __invoke()
 
-#### Parameters
+**Parameters**
 
-- array `$data`
-- [WritersInterface](../../../Writer/WritersInterface.md) `$writers`
+1. array `$data`
+2. [WritersInterface](../../../Writer/WritersInterface.md) `$writers`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### anchor()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### at()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### priority()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 

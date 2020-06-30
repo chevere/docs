@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Router\RouterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Router/RouterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouterInterface.php)
 
 ## Constants
 
@@ -18,83 +18,88 @@ Type `string`
 
 ### withRoutables()
 
-#### Parameters
+**Parameters**
 
-- [Routables](../../Components/Router/Routables.md) `$routables`
+1. [Routables](../../Components/Router/Routables.md) `$routables`
 
-#### Return
-
+::: tip RETURN
 RouterInterface
+:::
+
 
 ---
 
 ### routables()
 
-#### Return
-
+::: tip RETURN
 [Routables](../../Components/Router/Routables.md)
+:::
+
 
 ---
 
 ### withRegex()
 
-> Return an instance with the specified RegexInterface.
+Return an instance with the specified RegexInterface.
+
+**Parameters**
+
+1. [RouterRegexInterface](./RouterRegexInterface.md) `$regex`
+
+::: tip RETURN
+RouterInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified RegexInterface.
-
-#### Parameters
-
-- [RouterRegexInterface](./RouterRegexInterface.md) `$regex`
-
-#### Return
-
-RouterInterface
 
 ---
 
 ### hasRegex()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### regex()
 
-> Provides access to the instance regex.
+Provides access to the instance regex.
 
-#### Return
-
+::: tip RETURN
 [RouterRegexInterface](./RouterRegexInterface.md)
+:::
+
 
 ---
 
 ### withIndex()
 
-> Return an instance with the specified index.
+Return an instance with the specified index.
+
+**Parameters**
+
+1. [RouterIndexInterface](./RouterIndexInterface.md) `$index`
+
+::: tip RETURN
+RouterInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified index.
-
-#### Parameters
-
-- [RouterIndexInterface](./RouterIndexInterface.md) `$index`
-
-#### Return
-
-RouterInterface
 
 ---
 
 ### index()
 
-> Provides access to the instance index.
+Provides access to the instance index.
 
-#### Return
-
+::: tip RETURN
 [RouterIndexInterface](./RouterIndexInterface.md)
+:::
+
 
 ---
 

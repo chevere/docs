@@ -2,75 +2,71 @@
 
 `Chevere\Interfaces\Plugin\PlugsMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PlugsMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugsMapInterface.php)
 
-## Extends
+## Implements
 
-- [Countable]()
-
+- Countable
 ## Methods
 
 ### type()
 
-#### Return
-
+::: tip RETURN
 [PlugTypeInterface](./PlugTypeInterface.md)
+:::
+
 
 ---
 
 ### withAdded()
 
-#### Parameters
+**Parameters**
 
-- [AssertPlugInterface](./AssertPlugInterface.md) `$assertPlug`
+1. [AssertPlugInterface](./AssertPlugInterface.md) `$assertPlug`
 
-#### Return
-
+::: tip RETURN
 PlugsMapInterface
+:::
+
 
 ---
 
 ### has()
 
-#### Parameters
+**Parameters**
 
-- [PlugInterface](./PlugInterface.md) `$plug`
+1. [PlugInterface](./PlugInterface.md) `$plug`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### hasPlugsFor()
 
-#### Parameters
+**Parameters**
 
-- string `$pluggable`
+1. string `$pluggable`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### getPlugsFor()
 
-#### Parameters
+**Parameters**
 
-- string `$pluggable`
+1. string `$pluggable`
 
-#### Return
-
+::: tip RETURN
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

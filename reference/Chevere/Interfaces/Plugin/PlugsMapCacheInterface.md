@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Plugin\PlugsMapCacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PlugsMapCacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugsMapCacheInterface.php)
 
 ## Constants
 
@@ -18,37 +18,40 @@ Type `string`
 
 ### withPut()
 
-#### Parameters
+**Parameters**
 
-- [PlugsMapInterface](./PlugsMapInterface.md) `$plugsMap`
+1. [PlugsMapInterface](./PlugsMapInterface.md) `$plugsMap`
 
-#### Return
-
+::: tip RETURN
 PlugsMapCacheInterface
+:::
+
 
 ---
 
 ### hasPlugsQueueFor()
 
-#### Parameters
+**Parameters**
 
-- string `$className`
+1. string `$className`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### getPlugsQueueFor()
 
-#### Parameters
+**Parameters**
 
-- string `$className`
+1. string `$className`
 
-#### Return
-
+::: tip RETURN
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
+:::
+
 
 ---
 

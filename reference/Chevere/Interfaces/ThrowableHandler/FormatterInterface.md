@@ -2,89 +2,97 @@
 
 `Chevere\Interfaces\ThrowableHandler\FormatterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/ThrowableHandler/FormatterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/FormatterInterface.php)
 
 ## Methods
 
 ### varDumpFormatter()
 
-> Provides access to the VarDumpFormatterInterface instance.
+Provides access to the VarDumpFormatterInterface instance.
 
-#### Return
-
+::: tip RETURN
 [FormatterInterface](../VarDump/FormatterInterface.md)
+:::
+
 
 ---
 
 ### getVarDumpFormatter()
 
-> Get a new object implementing the VarDumpFormatterInterface.
+Get a new object implementing the VarDumpFormatterInterface.
 
-#### Return
-
+::: tip RETURN
 [FormatterInterface](../VarDump/FormatterInterface.md)
+:::
+
 
 ---
 
 ### getTraceEntryTemplate()
 
-> Get the template used for each trace entry.
+Get the template used for each trace entry.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getHr()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getLineBreak()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### wrapLink()
 
-#### Parameters
+**Parameters**
 
-- string `$value`
+1. string `$value`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### wrapSectionTitle()
 
-#### Parameters
+**Parameters**
 
-- string `$value`
+1. string `$value`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### wrapTitle()
 
-#### Parameters
+**Parameters**
 
-- string `$value`
+1. string `$value`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\VarDump\TemplateInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarDump/TemplateInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/TemplateInterface.php)
 
 ## Description
 

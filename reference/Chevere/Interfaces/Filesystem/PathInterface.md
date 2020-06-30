@@ -2,93 +2,121 @@
 
 `Chevere\Interfaces\Filesystem\PathInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Filesystem/PathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/PathInterface.php)
 
 ## Methods
 
 ### absolute()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### exists()
 
-> Returns a boolean indicating whether the path exists.
+Returns a boolean indicating whether the path exists.
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### isDir()
 
-> Returns a boolean indicating whether the path is a directory and exists.
+Returns a boolean indicating whether the path is a directory and exists.
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### isFile()
 
-> Returns a boolean indicating whether the path is a file and exists.
+Returns a boolean indicating whether the path is a file and exists.
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### chmod()
 
-> Wrapper for \chmod.
+Wrapper for \chmod.
 
-#### Parameters
+**Parameters**
 
-- int `$mode`
+1. int `$mode`
 
-#### Return
+::: danger THROWS
+[PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
+ 
+:::
 
+::: danger THROWS
+[PathUnableToChmodException](./PathUnableToChmodException.md)
+ 
+:::
+
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### isWritable()
 
-> Wrapper for \is_writeable.
+Wrapper for \is_writeable.
 
-#### Return
+::: danger THROWS
+[PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
+ 
+:::
 
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### isReadable()
 
-> Wrapper for \is_writeable.
+Wrapper for \is_writeable.
 
-#### Return
+::: danger THROWS
+[PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
+ 
+:::
 
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### getChild()
 
-> Get a child path as a PathInterface
+Get a child path as a PathInterface
 
-#### Parameters
+**Parameters**
 
-- string `$child`
+1. string `$child`
 
-#### Return
-
+::: tip RETURN
 PathInterface
+:::
+
 
 ---
 

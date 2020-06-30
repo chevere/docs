@@ -2,44 +2,47 @@
 
 `Chevere\Interfaces\Plugin\Plugs\EventListener\PluggableEventsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/Plugs/EventListener/PluggableEventsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/EventListener/PluggableEventsInterface.php)
 
 ## Methods
 
 ### getEventAnchors()
 
-#### Return
-
+::: tip RETURN
 [PluggableAnchorsInterface](../../PluggableAnchorsInterface.md)
+:::
+
 
 ---
 
 ### withEventListenersRunner()
 
-> Attach the events runner.
+Attach the events runner.
 
-#### Parameters
+**Parameters**
 
-- [EventListenersRunnerInterface](./EventListenersRunnerInterface.md) `$runner`
+1. [EventListenersRunnerInterface](./EventListenersRunnerInterface.md) `$runner`
 
-#### Return
-
+::: tip RETURN
 PluggableEventsInterface
+:::
+
 
 ---
 
 ### event()
 
-> Run events for the given anchor (if-any).
+Run events for the given anchor (if-any).
 
-#### Parameters
+**Parameters**
 
-- string `$anchor`
-- array `$data`
+1. string `$anchor`
+2. array `$data`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 

@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Cache\CacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Cache/CacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Cache/CacheInterface.php)
 
 ## Constants
 
@@ -18,98 +18,127 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [DirInterface](../Filesystem/DirInterface.md) `$dir`
+1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 
 ---
 
 ### withPut()
 
-> Put item in cache.
+Put item in cache.
+
+**Parameters**
+
+1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
+2. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
+
+::: tip RETURN
+CacheInterface
+:::
 
 Return an instance with the specified CacheKeyInterface put.
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified CacheKeyInterface VarExportableInterface.
 
-#### Parameters
-
-- [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
-- [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
-
-#### Return
-
-CacheInterface
-
 ---
 
 ### withRemove()
 
-> Remove item from cache.
+Remove item from cache.
+
+**Parameters**
+
+1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
+
+::: danger THROWS
+[FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
+ if unable to remove the cache file
+:::
+
+::: tip RETURN
+CacheInterface
+:::
 
 Return an instance with the specified CacheKeyInterface removed.
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified CacheKeyInterface removed.
 
-#### Parameters
-
-- [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
-
-#### Return
-
-CacheInterface
-
 ---
 
 ### exists()
 
-> Returns a boolean indicating whether the cache exists for the given key.
+Returns a boolean indicating whether the cache exists for the given key.
 
-#### Parameters
+**Parameters**
 
-- [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
+1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-> Get a cache item.
+Get a cache item.
 
-#### Parameters
+**Parameters**
 
-- [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
+1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 
-#### Return
+::: danger THROWS
+[CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md)
+ 
+:::
 
+::: tip RETURN
 [CacheItemInterface](./CacheItemInterface.md)
+:::
+
 
 ---
 
 ### puts()
 
-#### Return
+Provides access to the array containing puts.
 
+::: tip RETURN
 array
+:::
+
+```php
+return [
+     'key' => [
+             'checksum' => '<file_checksum>',
+             'path' => '<the_file_path>'
+     ],
+];
+```
 
 ---
 
 ### getChild()
 
-> Proxy for DirInterface getChild.
+Proxy for DirInterface getChild.
 
-#### Parameters
+**Parameters**
 
-- string `$path`
+1. string `$path`
 
-#### Return
+::: danger THROWS
+[DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
+ 
+:::
 
+::: tip RETURN
 CacheInterface
+:::
+
 
 ---
 

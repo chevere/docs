@@ -2,27 +2,29 @@
 
 `Chevere\Interfaces\Runtime\RuntimeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Runtime/RuntimeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Runtime/RuntimeInterface.php)
 
 ## Methods
 
 ### withSet()
 
-#### Parameters
+**Parameters**
 
-- [SetInterface](./SetInterface.md) `$set`
+1. [SetInterface](./SetInterface.md) `$set`
 
-#### Return
-
+::: tip RETURN
 RuntimeInterface
+:::
+
 
 ---
 
 ### data()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
+
 
 ---
 

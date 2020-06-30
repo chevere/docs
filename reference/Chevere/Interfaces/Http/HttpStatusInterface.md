@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Http\HttpStatusInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Http/HttpStatusInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Http/HttpStatusInterface.php)
 
 ## Constants
 

@@ -2,31 +2,34 @@
 
 `Chevere\Interfaces\Plugin\PlugInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PlugInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugInterface.php)
 
 ## Methods
 
 ### anchor()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### at()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### priority()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 

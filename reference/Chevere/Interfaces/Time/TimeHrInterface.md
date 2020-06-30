@@ -2,23 +2,24 @@
 
 `Chevere\Interfaces\Time\TimeHrInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Time/TimeHrInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Time/TimeHrInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- int `$hrTime`
+1. int `$hrTime`
 
 ---
 
 ### toReadMs()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

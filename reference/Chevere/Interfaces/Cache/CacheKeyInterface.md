@@ -2,12 +2,11 @@
 
 `Chevere\Interfaces\Cache\CacheKeyInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Cache/CacheKeyInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Cache/CacheKeyInterface.php)
 
-## Extends
+## Implements
 
-- [ToStringInterface]()
-
+- [ToStringInterface](../To/ToStringInterface.md)
 ## Constants
 
 ### ILLEGAL_KEY_CHARACTERS
@@ -22,17 +21,18 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$key`
+1. string `$key`
 
 ---
 
 ### toString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

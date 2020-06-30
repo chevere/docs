@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\VarDump\VarDumperInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarDump/VarDumperInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumperInterface.php)
 
 ## Constants
 
@@ -92,126 +92,134 @@ array (
 
 ### writer()
 
-#### Return
-
+::: tip RETURN
 [WriterInterface](../Writer/WriterInterface.md)
+:::
+
 
 ---
 
 ### dumpable()
 
-#### Return
-
+::: tip RETURN
 [VarDumpableInterface](./VarDumpableInterface.md)
+:::
+
 
 ---
 
 ### formatter()
 
-> Provides access to the FormatterInterface instance.
+Provides access to the FormatterInterface instance.
 
-#### Return
-
+::: tip RETURN
 [FormatterInterface](./FormatterInterface.md)
+:::
+
 
 ---
 
 ### withIndent()
 
-> Return an instance with the specified $indent.
+Return an instance with the specified $indent.
+
+**Parameters**
+
+1. int `$indent`
+
+::: tip RETURN
+VarDumperInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $indent.
-
-#### Parameters
-
-- int `$indent`
-
-#### Return
-
-VarDumperInterface
 
 ---
 
 ### indent()
 
-> Provides access to the instance $indent.
+Provides access to the instance $indent.
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### indentString()
 
-> Provides access to the instance $indentString.
+Provides access to the instance $indentString.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### withDepth()
 
-> Return an instance with the specified $depth.
+Return an instance with the specified $depth.
+
+**Parameters**
+
+1. int `$depth`
+
+::: tip RETURN
+VarDumperInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $depth.
-
-#### Parameters
-
-- int `$depth`
-
-#### Return
-
-VarDumperInterface
 
 ---
 
 ### depth()
 
-> Provides access to the instance $depth.
+Provides access to the instance $depth.
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### withKnownObjects()
 
-> Return an instance with the specified known object IDs.
+Return an instance with the specified known object IDs.
+
+**Parameters**
+
+1. array `$known`
+
+::: tip RETURN
+VarDumperInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified known object IDs.
-
-#### Parameters
-
-- array `$known`
-
-#### Return
-
-VarDumperInterface
 
 ---
 
 ### known()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### withProcessor()
 
-> Process the var dump operation.
+Process the var dump operation.
 
-#### Return
-
+::: tip RETURN
 VarDumperInterface
+:::
+
 
 ---
 

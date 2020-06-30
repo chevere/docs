@@ -2,27 +2,29 @@
 
 `Chevere\Interfaces\Spec\SpecPathInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Spec/SpecPathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecPathInterface.php)
 
 ## Methods
 
 ### pub()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getChild()
 
-#### Parameters
+**Parameters**
 
-- string `$child`
+1. string `$child`
 
-#### Return
-
+::: tip RETURN
 SpecPathInterface
+:::
+
 
 ---
 

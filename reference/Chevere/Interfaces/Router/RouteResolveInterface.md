@@ -2,23 +2,25 @@
 
 `Chevere\Interfaces\Router\RouteResolveInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Router/RouteResolveInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouteResolveInterface.php)
 
 ## Methods
 
 ### name()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### routeWildcards()
 
-#### Return
-
+::: tip RETURN
 [RouteWildcardsInterface](../Route/RouteWildcardsInterface.md)
+:::
+
 
 ---
 

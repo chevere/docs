@@ -2,23 +2,24 @@
 
 `Chevere\Interfaces\Routing\RouteEndpointIteratorInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Routing/RouteEndpointIteratorInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Routing/RouteEndpointIteratorInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [DirInterface](../Filesystem/DirInterface.md) `$dir`
+1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 
 ---
 
 ### routeEndpoints()
 
-#### Return
-
+::: tip RETURN
 [RouteEndpointsInterface](../Route/RouteEndpointsInterface.md)
+:::
+
 
 ---
 

@@ -2,27 +2,28 @@
 
 `Chevere\Interfaces\Controller\ControllerRunnerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Controller/ControllerRunnerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerRunnerInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [ControllerInterface](./ControllerInterface.md) `$controller`
+1. [ControllerInterface](./ControllerInterface.md) `$controller`
 
 ---
 
 ### execute()
 
-#### Parameters
+**Parameters**
 
-- [ControllerArgumentsInterface](./ControllerArgumentsInterface.md) `$arguments`
+1. [ControllerArgumentsInterface](./ControllerArgumentsInterface.md) `$arguments`
 
-#### Return
-
+::: tip RETURN
 [ControllerExecutedInterface](./ControllerExecutedInterface.md)
+:::
+
 
 ---
 

@@ -2,119 +2,126 @@
 
 `Chevere\Interfaces\Route\RouteWildcardsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Route/RouteWildcardsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteWildcardsInterface.php)
 
-## Extends
+## Implements
 
-- [DsMapInterface]()
-- [Countable]()
-
+- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- Countable
 ## Methods
 
 ### withAddedWildcard()
 
-> Return an instance with the specified RouteWildcardInterface.
+Return an instance with the specified RouteWildcardInterface.
+
+**Parameters**
+
+1. [RouteWildcardInterface](./RouteWildcardInterface.md) `$wildcard`
+
+::: tip RETURN
+RouteWildcardsInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified RouteWildcardInterface.
 
 This method should allow to override wildcards.
 
-#### Parameters
-
-- [RouteWildcardInterface](./RouteWildcardInterface.md) `$wildcard`
-
-#### Return
-
-RouteWildcardsInterface
-
 ---
 
 ### count()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### has()
 
-> Returns a boolean indicating whether the instance has a given RouteWildcardInterface.
+Returns a boolean indicating whether the instance has a given RouteWildcardInterface.
 
-#### Parameters
+**Parameters**
 
-- string `$wildcardName`
+1. string `$wildcardName`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-> Provides access to the target RouteWildcardInterface instance.
+Provides access to the target RouteWildcardInterface instance.
 
-#### Parameters
+**Parameters**
 
-- string `$wildcardName`
+1. string `$wildcardName`
 
-#### Return
-
+::: tip RETURN
 [RouteWildcardInterface](./RouteWildcardInterface.md)
+:::
+
 
 ---
 
 ### hasPos()
 
-> Returns a boolean indicating whether the instance has RouteWildcardInterface in the given pos.
+Returns a boolean indicating whether the instance has RouteWildcardInterface in the given pos.
 
-#### Parameters
+**Parameters**
 
-- int `$pos`
+1. int `$pos`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### getPos()
 
-> Provides access to the target RouteWildcardInterface instance in the given pos.
+Provides access to the target RouteWildcardInterface instance in the given pos.
 
-#### Parameters
+**Parameters**
 
-- int `$pos`
+1. int `$pos`
 
-#### Return
-
+::: tip RETURN
 [RouteWildcardInterface](./RouteWildcardInterface.md)
+:::
+
 
 ---
 
 ### getGenerator()
 
-#### Return
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
+:::
 
-Generator
 
 ---
 
 ### keys()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### map()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
+
 
 ---
 

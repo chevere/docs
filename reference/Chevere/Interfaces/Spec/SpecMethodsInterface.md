@@ -2,73 +2,69 @@
 
 `Chevere\Interfaces\Spec\SpecMethodsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Spec/SpecMethodsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecMethodsInterface.php)
 
-## Extends
+## Implements
 
-- [DsMapInterface]()
-- [Countable]()
-
+- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- Countable
 ## Methods
 
 ### withPut()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
-- string `$jsonPath`
+1. string `$name`
+2. string `$jsonPath`
 
-#### Return
-
+::: tip RETURN
 SpecMethodsInterface
+:::
+
 
 ---
 
 ### hasKey()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### keys()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### map()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

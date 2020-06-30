@@ -2,72 +2,77 @@
 
 `Chevere\Interfaces\Router\RouteResolvesCacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Router/RouteResolvesCacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouteResolvesCacheInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [CacheInterface](../Cache/CacheInterface.md) `$cache`
+1. [CacheInterface](../Cache/CacheInterface.md) `$cache`
 
 ---
 
 ### has()
 
-#### Parameters
+**Parameters**
 
-- int `$id`
+1. int `$id`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- int `$id`
+1. int `$id`
 
-#### Return
-
+::: tip RETURN
 [RouteResolve](../../Components/Router/RouteResolve.md)
+:::
+
 
 ---
 
 ### put()
 
-#### Parameters
+**Parameters**
 
-- int `$id`
-- [RouteResolve](../../Components/Router/RouteResolve.md) `$routeResolve`
+1. int `$id`
+2. [RouteResolve](../../Components/Router/RouteResolve.md) `$routeResolve`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### remove()
 
-#### Parameters
+**Parameters**
 
-- int `$id`
+1. int `$id`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### puts()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

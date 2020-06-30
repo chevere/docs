@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\ThrowableHandler\DocumentInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/ThrowableHandler/DocumentInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/DocumentInterface.php)
 
 ## Constants
 
@@ -161,122 +161,132 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [ThrowableHandlerInterface](./ThrowableHandlerInterface.md) `$exceptionHandler`
+1. [ThrowableHandlerInterface](./ThrowableHandlerInterface.md) `$exceptionHandler`
 
 ---
 
 ### withVerbosity()
 
-> Return an instance with the specified verbosity.
+Return an instance with the specified verbosity.
+
+**Parameters**
+
+1. int `$verbosity`
+
+::: tip RETURN
+DocumentInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified verbosity.
 
 Calling this method will reset the document sections to fit the target verbosity.
 
-#### Parameters
-
-- int `$verbosity`
-
-#### Return
-
-DocumentInterface
-
 ---
 
 ### verbosity()
 
-> Provides access to the instance verbosity.
+Provides access to the instance verbosity.
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### getSectionTitle()
 
-> Returns the document title section.
+Returns the document title section.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getSectionMessage()
 
-> Returns the document message section.
+Returns the document message section.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getSectionId()
 
-> Returns the document id section.
+Returns the document id section.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getSectionTime()
 
-> Returns the document time section.
+Returns the document time section.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getSectionStack()
 
-> Returns the document stack section.
+Returns the document stack section.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getSectionServer()
 
-> Returns the document server section.
+Returns the document server section.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### toString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getTemplate()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### getFormatter()
 
-#### Return
-
+::: tip RETURN
 [FormatterInterface](./FormatterInterface.md)
+:::
+
 
 ---
 

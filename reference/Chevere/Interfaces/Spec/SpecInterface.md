@@ -2,37 +2,39 @@
 
 `Chevere\Interfaces\Spec\SpecInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Spec/SpecInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecInterface.php)
 
-## Extends
+## Implements
 
-- [ToArrayInterface]()
-
+- [ToArrayInterface](../To/ToArrayInterface.md)
 ## Methods
 
 ### jsonPath()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### key()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### toArray()
 
-> Returns an array, representing the object itself or some of its data/properties.
+Returns an array, representing the object itself or some of its data/properties.
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

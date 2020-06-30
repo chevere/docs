@@ -2,83 +2,80 @@
 
 `Chevere\Interfaces\Spec\SpecIndexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Spec/SpecIndexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecIndexInterface.php)
 
-## Extends
+## Implements
 
-- [DsMapInterface]()
-- [Countable]()
-
+- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- Countable
 ## Methods
 
 ### withOffset()
 
-#### Parameters
+**Parameters**
 
-- string `$routeName`
-- [RouteEndpointSpec](../../Components/Spec/Specs/RouteEndpointSpec.md) `$routeEndpointSpec`
+1. string `$routeName`
+2. [RouteEndpointSpec](../../Components/Spec/Specs/RouteEndpointSpec.md) `$routeEndpointSpec`
 
-#### Return
-
+::: tip RETURN
 SpecIndexInterface
+:::
+
 
 ---
 
 ### specIndexMap()
 
-#### Return
-
+::: tip RETURN
 [SpecIndexMap](../../Components/Spec/SpecIndexMap.md)
+:::
+
 
 ---
 
 ### has()
 
-#### Parameters
+**Parameters**
 
-- string `$routeName`
-- string `$methodName`
+1. string `$routeName`
+2. string `$methodName`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- string `$routeName`
-- string `$methodName`
+1. string `$routeName`
+2. string `$methodName`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### keys()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### map()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

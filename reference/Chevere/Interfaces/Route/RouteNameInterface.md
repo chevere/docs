@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Route\RouteNameInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Route/RouteNameInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteNameInterface.php)
 
 ## Constants
 
@@ -18,17 +18,18 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
 ---
 
 ### toString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

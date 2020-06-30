@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\Router\RouterRegexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Router/RouterRegexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouterRegexInterface.php)
 
 ## Description
 
@@ -39,9 +39,10 @@ Type `string`
 
 ### regex()
 
-#### Return
-
+::: tip RETURN
 [RegexInterface](../Regex/RegexInterface.md)
+:::
+
 
 ---
 

@@ -2,31 +2,33 @@
 
 `Chevere\Interfaces\Runtime\SetInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Runtime/SetInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Runtime/SetInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$value`
+1. string `$value`
 
 ---
 
 ### value()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### name()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

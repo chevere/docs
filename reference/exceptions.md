@@ -1,0 +1,160 @@
+---
+sidebar: false
+---
+
+# Exceptions
+
+## B
+  - [BootstrapDirException](./Chevere/Exceptions/Bootstrap/BootstrapDirException.md)
+  - [BootstrapException](./Chevere/Exceptions/Bootstrap/BootstrapException.md)
+  - [BreadcrumbException](./Chevere/Exceptions/Breadcrumb/BreadcrumbException.md)
+## C
+  - [CacheInvalidKeyException](./Chevere/Exceptions/Cache/CacheInvalidKeyException.md)
+  - [CacheKeyNotFoundException](./Chevere/Exceptions/Cache/CacheKeyNotFoundException.md)
+  - [CacheNotFoundException](./Chevere/Exceptions/Cache/CacheNotFoundException.md)
+  - [ClassMappedException](./Chevere/Exceptions/ClassMap/ClassMappedException.md)
+  - [ClassNotExistsException](./Chevere/Exceptions/ClassMap/ClassNotExistsException.md)
+  - [ClassNotMappedException](./Chevere/Exceptions/ClassMap/ClassNotMappedException.md)
+  - [ControllerArgumentRegexMatchException](./Chevere/Exceptions/Controller/ControllerArgumentRegexMatchException.md)
+  - [ControllerArgumentsRequiredException](./Chevere/Exceptions/Controller/ControllerArgumentsRequiredException.md)
+  - [ControllerInterfaceException](./Chevere/Exceptions/Controller/ControllerInterfaceException.md)
+  - [ControllerNotExistsException](./Chevere/Exceptions/Controller/ControllerNotExistsException.md)
+## B
+  - [BadFunctionCallException](./Chevere/Exceptions/Core/BadFunctionCallException.md)
+  - [BadMethodCallException](./Chevere/Exceptions/Core/BadMethodCallException.md)
+## D
+  - [DomainException](./Chevere/Exceptions/Core/DomainException.md)
+## E
+  - [ErrorException](./Chevere/Exceptions/Core/ErrorException.md)
+  - [Exception](./Chevere/Exceptions/Core/Exception.md)
+## I
+  - [InvalidArgumentException](./Chevere/Exceptions/Core/InvalidArgumentException.md)
+## L
+  - [LengthException](./Chevere/Exceptions/Core/LengthException.md)
+  - [LogicException](./Chevere/Exceptions/Core/LogicException.md)
+## O
+  - [OutOfBoundsException](./Chevere/Exceptions/Core/OutOfBoundsException.md)
+  - [OutOfRangeException](./Chevere/Exceptions/Core/OutOfRangeException.md)
+  - [OverflowException](./Chevere/Exceptions/Core/OverflowException.md)
+## R
+  - [RangeException](./Chevere/Exceptions/Core/RangeException.md)
+  - [RuntimeException](./Chevere/Exceptions/Core/RuntimeException.md)
+## E
+  - [ExceptionTrait](./Chevere/Exceptions/Core/Traits/ExceptionTrait.md)
+## U
+  - [UnderflowException](./Chevere/Exceptions/Core/UnderflowException.md)
+  - [UnexpectedValueException](./Chevere/Exceptions/Core/UnexpectedValueException.md)
+## D
+  - [DirExistsException](./Chevere/Exceptions/Filesystem/DirExistsException.md)
+  - [DirNotExistsException](./Chevere/Exceptions/Filesystem/DirNotExistsException.md)
+  - [DirTailException](./Chevere/Exceptions/Filesystem/DirTailException.md)
+  - [DirUnableToCreateException](./Chevere/Exceptions/Filesystem/DirUnableToCreateException.md)
+  - [DirUnableToRemoveException](./Chevere/Exceptions/Filesystem/DirUnableToRemoveException.md)
+## F
+  - [FileExistsException](./Chevere/Exceptions/Filesystem/FileExistsException.md)
+  - [FileHandleException](./Chevere/Exceptions/Filesystem/FileHandleException.md)
+  - [FileInvalidContentsException](./Chevere/Exceptions/Filesystem/FileInvalidContentsException.md)
+  - [FileNotExistsException](./Chevere/Exceptions/Filesystem/FileNotExistsException.md)
+  - [FileNotPhpException](./Chevere/Exceptions/Filesystem/FileNotPhpException.md)
+  - [FileReturnInvalidTypeException](./Chevere/Exceptions/Filesystem/FileReturnInvalidTypeException.md)
+  - [FileUnableToCreateException](./Chevere/Exceptions/Filesystem/FileUnableToCreateException.md)
+  - [FileUnableToGetException](./Chevere/Exceptions/Filesystem/FileUnableToGetException.md)
+  - [FileUnableToPutException](./Chevere/Exceptions/Filesystem/FileUnableToPutException.md)
+  - [FileUnableToRemoveException](./Chevere/Exceptions/Filesystem/FileUnableToRemoveException.md)
+  - [FileWithoutContentsException](./Chevere/Exceptions/Filesystem/FileWithoutContentsException.md)
+## P
+  - [PathDotSlashException](./Chevere/Exceptions/Filesystem/PathDotSlashException.md)
+  - [PathDoubleDotsDashException](./Chevere/Exceptions/Filesystem/PathDoubleDotsDashException.md)
+  - [PathExtraSlashesException](./Chevere/Exceptions/Filesystem/PathExtraSlashesException.md)
+  - [PathInvalidException](./Chevere/Exceptions/Filesystem/PathInvalidException.md)
+  - [PathIsDirException](./Chevere/Exceptions/Filesystem/PathIsDirException.md)
+  - [PathIsFileException](./Chevere/Exceptions/Filesystem/PathIsFileException.md)
+  - [PathIsNotDirectoryException](./Chevere/Exceptions/Filesystem/PathIsNotDirectoryException.md)
+  - [PathNotAbsoluteException](./Chevere/Exceptions/Filesystem/PathNotAbsoluteException.md)
+  - [PathNotAllowedException](./Chevere/Exceptions/Filesystem/PathNotAllowedException.md)
+  - [PathNotExistsException](./Chevere/Exceptions/Filesystem/PathNotExistsException.md)
+  - [PathOmitRelativeException](./Chevere/Exceptions/Filesystem/PathOmitRelativeException.md)
+  - [PathUnableToChmodException](./Chevere/Exceptions/Filesystem/PathUnableToChmodException.md)
+## M
+  - [MethodNotFoundException](./Chevere/Exceptions/Http/MethodNotFoundException.md)
+  - [MiddlewareInterfaceException](./Chevere/Exceptions/Middleware/MiddlewareInterfaceException.md)
+  - [MiddlewareNamesEmptyException](./Chevere/Exceptions/Middleware/MiddlewareNamesEmptyException.md)
+## P
+  - [PlugInterfaceException](./Chevere/Exceptions/Plugin/PlugInterfaceException.md)
+  - [PlugRegisteredException](./Chevere/Exceptions/Plugin/PlugRegisteredException.md)
+  - [PluggableAnchorExistsException](./Chevere/Exceptions/Plugin/PluggableAnchorExistsException.md)
+  - [PluggableAnchorNotExistsException](./Chevere/Exceptions/Plugin/PluggableAnchorNotExistsException.md)
+  - [PluggableAnchorsException](./Chevere/Exceptions/Plugin/PluggableAnchorsException.md)
+  - [PluggableNotExistsException](./Chevere/Exceptions/Plugin/PluggableNotExistsException.md)
+  - [PluggableNotRegisteredException](./Chevere/Exceptions/Plugin/PluggableNotRegisteredException.md)
+  - [PlugsFileNotExistsException](./Chevere/Exceptions/Plugin/PlugsFileNotExistsException.md)
+  - [PlugsQueueInterfaceException](./Chevere/Exceptions/Plugin/PlugsQueueInterfaceException.md)
+## H
+  - [HookableInterfaceException](./Chevere/Components/Plugin/Plugs/Hooks/Exceptions/HookableInterfaceException.md)
+## R
+  - [RegexException](./Chevere/Exceptions/Regex/RegexException.md)
+  - [RegexMatchException](./Chevere/Exceptions/Regex/RegexMatchException.md)
+## E
+  - [EndpointException](./Chevere/Exceptions/Route/EndpointException.md)
+## R
+  - [RouteNameInvalidException](./Chevere/Exceptions/Route/RouteNameInvalidException.md)
+  - [RoutePathForwardSlashException](./Chevere/Exceptions/Route/RoutePathForwardSlashException.md)
+  - [RoutePathInvalidCharsException](./Chevere/Exceptions/Route/RoutePathInvalidCharsException.md)
+  - [RoutePathUnmatchedBracesException](./Chevere/Exceptions/Route/RoutePathUnmatchedBracesException.md)
+  - [RoutePathUnmatchedWildcardsException](./Chevere/Exceptions/Route/RoutePathUnmatchedWildcardsException.md)
+  - [RouteWildcardInvalidCharsException](./Chevere/Exceptions/Route/RouteWildcardInvalidCharsException.md)
+  - [RouteWildcardInvalidRegexException](./Chevere/Exceptions/Route/RouteWildcardInvalidRegexException.md)
+  - [RouteWildcardNotFoundException](./Chevere/Exceptions/Route/RouteWildcardNotFoundException.md)
+  - [RouteWildcardRepeatException](./Chevere/Exceptions/Route/RouteWildcardRepeatException.md)
+  - [RouteWildcardReservedException](./Chevere/Exceptions/Route/RouteWildcardReservedException.md)
+  - [RouteWildcardStartWithNumberException](./Chevere/Exceptions/Route/RouteWildcardStartWithNumberException.md)
+  - [RouteCacheNotFoundException](./Chevere/Exceptions/Router/RouteCacheNotFoundException.md)
+  - [RouteCacheTypeException](./Chevere/Exceptions/Router/RouteCacheTypeException.md)
+  - [RouteIdentifierException](./Chevere/Exceptions/Router/RouteIdentifierException.md)
+  - [RouteKeyConflictException](./Chevere/Exceptions/Router/RouteKeyConflictException.md)
+  - [RouteNameConflictException](./Chevere/Exceptions/Router/RouteNameConflictException.md)
+  - [RouteNotFoundException](./Chevere/Exceptions/Router/RouteNotFoundException.md)
+  - [RouteNotRoutableException](./Chevere/Exceptions/Router/RouteNotRoutableException.md)
+  - [RoutePathExistsException](./Chevere/Exceptions/Router/RoutePathExistsException.md)
+  - [RouteWithoutEndpointsException](./Chevere/Exceptions/Router/RouteWithoutEndpointsException.md)
+  - [RouterCacheNotFoundException](./Chevere/Exceptions/Router/RouterCacheNotFoundException.md)
+  - [RouterCacheTypeException](./Chevere/Exceptions/Router/RouterCacheTypeException.md)
+  - [RouterException](./Chevere/Exceptions/Router/RouterException.md)
+  - [RouterMakerException](./Chevere/Exceptions/Router/RouterMakerException.md)
+## D
+  - [DecoratedRouteAlreadyAddedException](./Chevere/Exceptions/Routing/DecoratedRouteAlreadyAddedException.md)
+## E
+  - [ExpectingControllerException](./Chevere/Exceptions/Routing/ExpectingControllerException.md)
+  - [ExpectingRouteNameException](./Chevere/Exceptions/Routing/ExpectingRouteNameException.md)
+## R
+  - [RouteNameAlreadyAddedException](./Chevere/Exceptions/Routing/RouteNameAlreadyAddedException.md)
+  - [RoutePathAlreadyAddedException](./Chevere/Exceptions/Routing/RoutePathAlreadyAddedException.md)
+  - [RouteRegexAlreadyAddedException](./Chevere/Exceptions/Routing/RouteRegexAlreadyAddedException.md)
+## U
+  - [UnserializeException](./Chevere/Exceptions/Serialize/UnserializeException.md)
+## S
+  - [SpecInvalidArgumentException](./Chevere/Exceptions/Spec/SpecInvalidArgumentException.md)
+  - [SpecPathException](./Chevere/Exceptions/Spec/SpecPathException.md)
+  - [StrAssertException](./Chevere/Exceptions/Str/StrAssertException.md)
+  - [StrContainsException](./Chevere/Exceptions/Str/StrContainsException.md)
+  - [StrCtypeDigitException](./Chevere/Exceptions/Str/StrCtypeDigitException.md)
+  - [StrCtypeSpaceException](./Chevere/Exceptions/Str/StrCtypeSpaceException.md)
+  - [StrEmptyException](./Chevere/Exceptions/Str/StrEmptyException.md)
+  - [StrEndsWithException](./Chevere/Exceptions/Str/StrEndsWithException.md)
+  - [StrNotContainsException](./Chevere/Exceptions/Str/StrNotContainsException.md)
+  - [StrNotCtypeDigitException](./Chevere/Exceptions/Str/StrNotCtypeDigitException.md)
+  - [StrNotCtypeSpaceException](./Chevere/Exceptions/Str/StrNotCtypeSpaceException.md)
+  - [StrNotEmptyException](./Chevere/Exceptions/Str/StrNotEmptyException.md)
+  - [StrNotEndsWithException](./Chevere/Exceptions/Str/StrNotEndsWithException.md)
+  - [StrNotSameException](./Chevere/Exceptions/Str/StrNotSameException.md)
+  - [StrNotStartsWithCtypeDigitException](./Chevere/Exceptions/Str/StrNotStartsWithCtypeDigitException.md)
+  - [StrNotStartsWithException](./Chevere/Exceptions/Str/StrNotStartsWithException.md)
+  - [StrSameException](./Chevere/Exceptions/Str/StrSameException.md)
+  - [StrStartsWithCtypeDigitException](./Chevere/Exceptions/Str/StrStartsWithCtypeDigitException.md)
+  - [StrStartsWithException](./Chevere/Exceptions/Str/StrStartsWithException.md)
+## T
+  - [TypeNotFoundException](./Chevere/Exceptions/Type/TypeNotFoundException.md)
+  - [TypeException](./Chevere/Exceptions/VarDump/TypeException.md)
+## V
+  - [VarIsResourceException](./Chevere/Exceptions/VarExportable/VarIsResourceException.md)
+  - [VarNotExportableException](./Chevere/Exceptions/VarExportable/VarNotExportableException.md)

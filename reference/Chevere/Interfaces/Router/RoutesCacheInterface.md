@@ -2,63 +2,68 @@
 
 `Chevere\Interfaces\Router\RoutesCacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Router/RoutesCacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RoutesCacheInterface.php)
 
 ## Methods
 
 ### has()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 [RouteInterface](../Route/RouteInterface.md)
+:::
+
 
 ---
 
 ### put()
 
-#### Parameters
+**Parameters**
 
-- [RouteInterface](../Route/RouteInterface.md) `$route`
+1. [RouteInterface](../Route/RouteInterface.md) `$route`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### remove()
 
-#### Parameters
+**Parameters**
 
-- string `$name`
+1. string `$name`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### puts()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

@@ -1,0 +1,149 @@
+---
+sidebar: false
+---
+
+# Interfaces
+
+## B
+  - [BootstrapInterface](./Chevere/Interfaces/Bootstrap/BootstrapInterface.md)
+  - [BreadcrumbInterface](./Chevere/Interfaces/Breadcrumb/BreadcrumbInterface.md)
+## C
+  - [CacheInterface](./Chevere/Interfaces/Cache/CacheInterface.md)
+  - [CacheItemInterface](./Chevere/Interfaces/Cache/CacheItemInterface.md)
+  - [CacheKeyInterface](./Chevere/Interfaces/Cache/CacheKeyInterface.md)
+  - [ClassMapInterface](./Chevere/Interfaces/ClassMap/ClassMapInterface.md)
+  - [ControllerArgumentsInterface](./Chevere/Interfaces/Controller/ControllerArgumentsInterface.md)
+  - [ControllerExecutedInterface](./Chevere/Interfaces/Controller/ControllerExecutedInterface.md)
+  - [ControllerInterface](./Chevere/Interfaces/Controller/ControllerInterface.md)
+  - [ControllerNameInterface](./Chevere/Interfaces/Controller/ControllerNameInterface.md)
+  - [ControllerParameterInterface](./Chevere/Interfaces/Controller/ControllerParameterInterface.md)
+  - [ControllerParametersInterface](./Chevere/Interfaces/Controller/ControllerParametersInterface.md)
+  - [ControllerResponseInterface](./Chevere/Interfaces/Controller/ControllerResponseInterface.md)
+  - [ControllerRunnerInterface](./Chevere/Interfaces/Controller/ControllerRunnerInterface.md)
+## D
+  - [DsMapInterface](./Chevere/Interfaces/DataStructures/DsMapInterface.md)
+## A
+  - [AssertPathFormatInterface](./Chevere/Interfaces/Filesystem/AssertPathFormatInterface.md)
+## D
+  - [DirInterface](./Chevere/Interfaces/Filesystem/DirInterface.md)
+## F
+  - [FileInterface](./Chevere/Interfaces/Filesystem/FileInterface.md)
+  - [FilePhpInterface](./Chevere/Interfaces/Filesystem/FilePhpInterface.md)
+  - [FilePhpReturnInterface](./Chevere/Interfaces/Filesystem/FilePhpReturnInterface.md)
+## P
+  - [PathInterface](./Chevere/Interfaces/Filesystem/PathInterface.md)
+## H
+  - [HttpStatusInterface](./Chevere/Interfaces/Http/HttpStatusInterface.md)
+## M
+  - [MethodInterface](./Chevere/Interfaces/Http/MethodInterface.md)
+  - [MessageInterface](./Chevere/Interfaces/Message/MessageInterface.md)
+  - [MiddlewaresInterface](./Chevere/Interfaces/Middleware/MiddlewaresInterface.md)
+## A
+  - [AssertPlugInterface](./Chevere/Interfaces/Plugin/AssertPlugInterface.md)
+## P
+  - [PlugDetectInterface](./Chevere/Interfaces/Plugin/PlugDetectInterface.md)
+  - [PlugInterface](./Chevere/Interfaces/Plugin/PlugInterface.md)
+  - [PlugTypeInterface](./Chevere/Interfaces/Plugin/PlugTypeInterface.md)
+  - [PlugTypesListInterface](./Chevere/Interfaces/Plugin/PlugTypesListInterface.md)
+  - [PluggableAnchorsInterface](./Chevere/Interfaces/Plugin/PluggableAnchorsInterface.md)
+  - [PluginsInterface](./Chevere/Interfaces/Plugin/PluginsInterface.md)
+## E
+  - [EventListenerInterface](./Chevere/Interfaces/Plugin/Plugs/EventListener/EventListenerInterface.md)
+  - [EventListenersQueueInterface](./Chevere/Interfaces/Plugin/Plugs/EventListener/EventListenersQueueInterface.md)
+  - [EventListenersRunnerInterface](./Chevere/Interfaces/Plugin/Plugs/EventListener/EventListenersRunnerInterface.md)
+## P
+  - [PluggableEventsInterface](./Chevere/Interfaces/Plugin/Plugs/EventListener/PluggableEventsInterface.md)
+## H
+  - [HookInterface](./Chevere/Interfaces/Plugin/Plugs/Hooks/HookInterface.md)
+  - [HooksQueueInterface](./Chevere/Interfaces/Plugin/Plugs/Hooks/HooksQueueInterface.md)
+  - [HooksRunnerInterface](./Chevere/Interfaces/Plugin/Plugs/Hooks/HooksRunnerInterface.md)
+## P
+  - [PluggableHooksInterface](./Chevere/Interfaces/Plugin/Plugs/Hooks/PluggableHooksInterface.md)
+  - [PlugsIteratorInterface](./Chevere/Interfaces/Plugin/PlugsIteratorInterface.md)
+  - [PlugsMapCacheInterface](./Chevere/Interfaces/Plugin/PlugsMapCacheInterface.md)
+  - [PlugsMapInterface](./Chevere/Interfaces/Plugin/PlugsMapInterface.md)
+  - [PlugsQueueInterface](./Chevere/Interfaces/Plugin/PlugsQueueInterface.md)
+  - [PlugsQueueTypedInterface](./Chevere/Interfaces/Plugin/PlugsQueueTypedInterface.md)
+## R
+  - [RegexInterface](./Chevere/Interfaces/Regex/RegexInterface.md)
+  - [RouteDecoratorInterface](./Chevere/Interfaces/Route/RouteDecoratorInterface.md)
+  - [RouteEndpointInterface](./Chevere/Interfaces/Route/RouteEndpointInterface.md)
+  - [RouteEndpointsInterface](./Chevere/Interfaces/Route/RouteEndpointsInterface.md)
+  - [RouteInterface](./Chevere/Interfaces/Route/RouteInterface.md)
+  - [RouteNameInterface](./Chevere/Interfaces/Route/RouteNameInterface.md)
+  - [RoutePathInterface](./Chevere/Interfaces/Route/RoutePathInterface.md)
+  - [RouteWildcardInterface](./Chevere/Interfaces/Route/RouteWildcardInterface.md)
+  - [RouteWildcardMatchInterface](./Chevere/Interfaces/Route/RouteWildcardMatchInterface.md)
+  - [RouteWildcardsInterface](./Chevere/Interfaces/Route/RouteWildcardsInterface.md)
+  - [ResolverInterface](./Chevere/Interfaces/Router/ResolverInterface.md)
+  - [RoutableInterface](./Chevere/Interfaces/Router/RoutableInterface.md)
+  - [RoutablesInterface](./Chevere/Interfaces/Router/RoutablesInterface.md)
+  - [RouteIdentifierInterface](./Chevere/Interfaces/Router/RouteIdentifierInterface.md)
+  - [RouteResolveInterface](./Chevere/Interfaces/Router/RouteResolveInterface.md)
+  - [RouteResolvesCacheInterface](./Chevere/Interfaces/Router/RouteResolvesCacheInterface.md)
+  - [RoutedInterface](./Chevere/Interfaces/Router/RoutedInterface.md)
+  - [RouterCacheInterface](./Chevere/Interfaces/Router/RouterCacheInterface.md)
+  - [RouterIndexInterface](./Chevere/Interfaces/Router/RouterIndexInterface.md)
+  - [RouterInterface](./Chevere/Interfaces/Router/RouterInterface.md)
+  - [RouterMakerInterface](./Chevere/Interfaces/Router/RouterMakerInterface.md)
+  - [RouterRegexInterface](./Chevere/Interfaces/Router/RouterRegexInterface.md)
+  - [RoutesCacheInterface](./Chevere/Interfaces/Router/RoutesCacheInterface.md)
+## F
+  - [FsRouteInterface](./Chevere/Interfaces/Routing/FsRouteInterface.md)
+  - [FsRoutesInterface](./Chevere/Interfaces/Routing/FsRoutesInterface.md)
+  - [FsRoutesMakerInterface](./Chevere/Interfaces/Routing/FsRoutesMakerInterface.md)
+## R
+  - [RouteEndpointIteratorInterface](./Chevere/Interfaces/Routing/RouteEndpointIteratorInterface.md)
+  - [RoutingInterface](./Chevere/Interfaces/Routing/RoutingInterface.md)
+  - [RuntimeInterface](./Chevere/Interfaces/Runtime/RuntimeInterface.md)
+## S
+  - [SetInterface](./Chevere/Interfaces/Runtime/SetInterface.md)
+  - [SetErrorHandlerInterface](./Chevere/Interfaces/Runtime/Sets/SetErrorHandlerInterface.md)
+  - [SetExceptionHandlerInterface](./Chevere/Interfaces/Runtime/Sets/SetExceptionHandlerInterface.md)
+  - [SerializeInterface](./Chevere/Interfaces/Serialize/SerializeInterface.md)
+## U
+  - [UnserializeInterface](./Chevere/Interfaces/Serialize/UnserializeInterface.md)
+## S
+  - [SpecIndexCacheInterface](./Chevere/Interfaces/Spec/SpecIndexCacheInterface.md)
+  - [SpecIndexInterface](./Chevere/Interfaces/Spec/SpecIndexInterface.md)
+  - [SpecIndexMapInterface](./Chevere/Interfaces/Spec/SpecIndexMapInterface.md)
+  - [SpecInterface](./Chevere/Interfaces/Spec/SpecInterface.md)
+  - [SpecMethodsInterface](./Chevere/Interfaces/Spec/SpecMethodsInterface.md)
+  - [SpecPathInterface](./Chevere/Interfaces/Spec/SpecPathInterface.md)
+  - [StrAssertInterface](./Chevere/Interfaces/Str/StrAssertInterface.md)
+  - [StrBoolInterface](./Chevere/Interfaces/Str/StrBoolInterface.md)
+  - [StrInterface](./Chevere/Interfaces/Str/StrInterface.md)
+## D
+  - [DocumentInterface](./Chevere/Interfaces/ThrowableHandler/DocumentInterface.md)
+## E
+  - [ExceptionInterface](./Chevere/Interfaces/ThrowableHandler/ExceptionInterface.md)
+## F
+  - [FormatterInterface](./Chevere/Interfaces/ThrowableHandler/FormatterInterface.md)
+## T
+  - [ThrowableHandlerInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableHandlerInterface.md)
+  - [ThrowableReadInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableReadInterface.md)
+  - [TraceEntryInterface](./Chevere/Interfaces/ThrowableHandler/TraceEntryInterface.md)
+  - [TraceFormatterInterface](./Chevere/Interfaces/ThrowableHandler/TraceFormatterInterface.md)
+  - [TimeHrInterface](./Chevere/Interfaces/Time/TimeHrInterface.md)
+  - [ToArrayInterface](./Chevere/Interfaces/To/ToArrayInterface.md)
+  - [ToStringInterface](./Chevere/Interfaces/To/ToStringInterface.md)
+  - [TypeInterface](./Chevere/Interfaces/Type/TypeInterface.md)
+## F
+  - [FormatterInterface](./Chevere/Interfaces/VarDump/FormatterInterface.md)
+## H
+  - [HighlightInterface](./Chevere/Interfaces/VarDump/HighlightInterface.md)
+## O
+  - [OutputterInterface](./Chevere/Interfaces/VarDump/OutputterInterface.md)
+## P
+  - [ProcessorInterface](./Chevere/Interfaces/VarDump/ProcessorInterface.md)
+## T
+  - [TemplateInterface](./Chevere/Interfaces/VarDump/TemplateInterface.md)
+## V
+  - [VarDumpInterface](./Chevere/Interfaces/VarDump/VarDumpInterface.md)
+  - [VarDumpableInterface](./Chevere/Interfaces/VarDump/VarDumpableInterface.md)
+  - [VarDumperInterface](./Chevere/Interfaces/VarDump/VarDumperInterface.md)
+  - [VarOutputterInterface](./Chevere/Interfaces/VarDump/VarOutputterInterface.md)
+  - [VarExportableInterface](./Chevere/Interfaces/VarExportable/VarExportableInterface.md)
+## W
+  - [WriterInterface](./Chevere/Interfaces/Writer/WriterInterface.md)
+  - [WritersInterface](./Chevere/Interfaces/Writer/WritersInterface.md)

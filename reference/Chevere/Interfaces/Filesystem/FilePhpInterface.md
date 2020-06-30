@@ -2,27 +2,34 @@
 
 `Chevere\Interfaces\Filesystem\FilePhpInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Filesystem/FilePhpInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/FilePhpInterface.php)
 
 ## Methods
 
 ### file()
 
-> Provides access to the FileInterface instance.
+Provides access to the FileInterface instance.
 
-#### Return
-
+::: tip RETURN
 [FileInterface](./FileInterface.md)
+:::
+
 
 ---
 
 ### cache()
 
-> Applies OPCache.
+Applies OPCache.
 
-#### Return
+::: danger THROWS
+[RuntimeException](./RuntimeException.md)
+ If unable to cache file.
+:::
 
+::: tip RETURN
 void
+:::
+
 
 ---
 

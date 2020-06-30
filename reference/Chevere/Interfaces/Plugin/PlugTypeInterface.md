@@ -2,55 +2,61 @@
 
 `Chevere\Interfaces\Plugin\PlugTypeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/PlugTypeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugTypeInterface.php)
 
 ## Methods
 
 ### interface()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### plugsTo()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### trailingName()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### queueName()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getPlugsQueue()
 
-#### Return
-
+::: tip RETURN
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
+:::
+
 
 ---
 
 ### pluggableAnchorsMethod()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

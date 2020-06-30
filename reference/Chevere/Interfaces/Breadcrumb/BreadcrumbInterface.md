@@ -2,100 +2,114 @@
 
 `Chevere\Interfaces\Breadcrumb\BreadcrumbInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Breadcrumb/BreadcrumbInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Breadcrumb/BreadcrumbInterface.php)
 
-## Extends
+## Implements
 
-- [ToArrayInterface]()
-- [ToStringInterface]()
-
+- [ToArrayInterface](../To/ToArrayInterface.md)
+- [ToStringInterface](../To/ToStringInterface.md)
 ## Methods
 
 ### has()
 
-> Returns a boolean indicating whether the instance has the given position.
+Returns a boolean indicating whether the instance has the given position.
 
-#### Parameters
+**Parameters**
 
-- int `$pos`
+1. int `$pos`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### hasAny()
 
-> Returns a boolean indicating whether the instance has any items.
+Returns a boolean indicating whether the instance has any items.
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### pos()
 
-> Returns the current breadcrumb position.
+Returns the current breadcrumb position.
 
-#### Return
+::: danger THROWS
+[BreadcrumbException](../../Exceptions/Breadcrumb/BreadcrumbException.md)
+ if there's no item
+:::
 
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### withAddedItem()
 
-> Return an instance with the specified string item added.
+Return an instance with the specified string item added.
+
+**Parameters**
+
+1. string `$item`
+
+::: tip RETURN
+BreadcrumbInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified item.
-
-#### Parameters
-
-- string `$item`
-
-#### Return
-
-BreadcrumbInterface
 
 ---
 
 ### withRemovedItem()
 
-> Return an instance with the specified waypoint pos removed.
+Return an instance with the specified waypoint pos removed.
+
+**Parameters**
+
+1. int `$pos`
+
+::: danger THROWS
+[BreadcrumbException](../../Exceptions/Breadcrumb/BreadcrumbException.md)
+ if the item specified by $pos doesn't exists
+:::
+
+::: tip RETURN
+BreadcrumbInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified waypoint pos removed.
-
-#### Parameters
-
-- int `$pos`
-
-#### Return
-
-BreadcrumbInterface
 
 ---
 
 ### toArray()
 
-> Returns an array, representing the object itself or some of its data/properties.
+Returns an array, representing the object itself or some of its data/properties.
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### toString()
 
-> Returns a string, representing the object itself or some of its data/properties.
+Returns a string, representing the object itself or some of its data/properties.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

@@ -2,31 +2,33 @@
 
 `Chevere\Interfaces\Plugin\AssertPlugInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/AssertPlugInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/AssertPlugInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [PlugInterface](./PlugInterface.md) `$plug`
+1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ---
 
 ### type()
 
-#### Return
-
+::: tip RETURN
 [PlugTypeInterface](./PlugTypeInterface.md)
+:::
+
 
 ---
 
 ### plug()
 
-#### Return
-
+::: tip RETURN
 [PlugInterface](./PlugInterface.md)
+:::
+
 
 ---
 

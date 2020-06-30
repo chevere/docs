@@ -2,47 +2,50 @@
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\HooksQueueInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Plugin/Plugs/Hooks/HooksQueueInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/Hooks/HooksQueueInterface.php)
 
-## Extends
+## Implements
 
-- [PlugsQueueTypedInterface]()
-
+- [PlugsQueueTypedInterface](../../PlugsQueueTypedInterface.md)
 ## Methods
 
 ### withAdded()
 
-#### Parameters
+**Parameters**
 
-- [PlugInterface](../../PlugInterface.md) `$plug`
+1. [PlugInterface](../../PlugInterface.md) `$plug`
 
-#### Return
-
+::: tip RETURN
 [PlugsQueueTypedInterface](../../PlugsQueueTypedInterface.md)
+:::
+
 
 ---
 
 ### accept()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### getPlugType()
 
-#### Return
-
+::: tip RETURN
 [PlugTypeInterface](../../PlugTypeInterface.md)
+:::
+
 
 ---
 
 ### plugsQueue()
 
-#### Return
-
+::: tip RETURN
 [PlugsQueueInterface](../../PlugsQueueInterface.md)
+:::
+
 
 ---
 

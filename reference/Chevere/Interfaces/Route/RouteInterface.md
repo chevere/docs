@@ -2,102 +2,112 @@
 
 `Chevere\Interfaces\Route\RouteInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Route/RouteInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [RouteNameInterface](./RouteNameInterface.md) `$name`
-- [RoutePathInterface](./RoutePathInterface.md) `$routePath`
+1. [RouteNameInterface](./RouteNameInterface.md) `$name`
+2. [RoutePathInterface](./RoutePathInterface.md) `$routePath`
+::: danger THROWS
+[RouteNameInvalidException](../../Exceptions/Route/RouteNameInvalidException.md)
+ if $name doesn't match REGEX_NAME
+:::
+
 
 ---
 
 ### name()
 
-> Provides access to the route name (if any).
+Provides access to the route name (if any).
 
-#### Return
-
+::: tip RETURN
 [RouteNameInterface](./RouteNameInterface.md)
+:::
+
 
 ---
 
 ### path()
 
-> Provides access to the RoutePathInterface instance.
+Provides access to the RoutePathInterface instance.
 
-#### Return
-
+::: tip RETURN
 [RoutePathInterface](./RoutePathInterface.md)
+:::
+
 
 ---
 
 ### maker()
 
-> Provides access to the file maker array.
+Provides access to the file maker array.
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### withAddedEndpoint()
 
-> Return an instance with the specified added $routeEndpoint.
+Return an instance with the specified added $routeEndpoint.
+
+**Parameters**
+
+1. [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
+
+::: tip RETURN
+RouteInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified added $routeEndpoint.
 
 This method should allow to override any previous $routeEndpoint.
 
-#### Parameters
-
-- [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
-
-#### Return
-
-RouteInterface
-
 ---
 
 ### endpoints()
 
-> Provides access to the RouteEndpointsInterface instance.
+Provides access to the RouteEndpointsInterface instance.
 
-#### Return
-
+::: tip RETURN
 [RouteEndpointsInterface](./RouteEndpointsInterface.md)
+:::
+
 
 ---
 
 ### withAddedMiddleware()
 
-> Return an instance with the specified added $middleware.
+Return an instance with the specified added $middleware.
+
+**Parameters**
+
+1. Psr\Http\Server\MiddlewareInterface `$middleware`
+
+::: tip RETURN
+RouteInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified added $middleware.
-
-#### Parameters
-
-- Psr\Http\Server\MiddlewareInterface `$middleware`
-
-#### Return
-
-RouteInterface
 
 ---
 
 ### middlewareNameCollection()
 
-> Provides access to the MiddlewareNameCollectionInterface instance.
+Provides access to the MiddlewareNameCollectionInterface instance.
 
-#### Return
-
+::: tip RETURN
 [MiddlewaresInterface](../Middleware/MiddlewaresInterface.md)
+:::
+
 
 ---
 

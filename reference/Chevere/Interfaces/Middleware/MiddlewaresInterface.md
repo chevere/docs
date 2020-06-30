@@ -2,67 +2,66 @@
 
 `Chevere\Interfaces\Middleware\MiddlewaresInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Middleware/MiddlewaresInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Middleware/MiddlewaresInterface.php)
 
-## Extends
+## Implements
 
-- [DsMapInterface]()
-- [Countable]()
-
+- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- Countable
 ## Methods
 
 ### withAddedMiddleware()
 
-> Return an instance with the specified $middleware.
+Return an instance with the specified $middleware.
+
+**Parameters**
+
+1. Psr\Http\Server\MiddlewareInterface `$middleware`
+
+::: danger THROWS
+[MiddlewareInterfaceException](./MiddlewareInterfaceException.md)
+ if $name doesn't represent a class implementing the MiddlewareInterface
+:::
+
+::: tip RETURN
+MiddlewaresInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $middleware.
-
-#### Parameters
-
-- Psr\Http\Server\MiddlewareInterface `$middleware`
-
-#### Return
-
-MiddlewaresInterface
 
 ---
 
 ### has()
 
-> Returns a boolean indicating whether the instance has the given MiddlewareNameInterface.
+Returns a boolean indicating whether the instance has the given MiddlewareNameInterface.
 
-#### Parameters
+**Parameters**
 
-- Psr\Http\Server\MiddlewareInterface `$middleware`
+1. Psr\Http\Server\MiddlewareInterface `$middleware`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### keys()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### map()
 
-#### Return
-
+::: tip RETURN
 Ds\Map
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

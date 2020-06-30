@@ -2,39 +2,42 @@
 
 `Chevere\Interfaces\VarDump\VarDumpableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarDump/VarDumpableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpableInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
--  `$var`
+1.  `$var`
 
 ---
 
 ### var()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### type()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### processorName()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

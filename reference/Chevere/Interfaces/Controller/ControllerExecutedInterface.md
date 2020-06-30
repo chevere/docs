@@ -2,51 +2,56 @@
 
 `Chevere\Interfaces\Controller\ControllerExecutedInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Controller/ControllerExecutedInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerExecutedInterface.php)
 
 ## Methods
 
 ### withThrowable()
 
-#### Parameters
+**Parameters**
 
-- Throwable `$throwable`
+1. [Throwable](https://www.php.net/manual/class.throwable) `$throwable`
 
-#### Return
-
+::: tip RETURN
 ControllerExecutedInterface
+:::
+
 
 ---
 
 ### code()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 
 ### data()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### hasThrowable()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### throwable()
 
-#### Return
+::: tip RETURN
+[Throwable](https://www.php.net/manual/class.throwable)
+:::
 
-Throwable
 
 ---
 

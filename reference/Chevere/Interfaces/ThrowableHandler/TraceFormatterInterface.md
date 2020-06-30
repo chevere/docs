@@ -2,13 +2,12 @@
 
 `Chevere\Interfaces\ThrowableHandler\TraceFormatterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/ThrowableHandler/TraceFormatterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/TraceFormatterInterface.php)
 
-## Extends
+## Implements
 
-- [ToArrayInterface]()
-- [ToStringInterface]()
-
+- [ToArrayInterface](../To/ToArrayInterface.md)
+- [ToStringInterface](../To/ToStringInterface.md)
 ## Constants
 
 ### TAG_ENTRY_FILE
@@ -95,30 +94,32 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- array `$trace`
-- [FormatterInterface](./FormatterInterface.md) `$formatter`
+1. array `$trace`
+2. [FormatterInterface](./FormatterInterface.md) `$formatter`
 
 ---
 
 ### toArray()
 
-> Returns an array, representing the object itself or some of its data/properties.
+Returns an array, representing the object itself or some of its data/properties.
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### toString()
 
-> Returns a string, representing the object itself or some of its data/properties.
+Returns a string, representing the object itself or some of its data/properties.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

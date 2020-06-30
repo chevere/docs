@@ -2,12 +2,11 @@
 
 `Chevere\Interfaces\Message\MessageInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Message/MessageInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Message/MessageInterface.php)
 
-## Extends
+## Implements
 
-- [ToStringInterface]()
-
+- [ToStringInterface](../To/ToStringInterface.md)
 ## Description
 
 Rich system messages for CLI and HTML.
@@ -56,143 +55,148 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- string `$template`
+1. string `$template`
 
 ---
 
 ### template()
 
-> Provides access to the template property.
+Provides access to the template property.
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### trTable()
 
-> Provides access to the trTable property.
+Provides access to the trTable property.
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### toConsole()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### toHtml()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### toString()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### strtr()
 
-> Return an instance with the specified string translation.
+Return an instance with the specified string translation.
+
+**Parameters**
+
+1. string `$search`
+2. string `$replace`
+
+::: tip RETURN
+MessageInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified string translation.
-
-#### Parameters
-
-- string `$search`
-- string `$replace`
-
-#### Return
-
-MessageInterface
 
 ---
 
 ### emphasis()
 
-> Return an instance with the specified emphasis.
+Return an instance with the specified emphasis.
+
+**Parameters**
+
+1. string `$search`
+2. string `$replace`
+
+::: tip RETURN
+MessageInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified emphasis.
-
-#### Parameters
-
-- string `$search`
-- string `$replace`
-
-#### Return
-
-MessageInterface
 
 ---
 
 ### strong()
 
-> Return an instance with the specified strong.
+Return an instance with the specified strong.
+
+**Parameters**
+
+1. string `$search`
+2. string `$replace`
+
+::: tip RETURN
+MessageInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified strong.
-
-#### Parameters
-
-- string `$search`
-- string `$replace`
-
-#### Return
-
-MessageInterface
 
 ---
 
 ### underline()
 
-> Return an instance with the specified underline.
+Return an instance with the specified underline.
+
+**Parameters**
+
+1. string `$search`
+2. string `$replace`
+
+::: tip RETURN
+MessageInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified underline.
-
-#### Parameters
-
-- string `$search`
-- string `$replace`
-
-#### Return
-
-MessageInterface
 
 ---
 
 ### code()
 
-> Return an instance with the specified code.
+Return an instance with the specified code.
+
+**Parameters**
+
+1. string `$search`
+2. string `$replace`
+
+::: tip RETURN
+MessageInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified code.
-
-#### Parameters
-
-- string `$search`
-- string `$replace`
-
-#### Return
-
-MessageInterface
 
 ---
 

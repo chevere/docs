@@ -2,44 +2,48 @@
 
 `Chevere\Interfaces\VarDump\OutputterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarDump/OutputterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/OutputterInterface.php)
 
 ## Methods
 
 ### setUp()
 
-#### Parameters
+**Parameters**
 
-- [WriterInterface](../Writer/WriterInterface.md) `$writer`
-- array `$backtrace`
+1. [WriterInterface](../Writer/WriterInterface.md) `$writer`
+2. array `$backtrace`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### prepare()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### callback()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### caller()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

@@ -2,23 +2,25 @@
 
 `Chevere\Interfaces\Http\MethodInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Http/MethodInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Http/MethodInterface.php)
 
 ## Methods
 
 ### name()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### description()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 

@@ -2,84 +2,96 @@
 
 `Chevere\Interfaces\ClassMap\ClassMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/ClassMap/ClassMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/ClassMap/ClassMapInterface.php)
 
-## Extends
+## Implements
 
-- [Countable]()
-
+- Countable
 ## Methods
 
 ### isStrict()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### withStrict()
 
-#### Parameters
+**Parameters**
 
-- bool `$isStrict`
+1. bool `$isStrict`
 
-#### Return
-
+::: tip RETURN
 ClassMapInterface
+:::
+
 
 ---
 
 ### withPut()
 
-#### Parameters
+**Parameters**
 
-- string `$className`
-- string `$string`
+1. string `$className`
+2. string `$string`
 
-#### Return
+::: danger THROWS
+[ClassNotExistsException](../../Exceptions/ClassMap/ClassNotExistsException.md)
+ 
+:::
 
+::: danger THROWS
+[ClassMappedException](../../Exceptions/ClassMap/ClassMappedException.md)
+ 
+:::
+
+::: tip RETURN
 ClassMapInterface
+:::
+
 
 ---
 
 ### has()
 
-#### Parameters
+**Parameters**
 
-- string `$className`
+1. string `$className`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- string `$className`
+1. string `$className`
 
-#### Return
+::: danger THROWS
+[ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md)
+ 
+:::
 
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### toArray()
 
-#### Return
-
+::: tip RETURN
 array
+:::
 
----
-
-### count()
-
-#### Return
-
-void
 
 ---
 

@@ -2,82 +2,85 @@
 
 `Chevere\Interfaces\VarDump\VarDumpInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarDump/VarDumpInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpInterface.php)
 
 ## Methods
 
 ### __construct()
 
-#### Parameters
+**Parameters**
 
-- [FormatterInterface](./FormatterInterface.md) `$formatter`
-- [OutputterInterface](./OutputterInterface.md) `$outputter`
+1. [FormatterInterface](./FormatterInterface.md) `$formatter`
+2. [OutputterInterface](./OutputterInterface.md) `$outputter`
 
 ---
 
 ### withVars()
 
-> Return an instance with the specified vars.
+Return an instance with the specified vars.
+
+**Parameters**
+
+1.  `$vars`
+
+::: tip RETURN
+VarDumpInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified vars.
-
-#### Parameters
-
--  `$vars`
-
-#### Return
-
-VarDumpInterface
 
 ---
 
 ### withShift()
 
-> Return an instance with the specified shift.
+Return an instance with the specified shift.
+
+**Parameters**
+
+1. int `$shift`
+
+::: tip RETURN
+VarDumpInterface
+:::
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified shift.
 
 Shift removes $shift traces from debug_backtrace()
 
-#### Parameters
-
-- int `$shift`
-
-#### Return
-
-VarDumpInterface
-
 ---
 
 ### process()
 
-> Process the dump writing
+Process the dump writing
 
-#### Parameters
+**Parameters**
 
-- [WriterInterface](../Writer/WriterInterface.md) `$writer`
+1. [WriterInterface](../Writer/WriterInterface.md) `$writer`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### vars()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
 ### shift()
 
-#### Return
-
+::: tip RETURN
 int
+:::
+
 
 ---
 

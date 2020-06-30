@@ -2,51 +2,55 @@
 
 `Chevere\Interfaces\Spec\SpecIndexCacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Spec/SpecIndexCacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecIndexCacheInterface.php)
 
 ## Methods
 
 ### has()
 
-#### Parameters
+**Parameters**
 
-- string `$routeName`
+1. string `$routeName`
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### get()
 
-#### Parameters
+**Parameters**
 
-- string `$routeName`
+1. string `$routeName`
 
-#### Return
-
+::: tip RETURN
 [SpecMethodsInterface](./SpecMethodsInterface.md)
+:::
+
 
 ---
 
 ### put()
 
-#### Parameters
+**Parameters**
 
-- [SpecIndexInterface](./SpecIndexInterface.md) `$specIndex`
+1. [SpecIndexInterface](./SpecIndexInterface.md) `$specIndex`
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 
 ### puts()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 

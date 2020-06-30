@@ -2,51 +2,56 @@
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableHandlerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/ThrowableHandler/ThrowableHandlerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableHandlerInterface.php)
 
 ## Methods
 
 ### withIsDebug()
 
-#### Parameters
+**Parameters**
 
-- bool `$isDebug`
+1. bool `$isDebug`
 
-#### Return
-
+::: tip RETURN
 ThrowableHandlerInterface
+:::
+
 
 ---
 
 ### dateTimeUtc()
 
-#### Return
-
+::: tip RETURN
 DateTimeInterface
+:::
+
 
 ---
 
 ### throwableRead()
 
-#### Return
-
+::: tip RETURN
 [ThrowableReadInterface](./ThrowableReadInterface.md)
+:::
+
 
 ---
 
 ### id()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### isDebug()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 

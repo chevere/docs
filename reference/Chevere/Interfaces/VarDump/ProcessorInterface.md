@@ -2,7 +2,7 @@
 
 `Chevere\Interfaces\VarDump\ProcessorInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/VarDump/ProcessorInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/ProcessorInterface.php)
 
 ## Constants
 
@@ -18,81 +18,87 @@ Type `integer`
 
 ### info()
 
-> Provides access to the instance info.
+Provides access to the instance info.
+
+::: tip RETURN
+string
+:::
 
 The information about the variable like `size=1` or `length=6`
-
-#### Return
-
-string
 
 ---
 
 ### typeHighlighted()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### highlightOperator()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### highlightParentheses()
 
-#### Parameters
+**Parameters**
 
-- string `$string`
+1. string `$string`
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### circularReference()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### maxDepthReached()
 
-#### Return
-
+::: tip RETURN
 string
+:::
+
 
 ---
 
 ### type()
 
-> Provides access to the instance type.
+Provides access to the instance type.
+
+::: tip RETURN
+string
+:::
 
 The information about the variable type like `array` or `object`
-
-#### Return
-
-string
 
 ---
 
 ### write()
 
-#### Return
-
+::: tip RETURN
 void
+:::
+
 
 ---
 

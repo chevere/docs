@@ -2,35 +2,38 @@
 
 `Chevere\Interfaces\Controller\ControllerResponseInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master//home/rodolfo/git/chevere/chevere/interfaces/Controller/ControllerResponseInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerResponseInterface.php)
 
 ## Methods
 
 ### withData()
 
-#### Parameters
+**Parameters**
 
-- array `$data`
+1. array `$data`
 
-#### Return
-
+::: tip RETURN
 ControllerResponseInterface
+:::
+
 
 ---
 
 ### isSuccess()
 
-#### Return
-
+::: tip RETURN
 bool
+:::
+
 
 ---
 
 ### data()
 
-#### Return
-
+::: tip RETURN
 array
+:::
+
 
 ---
 
