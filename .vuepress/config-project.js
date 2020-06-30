@@ -47,5 +47,9 @@ module.exports = {
         smoothScroll: true,
         editLinks: true,
         lastUpdated: true,
+        algolia: {
+            apiKey: '73374d2477d2ae119b1d0288b1e8aa24',
+            indexName: 'chevere'
+        }
     },
 };
