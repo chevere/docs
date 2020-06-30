@@ -78,7 +78,7 @@ The `POST.php` file above binds HTTP request `POST /signup` to `SignupController
 
 #### Wildcards from Controller parameters
 
-Wildcards in a route will be automatically configured to reflect the [Controller](controller.md) parameters defined for the given route endpoints. If a route defines the wildcard `{id}`, Controllers in the route must at least declare the parameter `id`.
+Wildcards in a route will be automatically configured to reflect the [Controller](Controller.md) parameters defined for the given route endpoints. If a route defines the wildcard `{id}`, Controllers in the route must at least declare the parameter `id`.
 
 > ⚠ Controllers in the alleged route must define the same base wildcard parameters.
 
