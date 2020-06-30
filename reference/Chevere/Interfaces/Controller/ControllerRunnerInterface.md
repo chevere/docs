@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ControllerRunnerInterface
 
 `Chevere\Interfaces\Controller\ControllerRunnerInterface`
@@ -23,7 +27,6 @@
 ::: tip RETURN
 [ControllerExecutedInterface](./ControllerExecutedInterface.md)
 :::
-
 
 ---
 

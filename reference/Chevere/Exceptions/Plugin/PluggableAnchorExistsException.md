@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PluggableAnchorExistsException
 
 `Chevere\Exceptions\Plugin\PluggableAnchorExistsException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown when a pluggable anchor already exists.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

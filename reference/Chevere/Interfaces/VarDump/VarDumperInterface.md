@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # VarDumperInterface
 
 `Chevere\Interfaces\VarDump\VarDumperInterface`
@@ -96,7 +100,6 @@ array (
 [WriterInterface](../Writer/WriterInterface.md)
 :::
 
-
 ---
 
 ### dumpable()
@@ -104,7 +107,6 @@ array (
 ::: tip RETURN
 [VarDumpableInterface](./VarDumpableInterface.md)
 :::
-
 
 ---
 
@@ -115,7 +117,6 @@ Provides access to the FormatterInterface instance.
 ::: tip RETURN
 [FormatterInterface](./FormatterInterface.md)
 :::
-
 
 ---
 
@@ -130,7 +131,6 @@ Return an instance with the specified $indent.
 ::: tip RETURN
 VarDumperInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $indent.
 
@@ -144,7 +144,6 @@ Provides access to the instance $indent.
 int
 :::
 
-
 ---
 
 ### indentString()
@@ -154,7 +153,6 @@ Provides access to the instance $indentString.
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -169,7 +167,6 @@ Return an instance with the specified $depth.
 ::: tip RETURN
 VarDumperInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $depth.
 
@@ -182,7 +179,6 @@ Provides access to the instance $depth.
 ::: tip RETURN
 int
 :::
-
 
 ---
 
@@ -197,7 +193,6 @@ Return an instance with the specified known object IDs.
 ::: tip RETURN
 VarDumperInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified known object IDs.
 
@@ -209,7 +204,6 @@ an instance that contains the specified known object IDs.
 array
 :::
 
-
 ---
 
 ### withProcessor()
@@ -219,7 +213,6 @@ Process the var dump operation.
 ::: tip RETURN
 VarDumperInterface
 :::
-
 
 ---
 

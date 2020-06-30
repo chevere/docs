@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # TypeException
 
 `Chevere\Exceptions\VarDump\TypeException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -28,7 +33,6 @@
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SpecInterface
 
 `Chevere\Interfaces\Spec\SpecInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
+
 ## Methods
 
 ### jsonPath()
@@ -15,7 +20,6 @@
 string
 :::
 
-
 ---
 
 ### key()
@@ -23,7 +27,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -34,7 +37,6 @@ Returns an array, representing the object itself or some of its data/properties.
 ::: tip RETURN
 array
 :::
-
 
 ---
 

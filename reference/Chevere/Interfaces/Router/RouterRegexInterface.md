@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouterRegexInterface
 
 `Chevere\Interfaces\Router\RouterRegexInterface`
@@ -42,7 +46,6 @@ Type `string`
 ::: tip RETURN
 [RegexInterface](../Regex/RegexInterface.md)
 :::
-
 
 ---
 

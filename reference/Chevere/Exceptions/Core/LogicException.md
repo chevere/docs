@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # LogicException
 
 `Chevere\Exceptions\Core\LogicException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [LogicException](https://www.php.net/manual/class.logicexception)
@@ -32,7 +37,6 @@ Exception that represents error in the program logic. This kind of exception sho
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

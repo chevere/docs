@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugsQueueTypedInterface
 
 `Chevere\Interfaces\Plugin\PlugsQueueTypedInterface`
@@ -16,7 +20,6 @@
 PlugsQueueTypedInterface
 :::
 
-
 ---
 
 ### accept()
@@ -24,7 +27,6 @@ PlugsQueueTypedInterface
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -34,7 +36,6 @@ string
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
 
-
 ---
 
 ### plugsQueue()
@@ -42,7 +43,6 @@ string
 ::: tip RETURN
 [PlugsQueueInterface](./PlugsQueueInterface.md)
 :::
-
 
 ---
 

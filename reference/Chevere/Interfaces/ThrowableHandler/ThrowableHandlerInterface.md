@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ThrowableHandlerInterface
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableHandlerInterface`
@@ -16,7 +20,6 @@
 ThrowableHandlerInterface
 :::
 
-
 ---
 
 ### dateTimeUtc()
@@ -24,7 +27,6 @@ ThrowableHandlerInterface
 ::: tip RETURN
 DateTimeInterface
 :::
-
 
 ---
 
@@ -34,7 +36,6 @@ DateTimeInterface
 [ThrowableReadInterface](./ThrowableReadInterface.md)
 :::
 
-
 ---
 
 ### id()
@@ -43,7 +44,6 @@ DateTimeInterface
 string
 :::
 
-
 ---
 
 ### isDebug()
@@ -51,7 +51,6 @@ string
 ::: tip RETURN
 bool
 :::
-
 
 ---
 

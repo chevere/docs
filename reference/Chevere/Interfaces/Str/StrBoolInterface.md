@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # StrBoolInterface
 
 `Chevere\Interfaces\Str\StrBoolInterface`
@@ -20,7 +24,6 @@
 bool
 :::
 
-
 ---
 
 ### ctypeSpace()
@@ -28,7 +31,6 @@ bool
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -38,7 +40,6 @@ bool
 bool
 :::
 
-
 ---
 
 ### startsWithCtypeDigit()
@@ -46,7 +47,6 @@ bool
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -60,7 +60,6 @@ bool
 bool
 :::
 
-
 ---
 
 ### endsWith()
@@ -73,7 +72,6 @@ bool
 bool
 :::
 
-
 ---
 
 ### same()
@@ -85,7 +83,6 @@ bool
 ::: tip RETURN
 bool
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugTypesListInterface
 
 `Chevere\Interfaces\Plugin\PlugTypesListInterface`
@@ -11,7 +15,6 @@
 ::: tip RETURN
 [Generator](https://www.php.net/manual/class.generator)
 :::
-
 
 ---
 

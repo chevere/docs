@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugsQueueInterface
 
 `Chevere\Interfaces\Plugin\PlugsQueueInterface`
@@ -22,13 +26,11 @@
 
 ::: danger THROWS
 [PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md)
- if $plug doesn't implement the expected plugType
+if $plug doesn't implement the expected plugType
 :::
-
 ::: tip RETURN
 PlugsQueueInterface
 :::
-
 
 ---
 
@@ -38,7 +40,6 @@ PlugsQueueInterface
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
 
-
 ---
 
 ### toArray()
@@ -46,7 +47,6 @@ PlugsQueueInterface
 ::: tip RETURN
 array
 :::
-
 
 ---
 

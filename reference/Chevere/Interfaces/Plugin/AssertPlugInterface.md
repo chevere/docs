@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # AssertPlugInterface
 
 `Chevere\Interfaces\Plugin\AssertPlugInterface`
@@ -20,7 +24,6 @@
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
 
-
 ---
 
 ### plug()
@@ -28,7 +31,6 @@
 ::: tip RETURN
 [PlugInterface](./PlugInterface.md)
 :::
-
 
 ---
 

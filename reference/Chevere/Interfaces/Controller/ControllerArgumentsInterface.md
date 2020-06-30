@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ControllerArgumentsInterface
 
 `Chevere\Interfaces\Controller\ControllerArgumentsInterface`
@@ -12,7 +16,6 @@
 array
 :::
 
-
 ---
 
 ### withArgument()
@@ -26,7 +29,6 @@ array
 ControllerArgumentsInterface
 :::
 
-
 ---
 
 ### has()
@@ -39,7 +41,6 @@ ControllerArgumentsInterface
 bool
 :::
 
-
 ---
 
 ### get()
@@ -51,7 +52,6 @@ bool
 ::: tip RETURN
 void
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouterMakerInterface
 
 `Chevere\Interfaces\Router\RouterMakerInterface`
@@ -22,28 +26,23 @@ Return an instance with the specified added RoutableInterface.
 
 ::: danger THROWS
 [RouterMakerException](../../Exceptions/Router/RouterMakerException.md)
- if unable to process routing
+if unable to process routing
 :::
-
 ::: danger THROWS
 [RoutePathExistsException](../../Exceptions/Router/RoutePathExistsException.md)
- if $routable has been already routed
+if $routable has been already routed
 :::
-
 ::: danger THROWS
 [RouteKeyConflictException](../../Exceptions/Router/RouteKeyConflictException.md)
- if $routable conflicts with other RoutableInterface
+if $routable conflicts with other RoutableInterface
 :::
-
 ::: danger THROWS
 [RouteNameConflictException](../../Exceptions/Router/RouteNameConflictException.md)
- if $routable name conflicts with other RoutableInterface
+if $routable name conflicts with other RoutableInterface
 :::
-
 ::: tip RETURN
 RouterMakerInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified added RoutableInterface.
 
@@ -56,7 +55,6 @@ Provides access to the generated RouterInterface instance.
 ::: tip RETURN
 [RouterInterface](./RouterInterface.md)
 :::
-
 
 ---
 

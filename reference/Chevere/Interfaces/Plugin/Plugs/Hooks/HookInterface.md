@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # HookInterface
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\HookInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [PlugInterface](../../PlugInterface.md)
+
 ## Methods
 
 ### __invoke()
@@ -19,7 +24,6 @@
 void
 :::
 
-
 ---
 
 ### anchor()
@@ -27,7 +31,6 @@ void
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -37,7 +40,6 @@ string
 string
 :::
 
-
 ---
 
 ### priority()
@@ -45,7 +47,6 @@ string
 ::: tip RETURN
 int
 :::
-
 
 ---
 

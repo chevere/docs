@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SpecMethodsInterface
 
 `Chevere\Interfaces\Spec\SpecMethodsInterface`
@@ -7,7 +11,8 @@
 ## Implements
 
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### withPut()
@@ -21,7 +26,6 @@
 SpecMethodsInterface
 :::
 
-
 ---
 
 ### hasKey()
@@ -33,7 +37,6 @@ SpecMethodsInterface
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -47,7 +50,6 @@ bool
 string
 :::
 
-
 ---
 
 ### keys()
@@ -56,7 +58,6 @@ string
 array
 :::
 
-
 ---
 
 ### map()
@@ -64,7 +65,6 @@ array
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 

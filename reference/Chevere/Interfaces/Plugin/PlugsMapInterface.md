@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugsMapInterface
 
 `Chevere\Interfaces\Plugin\PlugsMapInterface`
@@ -6,7 +10,8 @@
 
 ## Implements
 
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### type()
@@ -14,7 +19,6 @@
 ::: tip RETURN
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
-
 
 ---
 
@@ -28,7 +32,6 @@
 PlugsMapInterface
 :::
 
-
 ---
 
 ### has()
@@ -40,7 +43,6 @@ PlugsMapInterface
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -54,7 +56,6 @@ bool
 bool
 :::
 
-
 ---
 
 ### getPlugsFor()
@@ -66,7 +67,6 @@ bool
 ::: tip RETURN
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
 :::
-
 
 ---
 

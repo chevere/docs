@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FileHandleException
 
 `Chevere\Exceptions\Filesystem\FileHandleException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown when a file handle is unable to interact with the file.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

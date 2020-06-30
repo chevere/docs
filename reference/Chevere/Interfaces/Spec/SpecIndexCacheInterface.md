@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SpecIndexCacheInterface
 
 `Chevere\Interfaces\Spec\SpecIndexCacheInterface`
@@ -16,7 +20,6 @@
 bool
 :::
 
-
 ---
 
 ### get()
@@ -28,7 +31,6 @@ bool
 ::: tip RETURN
 [SpecMethodsInterface](./SpecMethodsInterface.md)
 :::
-
 
 ---
 
@@ -42,7 +44,6 @@ bool
 void
 :::
 
-
 ---
 
 ### puts()
@@ -50,7 +51,6 @@ void
 ::: tip RETURN
 array
 :::
-
 
 ---
 

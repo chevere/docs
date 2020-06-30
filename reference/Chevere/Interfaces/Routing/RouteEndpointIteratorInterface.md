@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteEndpointIteratorInterface
 
 `Chevere\Interfaces\Routing\RouteEndpointIteratorInterface`
@@ -19,7 +23,6 @@
 ::: tip RETURN
 [RouteEndpointsInterface](../Route/RouteEndpointsInterface.md)
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ControllerResponseInterface
 
 `Chevere\Interfaces\Controller\ControllerResponseInterface`
@@ -16,7 +20,6 @@
 ControllerResponseInterface
 :::
 
-
 ---
 
 ### isSuccess()
@@ -25,7 +28,6 @@ ControllerResponseInterface
 bool
 :::
 
-
 ---
 
 ### data()
@@ -33,7 +35,6 @@ bool
 ::: tip RETURN
 array
 :::
-
 
 ---
 

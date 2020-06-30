@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RuntimeInterface
 
 `Chevere\Interfaces\Runtime\RuntimeInterface`
@@ -16,7 +20,6 @@
 RuntimeInterface
 :::
 
-
 ---
 
 ### data()
@@ -24,7 +27,6 @@ RuntimeInterface
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 

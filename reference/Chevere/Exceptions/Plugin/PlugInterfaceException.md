@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugInterfaceException
 
 `Chevere\Exceptions\Plugin\PlugInterfaceException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown when the plug doesn't implement an accepted interface.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

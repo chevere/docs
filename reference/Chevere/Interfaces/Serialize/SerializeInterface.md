@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SerializeInterface
 
 `Chevere\Interfaces\Serialize\SerializeInterface`
@@ -21,7 +25,6 @@ Provides access to the serialized string.
 ::: tip RETURN
 void
 :::
-
 
 ---
 

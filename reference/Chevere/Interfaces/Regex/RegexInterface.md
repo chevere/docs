@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RegexInterface
 
 `Chevere\Interfaces\Regex\RegexInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [ToStringInterface](../To/ToStringInterface.md)
+
 ## Constants
 
 ### ERRORS
@@ -41,7 +46,6 @@ array (
 void
 :::
 
-
 ---
 
 ### toString()
@@ -49,7 +53,6 @@ void
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -59,7 +62,6 @@ string
 string
 :::
 
-
 ---
 
 ### toNoDelimitersNoAnchors()
@@ -67,7 +69,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

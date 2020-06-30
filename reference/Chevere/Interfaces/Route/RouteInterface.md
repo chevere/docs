@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteInterface
 
 `Chevere\Interfaces\Route\RouteInterface`
@@ -14,9 +18,8 @@
 2. [RoutePathInterface](./RoutePathInterface.md) `$routePath`
 ::: danger THROWS
 [RouteNameInvalidException](../../Exceptions/Route/RouteNameInvalidException.md)
- if $name doesn't match REGEX_NAME
+if $name doesn't match REGEX_NAME
 :::
-
 
 ---
 
@@ -28,7 +31,6 @@ Provides access to the route name (if any).
 [RouteNameInterface](./RouteNameInterface.md)
 :::
 
-
 ---
 
 ### path()
@@ -39,7 +41,6 @@ Provides access to the RoutePathInterface instance.
 [RoutePathInterface](./RoutePathInterface.md)
 :::
 
-
 ---
 
 ### maker()
@@ -49,7 +50,6 @@ Provides access to the file maker array.
 ::: tip RETURN
 array
 :::
-
 
 ---
 
@@ -64,7 +64,6 @@ Return an instance with the specified added $routeEndpoint.
 ::: tip RETURN
 RouteInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified added $routeEndpoint.
 
@@ -80,7 +79,6 @@ Provides access to the RouteEndpointsInterface instance.
 [RouteEndpointsInterface](./RouteEndpointsInterface.md)
 :::
 
-
 ---
 
 ### withAddedMiddleware()
@@ -94,7 +92,6 @@ Return an instance with the specified added $middleware.
 ::: tip RETURN
 RouteInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified added $middleware.
 
@@ -107,7 +104,6 @@ Provides access to the MiddlewareNameCollectionInterface instance.
 ::: tip RETURN
 [MiddlewaresInterface](../Middleware/MiddlewaresInterface.md)
 :::
-
 
 ---
 

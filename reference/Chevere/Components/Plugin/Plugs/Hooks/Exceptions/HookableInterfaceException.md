@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # HookableInterfaceException
 
 `Chevere\Components\Plugin\Plugs\Hooks\Exceptions\HookableInterfaceException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../../../../../Exceptions/Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown when a pluggable doesn't implement the hookable interface.
 ::: tip RETURN
 [MessageInterface](../../../../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # UnderflowException
 
 `Chevere\Exceptions\Core\UnderflowException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [UnderflowException](https://www.php.net/manual/class.underflowexception)
@@ -32,7 +37,6 @@ Exception thrown when performing an invalid operation on an empty container, suc
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

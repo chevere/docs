@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # OutOfRangeException
 
 `Chevere\Exceptions\Core\OutOfRangeException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [OutOfRangeException](https://www.php.net/manual/class.outofrangeexception)
@@ -32,7 +37,6 @@ Exception thrown when an illegal index was requested. This represents errors tha
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

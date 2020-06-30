@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FileUnableToGetException
 
 `Chevere\Exceptions\Filesystem\FileUnableToGetException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown when unable to get the file contents.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

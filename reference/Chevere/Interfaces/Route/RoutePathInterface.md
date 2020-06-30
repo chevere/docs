@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RoutePathInterface
 
 `Chevere\Interfaces\Route\RoutePathInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [ToStringInterface](../To/ToStringInterface.md)
+
 ## Constants
 
 ### REGEX_DELIMITER_CHAR
@@ -49,34 +54,28 @@ array (
 1. string `$path`
 ::: danger THROWS
 [RoutePathForwardSlashException](../../Exceptions/Route/RoutePathForwardSlashException.md)
- if $path doesn't start with forward slash
+if $path doesn't start with forward slash
 :::
-
 ::: danger THROWS
 [RoutePathInvalidCharsException](../../Exceptions/Route/RoutePathInvalidCharsException.md)
- if $path contains invalid chars
+if $path contains invalid chars
 :::
-
 ::: danger THROWS
 [RoutePathUnmatchedBracesException](../../Exceptions/Route/RoutePathUnmatchedBracesException.md)
- if $path contains unmatched braces (must be paired)
+if $path contains unmatched braces (must be paired)
 :::
-
 ::: danger THROWS
 [RoutePathUnmatchedWildcardsException](../../Exceptions/Route/RoutePathUnmatchedWildcardsException.md)
- if $path contains wildcards that don't match the number of braces
+if $path contains wildcards that don't match the number of braces
 :::
-
 ::: danger THROWS
 [RouteWildcardReservedException](../../Exceptions/Route/RouteWildcardReservedException.md)
- if $path contains reserved wildcards
+if $path contains reserved wildcards
 :::
-
 ::: danger THROWS
 [RouteWildcardRepeatException](../../Exceptions/Route/RouteWildcardRepeatException.md)
- if $path contains repeated wildcards
+if $path contains repeated wildcards
 :::
-
 
 ---
 
@@ -85,7 +84,6 @@ array (
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -98,7 +96,6 @@ with placeholders converting `/api/articles/{wildcard}` to `/api/articles/{0}`
 string
 :::
 
-
 ---
 
 ### regex()
@@ -106,7 +103,6 @@ string
 ::: tip RETURN
 [RegexInterface](../Regex/RegexInterface.md)
 :::
-
 
 ---
 
@@ -117,7 +113,6 @@ Provides access to the RouteWildcardsInterface instance.
 ::: tip RETURN
 [RouteWildcardsInterface](./RouteWildcardsInterface.md)
 :::
-
 
 ---
 
@@ -132,7 +127,6 @@ Return an instance with the specified WildcardInterface.
 ::: tip RETURN
 RoutePathInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified WildcardInterface.
 
@@ -149,7 +143,6 @@ Provide a request uri for the given wildcards.
 ::: tip RETURN
 string
 :::
-
 
 ---
 

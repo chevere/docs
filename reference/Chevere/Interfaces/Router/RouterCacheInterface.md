@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouterCacheInterface
 
 `Chevere\Interfaces\Router\RouterCacheInterface`
@@ -39,7 +43,6 @@ Type `string`
 [RoutesCacheInterface](./RoutesCacheInterface.md)
 :::
 
-
 ---
 
 ### routeResolvesCache()
@@ -47,7 +50,6 @@ Type `string`
 ::: tip RETURN
 [RouteResolvesCacheInterface](./RouteResolvesCacheInterface.md)
 :::
-
 
 ---
 
@@ -57,7 +59,6 @@ Type `string`
 bool
 :::
 
-
 ---
 
 ### hasIndex()
@@ -65,7 +66,6 @@ bool
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -75,7 +75,6 @@ bool
 [RouterRegexInterface](./RouterRegexInterface.md)
 :::
 
-
 ---
 
 ### getIndex()
@@ -83,7 +82,6 @@ bool
 ::: tip RETURN
 [RouterIndexInterface](./RouterIndexInterface.md)
 :::
-
 
 ---
 
@@ -97,7 +95,6 @@ bool
 RouterCacheInterface
 :::
 
-
 ---
 
 ### remove()
@@ -106,7 +103,6 @@ RouterCacheInterface
 void
 :::
 
-
 ---
 
 ### puts()
@@ -114,7 +110,6 @@ void
 ::: tip RETURN
 array
 :::
-
 
 ---
 

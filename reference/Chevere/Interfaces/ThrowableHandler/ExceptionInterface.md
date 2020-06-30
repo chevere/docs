@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ExceptionInterface
 
 `Chevere\Interfaces\ThrowableHandler\ExceptionInterface`
@@ -12,7 +16,6 @@
 [MessageInterface](../Message/MessageInterface.md)
 :::
 
-
 ---
 
 ### getMessage()
@@ -20,7 +23,6 @@
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -30,7 +32,6 @@ string
 [Throwable](https://www.php.net/manual/class.throwable)
 :::
 
-
 ---
 
 ### getCode()
@@ -38,7 +39,6 @@ string
 ::: tip RETURN
 void
 :::
-
 
 ---
 
@@ -48,7 +48,6 @@ void
 string
 :::
 
-
 ---
 
 ### getLine()
@@ -56,7 +55,6 @@ string
 ::: tip RETURN
 int
 :::
-
 
 ---
 
@@ -66,7 +64,6 @@ int
 array
 :::
 
-
 ---
 
 ### getTraceAsString()
@@ -75,7 +72,6 @@ array
 string
 :::
 
-
 ---
 
 ### __toString()
@@ -83,7 +79,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

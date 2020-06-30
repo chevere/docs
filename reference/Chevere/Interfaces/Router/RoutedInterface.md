@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RoutedInterface
 
 `Chevere\Interfaces\Router\RoutedInterface`
@@ -25,7 +29,6 @@ Describes a resolved route.
 [RouteNameInterface](../Route/RouteNameInterface.md)
 :::
 
-
 ---
 
 ### arguments()
@@ -33,7 +36,6 @@ Describes a resolved route.
 ::: tip RETURN
 array
 :::
-
 
 ---
 

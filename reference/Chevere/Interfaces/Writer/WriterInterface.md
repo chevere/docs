@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # WriterInterface
 
 `Chevere\Interfaces\Writer\WriterInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [ToStringInterface](../To/ToStringInterface.md)
+
 ## Methods
 
 ### write()
@@ -21,7 +26,6 @@ Writes the given string.
 void
 :::
 
-
 ---
 
 ### toString()
@@ -31,7 +35,6 @@ Returns the contents written. Should not alter the file cursor.
 ::: tip RETURN
 string
 :::
-
 
 ---
 

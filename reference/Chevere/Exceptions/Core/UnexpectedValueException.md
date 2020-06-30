@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # UnexpectedValueException
 
 `Chevere\Exceptions\Core\UnexpectedValueException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [UnexpectedValueException](https://www.php.net/manual/class.unexpectedvalueexception)
@@ -32,7 +37,6 @@ Exception thrown if a value does not match with a set of values. Typically this 
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

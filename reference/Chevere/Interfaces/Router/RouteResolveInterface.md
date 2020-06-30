@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteResolveInterface
 
 `Chevere\Interfaces\Router\RouteResolveInterface`
@@ -12,7 +16,6 @@
 string
 :::
 
-
 ---
 
 ### routeWildcards()
@@ -20,7 +23,6 @@ string
 ::: tip RETURN
 [RouteWildcardsInterface](../Route/RouteWildcardsInterface.md)
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FileUnableToRemoveException
 
 `Chevere\Exceptions\Filesystem\FileUnableToRemoveException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown when the file can't be removed (filesystem error).
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugDetectInterface
 
 `Chevere\Interfaces\Plugin\PlugDetectInterface`
@@ -20,7 +24,6 @@
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
 
-
 ---
 
 ### accept()
@@ -28,7 +31,6 @@
 ::: tip RETURN
 array
 :::
-
 
 ---
 

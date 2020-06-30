@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # InvalidArgumentException
 
 `Chevere\Exceptions\Core\InvalidArgumentException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [InvalidArgumentException](https://www.php.net/manual/class.invalidargumentexception)
@@ -32,7 +37,6 @@ Exception thrown if an argument is not of the expected value.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

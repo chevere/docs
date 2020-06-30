@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # TraceEntryInterface
 
 `Chevere\Interfaces\ThrowableHandler\TraceEntryInterface`
@@ -39,7 +43,6 @@ array (
 string
 :::
 
-
 ---
 
 ### line()
@@ -47,7 +50,6 @@ string
 ::: tip RETURN
 int
 :::
-
 
 ---
 
@@ -57,7 +59,6 @@ int
 string
 :::
 
-
 ---
 
 ### function()
@@ -65,7 +66,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -75,7 +75,6 @@ string
 string
 :::
 
-
 ---
 
 ### type()
@@ -84,7 +83,6 @@ string
 string
 :::
 
-
 ---
 
 ### args()
@@ -92,7 +90,6 @@ string
 ::: tip RETURN
 array
 :::
-
 
 ---
 

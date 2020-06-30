@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FsRoutesInterface
 
 `Chevere\Interfaces\Routing\FsRoutesInterface`
@@ -6,7 +10,8 @@
 
 ## Implements
 
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### __construct()
@@ -24,7 +29,6 @@
 FsRoutesInterface
 :::
 
-
 ---
 
 ### count()
@@ -32,7 +36,6 @@ FsRoutesInterface
 ::: tip RETURN
 int
 :::
-
 
 ---
 
@@ -46,7 +49,6 @@ int
 bool
 :::
 
-
 ---
 
 ### get()
@@ -58,7 +60,6 @@ bool
 ::: tip RETURN
 [FsRouteInterface](./FsRouteInterface.md)
 :::
-
 
 ---
 

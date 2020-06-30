@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugsMapCacheInterface
 
 `Chevere\Interfaces\Plugin\PlugsMapCacheInterface`
@@ -26,7 +30,6 @@ Type `string`
 PlugsMapCacheInterface
 :::
 
-
 ---
 
 ### hasPlugsQueueFor()
@@ -39,7 +42,6 @@ PlugsMapCacheInterface
 bool
 :::
 
-
 ---
 
 ### getPlugsQueueFor()
@@ -51,7 +53,6 @@ bool
 ::: tip RETURN
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
 :::
-
 
 ---
 

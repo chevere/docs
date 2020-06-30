@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # HttpStatusInterface
 
 `Chevere\Interfaces\Http\HttpStatusInterface`

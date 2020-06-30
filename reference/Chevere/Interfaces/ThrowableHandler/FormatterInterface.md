@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FormatterInterface
 
 `Chevere\Interfaces\ThrowableHandler\FormatterInterface`
@@ -14,7 +18,6 @@ Provides access to the VarDumpFormatterInterface instance.
 [FormatterInterface](../VarDump/FormatterInterface.md)
 :::
 
-
 ---
 
 ### getVarDumpFormatter()
@@ -24,7 +27,6 @@ Get a new object implementing the VarDumpFormatterInterface.
 ::: tip RETURN
 [FormatterInterface](../VarDump/FormatterInterface.md)
 :::
-
 
 ---
 
@@ -36,7 +38,6 @@ Get the template used for each trace entry.
 string
 :::
 
-
 ---
 
 ### getHr()
@@ -45,7 +46,6 @@ string
 string
 :::
 
-
 ---
 
 ### getLineBreak()
@@ -53,7 +53,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -67,7 +66,6 @@ string
 string
 :::
 
-
 ---
 
 ### wrapSectionTitle()
@@ -80,7 +78,6 @@ string
 string
 :::
 
-
 ---
 
 ### wrapTitle()
@@ -92,7 +89,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

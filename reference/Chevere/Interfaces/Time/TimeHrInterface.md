@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # TimeHrInterface
 
 `Chevere\Interfaces\Time\TimeHrInterface`
@@ -19,7 +23,6 @@
 ::: tip RETURN
 string
 :::
-
 
 ---
 

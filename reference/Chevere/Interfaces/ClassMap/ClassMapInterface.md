@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ClassMapInterface
 
 `Chevere\Interfaces\ClassMap\ClassMapInterface`
@@ -6,7 +10,8 @@
 
 ## Implements
 
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### isStrict()
@@ -14,7 +19,6 @@
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -28,7 +32,6 @@ bool
 ClassMapInterface
 :::
 
-
 ---
 
 ### withPut()
@@ -40,18 +43,13 @@ ClassMapInterface
 
 ::: danger THROWS
 [ClassNotExistsException](../../Exceptions/ClassMap/ClassNotExistsException.md)
- 
 :::
-
 ::: danger THROWS
 [ClassMappedException](../../Exceptions/ClassMap/ClassMappedException.md)
- 
 :::
-
 ::: tip RETURN
 ClassMapInterface
 :::
-
 
 ---
 
@@ -65,7 +63,6 @@ ClassMapInterface
 bool
 :::
 
-
 ---
 
 ### get()
@@ -76,13 +73,10 @@ bool
 
 ::: danger THROWS
 [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md)
- 
 :::
-
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -91,7 +85,6 @@ string
 ::: tip RETURN
 array
 :::
-
 
 ---
 

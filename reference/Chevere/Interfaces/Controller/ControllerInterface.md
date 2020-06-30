@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ControllerInterface
 
 `Chevere\Interfaces\Controller\ControllerInterface`
@@ -12,7 +16,6 @@
 [ControllerParametersInterface](./ControllerParametersInterface.md)
 :::
 
-
 ---
 
 ### parameters()
@@ -20,7 +23,6 @@
 ::: tip RETURN
 [ControllerParametersInterface](./ControllerParametersInterface.md)
 :::
-
 
 ---
 
@@ -30,7 +32,6 @@
 string
 :::
 
-
 ---
 
 ### description()
@@ -38,7 +39,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -48,7 +48,6 @@ string
 void
 :::
 
-
 ---
 
 ### tearDown()
@@ -56,7 +55,6 @@ void
 ::: tip RETURN
 void
 :::
-
 
 ---
 
@@ -69,7 +67,6 @@ void
 ::: tip RETURN
 [ControllerResponseInterface](./ControllerResponseInterface.md)
 :::
-
 
 ---
 

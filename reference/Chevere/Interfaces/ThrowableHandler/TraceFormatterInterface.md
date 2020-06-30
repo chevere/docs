@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # TraceFormatterInterface
 
 `Chevere\Interfaces\ThrowableHandler\TraceFormatterInterface`
@@ -8,6 +12,7 @@
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 - [ToStringInterface](../To/ToStringInterface.md)
+
 ## Constants
 
 ### TAG_ENTRY_FILE
@@ -109,7 +114,6 @@ Returns an array, representing the object itself or some of its data/properties.
 array
 :::
 
-
 ---
 
 ### toString()
@@ -119,7 +123,6 @@ Returns a string, representing the object itself or some of its data/properties.
 ::: tip RETURN
 string
 :::
-
 
 ---
 

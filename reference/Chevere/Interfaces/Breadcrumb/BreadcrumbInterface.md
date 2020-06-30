@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # BreadcrumbInterface
 
 `Chevere\Interfaces\Breadcrumb\BreadcrumbInterface`
@@ -8,6 +12,7 @@
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 - [ToStringInterface](../To/ToStringInterface.md)
+
 ## Methods
 
 ### has()
@@ -22,7 +27,6 @@ Returns a boolean indicating whether the instance has the given position.
 bool
 :::
 
-
 ---
 
 ### hasAny()
@@ -33,7 +37,6 @@ Returns a boolean indicating whether the instance has any items.
 bool
 :::
 
-
 ---
 
 ### pos()
@@ -42,13 +45,11 @@ Returns the current breadcrumb position.
 
 ::: danger THROWS
 [BreadcrumbException](../../Exceptions/Breadcrumb/BreadcrumbException.md)
- if there's no item
+if there's no item
 :::
-
 ::: tip RETURN
 int
 :::
-
 
 ---
 
@@ -63,7 +64,6 @@ Return an instance with the specified string item added.
 ::: tip RETURN
 BreadcrumbInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified item.
 
@@ -79,13 +79,11 @@ Return an instance with the specified waypoint pos removed.
 
 ::: danger THROWS
 [BreadcrumbException](../../Exceptions/Breadcrumb/BreadcrumbException.md)
- if the item specified by $pos doesn't exists
+if the item specified by $pos doesn't exists
 :::
-
 ::: tip RETURN
 BreadcrumbInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified waypoint pos removed.
 
@@ -99,7 +97,6 @@ Returns an array, representing the object itself or some of its data/properties.
 array
 :::
 
-
 ---
 
 ### toString()
@@ -109,7 +106,6 @@ Returns a string, representing the object itself or some of its data/properties.
 ::: tip RETURN
 string
 :::
-
 
 ---
 

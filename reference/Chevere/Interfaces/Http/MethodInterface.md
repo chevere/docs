@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # MethodInterface
 
 `Chevere\Interfaces\Http\MethodInterface`
@@ -12,7 +16,6 @@
 string
 :::
 
-
 ---
 
 ### description()
@@ -20,7 +23,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

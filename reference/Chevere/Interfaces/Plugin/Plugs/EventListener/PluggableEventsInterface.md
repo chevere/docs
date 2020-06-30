@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PluggableEventsInterface
 
 `Chevere\Interfaces\Plugin\Plugs\EventListener\PluggableEventsInterface`
@@ -11,7 +15,6 @@
 ::: tip RETURN
 [PluggableAnchorsInterface](../../PluggableAnchorsInterface.md)
 :::
-
 
 ---
 
@@ -27,7 +30,6 @@ Attach the events runner.
 PluggableEventsInterface
 :::
 
-
 ---
 
 ### event()
@@ -42,7 +44,6 @@ Run events for the given anchor (if-any).
 ::: tip RETURN
 void
 :::
-
 
 ---
 

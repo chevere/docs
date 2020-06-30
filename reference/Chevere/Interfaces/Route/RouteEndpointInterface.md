@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteEndpointInterface
 
 `Chevere\Interfaces\Route\RouteEndpointInterface`
@@ -41,7 +45,6 @@ array (
 [MethodInterface](../Http/MethodInterface.md)
 :::
 
-
 ---
 
 ### controller()
@@ -49,7 +52,6 @@ array (
 ::: tip RETURN
 [ControllerInterface](../Controller/ControllerInterface.md)
 :::
-
 
 ---
 
@@ -63,7 +65,6 @@ array (
 RouteEndpointInterface
 :::
 
-
 ---
 
 ### description()
@@ -71,7 +72,6 @@ RouteEndpointInterface
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -85,7 +85,6 @@ string
 RouteEndpointInterface
 :::
 
-
 ---
 
 ### parameters()
@@ -93,7 +92,6 @@ RouteEndpointInterface
 ::: tip RETURN
 array
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RuntimeException
 
 `Chevere\Exceptions\Core\RuntimeException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [RuntimeException](https://www.php.net/manual/class.runtimeexception)
@@ -32,7 +37,6 @@ Exception thrown if an error which can only be found on runtime occurs.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

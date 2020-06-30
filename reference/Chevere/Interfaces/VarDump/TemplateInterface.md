@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # TemplateInterface
 
 `Chevere\Interfaces\VarDump\TemplateInterface`

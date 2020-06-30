@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PluggableHooksInterface
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\PluggableHooksInterface`
@@ -11,7 +15,6 @@
 ::: tip RETURN
 [PluggableAnchorsInterface](../../PluggableAnchorsInterface.md)
 :::
-
 
 ---
 
@@ -27,7 +30,6 @@ Attach the hooks runner for this hookable.
 PluggableHooksInterface
 :::
 
-
 ---
 
 ### hook()
@@ -42,7 +44,6 @@ Run hooks for the given anchor (if-any).
 ::: tip RETURN
 void
 :::
-
 
 ---
 

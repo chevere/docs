@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # VarDumpInterface
 
 `Chevere\Interfaces\VarDump\VarDumpInterface`
@@ -26,7 +30,6 @@ Return an instance with the specified vars.
 ::: tip RETURN
 VarDumpInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified vars.
 
@@ -43,7 +46,6 @@ Return an instance with the specified shift.
 ::: tip RETURN
 VarDumpInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified shift.
 
@@ -63,7 +65,6 @@ Process the dump writing
 void
 :::
 
-
 ---
 
 ### vars()
@@ -72,7 +73,6 @@ void
 array
 :::
 
-
 ---
 
 ### shift()
@@ -80,7 +80,6 @@ array
 ::: tip RETURN
 int
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PathInterface
 
 `Chevere\Interfaces\Filesystem\PathInterface`
@@ -12,7 +16,6 @@
 string
 :::
 
-
 ---
 
 ### exists()
@@ -22,7 +25,6 @@ Returns a boolean indicating whether the path exists.
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -34,7 +36,6 @@ Returns a boolean indicating whether the path is a directory and exists.
 bool
 :::
 
-
 ---
 
 ### isFile()
@@ -44,7 +45,6 @@ Returns a boolean indicating whether the path is a file and exists.
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -58,18 +58,13 @@ Wrapper for \chmod.
 
 ::: danger THROWS
 [PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
- 
 :::
-
 ::: danger THROWS
 [PathUnableToChmodException](./PathUnableToChmodException.md)
- 
 :::
-
 ::: tip RETURN
 void
 :::
-
 
 ---
 
@@ -79,13 +74,10 @@ Wrapper for \is_writeable.
 
 ::: danger THROWS
 [PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
- 
 :::
-
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -95,13 +87,10 @@ Wrapper for \is_writeable.
 
 ::: danger THROWS
 [PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
- 
 :::
-
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -116,7 +105,6 @@ Get a child path as a PathInterface
 ::: tip RETURN
 PathInterface
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # HooksRunnerInterface
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\HooksRunnerInterface`
@@ -17,13 +21,11 @@ Run the registered hooks at the given anchor.
 
 ::: danger THROWS
 [RuntimeException](./RuntimeException.md)
- If the $argument type changes.
+If the $argument type changes.
 :::
-
 ::: tip RETURN
 void
 :::
-
 
 ---
 

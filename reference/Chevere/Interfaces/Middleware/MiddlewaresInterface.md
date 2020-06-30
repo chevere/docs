@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # MiddlewaresInterface
 
 `Chevere\Interfaces\Middleware\MiddlewaresInterface`
@@ -7,7 +11,8 @@
 ## Implements
 
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### withAddedMiddleware()
@@ -20,13 +25,11 @@ Return an instance with the specified $middleware.
 
 ::: danger THROWS
 [MiddlewareInterfaceException](./MiddlewareInterfaceException.md)
- if $name doesn't represent a class implementing the MiddlewareInterface
+if $name doesn't represent a class implementing the MiddlewareInterface
 :::
-
 ::: tip RETURN
 MiddlewaresInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $middleware.
 
@@ -44,7 +47,6 @@ Returns a boolean indicating whether the instance has the given MiddlewareNameIn
 bool
 :::
 
-
 ---
 
 ### keys()
@@ -53,7 +55,6 @@ bool
 array
 :::
 
-
 ---
 
 ### map()
@@ -61,7 +62,6 @@ array
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 

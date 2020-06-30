@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ControllerParameterInterface
 
 `Chevere\Interfaces\Controller\ControllerParameterInterface`
@@ -16,7 +20,6 @@
 ControllerParameterInterface
 :::
 
-
 ---
 
 ### withIsRequired()
@@ -29,7 +32,6 @@ ControllerParameterInterface
 ControllerParameterInterface
 :::
 
-
 ---
 
 ### isRequired()
@@ -37,7 +39,6 @@ ControllerParameterInterface
 ::: tip RETURN
 bool
 :::
-
 
 ---
 
@@ -47,7 +48,6 @@ bool
 string
 :::
 
-
 ---
 
 ### regex()
@@ -56,7 +56,6 @@ string
 [RegexInterface](../Regex/RegexInterface.md)
 :::
 
-
 ---
 
 ### description()
@@ -64,7 +63,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

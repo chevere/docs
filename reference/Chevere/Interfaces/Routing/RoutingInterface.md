@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RoutingInterface
 
 `Chevere\Interfaces\Routing\RoutingInterface`
@@ -20,7 +24,6 @@
 ::: tip RETURN
 [RouterInterface](../Router/RouterInterface.md)
 :::
-
 
 ---
 

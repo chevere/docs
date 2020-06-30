@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # DomainException
 
 `Chevere\Exceptions\Core\DomainException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [DomainException](https://www.php.net/manual/class.domainexception)
@@ -32,7 +37,6 @@ Exception thrown if a value does not adhere to a defined valid data domain.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

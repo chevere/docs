@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ControllerParametersInterface
 
 `Chevere\Interfaces\Controller\ControllerParametersInterface`
@@ -7,7 +11,8 @@
 ## Implements
 
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### map()
@@ -15,7 +20,6 @@
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 
@@ -30,7 +34,6 @@ Return an instance with the specified Controller Parameter.
 ::: tip RETURN
 ControllerParametersInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified Controller Parameter.
 
@@ -46,7 +49,6 @@ an instance that contains the specified Controller Parameter.
 bool
 :::
 
-
 ---
 
 ### get()
@@ -59,7 +61,6 @@ bool
 [ControllerParameterInterface](./ControllerParameterInterface.md)
 :::
 
-
 ---
 
 ### keys()
@@ -67,7 +68,6 @@ bool
 ::: tip RETURN
 array
 :::
-
 
 ---
 

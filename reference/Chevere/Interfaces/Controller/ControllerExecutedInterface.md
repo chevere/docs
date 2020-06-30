@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ControllerExecutedInterface
 
 `Chevere\Interfaces\Controller\ControllerExecutedInterface`
@@ -16,7 +20,6 @@
 ControllerExecutedInterface
 :::
 
-
 ---
 
 ### code()
@@ -24,7 +27,6 @@ ControllerExecutedInterface
 ::: tip RETURN
 int
 :::
-
 
 ---
 
@@ -34,7 +36,6 @@ int
 array
 :::
 
-
 ---
 
 ### hasThrowable()
@@ -43,7 +44,6 @@ array
 bool
 :::
 
-
 ---
 
 ### throwable()
@@ -51,7 +51,6 @@ bool
 ::: tip RETURN
 [Throwable](https://www.php.net/manual/class.throwable)
 :::
-
 
 ---
 

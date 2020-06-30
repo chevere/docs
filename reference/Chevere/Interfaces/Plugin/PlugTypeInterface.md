@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugTypeInterface
 
 `Chevere\Interfaces\Plugin\PlugTypeInterface`
@@ -12,7 +16,6 @@
 string
 :::
 
-
 ---
 
 ### plugsTo()
@@ -20,7 +23,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -30,7 +32,6 @@ string
 string
 :::
 
-
 ---
 
 ### queueName()
@@ -38,7 +39,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -48,7 +48,6 @@ string
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
 :::
 
-
 ---
 
 ### pluggableAnchorsMethod()
@@ -56,7 +55,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

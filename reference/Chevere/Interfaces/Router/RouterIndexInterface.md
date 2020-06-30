@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouterIndexInterface
 
 `Chevere\Interfaces\Router\RouterIndexInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
+
 ## Methods
 
 ### withAdded()
@@ -21,7 +26,6 @@ Return an instance with the specified values.
 ::: tip RETURN
 RouterIndexInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified values.
 
@@ -37,7 +41,6 @@ an instance that contains the specified values.
 bool
 :::
 
-
 ---
 
 ### getRouteIdentifier()
@@ -49,7 +52,6 @@ bool
 ::: tip RETURN
 [RouteIdentifierInterface](./RouteIdentifierInterface.md)
 :::
-
 
 ---
 
@@ -63,7 +65,6 @@ bool
 bool
 :::
 
-
 ---
 
 ### getGroupRouteNames()
@@ -75,7 +76,6 @@ bool
 ::: tip RETURN
 array
 :::
-
 
 ---
 
@@ -89,7 +89,6 @@ array
 string
 :::
 
-
 ---
 
 ### toArray()
@@ -99,7 +98,6 @@ Returns an array, representing the object itself or some of its data/properties.
 ::: tip RETURN
 array
 :::
-
 
 ---
 

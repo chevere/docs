@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ThrowableReadInterface
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableReadInterface`
@@ -73,7 +77,6 @@ Provides access to the exception class name.
 string
 :::
 
-
 ---
 
 ### code()
@@ -83,7 +86,6 @@ Provides access to the exception code.
 ::: tip RETURN
 int
 :::
-
 
 ---
 
@@ -95,7 +97,6 @@ Provides access to the exception severity.
 int
 :::
 
-
 ---
 
 ### loggerLevel()
@@ -105,7 +106,6 @@ Provides access to the exception logger level.
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -117,7 +117,6 @@ Provides access to the exception type.
 string
 :::
 
-
 ---
 
 ### message()
@@ -127,7 +126,6 @@ Provides access to the exception message.
 ::: tip RETURN
 [MessageInterface](../Message/MessageInterface.md)
 :::
-
 
 ---
 
@@ -139,7 +137,6 @@ Provides access to the exception file.
 string
 :::
 
-
 ---
 
 ### line()
@@ -150,7 +147,6 @@ Provides access to the exception line.
 int
 :::
 
-
 ---
 
 ### trace()
@@ -160,7 +156,6 @@ Provides access to the exception trace.
 ::: tip RETURN
 array
 :::
-
 
 ---
 

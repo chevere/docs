@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # StrInterface
 
 `Chevere\Interfaces\Str\StrInterface`
@@ -20,7 +24,6 @@
 string
 :::
 
-
 ---
 
 ### lowercase()
@@ -30,7 +33,6 @@ Lowercase string UTF-8
 ::: tip RETURN
 StrInterface
 :::
-
 
 ---
 
@@ -42,7 +44,6 @@ Uppercase string UTF-8
 StrInterface
 :::
 
-
 ---
 
 ### stripWhitespace()
@@ -52,7 +53,6 @@ Strip whitespaces from string.
 ::: tip RETURN
 StrInterface
 :::
-
 
 ---
 
@@ -64,7 +64,6 @@ Strip extra whitespace from string.
 StrInterface
 :::
 
-
 ---
 
 ### stripNonAlphanumerics()
@@ -75,7 +74,6 @@ Strip non-alphanumeric chars from string.
 StrInterface
 :::
 
-
 ---
 
 ### forwardSlashes()
@@ -85,7 +83,6 @@ Converts backslash into forward slashes.
 ::: tip RETURN
 StrInterface
 :::
-
 
 ---
 
@@ -101,7 +98,6 @@ Prepends a string with a tail string, without repeats.
 StrInterface
 :::
 
-
 ---
 
 ### rightTail()
@@ -115,7 +111,6 @@ Appends a tail to string, without repeats.
 ::: tip RETURN
 StrInterface
 :::
-
 
 ---
 
@@ -133,7 +128,6 @@ string.
 StrInterface
 :::
 
-
 ---
 
 ### replaceLast()
@@ -149,7 +143,6 @@ Replace the last occurrence of the search string with the replacement string.
 StrInterface
 :::
 
-
 ---
 
 ### stripANSIColors()
@@ -159,7 +152,6 @@ Removes CLI color format.
 ::: tip RETURN
 StrInterface
 :::
-
 
 ---
 

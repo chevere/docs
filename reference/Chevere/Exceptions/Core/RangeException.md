@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RangeException
 
 `Chevere\Exceptions\Core\RangeException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [RangeException](https://www.php.net/manual/class.rangeexception)
@@ -32,7 +37,6 @@ Exception thrown to indicate range errors during program execution. Normally thi
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

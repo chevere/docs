@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # EventListenersRunnerInterface
 
 `Chevere\Interfaces\Plugin\Plugs\EventListener\EventListenersRunnerInterface`
@@ -27,7 +31,6 @@ Run registered event listeners for the target event name.
 ::: tip RETURN
 void
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # EventListenerInterface
 
 `Chevere\Interfaces\Plugin\Plugs\EventListener\EventListenerInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [PlugInterface](../../PlugInterface.md)
+
 ## Methods
 
 ### __invoke()
@@ -20,7 +25,6 @@
 void
 :::
 
-
 ---
 
 ### anchor()
@@ -28,7 +32,6 @@ void
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -38,7 +41,6 @@ string
 string
 :::
 
-
 ---
 
 ### priority()
@@ -46,7 +48,6 @@ string
 ::: tip RETURN
 int
 :::
-
 
 ---
 

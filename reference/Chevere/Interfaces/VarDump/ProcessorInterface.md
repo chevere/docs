@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ProcessorInterface
 
 `Chevere\Interfaces\VarDump\ProcessorInterface`
@@ -23,7 +27,6 @@ Provides access to the instance info.
 ::: tip RETURN
 string
 :::
-
 The information about the variable like `size=1` or `length=6`
 
 ---
@@ -33,7 +36,6 @@ The information about the variable like `size=1` or `length=6`
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -47,7 +49,6 @@ string
 string
 :::
 
-
 ---
 
 ### highlightParentheses()
@@ -60,7 +61,6 @@ string
 string
 :::
 
-
 ---
 
 ### circularReference()
@@ -69,7 +69,6 @@ string
 string
 :::
 
-
 ---
 
 ### maxDepthReached()
@@ -77,7 +76,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -88,7 +86,6 @@ Provides access to the instance type.
 ::: tip RETURN
 string
 :::
-
 The information about the variable type like `array` or `object`
 
 ---
@@ -98,7 +95,6 @@ The information about the variable type like `array` or `object`
 ::: tip RETURN
 void
 :::
-
 
 ---
 

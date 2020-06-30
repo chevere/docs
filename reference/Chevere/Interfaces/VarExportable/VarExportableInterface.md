@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # VarExportableInterface
 
 `Chevere\Interfaces\VarExportable\VarExportableInterface`
@@ -20,7 +24,6 @@
 void
 :::
 
-
 ---
 
 ### toExport()
@@ -29,7 +32,6 @@ void
 void
 :::
 
-
 ---
 
 ### toSerialize()
@@ -37,7 +39,6 @@ void
 ::: tip RETURN
 string
 :::
-
 
 ---
 

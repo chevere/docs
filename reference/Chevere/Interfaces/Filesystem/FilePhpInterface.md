@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FilePhpInterface
 
 `Chevere\Interfaces\Filesystem\FilePhpInterface`
@@ -14,7 +18,6 @@ Provides access to the FileInterface instance.
 [FileInterface](./FileInterface.md)
 :::
 
-
 ---
 
 ### cache()
@@ -23,13 +26,11 @@ Applies OPCache.
 
 ::: danger THROWS
 [RuntimeException](./RuntimeException.md)
- If unable to cache file.
+If unable to cache file.
 :::
-
 ::: tip RETURN
 void
 :::
-
 
 ---
 

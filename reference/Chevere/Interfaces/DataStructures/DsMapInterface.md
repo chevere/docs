@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # DsMapInterface
 
 `Chevere\Interfaces\DataStructures\DsMapInterface`
@@ -6,7 +10,8 @@
 
 ## Implements
 
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### keys()
@@ -15,7 +20,6 @@
 array
 :::
 
-
 ---
 
 ### map()
@@ -23,7 +27,6 @@ array
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 

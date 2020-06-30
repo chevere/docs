@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FileWithoutContentsException
 
 `Chevere\Exceptions\Filesystem\FileWithoutContentsException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown when the file doesn't have any contents.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PlugInterface
 
 `Chevere\Interfaces\Plugin\PlugInterface`
@@ -12,7 +16,6 @@
 string
 :::
 
-
 ---
 
 ### at()
@@ -21,7 +24,6 @@ string
 string
 :::
 
-
 ---
 
 ### priority()
@@ -29,7 +31,6 @@ string
 ::: tip RETURN
 int
 :::
-
 
 ---
 

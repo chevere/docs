@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SetErrorHandlerInterface
 
 `Chevere\Interfaces\Runtime\Sets\SetErrorHandlerInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [SetInterface](../SetInterface.md)
+
 ## Methods
 
 ### __construct()
@@ -25,7 +30,6 @@ Uhh no!
 void
 :::
 
-
 ---
 
 ### value()
@@ -34,7 +38,6 @@ void
 string
 :::
 
-
 ---
 
 ### name()
@@ -42,7 +45,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

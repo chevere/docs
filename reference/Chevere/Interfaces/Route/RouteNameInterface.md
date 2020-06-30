@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteNameInterface
 
 `Chevere\Interfaces\Route\RouteNameInterface`
@@ -29,7 +33,6 @@ Type `string`
 ::: tip RETURN
 string
 :::
-
 
 ---
 

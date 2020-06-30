@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteWildcardsInterface
 
 `Chevere\Interfaces\Route\RouteWildcardsInterface`
@@ -7,7 +11,8 @@
 ## Implements
 
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### withAddedWildcard()
@@ -21,7 +26,6 @@ Return an instance with the specified RouteWildcardInterface.
 ::: tip RETURN
 RouteWildcardsInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified RouteWildcardInterface.
 
@@ -34,7 +38,6 @@ This method should allow to override wildcards.
 ::: tip RETURN
 int
 :::
-
 
 ---
 
@@ -50,7 +53,6 @@ Returns a boolean indicating whether the instance has a given RouteWildcardInter
 bool
 :::
 
-
 ---
 
 ### get()
@@ -64,7 +66,6 @@ Provides access to the target RouteWildcardInterface instance.
 ::: tip RETURN
 [RouteWildcardInterface](./RouteWildcardInterface.md)
 :::
-
 
 ---
 
@@ -80,7 +81,6 @@ Returns a boolean indicating whether the instance has RouteWildcardInterface in 
 bool
 :::
 
-
 ---
 
 ### getPos()
@@ -95,7 +95,6 @@ Provides access to the target RouteWildcardInterface instance in the given pos.
 [RouteWildcardInterface](./RouteWildcardInterface.md)
 :::
 
-
 ---
 
 ### getGenerator()
@@ -103,7 +102,6 @@ Provides access to the target RouteWildcardInterface instance in the given pos.
 ::: tip RETURN
 [Generator](https://www.php.net/manual/class.generator)
 :::
-
 
 ---
 
@@ -113,7 +111,6 @@ Provides access to the target RouteWildcardInterface instance in the given pos.
 array
 :::
 
-
 ---
 
 ### map()
@@ -121,7 +118,6 @@ array
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 

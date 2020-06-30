@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FileUnableToPutException
 
 `Chevere\Exceptions\Filesystem\FileUnableToPutException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown when unable to put contents to the file.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

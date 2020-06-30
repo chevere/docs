@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # MessageInterface
 
 `Chevere\Interfaces\Message\MessageInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [ToStringInterface](../To/ToStringInterface.md)
+
 ## Description
 
 Rich system messages for CLI and HTML.
@@ -69,7 +74,6 @@ Provides access to the template property.
 string
 :::
 
-
 ---
 
 ### trTable()
@@ -80,7 +84,6 @@ Provides access to the trTable property.
 array
 :::
 
-
 ---
 
 ### toConsole()
@@ -88,7 +91,6 @@ array
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -98,7 +100,6 @@ string
 string
 :::
 
-
 ---
 
 ### toString()
@@ -106,7 +107,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -122,7 +122,6 @@ Return an instance with the specified string translation.
 ::: tip RETURN
 MessageInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified string translation.
 
@@ -140,7 +139,6 @@ Return an instance with the specified emphasis.
 ::: tip RETURN
 MessageInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified emphasis.
 
@@ -158,7 +156,6 @@ Return an instance with the specified strong.
 ::: tip RETURN
 MessageInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified strong.
 
@@ -176,7 +173,6 @@ Return an instance with the specified underline.
 ::: tip RETURN
 MessageInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified underline.
 
@@ -194,7 +190,6 @@ Return an instance with the specified code.
 ::: tip RETURN
 MessageInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified code.
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # CacheItemInterface
 
 `Chevere\Interfaces\Cache\CacheItemInterface`
@@ -22,7 +26,6 @@ Provides raw access to the FileReturnInterface "as-is"
 void
 :::
 
-
 ---
 
 ### var()
@@ -32,7 +35,6 @@ Provides access to the FileReturnInterface file return variable
 ::: tip RETURN
 void
 :::
-
 
 ---
 

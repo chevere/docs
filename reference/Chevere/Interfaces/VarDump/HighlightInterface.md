@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # HighlightInterface
 
 `Chevere\Interfaces\VarDump\HighlightInterface`
@@ -49,7 +53,6 @@ array (
 ::: tip RETURN
 string
 :::
-
 
 ---
 

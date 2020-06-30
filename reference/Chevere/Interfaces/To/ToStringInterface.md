@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ToStringInterface
 
 `Chevere\Interfaces\To\ToStringInterface`
@@ -13,7 +17,6 @@ Returns a string, representing the object itself or some of its data/properties.
 ::: tip RETURN
 string
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteResolvesCacheInterface
 
 `Chevere\Interfaces\Router\RouteResolvesCacheInterface`
@@ -24,7 +28,6 @@
 bool
 :::
 
-
 ---
 
 ### get()
@@ -36,7 +39,6 @@ bool
 ::: tip RETURN
 [RouteResolve](../../Components/Router/RouteResolve.md)
 :::
-
 
 ---
 
@@ -51,7 +53,6 @@ bool
 void
 :::
 
-
 ---
 
 ### remove()
@@ -64,7 +65,6 @@ void
 void
 :::
 
-
 ---
 
 ### puts()
@@ -72,7 +72,6 @@ void
 ::: tip RETURN
 array
 :::
-
 
 ---
 

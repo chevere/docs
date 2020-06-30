@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SetInterface
 
 `Chevere\Interfaces\Runtime\SetInterface`
@@ -20,7 +24,6 @@
 string
 :::
 
-
 ---
 
 ### name()
@@ -28,7 +31,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RoutesCacheInterface
 
 `Chevere\Interfaces\Router\RoutesCacheInterface`
@@ -16,7 +20,6 @@
 bool
 :::
 
-
 ---
 
 ### get()
@@ -28,7 +31,6 @@ bool
 ::: tip RETURN
 [RouteInterface](../Route/RouteInterface.md)
 :::
-
 
 ---
 
@@ -42,7 +44,6 @@ bool
 void
 :::
 
-
 ---
 
 ### remove()
@@ -55,7 +56,6 @@ void
 void
 :::
 
-
 ---
 
 ### puts()
@@ -63,7 +63,6 @@ void
 ::: tip RETURN
 array
 :::
-
 
 ---
 

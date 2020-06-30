@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # CacheInvalidKeyException
 
 `Chevere\Exceptions\Cache\CacheInvalidKeyException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown if the cache key contains illegal characters.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

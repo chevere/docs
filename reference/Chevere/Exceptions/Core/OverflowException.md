@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # OverflowException
 
 `Chevere\Exceptions\Core\OverflowException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [OverflowException](https://www.php.net/manual/class.overflowexception)
@@ -32,7 +37,6 @@ Exception thrown when adding an element to a full container.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

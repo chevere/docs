@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # DocumentInterface
 
 `Chevere\Interfaces\ThrowableHandler\DocumentInterface`
@@ -178,7 +182,6 @@ Return an instance with the specified verbosity.
 ::: tip RETURN
 DocumentInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified verbosity.
 
@@ -194,7 +197,6 @@ Provides access to the instance verbosity.
 int
 :::
 
-
 ---
 
 ### getSectionTitle()
@@ -204,7 +206,6 @@ Returns the document title section.
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -216,7 +217,6 @@ Returns the document message section.
 string
 :::
 
-
 ---
 
 ### getSectionId()
@@ -226,7 +226,6 @@ Returns the document id section.
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -238,7 +237,6 @@ Returns the document time section.
 string
 :::
 
-
 ---
 
 ### getSectionStack()
@@ -248,7 +246,6 @@ Returns the document stack section.
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -260,7 +257,6 @@ Returns the document server section.
 string
 :::
 
-
 ---
 
 ### toString()
@@ -268,7 +264,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -278,7 +273,6 @@ string
 array
 :::
 
-
 ---
 
 ### getFormatter()
@@ -286,7 +280,6 @@ array
 ::: tip RETURN
 [FormatterInterface](./FormatterInterface.md)
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SpecIndexInterface
 
 `Chevere\Interfaces\Spec\SpecIndexInterface`
@@ -7,7 +11,8 @@
 ## Implements
 
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### withOffset()
@@ -21,7 +26,6 @@
 SpecIndexInterface
 :::
 
-
 ---
 
 ### specIndexMap()
@@ -29,7 +33,6 @@ SpecIndexInterface
 ::: tip RETURN
 [SpecIndexMap](../../Components/Spec/SpecIndexMap.md)
 :::
-
 
 ---
 
@@ -44,7 +47,6 @@ SpecIndexInterface
 bool
 :::
 
-
 ---
 
 ### get()
@@ -58,7 +60,6 @@ bool
 string
 :::
 
-
 ---
 
 ### keys()
@@ -67,7 +68,6 @@ string
 array
 :::
 
-
 ---
 
 ### map()
@@ -75,7 +75,6 @@ array
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 

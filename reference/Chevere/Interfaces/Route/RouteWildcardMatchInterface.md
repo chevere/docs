@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteWildcardMatchInterface
 
 `Chevere\Interfaces\Route\RouteWildcardMatchInterface`
@@ -13,9 +17,8 @@
 1. string `$match`
 ::: danger THROWS
 [RegexException](./RegexException.md)
- If $match is an invalid regex matcher
+If $match is an invalid regex matcher
 :::
-
 
 ---
 
@@ -24,7 +27,6 @@
 ::: tip RETURN
 string
 :::
-
 
 ---
 

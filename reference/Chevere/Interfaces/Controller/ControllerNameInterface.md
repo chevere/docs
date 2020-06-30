@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ControllerNameInterface
 
 `Chevere\Interfaces\Controller\ControllerNameInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [ToStringInterface](../To/ToStringInterface.md)
+
 ## Methods
 
 ### toString()
@@ -14,7 +19,6 @@
 ::: tip RETURN
 string
 :::
-
 
 ---
 

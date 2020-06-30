@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteWildcardInterface
 
 `Chevere\Interfaces\Route\RouteWildcardInterface`
@@ -51,13 +55,11 @@ Return an instance with the specified WildcardMatchInterface.
 
 ::: danger THROWS
 [RouteWildcardInvalidRegexException](../../Exceptions/Route/RouteWildcardInvalidRegexException.md)
- if $match is an invalid regex match
+if $match is an invalid regex match
 :::
-
 ::: tip RETURN
 RouteWildcardInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified WildcardMatchInterface.
 
@@ -71,7 +73,6 @@ Provides access to the name.
 string
 :::
 
-
 ---
 
 ### toString()
@@ -82,7 +83,6 @@ Provides access to the braced name `{name}`
 string
 :::
 
-
 ---
 
 ### match()
@@ -92,7 +92,6 @@ Provides access to the WildcardMatchInterface instance.
 ::: tip RETURN
 [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md)
 :::
-
 
 ---
 
@@ -106,13 +105,11 @@ Asserts that a given RoutePathInterface contains the wildcard.
 
 ::: danger THROWS
 [RouteWildcardNotFoundException](../../Exceptions/Route/RouteWildcardNotFoundException.md)
- if the wildcard doesn't exists in the path
+if the wildcard doesn't exists in the path
 :::
-
 ::: tip RETURN
 void
 :::
-
 
 ---
 

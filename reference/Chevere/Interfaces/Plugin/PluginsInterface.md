@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PluginsInterface
 
 `Chevere\Interfaces\Plugin\PluginsInterface`
@@ -12,7 +16,6 @@
 [ClassMapInterface](../ClassMap/ClassMapInterface.md)
 :::
 
-
 ---
 
 ### getPlugsQueue()
@@ -24,7 +27,6 @@
 ::: tip RETURN
 [PlugsQueueInterface](./PlugsQueueInterface.md)
 :::
-
 
 ---
 

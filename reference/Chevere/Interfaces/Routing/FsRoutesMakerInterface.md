@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FsRoutesMakerInterface
 
 `Chevere\Interfaces\Routing\FsRoutesMakerInterface`
@@ -29,7 +33,6 @@ Type `string`
 ::: tip RETURN
 [FsRoutesInterface](./FsRoutesInterface.md)
 :::
-
 
 ---
 

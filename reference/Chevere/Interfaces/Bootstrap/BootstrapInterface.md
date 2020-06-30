@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # BootstrapInterface
 
 `Chevere\Interfaces\Bootstrap\BootstrapInterface`
@@ -13,9 +17,7 @@
 1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 ::: danger THROWS
 [BootstrapDirException](../../Exceptions/Bootstrap/BootstrapDirException.md)
- 
 :::
-
 
 ---
 
@@ -27,7 +29,6 @@ Provides access to the time() registered on instance creation.
 int
 :::
 
-
 ---
 
 ### hrTime()
@@ -38,7 +39,6 @@ Provides access to the hrtime(true) registered on instance creation.
 int
 :::
 
-
 ---
 
 ### dir()
@@ -48,7 +48,6 @@ Provides access to the dir used on instance creation.
 ::: tip RETURN
 [DirInterface](../Filesystem/DirInterface.md)
 :::
-
 
 ---
 

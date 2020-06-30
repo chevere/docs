@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # PluggableAnchorsInterface
 
 `Chevere\Interfaces\Plugin\PluggableAnchorsInterface`
@@ -14,13 +18,10 @@
 
 ::: danger THROWS
 [PluggableAnchorExistsException](../../Exceptions/Plugin/PluggableAnchorExistsException.md)
- 
 :::
-
 ::: tip RETURN
 PluggableAnchorsInterface
 :::
-
 
 ---
 
@@ -34,7 +35,6 @@ PluggableAnchorsInterface
 bool
 :::
 
-
 ---
 
 ### set()
@@ -42,7 +42,6 @@ bool
 ::: tip RETURN
 Ds\Set
 :::
-
 
 ---
 

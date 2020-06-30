@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # CacheKeyInterface
 
 `Chevere\Interfaces\Cache\CacheKeyInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [ToStringInterface](../To/ToStringInterface.md)
+
 ## Constants
 
 ### ILLEGAL_KEY_CHARACTERS
@@ -32,7 +37,6 @@ Type `string`
 ::: tip RETURN
 string
 :::
-
 
 ---
 

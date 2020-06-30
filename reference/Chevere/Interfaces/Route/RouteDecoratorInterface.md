@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteDecoratorInterface
 
 `Chevere\Interfaces\Route\RouteDecoratorInterface`
@@ -12,7 +16,6 @@
 [RouteNameInterface](./RouteNameInterface.md)
 :::
 
-
 ---
 
 ### wildcards()
@@ -20,7 +23,6 @@
 ::: tip RETURN
 [RouteWildcardsInterface](./RouteWildcardsInterface.md)
 :::
-
 
 ---
 

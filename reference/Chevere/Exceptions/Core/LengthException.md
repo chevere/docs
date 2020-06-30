@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # LengthException
 
 `Chevere\Exceptions\Core\LengthException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [LengthException](https://www.php.net/manual/class.lengthexception)
@@ -32,7 +37,6 @@ Exception thrown if a length is invalid.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

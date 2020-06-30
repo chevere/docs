@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ToArrayInterface
 
 `Chevere\Interfaces\To\ToArrayInterface`
@@ -13,7 +17,6 @@ Returns an array, representing the object itself or some of its data/properties.
 ::: tip RETURN
 array
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RegexMatchException
 
 `Chevere\Exceptions\Regex\RegexMatchException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](../Core/Exception.md)
@@ -32,7 +37,6 @@ Exception thrown by the RegexMatchInterface.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

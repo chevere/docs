@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # OutOfBoundsException
 
 `Chevere\Exceptions\Core\OutOfBoundsException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [OutOfBoundsException](https://www.php.net/manual/class.outofboundsexception)
@@ -32,7 +37,6 @@ Exception thrown if a value is not a valid key. This represents errors that cann
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

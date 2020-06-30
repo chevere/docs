@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # TypeInterface
 
 `Chevere\Interfaces\Type\TypeInterface`
@@ -142,7 +146,6 @@ Returns the type primitive (array, bool, object, ..., className, interfaceName).
 string
 :::
 
-
 ---
 
 ### typeHinting()
@@ -152,7 +155,6 @@ Returns the type hinting.
 ::: tip RETURN
 string
 :::
-
 It will return either the class name, interface, or simply the primitive.
 
 ---
@@ -169,7 +171,6 @@ Returns a boolean indicating if $var validates against the type.
 bool
 :::
 
-
 ---
 
 ### validator()
@@ -179,7 +180,6 @@ Returns the type validator callable.
 ::: tip RETURN
 callable
 :::
-
 
 ---
 

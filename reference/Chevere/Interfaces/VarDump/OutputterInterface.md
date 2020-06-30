@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # OutputterInterface
 
 `Chevere\Interfaces\VarDump\OutputterInterface`
@@ -17,7 +21,6 @@
 void
 :::
 
-
 ---
 
 ### prepare()
@@ -25,7 +28,6 @@ void
 ::: tip RETURN
 void
 :::
-
 
 ---
 
@@ -35,7 +37,6 @@ void
 void
 :::
 
-
 ---
 
 ### caller()
@@ -43,7 +44,6 @@ void
 ::: tip RETURN
 string
 :::
-
 
 ---
 

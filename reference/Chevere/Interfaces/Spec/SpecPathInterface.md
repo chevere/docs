@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SpecPathInterface
 
 `Chevere\Interfaces\Spec\SpecPathInterface`
@@ -12,7 +16,6 @@
 string
 :::
 
-
 ---
 
 ### getChild()
@@ -24,7 +27,6 @@ string
 ::: tip RETURN
 SpecPathInterface
 :::
-
 
 ---
 

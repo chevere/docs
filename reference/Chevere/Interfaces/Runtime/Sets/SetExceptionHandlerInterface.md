@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # SetExceptionHandlerInterface
 
 `Chevere\Interfaces\Runtime\Sets\SetExceptionHandlerInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [SetInterface](../SetInterface.md)
+
 ## Methods
 
 ### handler()
@@ -14,7 +19,6 @@
 ::: tip RETURN
 void
 :::
-
 
 ---
 
@@ -32,7 +36,6 @@ void
 string
 :::
 
-
 ---
 
 ### name()
@@ -40,7 +43,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

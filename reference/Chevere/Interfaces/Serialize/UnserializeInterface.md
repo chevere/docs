@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # UnserializeInterface
 
 `Chevere\Interfaces\Serialize\UnserializeInterface`
@@ -22,7 +26,6 @@ Provides access to the unserialized variable.
 void
 :::
 
-
 ---
 
 ### type()
@@ -32,7 +35,6 @@ Provides access to the TypeInterface instance for the unserialized variable.
 ::: tip RETURN
 [TypeInterface](../Type/TypeInterface.md)
 :::
-
 
 ---
 

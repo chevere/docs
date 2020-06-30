@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # BadMethodCallException
 
 `Chevere\Exceptions\Core\BadMethodCallException`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [BadMethodCallException](https://www.php.net/manual/class.badmethodcallexception)
@@ -32,7 +37,6 @@ Exception thrown if a callback refers to an undefined method or if some argument
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FsRouteInterface
 
 `Chevere\Interfaces\Routing\FsRouteInterface`
@@ -12,7 +16,6 @@
 [DirInterface](../Filesystem/DirInterface.md)
 :::
 
-
 ---
 
 ### routePath()
@@ -21,7 +24,6 @@
 [RoutePathInterface](../Route/RoutePathInterface.md)
 :::
 
-
 ---
 
 ### routeDecorator()
@@ -29,7 +31,6 @@
 ::: tip RETURN
 [RouteDecoratorInterface](../Route/RouteDecoratorInterface.md)
 :::
-
 
 ---
 

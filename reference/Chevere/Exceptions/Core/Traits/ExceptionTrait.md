@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ExceptionTrait
 
 `Chevere\Exceptions\Core\Traits\ExceptionTrait`
@@ -11,7 +15,6 @@
 ::: tip RETURN
 [MessageInterface](../../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

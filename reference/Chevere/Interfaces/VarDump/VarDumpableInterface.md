@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # VarDumpableInterface
 
 `Chevere\Interfaces\VarDump\VarDumpableInterface`
@@ -20,7 +24,6 @@
 void
 :::
 
-
 ---
 
 ### type()
@@ -29,7 +32,6 @@ void
 string
 :::
 
-
 ---
 
 ### processorName()
@@ -37,7 +39,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

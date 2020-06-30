@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouteEndpointsInterface
 
 `Chevere\Interfaces\Route\RouteEndpointsInterface`
@@ -7,7 +11,8 @@
 ## Implements
 
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### keys()
@@ -15,7 +20,6 @@
 ::: tip RETURN
 array
 :::
-
 
 ---
 
@@ -30,7 +34,6 @@ Return an instance with the specified RouteEndpoint.
 ::: tip RETURN
 RouteEndpointsInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified RouteEndpoint.
 
@@ -48,7 +51,6 @@ Returns a boolean indicating whether the instance has $key.
 bool
 :::
 
-
 ---
 
 ### get()
@@ -63,7 +65,6 @@ Provides access to the RouteEndpointInterface identified by $key.
 [RouteEndpointInterface](./RouteEndpointInterface.md)
 :::
 
-
 ---
 
 ### map()
@@ -71,7 +72,6 @@ Provides access to the RouteEndpointInterface identified by $key.
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 

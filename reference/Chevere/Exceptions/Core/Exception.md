@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # Exception
 
 `Chevere\Exceptions\Core\Exception`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+
 ## Extends
 
 - [Exception](https://www.php.net/manual/class.exception)
@@ -32,7 +37,6 @@ Extends \Exception with Message support.
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
-
 
 ---
 

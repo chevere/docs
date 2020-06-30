@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RouterInterface
 
 `Chevere\Interfaces\Router\RouterInterface`
@@ -26,7 +30,6 @@ Type `string`
 RouterInterface
 :::
 
-
 ---
 
 ### routables()
@@ -34,7 +37,6 @@ RouterInterface
 ::: tip RETURN
 [Routables](../../Components/Router/Routables.md)
 :::
-
 
 ---
 
@@ -49,7 +51,6 @@ Return an instance with the specified RegexInterface.
 ::: tip RETURN
 RouterInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified RegexInterface.
 
@@ -61,7 +62,6 @@ an instance that contains the specified RegexInterface.
 bool
 :::
 
-
 ---
 
 ### regex()
@@ -71,7 +71,6 @@ Provides access to the instance regex.
 ::: tip RETURN
 [RouterRegexInterface](./RouterRegexInterface.md)
 :::
-
 
 ---
 
@@ -86,7 +85,6 @@ Return an instance with the specified index.
 ::: tip RETURN
 RouterInterface
 :::
-
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified index.
 
@@ -99,7 +97,6 @@ Provides access to the instance index.
 ::: tip RETURN
 [RouterIndexInterface](./RouterIndexInterface.md)
 :::
-
 
 ---
 

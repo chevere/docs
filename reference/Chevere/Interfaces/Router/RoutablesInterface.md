@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # RoutablesInterface
 
 `Chevere\Interfaces\Router\RoutablesInterface`
@@ -7,7 +11,8 @@
 ## Implements
 
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
-- Countable
+- [Countable](https://www.php.net/manual/class.countable)
+
 ## Methods
 
 ### withPut()
@@ -19,7 +24,6 @@
 ::: tip RETURN
 RoutablesInterface
 :::
-
 
 ---
 
@@ -33,7 +37,6 @@ RoutablesInterface
 bool
 :::
 
-
 ---
 
 ### get()
@@ -46,7 +49,6 @@ bool
 [RoutableInterface](./RoutableInterface.md)
 :::
 
-
 ---
 
 ### keys()
@@ -55,7 +57,6 @@ bool
 array
 :::
 
-
 ---
 
 ### map()
@@ -63,7 +64,6 @@ array
 ::: tip RETURN
 Ds\Map
 :::
-
 
 ---
 

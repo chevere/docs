@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # DirInterface
 
 `Chevere\Interfaces\Filesystem\DirInterface`
@@ -14,7 +18,6 @@ Provides access to the PathInterface instance.
 [PathInterface](./PathInterface.md)
 :::
 
-
 ---
 
 ### create()
@@ -27,13 +30,11 @@ Creates the directory.
 
 ::: danger THROWS
 [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
- if unable to create the directory
+if unable to create the directory
 :::
-
 ::: tip RETURN
 void
 :::
-
 
 ---
 
@@ -45,7 +46,6 @@ Returns a boolean indicating whether the directory exists.
 bool
 :::
 
-
 ---
 
 ### assertExists()
@@ -53,7 +53,6 @@ bool
 ::: tip RETURN
 void
 :::
-
 
 ---
 
@@ -63,18 +62,15 @@ Removes the contents from a path without deleting the path.
 
 ::: danger THROWS
 [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
- if unable to remove the directory
+if unable to remove the directory
 :::
-
 ::: danger THROWS
 [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
- if unable to remove a file in the directory
+if unable to remove a file in the directory
 :::
-
 ::: tip RETURN
 array
 :::
-
 
 ---
 
@@ -84,13 +80,11 @@ Removes the directory.
 
 ::: danger THROWS
 [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
- if unable to remove the directory
+if unable to remove the directory
 :::
-
 ::: tip RETURN
 array
 :::
-
 
 ---
 
@@ -105,7 +99,6 @@ Gets a child DirInterface for the added path.
 ::: tip RETURN
 DirInterface
 :::
-
 
 ---
 

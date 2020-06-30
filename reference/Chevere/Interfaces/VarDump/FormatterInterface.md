@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # FormatterInterface
 
 `Chevere\Interfaces\VarDump\FormatterInterface`
@@ -16,7 +20,6 @@
 string
 :::
 
-
 ---
 
 ### emphasis()
@@ -28,7 +31,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -42,7 +44,6 @@ string
 string
 :::
 
-
 ---
 
 ### highlight()
@@ -55,7 +56,6 @@ string
 ::: tip RETURN
 string
 :::
-
 
 ---
 

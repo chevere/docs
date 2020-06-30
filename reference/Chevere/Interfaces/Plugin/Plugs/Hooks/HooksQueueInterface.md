@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # HooksQueueInterface
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\HooksQueueInterface`
@@ -7,6 +11,7 @@
 ## Implements
 
 - [PlugsQueueTypedInterface](../../PlugsQueueTypedInterface.md)
+
 ## Methods
 
 ### withAdded()
@@ -19,7 +24,6 @@
 [PlugsQueueTypedInterface](../../PlugsQueueTypedInterface.md)
 :::
 
-
 ---
 
 ### accept()
@@ -27,7 +31,6 @@
 ::: tip RETURN
 string
 :::
-
 
 ---
 
@@ -37,7 +40,6 @@ string
 [PlugTypeInterface](../../PlugTypeInterface.md)
 :::
 
-
 ---
 
 ### plugsQueue()
@@ -45,7 +47,6 @@ string
 ::: tip RETURN
 [PlugsQueueInterface](../../PlugsQueueInterface.md)
 :::
-
 
 ---
 

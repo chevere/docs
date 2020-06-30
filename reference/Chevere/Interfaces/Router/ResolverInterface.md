@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # ResolverInterface
 
 `Chevere\Interfaces\Router\ResolverInterface`
@@ -24,18 +28,15 @@ Returns a RoutedInterface for the given UriInterface.
 
 ::: danger THROWS
 [RouterException](../../Exceptions/Router/RouterException.md)
- if the router encounters any fatal error (UnserializeException, TypeError, etc)
+if the router encounters any fatal error (UnserializeException, TypeError, etc)
 :::
-
 ::: danger THROWS
 [RouteNotFoundException](../../Exceptions/Router/RouteNotFoundException.md)
- if no route resolves the given UriInterface
+if no route resolves the given UriInterface
 :::
-
 ::: tip RETURN
 [RoutedInterface](./RoutedInterface.md)
 :::
-
 
 ---
 
