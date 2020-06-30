@@ -4,7 +4,7 @@ Plugs are classes defining extra functionality, requiring to comply with the plu
 
 > 🧔🏾 Plugs are designed to be short sets of instructions that should be executed without persistent memory and decoupled as possible from the application.
 
-### Event Listener
+## Event Listener
 
 An Event Listener is a type of plug that fires when something took place. An Event Listener must implement the `Chevere\Interfaces\Plugin\Plugs\EventListener\EventListenerInterface`. 
 
@@ -50,7 +50,7 @@ final class DoesSomethingEventListener implements EventPlugInterface
 }
 ```
 
-### Hook
+## Hook
 
 An hook is a type of plug that alters a variable. An hook must implement the `Chevere\Interfaces\Plugin\Plugs\Hooks\HookPlugInterface`.
 
