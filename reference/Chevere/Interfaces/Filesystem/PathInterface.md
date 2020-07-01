@@ -56,12 +56,12 @@ Wrapper for \chmod.
 
 1. int `$mode`
 
-::: danger THROWS
-[PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
+::: danger THROWS ⚠
+Unknown type `PathIsNotDirectoryException`
 :::
 
-::: danger THROWS
-[PathUnableToChmodException](./PathUnableToChmodException.md)
+::: danger THROWS ⚠
+Unknown type `PathUnableToChmodException`
 :::
 
 ::: tip RETURN
@@ -74,8 +74,8 @@ void
 
 Wrapper for \is_writeable.
 
-::: danger THROWS
-[PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
+::: danger THROWS ⚠
+Unknown type `PathIsNotDirectoryException`
 :::
 
 ::: tip RETURN
@@ -88,8 +88,8 @@ bool
 
 Wrapper for \is_writeable.
 
-::: danger THROWS
-[PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
+::: danger THROWS ⚠
+Unknown type `PathIsNotDirectoryException`
 :::
 
 ::: tip RETURN

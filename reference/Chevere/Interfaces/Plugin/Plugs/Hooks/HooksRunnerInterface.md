@@ -19,9 +19,8 @@ Run the registered hooks at the given anchor.
 1. string `$anchor`
 2.  `$argument`
 
-::: danger THROWS
-[RuntimeException](./RuntimeException.md)
-If the $argument type changes.
+::: danger THROWS ⚠
+Unknown type `RuntimeException`
 :::
 
 ::: tip RETURN
