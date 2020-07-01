@@ -24,8 +24,9 @@ Provides access to the FileInterface instance.
 
 Applies OPCache.
 
-::: danger THROWS ⚠
-Unknown type `RuntimeException`
+::: danger THROWS
+[RuntimeException](../../Exceptions/Core/RuntimeException.md)
+If unable to cache file.
 :::
 
 ::: tip RETURN

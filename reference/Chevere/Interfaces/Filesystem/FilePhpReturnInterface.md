@@ -134,8 +134,8 @@ Same as var, but checking the variable $type.
 [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
 :::
 
-::: danger THROWS ⚠
-Unknown type `FileReturnInvalidTypeException`
+::: danger THROWS
+[FileReturnInvalidTypeException](../../Exceptions/Filesystem/FileReturnInvalidTypeException.md)
 :::
 
 ::: tip RETURN

@@ -16,8 +16,9 @@ editLink: false
 
 1. string `$match`
 
-::: danger THROWS ⚠
-Unknown type `RegexException`
+::: danger THROWS
+[RegexException](../../Exceptions/Regex/RegexException.md)
+If $match is an invalid regex matcher
 :::
 
 ---
