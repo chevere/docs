@@ -39,4 +39,3 @@ Exception thrown when the plug doesn't implement an accepted interface.
 :::
 
 ---
-

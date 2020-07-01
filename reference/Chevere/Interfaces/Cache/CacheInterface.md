@@ -40,6 +40,7 @@ Put item in cache.
 ::: tip RETURN
 CacheInterface
 :::
+
 Return an instance with the specified CacheKeyInterface put.
 
 This method MUST retain the state of the current instance, and return
@@ -59,9 +60,11 @@ Remove item from cache.
 [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
 if unable to remove the cache file
 :::
+
 ::: tip RETURN
 CacheInterface
 :::
+
 Return an instance with the specified CacheKeyInterface removed.
 
 This method MUST retain the state of the current instance, and return
@@ -94,6 +97,7 @@ Get a cache item.
 ::: danger THROWS
 [CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md)
 :::
+
 ::: tip RETURN
 [CacheItemInterface](./CacheItemInterface.md)
 :::
@@ -107,6 +111,7 @@ Provides access to the array containing puts.
 ::: tip RETURN
 array
 :::
+
 ```php
 return [
      'key' => [
@@ -129,9 +134,9 @@ Proxy for DirInterface getChild.
 ::: danger THROWS
 [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
 :::
+
 ::: tip RETURN
 CacheInterface
 :::
 
 ---
-

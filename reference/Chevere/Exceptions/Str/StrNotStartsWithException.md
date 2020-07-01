@@ -39,4 +39,3 @@ Exception thrown when the string not starts with a given string.
 :::
 
 ---
-

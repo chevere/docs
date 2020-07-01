@@ -39,4 +39,3 @@ Exception thrown if an argument is not of the expected value.
 :::
 
 ---
-

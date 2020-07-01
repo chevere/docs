@@ -32,6 +32,7 @@ Creates the directory.
 [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
 if unable to create the directory
 :::
+
 ::: tip RETURN
 void
 :::
@@ -64,10 +65,12 @@ Removes the contents from a path without deleting the path.
 [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
 if unable to remove the directory
 :::
+
 ::: danger THROWS
 [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
 if unable to remove a file in the directory
 :::
+
 ::: tip RETURN
 array
 :::
@@ -82,6 +85,7 @@ Removes the directory.
 [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
 if unable to remove the directory
 :::
+
 ::: tip RETURN
 array
 :::
@@ -101,4 +105,3 @@ DirInterface
 :::
 
 ---
-

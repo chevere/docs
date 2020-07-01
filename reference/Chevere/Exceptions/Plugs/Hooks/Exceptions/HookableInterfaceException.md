@@ -39,4 +39,3 @@ Exception thrown when a pluggable doesn't implement the hookable interface.
 :::
 
 ---
-

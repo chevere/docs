@@ -51,6 +51,7 @@ Return an instance with the specified RegexInterface.
 ::: tip RETURN
 RouterInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified RegexInterface.
 
@@ -85,6 +86,7 @@ Return an instance with the specified index.
 ::: tip RETURN
 RouterInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified index.
 
@@ -99,4 +101,3 @@ Provides access to the instance index.
 :::
 
 ---
-

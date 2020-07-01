@@ -19,6 +19,7 @@ editLink: false
 ::: danger THROWS
 [PluggableAnchorExistsException](../../Exceptions/Plugin/PluggableAnchorExistsException.md)
 :::
+
 ::: tip RETURN
 PluggableAnchorsInterface
 :::
@@ -44,4 +45,3 @@ Ds\Set
 :::
 
 ---
-

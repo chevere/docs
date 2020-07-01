@@ -30,13 +30,14 @@ Returns a RoutedInterface for the given UriInterface.
 [RouterException](../../Exceptions/Router/RouterException.md)
 if the router encounters any fatal error (UnserializeException, TypeError, etc)
 :::
+
 ::: danger THROWS
 [RouteNotFoundException](../../Exceptions/Router/RouteNotFoundException.md)
 if no route resolves the given UriInterface
 :::
+
 ::: tip RETURN
 [RoutedInterface](./RoutedInterface.md)
 :::
 
 ---
-

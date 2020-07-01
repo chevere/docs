@@ -39,4 +39,3 @@ Exception thrown when the route doesn't have any endpoint.
 :::
 
 ---
-

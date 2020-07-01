@@ -34,7 +34,6 @@ Type `string`
 '/^([a-z\\_][\\w_]*?)+$/i'
 ```
 
-
 ## Methods
 
 ### __construct()
@@ -57,9 +56,11 @@ Return an instance with the specified WildcardMatchInterface.
 [RouteWildcardInvalidRegexException](../../Exceptions/Route/RouteWildcardInvalidRegexException.md)
 if $match is an invalid regex match
 :::
+
 ::: tip RETURN
 RouteWildcardInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified WildcardMatchInterface.
 
@@ -107,9 +108,9 @@ Asserts that a given RoutePathInterface contains the wildcard.
 [RouteWildcardNotFoundException](../../Exceptions/Route/RouteWildcardNotFoundException.md)
 if the wildcard doesn't exists in the path
 :::
+
 ::: tip RETURN
 void
 :::
 
 ---
-

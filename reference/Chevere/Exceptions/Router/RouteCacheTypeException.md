@@ -39,4 +39,3 @@ Exception thrown when the cached route doesn't match the expected type.
 :::
 
 ---
-

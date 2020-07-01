@@ -26,7 +26,6 @@ Type `integer`
 64
 ```
 
-
 ## Methods
 
 ### path()
@@ -64,6 +63,7 @@ bool
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: tip RETURN
 void
 :::
@@ -77,6 +77,7 @@ Retrieves the file checksum using the CHECKSUM_ALGO algorithm.
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: tip RETURN
 string
 :::
@@ -90,9 +91,11 @@ Retrieves the file contents.
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: danger THROWS
 [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md)
 :::
+
 ::: tip RETURN
 string
 :::
@@ -106,9 +109,11 @@ Remove the file.
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: danger THROWS
 [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
 :::
+
 ::: tip RETURN
 void
 :::
@@ -122,9 +127,11 @@ Create the file.
 ::: danger THROWS
 [FileExistsException](../../Exceptions/Filesystem/FileExistsException.md)
 :::
+
 ::: danger THROWS
 [FileUnableToCreateException](../../Exceptions/Filesystem/FileUnableToCreateException.md)
 :::
+
 ::: tip RETURN
 void
 :::
@@ -142,12 +149,13 @@ Put contents to the file. If the file doesn't exists it will be created.
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: danger THROWS
 [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md)
 :::
+
 ::: tip RETURN
 void
 :::
 
 ---
-

@@ -26,7 +26,6 @@ Type `string`
 'index'
 ```
 
-
 ## Methods
 
 ### __construct()
@@ -112,4 +111,3 @@ array
 :::
 
 ---
-

@@ -39,4 +39,3 @@ Exception thrown when the class is already mapped.
 :::
 
 ---
-

@@ -39,4 +39,3 @@ Exception thrown if a callback refers to an undefined method or if some argument
 :::
 
 ---
-

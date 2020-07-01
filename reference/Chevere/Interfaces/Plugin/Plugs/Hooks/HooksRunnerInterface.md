@@ -23,9 +23,9 @@ Run the registered hooks at the given anchor.
 [RuntimeException](./RuntimeException.md)
 If the $argument type changes.
 :::
+
 ::: tip RETURN
 void
 :::
 
 ---
-

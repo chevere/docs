@@ -91,7 +91,6 @@ array (
 )
 ```
 
-
 ## Methods
 
 ### writer()
@@ -131,6 +130,7 @@ Return an instance with the specified $indent.
 ::: tip RETURN
 VarDumperInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $indent.
 
@@ -167,6 +167,7 @@ Return an instance with the specified $depth.
 ::: tip RETURN
 VarDumperInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $depth.
 
@@ -193,6 +194,7 @@ Return an instance with the specified known object IDs.
 ::: tip RETURN
 VarDumperInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified known object IDs.
 
@@ -215,4 +217,3 @@ VarDumperInterface
 :::
 
 ---
-

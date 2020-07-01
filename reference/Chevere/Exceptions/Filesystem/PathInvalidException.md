@@ -39,4 +39,3 @@ Exception thrown when an invalid path is used.
 :::
 
 ---
-

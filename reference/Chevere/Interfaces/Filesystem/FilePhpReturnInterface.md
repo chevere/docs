@@ -26,7 +26,6 @@ Type `integer`
 13
 ```
 
-
 ## Methods
 
 ### withStrict()
@@ -40,6 +39,7 @@ Return an instance with the strict flag.
 ::: tip RETURN
 FilePhpReturnInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified the strict flag.
 
@@ -65,15 +65,19 @@ Retrieves the file return (as-is).
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: danger THROWS
 [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
 :::
+
 ::: danger THROWS
 [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
 :::
+
 ::: danger THROWS
 [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
 :::
+
 ::: tip RETURN
 void
 :::
@@ -87,15 +91,19 @@ Retrieves a PHP variable, applying unserialize to objects (if any).
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: danger THROWS
 [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
 :::
+
 ::: danger THROWS
 [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
 :::
+
 ::: danger THROWS
 [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
 :::
+
 ::: tip RETURN
 void
 :::
@@ -113,18 +121,23 @@ Same as var, but checking the variable $type.
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: danger THROWS
 [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
 :::
+
 ::: danger THROWS
 [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
 :::
+
 ::: danger THROWS
 [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
 :::
+
 ::: danger THROWS
 [FileReturnInvalidTypeException](./FileReturnInvalidTypeException.md)
 :::
+
 ::: tip RETURN
 void
 :::
@@ -142,13 +155,14 @@ Put $var into the file using var_export return and strict format.
 ::: danger THROWS
 [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
 :::
+
 ::: danger THROWS
 [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md)
 if unable to put the contents in the file
 :::
+
 ::: tip RETURN
 void
 :::
 
 ---
-

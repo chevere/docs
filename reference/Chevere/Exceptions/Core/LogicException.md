@@ -39,4 +39,3 @@ Exception that represents error in the program logic. This kind of exception sho
 :::
 
 ---
-

@@ -34,6 +34,7 @@ Return an instance with the specified Controller Parameter.
 ::: tip RETURN
 ControllerParametersInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified Controller Parameter.
 
@@ -70,4 +71,3 @@ array
 :::
 
 ---
-

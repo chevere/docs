@@ -29,5 +29,3 @@ Type `string`
 ```php
 '<em>%s</em>'
 ```
-
-

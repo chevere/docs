@@ -39,4 +39,3 @@ Exception thrown when the route path doesn't start with a forward slash.
 :::
 
 ---
-

@@ -39,4 +39,3 @@ Exception thrown when an object doesn't implements the PlugsQueueInterface.
 :::
 
 ---
-

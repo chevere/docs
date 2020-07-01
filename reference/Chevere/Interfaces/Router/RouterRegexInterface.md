@@ -38,7 +38,6 @@ Type `string`
 '|%s (*:%s)'
 ```
 
-
 ## Methods
 
 ### regex()
@@ -48,4 +47,3 @@ Type `string`
 :::
 
 ---
-

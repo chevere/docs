@@ -127,7 +127,6 @@ array (
 )
 ```
 
-
 ## Methods
 
 ### __construct()
@@ -155,6 +154,7 @@ Returns the type hinting.
 ::: tip RETURN
 string
 :::
+
 It will return either the class name, interface, or simply the primitive.
 
 ---
@@ -182,4 +182,3 @@ callable
 :::
 
 ---
-

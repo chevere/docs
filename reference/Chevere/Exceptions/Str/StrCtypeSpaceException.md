@@ -39,4 +39,3 @@ Exception thrown when the string is ctype space.
 :::
 
 ---
-

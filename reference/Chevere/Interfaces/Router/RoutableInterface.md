@@ -19,9 +19,11 @@ Determines if a RouteInterface is able to be routed.
 **Parameters**
 
 1. [RouteInterface](../Route/RouteInterface.md) `$route`
+
 ::: danger THROWS
 [RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md)
 :::
+
 ::: danger THROWS
 [RouteWithoutEndpointsException](../../Exceptions/Router/RouteWithoutEndpointsException.md)
 :::
@@ -37,4 +39,3 @@ Provides access to the RouteInterface instance.
 :::
 
 ---
-

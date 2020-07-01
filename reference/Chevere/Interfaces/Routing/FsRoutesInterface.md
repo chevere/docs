@@ -16,7 +16,6 @@ editLink: false
 
 ### __construct()
 
-
 ---
 
 ### withDecorated()
@@ -62,4 +61,3 @@ bool
 :::
 
 ---
-

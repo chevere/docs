@@ -44,9 +44,11 @@ ClassMapInterface
 ::: danger THROWS
 [ClassNotExistsException](../../Exceptions/ClassMap/ClassNotExistsException.md)
 :::
+
 ::: danger THROWS
 [ClassMappedException](../../Exceptions/ClassMap/ClassMappedException.md)
 :::
+
 ::: tip RETURN
 ClassMapInterface
 :::
@@ -74,6 +76,7 @@ bool
 ::: danger THROWS
 [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md)
 :::
+
 ::: tip RETURN
 string
 :::
@@ -87,4 +90,3 @@ array
 :::
 
 ---
-

@@ -66,7 +66,6 @@ array (
 )
 ```
 
-
 ## Methods
 
 ### className()
@@ -158,4 +157,3 @@ array
 :::
 
 ---
-

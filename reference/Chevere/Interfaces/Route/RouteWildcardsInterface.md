@@ -26,6 +26,7 @@ Return an instance with the specified RouteWildcardInterface.
 ::: tip RETURN
 RouteWildcardsInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified RouteWildcardInterface.
 
@@ -120,4 +121,3 @@ Ds\Map
 :::
 
 ---
-

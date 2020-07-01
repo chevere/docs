@@ -39,4 +39,3 @@ Exception thrown when the string not contains a provided sub-string.
 :::
 
 ---
-

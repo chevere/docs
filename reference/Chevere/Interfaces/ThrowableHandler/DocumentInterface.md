@@ -160,7 +160,6 @@ array (
 )
 ```
 
-
 ## Methods
 
 ### __construct()
@@ -182,6 +181,7 @@ Return an instance with the specified verbosity.
 ::: tip RETURN
 DocumentInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified verbosity.
 
@@ -282,4 +282,3 @@ array
 :::
 
 ---
-

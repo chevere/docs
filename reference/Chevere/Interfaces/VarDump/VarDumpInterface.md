@@ -30,6 +30,7 @@ Return an instance with the specified vars.
 ::: tip RETURN
 VarDumpInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified vars.
 
@@ -46,6 +47,7 @@ Return an instance with the specified shift.
 ::: tip RETURN
 VarDumpInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified shift.
 
@@ -82,4 +84,3 @@ int
 :::
 
 ---
-

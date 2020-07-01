@@ -15,6 +15,7 @@ editLink: false
 **Parameters**
 
 1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
+
 ::: danger THROWS
 [BootstrapDirException](../../Exceptions/Bootstrap/BootstrapDirException.md)
 :::
@@ -50,4 +51,3 @@ Provides access to the dir used on instance creation.
 :::
 
 ---
-

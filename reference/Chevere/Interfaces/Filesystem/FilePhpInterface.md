@@ -28,9 +28,9 @@ Applies OPCache.
 [RuntimeException](./RuntimeException.md)
 If unable to cache file.
 :::
+
 ::: tip RETURN
 void
 :::
 
 ---
-

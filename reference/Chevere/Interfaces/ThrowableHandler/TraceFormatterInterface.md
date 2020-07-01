@@ -94,7 +94,6 @@ array (
 )
 ```
 
-
 ## Methods
 
 ### __construct()
@@ -125,4 +124,3 @@ string
 :::
 
 ---
-

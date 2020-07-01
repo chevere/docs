@@ -42,4 +42,3 @@ Extends \ErrorException with Message support.
 :::
 
 ---
-

@@ -16,6 +16,7 @@ editLink: false
 
 1. [RouteNameInterface](./RouteNameInterface.md) `$name`
 2. [RoutePathInterface](./RoutePathInterface.md) `$routePath`
+
 ::: danger THROWS
 [RouteNameInvalidException](../../Exceptions/Route/RouteNameInvalidException.md)
 if $name doesn't match REGEX_NAME
@@ -64,6 +65,7 @@ Return an instance with the specified added $routeEndpoint.
 ::: tip RETURN
 RouteInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified added $routeEndpoint.
 
@@ -92,6 +94,7 @@ Return an instance with the specified added $middleware.
 ::: tip RETURN
 RouteInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified added $middleware.
 
@@ -106,4 +109,3 @@ Provides access to the MiddlewareNameCollectionInterface instance.
 :::
 
 ---
-

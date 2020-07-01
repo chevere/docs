@@ -39,4 +39,3 @@ Exception thrown when the cached router doesn't match the expected type.
 :::
 
 ---
-

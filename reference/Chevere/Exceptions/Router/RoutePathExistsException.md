@@ -39,4 +39,3 @@ Exception thrown when the route path is already declared.
 :::
 
 ---
-

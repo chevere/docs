@@ -21,6 +21,7 @@ Return an instance with the specified $writer for all writers.
 ::: tip RETURN
 WritersInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $writer for all writers.
 
@@ -37,6 +38,7 @@ Return an instance with the specified out WriterInterface.
 ::: tip RETURN
 WritersInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified out WriterInterface.
 
@@ -61,6 +63,7 @@ Return an instance with the specified error WriterInterface.
 ::: tip RETURN
 WritersInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified error WriterInterface.
 
@@ -85,6 +88,7 @@ Return an instance with the specified debug WriterInterface.
 ::: tip RETURN
 WritersInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified debug WriterInterface.
 
@@ -109,6 +113,7 @@ Return an instance with the specified log WriterInterface.
 ::: tip RETURN
 WritersInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified log WriterInterface.
 
@@ -121,4 +126,3 @@ an instance that contains the specified log WriterInterface.
 :::
 
 ---
-

@@ -39,4 +39,3 @@ Exception thrown when the wildcard contains invalid chars.
 :::
 
 ---
-

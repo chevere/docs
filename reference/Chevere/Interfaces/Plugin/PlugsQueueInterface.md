@@ -28,6 +28,7 @@ editLink: false
 [PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md)
 if $plug doesn't implement the expected plugType
 :::
+
 ::: tip RETURN
 PlugsQueueInterface
 :::
@@ -49,4 +50,3 @@ array
 :::
 
 ---
-

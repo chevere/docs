@@ -26,6 +26,7 @@ Return an instance with the specified values.
 ::: tip RETURN
 RouterIndexInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified values.
 
@@ -100,4 +101,3 @@ array
 :::
 
 ---
-

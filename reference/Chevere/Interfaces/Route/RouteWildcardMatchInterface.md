@@ -15,6 +15,7 @@ editLink: false
 **Parameters**
 
 1. string `$match`
+
 ::: danger THROWS
 [RegexException](./RegexException.md)
 If $match is an invalid regex matcher
@@ -29,4 +30,3 @@ string
 :::
 
 ---
-

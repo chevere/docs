@@ -39,4 +39,3 @@ Exception thrown when a hookable doesn't exists.
 :::
 
 ---
-

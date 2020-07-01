@@ -39,4 +39,3 @@ Exception thrown when the string is the same as provided.
 :::
 
 ---
-

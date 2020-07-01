@@ -59,9 +59,11 @@ Wrapper for \chmod.
 ::: danger THROWS
 [PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
 :::
+
 ::: danger THROWS
 [PathUnableToChmodException](./PathUnableToChmodException.md)
 :::
+
 ::: tip RETURN
 void
 :::
@@ -75,6 +77,7 @@ Wrapper for \is_writeable.
 ::: danger THROWS
 [PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
 :::
+
 ::: tip RETURN
 bool
 :::
@@ -88,6 +91,7 @@ Wrapper for \is_writeable.
 ::: danger THROWS
 [PathIsNotDirectoryException](./PathIsNotDirectoryException.md)
 :::
+
 ::: tip RETURN
 bool
 :::
@@ -107,4 +111,3 @@ PathInterface
 :::
 
 ---
-

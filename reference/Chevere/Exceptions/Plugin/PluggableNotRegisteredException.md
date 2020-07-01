@@ -39,4 +39,3 @@ Exception thrown when the pluggable is not registered.
 :::
 
 ---
-

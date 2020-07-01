@@ -27,9 +27,11 @@ Return an instance with the specified $middleware.
 [MiddlewareInterfaceException](./MiddlewareInterfaceException.md)
 if $name doesn't represent a class implementing the MiddlewareInterface
 :::
+
 ::: tip RETURN
 MiddlewaresInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified $middleware.
 
@@ -64,4 +66,3 @@ Ds\Map
 :::
 
 ---
-

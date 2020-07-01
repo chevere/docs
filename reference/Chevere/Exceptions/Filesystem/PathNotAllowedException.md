@@ -39,4 +39,3 @@ Exception thrown when a not allowed path is used.
 :::
 
 ---
-

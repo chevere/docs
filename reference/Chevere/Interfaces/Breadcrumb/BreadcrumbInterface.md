@@ -47,6 +47,7 @@ Returns the current breadcrumb position.
 [BreadcrumbException](../../Exceptions/Breadcrumb/BreadcrumbException.md)
 if there's no item
 :::
+
 ::: tip RETURN
 int
 :::
@@ -64,6 +65,7 @@ Return an instance with the specified string item added.
 ::: tip RETURN
 BreadcrumbInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified item.
 
@@ -81,9 +83,11 @@ Return an instance with the specified waypoint pos removed.
 [BreadcrumbException](../../Exceptions/Breadcrumb/BreadcrumbException.md)
 if the item specified by $pos doesn't exists
 :::
+
 ::: tip RETURN
 BreadcrumbInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified waypoint pos removed.
 
@@ -108,4 +112,3 @@ string
 :::
 
 ---
-

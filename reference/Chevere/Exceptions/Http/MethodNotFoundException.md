@@ -39,4 +39,3 @@ Exception thrown when a method doesn't exists.
 :::
 
 ---
-

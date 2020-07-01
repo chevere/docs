@@ -55,7 +55,6 @@ array (
 )
 ```
 
-
 ## Methods
 
 ### __construct()
@@ -122,6 +121,7 @@ Return an instance with the specified string translation.
 ::: tip RETURN
 MessageInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified string translation.
 
@@ -139,6 +139,7 @@ Return an instance with the specified emphasis.
 ::: tip RETURN
 MessageInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified emphasis.
 
@@ -156,6 +157,7 @@ Return an instance with the specified strong.
 ::: tip RETURN
 MessageInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified strong.
 
@@ -173,6 +175,7 @@ Return an instance with the specified underline.
 ::: tip RETURN
 MessageInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified underline.
 
@@ -190,8 +193,8 @@ Return an instance with the specified code.
 ::: tip RETURN
 MessageInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified code.
 
 ---
-

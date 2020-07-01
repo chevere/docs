@@ -39,4 +39,3 @@ Exception thrown if the directories have issues.
 :::
 
 ---
-

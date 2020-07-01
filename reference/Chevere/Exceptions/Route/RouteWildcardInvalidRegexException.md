@@ -39,4 +39,3 @@ Exception thrown when a wildcard regex is invalid.
 :::
 
 ---
-

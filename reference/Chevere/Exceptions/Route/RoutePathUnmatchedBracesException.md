@@ -39,4 +39,3 @@ Exception thrown when the route path paired braces doesn't match
 :::
 
 ---
-

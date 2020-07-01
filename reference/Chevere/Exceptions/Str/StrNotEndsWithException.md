@@ -39,4 +39,3 @@ Exception thrown when the string not ends with a given string.
 :::
 
 ---
-

@@ -39,4 +39,3 @@ Exception thrown when the PathInterface is not a directory.
 :::
 
 ---
-

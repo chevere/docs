@@ -44,7 +44,6 @@ array (
 )
 ```
 
-
 ## Methods
 
 ### __construct()
@@ -52,26 +51,32 @@ array (
 **Parameters**
 
 1. string `$path`
+
 ::: danger THROWS
 [RoutePathForwardSlashException](../../Exceptions/Route/RoutePathForwardSlashException.md)
 if $path doesn't start with forward slash
 :::
+
 ::: danger THROWS
 [RoutePathInvalidCharsException](../../Exceptions/Route/RoutePathInvalidCharsException.md)
 if $path contains invalid chars
 :::
+
 ::: danger THROWS
 [RoutePathUnmatchedBracesException](../../Exceptions/Route/RoutePathUnmatchedBracesException.md)
 if $path contains unmatched braces (must be paired)
 :::
+
 ::: danger THROWS
 [RoutePathUnmatchedWildcardsException](../../Exceptions/Route/RoutePathUnmatchedWildcardsException.md)
 if $path contains wildcards that don't match the number of braces
 :::
+
 ::: danger THROWS
 [RouteWildcardReservedException](../../Exceptions/Route/RouteWildcardReservedException.md)
 if $path contains reserved wildcards
 :::
+
 ::: danger THROWS
 [RouteWildcardRepeatException](../../Exceptions/Route/RouteWildcardRepeatException.md)
 if $path contains repeated wildcards
@@ -127,6 +132,7 @@ Return an instance with the specified WildcardInterface.
 ::: tip RETURN
 RoutePathInterface
 :::
+
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified WildcardInterface.
 
@@ -145,4 +151,3 @@ string
 :::
 
 ---
-

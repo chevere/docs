@@ -39,4 +39,3 @@ Exception thrown when a wildcard starts with a number.
 :::
 
 ---
-
