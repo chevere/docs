@@ -41,7 +41,7 @@ module.exports = {
         }]
     ],
     themeConfig: {
-        logo: '/logo.svg',
+        logo: '/logo-transparent.svg',
         repo: 'chevere/chevere',
         docsRepo: 'chevere/docs',
         smoothScroll: true,
