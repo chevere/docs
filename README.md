@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.svg
+heroImage: /logo-transparent.svg
 heroText: Chevere
 tagline: A framework for building extensible server side applications
 actionText: Get Started →
