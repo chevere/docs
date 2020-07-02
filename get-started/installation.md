@@ -11,28 +11,13 @@
 
 ## Installing
 
-1. Add Chevere as a dependency in your `composer.json` project file.
-
-```json
-{
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/chevere/chevere"
-    }],
-    "require": {
-        "chevere/chevere": "dev-master"
-    }
-}
-
-```
-
-2. Install the dependencies (requires [Composer](https://getcomposer.org/)).
+* Requires [Composer](https://getcomposer.org/)
 
 ```sh
-composer install
+composer require chevere/chevere dev-master
 ```
 
-The above command will install the dependencies at `vendor/`.
+The above command will install Chevere and its dependencies at `vendor/`.
 
 > 👨🏾‍💻 Once installed, you can access the console at `vendor/bin/chevere`
 
