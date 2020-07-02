@@ -6,7 +6,7 @@ Plugs are classes defining extra functionality, requiring to comply with the plu
 
 ## Event Listener
 
-An Event Listener is a type of plug that fires when something took place. An Event Listener must implement the `Chevere\Interfaces\Plugin\Plugs\EventListener\EventListenerInterface`. 
+An Event Listener implements [EventListenerInterface](../reference/Chevere/Interfaces/Plugin/Plugs/EventListener/EventListenerInterface.md) and is a type of plug that fires when something took place.
 
 In the code below, the `__invoke` triggers extra functionality if `$value` ends with `lfo`. If you pass `rodolfo` will perform extra logic.
 
@@ -27,7 +27,8 @@ final class DoesSomethingEventListener implements EventPlugInterface
 {
     public function anchor(): string
     {
-        return 'onSet'; // Matches declaration at App\DoesSomething
+        return 'onSet';
+        // Matches declaration at App\DoesSomething
     }
 
     public function className(): string
@@ -52,7 +53,7 @@ final class DoesSomethingEventListener implements EventPlugInterface
 
 ## Hook
 
-An hook is a type of plug that alters a variable. An hook must implement the `Chevere\Interfaces\Plugin\Plugs\Hooks\HookPlugInterface`.
+A hook implements [HookInterface](../reference/Chevere/Interfaces/Plugin/Plugs/Hooks/HookInterface.md) and is a type of plug that alters a variable.
 
 In the code below, the `__invoke` method adds functionality by removing `lfo` if `$value` ends with it. If you pass `rodolfo` will return `rodo`.
 
@@ -73,7 +74,8 @@ final class DoesSomethingHookListener implements HookPlugInterface
 {
     public function anchor(): string
     {
-        return 'hook:before'; // Matches declaration at App\DoesSomething
+        return 'hook:before';
+        // Matches declaration at App\DoesSomething
     }
 
     public function className(): string

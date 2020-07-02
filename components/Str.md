@@ -8,7 +8,7 @@ Manipulating strings refers to the process of altering an argument of type `stri
 
 ### Str
 
-The `Chevere\Components\Str\Str` class is in charge of string manipulation.
+[StrInterface](../reference/Chevere/Interfaces/Str/StrInterface.md) describe the interface for a component in charge of string manipulation.
 
 ```php
 use Chevere\Components\Str\Str;
@@ -17,7 +17,8 @@ $str = (new Str('  THE STRING  '))
     ->lowercase()
     ->stripWhitespace();
 
-$result = $str->toString(); // = "thestring";
+$result = $str->toString();
+// = "thestring";
 ```
 
 In the code above, `THE STRING` is manipulated  to result in `thestring`.
@@ -28,14 +29,16 @@ Asserting strings refers to the process of asserting an argument of type `string
 
 ### StrAssert
 
-The `Chevere\Components\Str\StrAssert` is in charge of string asserting.
+[StrAssert](../reference/Chevere/Interfaces/Str/StrAssertInterface.md) describe the interface for a component in charge of string asserting.
 
 ```php
 use new Chevere\Components\Str\StrAssert;
 
 (new StrAssert('A String'))
-    ->notEmpty() // string isn't empty
-    ->notCtypeSpace(); // Throws StrCtypeSpaceException
+    ->notEmpty()
+    // string isn't empty
+    ->notCtypeSpace();
+    // Throws StrCtypeSpaceException
 ```
 
 In the code above, executing `notEmpty` won't raise any exception as `$string` is not empty, but executing `notCtypeSpace` will raise an exception as `$string` contains c-type spaces.
@@ -46,7 +49,7 @@ Bool string refers to the process of validate an argument of type `string` again
 
 ### StrBool
 
-The `Chevere\Components\Str\StrBool` class is in charge of string validation.
+[StrBoolInterface](../reference/Chevere/Interfaces/Str/StrBoolInterface.md) describe the interface for a component in charge of string validation.
 
 ```php
 use new Chevere\Components\Str\StrBool;

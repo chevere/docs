@@ -1,10 +1,10 @@
 # Writer
 
-A Writer is in charge of writing strings to some context and to retrieve the contents written. A Writer is a class implementing `Chevere\Interfaces\Writer\WriterInterface`.
+A Writer writes strings to some context. [WriterInterface](../reference/Chevere/Interfaces/Writer/WriterInterface.md) describe the interface for a component in charge of _writing_.
 
 ## Writers Container
 
-The class `Chevere\Componets\Writer\Writers` is a service container providing access to `out`, `error`, `debug` and `log` writers.
+[WritersInterface](../reference/Chevere/Interfaces/Writer/WritersInterface.md) describes a service container providing access to `out`, `error`, `debug` and `log` writers.
 
 > 🧔🏾 Writers are intended to be used for providing multi-channel output
 

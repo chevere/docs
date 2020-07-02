@@ -1,10 +1,10 @@
 # Filesystem
 
-Filesystem is a collection of classes that interact with the filesystem. Namespace `Chevere\Components\Filesystem` holds all the Filesystem classes, offering a myriad of filesystem related functionalities.
+Filesystem is a collection of classes that interact with the filesystem, offering a myriad of filesystem related functionalities.
 
 ## Path
 
-The `Chevere\Components\Filesystem\Path` class is in charge of interact with filesystem paths.
+[PathInterface](../reference/Chevere/Interfaces/Filesystem/PathInterface.md) describe the interface for the component in charge of interact with filesystem paths.
 
 ```php
 use Chevere\Components\Filesystem\Path;
@@ -75,7 +75,7 @@ $childPathFile  = $path->getChild('child-2/some-file.php'); // /home/var/child-2
 
 ## Dir
 
-The `Chevere\Components\Filesystem\Dir` class in charge of interact with filesystem directories.
+[DirInterface](../reference/Chevere/Interfaces/Filesystem/DirInterface.md) describe the interface for the component in charge of interact with filesystem directories.
 
 ```php
 use Chevere\Components\Filesystem\Dir;
@@ -137,7 +137,7 @@ $childDir  = $dir->getChild('child/'); // /home/var/child/
 
 ## File
 
-The `Chevere\Components\Filesystem\File` class is in charge of interact with filesystem files.
+[FileInterface](../reference/Chevere/Interfaces/Filesystem/FileInterface.md) describe the interface for the component in charge of interact with filesystem files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -225,7 +225,7 @@ $file->remove(); // file is gone
 
 ## File PHP
 
-The `Chevere\Components\Filesystem\FilePhp` is in charge of interact with PHP files.
+[FilePhpInterface](../reference/Chevere/Interfaces/Filesystem/FilePhpInterface.md) describe the interface for the component in charge of interact with PHP files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -251,7 +251,7 @@ $filePhp->flush(); // OPCache cache is gone
 
 ## File PHP Return
 
-The `Chevere\Components\Filesystem\FilePhpReturn` is in charge of interact with the return value of PHP files.
+[FilePhpReturnInterface](../reference/Chevere/Interfaces/Filesystem/FilePhpReturnInterface.md) describe the interface for the component in charge og interact with the return value of PHP files.
 
 ```php
 use Chevere\Components\Filesystem\File;

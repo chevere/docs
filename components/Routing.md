@@ -1,6 +1,8 @@
 # Routing
 
-The `Chevere\Components\Routing\Routing` class is in charge of automatically generating HTTP routing.
+Routing provide the ability to connect routes to controllers. 
+
+The [RoutingInterface](../reference/Chevere/Interfaces/Routing/RoutingInterface.md) describe the interface for a component in charge of automatically generating HTTP routing.
 
 Generated HTTP routing will be cached, and used to resolve HTTP requests to application instructions and to generate the [Spec](OmgWhatSTHESPEC?).
 
@@ -12,8 +14,7 @@ Routing works with routes defined in the file system. It makes routing by taking
 
 Tree below shows how a routing spec directory looks like. Routes are defined in a folder-based structure.
 
-
-```shell
+```sh
 /var/routes
 ├── articles <- route /articles
 │   ├── {id} <- route /articles/{id}
@@ -40,7 +41,7 @@ Each folder must define a `RouteName.php` file and one `<methodName>.php` for ea
 
 ### Route names
 
-A `RouteName.php` must return an object implementing `Chevere\Components\Routes\Interfaces\RouteNameInterface`.
+A `RouteName.php` must return an object implementing [RouteNameInterface](../reference/Chevere/Interfaces/Route/RouteNameInterface.md).
 
 > ⚠ Route names must be unique for each `RouteName.php`
  
@@ -58,7 +59,7 @@ The code above names route `/articles/{id}` as `article-by-id`.
 
 > 🧞 A HTTP endpoint is the binding of a HTTP method to a Controller.
 
-HTTP endpoints are defined by using `<methodName>.php` naming convention, where `<methodName>` is the HTTP method name according to [RFC 7231](https://tools.ietf.org/html/rfc7231) and it must return an object implementing `Chevere\Interfaces\Controller\ControllerInterface`.
+HTTP endpoints are defined by using `<methodName>.php` naming convention, where `<methodName>` is the HTTP method name according to [RFC 7231](https://tools.ietf.org/html/rfc7231) and it must return an object implementing [ControllerInterface](../reference/Chevere/Interfaces/Controller/ControllerInterface.md).
 
 Accepted HTTP methods are `CONNECT, DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT, TRACE`.
 

@@ -35,9 +35,9 @@ If the argument is `rodolfo` it will set the property to `set=rodolfo`.
 
 ### Pluggable Events
 
-Events are used when it is intended to broadcast that something took place. A class must implement the `Chevere\Interfaces\Plugin\Plugs\EventListener\PluggableEventsInterface` to allow pluggable events.
+Events are used when it is intended to broadcast that something took place. A class must implement [PluggableEventsInterface](../reference/Chevere/Interfaces/Plugin/Plugs/EventListener/PluggableEventsInterface.md) to allow pluggable events.
 
-> 👍🏾 The `Chevere\Components\Plugs\Events\Traits\PluggableEventsTrait` allows to easily implement the `PluggableEventsInterface`
+> 👍🏾 `Chevere\Components\Plugs\Events\Traits\PluggableEventsTrait` allows to easily implement the `PluggableEventsInterface`
 
 In the code below, calls to `event` method allows to emit an event once `set` method logic was executed.
 
@@ -92,9 +92,9 @@ $this->event('anchor-name', EventInterface $event);
 
 ### Pluggable Hooks
 
-Hooks are used when it is intended to allow modification on variables.
+Hooks are used when it is intended to allow modification on variables. A class must implement [PluggableHooksInterface](../reference/Chevere/Interfaces/Plugin/Plugs/Hooks/PluggableHooksInterface.md) to allow pluggable hooks.
 
-> 👍🏾 The `Chevere\Components\Plugs\Hooks\Traits\PluggableHooksTrait` allows to easily implement the `PluggableHooksInterface`
+> 👍🏾 The `Chevere\Components\Plugs\Hooks\Traits\` allows to easily implement the `PluggableHooksInterface`
 
 In the code below, calls to `hook` method allows to extend the behavior of the base `set` method.
 

@@ -1,8 +1,8 @@
 # VarDump
 
-The `Chevere\Components\VarDump\VarDump` component is in charge of providing the ability to dump any variable.
+An alternative to [var_dump](https://www.php.net/manual/en/function.var-dump.php), but with a richer feature set including formatting for the generation of different type of documents.
 
-It is an alternative to [var_dump](https://www.php.net/manual/en/function.var-dump.php), but with a richer feature set including formatting for the generation of different type of documents.
+[VarDumpInterface](../reference/Chevere/Interfaces/VarDump/VarDumpInterface.md) describe the interface for a component in charge of providing the ability to dump any variable.
 
 ## Learn by Examples
 
@@ -12,7 +12,7 @@ It is an alternative to [var_dump](https://www.php.net/manual/en/function.var-du
 
 ### Initialization
 
-It requires a formatter implementing `Chevere\Interfaces\VarDump\FormatterInterface` and a outputter implementing `Chevere\Interfaces\VarDump\OutputterInterface`.
+It requires a formatter implementing [FormatterInterface](../reference/Chevere/Interfaces/VarDump/FormatterInterface.md) and a outputter implementing [OutputterInterface](../reference/Chevere/Interfaces/VarDump/VarOutputterInterface.md).
 
 In the example below, a VarDump is created with console colored formatting and output:
 
