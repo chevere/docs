@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Chevere Framework',
-    description: 'Building extensible server-side applications',
+    title: 'Chevere',
+    description: 'A PHP framework for building extensible server-side applications',
     head: [
         ['link', {
             rel: 'icon',
