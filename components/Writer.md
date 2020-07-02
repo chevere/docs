@@ -29,22 +29,30 @@ $writers = $writers
     );
 ```
 
-## Concrete writers
+## Concrete Writers
 
 ### StreamWriter
 
-The [StreamWriter]() is a writer that writes to a stream.
+The `Chevere\Components\Writer\StreamWriter` is a writer that writes to a [stream](https://www.php.net/manual/en/intro.stream.php).
 
-In the example below, a stream factory provides the stream required for `new StreamWriter` and how to achieve the same using `new StreamWriterFromString`.
+Code below shows how to initiate a `StreamWriter`.
 
 ```php
 use Chevere\Components\Writer\StreamWriter;
-use Chevere\Components\Writer\StreamWriterFromString;
 use Laminas\Diactoros\StreamFactory;
-use Psr\Http\Message\StreamInterface;
 
 $stream = (new StreamFactory)->createStream('');
 $writer = new StreamWriter($stream);
-// Same as:
-$writer = new StreamWriterFromString('');
+$writer->write('write some');
 ```
+
+A `StreamWriter` can be also created with `StreamWriterFromString`.
+
+
+```php
+use Chevere\Components\Writer\StreamWriterFromString;
+
+$writer = new StreamWriterFromString('');
+$writer->write('something else');
+```
+

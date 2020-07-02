@@ -1,10 +1,16 @@
 # Interfaces
 
-Interfaces describe the public methods implemented by a given class. In Chevere, all components *must* define their own interfaces.
+Interfaces describe the public methods implemented by a given class. In Chevere, all components **must** define their own interface.
 
-> 👍🏾 Chevere interfaces are located at [Chevere\Interfaces](https://github.com/chevere/chevere/tree/master/Interfaces) namespace
+[Interfaces Reference](./../../reference/interfaces.md) ➡
 
-## Design decisions
+## Design
+
+### Uniqueness
+
+Each interface should describe a unique public procedure that **may** be implemented by several classes.
+
+This is related to the [SRP](https://en.wikipedia.org/wiki/Single-responsibility_principle) in the way that each API is different, so the interface.
 
 ### Typing
 
@@ -14,9 +20,7 @@ Parameters and return types **must** be typed against an scalar or an interface.
 
 ### Documenting
 
-Documentation for public method parameters, return and thrown exceptions **must** be on the interface. Classes implementing interfaces will automatically inherits the documentation.
-
-> 🧐 Concrete implementations **should** contain next-to zero comments
+Dockblock summary **should** be provided at class level, and for every method.
 
 ## Conventions
 

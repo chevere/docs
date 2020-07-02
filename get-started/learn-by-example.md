@@ -12,15 +12,15 @@ The repository [chevere/examples](https://github.com/chevere/examples) holds a v
 
 1. Clone the repository (requires [git](https://git-scm.com/)).
 
-```shell
+```sh
 git clone git@github.com:chevere/examples.git
 ```
 
 Will clone it to `examples/`
 
-2. Build the repository dependencies (requires [Composer](https://getcomposer.org/)).
+1. Install the dependencies (requires [Composer](https://getcomposer.org/)).
 
-```shell
+```sh
 composer install
 ```
 
@@ -34,20 +34,20 @@ Each folder represents an example topic, like [`00.HelloWorld/`](https://github.
 
 ### Running
 
-```shell
+```sh
 php <pathToScript>
 ```
 
 To run the ubiquitous "Hello, World":
 
-```shell
+```sh
 php 00.HelloWorld/00.controller.php 
 ```
 
 ## Recommendations
 
 * Use an IDE for code and reference highlighting
-* Check [Chevere\Interfaces](https://github.com/chevere/chevere/tree/master/interfaces) namespace
+* Check the [interfaces](../reference/interfaces.md) and [exceptions](../reference/exceptions.md) reference
 * Check [Chevere\Tests](https://github.com/chevere/chevere/tree/master/tests) namespace which contains unit [testing](../architecture/spec/testing.md) on everything
 
 ## Contributing

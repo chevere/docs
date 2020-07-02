@@ -12,9 +12,9 @@ In Chevere, we keep it simple:
 
 ## Code Style
 
-Code style is defined at [`.php_cs.dist`]()
+Code style is implemented with [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer), using a `.php_cs.dist` configuration file. The repository [chevere/code-style](https://github.com/chevere/code-style) is used exclusively to provide this file.
 
-> 😘 You can use it to let your IDE automatically format on save
+> 😉 Our `.php_cs.dist` file allows you to configure your own `.header` comment file
 
 ### Use Imports
 
@@ -49,15 +49,15 @@ declare(strict_types=1);
 
 ### DocBlocks
 
-DocBlock comments in signatures should be **short** as possible, **relevant** and **omit** the obvious.
+DocBlock content should be **short** as possible, **relevant** and **omit** the obvious.
 
-* `@param` and `@return` should be used only if is required to provide more context
-* `@throws` must be provided for all applicable exceptions
+* Use markdown
+* `@throws` must be provided for all known exceptions
+* `@param` and `@return` should be avoided
 
 ### Logic
 
-Comments in logic are **discouraged** and it should be used only in the following cases:
+Comments in logic are ***very*** **discouraged** and it should be used only in the following cases:
 
 * `@codeCoverage` tags
-* Type hinting (for example, in a loop)
-* Warn about a critical situation
+* Type hinting (for example, in loops)

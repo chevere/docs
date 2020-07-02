@@ -2,7 +2,7 @@
 
 Immutability is the concept of that an object, once constructed, cannot be modified throughout the lifetime of the object. In other words, an immutable object can't change.
 
-### Mutables vs Immutables
+### Mutable vs Immutable
 
 In the example below there's a `$mutable` object.
 
@@ -11,7 +11,7 @@ $mutable = new StdClass; // created
 $mutable->prop = 'value'; // changed
 ```
 
-In some basic applications this behavior is desired, but long as as applications trends to become more complex, several degress of object encapsultation will be incorporated on the logic, making very troublesome to control the objects.
+In some basic applications this behavior is desired, but long as as applications trends to become more complex, several degrees of object encapsulation will be incorporated on the logic, making very troublesome to control the objects.
 
 In the example below `$mutable` is passed to `Service`.
 
@@ -101,10 +101,14 @@ class MyImmutable implements MyImmutableInterface
     }
 }
 
-$immutable = new MyImmutable; // ref#1
-$clone = $immutable->withString('val'); // ref#2
-$immutable->string(); // ref#1 default
-$clone->string(); // ref#2 val
+$immutable = new MyImmutable;
+// ref#1
+$clone = $immutable->withString('val');
+// ref#2
+$immutable->string();
+// ref#1 default
+$clone->string();
+// ref#2 val
 ```
 
 In the example above, `$clone` is assigned to the new cloned copy of `$immutable`, which has a different state and reference.

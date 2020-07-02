@@ -1,7 +1,5 @@
 # Installation
 
-> ⚠ This is just for future reference as the package `chevere/chevere` is still not available
-
 ## System Requirements
 
 * PHP >= 7.4 (will target PHP 8)
@@ -13,19 +11,34 @@
 
 ## Installing
 
-To use Chevere you need add it as a dependency for your project.
+1. Add Chevere as a dependency in your `composer.json` project file.
 
-```shell
-composer require chevere/chevere
+```json
+{
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/chevere/chevere"
+    }],
+    "require": {
+        "chevere/chevere": "dev-master"
+    }
+}
+
 ```
 
-The above command will add `chevere/chevere` to the project `composer.json` file and install the dependencies at `vendor/`.
+2. Install the dependencies (requires [Composer](https://getcomposer.org/)).
+
+```sh
+composer install
+```
+
+The above command will install the dependencies at `vendor/`.
 
 > 👨🏾‍💻 Once installed, you can access the console at `vendor/bin/chevere`
 
 ## Now what?
 
-Once installed Chevere will be available project-wide. Just make sure to load `vendor/autoload.php` in your scripts.
+Chevere will now be available project-wide, just make sure to load `vendor/autoload.php` in your scripts.
 
 ```php
 require 'vendor/autoload.php';

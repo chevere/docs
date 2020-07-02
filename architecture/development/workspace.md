@@ -29,7 +29,7 @@ Snippets provide an easy way to define templates for code. It is a productivity 
 
 > 👍🏾 Built-in snippets are at `.vscode/Templates.code-snippets`
 
-### Working with snippets
+### Working with Snippets
 
 Snippets are designed to be context-aware, to parse information from the file system. That way, a lot of code can be autocompleted and prompt for easier editing.
 
@@ -75,9 +75,7 @@ Table below shows the prefix and description for built-in snippets.
 
 ## Coding Standards
 
-[Formatting](https://code.visualstudio.com/docs/editor/codebasics#_formatting) is provided by [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer), for which Chevere provides a `.php_cs.dist` configuration file.
-
-The VSCode extension [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer) allows to register PHP CS Fixer as formatter.
+The [coding standard](../coding/coding-standard.md) is automatically implemented by extension [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer), which allows to register PHP CS Fixer as formatter. 
 
 > 🧙🏾 Formatting can be configured on save and or typing
 
