@@ -53,32 +53,17 @@ array (
 1. string `$path`
 
 ::: danger THROWS
-[RoutePathForwardSlashException](../../Exceptions/Route/RoutePathForwardSlashException.md)
+- [RoutePathForwardSlashException](../../Exceptions/Route/RoutePathForwardSlashException.md)
 if $path doesn't start with forward slash
-:::
-
-::: danger THROWS
-[RoutePathInvalidCharsException](../../Exceptions/Route/RoutePathInvalidCharsException.md)
+- [RoutePathInvalidCharsException](../../Exceptions/Route/RoutePathInvalidCharsException.md)
 if $path contains invalid chars
-:::
-
-::: danger THROWS
-[RoutePathUnmatchedBracesException](../../Exceptions/Route/RoutePathUnmatchedBracesException.md)
+- [RoutePathUnmatchedBracesException](../../Exceptions/Route/RoutePathUnmatchedBracesException.md)
 if $path contains unmatched braces (must be paired)
-:::
-
-::: danger THROWS
-[RoutePathUnmatchedWildcardsException](../../Exceptions/Route/RoutePathUnmatchedWildcardsException.md)
+- [RoutePathUnmatchedWildcardsException](../../Exceptions/Route/RoutePathUnmatchedWildcardsException.md)
 if $path contains wildcards that don't match the number of braces
-:::
-
-::: danger THROWS
-[RouteWildcardReservedException](../../Exceptions/Route/RouteWildcardReservedException.md)
+- [RouteWildcardReservedException](../../Exceptions/Route/RouteWildcardReservedException.md)
 if $path contains reserved wildcards
-:::
-
-::: danger THROWS
-[RouteWildcardRepeatException](../../Exceptions/Route/RouteWildcardRepeatException.md)
+- [RouteWildcardRepeatException](../../Exceptions/Route/RouteWildcardRepeatException.md)
 if $path contains repeated wildcards
 :::
 

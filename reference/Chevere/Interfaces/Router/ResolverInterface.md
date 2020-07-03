@@ -27,12 +27,9 @@ Returns a RoutedInterface for the given UriInterface.
 1. Psr\Http\Message\UriInterface `$uri`
 
 ::: danger THROWS
-[RouterException](../../Exceptions/Router/RouterException.md)
+- [RouterException](../../Exceptions/Router/RouterException.md)
 if the router encounters any fatal error (UnserializeException, TypeError, etc)
-:::
-
-::: danger THROWS
-[RouteNotFoundException](../../Exceptions/Router/RouteNotFoundException.md)
+- [RouteNotFoundException](../../Exceptions/Router/RouteNotFoundException.md)
 if no route resolves the given UriInterface
 :::
 

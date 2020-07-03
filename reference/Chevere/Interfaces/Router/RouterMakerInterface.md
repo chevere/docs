@@ -24,22 +24,13 @@ Return an instance with the specified added RoutableInterface.
 2. string `$group`
 
 ::: danger THROWS
-[RouterMakerException](../../Exceptions/Router/RouterMakerException.md)
+- [RouterMakerException](../../Exceptions/Router/RouterMakerException.md)
 if unable to process routing
-:::
-
-::: danger THROWS
-[RoutePathExistsException](../../Exceptions/Router/RoutePathExistsException.md)
+- [RoutePathExistsException](../../Exceptions/Router/RoutePathExistsException.md)
 if $routable has been already routed
-:::
-
-::: danger THROWS
-[RouteKeyConflictException](../../Exceptions/Router/RouteKeyConflictException.md)
+- [RouteKeyConflictException](../../Exceptions/Router/RouteKeyConflictException.md)
 if $routable conflicts with other RoutableInterface
-:::
-
-::: danger THROWS
-[RouteNameConflictException](../../Exceptions/Router/RouteNameConflictException.md)
+- [RouteNameConflictException](../../Exceptions/Router/RouteNameConflictException.md)
 if $routable name conflicts with other RoutableInterface
 :::
 

@@ -53,7 +53,7 @@ Return an instance with the specified WildcardMatchInterface.
 1. [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md) `$regexMatch`
 
 ::: danger THROWS
-[RouteWildcardInvalidRegexException](../../Exceptions/Route/RouteWildcardInvalidRegexException.md)
+- [RouteWildcardInvalidRegexException](../../Exceptions/Route/RouteWildcardInvalidRegexException.md)
 if $match is an invalid regex match
 :::
 
@@ -105,7 +105,7 @@ Asserts that a given RoutePathInterface contains the wildcard.
 1. [RoutePathInterface](./RoutePathInterface.md) `$routePath`
 
 ::: danger THROWS
-[RouteWildcardNotFoundException](../../Exceptions/Route/RouteWildcardNotFoundException.md)
+- [RouteWildcardNotFoundException](../../Exceptions/Route/RouteWildcardNotFoundException.md)
 if the wildcard doesn't exists in the path
 :::
 

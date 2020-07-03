@@ -22,7 +22,7 @@ array
 
 ---
 
-### map()
+### mapCopy()
 
 ::: tip RETURN
 Ds\Map

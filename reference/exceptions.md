@@ -5,11 +5,6 @@ editLink: false
 
 # Exceptions
 
-## Bootstrap
-
-  - [BootstrapDirException](./Chevere/Exceptions/Bootstrap/BootstrapDirException.md)
-  - [BootstrapException](./Chevere/Exceptions/Bootstrap/BootstrapException.md)
-
 ## Breadcrumb
 
   - [BreadcrumbException](./Chevere/Exceptions/Breadcrumb/BreadcrumbException.md)
@@ -22,16 +17,18 @@ editLink: false
 
 ## ClassMap
 
-  - [ClassMappedException](./Chevere/Exceptions/ClassMap/ClassMappedException.md)
   - [ClassNotExistsException](./Chevere/Exceptions/ClassMap/ClassNotExistsException.md)
   - [ClassNotMappedException](./Chevere/Exceptions/ClassMap/ClassNotMappedException.md)
+  - [StringMappedException](./Chevere/Exceptions/ClassMap/StringMappedException.md)
 
 ## Controller
 
   - [ControllerArgumentRegexMatchException](./Chevere/Exceptions/Controller/ControllerArgumentRegexMatchException.md)
-  - [ControllerArgumentsRequiredException](./Chevere/Exceptions/Controller/ControllerArgumentsRequiredException.md)
+  - [ControllerArgumentRequiredException](./Chevere/Exceptions/Controller/ControllerArgumentRequiredException.md)
   - [ControllerInterfaceException](./Chevere/Exceptions/Controller/ControllerInterfaceException.md)
+  - [ControllerNameException](./Chevere/Exceptions/Controller/ControllerNameException.md)
   - [ControllerNotExistsException](./Chevere/Exceptions/Controller/ControllerNotExistsException.md)
+  - [ControllerParameterNameInvalidException](./Chevere/Exceptions/Controller/ControllerParameterNameInvalidException.md)
 
 ## Core
 
@@ -56,6 +53,7 @@ editLink: false
 
   - [DirExistsException](./Chevere/Exceptions/Filesystem/DirExistsException.md)
   - [DirNotExistsException](./Chevere/Exceptions/Filesystem/DirNotExistsException.md)
+  - [DirNotWritableException](./Chevere/Exceptions/Filesystem/DirNotWritableException.md)
   - [DirTailException](./Chevere/Exceptions/Filesystem/DirTailException.md)
   - [DirUnableToCreateException](./Chevere/Exceptions/Filesystem/DirUnableToCreateException.md)
   - [DirUnableToRemoveException](./Chevere/Exceptions/Filesystem/DirUnableToRemoveException.md)

@@ -69,3 +69,11 @@ bool
 :::
 
 ---
+
+### getGenerator()
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
+:::
+
+---

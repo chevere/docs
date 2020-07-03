@@ -24,7 +24,7 @@ Return an instance with the specified $middleware.
 1. Psr\Http\Server\MiddlewareInterface `$middleware`
 
 ::: danger THROWS
-[MiddlewareInterfaceException](../../Exceptions/Middleware/MiddlewareInterfaceException.md)
+- [MiddlewareInterfaceException](../../Exceptions/Middleware/MiddlewareInterfaceException.md)
 if $name doesn't represent a class implementing the MiddlewareInterface
 :::
 

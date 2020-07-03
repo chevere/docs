@@ -20,7 +20,7 @@ Run the registered hooks at the given anchor.
 2.  `$argument`
 
 ::: danger THROWS
-[RuntimeException](../../../../Exceptions/Core/RuntimeException.md)
+- [RuntimeException](../../../../Exceptions/Core/RuntimeException.md)
 If the $argument type changes.
 :::
 

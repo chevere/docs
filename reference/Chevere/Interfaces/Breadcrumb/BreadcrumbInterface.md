@@ -12,26 +12,21 @@ editLink: false
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 - [ToStringInterface](../To/ToStringInterface.md)
+- [Countable](https://www.php.net/manual/class.countable)
+
+## Description
+
+Describe a general purpose iterator companion.
 
 ## Methods
 
 ### has()
 
-Returns a boolean indicating whether the instance has the given position.
+Indicates whether the instance has the given position.
 
 **Parameters**
 
 1. int `$pos`
-
-::: tip RETURN
-bool
-:::
-
----
-
-### hasAny()
-
-Returns a boolean indicating whether the instance has any items.
 
 ::: tip RETURN
 bool
@@ -43,11 +38,6 @@ bool
 
 Returns the current breadcrumb position.
 
-::: danger THROWS
-[BreadcrumbException](../../Exceptions/Breadcrumb/BreadcrumbException.md)
-if there's no item
-:::
-
 ::: tip RETURN
 int
 :::
@@ -56,7 +46,7 @@ int
 
 ### withAddedItem()
 
-Return an instance with the specified string item added.
+Return an instance with the specified added item.
 
 **Parameters**
 
@@ -67,21 +57,20 @@ BreadcrumbInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified item.
+an instance that contains the specified added item.
 
 ---
 
 ### withRemovedItem()
 
-Return an instance with the specified waypoint pos removed.
+Return an instance with the specified pos removed.
 
 **Parameters**
 
 1. int `$pos`
 
 ::: danger THROWS
-[BreadcrumbException](../../Exceptions/Breadcrumb/BreadcrumbException.md)
-if the item specified by $pos doesn't exists
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
 :::
 
 ::: tip RETURN
@@ -89,26 +78,34 @@ BreadcrumbInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified waypoint pos removed.
+an instance that contains the specified pos removed.
 
 ---
 
 ### toArray()
 
-Returns an array, representing the object itself or some of its data/properties.
+Returns an array representation of the object.
 
 ::: tip RETURN
 array
 :::
 
+```php
+return [0 => 'item',];
+```
+
 ---
 
 ### toString()
 
-Returns a string, representing the object itself or some of its data/properties.
+Returns an string representation of the object.
 
 ::: tip RETURN
 string
 :::
+
+```php
+return '[item0][item1][itemN]...[itemN+1]';
+```
 
 ---

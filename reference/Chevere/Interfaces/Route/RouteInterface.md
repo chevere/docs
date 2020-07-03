@@ -18,7 +18,7 @@ editLink: false
 2. [RoutePathInterface](./RoutePathInterface.md) `$routePath`
 
 ::: danger THROWS
-[RouteNameInvalidException](../../Exceptions/Route/RouteNameInvalidException.md)
+- [RouteNameInvalidException](../../Exceptions/Route/RouteNameInvalidException.md)
 if $name doesn't match REGEX_NAME
 :::
 

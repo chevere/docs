@@ -21,11 +21,8 @@ Determines if a RouteInterface is able to be routed.
 1. [RouteInterface](../Route/RouteInterface.md) `$route`
 
 ::: danger THROWS
-[RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md)
-:::
-
-::: danger THROWS
-[RouteWithoutEndpointsException](../../Exceptions/Router/RouteWithoutEndpointsException.md)
+- [RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md)
+- [RouteWithoutEndpointsException](../../Exceptions/Router/RouteWithoutEndpointsException.md)
 :::
 
 ---

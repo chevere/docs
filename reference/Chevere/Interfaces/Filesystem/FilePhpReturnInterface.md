@@ -8,6 +8,14 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/FilePhpReturnInterface.php)
 
+## Description
+
+Describes a component that interacts with `.php` files that return a variable.
+
+```php
+<?php return 'Hello World!';
+```;
+
 ## Constants
 
 ### PHP_RETURN
@@ -44,7 +52,7 @@ This method MUST retain the state of the current instance, and return
 an instance that contains the specified the strict flag.
 
 Strict validation refers to match the beginning of the file contents
-against FilePhpReturnInterface::PHP_RETURN
+against `FilePhpReturnInterface::PHP_RETURN`
 
 ---
 
@@ -63,19 +71,12 @@ Provides access to the FilePhpInterface instance.
 Retrieves the file return (as-is).
 
 ::: danger THROWS
-[FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-:::
-
-::: danger THROWS
-[FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
-:::
-
-::: danger THROWS
-[FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
-:::
-
-::: danger THROWS
-[FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
+- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
+- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
+- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
+- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md)
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
 :::
 
 ::: tip RETURN
@@ -89,19 +90,12 @@ void
 Retrieves a PHP variable, applying unserialize to objects (if any).
 
 ::: danger THROWS
-[FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-:::
-
-::: danger THROWS
-[FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
-:::
-
-::: danger THROWS
-[FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
-:::
-
-::: danger THROWS
-[FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
+- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
+- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
+- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
+- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md)
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
 :::
 
 ::: tip RETURN
@@ -112,30 +106,20 @@ void
 
 ### varType()
 
-Same as var, but checking the variable $type.
+Same as `var()`, but checking the variable `$type`.
 
 **Parameters**
 
 1. [TypeInterface](../Type/TypeInterface.md) `$type`
 
 ::: danger THROWS
-[FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-:::
-
-::: danger THROWS
-[FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
-:::
-
-::: danger THROWS
-[FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
-:::
-
-::: danger THROWS
-[FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
-:::
-
-::: danger THROWS
-[FileReturnInvalidTypeException](../../Exceptions/Filesystem/FileReturnInvalidTypeException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
+- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
+- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
+- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
+- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md)
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
+- [FileReturnInvalidTypeException](../../Exceptions/Filesystem/FileReturnInvalidTypeException.md)
 :::
 
 ::: tip RETURN
@@ -146,19 +130,15 @@ void
 
 ### put()
 
-Put $var into the file using var_export return and strict format.
+Put `$var` into the file using var_export return and strict format.
 
 **Parameters**
 
 1. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
 
 ::: danger THROWS
-[FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-:::
-
-::: danger THROWS
-[FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md)
-if unable to put the contents in the file
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
+- [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md)
 :::
 
 ::: tip RETURN

@@ -12,6 +12,10 @@ editLink: false
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
+## Description
+
+Describes a component in charge of defining a cache key.
+
 ## Constants
 
 ### ILLEGAL_KEY_CHARACTERS
@@ -30,9 +34,15 @@ Type `string`
 
 1. string `$key`
 
+::: danger THROWS
+- [CacheInvalidKeyException](../../Exceptions/Cache/CacheInvalidKeyException.md)
+:::
+
 ---
 
 ### toString()
+
+Provides access to `$key`.
 
 ::: tip RETURN
 string

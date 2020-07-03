@@ -45,6 +45,7 @@ editLink: false
   - [FileInterface](./Chevere/Interfaces/Filesystem/FileInterface.md)
   - [FilePhpInterface](./Chevere/Interfaces/Filesystem/FilePhpInterface.md)
   - [FilePhpReturnInterface](./Chevere/Interfaces/Filesystem/FilePhpReturnInterface.md)
+  - [FilesystemFactoryInterface](./Chevere/Interfaces/Filesystem/FilesystemFactoryInterface.md)
   - [PathInterface](./Chevere/Interfaces/Filesystem/PathInterface.md)
 
 ## Http

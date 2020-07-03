@@ -10,6 +10,19 @@ editLink: false
 
 ## Methods
 
+### __construct()
+
+**Parameters**
+
+1. [PathInterface](./PathInterface.md) `$path`
+
+::: danger THROWS
+- [PathIsFileException](../../Exceptions/Filesystem/PathIsFileException.md)
+- [DirTailException](../../Exceptions/Filesystem/DirTailException.md)
+:::
+
+---
+
 ### path()
 
 Provides access to the PathInterface instance.
@@ -29,8 +42,7 @@ Creates the directory.
 1. int `$mode`
 
 ::: danger THROWS
-[DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
-if unable to create the directory
+- [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
 :::
 
 ::: tip RETURN
@@ -62,12 +74,9 @@ void
 Removes the contents from a path without deleting the path.
 
 ::: danger THROWS
-[DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
+- [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
 if unable to remove the directory
-:::
-
-::: danger THROWS
-[FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
+- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
 if unable to remove a file in the directory
 :::
 
@@ -82,7 +91,7 @@ array
 Removes the directory.
 
 ::: danger THROWS
-[DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
+- [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
 if unable to remove the directory
 :::
 
@@ -94,11 +103,15 @@ array
 
 ### getChild()
 
-Gets a child DirInterface for the added path.
+Gets a child `DirInterface` for the added path.
 
 **Parameters**
 
 1. string `$path`
+
+::: danger THROWS
+- [PathInvalidException](../../Exceptions/Filesystem/PathInvalidException.md)
+:::
 
 ::: tip RETURN
 DirInterface

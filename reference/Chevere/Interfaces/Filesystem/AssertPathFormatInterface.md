@@ -17,19 +17,10 @@ editLink: false
 1. string `$path`
 
 ::: danger THROWS
-[PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
-:::
-
-::: danger THROWS
-[PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
-:::
-
-::: danger THROWS
-[PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
-:::
-
-::: danger THROWS
-[PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
+- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
+- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
+- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
+- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
 :::
 
 ---
