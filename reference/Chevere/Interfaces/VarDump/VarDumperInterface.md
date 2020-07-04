@@ -80,14 +80,14 @@ Type `array`
 
 ```php
 array (
-  'boolean' => 'Chevere\\Components\\VarDump\\Processors\\BooleanProcessor',
-  'array' => 'Chevere\\Components\\VarDump\\Processors\\ArrayProcessor',
-  'object' => 'Chevere\\Components\\VarDump\\Processors\\ObjectProcessor',
-  'integer' => 'Chevere\\Components\\VarDump\\Processors\\IntegerProcessor',
-  'string' => 'Chevere\\Components\\VarDump\\Processors\\StringProcessor',
-  'float' => 'Chevere\\Components\\VarDump\\Processors\\FloatProcessor',
-  'null' => 'Chevere\\Components\\VarDump\\Processors\\NullProcessor',
-  'resource' => 'Chevere\\Components\\VarDump\\Processors\\ResourceProcessor',
+  'boolean' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpBooleanProcessor',
+  'array' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpArrayProcessor',
+  'object' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpObjectProcessor',
+  'integer' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpIntegerProcessor',
+  'string' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpStringProcessor',
+  'float' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpFloatProcessor',
+  'null' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpNullProcessor',
+  'resource' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpResourceProcessor',
 )
 ```
 
@@ -114,7 +114,7 @@ array (
 Provides access to the FormatterInterface instance.
 
 ::: tip RETURN
-[FormatterInterface](./FormatterInterface.md)
+[VarDumpFormatterInterface](./VarDumpFormatterInterface.md)
 :::
 
 ---

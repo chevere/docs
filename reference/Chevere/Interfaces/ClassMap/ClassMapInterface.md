@@ -15,7 +15,7 @@ editLink: false
 
 ## Description
 
-Describes a component in charge of mapping classes to strings.
+Describes the component in charge of mapping classes to strings.
 
 ## Methods
 

@@ -24,7 +24,7 @@ Type `string`
 
 **Parameters**
 
-1. [Routables](../../Components/Router/Routables.md) `$routables`
+1. [RoutablesInterface](./RoutablesInterface.md) `$routables`
 
 ::: tip RETURN
 RouterInterface
@@ -35,7 +35,7 @@ RouterInterface
 ### routables()
 
 ::: tip RETURN
-[Routables](../../Components/Router/Routables.md)
+[RoutablesInterface](./RoutablesInterface.md)
 :::
 
 ---

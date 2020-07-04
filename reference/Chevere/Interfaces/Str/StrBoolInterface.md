@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Str/StrBoolInterface.php)
 
+## Description
+
+Describes the component in charge of providing string conditionals.
+
 ## Methods
 
 ### __construct()
@@ -20,6 +24,8 @@ editLink: false
 
 ### empty()
 
+Indicates whether the string is empty.
+
 ::: tip RETURN
 bool
 :::
@@ -27,6 +33,8 @@ bool
 ---
 
 ### ctypeSpace()
+
+Indicates whether the string is ctype space.
 
 ::: tip RETURN
 bool
@@ -36,6 +44,8 @@ bool
 
 ### ctypeDigit()
 
+Indicates whether the string is ctype digit.
+
 ::: tip RETURN
 bool
 :::
@@ -44,6 +54,8 @@ bool
 
 ### startsWithCtypeDigit()
 
+Indicates whether the string starts with ctype digit.
+
 ::: tip RETURN
 bool
 :::
@@ -51,6 +63,8 @@ bool
 ---
 
 ### startsWith()
+
+Indicates whether the string starts with `$needle`.
 
 **Parameters**
 
@@ -64,6 +78,8 @@ bool
 
 ### endsWith()
 
+Indicates whether the string ends with `$needle`.
+
 **Parameters**
 
 1. string `$needle`
@@ -75,6 +91,8 @@ bool
 ---
 
 ### same()
+
+Indicates whether the string is the same as `$needle`.
 
 **Parameters**
 

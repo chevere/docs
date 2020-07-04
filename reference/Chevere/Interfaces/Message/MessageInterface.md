@@ -14,7 +14,7 @@ editLink: false
 
 ## Description
 
-Rich system messages for CLI and HTML.
+Describes the component in charge of handling rich system messages for CLI and HTML.
 
 ## Constants
 
@@ -67,7 +67,7 @@ array (
 
 ### template()
 
-Provides access to the template property.
+Provides access to the message template.
 
 ::: tip RETURN
 string
@@ -77,7 +77,7 @@ string
 
 ### trTable()
 
-Provides access to the trTable property.
+Provides access to the message translation table.
 
 ::: tip RETURN
 array
@@ -87,6 +87,8 @@ array
 
 ### toConsole()
 
+Returns a console message representation.
+
 ::: tip RETURN
 string
 :::
@@ -95,6 +97,8 @@ string
 
 ### toHtml()
 
+Returns a HTML message representation.
+
 ::: tip RETURN
 string
 :::
@@ -102,6 +106,8 @@ string
 ---
 
 ### toString()
+
+Returns a text message representation.
 
 ::: tip RETURN
 string
@@ -129,7 +135,7 @@ an instance that contains the specified string translation.
 
 ### emphasis()
 
-Return an instance with the specified emphasis.
+Return an instance with the specified `$search` replaced with `$replace` emphasis tag.
 
 **Parameters**
 
@@ -141,13 +147,13 @@ MessageInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified emphasis.
+an instance that contains the specified `$search` replaced with `$replace` emphasis tag.
 
 ---
 
 ### strong()
 
-Return an instance with the specified strong.
+Return an instance with the specified `$search` replaced with `$replace` as strong tag.
 
 **Parameters**
 
@@ -159,7 +165,7 @@ MessageInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified strong.
+an instance that contains the specified `$search` replaced with `$replace` as strong tag.
 
 ---
 
@@ -183,7 +189,7 @@ an instance that contains the specified underline.
 
 ### code()
 
-Return an instance with the specified code.
+Return an instance with the specified `$search` replaced with `$replace` as code tag.
 
 **Parameters**
 
@@ -195,6 +201,6 @@ MessageInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified code.
+an instance that contains the specified `$search` replaced with `$replace` as code tag.
 
 ---

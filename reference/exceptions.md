@@ -68,6 +68,7 @@ editLink: false
   - [FileUnableToPutException](./Chevere/Exceptions/Filesystem/FileUnableToPutException.md)
   - [FileUnableToRemoveException](./Chevere/Exceptions/Filesystem/FileUnableToRemoveException.md)
   - [FileWithoutContentsException](./Chevere/Exceptions/Filesystem/FileWithoutContentsException.md)
+  - [FilesystemFactoryException](./Chevere/Exceptions/Filesystem/FilesystemFactoryException.md)
   - [PathDotSlashException](./Chevere/Exceptions/Filesystem/PathDotSlashException.md)
   - [PathDoubleDotsDashException](./Chevere/Exceptions/Filesystem/PathDoubleDotsDashException.md)
   - [PathExtraSlashesException](./Chevere/Exceptions/Filesystem/PathExtraSlashesException.md)
@@ -84,11 +85,6 @@ editLink: false
 ## Http
 
   - [MethodNotFoundException](./Chevere/Exceptions/Http/MethodNotFoundException.md)
-
-## Middleware
-
-  - [MiddlewareInterfaceException](./Chevere/Exceptions/Middleware/MiddlewareInterfaceException.md)
-  - [MiddlewareNamesEmptyException](./Chevere/Exceptions/Middleware/MiddlewareNamesEmptyException.md)
 
 ## Plugin
 
@@ -109,6 +105,7 @@ editLink: false
 ## Regex
 
   - [RegexException](./Chevere/Exceptions/Regex/RegexException.md)
+  - [RegexInvalidException](./Chevere/Exceptions/Regex/RegexInvalidException.md)
   - [RegexMatchException](./Chevere/Exceptions/Regex/RegexMatchException.md)
 
 ## Route
@@ -190,5 +187,5 @@ editLink: false
 
 ## VarExportable
 
-  - [VarIsResourceException](./Chevere/Exceptions/VarExportable/VarIsResourceException.md)
-  - [VarNotExportableException](./Chevere/Exceptions/VarExportable/VarNotExportableException.md)
+  - [VarExportableException](./Chevere/Exceptions/VarExportable/VarExportableException.md)
+  - [VarExportableIsResourceException](./Chevere/Exceptions/VarExportable/VarExportableIsResourceException.md)

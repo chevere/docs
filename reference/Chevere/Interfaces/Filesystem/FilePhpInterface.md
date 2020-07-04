@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes a component that interact with `.php` files.
+Describes the component in charge of interact with `.php` files.
 
 ## Methods
 

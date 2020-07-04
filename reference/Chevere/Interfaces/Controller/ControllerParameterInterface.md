@@ -22,7 +22,7 @@ Describes the component in charge of handling controller parameters.
 2. [RegexInterface](../Regex/RegexInterface.md) `$regex`
 
 ::: danger THROWS
-- ⚠ Unknown type `ControllerParameterNameInvalidException` declared in `@throws` tag`
+- [ControllerParameterNameInvalidException](../../Exceptions/Controller/ControllerParameterNameInvalidException.md)
 :::
 
 ---

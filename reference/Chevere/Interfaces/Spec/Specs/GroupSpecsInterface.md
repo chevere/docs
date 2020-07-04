@@ -2,15 +2,15 @@
 editLink: false
 ---
 
-# RoutablesInterface
+# GroupSpecsInterface
 
-`Chevere\Interfaces\Router\RoutablesInterface`
+`Chevere\Interfaces\Spec\Specs\GroupSpecsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RoutablesInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/Specs/GroupSpecsInterface.php)
 
 ## Implements
 
-- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- [DsMapInterface](../../DataStructures/DsMapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Methods
@@ -23,14 +23,14 @@ editLink: false
 
 ---
 
-### withPut()
+### put()
 
 **Parameters**
 
-1. [RoutableInterface](./RoutableInterface.md) `$routable`
+1. [GroupSpecInterface](./GroupSpecInterface.md) `$groupSpec`
 
 ::: tip RETURN
-RoutablesInterface
+void
 :::
 
 ---
@@ -39,7 +39,7 @@ RoutablesInterface
 
 **Parameters**
 
-1. string `$name`
+1. string `$key`
 
 ::: tip RETURN
 bool
@@ -51,10 +51,10 @@ bool
 
 **Parameters**
 
-1. string `$name`
+1. string `$key`
 
 ::: tip RETURN
-[RoutableInterface](./RoutableInterface.md)
+[GroupSpecInterface](./GroupSpecInterface.md)
 :::
 
 ---

@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/To/ToStringInterface.php)
 
+## Description
+
+Describes the component that implements `toArray()` method.
+
 ## Methods
 
 ### toString()

@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Http/MethodInterface.php)
 
+## Description
+
+Describes the component that defines an HTTP method according to RFC 7231.
+
 ## Methods
 
 ### name()

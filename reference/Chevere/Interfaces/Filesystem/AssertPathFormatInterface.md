@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/AssertPathFormatInterface.php)
 
+## Description
+
+Describes the component in charge of asserting filesystem path format.
+
 ## Methods
 
 ### __construct()

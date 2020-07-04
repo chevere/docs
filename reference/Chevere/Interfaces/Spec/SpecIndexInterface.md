@@ -31,7 +31,7 @@ SpecIndexInterface
 ### specIndexMap()
 
 ::: tip RETURN
-[SpecIndexMap](../../Components/Spec/SpecIndexMap.md)
+[SpecIndexMapInterface](./SpecIndexMapInterface.md)
 :::
 
 ---
@@ -70,7 +70,7 @@ array
 
 ---
 
-### map()
+### mapCopy()
 
 ::: tip RETURN
 Ds\Map

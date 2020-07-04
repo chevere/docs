@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes a resolved route.
+Describes the component in charge of defining a resolved route.
 
 ## Methods
 

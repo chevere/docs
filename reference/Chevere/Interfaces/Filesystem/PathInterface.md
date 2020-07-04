@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/PathInterface.php)
 
+## Description
+
+Describes the component in charge of interact with filesystem paths.
+
 ## Methods
 
 ### __construct()

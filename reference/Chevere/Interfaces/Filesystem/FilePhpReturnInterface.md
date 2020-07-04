@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes a component that interacts with `.php` files that return a variable.
+Describes the component in charge of interact with `.php` files that return a variable.
 
 ```php
 <?php return 'Hello World!';

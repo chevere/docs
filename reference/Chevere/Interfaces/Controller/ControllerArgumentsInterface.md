@@ -26,7 +26,7 @@ Describes the component in charge of handling controller arguments.
 2. array `$arguments`
 
 ::: danger THROWS
-- ⚠ Unknown type `ControllerArgumentRequiredException` declared in `@throws` tag`
+- [ControllerArgumentRequiredException](../../Exceptions/Controller/ControllerArgumentRequiredException.md)
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
 - [ControllerArgumentRegexMatchException](../../Exceptions/Controller/ControllerArgumentRegexMatchException.md)
 :::

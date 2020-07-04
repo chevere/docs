@@ -68,7 +68,7 @@ Provides access to the RouteEndpointInterface identified by $key.
 
 ---
 
-### map()
+### mapCopy()
 
 ::: tip RETURN
 Ds\Map

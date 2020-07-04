@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/FileInterface.php)
 
+## Description
+
+Describes the component in charge of interacting with filesystem files.
+
 ## Constants
 
 ### CHECKSUM_ALGO

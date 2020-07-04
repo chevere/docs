@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes a component in charge of caching PHP variables.
+Describes the component in charge of caching PHP variables.
 
 `cached.php >>> <?php return 'my cached data';`
 

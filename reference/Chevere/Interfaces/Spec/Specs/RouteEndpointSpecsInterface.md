@@ -2,15 +2,15 @@
 editLink: false
 ---
 
-# RoutablesInterface
+# RouteEndpointSpecsInterface
 
-`Chevere\Interfaces\Router\RoutablesInterface`
+`Chevere\Interfaces\Spec\Specs\RouteEndpointSpecsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RoutablesInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/Specs/RouteEndpointSpecsInterface.php)
 
 ## Implements
 
-- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- [DsMapInterface](../../DataStructures/DsMapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Methods
@@ -27,10 +27,10 @@ editLink: false
 
 **Parameters**
 
-1. [RoutableInterface](./RoutableInterface.md) `$routable`
+1. [RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md) `$routeEndpointSpec`
 
 ::: tip RETURN
-RoutablesInterface
+RouteEndpointSpecsInterface
 :::
 
 ---
@@ -39,7 +39,7 @@ RoutablesInterface
 
 **Parameters**
 
-1. string `$name`
+1. string `$key`
 
 ::: tip RETURN
 bool
@@ -51,10 +51,10 @@ bool
 
 **Parameters**
 
-1. string `$name`
+1. string `$key`
 
 ::: tip RETURN
-[RoutableInterface](./RoutableInterface.md)
+[RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md)
 :::
 
 ---

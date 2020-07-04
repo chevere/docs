@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Type/TypeInterface.php)
 
+## Description
+
+Describes the component in charge of dynamic type validation.
+
 ## Constants
 
 ### BOOLEAN
@@ -135,6 +139,11 @@ array (
 
 1. string `$type`
 
+::: danger THROWS
+- [TypeNotFoundException](../../Exceptions/Type/TypeNotFoundException.md)
+if the type doesn't exists
+:::
+
 ---
 
 ### primitive()
@@ -155,13 +164,13 @@ Returns the type hinting.
 string
 :::
 
-It will return either the class name, interface, or simply the primitive.
+It will return either the class name, interface, or the primitive.
 
 ---
 
 ### validate()
 
-Returns a boolean indicating if $var validates against the type.
+Returns a boolean indicating if `$var` validates against the type.
 
 **Parameters**
 
@@ -175,7 +184,7 @@ bool
 
 ### validator()
 
-Returns the type validator callable.
+Returns the validator callable.
 
 ::: tip RETURN
 callable

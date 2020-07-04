@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes a component that defines a cache item.
+Describes the component that defines a cache item.
 
 ## Methods
 

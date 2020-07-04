@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Str/StrAssertInterface.php)
 
+## Description
+
+Describes the component in charge of string asserting.
+
 ## Methods
 
 ### __construct()
@@ -19,6 +23,8 @@ editLink: false
 ---
 
 ### empty()
+
+Asserts that the string is empty.
 
 ::: danger THROWS
 - [StrNotEmptyException](../../Exceptions/Str/StrNotEmptyException.md)
@@ -32,6 +38,8 @@ StrAssertInterface
 
 ### notEmpty()
 
+Asserts that the string is not empty.
+
 ::: danger THROWS
 - [StrEmptyException](../../Exceptions/Str/StrEmptyException.md)
 :::
@@ -43,6 +51,8 @@ StrAssertInterface
 ---
 
 ### ctypeSpace()
+
+Asserts that the string is ctype space.
 
 ::: danger THROWS
 - [StrNotCtypeSpaceException](../../Exceptions/Str/StrNotCtypeSpaceException.md)
@@ -56,6 +66,8 @@ StrAssertInterface
 
 ### notCtypeSpace()
 
+Asserts that the string is not ctype space.
+
 ::: danger THROWS
 - [StrCtypeSpaceException](../../Exceptions/Str/StrCtypeSpaceException.md)
 :::
@@ -67,6 +79,8 @@ StrAssertInterface
 ---
 
 ### ctypeDigit()
+
+Asserts that the string is ctype digit.
 
 ::: danger THROWS
 - [StrNotCtypeDigitException](../../Exceptions/Str/StrNotCtypeDigitException.md)
@@ -80,6 +94,8 @@ StrAssertInterface
 
 ### notCtypeDigit()
 
+Asserts that the string is not ctype digit.
+
 ::: danger THROWS
 - [StrCtypeDigitException](../../Exceptions/Str/StrCtypeDigitException.md)
 :::
@@ -91,6 +107,8 @@ StrAssertInterface
 ---
 
 ### startsWithCtypeDigit()
+
+Asserts that the string is starts with ctype digit.
 
 ::: danger THROWS
 - [StrNotStartsWithCtypeDigitException](../../Exceptions/Str/StrNotStartsWithCtypeDigitException.md)
@@ -104,6 +122,8 @@ StrAssertInterface
 
 ### notStartsWithCtypeDigit()
 
+Asserts that the string not starts with ctype digit.
+
 ::: danger THROWS
 - [StrStartsWithCtypeDigitException](../../Exceptions/Str/StrStartsWithCtypeDigitException.md)
 :::
@@ -115,6 +135,8 @@ StrAssertInterface
 ---
 
 ### startsWith()
+
+Asserts that the string is starts with `$needle`.
 
 **Parameters**
 
@@ -132,6 +154,8 @@ StrAssertInterface
 
 ### notStartsWith()
 
+Asserts that the string not starts with `$needle`.
+
 **Parameters**
 
 1. string `$needle`
@@ -147,6 +171,8 @@ StrAssertInterface
 ---
 
 ### endsWith()
+
+Asserts that the string ends with `$needle`.
 
 **Parameters**
 
@@ -164,6 +190,8 @@ StrAssertInterface
 
 ### notEndsWith()
 
+Asserts that the string not ends with `$needle`.
+
 **Parameters**
 
 1. string `$needle`
@@ -179,6 +207,8 @@ StrAssertInterface
 ---
 
 ### same()
+
+Asserts that the string is same as `$string`.
 
 **Parameters**
 
@@ -196,6 +226,8 @@ StrAssertInterface
 
 ### notSame()
 
+Asserts that the string is not same as `$string`.
+
 **Parameters**
 
 1. string `$string`
@@ -212,6 +244,8 @@ StrAssertInterface
 
 ### contains()
 
+Asserts that the string contains `$string`.
+
 **Parameters**
 
 1. string `$string`
@@ -227,6 +261,8 @@ StrAssertInterface
 ---
 
 ### notContains()
+
+Asserts that the string not contains `$string`.
 
 **Parameters**
 

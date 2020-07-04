@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/FilesystemFactoryInterface.php)
 
+## Description
+
+Describes the component in charge of creating filesystem objects.
+
 ## Methods
 
 ### __construct()
@@ -19,6 +23,10 @@ editLink: false
 **Parameters**
 
 1. string `$path`
+
+::: danger THROWS
+- ⚠ Unknown type `FilesystemFactoryException` declared in `@throws` tag`
+:::
 
 ::: tip RETURN
 [DirInterface](./DirInterface.md)
@@ -32,6 +40,10 @@ editLink: false
 
 1. string `$path`
 
+::: danger THROWS
+- ⚠ Unknown type `FilesystemFactoryException` declared in `@throws` tag`
+:::
+
 ::: tip RETURN
 [FileInterface](./FileInterface.md)
 :::
@@ -44,6 +56,10 @@ editLink: false
 
 1. string `$path`
 
+::: danger THROWS
+- ⚠ Unknown type `FilesystemFactoryException` declared in `@throws` tag`
+:::
+
 ::: tip RETURN
 [FilePhpInterface](./FilePhpInterface.md)
 :::
@@ -55,6 +71,10 @@ editLink: false
 **Parameters**
 
 1. string `$path`
+
+::: danger THROWS
+- ⚠ Unknown type `FilesystemFactoryException` declared in `@throws` tag`
+:::
 
 ::: tip RETURN
 [FilePhpReturn](../../Components/Filesystem/FilePhpReturn.md)

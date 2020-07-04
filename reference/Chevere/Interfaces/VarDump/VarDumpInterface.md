@@ -14,8 +14,8 @@ editLink: false
 
 **Parameters**
 
-1. [FormatterInterface](./FormatterInterface.md) `$formatter`
-2. [OutputterInterface](./OutputterInterface.md) `$outputter`
+1. [VarDumpFormatterInterface](./VarDumpFormatterInterface.md) `$formatter`
+2. [VarDumpOutputterInterface](./VarDumpOutputterInterface.md) `$outputter`
 
 ---
 

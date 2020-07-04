@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Serialize/UnserializeInterface.php)
 
+## Description
+
+Describes the component in charge of handling unserialize.
+
 ## Methods
 
 ### __construct()
@@ -15,6 +19,10 @@ editLink: false
 **Parameters**
 
 1. string `$serialized`
+
+::: danger THROWS
+- [UnserializeException](../../Exceptions/Serialize/UnserializeException.md)
+:::
 
 ---
 
