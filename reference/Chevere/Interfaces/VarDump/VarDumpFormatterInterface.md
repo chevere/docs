@@ -8,9 +8,15 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpFormatterInterface.php)
 
+## Description
+
+Describes the component in charge of formatting the var dump strings.
+
 ## Methods
 
 ### indent()
+
+Get indent for the given `$indent` size.
 
 **Parameters**
 
@@ -24,6 +30,8 @@ string
 
 ### emphasis()
 
+Get emphasis for the given `$string`.
+
 **Parameters**
 
 1. string `$string`
@@ -36,6 +44,8 @@ string
 
 ### filterEncodedChars()
 
+Get `$string` without encoded chars.
+
 **Parameters**
 
 1. string `$string`
@@ -47,6 +57,8 @@ string
 ---
 
 ### highlight()
+
+Get highlighted `$string` identified by `$key`.
 
 **Parameters**
 

@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumperInterface.php)
 
+## Description
+
+Describes the component in charge of handling variable dumping process.
+
 ## Constants
 
 ### FILE
@@ -93,7 +97,19 @@ array (
 
 ## Methods
 
+### __construct()
+
+**Parameters**
+
+1. [WriterInterface](../Writer/WriterInterface.md) `$writer`
+2. [VarDumpFormatterInterface](./VarDumpFormatterInterface.md) `$formatter`
+3. [VarDumpableInterface](./VarDumpableInterface.md) `$dumpable`
+
+---
+
 ### writer()
+
+Provides access to the `$writer` instance.
 
 ::: tip RETURN
 [WriterInterface](../Writer/WriterInterface.md)
@@ -101,17 +117,9 @@ array (
 
 ---
 
-### dumpable()
-
-::: tip RETURN
-[VarDumpableInterface](./VarDumpableInterface.md)
-:::
-
----
-
 ### formatter()
 
-Provides access to the FormatterInterface instance.
+Provides access to the `$formatter` instance.
 
 ::: tip RETURN
 [VarDumpFormatterInterface](./VarDumpFormatterInterface.md)
@@ -119,9 +127,19 @@ Provides access to the FormatterInterface instance.
 
 ---
 
+### dumpable()
+
+Provides access to the `$dumpable` instance.
+
+::: tip RETURN
+[VarDumpableInterface](./VarDumpableInterface.md)
+:::
+
+---
+
 ### withIndent()
 
-Return an instance with the specified $indent.
+Return an instance with the specified `$indent`.
 
 **Parameters**
 
@@ -132,13 +150,13 @@ VarDumperInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified $indent.
+an instance that contains the specified `$indent`.
 
 ---
 
 ### indent()
 
-Provides access to the instance $indent.
+Provides access to the instance indent value.
 
 ::: tip RETURN
 int
@@ -148,7 +166,7 @@ int
 
 ### indentString()
 
-Provides access to the instance $indentString.
+Provides access to the instance indent string.
 
 ::: tip RETURN
 string
@@ -158,7 +176,7 @@ string
 
 ### withDepth()
 
-Return an instance with the specified $depth.
+Return an instance with the specified `$depth`.
 
 **Parameters**
 
@@ -169,13 +187,13 @@ VarDumperInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified $depth.
+an instance that contains the specified `$depth`.
 
 ---
 
 ### depth()
 
-Provides access to the instance $depth.
+Provides access to the instance `$depth`.
 
 ::: tip RETURN
 int
@@ -185,32 +203,34 @@ int
 
 ### withKnownObjects()
 
-Return an instance with the specified known object IDs.
+Return an instance with the specified `$known` object IDs.
 
 **Parameters**
 
-1. array `$known`
+1. Ds\Set `$known`
 
 ::: tip RETURN
 VarDumperInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified known object IDs.
+an instance that contains the specified `$known` object IDs.
 
 ---
 
 ### known()
 
+Provides access to the known object ids.
+
 ::: tip RETURN
-array
+Ds\Set
 :::
 
 ---
 
-### withProcessor()
+### withProcess()
 
-Process the var dump operation.
+Process the dump.
 
 ::: tip RETURN
 VarDumperInterface

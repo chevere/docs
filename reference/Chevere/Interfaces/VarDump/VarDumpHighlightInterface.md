@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpHighlightInterface.php)
 
+## Description
+
+Describes the component in charge of highlight the var dump strings.
+
 ## Constants
 
 ### KEYS
@@ -38,20 +42,45 @@ array (
 
 ### __construct()
 
+Constructs a highlight instance specified by `$key`.
+
 **Parameters**
 
 1. string `$key`
 
+::: danger THROWS
+- [OutOfRangeException](../../Exceptions/Core/OutOfRangeException.md)
+:::
+
 ---
 
-### wrap()
+### highlight()
+
+Highlights `$string`.
 
 **Parameters**
 
-1. string `$dump`
+1. string `$string`
 
 ::: tip RETURN
 string
 :::
+
+---
+
+### pallet()
+
+Provide access to the color pallet.
+
+::: tip RETURN
+array
+:::
+
+```php
+return [
+    'string' => '<color_for_string>',
+    'float' => '<color_for_float>',
+];
+```
 
 ---

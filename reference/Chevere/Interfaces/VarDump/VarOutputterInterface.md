@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarOutputterInterface.php)
 
+## Description
+
+Describes the component in charge of writing information about a variable.
+
 ## Methods
 
 ### __construct()
@@ -22,6 +26,8 @@ editLink: false
 ---
 
 ### process()
+
+Process the var output streaming.
 
 **Parameters**
 

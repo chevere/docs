@@ -8,9 +8,15 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpOutputterInterface.php)
 
+## Description
+
+Describes the component in charge of orchestrating the var dump output processing.
+
 ## Methods
 
 ### setUp()
+
+This method is executed before `prepare()`.
 
 **Parameters**
 
@@ -23,26 +29,42 @@ void
 
 ---
 
-### prepare()
+### backtrace()
+
+Provides access to the instance backtrace.
 
 ::: tip RETURN
-void
-:::
-
----
-
-### callback()
-
-::: tip RETURN
-void
+array
 :::
 
 ---
 
 ### caller()
 
+Provides access to the instance caller.
+
 ::: tip RETURN
 string
+:::
+
+---
+
+### prepare()
+
+This method is executed before `tearDown()`.
+
+::: tip RETURN
+void
+:::
+
+---
+
+### tearDown()
+
+Ends the outputter.
+
+::: tip RETURN
+void
 :::
 
 ---

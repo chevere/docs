@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpProcessorInterface.php)
 
+## Description
+
+Describes the component in charge of processing a variable of a known type.
+
 ## Constants
 
 ### MAX_DEPTH
@@ -20,19 +24,41 @@ Type `integer`
 
 ## Methods
 
-### info()
+### __construct()
 
-Provides access to the instance info.
+**Parameters**
+
+1. [VarDumperInterface](./VarDumperInterface.md) `$varDumper`
+
+::: danger THROWS
+- ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
+:::
+
+---
+
+### type()
+
+Provides the variable type (primitive).
 
 ::: tip RETURN
 string
 :::
 
-The information about the variable like `size=1` or `length=6`
+---
+
+### info()
+
+Provides info about the variable like `size=1`, `length=6`, 'Object #id'
+
+::: tip RETURN
+string
+:::
 
 ---
 
 ### typeHighlighted()
+
+Provides a highlighted type.
 
 ::: tip RETURN
 string
@@ -41,6 +67,8 @@ string
 ---
 
 ### highlightOperator()
+
+Highlights the given operator `$string`.
 
 **Parameters**
 
@@ -54,6 +82,8 @@ string
 
 ### highlightParentheses()
 
+Highlights and wraps in parentheses the given `$string`.
+
 **Parameters**
 
 1. string `$string`
@@ -66,6 +96,8 @@ string
 
 ### circularReference()
 
+Provides the `*circular reference*` flag.
+
 ::: tip RETURN
 string
 :::
@@ -74,25 +106,17 @@ string
 
 ### maxDepthReached()
 
-::: tip RETURN
-string
-:::
-
----
-
-### type()
-
-Provides access to the instance type.
+Provides the `*max depth reached*` flag.
 
 ::: tip RETURN
 string
 :::
-
-The information about the variable type like `array` or `object`
 
 ---
 
 ### write()
+
+Write the dump to the stream.
 
 ::: tip RETURN
 void
