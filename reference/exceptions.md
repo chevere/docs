@@ -13,7 +13,6 @@ editLink: false
 
   - [CacheInvalidKeyException](./Chevere/Exceptions/Cache/CacheInvalidKeyException.md)
   - [CacheKeyNotFoundException](./Chevere/Exceptions/Cache/CacheKeyNotFoundException.md)
-  - [CacheNotFoundException](./Chevere/Exceptions/Cache/CacheNotFoundException.md)
 
 ## ClassMap
 
@@ -53,7 +52,6 @@ editLink: false
 
   - [DirExistsException](./Chevere/Exceptions/Filesystem/DirExistsException.md)
   - [DirNotExistsException](./Chevere/Exceptions/Filesystem/DirNotExistsException.md)
-  - [DirNotWritableException](./Chevere/Exceptions/Filesystem/DirNotWritableException.md)
   - [DirTailException](./Chevere/Exceptions/Filesystem/DirTailException.md)
   - [DirUnableToCreateException](./Chevere/Exceptions/Filesystem/DirUnableToCreateException.md)
   - [DirUnableToRemoveException](./Chevere/Exceptions/Filesystem/DirUnableToRemoveException.md)
@@ -110,34 +108,21 @@ editLink: false
 
 ## Route
 
-  - [EndpointException](./Chevere/Exceptions/Route/EndpointException.md)
+  - [RouteEndpointConflictException](./Chevere/Exceptions/Route/RouteEndpointConflictException.md)
   - [RouteNameInvalidException](./Chevere/Exceptions/Route/RouteNameInvalidException.md)
   - [RoutePathForwardSlashException](./Chevere/Exceptions/Route/RoutePathForwardSlashException.md)
-  - [RoutePathInvalidCharsException](./Chevere/Exceptions/Route/RoutePathInvalidCharsException.md)
-  - [RoutePathUnmatchedBracesException](./Chevere/Exceptions/Route/RoutePathUnmatchedBracesException.md)
-  - [RoutePathUnmatchedWildcardsException](./Chevere/Exceptions/Route/RoutePathUnmatchedWildcardsException.md)
+  - [RouteWildcardConflictException](./Chevere/Exceptions/Route/RouteWildcardConflictException.md)
   - [RouteWildcardInvalidCharsException](./Chevere/Exceptions/Route/RouteWildcardInvalidCharsException.md)
   - [RouteWildcardInvalidRegexException](./Chevere/Exceptions/Route/RouteWildcardInvalidRegexException.md)
   - [RouteWildcardNotFoundException](./Chevere/Exceptions/Route/RouteWildcardNotFoundException.md)
-  - [RouteWildcardRepeatException](./Chevere/Exceptions/Route/RouteWildcardRepeatException.md)
-  - [RouteWildcardReservedException](./Chevere/Exceptions/Route/RouteWildcardReservedException.md)
   - [RouteWildcardStartWithNumberException](./Chevere/Exceptions/Route/RouteWildcardStartWithNumberException.md)
 
 ## Router
 
-  - [RouteCacheNotFoundException](./Chevere/Exceptions/Router/RouteCacheNotFoundException.md)
-  - [RouteCacheTypeException](./Chevere/Exceptions/Router/RouteCacheTypeException.md)
   - [RouteIdentifierException](./Chevere/Exceptions/Router/RouteIdentifierException.md)
-  - [RouteKeyConflictException](./Chevere/Exceptions/Router/RouteKeyConflictException.md)
-  - [RouteNameConflictException](./Chevere/Exceptions/Router/RouteNameConflictException.md)
-  - [RouteNotFoundException](./Chevere/Exceptions/Router/RouteNotFoundException.md)
   - [RouteNotRoutableException](./Chevere/Exceptions/Router/RouteNotRoutableException.md)
-  - [RoutePathExistsException](./Chevere/Exceptions/Router/RoutePathExistsException.md)
   - [RouteWithoutEndpointsException](./Chevere/Exceptions/Router/RouteWithoutEndpointsException.md)
-  - [RouterCacheNotFoundException](./Chevere/Exceptions/Router/RouterCacheNotFoundException.md)
-  - [RouterCacheTypeException](./Chevere/Exceptions/Router/RouterCacheTypeException.md)
   - [RouterException](./Chevere/Exceptions/Router/RouterException.md)
-  - [RouterMakerException](./Chevere/Exceptions/Router/RouterMakerException.md)
 
 ## Routing
 
@@ -180,10 +165,6 @@ editLink: false
 ## Type
 
   - [TypeNotFoundException](./Chevere/Exceptions/Type/TypeNotFoundException.md)
-
-## VarDump
-
-  - [TypeException](./Chevere/Exceptions/VarDump/TypeException.md)
 
 ## VarExportable
 

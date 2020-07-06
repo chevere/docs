@@ -15,6 +15,14 @@ editLink: false
 
 ## Methods
 
+### getGenerator()
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
+:::
+
+---
+
 ### keys()
 
 ::: tip RETURN
@@ -69,6 +77,8 @@ Provides access to the RouteEndpointInterface identified by $key.
 ---
 
 ### mapCopy()
+
+Provides a deep copy of the internal map.
 
 ::: tip RETURN
 Ds\Map

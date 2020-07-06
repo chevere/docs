@@ -54,6 +54,8 @@ string
 
 ### keys()
 
+Provides access to the map keys.
+
 ::: tip RETURN
 array
 :::
@@ -62,8 +64,20 @@ array
 
 ### mapCopy()
 
+Provides a deep copy of the internal map.
+
 ::: tip RETURN
 Ds\Map
+:::
+
+---
+
+### getGenerator()
+
+Provides the generator.
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---

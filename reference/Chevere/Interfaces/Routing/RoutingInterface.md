@@ -14,8 +14,8 @@ editLink: false
 
 **Parameters**
 
-1. [FsRoutesMakerInterface](./FsRoutesMakerInterface.md) `$routePathIterator`
-2. [RouterMakerInterface](../Router/RouterMakerInterface.md) `$routerMaker`
+1. [FsRoutesMakerInterface](./FsRoutesMakerInterface.md) `$fsRoutesMaker`
+2. [RouterInterface](../Router/RouterInterface.md) `$router`
 
 ---
 

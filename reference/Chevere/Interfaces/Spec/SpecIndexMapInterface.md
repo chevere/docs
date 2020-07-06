@@ -62,6 +62,8 @@ bool
 
 ### keys()
 
+Provides access to the map keys.
+
 ::: tip RETURN
 array
 :::
@@ -69,6 +71,8 @@ array
 ---
 
 ### mapCopy()
+
+Provides a deep copy of the internal map.
 
 ::: tip RETURN
 Ds\Map

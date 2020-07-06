@@ -123,7 +123,10 @@ Get a child instance for the target child path.
 1. string `$path`
 
 ::: danger THROWS
-- [PathInvalidException](../../Exceptions/Filesystem/PathInvalidException.md)
+- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
+- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
+- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
+- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
 :::
 
 ::: tip RETURN

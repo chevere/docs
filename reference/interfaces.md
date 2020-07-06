@@ -94,19 +94,12 @@ editLink: false
 
 ## Router
 
-  - [ResolverInterface](./Chevere/Interfaces/Router/ResolverInterface.md)
   - [RoutableInterface](./Chevere/Interfaces/Router/RoutableInterface.md)
   - [RoutablesInterface](./Chevere/Interfaces/Router/RoutablesInterface.md)
   - [RouteIdentifierInterface](./Chevere/Interfaces/Router/RouteIdentifierInterface.md)
-  - [RouteResolveInterface](./Chevere/Interfaces/Router/RouteResolveInterface.md)
-  - [RouteResolvesCacheInterface](./Chevere/Interfaces/Router/RouteResolvesCacheInterface.md)
   - [RoutedInterface](./Chevere/Interfaces/Router/RoutedInterface.md)
-  - [RouterCacheInterface](./Chevere/Interfaces/Router/RouterCacheInterface.md)
   - [RouterIndexInterface](./Chevere/Interfaces/Router/RouterIndexInterface.md)
   - [RouterInterface](./Chevere/Interfaces/Router/RouterInterface.md)
-  - [RouterMakerInterface](./Chevere/Interfaces/Router/RouterMakerInterface.md)
-  - [RouterRegexInterface](./Chevere/Interfaces/Router/RouterRegexInterface.md)
-  - [RoutesCacheInterface](./Chevere/Interfaces/Router/RoutesCacheInterface.md)
 
 ## Routing
 
