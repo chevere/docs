@@ -66,7 +66,7 @@ editLink: false
   - [FileUnableToPutException](./Chevere/Exceptions/Filesystem/FileUnableToPutException.md)
   - [FileUnableToRemoveException](./Chevere/Exceptions/Filesystem/FileUnableToRemoveException.md)
   - [FileWithoutContentsException](./Chevere/Exceptions/Filesystem/FileWithoutContentsException.md)
-  - [FilesystemFactoryException](./Chevere/Exceptions/Filesystem/FilesystemFactoryException.md)
+  - [FilesystemException](./Chevere/Exceptions/Filesystem/FilesystemException.md)
   - [PathDotSlashException](./Chevere/Exceptions/Filesystem/PathDotSlashException.md)
   - [PathDoubleDotsDashException](./Chevere/Exceptions/Filesystem/PathDoubleDotsDashException.md)
   - [PathExtraSlashesException](./Chevere/Exceptions/Filesystem/PathExtraSlashesException.md)

@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# RouteCacheTypeException
+# FilesystemException
 
-`Chevere\Exceptions\Router\RouteCacheTypeException`
+`Chevere\Exceptions\Filesystem\FilesystemException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Router/RouteCacheTypeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/exceptions/Filesystem/FilesystemException.php)
 
 ## Implements
 
@@ -18,7 +18,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when the cached route doesn't match the expected type.
+Exception thrown by the filesystem components.
 
 ## Methods
 
