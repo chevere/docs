@@ -82,7 +82,11 @@ editLink: false
 
 ## Http
 
+<<<<<<< HEAD
   - [MethodNotAllowedException](./Chevere/Exceptions/Http/MethodNotAllowedException.md)
+=======
+  - [MethodNotFoundException](./Chevere/Exceptions/Http/MethodNotFoundException.md)
+>>>>>>> 2305cd9582aee8f4ea927b08b017e496efd611d1
 
 ## Plugin
 
@@ -119,9 +123,13 @@ editLink: false
 
 ## Router
 
+<<<<<<< HEAD
   - [MethodNotAllowedException](./Chevere/Exceptions/Router/MethodNotAllowedException.md)
   - [RouteIdentifierException](./Chevere/Exceptions/Router/RouteIdentifierException.md)
   - [RouteNotFoundException](./Chevere/Exceptions/Router/RouteNotFoundException.md)
+=======
+  - [RouteIdentifierException](./Chevere/Exceptions/Router/RouteIdentifierException.md)
+>>>>>>> 2305cd9582aee8f4ea927b08b017e496efd611d1
   - [RouteNotRoutableException](./Chevere/Exceptions/Router/RouteNotRoutableException.md)
   - [RouteWithoutEndpointsException](./Chevere/Exceptions/Router/RouteWithoutEndpointsException.md)
   - [RouterException](./Chevere/Exceptions/Router/RouterException.md)

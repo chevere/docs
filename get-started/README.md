@@ -6,7 +6,7 @@ Chevere is a development framework for building **extensible** server side appli
 
 ### Name meaning
 
-The term *[chévere](https://en.wiktionary.org/wiki/ch%C3%A9vere)* is an slang used in latin american countries. It literally means *terrific*, *cool*, *great*, *awesome*, *nifty*, etc. The term has a generic connotation of good/cool and can be used in almost any context that those two words can be used.
+The term *[chévere](https://en.wiktionary.org/wiki/ch%C3%A9vere)* is an slang used in latin american countries. It literally means *cool*, *great*, *awesome*, *nifty*, etc. The term has a generic connotation of good and can be used in almost any context that those two words can be used.
 
 ## Core concepts
 
@@ -20,7 +20,7 @@ Chevere ease the process of crafting pluggable applications by providing an arch
 
 Chevere follows the Clean Code principles, which can be resumed as the practice of creating code that is easy to understand, to change and maintain.
 
-> 🧔 _Clean code always looks like it was written by someone who cares._
+> ✨ _Clean code always looks like it was written by someone who cares._
 > ― Michael Feathers
 
 ### Strongly Typed
