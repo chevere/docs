@@ -18,7 +18,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when the RouterInterface can't find a route.
+Exception thrown when a route can't be found.
 
 ## Methods
 

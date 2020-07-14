@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Http/HttpStatusInterface.php)
 
+## Description
+
+Describes the known HTTP status codes.
+
 ## Constants
 
 ### STATUSES

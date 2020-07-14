@@ -31,7 +31,7 @@ SpecIndexInterface
 ### specIndexMap()
 
 ::: tip RETURN
-[SpecIndexMap](../../Components/Spec/SpecIndexMap.md)
+[SpecIndexMapInterface](./SpecIndexMapInterface.md)
 :::
 
 ---
@@ -64,16 +64,30 @@ string
 
 ### keys()
 
+Provides access to the map keys.
+
 ::: tip RETURN
 array
 :::
 
 ---
 
-### map()
+### mapCopy()
+
+Provides a deep copy of the internal map.
 
 ::: tip RETURN
 Ds\Map
+:::
+
+---
+
+### getGenerator()
+
+Provides the generator.
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---

@@ -5,11 +5,6 @@ editLink: false
 
 # Exceptions
 
-## Bootstrap
-
-  - [BootstrapDirException](./Chevere/Exceptions/Bootstrap/BootstrapDirException.md)
-  - [BootstrapException](./Chevere/Exceptions/Bootstrap/BootstrapException.md)
-
 ## Breadcrumb
 
   - [BreadcrumbException](./Chevere/Exceptions/Breadcrumb/BreadcrumbException.md)
@@ -18,20 +13,21 @@ editLink: false
 
   - [CacheInvalidKeyException](./Chevere/Exceptions/Cache/CacheInvalidKeyException.md)
   - [CacheKeyNotFoundException](./Chevere/Exceptions/Cache/CacheKeyNotFoundException.md)
-  - [CacheNotFoundException](./Chevere/Exceptions/Cache/CacheNotFoundException.md)
 
 ## ClassMap
 
-  - [ClassMappedException](./Chevere/Exceptions/ClassMap/ClassMappedException.md)
   - [ClassNotExistsException](./Chevere/Exceptions/ClassMap/ClassNotExistsException.md)
   - [ClassNotMappedException](./Chevere/Exceptions/ClassMap/ClassNotMappedException.md)
+  - [StringMappedException](./Chevere/Exceptions/ClassMap/StringMappedException.md)
 
 ## Controller
 
   - [ControllerArgumentRegexMatchException](./Chevere/Exceptions/Controller/ControllerArgumentRegexMatchException.md)
-  - [ControllerArgumentsRequiredException](./Chevere/Exceptions/Controller/ControllerArgumentsRequiredException.md)
+  - [ControllerArgumentRequiredException](./Chevere/Exceptions/Controller/ControllerArgumentRequiredException.md)
   - [ControllerInterfaceException](./Chevere/Exceptions/Controller/ControllerInterfaceException.md)
+  - [ControllerNameException](./Chevere/Exceptions/Controller/ControllerNameException.md)
   - [ControllerNotExistsException](./Chevere/Exceptions/Controller/ControllerNotExistsException.md)
+  - [ControllerParameterNameInvalidException](./Chevere/Exceptions/Controller/ControllerParameterNameInvalidException.md)
 
 ## Core
 
@@ -70,6 +66,7 @@ editLink: false
   - [FileUnableToPutException](./Chevere/Exceptions/Filesystem/FileUnableToPutException.md)
   - [FileUnableToRemoveException](./Chevere/Exceptions/Filesystem/FileUnableToRemoveException.md)
   - [FileWithoutContentsException](./Chevere/Exceptions/Filesystem/FileWithoutContentsException.md)
+  - [FilesystemException](./Chevere/Exceptions/Filesystem/FilesystemException.md)
   - [PathDotSlashException](./Chevere/Exceptions/Filesystem/PathDotSlashException.md)
   - [PathDoubleDotsDashException](./Chevere/Exceptions/Filesystem/PathDoubleDotsDashException.md)
   - [PathExtraSlashesException](./Chevere/Exceptions/Filesystem/PathExtraSlashesException.md)
@@ -85,12 +82,7 @@ editLink: false
 
 ## Http
 
-  - [MethodNotFoundException](./Chevere/Exceptions/Http/MethodNotFoundException.md)
-
-## Middleware
-
-  - [MiddlewareInterfaceException](./Chevere/Exceptions/Middleware/MiddlewareInterfaceException.md)
-  - [MiddlewareNamesEmptyException](./Chevere/Exceptions/Middleware/MiddlewareNamesEmptyException.md)
+  - [MethodNotAllowedException](./Chevere/Exceptions/Http/MethodNotAllowedException.md)
 
 ## Plugin
 
@@ -106,52 +98,42 @@ editLink: false
 
 ## Plugs
 
-  - [HookableInterfaceException](./Chevere/Exceptions/Plugs/Hooks/Exceptions/HookableInterfaceException.md)
+  - [HookableInterfaceException](./Chevere/Exceptions/Plugs/Hooks/HookableInterfaceException.md)
 
 ## Regex
 
   - [RegexException](./Chevere/Exceptions/Regex/RegexException.md)
+  - [RegexInvalidException](./Chevere/Exceptions/Regex/RegexInvalidException.md)
   - [RegexMatchException](./Chevere/Exceptions/Regex/RegexMatchException.md)
 
 ## Route
 
-  - [EndpointException](./Chevere/Exceptions/Route/EndpointException.md)
+  - [RouteEndpointConflictException](./Chevere/Exceptions/Route/RouteEndpointConflictException.md)
   - [RouteNameInvalidException](./Chevere/Exceptions/Route/RouteNameInvalidException.md)
   - [RoutePathForwardSlashException](./Chevere/Exceptions/Route/RoutePathForwardSlashException.md)
-  - [RoutePathInvalidCharsException](./Chevere/Exceptions/Route/RoutePathInvalidCharsException.md)
-  - [RoutePathUnmatchedBracesException](./Chevere/Exceptions/Route/RoutePathUnmatchedBracesException.md)
-  - [RoutePathUnmatchedWildcardsException](./Chevere/Exceptions/Route/RoutePathUnmatchedWildcardsException.md)
+  - [RouteWildcardConflictException](./Chevere/Exceptions/Route/RouteWildcardConflictException.md)
   - [RouteWildcardInvalidCharsException](./Chevere/Exceptions/Route/RouteWildcardInvalidCharsException.md)
   - [RouteWildcardInvalidRegexException](./Chevere/Exceptions/Route/RouteWildcardInvalidRegexException.md)
   - [RouteWildcardNotFoundException](./Chevere/Exceptions/Route/RouteWildcardNotFoundException.md)
-  - [RouteWildcardRepeatException](./Chevere/Exceptions/Route/RouteWildcardRepeatException.md)
-  - [RouteWildcardReservedException](./Chevere/Exceptions/Route/RouteWildcardReservedException.md)
   - [RouteWildcardStartWithNumberException](./Chevere/Exceptions/Route/RouteWildcardStartWithNumberException.md)
 
 ## Router
 
-  - [RouteCacheNotFoundException](./Chevere/Exceptions/Router/RouteCacheNotFoundException.md)
-  - [RouteCacheTypeException](./Chevere/Exceptions/Router/RouteCacheTypeException.md)
+  - [MethodNotAllowedException](./Chevere/Exceptions/Router/MethodNotAllowedException.md)
   - [RouteIdentifierException](./Chevere/Exceptions/Router/RouteIdentifierException.md)
-  - [RouteKeyConflictException](./Chevere/Exceptions/Router/RouteKeyConflictException.md)
-  - [RouteNameConflictException](./Chevere/Exceptions/Router/RouteNameConflictException.md)
   - [RouteNotFoundException](./Chevere/Exceptions/Router/RouteNotFoundException.md)
   - [RouteNotRoutableException](./Chevere/Exceptions/Router/RouteNotRoutableException.md)
-  - [RoutePathExistsException](./Chevere/Exceptions/Router/RoutePathExistsException.md)
   - [RouteWithoutEndpointsException](./Chevere/Exceptions/Router/RouteWithoutEndpointsException.md)
-  - [RouterCacheNotFoundException](./Chevere/Exceptions/Router/RouterCacheNotFoundException.md)
-  - [RouterCacheTypeException](./Chevere/Exceptions/Router/RouterCacheTypeException.md)
   - [RouterException](./Chevere/Exceptions/Router/RouterException.md)
-  - [RouterMakerException](./Chevere/Exceptions/Router/RouterMakerException.md)
 
 ## Routing
 
-  - [DecoratedRouteAlreadyAddedException](./Chevere/Exceptions/Routing/DecoratedRouteAlreadyAddedException.md)
   - [ExpectingControllerException](./Chevere/Exceptions/Routing/ExpectingControllerException.md)
   - [ExpectingRouteNameException](./Chevere/Exceptions/Routing/ExpectingRouteNameException.md)
   - [RouteNameAlreadyAddedException](./Chevere/Exceptions/Routing/RouteNameAlreadyAddedException.md)
   - [RoutePathAlreadyAddedException](./Chevere/Exceptions/Routing/RoutePathAlreadyAddedException.md)
   - [RouteRegexAlreadyAddedException](./Chevere/Exceptions/Routing/RouteRegexAlreadyAddedException.md)
+  - [RoutingDescriptorAlreadyAddedException](./Chevere/Exceptions/Routing/RoutingDescriptorAlreadyAddedException.md)
 
 ## Serialize
 
@@ -186,11 +168,7 @@ editLink: false
 
   - [TypeNotFoundException](./Chevere/Exceptions/Type/TypeNotFoundException.md)
 
-## VarDump
-
-  - [TypeException](./Chevere/Exceptions/VarDump/TypeException.md)
-
 ## VarExportable
 
-  - [VarIsResourceException](./Chevere/Exceptions/VarExportable/VarIsResourceException.md)
-  - [VarNotExportableException](./Chevere/Exceptions/VarExportable/VarNotExportableException.md)
+  - [VarExportableException](./Chevere/Exceptions/VarExportable/VarExportableException.md)
+  - [VarExportableIsResourceException](./Chevere/Exceptions/VarExportable/VarExportableIsResourceException.md)

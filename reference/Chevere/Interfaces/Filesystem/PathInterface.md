@@ -8,7 +8,26 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/PathInterface.php)
 
+## Description
+
+Describes the component in charge of interact with filesystem paths.
+
 ## Methods
+
+### __construct()
+
+**Parameters**
+
+1. string `$absolute`
+
+::: danger THROWS
+- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
+- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
+- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
+- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
+:::
+
+---
 
 ### absolute()
 
@@ -20,7 +39,7 @@ string
 
 ### exists()
 
-Returns a boolean indicating whether the path exists.
+Indicates whether the path exists.
 
 ::: tip RETURN
 bool
@@ -30,7 +49,7 @@ bool
 
 ### isDir()
 
-Returns a boolean indicating whether the path is a directory and exists.
+Indicates whether the path is a directory and exists.
 
 ::: tip RETURN
 bool
@@ -40,7 +59,7 @@ bool
 
 ### isFile()
 
-Returns a boolean indicating whether the path is a file and exists.
+Indicates whether the path is a file and exists.
 
 ::: tip RETURN
 bool
@@ -50,18 +69,15 @@ bool
 
 ### chmod()
 
-Wrapper for \chmod.
+Wrapper for `\chmod`.
 
 **Parameters**
 
 1. int `$mode`
 
 ::: danger THROWS
-[PathIsNotDirectoryException](../../Exceptions/Filesystem/PathIsNotDirectoryException.md)
-:::
-
-::: danger THROWS
-[PathUnableToChmodException](../../Exceptions/Filesystem/PathUnableToChmodException.md)
+- [PathIsNotDirectoryException](../../Exceptions/Filesystem/PathIsNotDirectoryException.md)
+- [PathUnableToChmodException](../../Exceptions/Filesystem/PathUnableToChmodException.md)
 :::
 
 ::: tip RETURN
@@ -72,10 +88,10 @@ void
 
 ### isWritable()
 
-Wrapper for \is_writeable.
+Wrapper for `\is_writeable`.
 
 ::: danger THROWS
-[PathIsNotDirectoryException](../../Exceptions/Filesystem/PathIsNotDirectoryException.md)
+- [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md)
 :::
 
 ::: tip RETURN
@@ -86,10 +102,10 @@ bool
 
 ### isReadable()
 
-Wrapper for \is_writeable.
+Wrapper for `\is_readable`.
 
 ::: danger THROWS
-[PathIsNotDirectoryException](../../Exceptions/Filesystem/PathIsNotDirectoryException.md)
+- [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md)
 :::
 
 ::: tip RETURN
@@ -100,11 +116,18 @@ bool
 
 ### getChild()
 
-Get a child path as a PathInterface
+Get a child instance for the target child path.
 
 **Parameters**
 
-1. string `$child`
+1. string `$path`
+
+::: danger THROWS
+- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
+- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
+- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
+- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
+:::
 
 ::: tip RETURN
 PathInterface

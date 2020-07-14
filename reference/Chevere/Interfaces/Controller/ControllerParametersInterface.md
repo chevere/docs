@@ -10,22 +10,41 @@ editLink: false
 
 ## Implements
 
-- [DsMapInterface](../DataStructures/DsMapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
+
+## Description
+
+Describes the component in charge of collecting objects implementing `ControllerParameterInterface`.
 
 ## Methods
 
-### map()
+### getGenerator()
 
 ::: tip RETURN
-Ds\Map
+[Generator](https://www.php.net/manual/class.generator)
 :::
+
+---
+
+### toArray()
+
+Provides access to an array representation.
+
+::: tip RETURN
+array
+:::
+
+```php
+return [
+    'name' => $controllerParameter,
+];
+```
 
 ---
 
 ### withParameter()
 
-Return an instance with the specified Controller Parameter.
+Return an instance with the specified controller parameter instance.
 
 **Parameters**
 
@@ -36,11 +55,13 @@ ControllerParametersInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified Controller Parameter.
+an instance that contains the specified controller parameter instance.
 
 ---
 
 ### hasParameterName()
+
+Indicates whether the instance has a parameter identified by `$name`.
 
 **Parameters**
 
@@ -58,16 +79,12 @@ bool
 
 1. string `$name`
 
-::: tip RETURN
-[ControllerParameterInterface](./ControllerParameterInterface.md)
+::: danger THROWS
+- ⚠ Unknown type `OutOfBoundsException` declared in `@throws` tag`
 :::
 
----
-
-### keys()
-
 ::: tip RETURN
-array
+[ControllerParameterInterface](./ControllerParameterInterface.md)
 :::
 
 ---

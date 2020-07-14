@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes a resolved route.
+Describes the component in charge of defining a resolved route.
 
 ## Methods
 
@@ -18,15 +18,15 @@ Describes a resolved route.
 
 **Parameters**
 
-1. [RouteNameInterface](../Route/RouteNameInterface.md) `$routeName`
+1. [ControllerNameInterface](../Controller/ControllerNameInterface.md) `$controller`
 2. array `$wildcards`
 
 ---
 
-### name()
+### controllerName()
 
 ::: tip RETURN
-[RouteNameInterface](../Route/RouteNameInterface.md)
+[ControllerNameInterface](../Controller/ControllerNameInterface.md)
 :::
 
 ---

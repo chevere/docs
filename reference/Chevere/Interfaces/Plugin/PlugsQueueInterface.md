@@ -25,7 +25,7 @@ editLink: false
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ::: danger THROWS
-[PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md)
+- [PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md)
 if $plug doesn't implement the expected plugType
 :::
 

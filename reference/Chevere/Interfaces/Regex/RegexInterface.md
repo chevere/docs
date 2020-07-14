@@ -12,6 +12,10 @@ editLink: false
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
+## Description
+
+Describes the component in charge of interacting with PCRE - Perl Compatible Regular Expressions.
+
 ## Constants
 
 ### ERRORS
@@ -38,9 +42,17 @@ array (
 
 1. string `$string`
 
+::: danger THROWS
+- [RegexInvalidException](../../Exceptions/Regex/RegexInvalidException.md)
+:::
+
 ---
 
 ### assertNoCapture()
+
+::: danger THROWS
+- ⚠ Unknown type `RegexException` declared in `@throws` tag`
+:::
 
 ::: tip RETURN
 void
@@ -48,15 +60,9 @@ void
 
 ---
 
-### toString()
-
-::: tip RETURN
-string
-:::
-
----
-
 ### toNoDelimiters()
+
+Provides access to the the regex string without delimiters.
 
 ::: tip RETURN
 string
@@ -65,6 +71,18 @@ string
 ---
 
 ### toNoDelimitersNoAnchors()
+
+Provides access to the regex string without delimiters and without anchors (`^`, `$`).
+
+::: tip RETURN
+string
+:::
+
+---
+
+### toString()
+
+Returns a string, representing the object itself or some of its data/properties.
 
 ::: tip RETURN
 string

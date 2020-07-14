@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Cache/CacheItemInterface.php)
 
+## Description
+
+Describes the component that defines a cache item.
+
 ## Methods
 
 ### __construct()
@@ -20,7 +24,11 @@ editLink: false
 
 ### raw()
 
-Provides raw access to the FileReturnInterface "as-is"
+Provides raw access to the cache value "as-is".
+
+::: danger THROWS
+- ⚠ Unknown type `RuntimeException` declared in `@throws` tag`
+:::
 
 ::: tip RETURN
 void
@@ -30,7 +38,11 @@ void
 
 ### var()
 
-Provides access to the FileReturnInterface file return variable
+Provides access to the cache PHP variable.
+
+::: danger THROWS
+- ⚠ Unknown type `RuntimeException` declared in `@throws` tag`
+:::
 
 ::: tip RETURN
 void

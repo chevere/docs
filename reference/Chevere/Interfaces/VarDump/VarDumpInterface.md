@@ -8,20 +8,24 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpInterface.php)
 
+## Description
+
+Describes the component in charge of providing a `\var_dump()` replacement.
+
 ## Methods
 
 ### __construct()
 
 **Parameters**
 
-1. [FormatterInterface](./FormatterInterface.md) `$formatter`
-2. [OutputterInterface](./OutputterInterface.md) `$outputter`
+1. [VarDumpFormatterInterface](./VarDumpFormatterInterface.md) `$formatter`
+2. [VarDumpOutputterInterface](./VarDumpOutputterInterface.md) `$outputter`
 
 ---
 
 ### withVars()
 
-Return an instance with the specified vars.
+Return an instance with the specified `$vars`.
 
 **Parameters**
 
@@ -32,13 +36,13 @@ VarDumpInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified vars.
+an instance that contains the specified `$vars`.
 
 ---
 
 ### withShift()
 
-Return an instance with the specified shift.
+Return an instance with the specified `$shift` traces shifted.
 
 **Parameters**
 
@@ -49,9 +53,9 @@ VarDumpInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified shift.
+an instance that contains the specified `$shift` traces shifted.
 
-Shift removes $shift traces from debug_backtrace()
+This method removes `$shift` traces from `\debug_backtrace()`
 
 ---
 
@@ -71,6 +75,8 @@ void
 
 ### vars()
 
+Provides access to the instance vars.
+
 ::: tip RETURN
 array
 :::
@@ -78,6 +84,8 @@ array
 ---
 
 ### shift()
+
+Provides access to the shift value.
 
 ::: tip RETURN
 int

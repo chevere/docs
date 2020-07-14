@@ -8,6 +8,12 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Cache/CacheInterface.php)
 
+## Description
+
+Describes the component in charge of caching PHP variables.
+
+`cached.php >>> <?php return 'my cached data';`
+
 ## Constants
 
 ### ILLEGAL_KEY_CHARACTERS
@@ -26,9 +32,24 @@ Type `string`
 
 1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 
+::: danger THROWS
+- [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
+if $dir doesn't exists and unable to create
+:::
+
 ---
 
-### withPut()
+### dir()
+
+Provides access to the cache directory.
+
+::: tip RETURN
+[DirInterface](../Filesystem/DirInterface.md)
+:::
+
+---
+
+### withAddedItem()
 
 Put item in cache.
 
@@ -41,14 +62,14 @@ Put item in cache.
 CacheInterface
 :::
 
-Return an instance with the specified CacheKeyInterface put.
+Return an instance with the specified put.
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified CacheKeyInterface VarExportableInterface.
+an instance that contains the specified put.
 
 ---
 
-### withRemove()
+### withoutItem()
 
 Remove item from cache.
 
@@ -57,7 +78,7 @@ Remove item from cache.
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 
 ::: danger THROWS
-[FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
+- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
 if unable to remove the cache file
 :::
 
@@ -65,16 +86,16 @@ if unable to remove the cache file
 CacheInterface
 :::
 
-Return an instance with the specified CacheKeyInterface removed.
+Return an instance with the specified removed.
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified CacheKeyInterface removed.
+an instance that contains the specified removed.
 
 ---
 
 ### exists()
 
-Returns a boolean indicating whether the cache exists for the given key.
+Indicates whether the cache exists for the given key.
 
 **Parameters**
 
@@ -95,7 +116,7 @@ Get a cache item.
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 
 ::: danger THROWS
-[CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md)
+- [CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md)
 :::
 
 ::: tip RETURN
@@ -120,23 +141,5 @@ return [
      ],
 ];
 ```
-
----
-
-### getChild()
-
-Proxy for DirInterface getChild.
-
-**Parameters**
-
-1. string `$path`
-
-::: danger THROWS
-[DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
-:::
-
-::: tip RETURN
-CacheInterface
-:::
 
 ---

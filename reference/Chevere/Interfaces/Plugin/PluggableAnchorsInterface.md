@@ -17,7 +17,7 @@ editLink: false
 1. string `$anchor`
 
 ::: danger THROWS
-[PluggableAnchorExistsException](../../Exceptions/Plugin/PluggableAnchorExistsException.md)
+- [PluggableAnchorExistsException](../../Exceptions/Plugin/PluggableAnchorExistsException.md)
 :::
 
 ::: tip RETURN

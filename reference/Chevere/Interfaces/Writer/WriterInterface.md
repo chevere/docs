@@ -12,6 +12,10 @@ editLink: false
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
+## Description
+
+Describes the component in charge of writing strings.
+
 ## Methods
 
 ### write()
@@ -22,6 +26,10 @@ Writes the given string.
 
 1. string `$string`
 
+::: danger THROWS
+- [LogicException](../../Exceptions/Core/LogicException.md)
+:::
+
 ::: tip RETURN
 void
 :::
@@ -30,7 +38,7 @@ void
 
 ### toString()
 
-Returns the contents written. Should not alter the file cursor.
+Returns the contents written. Must not alter the file cursor.
 
 ::: tip RETURN
 string

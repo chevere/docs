@@ -8,26 +8,25 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouterInterface.php)
 
-## Constants
-
-### CACHE_ID
-
-Type `string`
-
-```php
-'router'
-```
-
 ## Methods
 
-### withRoutables()
+### withAddedRoutable()
 
 **Parameters**
 
-1. [Routables](../../Components/Router/Routables.md) `$routables`
+1. [RoutableInterface](./RoutableInterface.md) `$routable`
+2. string `$group`
 
 ::: tip RETURN
 RouterInterface
+:::
+
+---
+
+### index()
+
+::: tip RETURN
+[RouterIndexInterface](./RouterIndexInterface.md)
 :::
 
 ---
@@ -35,69 +34,15 @@ RouterInterface
 ### routables()
 
 ::: tip RETURN
-[Routables](../../Components/Router/Routables.md)
+[RoutablesInterface](./RoutablesInterface.md)
 :::
 
 ---
 
-### withRegex()
-
-Return an instance with the specified RegexInterface.
-
-**Parameters**
-
-1. [RouterRegexInterface](./RouterRegexInterface.md) `$regex`
+### routeCollector()
 
 ::: tip RETURN
-RouterInterface
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified RegexInterface.
-
----
-
-### hasRegex()
-
-::: tip RETURN
-bool
-:::
-
----
-
-### regex()
-
-Provides access to the instance regex.
-
-::: tip RETURN
-[RouterRegexInterface](./RouterRegexInterface.md)
-:::
-
----
-
-### withIndex()
-
-Return an instance with the specified index.
-
-**Parameters**
-
-1. [RouterIndexInterface](./RouterIndexInterface.md) `$index`
-
-::: tip RETURN
-RouterInterface
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified index.
-
----
-
-### index()
-
-Provides access to the instance index.
-
-::: tip RETURN
-[RouterIndexInterface](./RouterIndexInterface.md)
+FastRoute\RouteCollector
 :::
 
 ---

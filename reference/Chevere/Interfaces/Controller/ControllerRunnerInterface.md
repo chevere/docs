@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerRunnerInterface.php)
 
+## Description
+
+Describes the component in charge of running the controller.
+
 ## Methods
 
 ### __construct()
@@ -19,6 +23,8 @@ editLink: false
 ---
 
 ### execute()
+
+Executes the controller with the given `$arguments`.
 
 **Parameters**
 

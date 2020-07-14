@@ -10,6 +10,14 @@ editLink: false
 
 ## Methods
 
+### __construct()
+
+::: danger THROWS
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
+:::
+
+---
+
 ### with()
 
 Return an instance with the specified $writer for all writers.
