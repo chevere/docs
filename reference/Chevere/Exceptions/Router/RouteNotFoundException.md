@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# RegexInvalidException
+# RouteNotFoundException
 
-`Chevere\Exceptions\Regex\RegexInvalidException`
+`Chevere\Exceptions\Router\RouteNotFoundException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Regex/RegexInvalidException.php)
+[view source](https://github.com/chevere/chevere/blob/master/exceptions/Router/RouteNotFoundException.php)
 
 ## Implements
 
@@ -18,7 +18,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when providing an invalid regex string.
+Exception thrown when a route can't be found.
 
 ## Methods
 

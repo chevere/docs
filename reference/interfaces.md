@@ -97,26 +97,15 @@ editLink: false
   - [RoutablesInterface](./Chevere/Interfaces/Router/RoutablesInterface.md)
   - [RouteIdentifierInterface](./Chevere/Interfaces/Router/RouteIdentifierInterface.md)
   - [RoutedInterface](./Chevere/Interfaces/Router/RoutedInterface.md)
-<<<<<<< HEAD
   - [RouterDispatcherInterface](./Chevere/Interfaces/Router/RouterDispatcherInterface.md)
-=======
->>>>>>> 2305cd9582aee8f4ea927b08b017e496efd611d1
   - [RouterIndexInterface](./Chevere/Interfaces/Router/RouterIndexInterface.md)
   - [RouterInterface](./Chevere/Interfaces/Router/RouterInterface.md)
 
 ## Routing
 
-<<<<<<< HEAD
   - [RoutingDescriptorInterface](./Chevere/Interfaces/Routing/RoutingDescriptorInterface.md)
   - [RoutingDescriptorsInterface](./Chevere/Interfaces/Routing/RoutingDescriptorsInterface.md)
   - [RoutingDescriptorsMakerInterface](./Chevere/Interfaces/Routing/RoutingDescriptorsMakerInterface.md)
-=======
-  - [FsRouteInterface](./Chevere/Interfaces/Routing/FsRouteInterface.md)
-  - [FsRoutesInterface](./Chevere/Interfaces/Routing/FsRoutesInterface.md)
-  - [FsRoutesMakerInterface](./Chevere/Interfaces/Routing/FsRoutesMakerInterface.md)
-  - [RouteEndpointIteratorInterface](./Chevere/Interfaces/Routing/RouteEndpointIteratorInterface.md)
-  - [RoutingInterface](./Chevere/Interfaces/Routing/RoutingInterface.md)
->>>>>>> 2305cd9582aee8f4ea927b08b017e496efd611d1
 
 ## Serialize
 
