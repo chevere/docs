@@ -17,7 +17,7 @@ editLink: false
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [SpecPathInterface](../SpecPathInterface.md) `$specRoutePath`
 2. [RouteEndpointInterface](../../Route/RouteEndpointInterface.md) `$routeEndpoint`

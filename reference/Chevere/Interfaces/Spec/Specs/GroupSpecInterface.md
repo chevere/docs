@@ -17,7 +17,7 @@ editLink: false
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [SpecPathInterface](../SpecPathInterface.md) `$specRoot`
 2. string `$groupName`
@@ -26,7 +26,7 @@ editLink: false
 
 ### withAddedRoutableSpec()
 
-**Parameters**
+#### Parameters
 
 1. [RoutableSpecInterface](./RoutableSpecInterface.md) `$routableSpec`
 

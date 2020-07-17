@@ -22,7 +22,7 @@ editLink: false
 
 Return an instance with the specified $writer for all writers.
 
-**Parameters**
+#### Parameters
 
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
@@ -39,7 +39,7 @@ an instance that contains the specified $writer for all writers.
 
 Return an instance with the specified out WriterInterface.
 
-**Parameters**
+#### Parameters
 
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
@@ -64,7 +64,7 @@ an instance that contains the specified out WriterInterface.
 
 Return an instance with the specified error WriterInterface.
 
-**Parameters**
+#### Parameters
 
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
@@ -89,7 +89,7 @@ an instance that contains the specified error WriterInterface.
 
 Return an instance with the specified debug WriterInterface.
 
-**Parameters**
+#### Parameters
 
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
@@ -114,7 +114,7 @@ an instance that contains the specified debug WriterInterface.
 
 Return an instance with the specified log WriterInterface.
 
-**Parameters**
+#### Parameters
 
 1. [WriterInterface](./WriterInterface.md) `$writer`
 

@@ -12,7 +12,7 @@ editLink: false
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [EventListenersQueue](../../../../Components/Plugin/Plugs/EventListeners/EventListenersQueue.md) `$queue`
 2. [WritersInterface](../../../Writer/WritersInterface.md) `$writers`
@@ -23,7 +23,7 @@ editLink: false
 
 Run registered event listeners for the target event name.
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 2. array `$data`

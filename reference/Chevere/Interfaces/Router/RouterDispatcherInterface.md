@@ -16,7 +16,7 @@ Describes the component in charge of dispatch router.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. FastRoute\RouteCollector `$routeCollector`
 
@@ -24,7 +24,7 @@ Describes the component in charge of dispatch router.
 
 ### dispatch()
 
-**Parameters**
+#### Parameters
 
 1. string `$httpMethod`
 2. string `$uri`

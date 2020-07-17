@@ -24,7 +24,7 @@ Exception thrown if a value does not adhere to a defined valid data domain.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

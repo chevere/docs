@@ -24,7 +24,7 @@ Exception thrown when a controller doesn't implement the controller interface.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

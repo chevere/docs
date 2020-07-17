@@ -17,7 +17,7 @@ editLink: false
 
 ### withOffset()
 
-**Parameters**
+#### Parameters
 
 1. string `$routeName`
 2. [RouteEndpointSpec](../../Components/Spec/Specs/RouteEndpointSpec.md) `$routeEndpointSpec`
@@ -38,7 +38,7 @@ SpecIndexInterface
 
 ### has()
 
-**Parameters**
+#### Parameters
 
 1. string `$routeName`
 2. string `$methodName`
@@ -51,7 +51,7 @@ bool
 
 ### get()
 
-**Parameters**
+#### Parameters
 
 1. string `$routeName`
 2. string `$methodName`

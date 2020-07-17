@@ -24,7 +24,7 @@ Exception thrown if an error which can only be found on runtime occurs.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

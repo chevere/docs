@@ -40,7 +40,7 @@ Type `integer`
 
 Return an instance with the strict flag.
 
-**Parameters**
+#### Parameters
 
 1. bool `$strict`
 
@@ -108,7 +108,7 @@ void
 
 Same as `var()`, but checking the variable `$type`.
 
-**Parameters**
+#### Parameters
 
 1. [TypeInterface](../Type/TypeInterface.md) `$type`
 
@@ -132,7 +132,7 @@ void
 
 Put `$var` into the file using var_export return and strict format.
 
-**Parameters**
+#### Parameters
 
 1. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
 

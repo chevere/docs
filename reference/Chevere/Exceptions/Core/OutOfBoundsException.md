@@ -24,7 +24,7 @@ Exception thrown if a value is not a valid key. This represents errors that cann
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

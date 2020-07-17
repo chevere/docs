@@ -18,7 +18,7 @@ Describes the component in charge of formatting the var dump strings.
 
 Get indent for the given `$indent` size.
 
-**Parameters**
+#### Parameters
 
 1. int `$indent`
 
@@ -32,7 +32,7 @@ string
 
 Get emphasis for the given `$string`.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -46,7 +46,7 @@ string
 
 Get `$string` without encoded chars.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -60,7 +60,7 @@ string
 
 Get highlighted `$string` identified by `$key`.
 
-**Parameters**
+#### Parameters
 
 1. string `$key`
 2. string `$string`

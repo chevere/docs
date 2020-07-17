@@ -24,7 +24,7 @@ Exception thrown when the controller argument fails to match the regex.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

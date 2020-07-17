@@ -24,7 +24,7 @@ Exception thrown when the string not contains a provided sub-string.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

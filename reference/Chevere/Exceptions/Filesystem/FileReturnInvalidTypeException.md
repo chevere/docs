@@ -24,7 +24,7 @@ Exception thrown when the FileReturn doesn't match with the expected type.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

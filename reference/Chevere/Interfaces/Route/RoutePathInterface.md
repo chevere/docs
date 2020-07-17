@@ -20,7 +20,7 @@ Describes the component in charge of handling route paths.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. string `$path`
 

@@ -12,7 +12,7 @@ editLink: false
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [RouteNameInterface](./RouteNameInterface.md) `$name`
 2. [RoutePathInterface](./RoutePathInterface.md) `$routePath`
@@ -58,7 +58,7 @@ array
 
 Return an instance with the specified added $routeEndpoint.
 
-**Parameters**
+#### Parameters
 
 1. [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
 

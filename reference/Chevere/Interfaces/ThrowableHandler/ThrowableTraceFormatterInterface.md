@@ -13,6 +13,10 @@ editLink: false
 - [ToArrayInterface](../To/ToArrayInterface.md)
 - [ToStringInterface](../To/ToStringInterface.md)
 
+## Description
+
+Describes the component in charge of formatting a throwable trace entry.
+
 ## Constants
 
 ### TAG_ENTRY_FILE
@@ -98,7 +102,7 @@ array (
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. array `$trace`
 2. [ThrowableHandlerFormatterInterface](./ThrowableHandlerFormatterInterface.md) `$formatter`

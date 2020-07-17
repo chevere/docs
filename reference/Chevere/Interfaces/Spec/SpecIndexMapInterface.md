@@ -25,7 +25,7 @@ editLink: false
 
 ### withPut()
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 2. [SpecMethodsInterface](./SpecMethodsInterface.md) `$specMethods`
@@ -38,7 +38,7 @@ SpecIndexMapInterface
 
 ### hasKey()
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 
@@ -50,7 +50,7 @@ bool
 
 ### get()
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 

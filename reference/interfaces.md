@@ -109,7 +109,6 @@ editLink: false
 
 ## Serialize
 
-  - [SerializeInterface](./Chevere/Interfaces/Serialize/SerializeInterface.md)
   - [UnserializeInterface](./Chevere/Interfaces/Serialize/UnserializeInterface.md)
 
 ## Spec
@@ -136,7 +135,6 @@ editLink: false
 ## ThrowableHandler
 
   - [ThrowableHandlerDocumentInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableHandlerDocumentInterface.md)
-  - [ThrowableHandlerExceptionInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableHandlerExceptionInterface.md)
   - [ThrowableHandlerFormatterInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableHandlerFormatterInterface.md)
   - [ThrowableHandlerInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableHandlerInterface.md)
   - [ThrowableReadInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableReadInterface.md)

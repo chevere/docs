@@ -17,7 +17,7 @@ editLink: false
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [SpecPathInterface](../SpecPathInterface.md) `$specGroupPath`
 2. [RoutableInterface](../../Router/RoutableInterface.md) `$routable`

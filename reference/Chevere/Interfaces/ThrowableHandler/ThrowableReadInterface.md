@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableReadInterface.php)
 
+## Description
+
+Describes the component in charge of reading a throwable.
+
 ## Constants
 
 ### DEFAULT_ERROR_TYPE
@@ -67,6 +71,19 @@ array (
 ```
 
 ## Methods
+
+### __construct()
+
+#### Parameters
+
+1. [Throwable](https://www.php.net/manual/class.throwable) `$throwable`
+
+::: danger THROWS
+- [RangeException](../../Exceptions/Core/RangeException.md)
+If unable to read `$throwable`
+:::
+
+---
 
 ### className()
 

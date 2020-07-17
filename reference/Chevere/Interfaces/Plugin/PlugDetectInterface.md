@@ -12,7 +12,7 @@ editLink: false
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [PlugInterface](./PlugInterface.md) `$plug`
 

@@ -16,7 +16,7 @@ Describes the component in charge of asserting filesystem path format.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. string `$path`
 

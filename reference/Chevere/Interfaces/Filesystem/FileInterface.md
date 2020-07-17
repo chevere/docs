@@ -34,7 +34,7 @@ Type `integer`
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [PathInterface](./PathInterface.md) `$path`
 
@@ -149,7 +149,7 @@ void
 
 Put contents to the file. If the file doesn't exists it will be created.
 
-**Parameters**
+#### Parameters
 
 1. string `$contents`
 

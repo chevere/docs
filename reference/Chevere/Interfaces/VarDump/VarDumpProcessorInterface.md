@@ -26,7 +26,7 @@ Type `integer`
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [VarDumperInterface](./VarDumperInterface.md) `$varDumper`
 
@@ -70,7 +70,7 @@ string
 
 Highlights the given operator `$string`.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -84,7 +84,7 @@ string
 
 Highlights and wraps in parentheses the given `$string`.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 

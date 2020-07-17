@@ -24,7 +24,7 @@ Exception thrown when an illegal index was requested. This represents errors tha
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

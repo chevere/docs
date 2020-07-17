@@ -35,7 +35,7 @@ array
 
 Return an instance with the specified RouteEndpoint.
 
-**Parameters**
+#### Parameters
 
 1. [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
 
@@ -52,7 +52,7 @@ an instance that contains the specified RouteEndpoint.
 
 Returns a boolean indicating whether the instance has $key.
 
-**Parameters**
+#### Parameters
 
 1. string `$key`
 
@@ -66,7 +66,7 @@ bool
 
 Provides access to the RouteEndpointInterface identified by $key.
 
-**Parameters**
+#### Parameters
 
 1. string `$key`
 

@@ -22,7 +22,7 @@ editLink: false
 
 Attach the hooks runner for this hookable.
 
-**Parameters**
+#### Parameters
 
 1. [HooksRunnerInterface](./HooksRunnerInterface.md) `$runner`
 
@@ -36,7 +36,7 @@ PluggableHooksInterface
 
 Run hooks for the given anchor (if-any).
 
-**Parameters**
+#### Parameters
 
 1. string `$anchor`
 2.  `$argument`

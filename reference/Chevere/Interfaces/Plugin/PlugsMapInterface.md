@@ -24,7 +24,7 @@ editLink: false
 
 ### withAdded()
 
-**Parameters**
+#### Parameters
 
 1. [AssertPlugInterface](./AssertPlugInterface.md) `$assertPlug`
 
@@ -36,7 +36,7 @@ PlugsMapInterface
 
 ### has()
 
-**Parameters**
+#### Parameters
 
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
@@ -48,7 +48,7 @@ bool
 
 ### hasPlugsFor()
 
-**Parameters**
+#### Parameters
 
 1. string `$pluggable`
 
@@ -60,7 +60,7 @@ bool
 
 ### getPlugsFor()
 
-**Parameters**
+#### Parameters
 
 1. string `$pluggable`
 

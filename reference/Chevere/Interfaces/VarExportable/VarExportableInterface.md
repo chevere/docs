@@ -16,7 +16,7 @@ Describes the component in charge of handling exportable variables.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1.  `$var`
 

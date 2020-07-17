@@ -24,7 +24,7 @@ Exception thrown when a wildcard starts with a number.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

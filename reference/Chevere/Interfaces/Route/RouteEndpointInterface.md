@@ -32,7 +32,7 @@ array (
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MethodInterface](../Http/MethodInterface.md) `$method`
 2. [ControllerInterface](../Controller/ControllerInterface.md) `$controller`
@@ -57,7 +57,7 @@ array (
 
 ### withDescription()
 
-**Parameters**
+#### Parameters
 
 1. string `$description`
 
@@ -77,7 +77,7 @@ string
 
 ### withoutParameter()
 
-**Parameters**
+#### Parameters
 
 1. string `$parameter`
 

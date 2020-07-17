@@ -18,11 +18,19 @@ Describes the component in charge of collecting objects implementing `RoutingDes
 
 ## Methods
 
+### getGenerator()
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
+:::
+
+---
+
 ### withAdded()
 
 Return an instance with the specified `$descriptor` added.
 
-**Parameters**
+#### Parameters
 
 1. [RoutingDescriptorInterface](./RoutingDescriptorInterface.md) `$descriptor`
 
@@ -40,21 +48,11 @@ an instance that contains the specified `$descriptor` added.
 
 ---
 
-### count()
-
-Provides access to the element count.
-
-::: tip RETURN
-int
-:::
-
----
-
-### has()
+### contains()
 
 Indicates whether the instance has the given `$descriptor`.
 
-**Parameters**
+#### Parameters
 
 1. [RoutingDescriptorInterface](./RoutingDescriptorInterface.md) `$descriptor`
 
@@ -66,7 +64,7 @@ bool
 
 ### get()
 
-**Parameters**
+#### Parameters
 
 1. int `$position`
 

@@ -18,7 +18,7 @@ Describes the component in charge of orchestrating the var dump output processin
 
 This method is executed before `prepare()`.
 
-**Parameters**
+#### Parameters
 
 1. [WriterInterface](../Writer/WriterInterface.md) `$writer`
 2. array `$backtrace`

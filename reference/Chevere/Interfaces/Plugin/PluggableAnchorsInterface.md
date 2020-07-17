@@ -12,7 +12,7 @@ editLink: false
 
 ### withAddedAnchor()
 
-**Parameters**
+#### Parameters
 
 1. string `$anchor`
 
@@ -28,7 +28,7 @@ PluggableAnchorsInterface
 
 ### has()
 
-**Parameters**
+#### Parameters
 
 1. string `$anchor`
 

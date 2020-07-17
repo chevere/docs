@@ -24,7 +24,7 @@ Exception thrown if a callback refers to an undefined function or if some argume
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

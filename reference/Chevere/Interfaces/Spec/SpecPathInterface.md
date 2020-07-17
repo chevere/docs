@@ -20,7 +20,7 @@ string
 
 ### getChild()
 
-**Parameters**
+#### Parameters
 
 1. string `$child`
 

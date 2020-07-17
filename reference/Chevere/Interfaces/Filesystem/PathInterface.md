@@ -16,7 +16,7 @@ Describes the component in charge of interact with filesystem paths.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. string `$absolute`
 
@@ -71,7 +71,7 @@ bool
 
 Wrapper for `\chmod`.
 
-**Parameters**
+#### Parameters
 
 1. int `$mode`
 
@@ -118,7 +118,7 @@ bool
 
 Get a child instance for the target child path.
 
-**Parameters**
+#### Parameters
 
 1. string `$path`
 

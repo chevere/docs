@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableHandlerFormatterInterface.php)
 
+## Description
+
+Describes the component in charge of formatting a throwable handler document.
+
 ## Methods
 
 ### varDumpFormatter()
@@ -32,7 +36,7 @@ Get a new object implementing the VarDumpFormatterInterface.
 
 ### getTraceEntryTemplate()
 
-Get the template used for each trace entry.
+Returns the template used for each trace entry.
 
 ::: tip RETURN
 string
@@ -42,6 +46,8 @@ string
 
 ### getHr()
 
+Returns formatted horizontal rule.
+
 ::: tip RETURN
 string
 :::
@@ -49,6 +55,8 @@ string
 ---
 
 ### getLineBreak()
+
+Returns formatted line break.
 
 ::: tip RETURN
 string
@@ -58,7 +66,9 @@ string
 
 ### wrapLink()
 
-**Parameters**
+Returns `$value` formatted as wrapped link.
+
+#### Parameters
 
 1. string `$value`
 
@@ -70,7 +80,9 @@ string
 
 ### wrapSectionTitle()
 
-**Parameters**
+Returns `$value` formatted as section title.
+
+#### Parameters
 
 1. string `$value`
 
@@ -82,7 +94,9 @@ string
 
 ### wrapTitle()
 
-**Parameters**
+Returns `$value` formatted as title.
+
+#### Parameters
 
 1. string `$value`
 

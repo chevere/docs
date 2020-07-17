@@ -16,7 +16,7 @@ editLink: false
 
 ### withAdded()
 
-**Parameters**
+#### Parameters
 
 1. [PlugInterface](../../PlugInterface.md) `$plug`
 

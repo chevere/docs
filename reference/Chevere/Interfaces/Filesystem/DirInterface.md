@@ -16,7 +16,7 @@ Describes the component in charge of interacting with filesystem directories.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [PathInterface](./PathInterface.md) `$path`
 
@@ -41,7 +41,7 @@ Provides access to the PathInterface instance.
 
 Creates the directory.
 
-**Parameters**
+#### Parameters
 
 1. int `$mode`
 
@@ -109,7 +109,7 @@ array
 
 Gets a child `DirInterface` for the added path.
 
-**Parameters**
+#### Parameters
 
 1. string `$path`
 

@@ -99,7 +99,7 @@ array (
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [WriterInterface](../Writer/WriterInterface.md) `$writer`
 2. [VarDumpFormatterInterface](./VarDumpFormatterInterface.md) `$formatter`
@@ -141,7 +141,7 @@ Provides access to the `$dumpable` instance.
 
 Return an instance with the specified `$indent`.
 
-**Parameters**
+#### Parameters
 
 1. int `$indent`
 
@@ -178,7 +178,7 @@ string
 
 Return an instance with the specified `$depth`.
 
-**Parameters**
+#### Parameters
 
 1. int `$depth`
 
@@ -205,7 +205,7 @@ int
 
 Return an instance with the specified `$known` object IDs.
 
-**Parameters**
+#### Parameters
 
 1. Ds\Set `$known`
 

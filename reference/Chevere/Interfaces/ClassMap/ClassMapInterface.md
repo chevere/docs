@@ -23,7 +23,7 @@ Describes the component in charge of mapping classes to strings.
 
 Return an instance with the specified className mapping.
 
-**Parameters**
+#### Parameters
 
 1. string `$className`
 2. string `$string`
@@ -46,7 +46,7 @@ an instance that contains the specified className mapping.
 
 Indicates whether the instance is mapping the given class name.
 
-**Parameters**
+#### Parameters
 
 1. string `$className`
 
@@ -60,7 +60,7 @@ bool
 
 Provides access to the class name mapping.
 
-**Parameters**
+#### Parameters
 
 1. string `$className`
 

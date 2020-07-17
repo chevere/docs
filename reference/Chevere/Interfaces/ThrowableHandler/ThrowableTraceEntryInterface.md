@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableTraceEntryInterface.php)
 
+## Description
+
+Describes the component in charge of describing a throwable trace entry captured from `debug_backtrace()`.
+
 ## Constants
 
 ### KEYS
@@ -36,7 +40,21 @@ array (
 
 ## Methods
 
+### __construct()
+
+#### Parameters
+
+1. array `$entry`
+
+::: danger THROWS
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+:::
+
+---
+
 ### file()
+
+Provides access to the filename.
 
 ::: tip RETURN
 string
@@ -46,6 +64,8 @@ string
 
 ### line()
 
+Provides access to the line.
+
 ::: tip RETURN
 int
 :::
@@ -54,13 +74,21 @@ int
 
 ### fileLine()
 
+Provides access to the file plus line.
+
 ::: tip RETURN
 string
 :::
 
+```php
+return 'path_to_file:1';
+```
+
 ---
 
 ### function()
+
+Provides access to the function.
 
 ::: tip RETURN
 string
@@ -70,6 +98,8 @@ string
 
 ### class()
 
+Provides access to the class (if any).
+
 ::: tip RETURN
 string
 :::
@@ -78,6 +108,8 @@ string
 
 ### type()
 
+Provides access to the type, either `::` or '->'.
+
 ::: tip RETURN
 string
 :::
@@ -85,6 +117,8 @@ string
 ---
 
 ### args()
+
+Provides access the arguments array.
 
 ::: tip RETURN
 array

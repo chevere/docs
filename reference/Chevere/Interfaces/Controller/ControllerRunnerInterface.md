@@ -16,7 +16,7 @@ Describes the component in charge of running the controller.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [ControllerInterface](./ControllerInterface.md) `$controller`
 
@@ -26,7 +26,7 @@ Describes the component in charge of running the controller.
 
 Executes the controller with the given `$arguments`.
 
-**Parameters**
+#### Parameters
 
 1. [ControllerArgumentsInterface](./ControllerArgumentsInterface.md) `$arguments`
 

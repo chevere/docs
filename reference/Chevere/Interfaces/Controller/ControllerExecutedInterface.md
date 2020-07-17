@@ -16,7 +16,7 @@ Describes the component in charge of handling the controller execution outcome.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. array `$data`
 
@@ -46,7 +46,7 @@ array
 
 Return an instance with the specified throwable, with its exit code.
 
-**Parameters**
+#### Parameters
 
 1. [Throwable](https://www.php.net/manual/class.throwable) `$throwable`
 2. int `$code`

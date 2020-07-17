@@ -16,7 +16,7 @@ editLink: false
 
 ### __invoke()
 
-**Parameters**
+#### Parameters
 
 1.  `$argument`
 

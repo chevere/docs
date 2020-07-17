@@ -20,7 +20,7 @@ Describes the component in charge of handling controller arguments.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [ControllerParametersInterface](./ControllerParametersInterface.md) `$parameters`
 2. array `$arguments`
@@ -53,7 +53,7 @@ return [
 
 Return an instance with the specified controller argument.
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 2. string `$value`
@@ -77,7 +77,7 @@ an instance that contains the specified controller argument.
 
 Indicates whether the instance has an argument for the parameter `$name`.
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 
@@ -91,7 +91,7 @@ bool
 
 Provides access to the argument value for the parameter `$name`.
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 

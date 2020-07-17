@@ -12,7 +12,7 @@ editLink: false
 
 ### has()
 
-**Parameters**
+#### Parameters
 
 1. string `$routeName`
 
@@ -24,7 +24,7 @@ bool
 
 ### get()
 
-**Parameters**
+#### Parameters
 
 1. string `$routeName`
 
@@ -36,7 +36,7 @@ bool
 
 ### put()
 
-**Parameters**
+#### Parameters
 
 1. [SpecIndexInterface](./SpecIndexInterface.md) `$specIndex`
 

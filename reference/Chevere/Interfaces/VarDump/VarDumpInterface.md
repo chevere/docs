@@ -16,7 +16,7 @@ Describes the component in charge of providing a `\var_dump()` replacement.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [VarDumpFormatterInterface](./VarDumpFormatterInterface.md) `$formatter`
 2. [VarDumpOutputterInterface](./VarDumpOutputterInterface.md) `$outputter`
@@ -27,7 +27,7 @@ Describes the component in charge of providing a `\var_dump()` replacement.
 
 Return an instance with the specified `$vars`.
 
-**Parameters**
+#### Parameters
 
 1.  `$vars`
 
@@ -44,7 +44,7 @@ an instance that contains the specified `$vars`.
 
 Return an instance with the specified `$shift` traces shifted.
 
-**Parameters**
+#### Parameters
 
 1. int `$shift`
 
@@ -63,7 +63,7 @@ This method removes `$shift` traces from `\debug_backtrace()`
 
 Process the dump writing
 
-**Parameters**
+#### Parameters
 
 1. [WriterInterface](../Writer/WriterInterface.md) `$writer`
 

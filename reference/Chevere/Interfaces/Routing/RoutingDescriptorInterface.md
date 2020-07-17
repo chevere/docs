@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of describing a route element.
+Describes the component in charge of handling a route element.
 
 ## Methods
 

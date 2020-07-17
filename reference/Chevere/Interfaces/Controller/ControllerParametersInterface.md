@@ -46,7 +46,7 @@ return [
 
 Return an instance with the specified controller parameter instance.
 
-**Parameters**
+#### Parameters
 
 1. [ControllerParameterInterface](./ControllerParameterInterface.md) `$controllerParameter`
 
@@ -63,7 +63,7 @@ an instance that contains the specified controller parameter instance.
 
 Indicates whether the instance has a parameter identified by `$name`.
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 
@@ -75,7 +75,7 @@ bool
 
 ### get()
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 

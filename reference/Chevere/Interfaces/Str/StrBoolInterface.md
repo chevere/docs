@@ -10,13 +10,13 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of providing string conditionals.
+Describes the component in charge of string conditionals.
 
 ## Methods
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -66,7 +66,7 @@ bool
 
 Indicates whether the string starts with `$needle`.
 
-**Parameters**
+#### Parameters
 
 1. string `$needle`
 
@@ -80,7 +80,7 @@ bool
 
 Indicates whether the string ends with `$needle`.
 
-**Parameters**
+#### Parameters
 
 1. string `$needle`
 
@@ -94,7 +94,7 @@ bool
 
 Indicates whether the string is the same as `$needle`.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 

@@ -8,6 +8,14 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableHandlerDocumentInterface.php)
 
+## Implements
+
+- [ToStringInterface](../To/ToStringInterface.md)
+
+## Description
+
+Describes the component in charge of defining a throwable handler document.
+
 ## Constants
 
 ### SECTION_TITLE
@@ -164,9 +172,9 @@ array (
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
-1. [ThrowableHandlerInterface](./ThrowableHandlerInterface.md) `$exceptionHandler`
+1. [ThrowableHandlerInterface](./ThrowableHandlerInterface.md) `$throwableHandler`
 
 ---
 
@@ -174,7 +182,7 @@ array (
 
 Return an instance with the specified verbosity.
 
-**Parameters**
+#### Parameters
 
 1. int `$verbosity`
 
@@ -259,26 +267,38 @@ string
 
 ---
 
-### toString()
-
-::: tip RETURN
-string
-:::
-
----
-
 ### getTemplate()
+
+Returns the template used for translating placeholders tags.
 
 ::: tip RETURN
 array
 :::
 
+```php
+return [
+    'self::::SECTION_TITLE' => $this->getSectionTitle(),
+];
+```
+
 ---
 
 ### getFormatter()
 
+Returns the document formatter.
+
 ::: tip RETURN
 [ThrowableHandlerFormatterInterface](./ThrowableHandlerFormatterInterface.md)
+:::
+
+---
+
+### toString()
+
+Returns a string, representing the object itself or some of its data/properties.
+
+::: tip RETURN
+string
 :::
 
 ---

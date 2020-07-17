@@ -24,7 +24,7 @@ Exception that represents error in the program logic. This kind of exception sho
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

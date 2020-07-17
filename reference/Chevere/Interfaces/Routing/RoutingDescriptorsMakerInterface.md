@@ -26,7 +26,7 @@ Type `string`
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 

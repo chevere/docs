@@ -16,7 +16,7 @@ Describes the component in charge of handling unserialize.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. string `$serialized`
 

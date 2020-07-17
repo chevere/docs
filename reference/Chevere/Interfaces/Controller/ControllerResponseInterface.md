@@ -16,7 +16,7 @@ Describes the component in charge of handling the controller response.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. bool `$isSuccess`
 2. array `$data`
@@ -47,7 +47,7 @@ array
 
 Return an instance with the specified success flag.
 
-**Parameters**
+#### Parameters
 
 1. bool `$isSuccess`
 
@@ -64,7 +64,7 @@ an instance that contains the specified success flag.
 
 Return an instance with the specified data.
 
-**Parameters**
+#### Parameters
 
 1. array `$data`
 

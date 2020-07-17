@@ -24,7 +24,7 @@ Exception thrown when the route path doesn't start with a forward slash.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

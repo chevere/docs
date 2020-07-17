@@ -16,7 +16,7 @@ Describes the component in charge of defining a resolved route.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [ControllerNameInterface](../Controller/ControllerNameInterface.md) `$controller`
 2. array `$wildcards`

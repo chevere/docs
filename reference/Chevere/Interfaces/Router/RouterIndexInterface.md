@@ -18,7 +18,7 @@ editLink: false
 
 Return an instance with the specified values.
 
-**Parameters**
+#### Parameters
 
 1. [RoutableInterface](./RoutableInterface.md) `$routable`
 2. string `$group`
@@ -34,7 +34,7 @@ an instance that contains the specified values.
 
 ### hasRouteName()
 
-**Parameters**
+#### Parameters
 
 1. string `$routeName`
 
@@ -46,7 +46,7 @@ bool
 
 ### getRouteIdentifier()
 
-**Parameters**
+#### Parameters
 
 1. string `$routeName`
 
@@ -58,7 +58,7 @@ bool
 
 ### hasGroup()
 
-**Parameters**
+#### Parameters
 
 1. string `$group`
 
@@ -70,7 +70,7 @@ bool
 
 ### getGroupRouteNames()
 
-**Parameters**
+#### Parameters
 
 1. string `$group`
 
@@ -82,7 +82,7 @@ array
 
 ### getRouteGroup()
 
-**Parameters**
+#### Parameters
 
 1. string `$routeName`
 

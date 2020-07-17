@@ -14,7 +14,7 @@ editLink: false
 
 Run the registered hooks at the given anchor.
 
-**Parameters**
+#### Parameters
 
 1. string `$anchor`
 2.  `$argument`

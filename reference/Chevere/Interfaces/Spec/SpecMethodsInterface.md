@@ -17,7 +17,7 @@ editLink: false
 
 ### withPut()
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 2. string `$jsonPath`
@@ -30,7 +30,7 @@ SpecMethodsInterface
 
 ### hasKey()
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 
@@ -42,7 +42,7 @@ bool
 
 ### get()
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 

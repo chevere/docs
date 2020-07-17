@@ -16,7 +16,7 @@ Describes the component in charge of string asserting.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -138,7 +138,7 @@ StrAssertInterface
 
 Asserts that the string is starts with `$needle`.
 
-**Parameters**
+#### Parameters
 
 1. string `$needle`
 
@@ -156,7 +156,7 @@ StrAssertInterface
 
 Asserts that the string not starts with `$needle`.
 
-**Parameters**
+#### Parameters
 
 1. string `$needle`
 
@@ -174,7 +174,7 @@ StrAssertInterface
 
 Asserts that the string ends with `$needle`.
 
-**Parameters**
+#### Parameters
 
 1. string `$needle`
 
@@ -192,7 +192,7 @@ StrAssertInterface
 
 Asserts that the string not ends with `$needle`.
 
-**Parameters**
+#### Parameters
 
 1. string `$needle`
 
@@ -210,7 +210,7 @@ StrAssertInterface
 
 Asserts that the string is same as `$string`.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -228,7 +228,7 @@ StrAssertInterface
 
 Asserts that the string is not same as `$string`.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -246,7 +246,7 @@ StrAssertInterface
 
 Asserts that the string contains `$string`.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -264,7 +264,7 @@ StrAssertInterface
 
 Asserts that the string not contains `$string`.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 

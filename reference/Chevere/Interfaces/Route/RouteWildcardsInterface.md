@@ -19,7 +19,7 @@ editLink: false
 
 Return an instance with the specified RouteWildcardInterface.
 
-**Parameters**
+#### Parameters
 
 1. [RouteWildcardInterface](./RouteWildcardInterface.md) `$wildcard`
 
@@ -46,7 +46,7 @@ int
 
 Returns a boolean indicating whether the instance has a given RouteWildcardInterface.
 
-**Parameters**
+#### Parameters
 
 1. string `$wildcardName`
 
@@ -60,7 +60,7 @@ bool
 
 Provides access to the target RouteWildcardInterface instance.
 
-**Parameters**
+#### Parameters
 
 1. string `$wildcardName`
 
@@ -74,7 +74,7 @@ Provides access to the target RouteWildcardInterface instance.
 
 Returns a boolean indicating whether the instance has RouteWildcardInterface in the given pos.
 
-**Parameters**
+#### Parameters
 
 1. int `$pos`
 
@@ -88,7 +88,7 @@ bool
 
 Provides access to the target RouteWildcardInterface instance in the given pos.
 
-**Parameters**
+#### Parameters
 
 1. int `$pos`
 

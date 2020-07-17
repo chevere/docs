@@ -135,7 +135,7 @@ array (
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. string `$type`
 
@@ -172,7 +172,7 @@ It will return either the class name, interface, or the primitive.
 
 Returns a boolean indicating if `$var` validates against the type.
 
-**Parameters**
+#### Parameters
 
 1.  `$var`
 

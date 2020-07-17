@@ -16,7 +16,7 @@ Describes the component in charge of handling controller parameters.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. string `$name`
 2. [RegexInterface](../Regex/RegexInterface.md) `$regex`
@@ -71,7 +71,7 @@ string
 
 Return an instance with the specified description.
 
-**Parameters**
+#### Parameters
 
 1. string `$string`
 
@@ -88,7 +88,7 @@ an instance that contains the specified description.
 
 Return an instance with the specified required flag.
 
-**Parameters**
+#### Parameters
 
 1. bool `$bool`
 

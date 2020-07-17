@@ -20,7 +20,7 @@ editLink: false
 
 ### getPlugsQueue()
 
-**Parameters**
+#### Parameters
 
 1. string `$pluggableName`
 

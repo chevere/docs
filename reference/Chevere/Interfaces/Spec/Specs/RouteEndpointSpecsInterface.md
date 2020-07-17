@@ -25,7 +25,7 @@ editLink: false
 
 ### withPut()
 
-**Parameters**
+#### Parameters
 
 1. [RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md) `$routeEndpointSpec`
 
@@ -37,7 +37,7 @@ RouteEndpointSpecsInterface
 
 ### hasKey()
 
-**Parameters**
+#### Parameters
 
 1. string `$key`
 
@@ -49,7 +49,7 @@ bool
 
 ### get()
 
-**Parameters**
+#### Parameters
 
 1. string `$key`
 

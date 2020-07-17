@@ -24,7 +24,7 @@ Exception thrown when the file doesn't have any contents.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

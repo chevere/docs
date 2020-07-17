@@ -24,7 +24,7 @@ Exception thrown when unable to put contents to the file.
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`

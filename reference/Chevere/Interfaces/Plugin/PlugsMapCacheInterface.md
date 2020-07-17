@@ -22,7 +22,7 @@ Type `string`
 
 ### withPut()
 
-**Parameters**
+#### Parameters
 
 1. [PlugsMapInterface](./PlugsMapInterface.md) `$plugsMap`
 
@@ -34,7 +34,7 @@ PlugsMapCacheInterface
 
 ### hasPlugsQueueFor()
 
-**Parameters**
+#### Parameters
 
 1. string `$className`
 
@@ -46,7 +46,7 @@ bool
 
 ### getPlugsQueueFor()
 
-**Parameters**
+#### Parameters
 
 1. string `$className`
 

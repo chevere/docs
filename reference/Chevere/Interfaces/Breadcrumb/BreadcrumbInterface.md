@@ -24,7 +24,7 @@ Describe a general purpose iterator companion.
 
 Indicates whether the instance has the given position.
 
-**Parameters**
+#### Parameters
 
 1. int `$pos`
 
@@ -48,7 +48,7 @@ int
 
 Return an instance with the specified added item.
 
-**Parameters**
+#### Parameters
 
 1. string `$item`
 
@@ -65,7 +65,7 @@ an instance that contains the specified added item.
 
 Return an instance with the specified pos removed.
 
-**Parameters**
+#### Parameters
 
 1. int `$pos`
 

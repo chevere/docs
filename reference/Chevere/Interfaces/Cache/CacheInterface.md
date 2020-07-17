@@ -28,7 +28,7 @@ Type `string`
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 
@@ -53,7 +53,7 @@ Provides access to the cache directory.
 
 Put item in cache.
 
-**Parameters**
+#### Parameters
 
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 2. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
@@ -73,7 +73,7 @@ an instance that contains the specified put.
 
 Remove item from cache.
 
-**Parameters**
+#### Parameters
 
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 
@@ -97,7 +97,7 @@ an instance that contains the specified removed.
 
 Indicates whether the cache exists for the given key.
 
-**Parameters**
+#### Parameters
 
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 
@@ -111,7 +111,7 @@ bool
 
 Get a cache item.
 
-**Parameters**
+#### Parameters
 
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 

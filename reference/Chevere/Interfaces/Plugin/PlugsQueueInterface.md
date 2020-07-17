@@ -12,7 +12,7 @@ editLink: false
 
 ### __construct()
 
-**Parameters**
+#### Parameters
 
 1. [PlugTypeInterface](./PlugTypeInterface.md) `$plugType`
 
@@ -20,7 +20,7 @@ editLink: false
 
 ### withAdded()
 
-**Parameters**
+#### Parameters
 
 1. [PlugInterface](./PlugInterface.md) `$plug`
 

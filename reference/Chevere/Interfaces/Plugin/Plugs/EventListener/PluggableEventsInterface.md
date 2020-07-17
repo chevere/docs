@@ -22,7 +22,7 @@ editLink: false
 
 Attach the events runner.
 
-**Parameters**
+#### Parameters
 
 1. [EventListenersRunnerInterface](./EventListenersRunnerInterface.md) `$runner`
 
@@ -36,7 +36,7 @@ PluggableEventsInterface
 
 Run events for the given anchor (if-any).
 
-**Parameters**
+#### Parameters
 
 1. string `$anchor`
 2. array `$data`
