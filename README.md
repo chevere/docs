@@ -2,12 +2,12 @@
 home: true
 heroImage: /logo-transparent.svg
 heroText: Chevere
-tagline: An opinionated PHP framework for building modern extensible server-side applications
+tagline: An opinionated PHP framework for building extensible server-side applications
 actionText: Get Started →
 actionLink: /get-started/
 features:
 - title: ✨ Clean & Typed
-  details: A strict strongly-typed clean codebase.
+  details: An easy to maintain strongly typed clean codebase..
 - title: 💎 General Purpose
   details: Create a myriad of systems with the same know-how.
 - title: 👨🏾‍💻 Standard
