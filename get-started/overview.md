@@ -1,10 +1,8 @@
 # Overview
 
-In essence, Chevere is a [controller](./../components/controller.md) command runner with a [pluggable](../components/Pluggable.md) layer, which takes an `$input` and `return` a result of that process.
+In essence, Chevere is a [controller](./../components/controller.md) command runner with a [pluggable](../components/Pluggable.md) layer, which takes an `$input` and `return` a result of that process. It is designed around the concept of handling instructions for *consumers* of the application, which could be _anything_ triggering the call for these instructions.
 
-> 🧔🏾 On a more formal definition, Chevere is a very sophisticated PHP scripting framework
-
-Chevere sits in the I/O handling, designed to present and deliver instructions to *consumers* of the application which could be _anything_ triggering execution. It is modular system, which can be progressively implemented in any project.
+The framework is completely modular, and it can be progressively implemented in any project.
 
 ## Abstracting Instructions
 
