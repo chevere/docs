@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Determines if a RouteInterface is able to be routed.
+Describes the component in charge of defining a routable.
 
 ## Methods
 

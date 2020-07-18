@@ -113,14 +113,15 @@ editLink: false
 
 ## Spec
 
-  - [SpecIndexCacheInterface](./Chevere/Interfaces/Spec/SpecIndexCacheInterface.md)
+  - [SpecEndpointsInterface](./Chevere/Interfaces/Spec/SpecEndpointsInterface.md)
   - [SpecIndexInterface](./Chevere/Interfaces/Spec/SpecIndexInterface.md)
   - [SpecIndexMapInterface](./Chevere/Interfaces/Spec/SpecIndexMapInterface.md)
   - [SpecInterface](./Chevere/Interfaces/Spec/SpecInterface.md)
-  - [SpecMethodsInterface](./Chevere/Interfaces/Spec/SpecMethodsInterface.md)
+  - [SpecMakerInterface](./Chevere/Interfaces/Spec/SpecMakerInterface.md)
   - [SpecPathInterface](./Chevere/Interfaces/Spec/SpecPathInterface.md)
   - [GroupSpecInterface](./Chevere/Interfaces/Spec/Specs/GroupSpecInterface.md)
   - [GroupSpecsInterface](./Chevere/Interfaces/Spec/Specs/GroupSpecsInterface.md)
+  - [IndexSpecInterface](./Chevere/Interfaces/Spec/Specs/IndexSpecInterface.md)
   - [RoutableSpecInterface](./Chevere/Interfaces/Spec/Specs/RoutableSpecInterface.md)
   - [RoutableSpecsInterface](./Chevere/Interfaces/Spec/Specs/RoutableSpecsInterface.md)
   - [RouteEndpointSpecInterface](./Chevere/Interfaces/Spec/Specs/RouteEndpointSpecInterface.md)

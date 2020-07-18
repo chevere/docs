@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# SpecIndexInterface
+# SpecEndpointsInterface
 
-`Chevere\Interfaces\Spec\SpecIndexInterface`
+`Chevere\Interfaces\Spec\SpecEndpointsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecIndexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecEndpointsInterface.php)
 
 ## Implements
 
@@ -15,36 +15,34 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of indexing endpoint specs for each route.
+Describes the component in charge of collecting objects implementing `RouteEndpointSpecInterface`.
 
 ## Methods
 
-### withAddedRoute()
+### withPut()
 
-Return an instance with the specified `$routeEndpointSpec` for `$routeName`.
+Return an instance with the specified `$routeEndpointSpec`.
 
 #### Parameters
 
-1. string `$routeName`
-2. [RouteEndpointSpec](../../Components/Spec/Specs/RouteEndpointSpec.md) `$routeEndpointSpec`
+1. Specs/RouteEndpointSpecInterface.md `$routeEndpointSpec`
 
 ::: tip RETURN
-SpecIndexInterface
+SpecEndpointsInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$routeEndpointSpec` for `$routeName`.
+an instance that contains the specified `$routeEndpointSpec`.
 
 ---
 
-### has()
+### hasKey()
 
-Indicates whether the instance has a route endpoint spec for `$routeName` at the given `$methodName`.
+Indicates whether the instance has a route endpoint identified by its `$methodName`.
 
 #### Parameters
 
-1. string `$routeName`
-2. string `$methodName`
+1. string `$methodName`
 
 ::: tip RETURN
 bool
@@ -54,12 +52,11 @@ bool
 
 ### get()
 
-Returns the spec path.
+Returns the group spec identified by its `$methodName`.
 
 #### Parameters
 
-1. string `$routeName`
-2. string `$methodName`
+1. string `$methodName`
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)

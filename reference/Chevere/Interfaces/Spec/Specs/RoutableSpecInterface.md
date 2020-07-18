@@ -13,6 +13,10 @@ editLink: false
 - [SpecInterface](../SpecInterface.md)
 - [ToArrayInterface](../../To/ToArrayInterface.md)
 
+## Description
+
+Describes the component in charge of defining a routable spec.
+
 ## Methods
 
 ### __construct()
@@ -24,7 +28,9 @@ editLink: false
 
 ---
 
-### routeEndpointSpecs()
+### clonedRouteEndpointSpecs()
+
+Provides access to a cloned `RouteEndpointSpecs` which doesn't affects the object instance used in `toArray`.
 
 ::: tip RETURN
 [RouteEndpointSpecs](../../../Components/Spec/Specs/RouteEndpointSpecs.md)
@@ -34,6 +40,8 @@ editLink: false
 
 ### jsonPath()
 
+Provides access to the json path.
+
 ::: tip RETURN
 string
 :::
@@ -41,6 +49,8 @@ string
 ---
 
 ### key()
+
+Provides access to the key.
 
 ::: tip RETURN
 string

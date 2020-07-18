@@ -13,18 +13,28 @@ editLink: false
 - [SpecInterface](../SpecInterface.md)
 - [ToArrayInterface](../../To/ToArrayInterface.md)
 
+## Description
+
+Describes the component in charge of defining a route endpoint spec.
+
 ## Methods
 
 ### __construct()
 
 #### Parameters
 
-1. [SpecPathInterface](../SpecPathInterface.md) `$specRoutePath`
+1. [SpecPathInterface](../SpecPathInterface.md) `$specPath`
 2. [RouteEndpointInterface](../../Route/RouteEndpointInterface.md) `$routeEndpoint`
+
+::: danger THROWS
+- [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md)
+:::
 
 ---
 
 ### jsonPath()
+
+Provides access to the json path.
 
 ::: tip RETURN
 string
@@ -33,6 +43,8 @@ string
 ---
 
 ### key()
+
+Provides access to the key.
 
 ::: tip RETURN
 string

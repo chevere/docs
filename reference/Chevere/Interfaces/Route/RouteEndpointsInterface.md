@@ -13,27 +13,15 @@ editLink: false
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
+## Description
+
+Describes the component in charge of collecting objects implementing `RouteEndpointInterface`.
+
 ## Methods
-
-### getGenerator()
-
-::: tip RETURN
-[Generator](https://www.php.net/manual/class.generator)
-:::
-
----
-
-### keys()
-
-::: tip RETURN
-array
-:::
-
----
 
 ### withPut()
 
-Return an instance with the specified RouteEndpoint.
+Return an instance with the specified `$routeEndpoint`.
 
 #### Parameters
 
@@ -44,13 +32,13 @@ RouteEndpointsInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified RouteEndpoint.
+an instance that contains the specified `$routeEndpoint`.
 
 ---
 
 ### hasKey()
 
-Returns a boolean indicating whether the instance has $key.
+Returns a boolean indicating whether the instance has `$key`.
 
 #### Parameters
 
@@ -64,14 +52,36 @@ bool
 
 ### get()
 
-Provides access to the RouteEndpointInterface identified by $key.
+Provides access to the RouteEndpointInterface identified by `$key`.
 
 #### Parameters
 
 1. string `$key`
 
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+:::
+
 ::: tip RETURN
 [RouteEndpointInterface](./RouteEndpointInterface.md)
+:::
+
+---
+
+### getGenerator()
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
+:::
+
+---
+
+### keys()
+
+Provides access to the map keys.
+
+::: tip RETURN
+array
 :::
 
 ---

@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of defining a resolved route.
+Describes the component in charge of defining a routed route.
 
 ## Methods
 
@@ -18,12 +18,14 @@ Describes the component in charge of defining a resolved route.
 
 #### Parameters
 
-1. [ControllerNameInterface](../Controller/ControllerNameInterface.md) `$controller`
-2. array `$wildcards`
+1. [ControllerNameInterface](../Controller/ControllerNameInterface.md) `$controllerName`
+2. array `$arguments`
 
 ---
 
 ### controllerName()
+
+Provides access to the `$controllerName` instance.
 
 ::: tip RETURN
 [ControllerNameInterface](../Controller/ControllerNameInterface.md)
@@ -33,8 +35,16 @@ Describes the component in charge of defining a resolved route.
 
 ### arguments()
 
+Provides access to the `$arguments` instance.
+
 ::: tip RETURN
 array
 :::
+
+```php
+return [
+    'name' => 'value',
+]
+```
 
 ---

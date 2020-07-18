@@ -13,17 +13,15 @@ editLink: false
 - [DsMapInterface](../../DataStructures/DsMapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
+## Description
+
+Describes the component in charge of collecting objects implementing `RouteEndpointSpecInterface`.
+
 ## Methods
 
-### getGenerator()
-
-::: tip RETURN
-[Generator](https://www.php.net/manual/class.generator)
-:::
-
----
-
 ### withPut()
+
+Return an instance with the specified `$routeEndpointSpec`.
 
 #### Parameters
 
@@ -33,13 +31,18 @@ editLink: false
 RouteEndpointSpecsInterface
 :::
 
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$routeEndpointSpec`.
+
 ---
 
-### hasKey()
+### has()
+
+Indicates whether the instance has a route endpoint spec identified by its `$methodName`.
 
 #### Parameters
 
-1. string `$key`
+1. string `$methodName`
 
 ::: tip RETURN
 bool
@@ -49,12 +52,26 @@ bool
 
 ### get()
 
+Returns the route endpoint spec identified by its `$methodName`.
+
 #### Parameters
 
-1. string `$key`
+1. string `$methodName`
+
+::: danger THROWS
+- [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md)
+:::
 
 ::: tip RETURN
 [RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md)
+:::
+
+---
+
+### getGenerator()
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
