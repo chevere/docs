@@ -112,10 +112,9 @@ editLink: false
   - [RouteNameInvalidException](./Chevere/Exceptions/Route/RouteNameInvalidException.md)
   - [RoutePathForwardSlashException](./Chevere/Exceptions/Route/RoutePathForwardSlashException.md)
   - [RouteWildcardConflictException](./Chevere/Exceptions/Route/RouteWildcardConflictException.md)
-  - [RouteWildcardInvalidCharsException](./Chevere/Exceptions/Route/RouteWildcardInvalidCharsException.md)
+  - [RouteWildcardInvalidException](./Chevere/Exceptions/Route/RouteWildcardInvalidException.md)
   - [RouteWildcardInvalidRegexException](./Chevere/Exceptions/Route/RouteWildcardInvalidRegexException.md)
   - [RouteWildcardNotFoundException](./Chevere/Exceptions/Route/RouteWildcardNotFoundException.md)
-  - [RouteWildcardStartWithNumberException](./Chevere/Exceptions/Route/RouteWildcardStartWithNumberException.md)
 
 ## Router
 

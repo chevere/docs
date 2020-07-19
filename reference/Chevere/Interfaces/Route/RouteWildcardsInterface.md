@@ -13,11 +13,15 @@ editLink: false
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
+## Description
+
+Describes the component in charge of collecting objects implementing `RouteWildcardInterface`.
+
 ## Methods
 
 ### withAddedWildcard()
 
-Return an instance with the specified RouteWildcardInterface.
+Return an instance with the specified `$wildcard`.
 
 #### Parameters
 
@@ -28,17 +32,9 @@ RouteWildcardsInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified RouteWildcardInterface.
+an instance that contains the specified `$wildcard`.
 
-This method should allow to override wildcards.
-
----
-
-### count()
-
-::: tip RETURN
-int
-:::
+This method should overrides existing wildcards.
 
 ---
 

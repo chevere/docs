@@ -13,17 +13,15 @@ editLink: false
 - [DsMapInterface](../DataStructures/DsMapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
+## Description
+
+Describes the component in charge of collecting objects implementing `RoutableInterface`.
+
 ## Methods
 
-### getGenerator()
-
-::: tip RETURN
-[Generator](https://www.php.net/manual/class.generator)
-:::
-
----
-
 ### withPut()
+
+Return an instance with the specified `$routable`.
 
 #### Parameters
 
@@ -33,9 +31,14 @@ editLink: false
 RoutablesInterface
 :::
 
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$routable`.
+
 ---
 
-### hasKey()
+### has()
+
+Indicates whether the instance has a routable identified by its `$name`.
 
 #### Parameters
 
@@ -49,12 +52,26 @@ bool
 
 ### get()
 
+Returns the routable identified by its `$name`.
+
 #### Parameters
 
 1. string `$name`
 
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+:::
+
 ::: tip RETURN
 [RoutableInterface](./RoutableInterface.md)
+:::
+
+---
+
+### getGenerator()
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---

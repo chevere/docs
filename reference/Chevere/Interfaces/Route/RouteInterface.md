@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteInterface.php)
 
+## Description
+
+Describes the component in charge of defining a route.
+
 ## Methods
 
 ### __construct()
@@ -15,18 +19,13 @@ editLink: false
 #### Parameters
 
 1. [RouteNameInterface](./RouteNameInterface.md) `$name`
-2. [RoutePathInterface](./RoutePathInterface.md) `$routePath`
-
-::: danger THROWS
-- [RouteNameInvalidException](../../Exceptions/Route/RouteNameInvalidException.md)
-if $name doesn't match REGEX_NAME
-:::
+2. [RoutePathInterface](./RoutePathInterface.md) `$path`
 
 ---
 
 ### name()
 
-Provides access to the route name (if any).
+Provides access to the `$name` instance.
 
 ::: tip RETURN
 [RouteNameInterface](./RouteNameInterface.md)
@@ -36,7 +35,7 @@ Provides access to the route name (if any).
 
 ### path()
 
-Provides access to the RoutePathInterface instance.
+Provides access to the `$path` instance.
 
 ::: tip RETURN
 [RoutePathInterface](./RoutePathInterface.md)
@@ -46,7 +45,7 @@ Provides access to the RoutePathInterface instance.
 
 ### maker()
 
-Provides access to the file maker array.
+Provides access to the file maker.
 
 ::: tip RETURN
 array
@@ -56,26 +55,34 @@ array
 
 ### withAddedEndpoint()
 
-Return an instance with the specified added $routeEndpoint.
+Return an instance with the specified added `$routeEndpoint`.
 
 #### Parameters
 
 1. [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
+
+::: danger THROWS
+- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [RouteEndpointConflictException](../../Exceptions/Route/RouteEndpointConflictException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [RouteWildcardConflictException](../../Exceptions/Route/RouteWildcardConflictException.md)
+:::
 
 ::: tip RETURN
 RouteInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified added $routeEndpoint.
+an instance that contains the specified added `$routeEndpoint`.
 
-This method should allow to override any previous $routeEndpoint.
+This method should allow to override any previous `$routeEndpoint`.
 
 ---
 
 ### endpoints()
 
-Provides access to the RouteEndpointsInterface instance.
+Provides access to the endpoints instance.
 
 ::: tip RETURN
 [RouteEndpointsInterface](./RouteEndpointsInterface.md)

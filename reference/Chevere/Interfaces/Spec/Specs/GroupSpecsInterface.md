@@ -13,33 +13,36 @@ editLink: false
 - [DsMapInterface](../../DataStructures/DsMapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
+## Description
+
+Describes the component in charge of collecting objects implementing `GroupSpecInterface`.
+
 ## Methods
 
-### getGenerator()
+### withPut()
 
-::: tip RETURN
-[Generator](https://www.php.net/manual/class.generator)
-:::
-
----
-
-### put()
+Return an instance with the specified `$groupSpec`.
 
 #### Parameters
 
 1. [GroupSpecInterface](./GroupSpecInterface.md) `$groupSpec`
 
 ::: tip RETURN
-void
+GroupSpecsInterface
 :::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$groupSpec`.
 
 ---
 
-### hasKey()
+### has()
+
+Indicates whether the instance has a group spec identified by its `$groupName`.
 
 #### Parameters
 
-1. string `$key`
+1. string `$groupName`
 
 ::: tip RETURN
 bool
@@ -49,12 +52,26 @@ bool
 
 ### get()
 
+Returns the group spec identified by its `$groupName`.
+
 #### Parameters
 
-1. string `$key`
+1. string `$groupName`
+
+::: danger THROWS
+- [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md)
+:::
 
 ::: tip RETURN
 [GroupSpecInterface](./GroupSpecInterface.md)
+:::
+
+---
+
+### getGenerator()
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---

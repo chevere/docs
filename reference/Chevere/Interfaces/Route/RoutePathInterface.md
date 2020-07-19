@@ -24,9 +24,15 @@ Describes the component in charge of handling route paths.
 
 1. string `$path`
 
+::: danger THROWS
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+:::
+
 ---
 
 ### wildcards()
+
+Provides access to the wildcards instance.
 
 ::: tip RETURN
 [RouteWildcardsInterface](./RouteWildcardsInterface.md)
@@ -34,9 +40,19 @@ Describes the component in charge of handling route paths.
 
 ---
 
+### regex()
+
+Provides access to the regex instance.
+
+::: tip RETURN
+[RegexInterface](../Regex/RegexInterface.md)
+:::
+
+---
+
 ### toString()
 
-Provides access to the uri path.
+Returns a string, representing the object itself or some of its data/properties.
 
 ::: tip RETURN
 string

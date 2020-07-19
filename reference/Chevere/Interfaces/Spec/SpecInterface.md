@@ -12,9 +12,15 @@ editLink: false
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 
+## Description
+
+Describes the component in charge of defining an ambiguous spec.
+
 ## Methods
 
 ### jsonPath()
+
+Provides access to the json path.
 
 ::: tip RETURN
 string
@@ -23,6 +29,8 @@ string
 ---
 
 ### key()
+
+Provides access to the key.
 
 ::: tip RETURN
 string

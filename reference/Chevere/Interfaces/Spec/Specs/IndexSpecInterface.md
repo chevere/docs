@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# GroupSpecInterface
+# IndexSpecInterface
 
-`Chevere\Interfaces\Spec\Specs\GroupSpecInterface`
+`Chevere\Interfaces\Spec\Specs\IndexSpecInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/Specs/GroupSpecInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/Specs/IndexSpecInterface.php)
 
 ## Implements
 
@@ -15,7 +15,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of defining the group spec.
+Describes the component in charge of defining the index spec.
 
 ## Methods
 
@@ -24,24 +24,23 @@ Describes the component in charge of defining the group spec.
 #### Parameters
 
 1. [SpecPathInterface](../SpecPathInterface.md) `$specPath`
-2. string `$group`
 
 ---
 
-### withAddedRoutableSpec()
+### withAddedGroup()
 
-Return an instance with the specified `$routableSpec`.
+Return an instance with the specified `$groupSpec`.
 
 #### Parameters
 
-1. [RoutableSpecInterface](./RoutableSpecInterface.md) `$routableSpec`
+1. [GroupSpecInterface](./GroupSpecInterface.md) `$groupSpec`
 
 ::: tip RETURN
-GroupSpecInterface
+IndexSpecInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$routableSpec`.
+an instance that contains the specified `$groupSpec`.
 
 ---
 

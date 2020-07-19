@@ -8,6 +8,12 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteEndpointInterface.php)
 
+## Description
+
+Describes the component in charge of defining a route endpoint.
+
+Note: Parameters must be automatically determined from known `$controller` parameters.
+
 ## Constants
 
 ### KNOWN_METHODS
@@ -41,6 +47,8 @@ array (
 
 ### method()
 
+Provides access to the `$method` instance.
+
 ::: tip RETURN
 [MethodInterface](../Http/MethodInterface.md)
 :::
@@ -48,6 +56,8 @@ array (
 ---
 
 ### controller()
+
+Provides access to the `$controller` instance.
 
 ::: tip RETURN
 [ControllerInterface](../Controller/ControllerInterface.md)
@@ -57,6 +67,8 @@ array (
 
 ### withDescription()
 
+Return an instance with the specified `$description`.
+
 #### Parameters
 
 1. string `$description`
@@ -65,9 +77,14 @@ array (
 RouteEndpointInterface
 :::
 
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$description`.
+
 ---
 
 ### description()
+
+Provides access to the description.
 
 ::: tip RETURN
 string
@@ -77,20 +94,42 @@ string
 
 ### withoutParameter()
 
+Return an instance with the specified `$parameter` removed.
+
 #### Parameters
 
 1. string `$parameter`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+:::
 
 ::: tip RETURN
 RouteEndpointInterface
 :::
 
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$parameter` removed.
+
 ---
 
 ### parameters()
 
+Provides access to the parameters.
+
 ::: tip RETURN
 array
 :::
+
+```php
+return [
+    'name' => [
+        'name' => 'name',
+        'regex' => '/^\w+$/',
+        'description' => 'User name',
+        'isRequired' => true,
+    ],
+];
+```
 
 ---
