@@ -14,7 +14,7 @@ The goal is that the business logic remains totally yours, with a very flexible 
 
 Chevere is modern PHP software and it encourages a proper use of the language just like [PHP The Right Way](https://phptherightway.com/).
 
-> 🧔🏾 PHP is an awesome scripting language, allowing you to express and to organize code in so many different ways that the caveats are their users, nor the tooling. Is what you pay for its flexibility.
+> 🧔🏾 PHP is an awesome scripting language, allowing you to express and to organize code in so many different ways that the caveats is your skill, not the tooling. Is what you pay for its flexibility.
 
 To avoid the caveats of PHP, Chevere has its own [architecture](./../architecture/README.md) concepts, conventions and rules.
 
@@ -35,4 +35,3 @@ There are many reasons why you should want your application to be pluggable:
 * Doesn't constrain your logic, it wraps it
 
 In other words, it helps you to build an ecosystem around your software 👏🏾.
-
