@@ -7,7 +7,7 @@ actionText: Get Started →
 actionLink: /get-started/
 features:
 - title: ✨ Clean & Typed
-  details: An easy to maintain strongly typed clean codebase..
+  details: An easy to maintain and strong-typed clean codebase.
 - title: 💎 General Purpose
   details: Create a myriad of systems with the same know-how.
 - title: 👨🏾‍💻 Standard
