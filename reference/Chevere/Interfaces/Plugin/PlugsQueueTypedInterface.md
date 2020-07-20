@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugsQueueTypedInterface.php)
 
+## Description
+
+Describes the base interface used by typed plug queues.
+
 ## Methods
 
 ### withAdded()
@@ -22,7 +26,9 @@ PlugsQueueTypedInterface
 
 ---
 
-### accept()
+### interface()
+
+Returns the interface name of plug members.
 
 ::: tip RETURN
 string
@@ -32,6 +38,8 @@ string
 
 ### getPlugType()
 
+Returns a new instance for the members plug type.
+
 ::: tip RETURN
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
@@ -39,6 +47,8 @@ string
 ---
 
 ### plugsQueue()
+
+Provides access to the plugs queue instance.
 
 ::: tip RETURN
 [PlugsQueueInterface](./PlugsQueueInterface.md)

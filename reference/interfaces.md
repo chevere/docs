@@ -55,7 +55,6 @@ editLink: false
 ## Plugin
 
   - [AssertPlugInterface](./Chevere/Interfaces/Plugin/AssertPlugInterface.md)
-  - [PlugDetectInterface](./Chevere/Interfaces/Plugin/PlugDetectInterface.md)
   - [PlugInterface](./Chevere/Interfaces/Plugin/PlugInterface.md)
   - [PlugTypeInterface](./Chevere/Interfaces/Plugin/PlugTypeInterface.md)
   - [PlugTypesListInterface](./Chevere/Interfaces/Plugin/PlugTypesListInterface.md)
@@ -69,7 +68,6 @@ editLink: false
   - [HooksQueueInterface](./Chevere/Interfaces/Plugin/Plugs/Hooks/HooksQueueInterface.md)
   - [HooksRunnerInterface](./Chevere/Interfaces/Plugin/Plugs/Hooks/HooksRunnerInterface.md)
   - [PluggableHooksInterface](./Chevere/Interfaces/Plugin/Plugs/Hooks/PluggableHooksInterface.md)
-  - [PlugsIteratorInterface](./Chevere/Interfaces/Plugin/PlugsIteratorInterface.md)
   - [PlugsMapCacheInterface](./Chevere/Interfaces/Plugin/PlugsMapCacheInterface.md)
   - [PlugsMapInterface](./Chevere/Interfaces/Plugin/PlugsMapInterface.md)
   - [PlugsQueueInterface](./Chevere/Interfaces/Plugin/PlugsQueueInterface.md)

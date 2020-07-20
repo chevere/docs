@@ -12,9 +12,15 @@ editLink: false
 
 - [PlugInterface](../../PlugInterface.md)
 
+## Description
+
+Describes the component in charge of defining a hook plug.
+
 ## Methods
 
 ### __invoke()
+
+Executes the hook listener.
 
 #### Parameters
 
@@ -28,6 +34,8 @@ void
 
 ### anchor()
 
+Plugs at anchor.
+
 ::: tip RETURN
 string
 :::
@@ -36,6 +44,8 @@ string
 
 ### at()
 
+Plugs at class name.
+
 ::: tip RETURN
 string
 :::
@@ -43,6 +53,8 @@ string
 ---
 
 ### priority()
+
+Plugs at priority.
 
 ::: tip RETURN
 int

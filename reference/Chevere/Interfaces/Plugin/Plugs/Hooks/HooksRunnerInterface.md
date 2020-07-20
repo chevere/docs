@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/Hooks/HooksRunnerInterface.php)
 
+## Description
+
+Describes the component in charge of running the hooks queue.
+
 ## Methods
 
 ### run()
@@ -20,7 +24,7 @@ Run the registered hooks at the given anchor.
 2.  `$argument`
 
 ::: danger THROWS
-- [RuntimeException](../../../../Exceptions/Core/RuntimeException.md)
+- [InvalidArgumentException](../../../../Exceptions/Core/InvalidArgumentException.md)
 If the $argument type changes.
 :::
 

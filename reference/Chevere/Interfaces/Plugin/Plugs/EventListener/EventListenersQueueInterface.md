@@ -12,6 +12,10 @@ editLink: false
 
 - [PlugsQueueTypedInterface](../../PlugsQueueTypedInterface.md)
 
+## Description
+
+Describes the component in charge of type-hint an event listeners queue.
+
 ## Methods
 
 ### withAdded()
@@ -26,7 +30,9 @@ editLink: false
 
 ---
 
-### accept()
+### interface()
+
+Returns the interface name of plug members.
 
 ::: tip RETURN
 string
@@ -36,6 +42,8 @@ string
 
 ### getPlugType()
 
+Returns a new instance for the members plug type.
+
 ::: tip RETURN
 [PlugTypeInterface](../../PlugTypeInterface.md)
 :::
@@ -43,6 +51,8 @@ string
 ---
 
 ### plugsQueue()
+
+Provides access to the plugs queue instance.
 
 ::: tip RETURN
 [PlugsQueueInterface](../../PlugsQueueInterface.md)

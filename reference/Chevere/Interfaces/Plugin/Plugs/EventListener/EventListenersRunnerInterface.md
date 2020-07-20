@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/EventListener/EventListenersRunnerInterface.php)
 
+## Description
+
+Describes the component in charge of running the event listeners queue.
+
 ## Methods
 
 ### __construct()
@@ -21,12 +25,16 @@ editLink: false
 
 ### run()
 
-Run registered event listeners for the target event name.
+Run registered event listeners for the target event anchor.
 
 #### Parameters
 
-1. string `$name`
+1. string `$anchor`
 2. array `$data`
+
+::: danger THROWS
+- [RuntimeException](../../../../Exceptions/Core/RuntimeException.md)
+:::
 
 ::: tip RETURN
 void

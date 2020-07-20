@@ -8,9 +8,15 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/Hooks/PluggableHooksInterface.php)
 
+## Description
+
+Describes the interface for components requiring to implement pluggable hooks.
+
 ## Methods
 
 ### getHookAnchors()
+
+Returns the declared hook anchors able to plug.
 
 ::: tip RETURN
 [PluggableAnchorsInterface](../../PluggableAnchorsInterface.md)
@@ -20,7 +26,7 @@ editLink: false
 
 ### withHooksRunner()
 
-Attach the hooks runner for this hookable.
+Return an instance with the specified `$runner`.
 
 #### Parameters
 
@@ -29,6 +35,11 @@ Attach the hooks runner for this hookable.
 ::: tip RETURN
 PluggableHooksInterface
 :::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$runner`.
+
+This method should be implemented in the runtime strategy before running hooks.
 
 ---
 

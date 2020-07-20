@@ -12,9 +12,15 @@ editLink: false
 
 - [PlugInterface](../../PlugInterface.md)
 
+## Description
+
+Describes the component in charge of defining an event listener plug.
+
 ## Methods
 
 ### __invoke()
+
+Executes the event listener.
 
 #### Parameters
 
@@ -29,6 +35,8 @@ void
 
 ### anchor()
 
+Plugs at anchor.
+
 ::: tip RETURN
 string
 :::
@@ -37,6 +45,8 @@ string
 
 ### at()
 
+Plugs at class name.
+
 ::: tip RETURN
 string
 :::
@@ -44,6 +54,8 @@ string
 ---
 
 ### priority()
+
+Plugs at priority.
 
 ::: tip RETURN
 int

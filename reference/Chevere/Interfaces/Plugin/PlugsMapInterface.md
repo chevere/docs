@@ -12,9 +12,23 @@ editLink: false
 
 - [Countable](https://www.php.net/manual/class.countable)
 
+## Description
+
+Describes the component in charge of mapping plugs in the file system.
+
 ## Methods
 
-### type()
+### __construct()
+
+#### Parameters
+
+1. [PlugTypeInterface](./PlugTypeInterface.md) `$type`
+
+---
+
+### plugType()
+
+Provides access to the plugs type instance.
 
 ::: tip RETURN
 [PlugTypeInterface](./PlugTypeInterface.md)
@@ -24,17 +38,29 @@ editLink: false
 
 ### withAdded()
 
+Return an instance with the specified added `$plug`.
+
 #### Parameters
 
-1. [AssertPlugInterface](./AssertPlugInterface.md) `$assertPlug`
+1. [PlugInterface](./PlugInterface.md) `$plug`
+
+::: danger THROWS
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+- [OverflowException](../../Exceptions/Core/OverflowException.md)
+:::
 
 ::: tip RETURN
 PlugsMapInterface
 :::
 
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified added `$plug`.
+
 ---
 
 ### has()
+
+Indicates whether the instance has the given `$plug`.
 
 #### Parameters
 
@@ -48,6 +74,8 @@ bool
 
 ### hasPlugsFor()
 
+Indicates whether the instance has plugs for the given `$pluggable`.
+
 #### Parameters
 
 1. string `$pluggable`
@@ -58,11 +86,17 @@ bool
 
 ---
 
-### getPlugsFor()
+### getPlugsQueueTypedFor()
+
+Return the plugs queue typed for the given `$pluggable`.
 
 #### Parameters
 
 1. string `$pluggable`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+:::
 
 ::: tip RETURN
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)

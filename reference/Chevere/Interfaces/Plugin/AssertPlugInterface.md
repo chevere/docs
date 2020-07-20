@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/AssertPlugInterface.php)
 
+## Description
+
+Describes the component in charge of asserting a plug.
+
 ## Methods
 
 ### __construct()
@@ -16,9 +20,18 @@ editLink: false
 
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
+::: danger THROWS
+- [PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md)
+- [PluggableNotExistsException](../../Exceptions/Plugin/PluggableNotExistsException.md)
+- [PluggableAnchorsException](../../Exceptions/Plugin/PluggableAnchorsException.md)
+- [PluggableAnchorNotExistsException](../../Exceptions/Plugin/PluggableAnchorNotExistsException.md)
+:::
+
 ---
 
-### type()
+### plugType()
+
+Provides access to the plug type instance.
 
 ::: tip RETURN
 [PlugTypeInterface](./PlugTypeInterface.md)
@@ -27,6 +40,8 @@ editLink: false
 ---
 
 ### plug()
+
+Provides access to the plug instance.
 
 ::: tip RETURN
 [PlugInterface](./PlugInterface.md)

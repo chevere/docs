@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugTypesListInterface.php)
 
+## Description
+
+Describes the component in charge of defining a plugs types list.
+
 ## Methods
 
 ### getGenerator()

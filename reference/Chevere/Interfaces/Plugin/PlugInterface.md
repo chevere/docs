@@ -8,9 +8,15 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugInterface.php)
 
+## Description
+
+Describes the component in charge of defining a plug.
+
 ## Methods
 
 ### anchor()
+
+Plugs at anchor.
 
 ::: tip RETURN
 string
@@ -20,6 +26,8 @@ string
 
 ### at()
 
+Plugs at class name.
+
 ::: tip RETURN
 string
 :::
@@ -27,6 +35,8 @@ string
 ---
 
 ### priority()
+
+Plugs at priority.
 
 ::: tip RETURN
 int
