@@ -32,11 +32,11 @@ Describes the component in charge of handling a spec path.
 
 ### getChild()
 
-Returns a child instance for the given `$child`.
+Returns a child instance for the given `$childPath`.
 
 #### Parameters
 
-1. string `$child`
+1. string `$childPath`
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)

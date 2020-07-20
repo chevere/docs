@@ -36,7 +36,7 @@ an instance that contains the specified `$routeEndpointSpec`.
 
 ---
 
-### hasKey()
+### has()
 
 Indicates whether the instance has a route endpoint identified by its `$methodName`.
 

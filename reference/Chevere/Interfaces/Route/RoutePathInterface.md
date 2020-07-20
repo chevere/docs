@@ -26,6 +26,7 @@ Describes the component in charge of handling route paths.
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+- [LogicException](../../Exceptions/Core/LogicException.md)
 :::
 
 ---

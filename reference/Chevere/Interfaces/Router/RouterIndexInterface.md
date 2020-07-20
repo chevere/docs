@@ -111,7 +111,7 @@ Returns the route group for the route identified by its `$name`.
 
 #### Parameters
 
-1. string `$name`
+1. string `$group`
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)

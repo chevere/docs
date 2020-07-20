@@ -27,7 +27,7 @@ Writes the given string.
 1. string `$string`
 
 ::: danger THROWS
-- [LogicException](../../Exceptions/Core/LogicException.md)
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
 :::
 
 ::: tip RETURN
