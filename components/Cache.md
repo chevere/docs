@@ -31,10 +31,12 @@ Cache implements the [CacheInterface](../reference/Chevere/Interfaces/Cache/Cach
 
 ```php
 use Chevere\Components\Cache\Cache;
-use Chevere\Components\FileSystem\DirFromString;
+use Chevere\Components\FileSystem\Dir;
+use Chevere\Components\FileSystem\Path;
+use function Chevere\Components\Filesystem\dirForString;
 
 $cache = new Cache(
-    new DirFromString('/to-cache/')
+    dirForString('/to-cache/')
 );
 ```
 

@@ -31,6 +31,7 @@ editLink: false
 
 ## Core
 
+  - [ArgumentCountException](./Chevere/Exceptions/Core/ArgumentCountException.md)
   - [BadFunctionCallException](./Chevere/Exceptions/Core/BadFunctionCallException.md)
   - [BadMethodCallException](./Chevere/Exceptions/Core/BadMethodCallException.md)
   - [DomainException](./Chevere/Exceptions/Core/DomainException.md)

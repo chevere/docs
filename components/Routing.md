@@ -85,10 +85,6 @@ Wildcards in a route will be automatically configured to reflect the [Controller
 
 ## Generating Routing
 
-### Console
-
-The [Console](console.md#routing) includes a section for built-in routing commands to ease the routing process.
-
 ### Programmatically
 
 Routing can be also created programmatically as Chevere includes a Routing iterator. In the example below, a Router object is created from route endpoints at `/var/routes/`.
@@ -98,8 +94,10 @@ Routing can be also created programmatically as Chevere includes a Routing itera
 use Chevere\Components\Router\RouterMaker;
 use Chevere\Components\Routing\FsRoutesMaker;
 use Chevere\Components\Routing\Routing;
+use function Chevere\Components\Filesystem\dirForString;
 
-$dir = new DirFromString('/var/routes/');
+
+$dir = new dirForString('/var/routes/');
 $routing = new Routing(
     new FsRoutesMaker($dir),
     new RouterMaker

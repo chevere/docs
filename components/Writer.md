@@ -21,11 +21,14 @@ Methods `withOut`, `withError`, `withDebug` and `withLog` can be used to specify
 In the example below, the `withDebug` method is used to pass a stream writer for `/var/debug_output` file.
 
 ```php
-use Chevere\Components\Writer\StreamWriterFromString;
+use Chevere\Components\Writer\StreamWriter;
+use function Chevere\Components\Writer\streamFor;
 
 $writers = $writers
     ->withDebug(
-        new StreamWriterFromString('/var/debug_output', 'w')
+        new StreamWriter(
+            streamFor('/var/debug_output', 'w')
+        )
     );
 ```
 
@@ -35,24 +38,13 @@ $writers = $writers
 
 The `Chevere\Components\Writer\StreamWriter` is a writer that writes to a [stream](https://www.php.net/manual/en/intro.stream.php).
 
-Code below shows how to initiate a `StreamWriter`.
+Code below shows how to initiate a `StreamWriter` for a `given string`.
 
 ```php
 use Chevere\Components\Writer\StreamWriter;
-use Laminas\Diactoros\StreamFactory;
+use function Chevere\Components\Writer\streamForString;
 
-$stream = (new StreamFactory)->createStream('');
+$stream = streamForString('given string');
 $writer = new StreamWriter($stream);
 $writer->write('write some');
 ```
-
-A `StreamWriter` can be also created with `StreamWriterFromString`.
-
-
-```php
-use Chevere\Components\Writer\StreamWriterFromString;
-
-$writer = new StreamWriterFromString('');
-$writer->write('something else');
-```
-

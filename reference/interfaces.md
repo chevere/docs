@@ -109,6 +109,12 @@ editLink: false
 
   - [UnserializeInterface](./Chevere/Interfaces/Serialize/UnserializeInterface.md)
 
+## Service
+
+  - [ServiceInterface](./Chevere/Interfaces/Service/ServiceInterface.md)
+  - [ServiceProvidersInterface](./Chevere/Interfaces/Service/ServiceProvidersInterface.md)
+  - [ServiceableInterface](./Chevere/Interfaces/Service/ServiceableInterface.md)
+
 ## Spec
 
   - [SpecEndpointsInterface](./Chevere/Interfaces/Spec/SpecEndpointsInterface.md)
