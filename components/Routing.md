@@ -206,14 +206,7 @@ In the last lines of the code above the system creates the application [Spec](Sp
                             "method": "GET",
                             "spec": "\/spec\/web\/web-index\/GET.json",
                             "description": "Transfer a current representation of the target resource",
-                            "parameters": {
-                                "id": {
-                                    "name": "id",
-                                    "regex": "\/\\d+\/",
-                                    "description": "The user identifier.",
-                                    "isRequired": true
-                                }
-                            }
+                            "parameters": {}
                         }
                     }
                 }
