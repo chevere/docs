@@ -1,21 +1,13 @@
 # Routing
 
-Routing provide the ability to connect routes to controllers. 
+The Routing component is in charge of providing the ability to configure a file system based [Router](Router.md).
 
-The [RoutingInterface](../reference/Chevere/Interfaces/Routing/RoutingInterface.md) describe the interface for a component in charge of automatically generating HTTP routing.
+## Routing scheme
 
-Generated HTTP routing will be cached, and used to resolve HTTP requests to application instructions and to generate the [Spec](OmgWhatSTHESPEC?).
-
-## How it works
-
-Routing works with routes defined in the file system. It makes routing by taking advantage of the file system and naming conventions. 
-
-### Tree
-
-Tree below shows how a routing spec directory looks like. Routes are defined in a folder-based structure.
+Routes are defined in a folder-based structure. Tree below shows how a routing directory looks like.
 
 ```sh
-/var/routes
+/var/routing
 ├── articles <- route /articles
 │   ├── {id} <- route /articles/{id}
 │   │   ├── GET.php
@@ -29,78 +21,204 @@ Tree below shows how a routing spec directory looks like. Routes are defined in 
 
 ### Paths
 
-File system folders will reflect HTTP routes, the table below shows how system paths are interpreted as HTTP route paths for the tree above.
+File system folders will reflect HTTP routes, the table below shows how system paths are interpreted as HTTP route paths for the [tree](#routing-scheme) above.
 
 | Path                       | Name          | HTTP route    | HTTP method |
 | -------------------------- | ------------- | ------------- | ----------- |
-| /var/routes/articles/      | articles      | /articles     | GET         |
-| /var/routes/articles/{id}/ | article-by-id | /articles/123 | GET         |
-| /var/routes/signup/        | signup        | /signup       | POST        |
+| /var/routing/articles/      | articles      | /articles     | GET         |
+| /var/routing/articles/{id}/ | article-by-id | /articles/123 | GET         |
+| /var/routing/signup/        | signup        | /signup       | POST        |
 
 Each folder must define a `RouteName.php` file and one `<methodName>.php` for each applicable HTTP method.
 
+Variables in the form of `{var}` are used to define route parameters known as [wildcards](#wildcards).
+
 ### Route names
 
-A `RouteName.php` must return an object implementing [RouteNameInterface](../reference/Chevere/Interfaces/Route/RouteNameInterface.md).
+A `RouteName.php` file must return an object implementing [RouteNameInterface](../reference/Chevere/Interfaces/Route/RouteNameInterface.md) and it must be unique.
 
-> ⚠ Route names must be unique for each `RouteName.php`
- 
+The `/var/routing/articles/{id}/RouteName.php` file below name route `/articles/{id}` as `article-by-id`.
+
 ```php
 <?php
-
+# /var/routing/articles/{id}/RouteName.php
 use Chevere\Components\Routes\RouteName;
 
 return new RouteName('article-by-id');
 ```
 
-The code above names route `/articles/{id}` as `article-by-id`.
-
 ### HTTP Endpoints
-
-> 🧞 A HTTP endpoint is the binding of a HTTP method to a Controller.
 
 HTTP endpoints are defined by using `<methodName>.php` naming convention, where `<methodName>` is the HTTP method name according to [RFC 7231](https://tools.ietf.org/html/rfc7231) and it must return an object implementing [ControllerInterface](../reference/Chevere/Interfaces/Controller/ControllerInterface.md).
 
 Accepted HTTP methods are `CONNECT, DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT, TRACE`.
 
-> 🧙 HTTP HEAD method will be automatically wired when declaring HTTP GET method and missing the `HEAD.php` HTTP endpoint.
+The `/var/routing/signup/POST.php` file below binds HTTP request `POST /signup` to `SignupController`.
 
 ```php
 <?php
-
+# /var/routing/signup/POST.php
 use App\Controllers\SignupController;
 
 return new SignupController;
 ```
 
-The `POST.php` file above binds HTTP request `POST /signup` to `SignupController`.
-
+> 🧙🏾 Method `HEAD` is automatically added when `GET`.
 > 👍🏾 It is recommended to create a _different_ controller for each HTTP endpoint. A controller resolving multiple HTTP endpoints is a bad practice.
 
-#### Wildcards from Controller parameters
+#### Wildcards
 
-Wildcards in a route will be automatically configured to reflect the [Controller](Controller.md) parameters defined for the given route endpoints. If a route defines the wildcard `{id}`, Controllers in the route must at least declare the parameter `id`.
+Wildcards in a route path like `{id}` in `/articles/{id}`, are used to define route parameters which will be automatically configured to reflect the [Controller](Controller.md) parameters defined for the given route.
 
-> ⚠ Controllers in the alleged route must define the same base wildcard parameters.
+Note that controllers in the alleged route must define the same base wildcard parameters.
 
-## Generating Routing
+## Generating Router
 
-### Programmatically
+The purpose of the routing component is to provide a router implementing [RouterInterface](../reference/Chevere/Interfaces/Router/RouterInterface.md). On it's most simple usage, you will parse a directory using the build-in tooling to generate a router.
 
-Routing can be also created programmatically as Chevere includes a Routing iterator. In the example below, a Router object is created from route endpoints at `/var/routes/`.
+### RoutingDescriptorsMaker
+
+This component allows to create the routing descriptors, which is the collection of routes interpreted from the file system.
 
 ```php
-
-use Chevere\Components\Router\RouterMaker;
-use Chevere\Components\Routing\FsRoutesMaker;
-use Chevere\Components\Routing\Routing;
+use Chevere\Components\Routing\RoutingDescriptorsMaker;
 use function Chevere\Components\Filesystem\dirForString;
 
-
-$dir = new dirForString('/var/routes/');
-$routing = new Routing(
-    new FsRoutesMaker($dir),
-    new RouterMaker
+$routingDescriptorsMaker = new RoutingDescriptorsMaker(
+    dirForString('/var/routing/')
 );
-$router = $routing->router();
+$routingDescriptors = $routingDescriptorsMaker->descriptors();
+```
+
+### routerForRoutingDescriptors
+
+The function `routerForRoutingDescriptors` allows to easily generate a router from `RoutingDescriptors`. In the code below, `$router` is generated from `$routingDescriptors` and bound to `my-group`.
+
+```php
+use function Chevere\Components\Routing\routerForRoutingDescriptors;
+
+$router = routerForRoutingDescriptors($routingDescriptors, 'my-group');
+```
+
+### Real example
+
+In the example below, dir `routing/` contains sub-routing groups `api` and `web`. In this example, routing is being grouped in top folders as group name for better organization.
+
+```sh
+./routing
+├── api
+│   └── api
+│       ├── RouteName.php
+│       └── users
+│           ├── {id}
+│           │   ├── GET.php
+│           │   └── RouteName.php
+│           └── RouteName.php
+└── web
+    ├── GET.php
+    └── RouteName.php
+```
+
+In the script below, the system iterates over `api` and `web` to generate a `$routerForGroup` for each folder, which is then merged in `$router`.
+
+Generated router is cached with a simple strategy using the [Cache](Cache.md) component.
+
+```php
+use Chevere\Components\Cache\Cache;
+use Chevere\Components\Cache\CacheKey;
+use Chevere\Components\Router\Router;
+use Chevere\Components\Routing\RoutingDescriptorsMaker;
+use Chevere\Components\Spec\SpecMaker;
+use Chevere\Components\Spec\SpecPath;
+use Chevere\Components\VarExportable\VarExportable;
+use function Chevere\Components\Filesystem\dirForString;
+use function Chevere\Components\Routing\routerForRoutingDescriptors;
+
+$dir = dirForString(__DIR__ . '/');
+$cacheDir = $dir->getChild('cache/');
+$routingDir = $dir->getChild('routing/');
+$router = new Router;
+foreach (['api', 'web'] as $group) {
+    $routingDescriptorsMaker = new RoutingDescriptorsMaker(
+        $routingDir->getChild("$group/")
+    );
+    $routerForGroup = routerForRoutingDescriptors(
+        routingDescriptorsFor(),
+        $group
+    );
+    foreach ($routerForGroup->routables()->getGenerator() as $routable) {
+        $router = $router->withAddedRoutable($routable, $group);
+    }
+}
+(new Cache($cacheDir->getChild('router/')))
+    ->withAddedItem(
+        new CacheKey('public'),
+        new VarExportable($router->routeCollector())
+    );
+echo "Cached HTTP router\n";
+$publicDir = $dir->getChild('public/');
+$specDir = $publicDir->getChild('spec/');
+$specMaker = new SpecMaker(new SpecPath('/spec'), $specDir, $router);
+echo 'Spec made at ' . $specDir->path()->absolute() . "\n";
+
+```
+
+In the last lines of the code above the system creates the application [Spec](Spec.md) at `public/spec/` by passing the router. Generated spec `index.json` looks like this:
+
+```json
+{
+    "groups": {
+        "api": {
+            "name": "api",
+            "spec": "\/spec\/api\/routes.json",
+            "routes": {
+                "api-user-get": {
+                    "name": "api-user-get",
+                    "spec": "\/spec\/api\/api-user-get\/route.json",
+                    "path": "\/api\/users\/{id:\\d+}\/",
+                    "regex": "~^(?|\/api\/users\/(\\d+)\/)$~",
+                    "wildcards": {
+                        "id": "^\\d+$"
+                    },
+                    "endpoints": {
+                        "GET": {
+                            "method": "GET",
+                            "spec": "\/spec\/api\/api-user-get\/GET.json",
+                            "description": "Transfer a current representation of the target resource",
+                            "parameters": {}
+                        }
+                    }
+                }
+            }
+        },
+        "web": {
+            "name": "web",
+            "spec": "\/spec\/web\/routes.json",
+            "routes": {
+                "web-index": {
+                    "name": "web-index",
+                    "spec": "\/spec\/web\/web-index\/route.json",
+                    "path": "\/",
+                    "regex": "#\/#",
+                    "wildcards": {},
+                    "endpoints": {
+                        "GET": {
+                            "method": "GET",
+                            "spec": "\/spec\/web\/web-index\/GET.json",
+                            "description": "Transfer a current representation of the target resource",
+                            "parameters": {
+                                "id": {
+                                    "name": "id",
+                                    "regex": "\/\\d+\/",
+                                    "description": "The user identifier.",
+                                    "isRequired": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 ```

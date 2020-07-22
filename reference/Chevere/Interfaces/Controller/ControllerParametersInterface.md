@@ -42,7 +42,7 @@ return [
 
 ---
 
-### withParameter()
+### withAdded()
 
 Return an instance with the specified controller parameter instance.
 

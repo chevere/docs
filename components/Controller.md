@@ -69,7 +69,7 @@ use Chevere\Components\Controller\ControllerParameter;
 public function getParameters(): ControllerParametersInterface
 {
     return (new ControllerParameters)
-        ->withParameter(
+        ->withAdded(
             new ControllerParameter(
                 'name',
                 new Regex('/^\w+$/')
