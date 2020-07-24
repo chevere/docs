@@ -21,10 +21,11 @@ namespace App;
 final class DoesSomething
 {
     private string $string = '';
-    
+
     public function set(string $value): void
     {
-        $this->string = 'set=' . $value; // do=value
+        // set=value
+        $this->string = 'set=' . $value;
     }
 }
 ```
@@ -64,7 +65,7 @@ final class DoesSomething implements PluggableEventsInterface
             ->withAnchor('beforeSet')
             ->withAnchor('onSet');
     }
-    
+
     public function set(string $value): void
     {
         $this->event('beforeSet', new Event([]));
@@ -121,12 +122,15 @@ final class DoesSomething implements PluggableHooksInterface
             ->withAnchor('hook:before')
             ->withAnchor('hook:after');
     }
-    
+
     public function set(string $value): void
     {
-        $this->hook('hook:before', $value); // value*alter
-        $this->string = 'set=' . $value; // set=value*alter
-        $this->hook('hook:after', $value); // set=value*`alter*again
+        // value*alter
+        $this->hook('hook:before', $value);
+        // set=value*alter
+        $this->string = 'set=' . $value;
+        // set=value*`alter*again
+        $this->hook('hook:after', $value);
     }
 }
 ```

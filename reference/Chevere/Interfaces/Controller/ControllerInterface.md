@@ -54,26 +54,6 @@ string
 
 ---
 
-### setUp()
-
-This method will be called before running `run()`.
-
-::: tip RETURN
-void
-:::
-
----
-
-### tearDown()
-
-This method will be called after running `run()`.
-
-::: tip RETURN
-void
-:::
-
----
-
 ### run()
 
 This method will be called when running the controller.

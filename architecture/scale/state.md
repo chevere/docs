@@ -1,16 +1,18 @@
 # State
 
-An [application state](https://en.wikipedia.org/wiki/State_(computer_science)) refers to an application with all the config, variables, objects and so forth previously stored. On runtime, the system loads an already made application state and performs tasks under this context.
+An [application state](https://en.wikipedia.org/wiki/State_(computer_science)) refers to an application with all the config, variables, objects and so forth previously stored.
 
-The application state is made to be re-used. It allows to re-run the application without the expensive bootstrapping required to build the state from scratch.
+Chevere is designed to provide systems that will load an already made application state and performs _n_ tasks under this context. The application state is made to be re-used, allowing to re-run (or loop) the application without the expensive bootstrapping required to build the state from scratch.
 
 ## States in Chevere
 
-Conventional PHP applications usually rely in just one state. For example, an `index.php` [entry point](https://en.wikipedia.org/wiki/Entry_point) serving under an HTTP web server. In Chevere we do the opposite, we build **many** entry points, known as application states.
+Conventional PHP applications usually rely in just one big application state. For example, an `index.php` [entry point](https://en.wikipedia.org/wiki/Entry_point) serving under an HTTP web server all the incoming requests.
 
-> 🧔🏾 Each different state should be optimized to **one** single task
+In Chevere we do the opposite, building **many** different application entry points for _n_ application states where each state is optimized for it single given task.
 
-A Chevere application may have one state for public HTTP traffic, another state for background processing, another for logged users, etc. Each state is built around the same business, it just changes how it will be used.
+> 🧔🏾 You see, it's all about loading only what you need at runtime and to have states that we can run in the event loop.
+
+Thanks to this, a Chevere application may have one state for public HTTP traffic, another state for background processing, another for logged users, etc. Each state is built around the same business, it just changes how it will be used and where it will run.
 
 ## Working with States
 

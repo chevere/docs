@@ -19,8 +19,6 @@ composer require chevere/chevere dev-master
 
 The above command will install Chevere and its dependencies at `vendor/`.
 
-> 👨🏾‍💻 Once installed, you can access the console at `vendor/bin/chevere`
-
 ## Now what?
 
 Chevere will now be available project-wide, just make sure to load `vendor/autoload.php` in your scripts.

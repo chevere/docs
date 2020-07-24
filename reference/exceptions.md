@@ -46,6 +46,7 @@ editLink: false
   - [RangeException](./Chevere/Exceptions/Core/RangeException.md)
   - [RuntimeException](./Chevere/Exceptions/Core/RuntimeException.md)
   - [ExceptionTrait](./Chevere/Exceptions/Core/Traits/ExceptionTrait.md)
+  - [TypeException](./Chevere/Exceptions/Core/TypeException.md)
   - [UnderflowException](./Chevere/Exceptions/Core/UnderflowException.md)
   - [UnexpectedValueException](./Chevere/Exceptions/Core/UnexpectedValueException.md)
 

@@ -2,7 +2,7 @@
 
 Cache refers to the system in charge of storing application states. It provides the ability to store _parts_ of the application, making easier to create performing running routines.
 
-### How it Works
+## How it Works
 
 Cache works on the file system, using `.php` files that return a PHP value. In the code below `file.php` returns a string.
 
@@ -56,7 +56,7 @@ $cache = $cache->withPut(
 );
 ```
 
-#### Cache: PUTS
+### Cache: PUTS
 
 The `puts` method provides access to the cache put log, which is an array containing details about `PUT` operations..
 

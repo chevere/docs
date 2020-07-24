@@ -1,6 +1,6 @@
 # Workspace
 
-The workspace refers to the working directory where Chevere is developed. 
+The workspace refers to the working directory where Chevere is developed.
 
 ## IDE
 
@@ -44,6 +44,7 @@ Tests
 └── Example
     └── ExampleTest.php
 ```
+
 > 🧙🏾 `Example` will be implemented in the namespace path and `ExampleTest` will be taken used as class name.
 
 #### Step 2: Inserting the snippet
@@ -57,21 +58,6 @@ Class name and namespace path is automatically resolved by the IDE.
 ![Snippets in action](./../../src/screen/snippets-in-action.gif "Snippets in action")
 
 > 🧙🏾 Header comment and `strict_types` declaration are automatically formatted on save
-
-Table below shows the prefix and description for built-in snippets.
-
-| Prefix               | Description                 |
-| -------------------- | --------------------------- |
-| `docblock-boolean`   | Insert a docblock boolean   |
-| `docblock-construct` | Insert a docblock construct |
-| `docblock-immutable` | Insert a docblock immutable |
-| `docblock-instance`  | Insert a docblock instance  |
-| `component`          | Create a component          |
-| `exception`          | Create an exception         |
-| `interface`          | Create an interface         |
-| `test-method`        | Create a test method        |
-| `test`               | Create a test               |
-| `trait`              | Create a trait              |
 
 ## Coding Standards
 
@@ -93,4 +79,3 @@ The [coding standard](../coding/coding-standard.md) is automatically implemented
 ```shell
 vendor/bin/phpunit -c <configuration file>
 ```
-

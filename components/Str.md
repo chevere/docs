@@ -6,8 +6,6 @@ Str is a collection of classes that interact with strings. Namespace `Chevere\Co
 
 Manipulating strings refers to the process of altering an argument of type `string`.
 
-### Str
-
 [StrInterface](../reference/Chevere/Interfaces/Str/StrInterface.md) describe the interface for a component in charge of string manipulation.
 
 ```php

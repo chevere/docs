@@ -55,4 +55,3 @@ Use `toString` method to access the document contents. In the example below, the
 ```php
 echo $console->toString() . "\n";
 ```
-

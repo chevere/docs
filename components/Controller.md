@@ -1,10 +1,10 @@
 # Controller
 
-Controller is the basic building block for incoming actions to your application. A controller will be in charge of handling the user input arguments and to drive it towards your application instructions.
-
-A Controller implements the [ControllerInterface](../reference/Chevere/Interfaces/Controller/ControllerInterface.md).
+Controller is the basic building block for incoming actions to your application. A controller will be in charge of handling the user input arguments, and to drive it towards your application instructions.
 
 ## Defining Controllers
+
+A Controller implements the [ControllerInterface](../reference/Chevere/Interfaces/Controller/ControllerInterface.md) and there's a base `Chevere\Components\Controller\Controller` controller that you can use.
 
 Code below defines `SampleController` class by extending `Controller`.
 
@@ -23,32 +23,11 @@ final class SampleController extends Controller
 }
 ```
 
-### Run
+### Controller Methods
 
-The `run` method defines the instruction to run when the controller will be executed. It is responsible of issuing a response.
+#### getDescription()
 
-The argument passed to `run` method implements [ControllerArgumentsInterface](../reference/Chevere/Interfaces/Controller/ControllerArgumentsInterface.md) and it will always reflect the parameters declaration.
-
-```php
-use Chevere\Interfaces\Controller\ControllerArgumentsInterface;
-use Chevere\Interfaces\Controller\ControllerResponseInterface;
-use Chevere\Components\Controller\ControllerResponse;
-
-public function run(
-    ControllerArgumentsInterface $args
-): ControllerResponseInterface
-{
-    return new ControllerResponse(true);
-}
-```
-
-#### Response
-
-Response of `run` method is an object implementing [ControllerResponseInterface](../reference/Chevere/Interfaces/Controller/ControllerResponseInterface.md), which can be success or fail and include some data.
-
-### Description
-
-The `getDescription` method is used to describe what the controller does.
+This method is used to define the controller description, which is what the controller does (by default).
 
 ```php
 public function getDescription(): string
@@ -57,74 +36,78 @@ public function getDescription(): string
 }
 ```
 
-### Parameters
+#### description()
 
-The `getParameters` method is used to describe the controller parameters by returning an object implementing [ControllerParametersInterface](../reference/Chevere/Interfaces/Controller/ControllerParametersInterface.md).
+This method is used to access the actual object instance description.
+
+#### getParameters()
+
+This method is used to define the default parameters.
+
+It must return a  an object implementing [ControllerParametersInterface](../reference/Chevere/Interfaces/Controller/ControllerParametersInterface.md), which is a collection of objects implementing [ControllerParameterInterface](../reference/Chevere/Interfaces/Controller/ControllerParameterInterface.md).
 
 ```php
 use Chevere\Interfaces\Controller\ControllerParametersInterface;
 use Chevere\Components\Controller\ControllerParameters;
 use Chevere\Components\Controller\ControllerParameter;
+use Chevere\Components\Controller\ControllerParameterOptional;
 
 public function getParameters(): ControllerParametersInterface
 {
     return (new ControllerParameters)
         ->withAdded(
-            new ControllerParameter(
-                'name',
-                new Regex('/^\w+$/')
-            )
+            (new ControllerParameter('id'))
+                ->withRegex('/^\d+$/')
+                ->withDescription('The user id.')
+        )
+        ->withAdded(
+            (new ControllerParameterOptional('alias'))
+                ->withRegex('/^\w+$/')
+                ->withDescription('The user alias.')
         );
 }
 ```
 
-#### Parameter
+For the code above, the argument value for parameter `id` must match against `/^d+$/` and it is required. In the other hand `alias` is an optional parameter that matches against `/^\w+$/`.
 
-Each controller parameter implements [ControllerParameterInterface](../reference/Chevere/Interfaces/Controller/ControllerParameterInterface.md), which wraps the parameter name and its regex.
+##### Parameter
 
-```php
-use Chevere\Components\Controller\ControllerParameter;
-use Chevere\Components\Regex\Regex;
+Each controller parameter implements [ControllerParameterInterface](../reference/Chevere/Interfaces/Controller/ControllerParameterInterface.md).
 
-$regex = new Regex('/^[0-9]+$/');
-$parameter = new ControllerParameter('id', $regex);
-```
+#### run()
 
-> For the code above, the argument value for parameter `name` must match against `/^\w+$/`.
+The `run` method defines the instruction to run. It is responsible of issuing a controller response.
 
-#### Parameter Optional
+##### Call
 
-By default, a controller parameter is created as required. Use `withIsRequired` method to make it optional by passing `false`.
+The argument passed to `run` method implements [ControllerArgumentsInterface](../reference/Chevere/Interfaces/Controller/ControllerArgumentsInterface.md) and it will always reflect the parameters declaration.
 
 ```php
-$parameter = $parameter->withIsRequired(false); 
-```
+use Chevere\Interfaces\Controller\ControllerArgumentsInterface;
+use Chevere\Interfaces\Controller\ControllerResponseInterface;
+use Chevere\Components\Controller\ControllerResponse;
 
-#### Parameter Description
-
-By default, a controller parameter is created without any description. Use `withDescription` method to add a description.
-
-```php
-$parameter = $parameter
-    ->withDescription('The numeric ID for the order');
-```
-
-### setUp & tearDown
-
-The `setUp` method is executed before the `run` method. The `tearDown` method is executed after the `run` method.
-
-Both methods allows to provide any kind of logic you may need to prepare/clean before and after executing `run` method.
-
-```php
-private resource $resource;
-
-public function setUp(): void
+public function run(ControllerArgumentsInterface $args): ControllerResponseInterface
 {
-    $this->resource = fopen('php://output', 'r+');
-}
-
-public function tearDown(): void
-{
-    fclose($this->resource);
+    // I can read $args...
+    return new ControllerResponse(true, []);
 }
 ```
+
+##### Response
+
+Response of `run` method is an object implementing [ControllerResponseInterface](../reference/Chevere/Interfaces/Controller/ControllerResponseInterface.md), which can be success (`true`) or failure (`false`) and it must provide an array for the response data.
+
+## Advanced controllers
+
+### Pluggable
+
+Controllers can be fully [pluggable](Pluggable.md) allowing to extend its the operation at runtime. You can use plugs to safely alter the controller behavior.
+
+### Serviceable
+
+Controllers can implement [service](Service.md) which allows to explicitly define the services required by a given controller.
+
+## Controller Runner
+
+The component in charge of running a controller is defined by the [ControllerRunnerInterface](../reference/Chevere/Interfaces/Controller/ControllerRunnerInterface.md). A controller runner take a controller and execute it against the provided controller arguments.

@@ -24,5 +24,6 @@ This is a list with the caveats of creating a portable application.
 * Can't cache type `resource`
 * Needs a shared layer for `DB` and `sessions`
 * Implies the use of `RPC`, `sockets`, `queues`, etc
+* Your stuff should be immutable
 
-> 🧔🏾 Don't panic! I will create Chevereto V4 and document how to achieve all the above
+> 🧔🏾 Don't panic! I will create Chevereto V4 and document how to achieve all the above.

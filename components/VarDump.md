@@ -44,7 +44,7 @@ $varDump = $varDump->withVars('a var', [], null);
 
 ### Processing the dump
 
-The method `process` is used to trigger the var dumping process. It requires to pass a [writer](./writer.md) where the dump information will be written.
+The method `process` is used to trigger the var dumping process. It requires to pass a [writer](Writer.md) where the dump information will be written.
 
 ```php
 use Chevere\Components\Writer\StreamWriter;
@@ -71,8 +71,4 @@ The following helper functions can be used to save some boilerplate.
 
 ## Replacing var_dump
 
-Function `xd` prints information about one of more variables to the output stream. It is a drop-in replacement for `var_dump`.
-
-Function `xdd` does the same as `xd`, but it dies.
-
-> 🧔🏾 Both `xd` and `xdd` are instance aware for [VarDumpInstance]() and [WritersInstance]()
+Function `xd` prints information about one of more variables to the output stream. It is a drop-in replacement for `var_dump`. `xdd` does the same as `xd`, but it dies.

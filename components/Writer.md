@@ -14,7 +14,7 @@ use Chevere\Components\Writer\Writers;
 $writers = new Writers;
 ```
 
-> 🧞 By default, it populates `out` to `php://stdout (w)` and `error` to `php://stderr (w)` 
+> 🧞 By default, it populates `out` and `error` to two different temp streams`.
 
 Methods `withOut`, `withError`, `withDebug` and `withLog` can be used to specify each writer.
 

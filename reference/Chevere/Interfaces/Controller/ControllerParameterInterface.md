@@ -19,7 +19,6 @@ Describes the component in charge of handling controller parameters.
 #### Parameters
 
 1. string `$name`
-2. [RegexInterface](../Regex/RegexInterface.md) `$regex`
 
 ::: danger THROWS
 - [ControllerParameterNameInvalidException](../../Exceptions/Controller/ControllerParameterNameInvalidException.md)
@@ -67,6 +66,23 @@ string
 
 ---
 
+### withRegex()
+
+Return an instance with the specified regex.
+
+#### Parameters
+
+1. string `$regex`
+
+::: tip RETURN
+ControllerParameterInterface
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified regex.
+
+---
+
 ### withDescription()
 
 Return an instance with the specified description.
@@ -81,22 +97,5 @@ ControllerParameterInterface
 
 This method MUST retain the state of the current instance, and return
 an instance that contains the specified description.
-
----
-
-### withIsRequired()
-
-Return an instance with the specified required flag.
-
-#### Parameters
-
-1. bool `$bool`
-
-::: tip RETURN
-ControllerParameterInterface
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified required flag.
 
 ---

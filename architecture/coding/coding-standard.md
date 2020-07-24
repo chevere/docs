@@ -18,19 +18,19 @@ Code style is implemented with [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PH
 
 ### Implementing our Code Style
 
-1. Add `chevere/code-style` remote as `code-style`.
+Add `chevere/code-style` remote as `code-style`.
 
 ```sh
 git remote add code-style git@github.com:chevere/code-style.git
 ```
 
-2. Fetch the `code-style` remote.
+Fetch the `code-style` remote.
 
 ```sh
 git fetch code-style
 ```
 
-3. Merge `code-style` into your working branch (for example, `master`).
+Merge `code-style` into your working branch (for example, `master`).
 
 ```sh
 git merge code-style/master --allow-unrelated-histories
