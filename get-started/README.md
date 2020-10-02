@@ -2,11 +2,13 @@
 
 ## What is Chevere?
 
-Chevere is a PHP development framework for building **extensible** server side applications. Unlike almost all other frameworks, Chevere is designed for *everything*, not just web. The core library provides the tooling needed to organize and run the logic of any given application like command line tools, Content Management Systems, headless-APIs and anything you may think of.
+Chevere is a PHP development framework for building extensible applications. Unlike almost all other frameworks, Chevere is designed for *everything*, not just web. The core library provides the tooling needed to organize and run the logic of any given application like command line tools, Content Management Systems, headless-APIs and anything you may think of.
 
-### Chevere meaning
+### Name meaning
 
-The name was ripped from [Chevereto](#origin) and the the word *[chévere](https://en.wiktionary.org/wiki/ch%C3%A9vere)* is an slang used in latin american countries. It literally means *cool*, *great* or *awesome*. The term has a generic connotation of good and can be used in almost any context that those two words can be used.
+The term *[chévere](https://en.wiktionary.org/wiki/ch%C3%A9vere)* is a very well known word in spanish speaking countries which means *cool*, *excellent*, *great*, *awesome*, *pretty*, *nice* and *magnific*. The term has a generic connotation of good and can be used in almost any positive context.
+
+The use of the term has roots in the [Chevereto](#origin) software, which simply means "chevere to".
 
 ## Core concepts
 
