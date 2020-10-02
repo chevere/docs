@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteEndpointInterface.php)
 
+## Implements
+
+- [DescriptionInterface](../Description/DescriptionInterface.md)
+
 ## Description
 
 Describes the component in charge of defining a route endpoint.
@@ -82,16 +86,6 @@ an instance that contains the specified `$description`.
 
 ---
 
-### description()
-
-Provides access to the description.
-
-::: tip RETURN
-string
-:::
-
----
-
 ### withoutParameter()
 
 Return an instance with the specified `$parameter` removed.
@@ -131,5 +125,15 @@ return [
     ],
 ];
 ```
+
+---
+
+### description()
+
+Provides access to the description.
+
+::: tip RETURN
+string
+:::
 
 ---

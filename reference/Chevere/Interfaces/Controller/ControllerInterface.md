@@ -8,35 +8,30 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerInterface.php)
 
+## Implements
+
+- [ActionInterface](../Action/ActionInterface.md)
+- [GetDescriptionInterface](../Description/GetDescriptionInterface.md)
+
 ## Description
 
 Describes the component in charge of handling controller instructions.
 
 ## Methods
 
-### getParameters()
-
-Defines the controller parameters.
-
-::: tip RETURN
-[ControllerParametersInterface](./ControllerParametersInterface.md)
-:::
-
----
-
 ### parameters()
 
 Provides access to the controller parameters defined with `getParameters()`.
 
 ::: tip RETURN
-[ControllerParametersInterface](./ControllerParametersInterface.md)
+[ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
 ### getDescription()
 
-Defines the controller description.
+Defines the default description.
 
 ::: tip RETURN
 string
@@ -44,26 +39,40 @@ string
 
 ---
 
-### description()
+### setUp()
 
-Provides access to the description defined with `getDescription()`.
+Returns a new instance with setup made. Useful to wrap pluggable instructions on parameters and description.
 
 ::: tip RETURN
-string
+ControllerInterface
+:::
+
+---
+
+### __construct()
+
+---
+
+### getParameters()
+
+Defines the default parameters.
+
+::: tip RETURN
+[ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
 ### run()
 
-This method will be called when running the controller.
+Method called when running the action. This method MUST not alter the state of the instance.
 
 #### Parameters
 
-1. [ControllerArgumentsInterface](./ControllerArgumentsInterface.md) `$controllerArguments`
+1. [ArgumentsInterface](../Parameter/ArgumentsInterface.md) `$arguments`
 
 ::: tip RETURN
-[ControllerResponseInterface](./ControllerResponseInterface.md)
+[ResponseInterface](../Response/ResponseInterface.md)
 :::
 
 ---

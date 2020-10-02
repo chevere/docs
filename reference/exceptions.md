@@ -22,12 +22,9 @@ editLink: false
 
 ## Controller
 
-  - [ControllerArgumentRegexMatchException](./Chevere/Exceptions/Controller/ControllerArgumentRegexMatchException.md)
-  - [ControllerArgumentRequiredException](./Chevere/Exceptions/Controller/ControllerArgumentRequiredException.md)
   - [ControllerInterfaceException](./Chevere/Exceptions/Controller/ControllerInterfaceException.md)
   - [ControllerNameException](./Chevere/Exceptions/Controller/ControllerNameException.md)
   - [ControllerNotExistsException](./Chevere/Exceptions/Controller/ControllerNotExistsException.md)
-  - [ControllerParameterNameInvalidException](./Chevere/Exceptions/Controller/ControllerParameterNameInvalidException.md)
 
 ## Core
 
@@ -85,6 +82,12 @@ editLink: false
 ## Http
 
   - [MethodNotAllowedException](./Chevere/Exceptions/Http/MethodNotAllowedException.md)
+
+## Parameter
+
+  - [ArgumentRegexMatchException](./Chevere/Exceptions/Parameter/ArgumentRegexMatchException.md)
+  - [ArgumentRequiredException](./Chevere/Exceptions/Parameter/ArgumentRequiredException.md)
+  - [ParameterNameInvalidException](./Chevere/Exceptions/Parameter/ParameterNameInvalidException.md)
 
 ## Plugin
 

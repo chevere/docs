@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ControllerParameterNameInvalidException
+# ArgumentRegexMatchException
 
-`Chevere\Exceptions\Controller\ControllerParameterNameInvalidException`
+`Chevere\Exceptions\Parameter\ArgumentRegexMatchException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Controller/ControllerParameterNameInvalidException.php)
+[view source](https://github.com/chevere/chevere/blob/master/exceptions/Parameter/ArgumentRegexMatchException.php)
 
 ## Implements
 
@@ -18,7 +18,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when parameter name is invalid.
+Exception thrown when the argument fails to match the regex.
 
 ## Methods
 

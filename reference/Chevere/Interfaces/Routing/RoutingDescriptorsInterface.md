@@ -18,14 +18,6 @@ Describes the component in charge of collecting objects implementing `RoutingDes
 
 ## Methods
 
-### getGenerator()
-
-::: tip RETURN
-[Generator](https://www.php.net/manual/class.generator)
-:::
-
----
-
 ### withAdded()
 
 Return an instance with the specified `$descriptor` added.
@@ -35,7 +27,6 @@ Return an instance with the specified `$descriptor` added.
 1. [RoutingDescriptorInterface](./RoutingDescriptorInterface.md) `$descriptor`
 
 ::: danger THROWS
-- [RoutingDescriptorAlreadyAddedException](../../Exceptions/Routing/RoutingDescriptorAlreadyAddedException.md)
 - [OverflowException](../../Exceptions/Core/OverflowException.md)
 :::
 
@@ -69,11 +60,19 @@ bool
 1. int `$position`
 
 ::: danger THROWS
-- [OutOfRangeException](../../Exceptions/Core/OutOfRangeException.md)
+- ⚠ Unknown type `OutOfBoundsException` declared in `@throws` tag`
 :::
 
 ::: tip RETURN
 [RoutingDescriptorInterface](./RoutingDescriptorInterface.md)
+:::
+
+---
+
+### getGenerator()
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---

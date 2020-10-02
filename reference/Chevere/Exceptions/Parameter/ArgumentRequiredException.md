@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ControllerArgumentRegexMatchException
+# ArgumentRequiredException
 
-`Chevere\Exceptions\Controller\ControllerArgumentRegexMatchException`
+`Chevere\Exceptions\Parameter\ArgumentRequiredException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Controller/ControllerArgumentRegexMatchException.php)
+[view source](https://github.com/chevere/chevere/blob/master/exceptions/Parameter/ArgumentRequiredException.php)
 
 ## Implements
 
@@ -18,7 +18,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when the controller argument fails to match the regex.
+Exception thrown when missing required arguments.
 
 ## Methods
 

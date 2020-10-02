@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ControllerArgumentsInterface
+# ArgumentsInterface
 
-`Chevere\Interfaces\Controller\ControllerArgumentsInterface`
+`Chevere\Interfaces\Parameter\ArgumentsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerArgumentsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/interfaces/Parameter/ArgumentsInterface.php)
 
 ## Implements
 
@@ -14,7 +14,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of handling controller arguments.
+Describes the component in charge of defining an argumented parameters set.
 
 ## Methods
 
@@ -22,13 +22,21 @@ Describes the component in charge of handling controller arguments.
 
 #### Parameters
 
-1. [ControllerParametersInterface](./ControllerParametersInterface.md) `$parameters`
+1. [ParametersInterface](./ParametersInterface.md) `$parameters`
 2. array `$arguments`
 
 ::: danger THROWS
-- [ControllerArgumentRequiredException](../../Exceptions/Controller/ControllerArgumentRequiredException.md)
+- [ArgumentRequiredException](../../Exceptions/Parameter/ArgumentRequiredException.md)
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
-- [ControllerArgumentRegexMatchException](../../Exceptions/Controller/ControllerArgumentRegexMatchException.md)
+- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md)
+:::
+
+---
+
+### parameters()
+
+::: tip RETURN
+[ParametersInterface](./ParametersInterface.md)
 :::
 
 ---
@@ -59,13 +67,13 @@ Return an instance with the specified controller argument.
 2. string `$value`
 
 ::: danger THROWS
-- [ControllerArgumentRegexMatchException](../../Exceptions/Controller/ControllerArgumentRegexMatchException.md)
+- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md)
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
 If `$name` is not a known controller parameter.
 :::
 
 ::: tip RETURN
-ControllerArgumentsInterface
+ArgumentsInterface
 :::
 
 This method MUST retain the state of the current instance, and return

@@ -28,7 +28,7 @@ Executes the controller with the given `$arguments`.
 
 #### Parameters
 
-1. [ControllerArgumentsInterface](./ControllerArgumentsInterface.md) `$arguments`
+1. [ArgumentsInterface](../Parameter/ArgumentsInterface.md) `$arguments`
 
 ::: tip RETURN
 [ControllerExecutedInterface](./ControllerExecutedInterface.md)

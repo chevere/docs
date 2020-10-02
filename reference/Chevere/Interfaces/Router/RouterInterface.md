@@ -24,7 +24,6 @@ Return an instance with the specified added `$routable`.
 2. string `$group`
 
 ::: danger THROWS
-
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
 if `$group` is invalid.
 - [OverflowException](../../Exceptions/Core/OverflowException.md)

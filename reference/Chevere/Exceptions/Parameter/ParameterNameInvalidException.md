@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ControllerArgumentRequiredException
+# ParameterNameInvalidException
 
-`Chevere\Exceptions\Controller\ControllerArgumentRequiredException`
+`Chevere\Exceptions\Parameter\ParameterNameInvalidException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Controller/ControllerArgumentRequiredException.php)
+[view source](https://github.com/chevere/chevere/blob/master/exceptions/Parameter/ParameterNameInvalidException.php)
 
 ## Implements
 
@@ -18,7 +18,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when missing required arguments.
+Exception thrown when parameter name is invalid.
 
 ## Methods
 

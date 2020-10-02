@@ -36,30 +36,6 @@ array (
 
 ## Methods
 
-### __construct()
-
-#### Parameters
-
-1. string `$string`
-
-::: danger THROWS
-- [RegexInvalidException](../../Exceptions/Regex/RegexInvalidException.md)
-:::
-
----
-
-### assertNoCapture()
-
-::: danger THROWS
-- ⚠ Unknown type `RegexException` declared in `@throws` tag`
-:::
-
-::: tip RETURN
-void
-:::
-
----
-
 ### toNoDelimiters()
 
 Provides access to the the regex string without delimiters.
@@ -76,6 +52,42 @@ Provides access to the regex string without delimiters and without anchors (`^`,
 
 ::: tip RETURN
 string
+:::
+
+---
+
+### match()
+
+Matches string.
+
+#### Parameters
+
+1. string `$string`
+
+::: danger THROWS
+- ⚠ Unknown type `RuntimeException` declared in `@throws` tag`
+:::
+
+::: tip RETURN
+array
+:::
+
+---
+
+### matchAll()
+
+Matches all string.
+
+#### Parameters
+
+1. string `$string`
+
+::: danger THROWS
+- ⚠ Unknown type `RuntimeException` declared in `@throws` tag`
+:::
+
+::: tip RETURN
+array
 :::
 
 ---
