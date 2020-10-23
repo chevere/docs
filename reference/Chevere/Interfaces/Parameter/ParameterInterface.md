@@ -84,6 +84,64 @@ an instance that contains the specified `$description`.
 
 ---
 
+### withAddedAttribute()
+
+Return an instance with the specified `$attribute`.
+
+#### Parameters
+
+1. string `$attribute`
+
+::: tip RETURN
+ParameterInterface
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$attribute`.
+
+---
+
+### withRemovedAttribute()
+
+Return an instance with the specified `$attribute` removed.
+
+#### Parameters
+
+1. string `$attribute`
+
+::: tip RETURN
+ParameterInterface
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$attribute` removed.
+
+---
+
+### hasAttribute()
+
+Indicates whether the instance has the given `$attribute`.
+
+#### Parameters
+
+1. string `$attribute`
+
+::: tip RETURN
+bool
+:::
+
+---
+
+### attributes()
+
+Provides access to the attributes instance.
+
+::: tip RETURN
+Ds\Set
+:::
+
+---
+
 ### description()
 
 Provides access to the description.

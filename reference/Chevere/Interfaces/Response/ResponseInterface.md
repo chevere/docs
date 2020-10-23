@@ -22,6 +22,26 @@ Describes the component in charge of handling the response.
 
 ---
 
+### uuid()
+
+Provides access to response uuid.
+
+::: tip RETURN
+string
+:::
+
+---
+
+### token()
+
+Provides access to response token.
+
+::: tip RETURN
+string
+:::
+
+---
+
 ### data()
 
 Provides access to response data.

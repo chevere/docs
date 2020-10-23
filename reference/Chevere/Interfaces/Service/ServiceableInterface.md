@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of defining a serviceable instance.
+Describes the component in charge of defining a serviceable.
 
 ## Methods
 

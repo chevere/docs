@@ -108,7 +108,7 @@ Provides access to the argument value for the parameter `$name`.
 :::
 
 ::: tip RETURN
-void
+string
 :::
 
 ---

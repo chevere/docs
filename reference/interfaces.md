@@ -9,6 +9,11 @@ editLink: false
 
   - [ActionInterface](./Chevere/Interfaces/Action/ActionInterface.md)
 
+## Attribute
+
+  - [ConditionInterface](./Chevere/Interfaces/Attribute/ConditionInterface.md)
+  - [ConditionsInterface](./Chevere/Interfaces/Attribute/ConditionsInterface.md)
+
 ## Breadcrumb
 
   - [BreadcrumbInterface](./Chevere/Interfaces/Breadcrumb/BreadcrumbInterface.md)
