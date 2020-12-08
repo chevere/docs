@@ -6,11 +6,13 @@ editLink: false
 
 `Chevere\Interfaces\Spec\SpecEndpointsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecEndpointsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecEndpointsInterface.php)
 
-## Implements
+## Extends
 
-- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- [MappedInterface](../DataStructures/MappedInterface.md)
+- [GetGeneratorInterface](../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description
@@ -59,7 +61,7 @@ Returns the group spec identified by its `$methodName`.
 1. string `$methodName`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -70,20 +72,10 @@ string
 
 ### keys()
 
-Provides access to the map keys.
+Provides access to the object keys.
 
 ::: tip RETURN
 array
-:::
-
----
-
-### mapCopy()
-
-Provides a deep copy of the internal map.
-
-::: tip RETURN
-Ds\Map
 :::
 
 ---

@@ -6,10 +6,13 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ParametersInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Parameter/ParametersInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ParametersInterface.php)
 
-## Implements
+## Extends
 
+- [MappedInterface](../DataStructures/MappedInterface.md)
+- [GetGeneratorInterface](../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description
@@ -26,32 +29,16 @@ Describes the component in charge of collecting objects implementing `ParameterI
 
 ---
 
-### toArray()
+### withAddedRequired()
 
-Provides access to the array representation of this instance.
-
-::: tip RETURN
-array
-:::
-
-```php
-return [
-    'name' => $parameter,
-];
-```
-
----
-
-### withAdded()
-
-Return an instance with the specified `$parameter` instance added.
+Return an instance with the specified required `$parameter` instance added.
 
 #### Parameters
 
 1. [ParameterInterface](./ParameterInterface.md) `$parameter`
 
 ::: danger THROWS
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -59,7 +46,28 @@ ParametersInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$parameter` instance added.
+an instance that contains the specified required `$parameter` instance added.
+
+---
+
+### withAddedOptional()
+
+Return an instance with the specified optional `$parameter` instance added.
+
+#### Parameters
+
+1. [ParameterInterface](./ParameterInterface.md) `$parameter`
+
+::: danger THROWS
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
+:::
+
+::: tip RETURN
+ParametersInterface
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified optional `$parameter` instance added.
 
 ---
 
@@ -72,7 +80,7 @@ Return an instance with the specified `$parameter` modifying an already added pa
 1. [ParameterInterface](./ParameterInterface.md) `$parameter`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -86,11 +94,47 @@ an instance that contains the specified `$parameter` modifying an already added 
 
 ### has()
 
-Indicates whether the instance has a parameter by name `$parameter`.
+Indicates whether the instance has a parameter by name.
 
 #### Parameters
 
 1. string `$parameter`
+
+::: tip RETURN
+bool
+:::
+
+---
+
+### isRequired()
+
+Indicates whether the `$parameter` identified by its name is required.
+
+#### Parameters
+
+1. string `$parameter`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+:::
+
+::: tip RETURN
+bool
+:::
+
+---
+
+### isOptional()
+
+Indicates whether the `$parameter` identified by its name is optional.
+
+#### Parameters
+
+1. string `$parameter`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+:::
 
 ::: tip RETURN
 bool
@@ -105,11 +149,37 @@ bool
 1. string `$parameter`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
 [ParameterInterface](./ParameterInterface.md)
+:::
+
+---
+
+### required()
+
+::: tip RETURN
+Ds\Set
+:::
+
+---
+
+### optional()
+
+::: tip RETURN
+Ds\Set
+:::
+
+---
+
+### keys()
+
+Provides access to the object keys.
+
+::: tip RETURN
+array
 :::
 
 ---

@@ -6,15 +6,15 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ArgumentsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Parameter/ArgumentsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ArgumentsInterface.php)
 
-## Implements
+## Extends
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 
 ## Description
 
-Describes the component in charge of defining an argumented parameters set.
+Describes the component in charge of defining a set of parameters with arguments.
 
 ## Methods
 
@@ -23,17 +23,19 @@ Describes the component in charge of defining an argumented parameters set.
 #### Parameters
 
 1. [ParametersInterface](./ParametersInterface.md) `$parameters`
-2. array `$arguments`
+2. mixed `$namedArguments`
 
 ::: danger THROWS
-- [ArgumentRequiredException](../../Exceptions/Parameter/ArgumentRequiredException.md)
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
-- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md)
+- [ArgumentRequiredException](../../Exceptions/Parameter/ArgumentRequiredException.md) 
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md) 
 :::
 
 ---
 
 ### parameters()
+
+Provides access to the parameters instance.
 
 ::: tip RETURN
 [ParametersInterface](./ParametersInterface.md)
@@ -51,7 +53,7 @@ array
 
 ```php
 return [
-    'parameter_name' => 'argument',
+    'parameterName' => 'argument',
 ];
 ```
 
@@ -64,12 +66,11 @@ Return an instance with the specified controller argument.
 #### Parameters
 
 1. string `$name`
-2. string `$value`
+2.  `$value`
 
 ::: danger THROWS
-- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md)
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
-If `$name` is not a known controller parameter.
+- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md) 
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) If `$name` is not a known controller parameter.
 :::
 
 ::: tip RETURN
@@ -104,11 +105,106 @@ Provides access to the argument value for the parameter `$name`.
 1. string `$name`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+:::
+
+::: tip RETURN
+void
+:::
+
+---
+
+### getBoolean()
+
+Provides access to the argument value for the parameter `$boolean` type-hinted as boolean.
+
+#### Parameters
+
+1. string `$boolean`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [TypeError](https://www.php.net/manual/class.typeerror) 
+:::
+
+::: tip RETURN
+bool
+:::
+
+---
+
+### getString()
+
+Provides access to the argument value for the parameter `$string` type-hinted as string.
+
+#### Parameters
+
+1. string `$string`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [TypeError](https://www.php.net/manual/class.typeerror) 
 :::
 
 ::: tip RETURN
 string
+:::
+
+---
+
+### getInteger()
+
+Provides access to the argument value for the parameter `$integer` type-hinted as integer.
+
+#### Parameters
+
+1. string `$integer`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [TypeError](https://www.php.net/manual/class.typeerror) 
+:::
+
+::: tip RETURN
+int
+:::
+
+---
+
+### getFloat()
+
+Provides access to the argument value for the parameter `$float` type-hinted as float.
+
+#### Parameters
+
+1. string `$float`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [TypeError](https://www.php.net/manual/class.typeerror) 
+:::
+
+::: tip RETURN
+float
+:::
+
+---
+
+### getArray()
+
+Provides access to the argument value for the parameter `$array` type-hinted as array.
+
+#### Parameters
+
+1. string `$array`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [TypeError](https://www.php.net/manual/class.typeerror) 
+:::
+
+::: tip RETURN
+array
 :::
 
 ---

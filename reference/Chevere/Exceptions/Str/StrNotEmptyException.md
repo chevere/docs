@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrNotEmptyException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Str/StrNotEmptyException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrNotEmptyException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

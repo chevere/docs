@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathNotAbsoluteException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Filesystem/PathNotAbsoluteException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathNotAbsoluteException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

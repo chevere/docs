@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Spec\Specs\RoutableSpecInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/Specs/RoutableSpecInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/Specs/RoutableSpecInterface.php)
 
-## Implements
+## Extends
 
 - [SpecInterface](../SpecInterface.md)
 - [ToArrayInterface](../../To/ToArrayInterface.md)

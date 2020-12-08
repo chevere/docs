@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\FilesystemException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Filesystem/FilesystemException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/FilesystemException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

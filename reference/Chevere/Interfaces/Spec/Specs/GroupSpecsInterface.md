@@ -6,11 +6,13 @@ editLink: false
 
 `Chevere\Interfaces\Spec\Specs\GroupSpecsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/Specs/GroupSpecsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/Specs/GroupSpecsInterface.php)
 
-## Implements
+## Extends
 
-- [DsMapInterface](../../DataStructures/DsMapInterface.md)
+- [MappedInterface](../../DataStructures/MappedInterface.md)
+- [GetGeneratorInterface](../../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description
@@ -59,7 +61,7 @@ Returns the group spec identified by its `$groupName`.
 1. string `$groupName`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -78,20 +80,10 @@ Returns the group spec identified by its `$groupName`.
 
 ### keys()
 
-Provides access to the map keys.
+Provides access to the object keys.
 
 ::: tip RETURN
 array
-:::
-
----
-
-### mapCopy()
-
-Provides a deep copy of the internal map.
-
-::: tip RETURN
-Ds\Map
 :::
 
 ---

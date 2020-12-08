@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Http\HttpStatusInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Http/HttpStatusInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Http/HttpStatusInterface.php)
 
 ## Description
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\PlugsMapCacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugsMapCacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/PlugsMapCacheInterface.php)
 
 ## Description
 
@@ -41,7 +41,7 @@ Return an instance with the specified `$plugsMap`.
 1. [PlugsMapInterface](./PlugsMapInterface.md) `$plugsMap`
 
 ::: danger THROWS
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ::: tip RETURN
@@ -76,7 +76,7 @@ Returns the plugs queue typed for `$className`.
 1. string `$className`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

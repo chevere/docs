@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\HooksQueueInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/Hooks/HooksQueueInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/Plugs/Hooks/HooksQueueInterface.php)
 
-## Implements
+## Extends
 
 - [PlugsQueueTypedInterface](../../PlugsQueueTypedInterface.md)
 

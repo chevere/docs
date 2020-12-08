@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\RoutedInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RoutedInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/RoutedInterface.php)
 
 ## Description
 
@@ -18,7 +18,7 @@ Describes the component in charge of defining a routed route.
 
 #### Parameters
 
-1. [ControllerNameInterface](../Controller/ControllerNameInterface.md) `$controllerName`
+1. [ControllerNameInterface](../Action/ControllerNameInterface.md) `$controllerName`
 2. array `$arguments`
 
 ---
@@ -28,7 +28,17 @@ Describes the component in charge of defining a routed route.
 Provides access to the `$controllerName` instance.
 
 ::: tip RETURN
-[ControllerNameInterface](../Controller/ControllerNameInterface.md)
+[ControllerNameInterface](../Action/ControllerNameInterface.md)
+:::
+
+---
+
+### getController()
+
+Provides access to a new `$controllerName` instance.
+
+::: tip RETURN
+[ControllerInterface](../Action/ControllerInterface.md)
 :::
 
 ---

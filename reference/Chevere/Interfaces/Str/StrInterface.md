@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Str\StrInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Str/StrInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Str/StrInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 

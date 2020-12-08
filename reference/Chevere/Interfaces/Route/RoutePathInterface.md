@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Route\RoutePathInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RoutePathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RoutePathInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
@@ -25,8 +25,8 @@ Describes the component in charge of handling route paths.
 1. string `$path`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
-- [LogicException](../../Exceptions/Core/LogicException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
+- [LogicException](../../Exceptions/Core/LogicException.md) 
 :::
 
 ---
@@ -36,7 +36,7 @@ Describes the component in charge of handling route paths.
 Provides access to the wildcards instance.
 
 ::: tip RETURN
-[RouteWildcardsInterface](./RouteWildcardsInterface.md)
+[WildcardsInterface](./WildcardsInterface.md)
 :::
 
 ---

@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Action\ActionInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Action/ActionInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Action/ActionInterface.php)
 
-## Implements
+## Extends
 
 - [GetDescriptionInterface](../Description/GetDescriptionInterface.md)
 
@@ -24,7 +24,7 @@ Describes the component in charge of defining a single action.
 
 ### getParameters()
 
-Defines the default parameters.
+Defines parameters.
 
 ::: tip RETURN
 [ParametersInterface](../Parameter/ParametersInterface.md)
@@ -32,16 +32,70 @@ Defines the default parameters.
 
 ---
 
-### run()
+### parameters()
 
-Method called when running the action. This method MUST not alter the state of the instance.
+Provides access to the parameters.
+
+::: tip RETURN
+[ParametersInterface](../Parameter/ParametersInterface.md)
+:::
+
+---
+
+### getResponseDataParameters()
+
+Defines expected response data parameters when executing `run` method.
+
+::: tip RETURN
+[ParametersInterface](../Parameter/ParametersInterface.md)
+:::
+
+---
+
+### responseDataParameters()
+
+Provides access to the expected response data parameters.
+
+::: tip RETURN
+[ParametersInterface](../Parameter/ParametersInterface.md)
+:::
+
+---
+
+### getResponseSuccess()
+
+Retrieves a new success response with type-hinted data.
 
 #### Parameters
 
-1. [ArgumentsInterface](../Parameter/ArgumentsInterface.md) `$arguments`
+1. array `$data`
 
 ::: tip RETURN
-[ResponseInterface](../Response/ResponseInterface.md)
+[ResponseSuccessInterface](../Response/ResponseSuccessInterface.md)
+:::
+
+---
+
+### description()
+
+Provides access to the description.
+
+::: tip RETURN
+string
+:::
+
+---
+
+### run()
+
+Method called when running the action.
+
+#### Parameters
+
+1. array `$arguments`
+
+::: tip RETURN
+[ResponseSuccessInterface](../Response/ResponseSuccessInterface.md)
 :::
 
 ---

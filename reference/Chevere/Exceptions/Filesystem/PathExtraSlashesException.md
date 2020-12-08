@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathExtraSlashesException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Filesystem/PathExtraSlashesException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathExtraSlashesException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

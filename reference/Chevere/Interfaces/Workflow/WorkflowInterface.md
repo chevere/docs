@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Workflow\WorkflowInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Workflow/WorkflowInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Workflow/WorkflowInterface.php)
 
-## Implements
+## Extends
 
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -56,15 +56,14 @@ string
 
 ### withAdded()
 
-Return an instance with the specified `$task`.
+Return an instance with the specified `$step`.
 
 #### Parameters
 
-1. string `$step`
-2. [TaskInterface](./TaskInterface.md) `$task`
+1. [StepInterface](./StepInterface.md) `$step`
 
 ::: danger THROWS
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -72,22 +71,21 @@ WorkflowInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$task`.
+an instance that contains the specified `$step`.
 
 ---
 
 ### withAddedBefore()
 
-Return an instance with the specified `$task` added before `$before`.
+Return an instance with the specified `$step` added before `$before`.
 
 #### Parameters
 
 1. string `$before`
-2. string `$step`
-3. [TaskInterface](./TaskInterface.md) `$task`
+2. [StepInterface](./StepInterface.md) `$step`
 
 ::: danger THROWS
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -95,22 +93,21 @@ WorkflowInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$task` added before `$before`.
+an instance that contains the specified `$step` added before `$before`.
 
 ---
 
 ### withAddedAfter()
 
-Return an instance with the specified `$task` added after `$after`.
+Return an instance with the specified `$step` added after `$after`.
 
 #### Parameters
 
 1. string `$after`
-2. string `$step`
-3. [TaskInterface](./TaskInterface.md) `$task`
+2. [StepInterface](./StepInterface.md) `$step`
 
 ::: danger THROWS
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -118,7 +115,7 @@ WorkflowInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$task` added after `$after`.
+an instance that contains the specified `$step` added after `$after`.
 
 ---
 
@@ -141,7 +138,7 @@ bool
 1. string `$step`
 
 ::: tip RETURN
-[TaskInterface](./TaskInterface.md)
+[StepInterface](./StepInterface.md)
 :::
 
 ---
@@ -202,7 +199,7 @@ return ['step', 'var'];
 
 ### getExpected()
 
-Provides access to the expected return arguments.
+Provides access to the expected return arguments for the given `$step`.
 
 #### Parameters
 

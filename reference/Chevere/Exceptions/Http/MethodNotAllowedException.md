@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Http\MethodNotAllowedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Http/MethodNotAllowedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Http/MethodNotAllowedException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

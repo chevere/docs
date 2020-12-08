@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Route\RouteWildcardNotFoundException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Route/RouteWildcardNotFoundException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Route/RouteWildcardNotFoundException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

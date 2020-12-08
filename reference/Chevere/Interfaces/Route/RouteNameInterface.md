@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Route\RouteNameInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteNameInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RouteNameInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
@@ -35,10 +35,8 @@ Type `string`
 1. string `$name`
 
 ::: danger THROWS
-- [StrAssertException](../../Exceptions/Str/StrAssertException.md)
-If `$name` is empty or if it is ctype-space.
-- [RouteNameInvalidException](../../Exceptions/Route/RouteNameInvalidException.md)
-if `$name` doesn't match `self::REGEX`
+- [StrAssertException](../../Exceptions/Str/StrAssertException.md) If `$name` is empty or if it is ctype-space.
+- [RouteNameInvalidException](../../Exceptions/Route/RouteNameInvalidException.md) if `$name` doesn't match `self::REGEX`
 :::
 
 ---

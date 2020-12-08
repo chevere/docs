@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\DirInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/DirInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/DirInterface.php)
 
 ## Description
 
@@ -21,8 +21,8 @@ Describes the component in charge of interacting with filesystem directories.
 1. [PathInterface](./PathInterface.md) `$path`
 
 ::: danger THROWS
-- [PathIsFileException](../../Exceptions/Filesystem/PathIsFileException.md)
-- [DirTailException](../../Exceptions/Filesystem/DirTailException.md)
+- [PathIsFileException](../../Exceptions/Filesystem/PathIsFileException.md) 
+- [DirTailException](../../Exceptions/Filesystem/DirTailException.md) 
 :::
 
 ---
@@ -46,7 +46,7 @@ Creates the directory.
 1. int `$mode`
 
 ::: danger THROWS
-- [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
+- [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md) 
 :::
 
 ::: tip RETURN
@@ -78,10 +78,8 @@ void
 Removes the contents from a path without deleting the path.
 
 ::: danger THROWS
-- [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
-if unable to remove the directory
-- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
-if unable to remove a file in the directory
+- [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md) if unable to remove the directory
+- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) if unable to remove a file in the directory
 :::
 
 ::: tip RETURN
@@ -95,8 +93,7 @@ array
 Removes the directory.
 
 ::: danger THROWS
-- [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md)
-if unable to remove the directory
+- [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md) if unable to remove the directory
 :::
 
 ::: tip RETURN
@@ -114,7 +111,7 @@ Gets a child `DirInterface` for the added path.
 1. string `$path`
 
 ::: danger THROWS
-- [PathInvalidException](../../Exceptions/Filesystem/PathInvalidException.md)
+- [PathInvalidException](../../Exceptions/Filesystem/PathInvalidException.md) 
 :::
 
 ::: tip RETURN

@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableHandlerDocumentInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableHandlerDocumentInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ThrowableHandler/ThrowableHandlerDocumentInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 

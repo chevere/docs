@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ControllerExecutedInterface
+# ActionExecutedInterface
 
-`Chevere\Interfaces\Controller\ControllerExecutedInterface`
+`Chevere\Interfaces\Action\ActionExecutedInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Controller/ControllerExecutedInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Action/ActionExecutedInterface.php)
 
 ## Description
 
@@ -52,7 +52,7 @@ Return an instance with the specified throwable, with its exit code.
 2. int `$code`
 
 ::: tip RETURN
-ControllerExecutedInterface
+ActionExecutedInterface
 :::
 
 This method MUST retain the state of the current instance, and return

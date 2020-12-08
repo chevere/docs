@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\VarDump\VarDumpProcessorInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpProcessorInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/VarDump/VarDumpProcessorInterface.php)
 
 ## Description
 
@@ -31,7 +31,7 @@ Type `integer`
 1. [VarDumperInterface](./VarDumperInterface.md) `$varDumper`
 
 ::: danger THROWS
-- ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---

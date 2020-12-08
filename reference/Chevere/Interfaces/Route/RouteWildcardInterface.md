@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Route\RouteWildcardInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteWildcardInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RouteWildcardInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
@@ -52,7 +52,7 @@ Type `string`
 2. [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md) `$match`
 
 ::: danger THROWS
-- [RouteWildcardInvalidException](../../Exceptions/Route/RouteWildcardInvalidException.md)
+- [RouteWildcardInvalidException](../../Exceptions/Route/RouteWildcardInvalidException.md) 
 :::
 
 ---

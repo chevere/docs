@@ -6,10 +6,11 @@ editLink: false
 
 `Chevere\Exceptions\Core\OutOfBoundsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Core/OutOfBoundsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/OutOfBoundsException.php)
 
 ## Implements
 
+- [Stringable](https://www.php.net/manual/class.stringable)
 - [Throwable](https://www.php.net/manual/class.throwable)
 
 ## Extends

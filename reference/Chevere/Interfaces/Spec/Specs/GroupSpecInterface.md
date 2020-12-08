@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Spec\Specs\GroupSpecInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/Specs/GroupSpecInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/Specs/GroupSpecInterface.php)
 
-## Implements
+## Extends
 
 - [SpecInterface](../SpecInterface.md)
 - [ToArrayInterface](../../To/ToArrayInterface.md)

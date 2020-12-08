@@ -2,19 +2,19 @@
 editLink: false
 ---
 
-# JobInterface
+# StepNameInterface
 
-`Chevere\Interfaces\Workflow\JobInterface`
+`Chevere\Interfaces\Workflow\StepNameInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Workflow/JobInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Workflow/StepNameInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
 ## Description
 
-Describes the component in charge of defining a job unit name.
+Describes the component in charge of defining a step unit name.
 
 ## Constants
 
@@ -35,7 +35,7 @@ Type `string`
 1. string `$name`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---

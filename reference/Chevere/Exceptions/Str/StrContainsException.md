@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrContainsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Str/StrContainsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrContainsException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Router\RouteIdentifierInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouteIdentifierInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/RouteIdentifierInterface.php)
 
-## Implements
+## Extends
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 
@@ -26,7 +26,7 @@ Describes the component in charge of describing the route identifier.
 2. string `$name`
 
 ::: danger THROWS
-- ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---

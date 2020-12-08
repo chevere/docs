@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Serialize\UnserializeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Serialize/UnserializeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Serialize/UnserializeInterface.php)
 
 ## Description
 
@@ -21,7 +21,7 @@ Describes the component in charge of handling unserialize.
 1. string `$serialized`
 
 ::: danger THROWS
-- [UnserializeException](../../Exceptions/Serialize/UnserializeException.md)
+- [UnserializeException](../../Exceptions/Serialize/UnserializeException.md) 
 :::
 
 ---

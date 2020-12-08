@@ -6,11 +6,13 @@ editLink: false
 
 `Chevere\Interfaces\Route\RouteEndpointsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteEndpointsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RouteEndpointsInterface.php)
 
-## Implements
+## Extends
 
-- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- [MappedInterface](../DataStructures/MappedInterface.md)
+- [GetGeneratorInterface](../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description
@@ -59,7 +61,7 @@ Provides access to the RouteEndpointInterface identified by `$key`.
 1. string `$key`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -78,20 +80,10 @@ Provides access to the RouteEndpointInterface identified by `$key`.
 
 ### keys()
 
-Provides access to the map keys.
+Provides access to the object keys.
 
 ::: tip RETURN
 array
-:::
-
----
-
-### mapCopy()
-
-Provides a deep copy of the internal map.
-
-::: tip RETURN
-Ds\Map
 :::
 
 ---

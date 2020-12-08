@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Route\RouteWildcardConflictException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Route/RouteWildcardConflictException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Route/RouteWildcardConflictException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

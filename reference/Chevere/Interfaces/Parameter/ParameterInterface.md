@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Parameter/ParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ParameterInterface.php)
 
-## Implements
+## Extends
 
 - [DescriptionInterface](../Description/DescriptionInterface.md)
 
@@ -17,18 +17,6 @@ editLink: false
 Describes the component in charge of defining a parameter.
 
 ## Methods
-
-### __construct()
-
-#### Parameters
-
-1. string `$name`
-
-::: danger THROWS
-- [ParameterNameInvalidException](../../Exceptions/Parameter/ParameterNameInvalidException.md)
-:::
-
----
 
 ### name()
 
@@ -40,30 +28,13 @@ string
 
 ---
 
-### regex()
+### type()
 
-Provides access to the regex instance.
-
-::: tip RETURN
-[RegexInterface](../Regex/RegexInterface.md)
-:::
-
----
-
-### withRegex()
-
-Return an instance with the specified `$regex`.
-
-#### Parameters
-
-1. [RegexInterface](../Regex/RegexInterface.md) `$regex`
+Provides access to the type instance.
 
 ::: tip RETURN
-ParameterInterface
+[TypeInterface](../Type/TypeInterface.md)
 :::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$regex`.
 
 ---
 
@@ -86,18 +57,22 @@ an instance that contains the specified `$description`.
 
 ### withAddedAttribute()
 
-Return an instance with the specified `$attribute`.
+Return an instance with the specified `$attribute` added.
 
 #### Parameters
 
 1. string `$attribute`
+
+::: danger THROWS
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
+:::
 
 ::: tip RETURN
 ParameterInterface
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$attribute`.
+an instance that contains the specified `$attribute` added.
 
 ---
 
@@ -108,6 +83,10 @@ Return an instance with the specified `$attribute` removed.
 #### Parameters
 
 1. string `$attribute`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+:::
 
 ::: tip RETURN
 ParameterInterface

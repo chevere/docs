@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\PlugTypeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugTypeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/PlugTypeInterface.php)
 
 ## Description
 

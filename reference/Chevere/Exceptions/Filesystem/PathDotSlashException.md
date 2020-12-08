@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathDotSlashException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Filesystem/PathDotSlashException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathDotSlashException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

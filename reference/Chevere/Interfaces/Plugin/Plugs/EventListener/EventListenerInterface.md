@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\Plugs\EventListener\EventListenerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/EventListener/EventListenerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/Plugs/EventListener/EventListenerInterface.php)
 
-## Implements
+## Extends
 
 - [PlugInterface](../../PlugInterface.md)
 

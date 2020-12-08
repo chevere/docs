@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\PluggableAnchorsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PluggableAnchorsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/PluggableAnchorsInterface.php)
 
 ## Description
 
@@ -23,7 +23,7 @@ Return an instance with the specified added `$anchor`.
 1. string `$anchor`
 
 ::: danger THROWS
-- ⚠ Unknown type `OverflowException` declared in `@throws` tag`
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN

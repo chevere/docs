@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Router\RouterException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Router/RouterException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/RouterException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

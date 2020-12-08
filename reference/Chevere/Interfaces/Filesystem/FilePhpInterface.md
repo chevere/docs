@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\FilePhpInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/FilePhpInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/FilePhpInterface.php)
 
 ## Description
 
@@ -21,7 +21,7 @@ Describes the component in charge of interact with `.php` files.
 1. [FileInterface](./FileInterface.md) `$file`
 
 ::: danger THROWS
-- [FileNotPhpException](../../Exceptions/Filesystem/FileNotPhpException.md)
+- [FileNotPhpException](../../Exceptions/Filesystem/FileNotPhpException.md) 
 :::
 
 ---
@@ -41,9 +41,8 @@ Provides access to the FileInterface instance.
 Applies OPCache.
 
 ::: danger THROWS
-- ⚠ Unknown type `FileNotExistsException` declared in `@throws` tag`
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
-If OPCache is disabled.
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) If OPCache is disabled.
 :::
 
 ::: tip RETURN
@@ -57,8 +56,7 @@ void
 Flushes OPCache.
 
 ::: danger THROWS
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
-If OPCache is disabled.
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) If OPCache is disabled.
 :::
 
 ::: tip RETURN

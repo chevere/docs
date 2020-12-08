@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Response\ResponseInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Response/ResponseInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Response/ResponseInterface.php)
 
 ## Description
 
@@ -18,7 +18,8 @@ Describes the component in charge of handling the response.
 
 #### Parameters
 
-1. array `$data`
+1. [ParametersInterface](../Parameter/ParametersInterface.md) `$parameters`
+2. array `$data`
 
 ---
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Route\RouteDecoratorInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteDecoratorInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RouteDecoratorInterface.php)
 
 ## Description
 
@@ -38,7 +38,7 @@ Return an instance with the specified `$wildcards` instance.
 
 #### Parameters
 
-1. [RouteWildcardsInterface](./RouteWildcardsInterface.md) `$wildcards`
+1. [WildcardsInterface](./WildcardsInterface.md) `$wildcards`
 
 ::: tip RETURN
 RouteDecoratorInterface
@@ -54,7 +54,7 @@ an instance that contains the specified `$wildcards` instance.
 Provides access to the route wildcards.
 
 ::: tip RETURN
-[RouteWildcardsInterface](./RouteWildcardsInterface.md)
+[WildcardsInterface](./WildcardsInterface.md)
 :::
 
 ---

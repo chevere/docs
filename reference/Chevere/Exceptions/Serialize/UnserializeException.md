@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Serialize\UnserializeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Serialize/UnserializeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Serialize/UnserializeException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

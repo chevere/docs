@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Cache\CacheInvalidKeyException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Cache/CacheInvalidKeyException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Cache/CacheInvalidKeyException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\ClassMap\ClassNotExistsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/ClassMap/ClassNotExistsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/ClassMap/ClassNotExistsException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

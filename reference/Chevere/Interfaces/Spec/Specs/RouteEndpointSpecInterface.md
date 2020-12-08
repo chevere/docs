@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Spec\Specs\RouteEndpointSpecInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/Specs/RouteEndpointSpecInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/Specs/RouteEndpointSpecInterface.php)
 
-## Implements
+## Extends
 
 - [SpecInterface](../SpecInterface.md)
 - [ToArrayInterface](../../To/ToArrayInterface.md)
@@ -27,7 +27,7 @@ Describes the component in charge of defining a route endpoint spec.
 2. [RouteEndpointInterface](../../Route/RouteEndpointInterface.md) `$routeEndpoint`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md)
+- [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---

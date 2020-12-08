@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\VarExportable\VarExportableException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/VarExportable/VarExportableException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/VarExportable/VarExportableException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

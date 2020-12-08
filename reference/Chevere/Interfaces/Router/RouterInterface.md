@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\RouterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/RouterInterface.php)
 
 ## Description
 
@@ -24,10 +24,8 @@ Return an instance with the specified added `$routable`.
 2. string `$group`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
-if `$group` is invalid.
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
-if `$routable` has been already added.
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) if `$group` is invalid.
+- [OverflowException](../../Exceptions/Core/OverflowException.md) if `$routable` has been already added.
 :::
 
 ::: tip RETURN

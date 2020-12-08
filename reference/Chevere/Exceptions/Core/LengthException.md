@@ -6,10 +6,11 @@ editLink: false
 
 `Chevere\Exceptions\Core\LengthException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Core/LengthException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/LengthException.php)
 
 ## Implements
 
+- [Stringable](https://www.php.net/manual/class.stringable)
 - [Throwable](https://www.php.net/manual/class.throwable)
 
 ## Extends

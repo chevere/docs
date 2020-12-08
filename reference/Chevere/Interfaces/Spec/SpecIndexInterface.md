@@ -6,11 +6,13 @@ editLink: false
 
 `Chevere\Interfaces\Spec\SpecIndexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecIndexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecIndexInterface.php)
 
-## Implements
+## Extends
 
-- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- [MappedInterface](../DataStructures/MappedInterface.md)
+- [GetGeneratorInterface](../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description
@@ -26,7 +28,7 @@ Return an instance with the specified `$routeEndpointSpec` for `$routeName`.
 #### Parameters
 
 1. string `$routeName`
-2. [RouteEndpointSpec](../../Components/Spec/Specs/RouteEndpointSpec.md) `$routeEndpointSpec`
+2. Specs/RouteEndpointSpecInterface.md `$routeEndpointSpec`
 
 ::: tip RETURN
 SpecIndexInterface
@@ -62,7 +64,7 @@ Returns the spec path.
 2. string `$methodName`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -73,20 +75,10 @@ string
 
 ### keys()
 
-Provides access to the map keys.
+Provides access to the object keys.
 
 ::: tip RETURN
 array
-:::
-
----
-
-### mapCopy()
-
-Provides a deep copy of the internal map.
-
-::: tip RETURN
-Ds\Map
 :::
 
 ---

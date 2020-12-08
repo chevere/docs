@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\VarDump\VarDumpHighlightInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpHighlightInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/VarDump/VarDumpHighlightInterface.php)
 
 ## Description
 
@@ -49,7 +49,7 @@ Constructs a highlight instance specified by `$key`.
 1. string `$key`
 
 ::: danger THROWS
-- [OutOfRangeException](../../Exceptions/Core/OutOfRangeException.md)
+- [OutOfRangeException](../../Exceptions/Core/OutOfRangeException.md) 
 :::
 
 ---

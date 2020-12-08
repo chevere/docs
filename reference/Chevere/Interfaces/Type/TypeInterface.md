@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Type\TypeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Type/TypeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Type/TypeInterface.php)
 
 ## Description
 
@@ -140,8 +140,7 @@ array (
 1. string `$type`
 
 ::: danger THROWS
-- [TypeNotFoundException](../../Exceptions/Type/TypeNotFoundException.md)
-if the type doesn't exists
+- [TypeNotFoundException](../../Exceptions/Type/TypeNotFoundException.md) if the type doesn't exists
 :::
 
 ---
@@ -188,6 +187,16 @@ Returns the validator callable.
 
 ::: tip RETURN
 callable
+:::
+
+---
+
+### isScalar()
+
+Returns a boolean indicating if type is scalar.
+
+::: tip RETURN
+bool
 :::
 
 ---

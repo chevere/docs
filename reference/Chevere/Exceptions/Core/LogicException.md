@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Core\LogicException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Core/LogicException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/LogicException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

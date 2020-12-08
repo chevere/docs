@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Cache\CacheItemInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Cache/CacheItemInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Cache/CacheItemInterface.php)
 
 ## Description
 
@@ -27,7 +27,7 @@ Describes the component that defines a cache item.
 Provides raw access to the cache value "as-is".
 
 ::: danger THROWS
-- ⚠ Unknown type `RuntimeException` declared in `@throws` tag`
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ::: tip RETURN
@@ -41,7 +41,7 @@ void
 Provides access to the cache PHP variable.
 
 ::: danger THROWS
-- ⚠ Unknown type `RuntimeException` declared in `@throws` tag`
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ::: tip RETURN

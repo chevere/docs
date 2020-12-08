@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Route\RouteInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RouteInterface.php)
 
 ## Description
 
@@ -62,11 +62,11 @@ Return an instance with the specified added `$routeEndpoint`.
 1. [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
 
 ::: danger THROWS
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
-- [RouteEndpointConflictException](../../Exceptions/Route/RouteEndpointConflictException.md)
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
-- [RouteWildcardConflictException](../../Exceptions/Route/RouteWildcardConflictException.md)
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
+- [RouteEndpointConflictException](../../Exceptions/Route/RouteEndpointConflictException.md) 
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [RouteWildcardConflictException](../../Exceptions/Route/RouteWildcardConflictException.md) 
 :::
 
 ::: tip RETURN

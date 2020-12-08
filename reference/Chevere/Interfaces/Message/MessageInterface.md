@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Message\MessageInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Message/MessageInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Message/MessageInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Description\GetDescriptionInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Description/GetDescriptionInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Description/GetDescriptionInterface.php)
 
 ## Description
 

@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Routing\RoutingDescriptorsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Routing/RoutingDescriptorsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Routing/RoutingDescriptorsInterface.php)
 
-## Implements
+## Extends
 
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -27,7 +27,7 @@ Return an instance with the specified `$descriptor` added.
 1. [RoutingDescriptorInterface](./RoutingDescriptorInterface.md) `$descriptor`
 
 ::: danger THROWS
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -60,7 +60,7 @@ bool
 1. int `$position`
 
 ::: danger THROWS
-- ⚠ Unknown type `OutOfBoundsException` declared in `@throws` tag`
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

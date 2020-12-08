@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Controller\ControllerNotExistsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Controller/ControllerNotExistsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Controller/ControllerNotExistsException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

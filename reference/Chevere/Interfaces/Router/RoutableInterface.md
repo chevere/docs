@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\RoutableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RoutableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/RoutableInterface.php)
 
 ## Description
 
@@ -21,8 +21,8 @@ Describes the component in charge of defining a routable.
 1. [RouteInterface](../Route/RouteInterface.md) `$route`
 
 ::: danger THROWS
-- [RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md)
-- [RouteWithoutEndpointsException](../../Exceptions/Router/RouteWithoutEndpointsException.md)
+- [RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md) 
+- [RouteWithoutEndpointsException](../../Exceptions/Router/RouteWithoutEndpointsException.md) 
 :::
 
 ---

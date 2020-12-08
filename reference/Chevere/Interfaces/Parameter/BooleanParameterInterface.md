@@ -2,31 +2,50 @@
 editLink: false
 ---
 
-# ParameterRequiredInterface
+# BooleanParameterInterface
 
-`Chevere\Interfaces\Parameter\ParameterRequiredInterface`
+`Chevere\Interfaces\Parameter\BooleanParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Parameter/ParameterRequiredInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/BooleanParameterInterface.php)
 
-## Implements
+## Extends
 
 - [ParameterInterface](./ParameterInterface.md)
 - [DescriptionInterface](../Description/DescriptionInterface.md)
 
 ## Description
 
-Describes the component in charge of defining a required parameter.
+Describes the component in charge of defining a parameter of type boolean.
 
 ## Methods
 
-### __construct()
+### withDefault()
+
+Return an instance with the specified `$default` value.
 
 #### Parameters
 
-1. string `$name`
+1. bool `$default`
 
 ::: danger THROWS
-- [ParameterNameInvalidException](../../Exceptions/Parameter/ParameterNameInvalidException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
+:::
+
+::: tip RETURN
+BooleanParameterInterface
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified `$default` value.
+
+---
+
+### default()
+
+Provides access to the default value.
+
+::: tip RETURN
+bool
 :::
 
 ---
@@ -41,30 +60,13 @@ string
 
 ---
 
-### regex()
+### type()
 
-Provides access to the regex instance.
-
-::: tip RETURN
-[RegexInterface](../Regex/RegexInterface.md)
-:::
-
----
-
-### withRegex()
-
-Return an instance with the specified `$regex`.
-
-#### Parameters
-
-1. [RegexInterface](../Regex/RegexInterface.md) `$regex`
+Provides access to the type instance.
 
 ::: tip RETURN
-[ParameterInterface](./ParameterInterface.md)
+[TypeInterface](../Type/TypeInterface.md)
 :::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$regex`.
 
 ---
 
@@ -87,18 +89,22 @@ an instance that contains the specified `$description`.
 
 ### withAddedAttribute()
 
-Return an instance with the specified `$attribute`.
+Return an instance with the specified `$attribute` added.
 
 #### Parameters
 
 1. string `$attribute`
+
+::: danger THROWS
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
+:::
 
 ::: tip RETURN
 [ParameterInterface](./ParameterInterface.md)
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$attribute`.
+an instance that contains the specified `$attribute` added.
 
 ---
 
@@ -109,6 +115,10 @@ Return an instance with the specified `$attribute` removed.
 #### Parameters
 
 1. string `$attribute`
+
+::: danger THROWS
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+:::
 
 ::: tip RETURN
 [ParameterInterface](./ParameterInterface.md)

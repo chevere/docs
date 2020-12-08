@@ -2,15 +2,18 @@
 editLink: false
 ---
 
-# RouteWildcardsInterface
+# WildcardsInterface
 
-`Chevere\Interfaces\Route\RouteWildcardsInterface`
+`Chevere\Interfaces\Route\WildcardsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Route/RouteWildcardsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/WildcardsInterface.php)
 
-## Implements
+## Extends
 
-- [DsMapInterface](../DataStructures/DsMapInterface.md)
+- [MappedInterface](../DataStructures/MappedInterface.md)
+- [ToArrayInterface](../To/ToArrayInterface.md)
+- [GetGeneratorInterface](../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description
@@ -28,7 +31,7 @@ Return an instance with the specified `$wildcard`.
 1. [RouteWildcardInterface](./RouteWildcardInterface.md) `$wildcard`
 
 ::: tip RETURN
-RouteWildcardsInterface
+WildcardsInterface
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -104,7 +107,7 @@ Provides access to the target RouteWildcardInterface instance in the given pos.
 
 ### keys()
 
-Provides access to the map keys.
+Provides access to the object keys.
 
 ::: tip RETURN
 array
@@ -112,12 +115,12 @@ array
 
 ---
 
-### mapCopy()
+### toArray()
 
-Provides a deep copy of the internal map.
+Returns an array, representing the object itself or some of its data/properties.
 
 ::: tip RETURN
-Ds\Map
+array
 :::
 
 ---

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\Plugs\EventListener\EventListenersRunnerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/EventListener/EventListenersRunnerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/Plugs/EventListener/EventListenersRunnerInterface.php)
 
 ## Description
 
@@ -33,7 +33,7 @@ Run registered event listeners for the target event anchor.
 2. array `$data`
 
 ::: danger THROWS
-- [RuntimeException](../../../../Exceptions/Core/RuntimeException.md)
+- [RuntimeException](../../../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ::: tip RETURN

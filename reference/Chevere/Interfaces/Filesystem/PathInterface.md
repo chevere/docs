@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\PathInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/PathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/PathInterface.php)
 
 ## Description
 
@@ -21,10 +21,10 @@ Describes the component in charge of interact with filesystem paths.
 1. string `$absolute`
 
 ::: danger THROWS
-- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
-- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
-- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
-- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
+- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md) 
+- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md) 
+- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md) 
+- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md) 
 :::
 
 ---
@@ -76,8 +76,8 @@ Wrapper for `\chmod`.
 1. int `$mode`
 
 ::: danger THROWS
-- [PathIsNotDirectoryException](../../Exceptions/Filesystem/PathIsNotDirectoryException.md)
-- [PathUnableToChmodException](../../Exceptions/Filesystem/PathUnableToChmodException.md)
+- [PathIsNotDirectoryException](../../Exceptions/Filesystem/PathIsNotDirectoryException.md) 
+- [PathUnableToChmodException](../../Exceptions/Filesystem/PathUnableToChmodException.md) 
 :::
 
 ::: tip RETURN
@@ -91,7 +91,7 @@ void
 Wrapper for `\is_writeable`.
 
 ::: danger THROWS
-- [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md)
+- [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md) 
 :::
 
 ::: tip RETURN
@@ -105,7 +105,7 @@ bool
 Wrapper for `\is_readable`.
 
 ::: danger THROWS
-- [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md)
+- [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md) 
 :::
 
 ::: tip RETURN
@@ -123,10 +123,10 @@ Get a child instance for the target child path.
 1. string `$path`
 
 ::: danger THROWS
-- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
-- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
-- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
-- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
+- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md) 
+- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md) 
+- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md) 
+- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md) 
 :::
 
 ::: tip RETURN

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Workflow\WorkflowRunInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Workflow/WorkflowRunInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Workflow/WorkflowRunInterface.php)
 
 ## Description
 
@@ -19,7 +19,7 @@ Describes the component in charge of defining a workflow run, with the arguments
 #### Parameters
 
 1. [WorkflowInterface](./WorkflowInterface.md) `$workflow`
-2. array `$arguments`
+2. mixed `$namedArguments`
 
 ---
 
@@ -37,6 +37,8 @@ https://tools.ietf.org/html/rfc4122
 
 ### workflow()
 
+Provides access to the WorkflowInterface instance.
+
 ::: tip RETURN
 [WorkflowInterface](./WorkflowInterface.md)
 :::
@@ -45,18 +47,24 @@ https://tools.ietf.org/html/rfc4122
 
 ### arguments()
 
+Provides access to the ArgumentsInterface instance.
+
 ::: tip RETURN
 [ArgumentsInterface](../Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### withAdded()
+### withStepResponse()
 
 #### Parameters
 
 1. string `$step`
 2. [ResponseSuccessInterface](../Response/ResponseSuccessInterface.md) `$response`
+
+::: danger THROWS
+- [ArgumentCountException](../../Exceptions/Core/ArgumentCountException.md) 
+:::
 
 ::: tip RETURN
 WorkflowRunInterface
@@ -65,6 +73,8 @@ WorkflowRunInterface
 ---
 
 ### has()
+
+Indicates whether the instance has the given `$step`. Will return `true` if step has ran.
 
 #### Parameters
 
@@ -77,6 +87,8 @@ bool
 ---
 
 ### get()
+
+Provides access to the ResponseInterface instance for the given `$step`.
 
 #### Parameters
 

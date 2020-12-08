@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrAssertException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Str/StrAssertException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrAssertException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

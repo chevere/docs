@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableReadInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableReadInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ThrowableHandler/ThrowableReadInterface.php)
 
 ## Description
 
@@ -79,8 +79,7 @@ array (
 1. [Throwable](https://www.php.net/manual/class.throwable) `$throwable`
 
 ::: danger THROWS
-- [RangeException](../../Exceptions/Core/RangeException.md)
-If unable to read `$throwable`
+- [RangeException](../../Exceptions/Core/RangeException.md) If unable to read `$throwable`
 :::
 
 ---

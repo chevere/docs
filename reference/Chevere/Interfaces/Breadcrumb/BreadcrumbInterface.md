@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Breadcrumb\BreadcrumbInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Breadcrumb/BreadcrumbInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Breadcrumb/BreadcrumbInterface.php)
 
-## Implements
+## Extends
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 - [ToStringInterface](../To/ToStringInterface.md)
@@ -70,7 +70,7 @@ Return an instance with the specified pos removed.
 1. int `$pos`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

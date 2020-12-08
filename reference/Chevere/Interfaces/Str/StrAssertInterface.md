@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Str\StrAssertInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Str/StrAssertInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Str/StrAssertInterface.php)
 
 ## Description
 
@@ -27,7 +27,7 @@ Describes the component in charge of string asserting.
 Asserts that the string is empty.
 
 ::: danger THROWS
-- [StrNotEmptyException](../../Exceptions/Str/StrNotEmptyException.md)
+- [StrNotEmptyException](../../Exceptions/Str/StrNotEmptyException.md) 
 :::
 
 ::: tip RETURN
@@ -41,7 +41,7 @@ StrAssertInterface
 Asserts that the string is not empty.
 
 ::: danger THROWS
-- [StrEmptyException](../../Exceptions/Str/StrEmptyException.md)
+- [StrEmptyException](../../Exceptions/Str/StrEmptyException.md) 
 :::
 
 ::: tip RETURN
@@ -55,7 +55,7 @@ StrAssertInterface
 Asserts that the string is ctype space.
 
 ::: danger THROWS
-- [StrNotCtypeSpaceException](../../Exceptions/Str/StrNotCtypeSpaceException.md)
+- [StrNotCtypeSpaceException](../../Exceptions/Str/StrNotCtypeSpaceException.md) 
 :::
 
 ::: tip RETURN
@@ -69,7 +69,7 @@ StrAssertInterface
 Asserts that the string is not ctype space.
 
 ::: danger THROWS
-- [StrCtypeSpaceException](../../Exceptions/Str/StrCtypeSpaceException.md)
+- [StrCtypeSpaceException](../../Exceptions/Str/StrCtypeSpaceException.md) 
 :::
 
 ::: tip RETURN
@@ -83,7 +83,7 @@ StrAssertInterface
 Asserts that the string is ctype digit.
 
 ::: danger THROWS
-- [StrNotCtypeDigitException](../../Exceptions/Str/StrNotCtypeDigitException.md)
+- [StrNotCtypeDigitException](../../Exceptions/Str/StrNotCtypeDigitException.md) 
 :::
 
 ::: tip RETURN
@@ -97,7 +97,7 @@ StrAssertInterface
 Asserts that the string is not ctype digit.
 
 ::: danger THROWS
-- [StrCtypeDigitException](../../Exceptions/Str/StrCtypeDigitException.md)
+- [StrCtypeDigitException](../../Exceptions/Str/StrCtypeDigitException.md) 
 :::
 
 ::: tip RETURN
@@ -111,7 +111,7 @@ StrAssertInterface
 Asserts that the string is starts with ctype digit.
 
 ::: danger THROWS
-- [StrNotStartsWithCtypeDigitException](../../Exceptions/Str/StrNotStartsWithCtypeDigitException.md)
+- [StrNotStartsWithCtypeDigitException](../../Exceptions/Str/StrNotStartsWithCtypeDigitException.md) 
 :::
 
 ::: tip RETURN
@@ -125,7 +125,7 @@ StrAssertInterface
 Asserts that the string not starts with ctype digit.
 
 ::: danger THROWS
-- [StrStartsWithCtypeDigitException](../../Exceptions/Str/StrStartsWithCtypeDigitException.md)
+- [StrStartsWithCtypeDigitException](../../Exceptions/Str/StrStartsWithCtypeDigitException.md) 
 :::
 
 ::: tip RETURN
@@ -143,7 +143,7 @@ Asserts that the string is starts with `$needle`.
 1. string `$needle`
 
 ::: danger THROWS
-- [StrNotStartsWithException](../../Exceptions/Str/StrNotStartsWithException.md)
+- [StrNotStartsWithException](../../Exceptions/Str/StrNotStartsWithException.md) 
 :::
 
 ::: tip RETURN
@@ -161,7 +161,7 @@ Asserts that the string not starts with `$needle`.
 1. string `$needle`
 
 ::: danger THROWS
-- [StrStartsWithException](../../Exceptions/Str/StrStartsWithException.md)
+- [StrStartsWithException](../../Exceptions/Str/StrStartsWithException.md) 
 :::
 
 ::: tip RETURN
@@ -179,7 +179,7 @@ Asserts that the string ends with `$needle`.
 1. string `$needle`
 
 ::: danger THROWS
-- [StrNotEndsWithException](../../Exceptions/Str/StrNotEndsWithException.md)
+- [StrNotEndsWithException](../../Exceptions/Str/StrNotEndsWithException.md) 
 :::
 
 ::: tip RETURN
@@ -197,7 +197,7 @@ Asserts that the string not ends with `$needle`.
 1. string `$needle`
 
 ::: danger THROWS
-- [StrEndsWithException](../../Exceptions/Str/StrEndsWithException.md)
+- [StrEndsWithException](../../Exceptions/Str/StrEndsWithException.md) 
 :::
 
 ::: tip RETURN
@@ -215,7 +215,7 @@ Asserts that the string is same as `$string`.
 1. string `$string`
 
 ::: danger THROWS
-- [StrNotSameException](../../Exceptions/Str/StrNotSameException.md)
+- [StrNotSameException](../../Exceptions/Str/StrNotSameException.md) 
 :::
 
 ::: tip RETURN
@@ -233,7 +233,7 @@ Asserts that the string is not same as `$string`.
 1. string `$string`
 
 ::: danger THROWS
-- [StrSameException](../../Exceptions/Str/StrSameException.md)
+- [StrSameException](../../Exceptions/Str/StrSameException.md) 
 :::
 
 ::: tip RETURN
@@ -251,7 +251,7 @@ Asserts that the string contains `$string`.
 1. string `$string`
 
 ::: danger THROWS
-- [StrNotContainsException](../../Exceptions/Str/StrNotContainsException.md)
+- [StrNotContainsException](../../Exceptions/Str/StrNotContainsException.md) 
 :::
 
 ::: tip RETURN
@@ -269,7 +269,7 @@ Asserts that the string not contains `$string`.
 1. string `$string`
 
 ::: danger THROWS
-- [StrContainsException](../../Exceptions/Str/StrContainsException.md)
+- [StrContainsException](../../Exceptions/Str/StrContainsException.md) 
 :::
 
 ::: tip RETURN

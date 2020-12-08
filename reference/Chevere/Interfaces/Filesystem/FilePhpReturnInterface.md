@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\FilePhpReturnInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/FilePhpReturnInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/FilePhpReturnInterface.php)
 
 ## Description
 
@@ -71,12 +71,12 @@ Provides access to the FilePhpInterface instance.
 Retrieves the file return (as-is).
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
-- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
-- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
-- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md)
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md) 
+- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md) 
+- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md) 
+- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md) 
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ::: tip RETURN
@@ -90,12 +90,12 @@ void
 Retrieves a PHP variable, applying unserialize to objects (if any).
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
-- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
-- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
-- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md)
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md) 
+- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md) 
+- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md) 
+- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md) 
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ::: tip RETURN
@@ -113,13 +113,13 @@ Same as `var()`, but checking the variable `$type`.
 1. [TypeInterface](../Type/TypeInterface.md) `$type`
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md)
-- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md)
-- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md)
-- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md)
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
-- [FileReturnInvalidTypeException](../../Exceptions/Filesystem/FileReturnInvalidTypeException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+- [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md) 
+- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md) 
+- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md) 
+- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md) 
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
+- [FileReturnInvalidTypeException](../../Exceptions/Filesystem/FileReturnInvalidTypeException.md) 
 :::
 
 ::: tip RETURN
@@ -137,8 +137,8 @@ Put `$var` into the file using var_export return and strict format.
 1. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-- [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+- [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md) 
 :::
 
 ::: tip RETURN

@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Plugin\PlugRegisteredException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Plugin/PlugRegisteredException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Plugin/PlugRegisteredException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

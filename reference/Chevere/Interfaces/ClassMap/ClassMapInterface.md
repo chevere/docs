@@ -6,16 +6,18 @@ editLink: false
 
 `Chevere\Interfaces\ClassMap\ClassMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/ClassMap/ClassMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ClassMap/ClassMapInterface.php)
 
-## Implements
+## Extends
 
+- [MappedInterface](../DataStructures/MappedInterface.md)
+- [GetGeneratorInterface](../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
-- [ToArrayInterface](../To/ToArrayInterface.md)
 
 ## Description
 
-Describes the component in charge of mapping classes to strings.
+Describes the component in charge of mapping classes to keys.
 
 ## Methods
 
@@ -26,11 +28,11 @@ Return an instance with the specified className mapping.
 #### Parameters
 
 1. string `$className`
-2. string `$string`
+2. string `$key`
 
 ::: danger THROWS
-- [ClassNotExistsException](../../Exceptions/ClassMap/ClassNotExistsException.md)
-- [StringMappedException](../../Exceptions/ClassMap/StringMappedException.md)
+- [ClassNotExistsException](../../Exceptions/ClassMap/ClassNotExistsException.md) 
+- [StringMappedException](../../Exceptions/ClassMap/StringMappedException.md) 
 :::
 
 ::: tip RETURN
@@ -56,6 +58,20 @@ bool
 
 ---
 
+### hasKey()
+
+Indicates whether the instance maps the given key.
+
+#### Parameters
+
+1. string `$key`
+
+::: tip RETURN
+bool
+:::
+
+---
+
 ### get()
 
 Provides access to the class name mapping.
@@ -65,7 +81,7 @@ Provides access to the class name mapping.
 1. string `$className`
 
 ::: danger THROWS
-- [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md)
+- [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md) 
 :::
 
 ::: tip RETURN
@@ -74,18 +90,50 @@ string
 
 ---
 
+### getClass()
+
+Provides access to the class name mapped by key.
+
+#### Parameters
+
+1. string `$key`
+
+::: danger THROWS
+- [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md) 
+:::
+
+::: tip RETURN
+string
+:::
+
+---
+
+### getGenerator()
+
+Provides a generator with `className => key`
+
+::: tip RETURN
+[Generator](https://www.php.net/manual/class.generator)
+:::
+
+---
+
 ### toArray()
 
-Provides access to the class map.
+Provides access to the class map `className => key`
 
 ::: tip RETURN
 array
 :::
 
-```php
-return [
-    'className' => 'string',
-]
-```
+---
+
+### keys()
+
+Provides access to the object keys.
+
+::: tip RETURN
+array
+:::
 
 ---

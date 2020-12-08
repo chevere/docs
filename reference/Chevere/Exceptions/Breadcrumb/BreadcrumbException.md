@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Breadcrumb\BreadcrumbException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Breadcrumb/BreadcrumbException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Breadcrumb/BreadcrumbException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

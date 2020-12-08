@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Core\ArgumentCountException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Core/ArgumentCountException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/ArgumentCountException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 
@@ -18,7 +19,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when the argument count gives the cacha.
+Exception thrown when the argument count is unexpected.
 
 ## Methods
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Identifier\GetIdentifierInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Identifier/GetIdentifierInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Identifier/GetIdentifierInterface.php)
 
 ## Description
 

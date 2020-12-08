@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Spec\SpecPathInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecPathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecPathInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
@@ -25,7 +25,7 @@ Describes the component in charge of handling a spec path.
 1. string `$path`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
@@ -39,7 +39,7 @@ Returns a child instance for the given `$childPath`.
 1. string `$childPath`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ::: tip RETURN

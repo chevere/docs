@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Core\TypeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Core/TypeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/TypeException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableHandlerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableHandlerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ThrowableHandler/ThrowableHandlerInterface.php)
 
 ## Description
 
@@ -21,7 +21,7 @@ Describes the component in charge of handling throwables.
 1. [ThrowableReadInterface](./ThrowableReadInterface.md) `$throwableRead`
 
 ::: danger THROWS
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md)
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ---
@@ -58,7 +58,7 @@ bool
 Provides access to the date time UTC.
 
 ::: tip RETURN
-DateTimeInterface
+[DateTimeInterface](https://www.php.net/manual/class.datetimeinterface)
 :::
 
 ---

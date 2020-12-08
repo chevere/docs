@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Controller\ControllerInterfaceException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Controller/ControllerInterfaceException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Controller/ControllerInterfaceException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

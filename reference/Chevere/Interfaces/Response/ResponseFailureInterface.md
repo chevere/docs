@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Response\ResponseFailureInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Response/ResponseFailureInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Response/ResponseFailureInterface.php)
 
-## Implements
+## Extends
 
 - [ResponseInterface](./ResponseInterface.md)
 
@@ -39,7 +39,8 @@ an instance that contains the specified data.
 
 #### Parameters
 
-1. array `$data`
+1. [ParametersInterface](../Parameter/ParametersInterface.md) `$parameters`
+2. array `$data`
 
 ---
 

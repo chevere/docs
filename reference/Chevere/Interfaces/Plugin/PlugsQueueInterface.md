@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\PlugsQueueInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugsQueueInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/PlugsQueueInterface.php)
 
-## Implements
+## Extends
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 
@@ -35,8 +35,8 @@ Return an instance with the specified `$plug`.
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ::: danger THROWS
-- [PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md)
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md) 
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN

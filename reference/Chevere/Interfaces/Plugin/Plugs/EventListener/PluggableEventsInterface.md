@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\Plugs\EventListener\PluggableEventsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/EventListener/PluggableEventsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/Plugs/EventListener/PluggableEventsInterface.php)
 
 ## Description
 

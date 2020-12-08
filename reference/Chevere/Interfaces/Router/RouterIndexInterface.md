@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Router\RouterIndexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Router/RouterIndexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/RouterIndexInterface.php)
 
-## Implements
+## Extends
 
 - [ToArrayInterface](../To/ToArrayInterface.md)
 
@@ -28,8 +28,8 @@ Return an instance with the specified `$routable` added.
 2. string `$group`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -64,7 +64,7 @@ Returns the route identifier for the given route `$name`.
 1. string `$name`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -96,7 +96,7 @@ Returns an array containing the route names for the given `$group`.
 1. string `$group`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -114,7 +114,7 @@ Returns the route group for the route identified by its `$name`.
 1. string `$group`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

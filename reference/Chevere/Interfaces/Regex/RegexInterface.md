@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Regex\RegexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Regex/RegexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Regex/RegexInterface.php)
 
-## Implements
+## Extends
 
 - [ToStringInterface](../To/ToStringInterface.md)
 
@@ -65,7 +65,7 @@ Matches string.
 1. string `$string`
 
 ::: danger THROWS
-- ⚠ Unknown type `RuntimeException` declared in `@throws` tag`
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ::: tip RETURN
@@ -83,7 +83,7 @@ Matches all string.
 1. string `$string`
 
 ::: danger THROWS
-- ⚠ Unknown type `RuntimeException` declared in `@throws` tag`
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
 ::: tip RETURN

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\VarDump\VarDumpableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarDump/VarDumpableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/VarDump/VarDumpableInterface.php)
 
 ## Description
 
@@ -21,8 +21,7 @@ Describes the component in charge of handling dumpable variables.
 1.  `$var`
 
 ::: danger THROWS
-- [LogicException](../../Exceptions/Core/LogicException.md)
-if unable to process `$var` type.
+- [LogicException](../../Exceptions/Core/LogicException.md) if unable to process `$var` type.
 :::
 
 ---

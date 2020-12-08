@@ -6,14 +6,16 @@ editLink: false
 
 `Chevere\Interfaces\Writer\WritersInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Writer/WritersInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Writer/WritersInterface.php)
 
 ## Methods
 
 ### __construct()
 
 ::: danger THROWS
+
 - [LogicException](../../Exceptions/Core/LogicException.md)
+- 
 :::
 
 ---

@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Route\RouteNameInvalidException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Route/RouteNameInvalidException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Route/RouteNameInvalidException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

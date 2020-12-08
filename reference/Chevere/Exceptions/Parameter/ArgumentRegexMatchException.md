@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Parameter\ArgumentRegexMatchException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Parameter/ArgumentRegexMatchException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Parameter/ArgumentRegexMatchException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

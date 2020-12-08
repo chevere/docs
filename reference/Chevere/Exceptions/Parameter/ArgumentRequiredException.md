@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Parameter\ArgumentRequiredException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Parameter/ArgumentRequiredException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Parameter/ArgumentRequiredException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

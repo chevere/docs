@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrEndsWithException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Str/StrEndsWithException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrEndsWithException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

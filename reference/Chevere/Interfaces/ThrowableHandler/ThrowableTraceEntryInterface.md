@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableTraceEntryInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/ThrowableHandler/ThrowableTraceEntryInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ThrowableHandler/ThrowableTraceEntryInterface.php)
 
 ## Description
 
@@ -47,7 +47,7 @@ array (
 1. array `$entry`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---

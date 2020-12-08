@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\AssertPathFormatInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/AssertPathFormatInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/AssertPathFormatInterface.php)
 
 ## Description
 
@@ -21,10 +21,10 @@ Describes the component in charge of asserting filesystem path format.
 1. string `$path`
 
 ::: danger THROWS
-- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md)
-- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md)
-- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md)
-- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md)
+- [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md) 
+- [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md) 
+- [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md) 
+- [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md) 
 :::
 
 ---

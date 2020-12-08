@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Routing\RouteNameAlreadyAddedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Routing/RouteNameAlreadyAddedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Routing/RouteNameAlreadyAddedException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

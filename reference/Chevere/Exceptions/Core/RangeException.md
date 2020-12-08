@@ -6,10 +6,11 @@ editLink: false
 
 `Chevere\Exceptions\Core\RangeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Core/RangeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/RangeException.php)
 
 ## Implements
 
+- [Stringable](https://www.php.net/manual/class.stringable)
 - [Throwable](https://www.php.net/manual/class.throwable)
 
 ## Extends

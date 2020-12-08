@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Router\RouteWithoutEndpointsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Router/RouteWithoutEndpointsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/RouteWithoutEndpointsException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

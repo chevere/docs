@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Routing\RoutingDescriptorsMakerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Routing/RoutingDescriptorsMakerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Routing/RoutingDescriptorsMakerInterface.php)
 
 ## Description
 
@@ -31,7 +31,7 @@ Type `string`
 1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 
 ::: danger THROWS
-- [LogicException](../../Exceptions/Core/LogicException.md)
+- [LogicException](../../Exceptions/Core/LogicException.md) 
 :::
 
 ---

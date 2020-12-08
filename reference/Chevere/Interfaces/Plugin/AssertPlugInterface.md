@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\AssertPlugInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/AssertPlugInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/AssertPlugInterface.php)
 
 ## Description
 
@@ -21,10 +21,10 @@ Describes the component in charge of asserting a plug.
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ::: danger THROWS
-- [PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md)
-- [PluggableNotExistsException](../../Exceptions/Plugin/PluggableNotExistsException.md)
-- [PluggableAnchorsException](../../Exceptions/Plugin/PluggableAnchorsException.md)
-- [PluggableAnchorNotExistsException](../../Exceptions/Plugin/PluggableAnchorNotExistsException.md)
+- [PlugInterfaceException](../../Exceptions/Plugin/PlugInterfaceException.md) 
+- [PluggableNotExistsException](../../Exceptions/Plugin/PluggableNotExistsException.md) 
+- [PluggableAnchorsException](../../Exceptions/Plugin/PluggableAnchorsException.md) 
+- [PluggableAnchorNotExistsException](../../Exceptions/Plugin/PluggableAnchorNotExistsException.md) 
 :::
 
 ---

@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Route\RouteWildcardInvalidRegexException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Route/RouteWildcardInvalidRegexException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Route/RouteWildcardInvalidRegexException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

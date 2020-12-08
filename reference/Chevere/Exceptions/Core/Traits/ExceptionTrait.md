@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\Traits\ExceptionTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Core/Traits/ExceptionTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/Traits/ExceptionTrait.php)
 
 ## Methods
 

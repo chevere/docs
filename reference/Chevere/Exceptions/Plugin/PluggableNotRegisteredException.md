@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Plugin\PluggableNotRegisteredException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Plugin/PluggableNotRegisteredException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Plugin/PluggableNotRegisteredException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

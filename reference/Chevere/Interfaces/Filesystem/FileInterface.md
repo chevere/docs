@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\FileInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Filesystem/FileInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/FileInterface.php)
 
 ## Description
 
@@ -39,7 +39,7 @@ Type `integer`
 1. [PathInterface](./PathInterface.md) `$path`
 
 ::: danger THROWS
-- [PathIsDirException](../../Exceptions/Filesystem/PathIsDirException.md)
+- [PathIsDirException](../../Exceptions/Filesystem/PathIsDirException.md) 
 :::
 
 ---
@@ -77,7 +77,7 @@ bool
 ### assertExists()
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 :::
 
 ::: tip RETURN
@@ -86,16 +86,30 @@ void
 
 ---
 
-### checksum()
+### getChecksum()
 
 Retrieves the file checksum using the CHECKSUM_ALGO algorithm.
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 :::
 
 ::: tip RETURN
 string
+:::
+
+---
+
+### getSize()
+
+Retrieves the file size using `filesize`.
+
+::: danger THROWS
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+:::
+
+::: tip RETURN
+int
 :::
 
 ---
@@ -105,8 +119,8 @@ string
 Retrieves the file contents.
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md) 
 :::
 
 ::: tip RETURN
@@ -120,8 +134,8 @@ string
 Remove the file.
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) 
 :::
 
 ::: tip RETURN
@@ -135,8 +149,8 @@ void
 Create the file.
 
 ::: danger THROWS
-- [FileExistsException](../../Exceptions/Filesystem/FileExistsException.md)
-- [FileUnableToCreateException](../../Exceptions/Filesystem/FileUnableToCreateException.md)
+- [FileExistsException](../../Exceptions/Filesystem/FileExistsException.md) 
+- [FileUnableToCreateException](../../Exceptions/Filesystem/FileUnableToCreateException.md) 
 :::
 
 ::: tip RETURN
@@ -154,8 +168,8 @@ Put contents to the file. If the file doesn't exists it will be created.
 1. string `$contents`
 
 ::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md)
-- [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md)
+- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
+- [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md) 
 :::
 
 ::: tip RETURN

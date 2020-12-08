@@ -6,9 +6,9 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\PlugsMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/PlugsMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/PlugsMapInterface.php)
 
-## Implements
+## Extends
 
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -45,8 +45,8 @@ Return an instance with the specified added `$plug`.
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
-- [OverflowException](../../Exceptions/Core/OverflowException.md)
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -95,7 +95,7 @@ Return the plugs queue typed for the given `$pluggable`.
 1. string `$pluggable`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md)
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

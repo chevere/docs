@@ -6,10 +6,11 @@ editLink: false
 
 `Chevere\Exceptions\Core\OverflowException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Core/OverflowException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/OverflowException.php)
 
 ## Implements
 
+- [Stringable](https://www.php.net/manual/class.stringable)
 - [Throwable](https://www.php.net/manual/class.throwable)
 
 ## Extends

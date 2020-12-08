@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Plugin\Plugs\Hooks\HooksRunnerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Plugin/Plugs/Hooks/HooksRunnerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Plugin/Plugs/Hooks/HooksRunnerInterface.php)
 
 ## Description
 
@@ -24,8 +24,7 @@ Run the registered hooks at the given anchor.
 2.  `$argument`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../../../Exceptions/Core/InvalidArgumentException.md)
-If the $argument type changes.
+- [InvalidArgumentException](../../../../Exceptions/Core/InvalidArgumentException.md) If the $argument type changes.
 :::
 
 ::: tip RETURN

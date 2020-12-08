@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\VarExportable\VarExportableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/VarExportable/VarExportableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/VarExportable/VarExportableInterface.php)
 
 ## Description
 
@@ -21,8 +21,7 @@ Describes the component in charge of handling exportable variables.
 1.  `$var`
 
 ::: danger THROWS
-- [VarExportableException](../../Exceptions/VarExportable/VarExportableException.md)
-if `$var` can't be exported.
+- [VarExportableException](../../Exceptions/VarExportable/VarExportableException.md) if `$var` can't be exported.
 :::
 
 ---

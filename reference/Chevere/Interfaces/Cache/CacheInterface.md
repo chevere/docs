@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Cache\CacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Cache/CacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Cache/CacheInterface.php)
 
 ## Description
 
@@ -33,8 +33,7 @@ Type `string`
 1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 
 ::: danger THROWS
-- [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md)
-if $dir doesn't exists and unable to create
+- [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md) if $dir doesn't exists and unable to create
 :::
 
 ---
@@ -78,8 +77,7 @@ Remove item from cache.
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 
 ::: danger THROWS
-- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md)
-if unable to remove the cache file
+- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) if unable to remove the cache file
 :::
 
 ::: tip RETURN
@@ -116,7 +114,7 @@ Get a cache item.
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
 
 ::: danger THROWS
-- [CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md)
+- [CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md) 
 :::
 
 ::: tip RETURN

@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Plugs\Hooks\HookableInterfaceException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Plugs/Hooks/HookableInterfaceException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Plugs/Hooks/HookableInterfaceException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 

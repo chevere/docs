@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Spec\SpecMakerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/interfaces/Spec/SpecMakerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecMakerInterface.php)
 
 ## Description
 
@@ -23,8 +23,8 @@ Describes the component in charge of creating a routing spec.
 3. [RouterInterface](../Router/RouterInterface.md) `$router`
 
 ::: danger THROWS
-- [FilesystemException](../../Exceptions/Filesystem/FilesystemException.md)
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md)
+- [FilesystemException](../../Exceptions/Filesystem/FilesystemException.md) 
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---

@@ -6,11 +6,12 @@ editLink: false
 
 `Chevere\Exceptions\Spec\SpecPathException`
 
-[view source](https://github.com/chevere/chevere/blob/master/exceptions/Spec/SpecPathException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Spec/SpecPathException.php)
 
 ## Implements
 
 - [Throwable](https://www.php.net/manual/class.throwable)
+- [Stringable](https://www.php.net/manual/class.stringable)
 
 ## Extends
 
