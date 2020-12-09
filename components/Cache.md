@@ -7,8 +7,7 @@ Cache refers to the system in charge of storing application states. It provides 
 Cache works on the file system, using `.php` files that return a PHP value. In the code below `file.php` returns a string.
 
 ```php
-<?php
-return 'Hey there!';
+<?php return 'Hey there!';
 ```
 
 The return value can be assigned to a variable:

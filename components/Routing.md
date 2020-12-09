@@ -40,7 +40,6 @@ A `RouteName.php` file must return an object implementing [RouteNameInterface](.
 The `/var/routing/articles/{id}/RouteName.php` file below name route `/articles/{id}` as `article-by-id`.
 
 ```php
-<?php
 # /var/routing/articles/{id}/RouteName.php
 use Chevere\Components\Routes\RouteName;
 
@@ -56,7 +55,6 @@ Accepted HTTP methods are `CONNECT, DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT
 The `/var/routing/signup/POST.php` file below binds HTTP request `POST /signup` to `SignupController`.
 
 ```php
-<?php
 # /var/routing/signup/POST.php
 use App\Controllers\SignupController;
 

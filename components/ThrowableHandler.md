@@ -15,10 +15,6 @@ It is another exception handling replacement, but with a richer feature set incl
 In the example below, a `Chevere\Components\ThrowableHandler\ThrowableHandler` object is created by passing a `Chevere\Components\ThrowableHandler\ThrowableRead` object.
 
 ```php
-<?php
-
-declare(strict_types=1);
-
 use Chevere\Components\ThrowableHandler\ThrowableHandler;
 use Chevere\Components\ThrowableHandler\ThrowableRead;
 

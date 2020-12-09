@@ -43,12 +43,6 @@ Events are used when it is intended to broadcast that something took place. A cl
 In the code below, calls to `event` method allows to emit an event once `set` method logic was executed.
 
 ```php
-<?php
-
-declare(strict_types=1);
-
-namespace App;
-
 use Chevere\Interfaces\Plugin\PlugAnchorsInterface;
 use Chevere\Components\Plugin\Plugs\Events\Traits\PluggableEventsTrait;
 use Chevere\Interfaces\Plugin\Plugs\Hooks\PluggableHooksInterface;
@@ -100,12 +94,6 @@ Hooks are used when it is intended to allow modification on variables. A class m
 In the code below, calls to `hook` method allows to extend the behavior of the base `set` method.
 
 ```php
-<?php
-
-declare(strict_types=1);
-
-namespace App;
-
 use Chevere\Interfaces\Plugin\PlugAnchorsInterface;
 use Chevere\Components\Plugin\Plugs\Hooks\Traits\PluggableHooksTrait;
 use Chevere\Interfaces\Plugin\Plugs\Hooks\PluggableHooksInterface;

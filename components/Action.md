@@ -9,7 +9,6 @@ The Action components are in charge of providing a context for executing any giv
 There's a base `Chevere\Components\Action\Action` available to extend. Code below defines `SomeAction` class by extending `Chevere\Components\Action\Action`.
 
 ```php
-<?php
 use Chevere\Components\Action\Action;
 
 final class SomeAction extends Action
@@ -105,7 +104,6 @@ Controller is a special type of action in charge of handling user-triggered inst
 There's a base `Chevere\Components\Action\Controller` available to extend. Code below defines `SomeController` class by extending `Chevere\Components\Action\Controller`.
 
 ```php
-<?php
 use Chevere\Components\Actions\Controller;
 
 final class SomeController extends Controller

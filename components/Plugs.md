@@ -11,12 +11,6 @@ An Event Listener implements [EventListenerInterface](../reference/Chevere/Inter
 In the code below, the `__invoke` triggers extra functionality if `$value` ends with `lfo`. If you pass `rodolfo` will perform extra logic.
 
 ```php
-<?php
-
-declare(strict_types=1);
-
-namespace App;
-
 use App\DoesSomething;
 use Chevere\Components\Controller\Controller;
 use Chevere\Components\Plugin\Plugs\Events\Interfaces\EventPlugInterface;
@@ -58,12 +52,6 @@ A hook implements [HookInterface](../reference/Chevere/Interfaces/Plugin/Plugs/H
 In the code below, the `__invoke` method adds functionality by removing `lfo` if `$value` ends with it. If you pass `rodolfo` will return `rodo`.
 
 ```php
-<?php
-
-declare(strict_types=1);
-
-namespace App;
-
 use App\DoesSomething;
 use Chevere\Components\Controller\Controller;
 use Chevere\Interfaces\Plugin\Plugs\Hooks\HookPlugInterface;
