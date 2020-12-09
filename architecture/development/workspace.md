@@ -71,11 +71,27 @@ The [coding standard](../coding/coding-standard.md) is automatically implemented
 
 ### Configuration
 
-* `phpunit.xml` for development purposes
-* `phpunit-coverage.xml` for reporting code coverage
+* `phpunit.xml` for running test
+* `phpunit-report.xml` same as above, plus code coverage report
 
 ### Running tests
 
+To run tests:
+
 ```shell
-vendor/bin/phpunit -c <configuration file>
+vendor/bin/phpunit -c phpunit.xml
 ```
+
+To run tests with code coverage report at `./build/coverage/html`:
+
+```shell
+vendor/bin/phpunit -c phpunit-report.xml
+```
+
+To run filtered tests use the `--filter` option:
+
+```shell
+vendor/bin/phpunit -c phpunit-report.xml --filter ActionTest
+```
+
+Kindly check [PHPUnit Documentation](https://phpunit.de/documentation.html) for all available options.

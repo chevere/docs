@@ -115,3 +115,30 @@ new Arguments(
 ```
 
 The example above shows how to construct an Arguments instance by passing the Parameters and the matching named arguments.
+
+### Retrieve an argument
+
+The `get` method is used to retrieve an argument "as-is", without type checking. In the example below `$argument` must be either casted as boolean or use a doc block annotation to provide type-hint while `$boolean` type gets hinted directly from the function return.
+
+```php
+use Chevere\Interfaces\Parameter\ArgumentsInterface;
+
+/**
+ * @var ArgumentsInterface $arguments
+ * @var bool $argument
+ */
+$argument = $arguments->get('name');
+$boolean = $arguments->getBoolean('name');
+```
+
+The following methods are available to provide typed argument retrieval:
+
+| Method       | Return type |
+| ------------ | ----------- |
+| `getBoolean` | `bool`      |
+| `getString`  | `string`    |
+| `getInteger` | `integer`   |
+| `getFloat`   | `float`     |
+| `getArray`   | `array`     |
+
+> ⚠ **Note** that the above methods will throw a [TypeException](../reference/Chevere/Exceptions/Core/TypeException.md) on type mismatch.

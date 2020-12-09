@@ -2,8 +2,6 @@
 
 The Action components are in charge of providing a context for executing any given instruction. Action is the basic building block for incoming actions to the application.
 
-An action will run the `run` method passing 
-
 ## Defining an Action
 
 [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md) describes the interface for the component in charge of defining an action.
@@ -86,8 +84,10 @@ use Chevere\Interfaces\Response\ResponseSuccessInterface;
 
 public function run(ArgumentsInterface $arguments): ResponseSuccessInterface
 {
+    $id = $arguments->getInteger('id');
+    $user = new User($id);
     return $this->getResponseSuccess([
-        'email' => 'user@domain'
+        'email' => $user->email
     ]);
 }
 ```
