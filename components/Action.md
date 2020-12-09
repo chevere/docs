@@ -1,20 +1,17 @@
 # Action
 
-Action is the basic building block for incoming actions to your application. An action will be in charge of defining a runtime context.
+The Action components are in charge of providing a context for executing any given instruction. Action is the basic building block for incoming actions to the application.
 
-## Defining Actions
+An action will run the `run` method passing 
 
-An Action implements the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md) and there's a base `Chevere\Components\Action\Action` action that you can use.
+## Defining an Action
 
-Code below defines `SomeAction` class by extending `Chevere\Components\Action\Action`.
+[ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md) describes the interface for the component in charge of defining an action.
+
+There's a base `Chevere\Components\Action\Action` available to extend. Code below defines `SomeAction` class by extending `Chevere\Components\Action\Action`.
 
 ```php
 <?php
-
-declare(strict_types=1);
-
-namespace App\Controllers;
-
 use Chevere\Components\Action\Action;
 
 final class SomeAction extends Action
@@ -23,11 +20,9 @@ final class SomeAction extends Action
 }
 ```
 
-### Action Methods
+### Description
 
-#### getDescription()
-
-This method is used to define the action description, which is what the action does (by default).
+The `getDescription` method is used to define the action description, which is what the action does (by default).
 
 ```php
 public function getDescription(): string
@@ -36,15 +31,11 @@ public function getDescription(): string
 }
 ```
 
-#### description()
+### Parameters
 
-This method is used to access the actual object instance description.
+The `getParameters` method is used to define the action parameters, which later will be checked against arguments in the [run](#run) method.
 
-#### getParameters()
-
-This method is used to define the default parameters.
-
-It must return an object implementing [ParametersInterface](../reference/Chevere/Interfaces/Controller/ParametersInterface.md), which is a collection of objects implementing [ControllerParameterInterface](../reference/Chevere/Interfaces/Controller/ControllerParameterInterface.md).
+It must return an object implementing [ParametersInterface](../reference/Chevere/Interfaces/Parameter/ParametersInterface.md).
 
 ```php
 use Chevere\Interfaces\Parameter\ParametersInterface;
@@ -55,39 +46,105 @@ public function getParameters(): ParametersInterface
 {
     return (new Parameters)
         ->withAddedRequired(
-            (new IntegerParameter('id'))
-                ->withDescription('The user id.'),
+            id: (new IntegerParameter)
+                    ->withDescription('The user id.')
         );
 }
 ```
 
-For the code above, the argument value for parameter `id` must match against `/^d+$/` and it is required. In the other hand `alias` is an optional parameter that matches against `/^\w+$/`.
+### Response Data Parameters
 
-##### Parameter
-
-Each controller parameter implements [ControllerParameterInterface](../reference/Chevere/Interfaces/Controller/ControllerParameterInterface.md).
-
-#### run()
-
-The `run` method defines the instruction to run. It is responsible of issuing a response implementing [ResponseSuccessInterface](../reference/Chevere/Interfaces/Response/ResponseSuccessInterface.md).
-
-##### Call
-
-The argument passed to `run` method implements [ControllerArgumentsInterface](../reference/Chevere/Interfaces/Controller/ControllerArgumentsInterface.md) and it will always reflect the parameters declaration.
+The `getResponseDataParameters` method is used to define the response data parameters, which later will be checked against the response data provided in the [run](#run) method.
 
 ```php
-use Chevere\Interfaces\Controller\ControllerArgumentsInterface;
-use Chevere\Interfaces\Controller\ControllerResponseInterface;
-use Chevere\Components\Controller\ControllerResponse;
+use Chevere\Interfaces\Parameter\ParametersInterface;
+use Chevere\Components\Parameter\Parameters;
+use Chevere\Components\Parameter\IntegerParameter;
 
-public function run(ControllerArgumentsInterface $args): ControllerResponseInterface
+public function getResponseDataParameters(): ParametersInterface
 {
-    // I can read $args...
-    return new ControllerResponse(true, []);
+    return (new Parameters)
+        ->withAddedRequired(
+            email: new StringParameter
+        );
 }
 ```
 
-##### Response
+### Run
 
-Response of `run` method is an object implementing [ControllerResponseInterface](../reference/Chevere/Interfaces/Controller/ControllerResponseInterface.md), which can be success (`true`) or failure (`false`) and it must provide an array for the response data.
-****
+The `run` method is used to define the actual action instruction that will carried. It pass a variadic number of arguments which are checked against the defined action parameters.
+
+It must return an object implementing [ResponseSuccessInterface](../reference/Chevere/Interfaces/Response/ResponseSuccessInterface.md).
+
+```php
+use Chevere\Components\Parameter\IntegerParameter;
+use Chevere\Components\Parameter\Parameters;
+use Chevere\Components\Response\ResponseSuccess;
+use Chevere\Interfaces\Parameter\ArgumentsInterface;
+use Chevere\Interfaces\Parameter\ParametersInterface;
+use Chevere\Interfaces\Response\ResponseSuccessInterface;
+
+public function run(ArgumentsInterface $arguments): ResponseSuccessInterface
+{
+    return $this->getResponseSuccess([
+        'email' => 'user@domain'
+    ]);
+}
+```
+
+The `$arguments` passed will be typed against the defined action parameters.
+
+## Controller
+
+Controller is a special type of action in charge of handling user-triggered instructions and to drive it towards your application instructions. It extends on top of Action, adding an extra layer of context.
+
+### Defining a Controller
+
+[ControllerInterface](../reference/Chevere/Interfaces/Action/ControllerInterface.md) describes the interface for the component in charge of defining a Controller.
+
+There's a base `Chevere\Components\Action\Controller` available to extend. Code below defines `SomeController` class by extending `Chevere\Components\Action\Controller`.
+
+```php
+<?php
+use Chevere\Components\Actions\Controller;
+
+final class SomeController extends Controller
+{
+    // ...
+}
+```
+
+### Parameters (Controller)
+
+Controller defines [parameters](#parameters) just like an Action, but all parameters must implement [StringParameterInterface](../reference/Chevere/Interfaces/Parameter/StringParameterInterface.md). As Controller is designed to be used for handling user-triggered instructions like HTTP endpoints, commands and any other possible layer, the input arguments are of type `string`.
+
+## Context Parameters
+
+Controller adds context to provide runtime variables that aren't directly taken from the user input. The `getContextParameters` method is used to define the action parameters, which later will be checked against arguments in the [run](#run) method.
+
+It must return an object implementing [ParametersInterface](../reference/Chevere/Interfaces/Parameter/ParametersInterface.md).
+
+```php
+use Chevere\Interfaces\Parameter\ParametersInterface;
+use Chevere\Components\Parameter\Parameters;
+use Chevere\Components\Parameter\IntegerParameter;
+
+public function getContextParameters(): ParametersInterface
+{
+    return (new Parameters)
+        ->withAddedRequired(
+            min: (new IntegerParameter)->withDefault(10)
+        );
+}
+```
+
+On runtime, the context will be added by running the `withContextArguments` method:
+
+```php
+use Chevere\Interfaces\Parameter\ParametersInterface;
+use Chevere\Components\Parameter\Parameters;
+use Chevere\Components\Parameter\IntegerParameter;
+
+$controller = (new SomeController)
+    ->withContextArguments(min: 200);
+```

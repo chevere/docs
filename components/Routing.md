@@ -23,8 +23,8 @@ Routes are defined in a folder-based structure. Tree below shows how a routing d
 
 File system folders will reflect HTTP routes, the table below shows how system paths are interpreted as HTTP route paths for the [tree](#routing-scheme) above.
 
-| Path                       | Name          | HTTP route    | HTTP method |
-| -------------------------- | ------------- | ------------- | ----------- |
+| Path                        | Name          | HTTP route    | HTTP method |
+| --------------------------- | ------------- | ------------- | ----------- |
 | /var/routing/articles/      | articles      | /articles     | GET         |
 | /var/routing/articles/{id}/ | article-by-id | /articles/123 | GET         |
 | /var/routing/signup/        | signup        | /signup       | POST        |
@@ -68,7 +68,7 @@ return new SignupController;
 
 #### Wildcards
 
-Wildcards in a route path like `{id}` in `/articles/{id}`, are used to define route parameters which will be automatically configured to reflect the [Controller](Controller.md) parameters defined for the given route.
+Wildcards in a route path like `{id}` in `/articles/{id}`, are used to define route parameters which will be automatically configured to reflect the [Controller](Action.md#controller) parameters defined for the given route.
 
 Note that controllers in the alleged route must define the same base wildcard parameters.
 

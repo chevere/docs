@@ -1,6 +1,8 @@
 # Parameter
 
-The Parameter component is in charge of providing extended type support with the ability to handle variadic typed parameters and its argument matching. It allows implementors to provide variable parameter-argument type matching.
+The Parameter components are in charge of providing extended type support with the ability to handle variadic typed parameters and its argument matching. It allows implementors to provide variable parameter-argument type matching.
+
+## Defining a Parameter
 
 ```php
 use Chevere\Components\Parameter\Parameter;

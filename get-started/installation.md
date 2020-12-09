@@ -2,7 +2,7 @@
 
 ## System Requirements
 
-* PHP >= 7.4 (will target PHP 8)
+* PHP 8.0
 * ext-ctype
 * ext-ds
 * ext-json
@@ -21,7 +21,7 @@ The above command will install Chevere and its dependencies at `vendor/`.
 
 ## Now what?
 
-Chevere will now be available project-wide, just make sure to load `vendor/autoload.php` in your scripts.
+Chevere will now be available project-wide, just make sure to load `vendor/autoload.php` in your project.
 
 ```php
 require 'vendor/autoload.php';
