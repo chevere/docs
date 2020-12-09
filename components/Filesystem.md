@@ -1,6 +1,6 @@
 # Filesystem
 
-Filesystem is a collection of classes that interact with the filesystem, offering a myriad of filesystem related functionalities.
+The Filesystem component is in charge of interact with the filesystem, offering a myriad of related functionalities.
 
 ## Path
 

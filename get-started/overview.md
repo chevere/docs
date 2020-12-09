@@ -1,6 +1,6 @@
 # Overview
 
-In essence, Chevere is a [controller](./../components/controller.md) command runner with a [pluggable](../components/Pluggable.md) layer, which takes an `$input` and `return` a result of that process. It is designed around the concept of handling instructions for *consumers* of the application, which could be _anything_ triggering the call for these instructions.
+In essence, Chevere is an [action](./../components/Action.md) command runner with a [pluggable](../components/Pluggable.md) layer, which takes an `$input` and `return` a result of that process. It is designed around the concept of handling instructions for *consumers* of the application, which could be _anything_ triggering the call for these instructions.
 
 The framework is completely modular, and it can be progressively implemented in any project.
 
