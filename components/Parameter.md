@@ -1,19 +1,48 @@
 # Parameter
 
-The Parameter components are in charge of providing extended type support with the ability to handle variadic typed parameters and its argument matching. It allows implementors to provide variable parameter-argument type matching.
+The Parameter component is in charge of providing extended type support with the ability to handle variadic typed parameters and its argument matching. It allows to provide variable parameter-argument type matching.
 
-## Defining a Parameter
+[ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md) describes the interface for the component in charge of defining a typed parameter relying on the [Type](./Type.md) component.
+
+## Creating a Parameter
+
+In the code below, type for class `FullQualifiedName` is created with a description and an added attribute.
 
 ```php
 use Chevere\Components\Parameter\Parameter;
 use Chevere\Components\Type\Type;
 
-(new Parameter(new Type('classFullQualifiedName')))
-    ->withDescription('Parameter description')
-    ->withAddedAttribute('trySome');
+$parameter = new Parameter(new Type('FullQualifiedName'));
 ```
 
-[ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md) describes the interface for the component in charge of defining a typed parameter relying on the [Type](./Type.md) component.
+### Parameter description
+
+The `withDescription` method is used to provide the parameter description, which is a short summary oriented to explain the purpose of the parameter.
+
+```php
+use Chevere\Interfaces\Parameter\ParameterInterface;
+
+/**
+ * @var ParameterInterface $parameter
+ */
+$parameter = $parameter
+    ->withDescription('Stuff for doing some');
+```
+
+### Parameter attributes
+
+The `withAddedAttribute` method is used to provide parameter attributes, which are flags that can be checked against to contextualize the parameter.
+
+```php
+use Chevere\Interfaces\Parameter\ParameterInterface;
+
+/**
+ * @var ParameterInterface $parameter
+ */
+$parameter = $parameter
+    ->withAddedAttribute('langEn', 'localeEn');
+$parameter->hasAttribute('langEn'); // true
+```
 
 ## Parameter types
 
@@ -80,7 +109,7 @@ The above parameter will require an argument like `id-123` to validate.
 
 ## Parameters
 
-[ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md) describe the component in charge of collecting objects implementing the [ParametersInterface](../reference/Chevere/Interfaces/Parameter/ParametersInterface.md).
+[ParametersInterface](../reference/Chevere/Interfaces/Parameter/ParametersInterface.md) describe the component in charge of collecting objects implementing the [ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md).
 
 ```php
 use Chevere\Components\Parameter\Parameters;

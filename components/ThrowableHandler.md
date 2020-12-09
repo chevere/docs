@@ -32,15 +32,19 @@ $handler = $handler->withIsDebug(false);
 
 > 😉 Pass `false` to generate documents that shouldn't disclose sensitive information
 
-### Document
+### Documents
 
-In the example below, documents are created by passing `$handler`.
+In the example below, console, HTML and plain throwable documents are created by passing `$handler`.
 
 ```php
 use Chevere\Components\ThrowableHandler\Documents\ConsoleDocument;
 use Chevere\Components\ThrowableHandler\Documents\HtmlDocument;
 use Chevere\Components\ThrowableHandler\Documents\PlainDocument;
+use Chevere\Interfaces\ThrowableHandler\ThrowableHandler;
 
+/**
+ * @var ThrowableHandlerInterface $handler
+ */
 $console = new ConsoleDocument($handler);
 $plain = new PlainDocument($handler);
 $html = new HtmlDocument($handler);
