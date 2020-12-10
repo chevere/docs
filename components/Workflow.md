@@ -6,9 +6,7 @@ The Workflow component provides the ability to define a runtime execution based 
 
 ## Step
 
-A Step define an [Action](Action.md) with context arguments.
-
-[StepInterface](../reference/Chevere/Interfaces/Workflow/StepInterface.md) describes the interface for the component in charge of defining a Step.
+A Step define an [Action](Action.md) with arguments. [StepInterface](../reference/Chevere/Interfaces/Workflow/StepInterface.md) describes the interface for the component in charge of defining a Step.
 
 ```php
 use Chevere\Components\Workflow\Step;
@@ -20,7 +18,7 @@ The argument passed in `Step` constructor must implement the [ActionInterface](.
 
 ### Step Parameters
 
-Parameters are defined same as [Action Parameters](Action.md#parameters) and the parameter definition will be used to match step-referenced arguments.
+Parameters are defined same as [Action Parameters](Action.md#parameters) and the parameter definition will be used to match step-referenced arguments on runtime.
 
 ### Step Arguments
 
@@ -107,7 +105,6 @@ $workflow = $workflow
         'fetch',
         logging: (new Step('LoggingAction'))
             ->withArguments(device: '${logDevice}'),
-        
     )
     ->withAddedAfter(
         'insert',
