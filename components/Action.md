@@ -1,10 +1,10 @@
 # Action
 
-The Action components are in charge of providing a context for executing any given instruction. Action is the basic building block for incoming actions to the application.
-
-## Defining an Action
+The Action component is in charge of providing a context for executing any given instruction. Action is the basic building block for incoming actions to the application.
 
 [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md) describes the interface for the component in charge of defining an action.
+
+## Defining an Action
 
 There's a base `Chevere\Components\Action\Action` available to extend. Code below defines `SomeAction` class by extending `Chevere\Components\Action\Action`.
 
@@ -19,7 +19,7 @@ final class SomeAction extends Action
 
 ### Description
 
-The `getDescription` method is used to define the action description, which is what the action does (by default).
+The `getDescription` method is used to define the action description, which is what the action does.
 
 ```php
 public function getDescription(): string
@@ -95,7 +95,7 @@ The `$arguments` passed will be typed against the defined action parameters.
 
 ## Controller
 
-Controller is a special type of action in charge of handling user-triggered instructions and to drive it towards your application instructions. It extends on top of Action, adding an extra layer of context.
+Controller is a special type of action in charge of handling user-triggered instructions and to drive it towards application instructions. It extends on top of Action, adding an extra layer of context.
 
 ### Defining a Controller
 
