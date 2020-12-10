@@ -1,14 +1,14 @@
 # Workflow
 
-The Workflow component provides the ability to define a sequential (stepped) runtime execution. A Workflow contains a collection of Step, which use an [Action](Action.md) to run any given instruction.
+The Workflow component provides the ability to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Using the Workflow component, you can define a series of individual Steps each triggering responses with the goal to produce a final outcome.
 
 [WorkflowInterface](../reference/Chevere/Interfaces/Workflow/WorkflowInterface.md) describes the interface for the component in charge of defining a Workflow.
 
-Workflow is designed to run any kind of instruction and is immutable, which enables support for resume-able Workflows (long as your instructions are also stateless).
-
 ## Step
 
-A Step allows to define an action with context arguments. [StepInterface](../reference/Chevere/Interfaces/Workflow/StepInterface.md) describes the interface for the component in charge of defining a Step.
+A Step define an [Action](Action.md) with context arguments.
+
+[StepInterface](../reference/Chevere/Interfaces/Workflow/StepInterface.md) describes the interface for the component in charge of defining a Step.
 
 ```php
 use Chevere\Components\Workflow\Step;
@@ -16,36 +16,44 @@ use Chevere\Components\Workflow\Step;
 new Step('ClassNameImplementingActionInterface');
 ```
 
-The argument passed must be a class name implementing the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md). A Step is an interface build around the concept of a named Action.
+The argument passed in `Step` constructor must implement the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md).
 
 ### Step Parameters
 
-Step parameters are defined same as [Action Parameters](Action.md#parameters) and the definition will be used to match runtime arguments.
+Parameters are defined same as [Action Parameters](Action.md#parameters) and the parameter definition will be used to match step-referenced arguments.
 
 ### Step Arguments
 
-Step supports referenced arguments handling for workflow environment variables and for referencing the response from previous Steps. The `withArguments` method is used to define referenced arguments.
-
-For the code below, runtime argument checking will be made against the  defined at `ValidateAction`.
+The `withArguments` method is used to define step arguments, which will be passed when running the action.
 
 ```php
 use Chevere\Components\Workflow\Step;
 
 (new Step('SomeAction'))
     ->withArguments(
-        foo: '${bar}',
-        boo: '${foo:key}',
+        name: 'Rodolfo',
+        lastName: 'Berrios'
     );
 ```
 
-| Expression   | Meaning                                                     |
-| ------------ | ----------------------------------------------------------- |
-| `${bar}`     | A context argument                                          |
-| `${foo:key}` | The value of `key` key for the response of named step `foo` |
+For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeAction` when running the Workflow. These arguments will be matched against the parameters instance defined at the action.
+
+### Referenced Arguments
+
+Referenced arguments can be defined to bind arguments referencing Workflow variables or responses returned after running any previous step.
+
+| Expression        | Meaning                                                      |
+| ----------------- | ------------------------------------------------------------ |
+| `${var}`          | A context argument                                           |
+| `${stepName:key}` | The value of `key` for the response of named step `stepName` |
 
 ## Creating a Workflow
 
-Code below illustrates how `validate` step references a value stored in the response of the `fetch` Step. I this example, assume that `FetchAction` allows to pass a request payload of type `string` that will enable `email` and `username` arguments in the `validate` Step.
+Code below shows how to create a Workflow with this execution sequence:
+
+```sh
+fetch->validate->insert
+```
 
 ```php
 use Chevere\Components\Workflow\Workflow;
@@ -62,24 +70,37 @@ use Chevere\Components\Workflow\Step;
                 cache: '${useCache}',
                 email: '${fetch:email}',
                 username: '${fetch:username}',
+            ),
+        insert: (new Step('InsertAction'))
+            ->withArguments(
+                email: '${fetch:email}',
+                username: '${fetch:username}',
             )
     );
 ```
 
-Adding the Steps above to a Workflow will add `payload` and `useCache` as a Workflow context arguments. For validate Step, both email and username arguments are referenced with the responses obtained from `fetch` Step.
-
-> **Note**: It won't be possible to run the Workflow if the references are broken.
+For the code above, note how validate and insert steps reference arguments stored in the response of the fetch step. Variables `payload` and `useCache` will be required to be provided by the Workflow runner.
 
 ## Modifying a Workflow
 
-The `withAddedBefore` method allows to add Steps before a named Step. The `withAddedAfter` method allows to add Steps after a named Step.
+The `withAddedBefore` and `withAddedAfter` methods allows to add steps before/after another step.
+
+Code below modify the Workflow:
+
+```sh
+# From this:
+fetch->validate->insert
+
+# To this:
+logging->fetch->validate->insert->updateCount->caching
+```
 
 ```php
 use Chevere\Components\Workflow\Step;
 use Chevere\Interfaces\Workflow\WorkflowInterface;
 
 /**
- * @var WorkflowInterface $workflow
+ * @var WorkflowInterface $workflow 
  */
 $workflow = $workflow
     ->withAddedBefore(
@@ -97,4 +118,4 @@ $workflow = $workflow
     );
 ```
 
-In the code above, a logging Step is added before the fetch Step. On the other hand, Steps updateCount and caching are added after the insert Step.
+In the code above, a logging step is added before the fetch step. On the other hand, steps updateCount and caching are added after the insert step.
