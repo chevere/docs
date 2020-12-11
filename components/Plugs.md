@@ -8,7 +8,7 @@ Plugs are classes defining extra functionality, requiring to comply with the plu
 
 An Event Listener implements [EventListenerInterface](../reference/Chevere/Interfaces/Plugin/Plugs/EventListener/EventListenerInterface.md) and is a type of plug that fires when something took place.
 
-::: tip Learn by Examples
+::: tip Learn by Example
 Check the Event [example](https://github.com/chevere/examples/tree/master/00.HelloWorld#03eventphp) to learn directly playing with code.
 :::
 
@@ -53,7 +53,7 @@ final class DoesSomethingEventListener implements EventPlugInterface
 
 A hook implements [HookInterface](../reference/Chevere/Interfaces/Plugin/Plugs/Hooks/HookInterface.md) and is a type of plug that alters a variable.
 
-::: tip Learn by Examples
+::: tip Learn by Example
 Check the Hook [example](https://github.com/chevere/examples/tree/master/00.HelloWorld#02hookphp) to learn directly playing with code.
 :::
 

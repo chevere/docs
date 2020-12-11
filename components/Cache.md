@@ -4,6 +4,10 @@ The Cache component is in charge of providing a filesystem-based persistent appl
 
 [CacheInterface](../reference/Chevere/Interfaces/Cache/CacheInterface.md) describes the interface for the component in charge of handling cache.
 
+::: tip Learn by Example
+Check the Router [make](https://github.com/chevere/examples/tree/master/03.Http#00router-makephp) and [resolve](https://github.com/chevere/examples/tree/master/03.Http#01router-resolvephp) for a working use-case of the Cache component.
+:::
+
 ## Creating a Cache instance
 
 Cache works per directory, with keys represented by PHP return files in the filesystem.

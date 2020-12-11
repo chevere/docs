@@ -4,7 +4,7 @@ The ThrowableHandler component provides handling for [throwable](https://www.php
 
 [ThrowableHandlerInterface](../reference/Chevere/Interfaces/ThrowableHandler/ThrowableHandlerInterface.md) describe the interface for a component in charge of providing a throwable handling.
 
-::: tip Learn by Examples
+::: tip Learn by Example
 Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/master/01.ThrowableHandler) to learn directly playing with code.
 :::
 

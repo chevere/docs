@@ -4,17 +4,15 @@ The Router component is in charge of handling routeables. [RouterInterface](../r
 
 The router component is built on top of [FastRoute](https://github.com/nikic/FastRoute), but with added context for the chevere realm.
 
-::: tip Learn by Examples
+::: tip Learn by Example
 Check the Router [examples](https://github.com/chevere/examples/tree/master/03.Http#00router-makephp) to learn directly playing with code.
 :::
 
 ## Routing
 
-The Routing component is in charge of providing the ability to configure a file system based [Router](Router.md) by defining files and folders as route components.
+Routing works by defining routes and HTTP method to [Controller](Action.md#controller) matching using file system based conventions. Routes are defined in a folder-based structure.
 
-### Routing Filesystem Structure
-
-Routes are defined in a folder-based structure. Tree below shows how a routing directory looks like.
+Tree below shows how a routing directory looks like.
 
 ```sh
 /var/routing
@@ -29,9 +27,9 @@ Routes are defined in a folder-based structure. Tree below shows how a routing d
     └── RouteName.php
 ```
 
-### Routing Paths
+File-system folder paths will reflect HTTP route paths.
 
-File-system folder paths will reflect HTTP route paths. Table below shows how system paths are interpreted as HTTP route paths for the [tree](#routing-filesystem-structure) above.
+Table below shows how system paths are interpreted as HTTP route paths for the [tree](#routing-filesystem-structure) above.
 
 | Path                        | Name          | HTTP route    | HTTP method |
 | --------------------------- | ------------- | ------------- | ----------- |
@@ -39,11 +37,9 @@ File-system folder paths will reflect HTTP route paths. Table below shows how sy
 | /var/routing/articles/{id}/ | article-by-id | /articles/123 | GET         |
 | /var/routing/signup/        | signup        | /signup       | POST        |
 
-Each folder must define a single [`RouteName.php`](#routenamephp) file and many [`<methodName>.php`](#methodnamephp) for each applicable HTTP method.
+Each folder must define a single [`RouteName.php`](#routenamephp) file and many [`<methodName>.php`](#methodnamephp) for each applicable HTTP method. Variables in the form of `{var}` are used to define dynamic route parameters known as [wildcards](#wildcards).
 
-Variables in the form of `{var}` are used to define dynamic route parameters known as [wildcards](#wildcards).
-
-#### `RouteName.php`
+### `RouteName.php`
 
 A `RouteName.php` file must return an object implementing [RouteNameInterface](../reference/Chevere/Interfaces/Route/RouteNameInterface.md) and it must be unique.
 
@@ -56,7 +52,7 @@ use Chevere\Components\Routes\RouteName;
 return new RouteName('article-by-id');
 ```
 
-#### `<methodName>.php`
+### `<methodName>.php`
 
 HTTP endpoints are defined by using `<methodName>.php` naming convention, where `<methodName>` is the HTTP method name according to [RFC 7231](https://tools.ietf.org/html/rfc7231) and it must return a [Controller](Action.md#controller).
 
@@ -77,7 +73,7 @@ It is recommended to create a _different_ [Controller](Action.md#controller) for
 
 Note: Method `HEAD` is automatically added when adding `GET`.
 
-#### Wildcards
+### Wildcards
 
 Wildcards are expressed as `{var}`  for folder-names as `{id}` in `/articles/{id}`.
 
@@ -85,13 +81,13 @@ Wildcards are used to define route parameters which will be automatically config
 
 Note that controllers in the alleged route must define the same base wildcard parameters.
 
-### Generating Router
+## Generating Router
 
-Routing component allows to parse a directory using the build-in tooling to generate a Router.
+The Router can be easily generated using the built-in tooling.
 
-#### RoutingDescriptorsMaker
+### RoutingDescriptorsMaker
 
-The RoutingDescriptorsMaker component create the routing descriptors, which is the collection of routes interpreted from the file system.
+The RoutingDescriptorsMaker component create the routing descriptors, which is the collection of routes interpreted from the filesystem.
 
 [RoutingDescriptorsInterface](../reference/Chevere/Interfaces/Routing/RoutingDescriptorsInterface.md) describes the interface for the component in charge of defining a RoutingDescriptorsMaker.
 
@@ -105,7 +101,7 @@ $routingDescriptorsMaker = new RoutingDescriptorsMaker(
 $routingDescriptors = $routingDescriptorsMaker->descriptors();
 ```
 
-#### routerForRoutingDescriptors
+### routerForRoutingDescriptors
 
 The function `routerForRoutingDescriptors` allows to generate a router from RoutingDescriptors (see [RoutingDescriptorsMaker](#routingdescriptorsmaker)).
 
@@ -116,3 +112,9 @@ use function Chevere\Components\Routing\routerForRoutingDescriptors;
 
 $router = routerForRoutingDescriptors($routingDescriptors, 'my-group');
 ```
+
+## Using Router
+
+::: tip Learn by Example
+Head over to the [Router resolve](https://github.com/chevere/examples/tree/master/03.Http#01router-resolvephp) example to see use-cases for the Router.
+:::
