@@ -1,25 +1,27 @@
 # ThrowableHandler
 
-The `Chevere\Components\ThrowableHandler\ThrowableHandler` class is in charge of parsing thrown [throwable](https://www.php.net/manual/en/class.throwable.php).
+The ThrowableHandler component provides handling for [throwable](https://www.php.net/manual/en/class.throwable.php) with rich formatting support for console, HTML and plain text.
 
-It is another exception handling replacement, but with a richer feature set including formatting for the generation of different type of documents.
+[ThrowableHandlerInterface](../reference/Chevere/Interfaces/ThrowableHandler/ThrowableHandlerInterface.md) describe the interface for a component in charge of providing a throwable handling.
 
-## Learn by Examples
-
-> 🧔🏾 Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/master/01.ThrowableHandler).
+::: tip Learn by Examples
+Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/master/01.ThrowableHandler) to learn directly playing with code.
+:::
 
 ## Usage
 
 ### Initialization
 
-In the example below, a `Chevere\Components\ThrowableHandler\ThrowableHandler` object is created by passing a `Chevere\Components\ThrowableHandler\ThrowableRead` object.
+In the example below, a `ThrowableHandler` object is created by passing a `ThrowableRead` object.
 
 ```php
 use Chevere\Components\ThrowableHandler\ThrowableHandler;
 use Chevere\Components\ThrowableHandler\ThrowableRead;
 
 // $e implements Throwable
-$handler = new ThrowableHandler(new ThrowableRead($e));
+$handler = new ThrowableHandler(
+    new ThrowableRead($e)
+);
 ```
 
 ### Passing debug flag
