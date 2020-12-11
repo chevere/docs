@@ -4,9 +4,9 @@ The VarDump component provides an alternative to [var_dump](https://www.php.net/
 
 [VarDumpInterface](../reference/Chevere/Interfaces/VarDump/VarDumpInterface.md) describe the interface for a component in charge of providing the ability to dump any variable.
 
-## Learn by Examples
-
-> 🧔🏾 Check the VarDump [examples](https://github.com/chevere/examples/tree/master/02.VarDump).
+::: tip Learn by Examples
+Check the VarDump [examples](https://github.com/chevere/examples/tree/master/02.VarDump) to learn directly playing with code.
+:::
 
 ## Usage
 

@@ -97,6 +97,10 @@ The `$arguments` passed will be typed against the defined action parameters.
 
 Controller is a special type of action in charge of handling user-triggered instructions and to drive it towards application instructions. It extends on top of Action, adding an extra layer of context.
 
+::: tip Learn by Examples
+Check the Controller [example](https://github.com/chevere/examples/tree/master/00.HelloWorld#00controllerphp) to learn directly playing with code.
+:::
+
 ### Defining a Controller
 
 [ControllerInterface](../reference/Chevere/Interfaces/Action/ControllerInterface.md) describes the interface for the component in charge of defining a Controller.

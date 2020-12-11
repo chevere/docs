@@ -1,6 +1,10 @@
 # Writer
 
-A Writer writes strings to some context. [WriterInterface](../reference/Chevere/Interfaces/Writer/WriterInterface.md) describe the interface for a component in charge of _writing_.
+The Writer component is in charge of writing strings to some context, specially streams. [WriterInterface](../reference/Chevere/Interfaces/Writer/WriterInterface.md) describe the interface for a component in charge of writing.
+
+::: tip Learn by Examples
+Check the Writer [example](https://github.com/chevere/examples/tree/master/00.HelloWorld#01writerphp) to learn directly playing with code.
+:::
 
 ## Writers Container
 

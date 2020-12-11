@@ -4,9 +4,13 @@ Plugs are classes defining extra functionality, requiring to comply with the plu
 
 > 🧔🏾 Plugs are designed to be short sets of instructions that should be executed without persistent memory and decoupled as possible from the application.
 
-## Event Listener
+## Event
 
 An Event Listener implements [EventListenerInterface](../reference/Chevere/Interfaces/Plugin/Plugs/EventListener/EventListenerInterface.md) and is a type of plug that fires when something took place.
+
+::: tip Learn by Examples
+Check the Event [example](https://github.com/chevere/examples/tree/master/00.HelloWorld#03eventphp) to learn directly playing with code.
+:::
 
 In the code below, the `__invoke` triggers extra functionality if `$value` ends with `lfo`. If you pass `rodolfo` will perform extra logic.
 
@@ -48,6 +52,12 @@ final class DoesSomethingEventListener implements EventPlugInterface
 ## Hook
 
 A hook implements [HookInterface](../reference/Chevere/Interfaces/Plugin/Plugs/Hooks/HookInterface.md) and is a type of plug that alters a variable.
+
+::: tip Learn by Examples
+Check the Hook [example](https://github.com/chevere/examples/tree/master/00.HelloWorld#02hookphp) to learn directly playing with code.
+:::
+
+### Defining a Hook
 
 In the code below, the `__invoke` method adds functionality by removing `lfo` if `$value` ends with it. If you pass `rodolfo` will return `rodo`.
 
