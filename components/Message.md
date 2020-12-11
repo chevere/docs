@@ -1,14 +1,12 @@
 # Message
 
-The Message component provide rich formatting support for console, HTML and plain text.
+The Message component allows to create messages with rich formatting support for console, HTML and plain text.
 
 [MessageInterface](../reference/Chevere/Interfaces/Message/MessageInterface.md) describe the interface for a component in charge of providing a common message standard for system messages.
 
-## Creating the Message
+## Creating a Message
 
-A Message is created by passing a message template. In the code below a Message is created with `Hello, %to%!`.
-
-> 👍🏾 A message template can be any string.
+A Message is created by passing a Message template. In the code below a new Message is created with `Hello, %to%!`.
 
 ```php
 use Chevere\Components\Message\Message;
@@ -16,18 +14,18 @@ use Chevere\Components\Message\Message;
 $message = new Message('Hello, %to%!');
 ```
 
-## Replacing Sub-strings
+## Replacing sub-strings
 
-The `replace` method allows to replace a sub-string, without formatting.
+The `replace` method allows to prepare sub-string replacement without formatting.
 
 ```php
 $message = $message
     ->replace('%to%', 'Rodolfo'); // Hello, Rodolfo!
 ```
 
-## Formatting the Message
+## Formatting
 
-A Message can be formatted using `emphasis`, `strong`, `underline` and `code`. These methods take a `$search` needle and replace it with `$replace`, applying the desired formatting. 
+A Message can be formatted using `emphasis`, `strong`, `underline` and `code`. These methods take a `$search` needle and replace it with `$replace`, applying the desired formatting.
 
 ```php
 $message = (new Message('$0 $1 "%say" [**output**]'))
@@ -37,7 +35,9 @@ $message = (new Message('$0 $1 "%say" [**output**]'))
     ->code('**output**', 'WhatChuchaHappen');
 ```
 
-## Outputting the Message
+## Outputting
+
+Formatting for the Message template is implemented on outputting. The resulting output strings vary depending on the target device.
 
 ### To Console
 
@@ -46,6 +46,7 @@ The `toConsole` method returns a console highlighted string.
 ```php
 $message->toConsole();
 ```
+
 > 👍🏾 The console output is raw ASCII string which looks like the example below.
 > 
 > <em>ERROR</em> <strong>/where-it-happened.php</strong> <u>"Por la cresta!"</u> <code>[WhatChuchaHappen]</code>
