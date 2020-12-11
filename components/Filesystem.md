@@ -80,12 +80,12 @@ $childPathFile  = $path->getChild('child-2/some-file.php'); // /home/var/child-2
 ```php
 use Chevere\Components\Filesystem\Dir;
 use Chevere\Components\Filesystem\Path;
-use function Chevere\Components\Filesystem\dirForString;
+use function Chevere\Components\Filesystem\dirForPath;
 
 $path = '/home/var/';
 $dir = new Dir(new Path($path))
 // It can be also created with...
-$dir = dirForString($path);
+$dir = dirForPath($path);
 ```
 
 ### Creating a Directory
@@ -142,12 +142,12 @@ $childDir  = $dir->getChild('child/'); // /home/var/child/
 ```php
 use Chevere\Components\Filesystem\File;
 use Chevere\Components\Filesystem\Path;
-use function Chevere\Components\Filesystem\fileForString;
+use function Chevere\Components\Filesystem\fileForPath;
 
 $path = '/home/var/the-file.php';
 $file = new File(new Path($path));
 // It can be also created with...
-$file = fileForString($path);
+$file = fileForPath($path);
 ```
 
 ### Creating a File

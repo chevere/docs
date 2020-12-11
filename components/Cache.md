@@ -38,6 +38,10 @@ $cache = $cache->withPut(
 
 The `puts` method provides access to the cache put, which is an `array` containing details about `PUT` operations on the cache instance.
 
+```php
+$puts = $cache->puts();
+```
+
 ### Check
 
 The `exists` method is used to determine if cache exists at `$key`.
