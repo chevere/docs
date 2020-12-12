@@ -36,6 +36,18 @@ array (
 
 ## Methods
 
+### __construct()
+
+#### Parameters
+
+1. string `$string`
+
+::: danger THROWS
+- [RegexInvalidException](../../Exceptions/Regex/RegexInvalidException.md) 
+:::
+
+---
+
 ### toNoDelimiters()
 
 Provides access to the the regex string without delimiters.

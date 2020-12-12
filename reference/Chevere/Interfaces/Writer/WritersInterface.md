@@ -13,9 +13,7 @@ editLink: false
 ### __construct()
 
 ::: danger THROWS
-
-- [LogicException](../../Exceptions/Core/LogicException.md)
-- 
+- [LogicException](../../Exceptions/Core/LogicException.md) 
 :::
 
 ---

@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [ActionInterface](./ActionInterface.md)
-- [GetDescriptionInterface](../Description/GetDescriptionInterface.md)
+- [DescriptionInterface](../Description/DescriptionInterface.md)
 
 ## Description
 
@@ -32,18 +32,6 @@ Type `string`
 ```
 
 ## Methods
-
-### assertParametersType()
-
-::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) If `getParameters` provides anything else than StringParameter
-:::
-
-::: tip RETURN
-void
-:::
-
----
 
 ### getContextParameters()
 
@@ -107,9 +95,9 @@ Defines parameters.
 
 ---
 
-### parameters()
+### getResponseDataParameters()
 
-Provides access to the parameters.
+Defines expected response data parameters when executing `run` method.
 
 ::: tip RETURN
 [ParametersInterface](../Parameter/ParametersInterface.md)
@@ -117,9 +105,23 @@ Provides access to the parameters.
 
 ---
 
-### getResponseDataParameters()
+### run()
 
-Defines expected response data parameters when executing `run` method.
+Method called when running the action.
+
+#### Parameters
+
+1. [ArgumentsInterface](../Parameter/ArgumentsInterface.md) `$arguments`
+
+::: tip RETURN
+[ResponseSuccessInterface](../Response/ResponseSuccessInterface.md)
+:::
+
+---
+
+### parameters()
+
+Provides access to the parameters.
 
 ::: tip RETURN
 [ParametersInterface](../Parameter/ParametersInterface.md)
@@ -133,6 +135,18 @@ Provides access to the expected response data parameters.
 
 ::: tip RETURN
 [ParametersInterface](../Parameter/ParametersInterface.md)
+:::
+
+---
+
+### getArguments()
+
+#### Parameters
+
+1. mixed `$arguments`
+
+::: tip RETURN
+[ArgumentsInterface](../Parameter/ArgumentsInterface.md)
 :::
 
 ---
@@ -161,23 +175,9 @@ string
 
 ---
 
-### run()
-
-Method called when running the action.
-
-#### Parameters
-
-1. array `$arguments`
-
-::: tip RETURN
-[ResponseSuccessInterface](../Response/ResponseSuccessInterface.md)
-:::
-
----
-
 ### getDescription()
 
-Provides the description.
+Defines the description.
 
 ::: tip RETURN
 string

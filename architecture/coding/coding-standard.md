@@ -4,8 +4,6 @@ The coding standard exists as good practice for keeping the source cohesive as p
 
 ## Casing
 
-In Chevere, we keep it simple:
-
 * `PascalCase` for classes and interfaces
 * `SCREAMING_SNAKE_CASE` for constants
 * `camelCase` for everything else
@@ -14,9 +12,9 @@ In Chevere, we keep it simple:
 
 Code style is implemented with [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer), using a `.php_cs.dist` configuration file. The repository [chevere/code-style](https://github.com/chevere/code-style) is used exclusively to provide this file.
 
-> 😉 Our `.php_cs.dist` file allows you to configure your own `.header` comment file
+> 😉 The `.php_cs.dist` file will use your own `.header` comment file
 
-### Implementing our Code Style
+### Implementing Chevere Code Style
 
 Add `chevere/code-style` remote as `code-style`.
 
@@ -41,12 +39,14 @@ git merge code-style/master --allow-unrelated-histories
 The `use` keyword at the top of the document **must** be used to import all the dependencies. Fully-qualified imports should be avoided in favor of imports and aliases.
 
 ```php
+// Do:
 use Chevere\Components\Message\Message;
 
 new Message('Prefer to import');
 ```
 
 ```php
+// Don't:
 new Chevere\Components\Message\Message('...Instead of fully-qualified');
 ```
 

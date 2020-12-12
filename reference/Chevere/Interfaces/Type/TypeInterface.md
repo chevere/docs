@@ -94,7 +94,7 @@ Type `string`
 'null'
 ```
 
-### CLASS_NAME
+### PRIMITIVE_CLASS_NAME
 
 Type `string`
 
@@ -102,7 +102,7 @@ Type `string`
 'className'
 ```
 
-### INTERFACE_NAME
+### PRIMITIVE_INTERFACE_NAME
 
 Type `string`
 

@@ -137,3 +137,13 @@ string
 :::
 
 ---
+
+### getDescription()
+
+Defines the description.
+
+::: tip RETURN
+string
+:::
+
+---

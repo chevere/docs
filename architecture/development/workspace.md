@@ -61,7 +61,7 @@ Class name and namespace path is automatically resolved by the IDE.
 
 ## Coding Standards
 
-The [coding standard](../coding/coding-standard.md) is automatically implemented by extension [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer), which allows to register PHP CS Fixer as formatter. 
+The [coding standard](../coding/coding-standard.md) is automatically implemented by extension [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer), which allows to register PHP CS Fixer as formatter.
 
 > 🧙🏾 Formatting can be configured on save and or typing
 

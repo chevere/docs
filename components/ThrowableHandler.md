@@ -36,7 +36,7 @@ $handler = $handler->withIsDebug(false);
 
 ### Documents
 
-In the example below, console, HTML and plain throwable documents are created by passing `$handler`.
+In the code below console, plain and HTML throwable documents are created by passing `$handler`.
 
 ```php
 use Chevere\Components\ThrowableHandler\Documents\ConsoleDocument;
@@ -45,7 +45,7 @@ use Chevere\Components\ThrowableHandler\Documents\PlainDocument;
 use Chevere\Interfaces\ThrowableHandler\ThrowableHandler;
 
 /**
- * @var ThrowableHandlerInterface $handler
+ * @var ThrowableHandler $handler
  */
 $console = new ConsoleDocument($handler);
 $plain = new PlainDocument($handler);

@@ -81,16 +81,6 @@ string
 
 ---
 
-### name()
-
-Provides access to the name.
-
-::: tip RETURN
-string
-:::
-
----
-
 ### type()
 
 Provides access to the type instance.
@@ -103,8 +93,6 @@ Provides access to the type instance.
 
 ### withDescription()
 
-Return an instance with the specified `$description`.
-
 #### Parameters
 
 1. string `$description`
@@ -112,9 +100,6 @@ Return an instance with the specified `$description`.
 ::: tip RETURN
 [ParameterInterface](./ParameterInterface.md)
 :::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$description`.
 
 ---
 
@@ -187,6 +172,16 @@ Ds\Set
 ### description()
 
 Provides access to the description.
+
+::: tip RETURN
+string
+:::
+
+---
+
+### getDescription()
+
+Defines the description.
 
 ::: tip RETURN
 string

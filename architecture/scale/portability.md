@@ -1,6 +1,6 @@
 # Portability
 
-Everything in Chevere is made to be portable, to rely in _compiled_ PHP variables at production runtime. This not only saves the processing time of creating these resources, it also allows to spawn the application across multiple different optimized machines.
+Everything in Chevere is made to be portable and to rely in compiled PHP variables at production runtime. This not only saves the processing time of creating these resources, it also allows to spawn the application across multiple different optimized machines.
 
 There are advantages and caveats that must be addressed around this concept.
 

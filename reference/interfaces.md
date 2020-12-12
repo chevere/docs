@@ -37,7 +37,6 @@ editLink: false
 ## Description
 
 - [DescriptionInterface](./Chevere/Interfaces/Description/DescriptionInterface.md)
-- [GetDescriptionInterface](./Chevere/Interfaces/Description/GetDescriptionInterface.md)
 
 ## Filesystem
 
@@ -199,7 +198,6 @@ editLink: false
 ## Workflow
 
 - [StepInterface](./Chevere/Interfaces/Workflow/StepInterface.md)
-- [StepNameInterface](./Chevere/Interfaces/Workflow/StepNameInterface.md)
 - [WorkflowInterface](./Chevere/Interfaces/Workflow/WorkflowInterface.md)
 - [WorkflowMessageInterface](./Chevere/Interfaces/Workflow/WorkflowMessageInterface.md)
 - [WorkflowRunInterface](./Chevere/Interfaces/Workflow/WorkflowRunInterface.md)

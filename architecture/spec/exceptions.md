@@ -48,3 +48,4 @@ thrown new Exception(
         ->code('%action%', 'register')
         ->code('%id%', '123')
 );
+```
