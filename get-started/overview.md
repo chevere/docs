@@ -18,9 +18,9 @@ Chevere is modern PHP software and it encourages a proper use of the language ju
 
 To avoid the caveats of PHP, Chevere has its own [architecture](./../architecture/README.md) concepts, conventions and rules.
 
-### Tech Neutral
+## Tech Neutral
 
-Chevere is tech neutral and it can be rigged with Apache, Nginx, [Swoole](https://www.swoole.co.uk/), [ReactPHP](https://reactphp.org/), [RoadRunner](https://roadrunner.dev/) and more. You can use it in any project, under any framework or totally bare.
+Chevere is tech neutral and it can be used with Apache, Nginx, [Swoole](https://www.swoole.co.uk/), [ReactPHP](https://reactphp.org/), [RoadRunner](https://roadrunner.dev/) and more. You can use it in any project, under any framework or totally bare.
 
 ## Use Benefits
 

@@ -8,8 +8,6 @@ Chevere provides snippets and recommendation on extensions that goes better for 
 
 > 🧔🏾 The default IDE of choice is [Visual Studio Code](https://code.visualstudio.com/)
 
-### Settings
-
 Workspace settings are at `.vscode/settings.json`
 
 ### Extensions
@@ -29,13 +27,11 @@ Snippets provide an easy way to define templates for code. It is a productivity 
 
 > 👍🏾 Built-in snippets are at `.vscode/Templates.code-snippets`
 
-### Working with Snippets
-
 Snippets are designed to be context-aware, to parse information from the file system. That way, a lot of code can be autocompleted and prompt for easier editing.
 
 In the following two-steps, a new test will be created following the snippets workflow.
 
-#### Step 1: Create the file
+### Step 1: Create the file
 
 An empty `ExampleTest.php` file must be created at `Tests/Example/ExampleTest.php`. The tree should look like as below.
 
@@ -47,7 +43,7 @@ Tests
 
 > 🧙🏾 `Example` will be implemented in the namespace path and `ExampleTest` will be taken used as class name.
 
-#### Step 2: Inserting the snippet
+### Step 2: Inserting the snippet
 
 Triggering snippets is easy as typing the snippet prefix in the editor. Alternatively, snippets can be triggered by using the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
