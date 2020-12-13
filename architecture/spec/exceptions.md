@@ -1,16 +1,18 @@
 # Exceptions
 
-Exceptions are events that happens on runtime, that disrupts the execution of the software. Chevere extends all [SPL exceptions](https://www.php.net/manual/en/spl.exceptions.php) with support for [Message](./../../components/Message.md).
+Exceptions are error events that happens on runtime, that disrupts the execution of the software. Chevere extends all [SPL exceptions](https://www.php.net/manual/en/spl.exceptions.php) with support for [Message](./../../components/Message.md).
 
-[Exceptions Reference](./../../reference/exceptions.md) ➡
+::: tip Reference
+Check thee [Exceptions Reference](./../../reference/exceptions.md) for learn about all the interfaces available.
+:::
 
 ## Design
 
 ### Uniqueness
 
-Each different event **should** have its own unique exception.
+Each different event **should** have its own unique exception name. This is related to the [SRP](https://en.wikipedia.org/wiki/Single-responsibility_principle) in the way that each event is different, so the exception.
 
-This is related to the [SRP](https://en.wikipedia.org/wiki/Single-responsibility_principle) in the way that each event is different, so the exception. It is encouraged to provide custom exceptions for each different event.
+It is encouraged to provide custom exceptions for each different event.
 
 > 👶🏿 Is like naming your children... Don't get two kids named Braulio!
 

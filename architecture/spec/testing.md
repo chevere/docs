@@ -6,19 +6,14 @@ Testing is all about make sure that the software behave as expected. That the so
 
 > 👍🏾 Chevere tests are located at [Chevere\Tests](https://github.com/chevere/chevere/tree/master/Tests) namespace
 
-## Design Decisions
+## Testing Framework
 
-### Testing Framework
+Tests should be always compatible with the latest [PHPUnit](https://phpunit.de/) production release. Code coverage requires to install [pcov](https://github.com/krakjoe/pcov).
 
-Tests should be always compatible with the latest [PHPUnit](https://phpunit.de/) production release.
+## Requirements
 
-### Required testing
-
-[Integration testing](https://en.wikipedia.org/wiki/Integration_testing) is **required**.
-
-### Code Coverage
-
-All components **must** be covered and coverage **must** be equals to `100%`.
+* [Integration testing](https://en.wikipedia.org/wiki/Integration_testing) is **required**
+* All components **must** be covered
 
 ## Conventions
 

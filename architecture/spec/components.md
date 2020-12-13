@@ -1,6 +1,6 @@
 # Components
 
-All components must follow the [Interfaces](./interfaces.md), [Exceptions](./exceptions.md) and [Testing](./testing.md) spec. On top of that, components have the following conventions.
+All components must follow the [Interfaces](./interfaces.md), [Exceptions](./exceptions.md) and [Testing](./testing.md) spec. On top of that, components have some extra conventions.
 
 Components **must**:
 
@@ -12,4 +12,3 @@ Components **should**:
 
 * Prefer composition over inherence
 * Prefer to implement immutability
-* Provide exceptions in the same namespaceS

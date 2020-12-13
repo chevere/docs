@@ -91,3 +91,7 @@ vendor/bin/phpunit -c phpunit-report.xml --filter ActionTest
 ```
 
 Kindly check [PHPUnit Documentation](https://phpunit.de/documentation.html) for all available options.
+
+## Code Coverage
+
+[Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters) provides visual feedback regarding covered lines right into the editor.

@@ -14,31 +14,31 @@ The use of the term has roots in the [Chevereto](#origin) software, which simply
 
 ### Extensibility
 
-Chevere aims to ease the process of crafting pluggable applications by providing an architecture allowing to safely extend the application logic. Extensible applications not only do more, but engage more users and provide a solid foundation for your own application ecosystem.
+Chevere aims to ease the process of crafting extensible applications by providing an architecture allowing to safely extend and plug the application logic. Extensible applications not only do more, also engage more users and provide a solid foundation for your own application ecosystem.
 
 > 🔌 Pluggable logic allows to be open to do *more*.
 
 ### Clean & Typed
 
-Chevere follows the Clean Code principles, which can be resumed as the practice of creating code that is easy to understand, to change and maintain.
+Chevere follows Clean Code principles, which can be resumed as the practice of creating code that is easy to understand, to change and maintain.
 
 It uses strict strong-types for safe run-time operations and relies mostly on the language to avoid boilerplate code needed to validate dynamic types.
 
-> 🏷 Typed code is easier to read and safer to work with. You will notice it.
+> 🏷 Typed code is easier to read and safer to work with. You will notice it when you work with it.
 
 ### General Purpose
 
-On its core, Chevere is a simple command runner which can me mapped to do _anything_. The tooling is for general purposes, with enough flexibility to allow the creation a myriad of systems with the same know-how.
+Chevere is tech-neutral and on its core is just a simple command runner which can me mapped to do _anything_. The tooling is for general purposes, with enough flexibility to allow the creation a myriad of systems with the same know-how.
 
 > 💎 It is tech neutral and not web-centric.
 
-### Standard
+### Consistent
 
 Everything in Chevere feels in its place, like something that it was diligently designed by a single person.
 
 > 👨‍💻 Surprise, it is made by a single developer!.
 
-Chevere is made by a One Man Army developer and the code is heavily opinionated, with many coding standards and conventions seeking for cohesion, and the best usage (in my opinion) of the programming language.
+In Chevere the code is highly opinionated, with many coding standards and conventions seeking for cohesion, and the best usage (in my opinion) of the programming language and tooling available.
 
 ### Quality
 
@@ -48,7 +48,7 @@ Chevere code is checked against many tools and services.
 )](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Scrutinizer Code
 Quality](https://img.shields.io/scrutinizer/quality/g/chevere/chevere?style=flat-square)](https://scrutinizer-ci.com/g/chevere/chevere/?branch=master) [![codecov](https://img.shields.io/codecov/c/github/chevere/chevere?style=flat-square)](https://codecov.io/gh/chevere/chevere) [![CodeFactor](https://img.shields.io/codefactor/grade/github/chevere/chevere?label=code%20grade&style=flat-square)](https://www.codefactor.io/repository/github/chevere/chevere) [![Codacy Badge](https://img.shields.io/codacy/grade/b956754f8ff04aaa9ca24a6e4cc21661?style=flat-square)](https://www.codacy.com/gh/chevere/chevere?utm_source=github.com&utm_medium=referral&utm_content=chevere/chevere&utm_campaign=Badge_Grade) [![Maintainability](https://img.shields.io/codeclimate/maintainability/chevere/chevere?style=flat-square)](https://codeclimate.com/github/chevere/chevere) [![Tech Debt](https://img.shields.io/codeclimate/tech-debt/chevere/chevere?style=flat-square)](https://codeclimate.com/github/chevere/chevere)
 
-I believe that this is the minimum standard required for a library intended to be used as the base of more complex systems built on top of it.
+I believe that this is the standard required for a library intended to be used as the base of more complex systems built on top of it.
 
 ## Origin
 

@@ -13,6 +13,8 @@ Chevere system requirements can be found in the [composer.json](https://github.c
 * ext-mbstring
 * ext-zend-opcache
 
+The [chevere.ini](https://github.com/chevere/chevere/blob/master/chevere.ini) file provides the PHP settings required for Chevere.
+
 ## Installing
 
 * Requires [Composer](https://getcomposer.org/)
