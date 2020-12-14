@@ -8,7 +8,7 @@ The Cache component is in charge of providing a filesystem-based persistent appl
 Check the Router [make](https://github.com/chevere/examples/tree/master/03.Http#00router-makephp) and [resolve](https://github.com/chevere/examples/tree/master/03.Http#01router-resolvephp) for a working use-case of the Cache component.
 :::
 
-## Creating a Cache instance
+## Creating Cache
 
 Cache works per directory, with keys represented by PHP return files in the filesystem.
 
@@ -21,7 +21,7 @@ use function Chevere\Components\Filesystem\dirForPath;
 $cache = new Cache(dirForPath('/to-cache/'));
 ```
 
-### Put
+## Put
 
 The `withPut` method is used to cache a variable. The code below shows how to cache an entry identified by the key `the_cache_key`.
 
@@ -38,7 +38,7 @@ $cache = $cache->withPut(
 
 `VarExportable` is required to check if the `$var` to cache can be actually cached.
 
-### Puts
+## Puts
 
 The `puts` method provides access to the cache put, which is an `array` containing details about `PUT` operations on the cache instance.
 
@@ -46,7 +46,7 @@ The `puts` method provides access to the cache put, which is an `array` containi
 $puts = $cache->puts();
 ```
 
-### Check
+## Check
 
 The `exists` method is used to determine if cache exists at `$key`.
 
@@ -58,7 +58,7 @@ $key = new CacheKey('the_cache_key');
 $exists = $cache->exists($key);
 ```
 
-### Get
+## Get
 
 The `get` method is used to retrieve a cached entry at the given `$key`. It returns the cached `$var`.
 
@@ -70,7 +70,7 @@ $key = new CacheKey('the_cache_key');
 $var = $cache->get($key);
 ```
 
-### Remove
+## Remove
 
 The `withRemove` method is used to remove the cache at the given `$key`.
 
