@@ -49,7 +49,7 @@ public function getParameters(): ParametersInterface
 }
 ```
 
-### Response Data Parameters
+### Response Data
 
 The `getResponseDataParameters` method is used to define the response data parameters, which later will be checked against the response data provided in the [run](#run) method.
 
@@ -116,11 +116,11 @@ final class SomeController extends Controller
 }
 ```
 
-### Parameters (Controller)
+### Controller Parameters
 
 Controller defines [parameters](#parameters) just like an Action, but all parameters must implement [StringParameterInterface](../reference/Chevere/Interfaces/Parameter/StringParameterInterface.md). As Controller is designed to be used for handling user-triggered instructions like HTTP endpoints, commands and any other possible layer, the input arguments are of type `string`.
 
-## Context Parameters
+### Controller Context Parameters
 
 Controller adds context to provide runtime variables that aren't directly taken from the user input. The `getContextParameters` method is used to define the action parameters, which later will be checked against arguments in the [run](#run) method.
 
