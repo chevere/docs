@@ -14,9 +14,9 @@ use Chevere\Components\Type\Type;
 new Type(Type::STRING);
 ```
 
-### Keywords
+## Type Keywords
 
-Available keywords are (relative to `Chevere\Components\Type` namespace):
+Available keywords defined in [TypeInterface](../reference/Chevere/Interfaces/Type/TypeInterface.md#constants):
 
 - `Type::BOOLEAN`
 - `Type::INTEGER`
