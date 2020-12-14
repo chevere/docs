@@ -60,12 +60,8 @@ The `withAdded` method allows to append steps to the Workflow. For the code belo
 Variables `payload` and `useCache` will be required to be provided by the Workflow runner.
 
 ```php
-use Chevere\Components\Workflow\Workflow;
 use Chevere\Components\Workflow\Step;
 
-/**
- * @var Workflow $workflow
- */
 $workflow = $workflow
     ->withAdded(
         fetch: (new Step('FetchAction'))
@@ -102,11 +98,7 @@ logging->fetch->validate->insert->updateCount->caching
 
 ```php
 use Chevere\Components\Workflow\Step;
-use Chevere\Interfaces\Workflow\WorkflowInterface;
 
-/**
- * @var WorkflowInterface $workflow 
- */
 $workflow = $workflow
     ->withAddedBefore(
         'fetch',
