@@ -2,7 +2,7 @@
 
 Str is a collection of classes that interact with strings. Namespace `Chevere\Components\Str` holds all the Str classes, offering a myriad of string related functionalities.
 
-## String Manipulation
+## Manipulation
 
 Manipulating strings refers to the process of altering an argument of type `string`.
 
@@ -21,7 +21,7 @@ $result = $str->toString();
 
 In the code above, `THE STRING` is manipulated  to result in `thestring`.
 
-## String Asserting
+## Asserting
 
 Asserting strings refers to the process of asserting an argument of type `string` against methods that throws `Throwable` when failing to assert.
 
@@ -41,7 +41,7 @@ use new Chevere\Components\Str\StrAssert;
 
 In the code above, executing `notEmpty` won't raise any exception as `$string` is not empty, but executing `notCtypeSpace` will raise an exception as `$string` contains c-type spaces.
 
-## String Bool
+## Boolean checking
 
 Bool string refers to the process of validate an argument of type `string` against methods that returns `bool`.
 
