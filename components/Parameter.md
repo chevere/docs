@@ -12,18 +12,20 @@ In the code below, type for class `FullQualifiedName` is created with a descript
 use Chevere\Components\Parameter\Parameter;
 use Chevere\Components\Type\Type;
 
-$parameter = new Parameter(new Type('FullQualifiedName'));
+$parameter = new Parameter(
+    new Type('FullQualifiedName')
+);
 ```
 
 ### Parameter description
 
-The `withDescription` method is used to provide the parameter description, which is a short summary oriented to explain the purpose of the parameter.
+The `withDescription` method is used to provide the parameter description, which is a short summary explaining the purpose of the parameter.
 
 ```php
-use Chevere\Interfaces\Parameter\ParameterInterface;
+use Chevere\Components\Parameter\Parameter;
 
 /**
- * @var ParameterInterface $parameter
+ * @var Parameter $parameter
  */
 $parameter = $parameter
     ->withDescription('Stuff for doing some');
@@ -31,13 +33,13 @@ $parameter = $parameter
 
 ### Parameter attributes
 
-The `withAddedAttribute` method is used to provide parameter attributes, which are flags that can be checked against to contextualize the parameter.
+The `withAddedAttribute` method is used to provide parameter attributes, which are flags that can tag the parameter.
 
 ```php
-use Chevere\Interfaces\Parameter\ParameterInterface;
+use Chevere\Components\Parameter\Parameter;
 
 /**
- * @var ParameterInterface $parameter
+ * @var Parameter $parameter
  */
 $parameter = $parameter
     ->withAddedAttribute('langEn', 'localeEn');
@@ -126,11 +128,11 @@ use Chevere\Components\Parameter\IntegerParameter;
     );
 ```
 
-Variadic parameters can be passed to add multiple either required or optional parameter types.
+Parameters can be added either as required or optional.
 
 ## Arguments
 
-[ArgumentsInterface](../reference/Chevere/Interfaces/Parameter/ArgumentsInterface.md) describe the component in charge of checking if given arguments match the declared Parameters.
+[ArgumentsInterface](../reference/Chevere/Interfaces/Parameter/ArgumentsInterface.md) describe the component in charge of providing arguments matching the declared Parameters.
 
 ```php
 use Chevere\Components\Parameter\Arguments;
@@ -147,13 +149,15 @@ The example above shows how to construct an Arguments instance by passing the Pa
 
 ### Retrieve an argument
 
-The `get` method is used to retrieve an argument "as-is", without type checking. In the example below `$argument` must be either casted as boolean or use a doc block annotation to provide type-hint while `$boolean` type gets hinted directly from the function return.
+The `get` method is used to retrieve an argument "as-is", without type checking.
+
+In the example below `$argument` must be either casted as boolean or use a doc block annotation to provide type-hint while `$boolean` type gets hinted directly from the function return.
 
 ```php
-use Chevere\Interfaces\Parameter\ArgumentsInterface;
+use Chevere\Components\Parameter\Arguments;
 
 /**
- * @var ArgumentsInterface $arguments
+ * @var Arguments $arguments
  * @var bool $argument
  */
 $argument = $arguments->get('name');
