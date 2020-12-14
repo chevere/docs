@@ -48,7 +48,7 @@ Provides access to the cache directory.
 
 ---
 
-### withAddedItem()
+### withPut()
 
 Put item in cache.
 
@@ -68,7 +68,7 @@ an instance that contains the specified put.
 
 ---
 
-### withoutItem()
+### without()
 
 Remove item from cache.
 

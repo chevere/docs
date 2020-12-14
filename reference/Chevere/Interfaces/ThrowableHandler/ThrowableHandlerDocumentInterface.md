@@ -267,6 +267,20 @@ string
 
 ---
 
+### getContent()
+
+Returns a formatted content for a section.
+
+#### Parameters
+
+1. string `$content`
+
+::: tip RETURN
+string
+:::
+
+---
+
 ### getTemplate()
 
 Returns the template used for translating placeholders tags.
