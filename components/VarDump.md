@@ -8,11 +8,9 @@ The VarDump component provides an alternative to [var_dump](https://www.php.net/
 Check the VarDump [examples](https://github.com/chevere/examples/tree/master/02.VarDump) to learn directly playing with code.
 :::
 
-## Usage
+## Initialization
 
-### Initialization
-
-It requires a formatter implementing [VarDumpFormatterInterface](../reference/Chevere/Interfaces/VarDump/VarDumpFormatterInterface.md) and a outputter implementing [VarOutputterInterface](../reference/Chevere/Interfaces/VarDump/VarOutputterInterface.md).
+VarDump requires a formatter implementing [VarDumpFormatterInterface](../reference/Chevere/Interfaces/VarDump/VarDumpFormatterInterface.md) and a outputter implementing [VarOutputterInterface](../reference/Chevere/Interfaces/VarDump/VarOutputterInterface.md).
 
 In the example below, a VarDump is created with console colored formatting and output:
 
@@ -30,7 +28,7 @@ $varDump = new VarDump(
 $varDump = getVarDumpConsole();
 ```
 
-### Passing variables
+## Passing variables
 
 The method `withVars` is used to pass variables (variadic).
 
@@ -38,7 +36,7 @@ The method `withVars` is used to pass variables (variadic).
 $varDump = $varDump->withVars('a var', [], null);
 ```
 
-### Processing the dump
+## Process
 
 The method `process` is used to trigger the var dumping process. It requires to pass a [writer](Writer.md) where the dump information will be written.
 
@@ -50,13 +48,13 @@ $writer = new StreamWriter(streamFor('php://stdout', 'w'));
 $varDump->process($writer);
 ```
 
-### Shifting traces
+## Shifting traces
 
 The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous back traces should be removed.
 
 > 😉 Check [source code](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php) for functions `xd` and `xdd` for a better understanding
 
-### Helper functions
+## Helper functions
 
 The following helper functions can be used to save some boilerplate.
 
@@ -65,6 +63,8 @@ The following helper functions can be used to save some boilerplate.
   * `getVarDumpConsole` to create a console var dump
   * `getVarDumpHtml` to create a HTML var dump
 
-## Replacing var_dump
+## Replacing `var_dump`
 
-Function `xd` prints information about one of more variables to the output stream. It is a drop-in replacement for `var_dump`. `xdd` does the same as `xd`, but it dies.
+Function [`xd`](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L75) prints information about one of more variables to the output stream. It is a drop-in replacement for `var_dump`.
+
+Function [`xdd`](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L101) does the same as `xd`, but it `exit`.
