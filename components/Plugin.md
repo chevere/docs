@@ -1,40 +1,17 @@
-# Pluggable
+# Plugin
 
-The Plugin component consists in a set of tools providing pluggable logic, allowing applications to be extended, by any vendor or source.
+The Plugin component consists in a set of tools providing pluggable logic allowing instructions to be extended, specially by third-parties.
 
-The system works with classes that define pluggable anchors and registered plugs that *plug-in* these classes.
+The system works with interfaces that define pluggable anchors and registered plugs that *plug-in* these interfaces.
 
-## Defining Pluggables
+## Pluggables
 
 Classes defining pluggable logic are known as _pluggables_. Built-in pluggables are:
 
-- [Events](#pluggable-events) 
+- [Events](#pluggable-events)
 - [Hooks](#pluggable-hooks)
 
-### Example not-pluggable
-
-In the code below the `App\DoesSomething` class defines a `set` method which sets the value of the `$string` property.
-
-```php
-namespace App;
-
-final class DoesSomething
-{
-    private string $string = '';
-
-    public function set(string $value): void
-    {
-        // set=value
-        $this->string = 'set=' . $value;
-    }
-}
-```
-
-If the argument is `rodolfo` it will set the property to `set=rodolfo`.
-
-> 🤯 By implementing one or more pluggable interfaces, the `App\DoesSomething` class will be able to _do something extra_.
-
-### Pluggable Events
+## Pluggable Events
 
 Events are used when it is intended to broadcast that something took place. A class must implement [PluggableEventsInterface](../reference/Chevere/Interfaces/Plugin/Plugs/EventListener/PluggableEventsInterface.md) to allow pluggable events.
 
@@ -73,11 +50,11 @@ In the example above, `App\DoesSomething` implements pluggable events with two a
 
 The `beforeSet` event will be emitted before setting the value or the `$string` property. The `onSet` event is emitted after the value of `$string` is set.
 
-#### Defining event anchors
+### Defining event anchors
 
 The `getEventAnchors` method is used to define the event anchors available to implement in the pluggable class.
 
-#### Using event anchors
+### Using event anchors
 
 Pluggable events use the `event` method to emit the event which will listened by registered event listeners (if-any).
 
@@ -85,7 +62,7 @@ Pluggable events use the `event` method to emit the event which will listened by
 $this->event('anchor-name', EventInterface $event);
 ```
 
-### Pluggable Hooks
+## Pluggable Hooks
 
 Hooks are used when it is intended to allow modification on variables. A class must implement [PluggableHooksInterface](../reference/Chevere/Interfaces/Plugin/Plugs/Hooks/PluggableHooksInterface.md) to allow pluggable hooks.
 
@@ -125,11 +102,11 @@ final class DoesSomething implements PluggableHooksInterface
 
 In the example above, `App\DoesSomething` implements pluggable hooks with two anchors which alter `$value` argument, and therefore, the value of the `$string` property.
 
-#### Defining hook anchors
+### Defining hook anchors
 
 The `getHookAnchors` method is used to define the hook anchors available to implement in the pluggable class.
 
-#### Using hook anchors
+### Using hook anchors
 
 Pluggable hooks use the `hook` method to define a hookable code entry which will run hooks (if-any).
 
