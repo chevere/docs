@@ -8,9 +8,7 @@ The ThrowableHandler component provides handling for [throwable](https://www.php
 Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/master/01.ThrowableHandler) to learn directly playing with code.
 :::
 
-## Usage
-
-### Initialization
+## Initialization
 
 In the example below, a `ThrowableHandler` object is created by passing a `ThrowableRead` object.
 
@@ -24,7 +22,7 @@ $handler = new ThrowableHandler(
 );
 ```
 
-### Passing debug flag
+## Debug Flag
 
 The debug flag can be passed to alter the document generation. This flag will be used by ThrowableHandler documents, and it defaults to `true`.
 
@@ -34,7 +32,7 @@ $handler = $handler->withIsDebug(false);
 
 > 😉 Pass `false` to generate documents that shouldn't disclose sensitive information
 
-### Documents
+## Generating Documents
 
 In the code below console, plain and HTML throwable documents are created by passing `$handler`.
 
