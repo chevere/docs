@@ -85,7 +85,7 @@ Note that controllers in the alleged route must define the same base wildcard pa
 
 The Router can be easily generated using the built-in tooling.
 
-### RoutingDescriptorsMaker
+### Descriptors Maker
 
 The RoutingDescriptorsMaker component create the routing descriptors, which is the collection of routes interpreted from the filesystem.
 
@@ -101,9 +101,9 @@ $routingDescriptorsMaker = new RoutingDescriptorsMaker(
 $routingDescriptors = $routingDescriptorsMaker->descriptors();
 ```
 
-### routerForRoutingDescriptors
+### Router for Descriptors
 
-The function `routerForRoutingDescriptors` allows to generate a router from RoutingDescriptors (see [RoutingDescriptorsMaker](#routingdescriptorsmaker)).
+The function `routerForRoutingDescriptors` allows to generate a router from RoutingDescriptors (see [RoutingDescriptorsMaker](#descriptors-maker)).
 
 In the code below, `$router` is generated from `$routingDescriptors` and bound to `my-group`.
 
