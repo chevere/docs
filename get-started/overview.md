@@ -1,6 +1,6 @@
 # Overview
 
-Chevere is a collection of interconnected [components](https://github.com/chevere/chevere/tree/master/src/Chevere/Components) for creating high-demand extensible server-side applications. It basically provides an [action](./../components/Action.md) runner with a [pluggable](../components/Pluggable.md) layer, which takes an `$input` and return a result for that process.
+Chevere is a collection of interconnected [components](https://github.com/chevere/chevere/tree/master/src/Chevere/Components) for creating high-demand extensible server-side applications. It basically provides an [action](./../components/Action.md) runner with a [plugin](../components/plugin.md) layer, which takes an `$input` and return a result for that process.
 
 The framework is completely modular and it can be progressively implemented in any project.
 
