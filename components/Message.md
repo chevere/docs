@@ -23,15 +23,47 @@ $message = $message
     ->replace('%to%', 'Rodolfo'); // Hello, Rodolfo!
 ```
 
-## Formatting
+## Replacing with formatting
 
-A Message can be formatted using `emphasis`, `strong`, `underline` and `code`. These methods take a `$search` needle and replace it with `$replace`, applying the desired formatting.
+A Message can be formatted using methods that take a `$search` needle and replace it with `$replace` prepared with the desired formatting.
 
 ```php
-$message = (new Message('$0 $1 "%say" [**output**]'))
+$message = new Message('$0 $1 "%say" [**output**]');
+```
+
+### Emphasis
+
+The `emphasis` method allows to prepare sub-string replacement with emphasis.
+
+```php
+$message = $message
     ->emphasis('$0', 'ERROR')
+```
+
+### Strong
+
+The `strong` method allows to prepare sub-string replacement with strong.
+
+```php
+$message = $message
     ->strong('$1', '/where-it-happened.php')
+```
+
+### Underline
+
+The `underline` method allows to prepare sub-string replacement with underline.
+
+```php
+$message = $message
     ->underline('%say', 'Por la cresta!')
+```
+
+### Code
+
+The `code` method allows to prepare sub-string replacement with code.
+
+```php
+$message = $message
     ->code('**output**', 'WhatChuchaHappen');
 ```
 
