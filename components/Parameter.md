@@ -17,7 +17,7 @@ $parameter = new Parameter(
 );
 ```
 
-### Parameter description
+### Description
 
 The `withDescription` method is used to provide the parameter description, which is a short summary explaining the purpose of the parameter.
 
@@ -31,7 +31,7 @@ $parameter = $parameter
     ->withDescription('Stuff for doing some');
 ```
 
-### Parameter attributes
+### Attributes
 
 The `withAddedAttribute` method is used to provide parameter attributes, which are flags that can tag the parameter.
 
