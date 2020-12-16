@@ -16,41 +16,25 @@ Tree below shows how a routing directory looks like.
 
 ```sh
 /var/routing
-├── articles <- route /articles
-│   ├── {id} <- route /articles/{id}
-│   │   ├── GET.php
-│   │   └── RouteName.php
-│   ├── GET.php
-│   └── RouteName.php
-└── signup <- route /signup
-    ├── POST.php
-    └── RouteName.php
+├── articles <- route /articles/
+│   ├── {id} <- route /articles/{id}/
+│   │   └── GET.php
+│   └── GET.php
+└── post <- route /post/
+    └── POST.php
 ```
 
 File-system folder paths will reflect HTTP route paths.
 
 Table below shows how system paths are interpreted as HTTP route paths for the [tree](#routing-filesystem-structure) above.
 
-| Path                        | Name          | HTTP route    | HTTP method |
-| --------------------------- | ------------- | ------------- | ----------- |
-| /var/routing/articles/      | articles      | /articles     | GET         |
-| /var/routing/articles/{id}/ | article-by-id | /articles/123 | GET         |
-| /var/routing/signup/        | signup        | /signup       | POST        |
+| Path                        | HTTP route     | HTTP method |
+| --------------------------- | -------------- | ----------- |
+| /var/routing/articles/      | /articles/     | GET         |
+| /var/routing/articles/{id}/ | /articles/123/ | GET         |
+| /var/routing/post/          | /post/         | POST        |
 
-Each folder must define a single [`RouteName.php`](#routenamephp) file and many [`<methodName>.php`](#methodnamephp) for each applicable HTTP method. Variables in the form of `{var}` are used to define dynamic route parameters known as [wildcards](#wildcards).
-
-### `RouteName.php`
-
-A `RouteName.php` file must return an object implementing [RouteNameInterface](../reference/Chevere/Interfaces/Route/RouteNameInterface.md) and it must be unique.
-
-The `/var/routing/articles/{id}/RouteName.php` file below name route `/articles/{id}` as `article-by-id`.
-
-```php
-# /var/routing/articles/{id}/RouteName.php
-use Chevere\Components\Routes\RouteName;
-
-return new RouteName('article-by-id');
-```
+Each folder may define many [`<methodName>.php`](#methodnamephp) for each applicable HTTP method. Variables in the form of `{var}` are used to define dynamic route parameters known as [wildcards](#wildcards).
 
 ### `<methodName>.php`
 
@@ -58,13 +42,13 @@ HTTP endpoints are defined by using `<methodName>.php` naming convention, where 
 
 Accepted HTTP methods are `CONNECT, DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT, TRACE`.
 
-The `/var/routing/signup/POST.php` file below binds HTTP request `POST /signup` to `SignupController`.
+The `/var/routing/post/POST.php` file below binds HTTP request `POST /post/` to `PostController`.
 
 ```php
-# /var/routing/signup/POST.php
-use App\Controllers\SignupController;
+# /var/routing/post/POST.php
+use App\Controllers\PostController;
 
-return new SignupController;
+return new PostController;
 ```
 
 ::: tip
@@ -75,7 +59,7 @@ Note: Method `HEAD` is automatically added when adding `GET`.
 
 ### Wildcards
 
-Wildcards are expressed as `{var}`  for folder-names as `{id}` in `/articles/{id}`.
+Wildcards are expressed as `{var}`  for folder-names as `{id}` in `/articles/{id}/`.
 
 Wildcards are used to define route parameters which will be automatically configured to reflect the [Controller](Action.md#controller) parameters defined for the given route.
 
@@ -87,7 +71,7 @@ The Router can be easily generated using the built-in tooling.
 
 ### Descriptors Maker
 
-The RoutingDescriptorsMaker component create the routing descriptors, which is the collection of routes interpreted from the filesystem.
+The RoutingDescriptorsMaker component is in charge of creating the routing descriptors, which is the collection of routes interpreted from the filesystem.
 
 [RoutingDescriptorsInterface](../reference/Chevere/Interfaces/Routing/RoutingDescriptorsInterface.md) describes the interface for the component in charge of defining a RoutingDescriptorsMaker.
 
@@ -96,6 +80,7 @@ use Chevere\Components\Routing\RoutingDescriptorsMaker;
 use function Chevere\Components\Filesystem\dirForPath;
 
 $routingDescriptorsMaker = new RoutingDescriptorsMaker(
+    'repository',
     dirForPath('/var/routing/')
 );
 $routingDescriptors = $routingDescriptorsMaker->descriptors();
