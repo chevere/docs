@@ -28,7 +28,7 @@ The dependencies will be at `vendor/`.
 
 ## Browsing
 
-Each folder represents an example topic, like [`00.HelloWorld/`](https://github.com/chevere/examples/tree/master/00.HelloWorld) for "Hello, World" or [`02.VarDump/`](https://github.com/chevere/examples/tree/master/02.VarDump) for [VarDump component](../components/VarDump.md).
+Each folder represents an example topic, like [00.HelloWorld/](https://github.com/chevere/examples/tree/master/00.HelloWorld) for "Hello, World" or [02.VarDump/](https://github.com/chevere/examples/tree/master/02.VarDump) for [VarDump component](../components/VarDump.md).
 
 > 👴🏾 All files and folders use a numeric index representing levels of complexity
 

@@ -65,6 +65,6 @@ The following helper functions can be used to save some boilerplate.
 
 ## Replacing `var_dump`
 
-Function [`xd`](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L75) prints information about one of more variables to the output stream. It is a drop-in replacement for `var_dump`.
+Function [xd](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L75) prints information about one of more variables to the output stream. It is a drop-in replacement for `var_dump`.
 
-Function [`xdd`](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L101) does the same as `xd`, but it `exit`.
+Function [xdd](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L101) does the same as `xd`, but it `exit`.

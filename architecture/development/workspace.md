@@ -22,7 +22,7 @@ This is a list of the essential extensions that I can recommend for using Visual
 
 [Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) in Visual Studio Code provide an easy way to define templates for code. It is a productivity tool that allows to rapidly cast source code just typing a keyword in the IDE.
 
-Chevere snippets are at [`.vscode`](https://github.com/chevere/chevere/tree/master/.vscode) folder.
+Chevere snippets are at [.vscode/](https://github.com/chevere/chevere/tree/master/.vscode).
 
 Snippets provide this functionality for the IDE:
 

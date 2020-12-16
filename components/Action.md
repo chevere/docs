@@ -6,7 +6,7 @@ The Action component is in charge of providing a context for executing any given
 
 ## Defining an Action
 
-There's a base [`Action`](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Action/Action.php) available to extend. Code below defines class `SomeAction` by extending `Action`.
+There's a base [Action](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Action/Action.php) available to extend. Code below defines class `SomeAction` by extending `Action`.
 
 ```php
 use Chevere\Components\Action\Action;
