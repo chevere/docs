@@ -4,13 +4,13 @@ editLink: false
 
 # RoutePathInterface
 
-`Chevere\Interfaces\Route\RoutePathInterface`
+`Chevere\Interfaces\Router\Route\RoutePathInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RoutePathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Route/RoutePathInterface.php)
 
 ## Extends
 
-- [ToStringInterface](../To/ToStringInterface.md)
+- [ToStringInterface](../../To/ToStringInterface.md)
 
 ## Description
 
@@ -25,8 +25,8 @@ Describes the component in charge of handling route paths.
 1. string `$path`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
-- [LogicException](../../Exceptions/Core/LogicException.md) 
+- [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 
+- [LogicException](../../../Exceptions/Core/LogicException.md) 
 :::
 
 ---
@@ -46,7 +46,7 @@ Provides access to the wildcards instance.
 Provides access to the regex instance.
 
 ::: tip RETURN
-[RegexInterface](../Regex/RegexInterface.md)
+[RegexInterface](../../Regex/RegexInterface.md)
 :::
 
 ---

@@ -4,15 +4,15 @@ editLink: false
 
 # RouteEndpointsInterface
 
-`Chevere\Interfaces\Route\RouteEndpointsInterface`
+`Chevere\Interfaces\Router\Route\RouteEndpointsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RouteEndpointsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Route/RouteEndpointsInterface.php)
 
 ## Extends
 
-- [MappedInterface](../DataStructures/MappedInterface.md)
-- [GetGeneratorInterface](../DataStructures/GetGeneratorInterface.md)
-- [KeysInterface](../DataStructures/KeysInterface.md)
+- [MappedInterface](../../DataStructures/MappedInterface.md)
+- [GetGeneratorInterface](../../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description
@@ -61,7 +61,7 @@ Provides access to the RouteEndpointInterface identified by `$key`.
 1. string `$key`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

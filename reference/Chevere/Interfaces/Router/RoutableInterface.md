@@ -18,7 +18,7 @@ Describes the component in charge of defining a routable.
 
 #### Parameters
 
-1. [RouteInterface](../Route/RouteInterface.md) `$route`
+1. Route/RouteInterface.md `$route`
 
 ::: danger THROWS
 - [RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md) 
@@ -32,7 +32,7 @@ Describes the component in charge of defining a routable.
 Provides access to the RouteInterface instance.
 
 ::: tip RETURN
-[RouteInterface](../Route/RouteInterface.md)
+Route/RouteInterface.md
 :::
 
 ---

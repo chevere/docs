@@ -4,13 +4,13 @@ editLink: false
 
 # RouteEndpointInterface
 
-`Chevere\Interfaces\Route\RouteEndpointInterface`
+`Chevere\Interfaces\Router\Route\RouteEndpointInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RouteEndpointInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Route/RouteEndpointInterface.php)
 
 ## Extends
 
-- [DescriptionInterface](../Description/DescriptionInterface.md)
+- [DescriptionInterface](../../Description/DescriptionInterface.md)
 
 ## Description
 
@@ -44,8 +44,8 @@ array (
 
 #### Parameters
 
-1. [MethodInterface](../Http/MethodInterface.md) `$method`
-2. [ControllerInterface](../Action/ControllerInterface.md) `$controller`
+1. [MethodInterface](../../Http/MethodInterface.md) `$method`
+2. [ControllerInterface](../../Action/ControllerInterface.md) `$controller`
 
 ---
 
@@ -54,7 +54,7 @@ array (
 Provides access to the `$method` instance.
 
 ::: tip RETURN
-[MethodInterface](../Http/MethodInterface.md)
+[MethodInterface](../../Http/MethodInterface.md)
 :::
 
 ---
@@ -64,7 +64,7 @@ Provides access to the `$method` instance.
 Provides access to the `$controller` instance.
 
 ::: tip RETURN
-[ControllerInterface](../Action/ControllerInterface.md)
+[ControllerInterface](../../Action/ControllerInterface.md)
 :::
 
 ---
@@ -95,7 +95,7 @@ Return an instance with the specified `$parameter` removed.
 1. string `$parameter`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

@@ -111,33 +111,27 @@ editLink: false
 - [RegexInvalidException](./Chevere/Exceptions/Regex/RegexInvalidException.md)
 - [RegexMatchException](./Chevere/Exceptions/Regex/RegexMatchException.md)
 
-## Route
-
-- [RouteEndpointConflictException](./Chevere/Exceptions/Route/RouteEndpointConflictException.md)
-- [RouteNameInvalidException](./Chevere/Exceptions/Route/RouteNameInvalidException.md)
-- [RoutePathForwardSlashException](./Chevere/Exceptions/Route/RoutePathForwardSlashException.md)
-- [RouteWildcardConflictException](./Chevere/Exceptions/Route/RouteWildcardConflictException.md)
-- [RouteWildcardInvalidException](./Chevere/Exceptions/Route/RouteWildcardInvalidException.md)
-- [RouteWildcardInvalidRegexException](./Chevere/Exceptions/Route/RouteWildcardInvalidRegexException.md)
-- [RouteWildcardNotFoundException](./Chevere/Exceptions/Route/RouteWildcardNotFoundException.md)
-
 ## Router
 
 - [MethodNotAllowedException](./Chevere/Exceptions/Router/MethodNotAllowedException.md)
+- [RouteEndpointConflictException](./Chevere/Exceptions/Router/Route/RouteEndpointConflictException.md)
+- [RouteNameInvalidException](./Chevere/Exceptions/Router/Route/RouteNameInvalidException.md)
+- [RoutePathForwardSlashException](./Chevere/Exceptions/Router/Route/RoutePathForwardSlashException.md)
+- [RouteWildcardConflictException](./Chevere/Exceptions/Router/Route/RouteWildcardConflictException.md)
+- [RouteWildcardInvalidException](./Chevere/Exceptions/Router/Route/RouteWildcardInvalidException.md)
+- [RouteWildcardInvalidRegexException](./Chevere/Exceptions/Router/Route/RouteWildcardInvalidRegexException.md)
+- [RouteWildcardNotFoundException](./Chevere/Exceptions/Router/Route/RouteWildcardNotFoundException.md)
 - [RouteIdentifierException](./Chevere/Exceptions/Router/RouteIdentifierException.md)
 - [RouteNotFoundException](./Chevere/Exceptions/Router/RouteNotFoundException.md)
 - [RouteNotRoutableException](./Chevere/Exceptions/Router/RouteNotRoutableException.md)
 - [RouteWithoutEndpointsException](./Chevere/Exceptions/Router/RouteWithoutEndpointsException.md)
 - [RouterException](./Chevere/Exceptions/Router/RouterException.md)
-
-## Routing
-
-- [ExpectingControllerException](./Chevere/Exceptions/Routing/ExpectingControllerException.md)
-- [ExpectingRouteNameException](./Chevere/Exceptions/Routing/ExpectingRouteNameException.md)
-- [RouteNameAlreadyAddedException](./Chevere/Exceptions/Routing/RouteNameAlreadyAddedException.md)
-- [RoutePathAlreadyAddedException](./Chevere/Exceptions/Routing/RoutePathAlreadyAddedException.md)
-- [RouteRegexAlreadyAddedException](./Chevere/Exceptions/Routing/RouteRegexAlreadyAddedException.md)
-- [RoutingDescriptorAlreadyAddedException](./Chevere/Exceptions/Routing/RoutingDescriptorAlreadyAddedException.md)
+- [ExpectingControllerException](./Chevere/Exceptions/Router/Routing/ExpectingControllerException.md)
+- [ExpectingRouteNameException](./Chevere/Exceptions/Router/Routing/ExpectingRouteNameException.md)
+- [RouteNameAlreadyAddedException](./Chevere/Exceptions/Router/Routing/RouteNameAlreadyAddedException.md)
+- [RoutePathAlreadyAddedException](./Chevere/Exceptions/Router/Routing/RoutePathAlreadyAddedException.md)
+- [RouteRegexAlreadyAddedException](./Chevere/Exceptions/Router/Routing/RouteRegexAlreadyAddedException.md)
+- [RoutingDescriptorAlreadyAddedException](./Chevere/Exceptions/Router/Routing/RoutingDescriptorAlreadyAddedException.md)
 
 ## Serialize
 

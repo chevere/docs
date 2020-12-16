@@ -4,9 +4,9 @@ editLink: false
 
 # RouteWildcardNotFoundException
 
-`Chevere\Exceptions\Route\RouteWildcardNotFoundException`
+`Chevere\Exceptions\Router\Route\RouteWildcardNotFoundException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Route/RouteWildcardNotFoundException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Route/RouteWildcardNotFoundException.php)
 
 ## Implements
 
@@ -15,7 +15,7 @@ editLink: false
 
 ## Extends
 
-- [Exception](../Core/Exception.md)
+- [Exception](../../Core/Exception.md)
 
 ## Description
 
@@ -27,7 +27,7 @@ Exception thrown when a wildcard doesn't exists.
 
 #### Parameters
 
-1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
+1. [MessageInterface](../../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`
 3. [Throwable](https://www.php.net/manual/class.throwable) `$previous`
 
@@ -36,7 +36,7 @@ Exception thrown when a wildcard doesn't exists.
 ### message()
 
 ::: tip RETURN
-[MessageInterface](../../Interfaces/Message/MessageInterface.md)
+[MessageInterface](../../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---

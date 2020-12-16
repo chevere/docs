@@ -99,7 +99,7 @@ string
 Provides access to the exception code.
 
 ::: tip RETURN
-int
+string
 :::
 
 ---

@@ -37,7 +37,7 @@ Describes the component in charge of defining an immutable map.
 2.  `$value`
 
 ::: tip RETURN
-MapInterface
+self
 :::
 
 ---

@@ -4,9 +4,9 @@ editLink: false
 
 # RouteDecoratorInterface
 
-`Chevere\Interfaces\Route\RouteDecoratorInterface`
+`Chevere\Interfaces\Router\Route\RouteDecoratorInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/RouteDecoratorInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Route/RouteDecoratorInterface.php)
 
 ## Description
 

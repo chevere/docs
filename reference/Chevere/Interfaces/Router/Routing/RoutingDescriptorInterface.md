@@ -4,9 +4,9 @@ editLink: false
 
 # RoutingDescriptorInterface
 
-`Chevere\Interfaces\Routing\RoutingDescriptorInterface`
+`Chevere\Interfaces\Router\Routing\RoutingDescriptorInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Routing/RoutingDescriptorInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Routing/RoutingDescriptorInterface.php)
 
 ## Description
 
@@ -19,7 +19,7 @@ Describes the component in charge of handling a route element.
 Provides access to the dir instance.
 
 ::: tip RETURN
-[DirInterface](../Filesystem/DirInterface.md)
+[DirInterface](../../Filesystem/DirInterface.md)
 :::
 
 ---

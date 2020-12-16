@@ -4,9 +4,9 @@ editLink: false
 
 # RoutingDescriptorAlreadyAddedException
 
-`Chevere\Exceptions\Routing\RoutingDescriptorAlreadyAddedException`
+`Chevere\Exceptions\Router\Routing\RoutingDescriptorAlreadyAddedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Routing/RoutingDescriptorAlreadyAddedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Routing/RoutingDescriptorAlreadyAddedException.php)
 
 ## Implements
 
@@ -15,7 +15,7 @@ editLink: false
 
 ## Extends
 
-- [Exception](../Core/Exception.md)
+- [Exception](../../Core/Exception.md)
 
 ## Description
 
@@ -27,7 +27,7 @@ Exception thrown when a routing descriptor has been already added.
 
 #### Parameters
 
-1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
+1. [MessageInterface](../../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`
 3. [Throwable](https://www.php.net/manual/class.throwable) `$previous`
 
@@ -36,7 +36,7 @@ Exception thrown when a routing descriptor has been already added.
 ### message()
 
 ::: tip RETURN
-[MessageInterface](../../Interfaces/Message/MessageInterface.md)
+[MessageInterface](../../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---

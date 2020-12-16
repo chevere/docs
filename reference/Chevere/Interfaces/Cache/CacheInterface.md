@@ -54,7 +54,7 @@ Put item in cache.
 
 #### Parameters
 
-1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
+1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
 2. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
 
 ::: tip RETURN
@@ -74,7 +74,7 @@ Remove item from cache.
 
 #### Parameters
 
-1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
+1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
 
 ::: danger THROWS
 - [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) if unable to remove the cache file
@@ -97,7 +97,7 @@ Indicates whether the cache exists for the given key.
 
 #### Parameters
 
-1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
+1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
 
 ::: tip RETURN
 bool
@@ -111,7 +111,7 @@ Get a cache item.
 
 #### Parameters
 
-1. [CacheKeyInterface](./CacheKeyInterface.md) `$cacheKey`
+1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
 
 ::: danger THROWS
 - [CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md) 

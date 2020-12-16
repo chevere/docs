@@ -4,9 +4,9 @@ editLink: false
 
 # RouteEndpointConflictException
 
-`Chevere\Exceptions\Route\RouteEndpointConflictException`
+`Chevere\Exceptions\Router\Route\RouteEndpointConflictException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Route/RouteEndpointConflictException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Route/RouteEndpointConflictException.php)
 
 ## Implements
 
@@ -15,7 +15,7 @@ editLink: false
 
 ## Extends
 
-- [Exception](../Core/Exception.md)
+- [Exception](../../Core/Exception.md)
 
 ## Description
 
@@ -27,7 +27,7 @@ Exception thrown when detecting a route endpoint conflict.
 
 #### Parameters
 
-1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
+1. [MessageInterface](../../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`
 3. [Throwable](https://www.php.net/manual/class.throwable) `$previous`
 
@@ -36,7 +36,7 @@ Exception thrown when detecting a route endpoint conflict.
 ### message()
 
 ::: tip RETURN
-[MessageInterface](../../Interfaces/Message/MessageInterface.md)
+[MessageInterface](../../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---

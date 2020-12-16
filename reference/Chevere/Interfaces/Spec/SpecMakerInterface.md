@@ -18,7 +18,7 @@ Describes the component in charge of creating a routing spec.
 
 #### Parameters
 
-1. [SpecPathInterface](./SpecPathInterface.md) `$specPath`
+1. [SpecDirInterface](./SpecDirInterface.md) `$specPath`
 2. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 3. [RouterInterface](../Router/RouterInterface.md) `$router`
 
@@ -44,7 +44,7 @@ Provides access to the generated spec index instance.
 Provides access to the files map instance.
 
 ::: tip RETURN
-Ds\Map
+[Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 
 ---

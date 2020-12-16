@@ -4,9 +4,9 @@ editLink: false
 
 # ExpectingRouteNameException
 
-`Chevere\Exceptions\Routing\ExpectingRouteNameException`
+`Chevere\Exceptions\Router\Routing\ExpectingRouteNameException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Routing/ExpectingRouteNameException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Routing/ExpectingRouteNameException.php)
 
 ## Implements
 
@@ -15,7 +15,7 @@ editLink: false
 
 ## Extends
 
-- [Exception](../Core/Exception.md)
+- [Exception](../../Core/Exception.md)
 
 ## Description
 
@@ -27,7 +27,7 @@ Exception thrown when failing to provide a RouteNameInterface.
 
 #### Parameters
 
-1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
+1. [MessageInterface](../../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`
 3. [Throwable](https://www.php.net/manual/class.throwable) `$previous`
 
@@ -36,7 +36,7 @@ Exception thrown when failing to provide a RouteNameInterface.
 ### message()
 
 ::: tip RETURN
-[MessageInterface](../../Interfaces/Message/MessageInterface.md)
+[MessageInterface](../../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---

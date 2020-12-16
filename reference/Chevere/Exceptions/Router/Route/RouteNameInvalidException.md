@@ -4,9 +4,9 @@ editLink: false
 
 # RouteNameInvalidException
 
-`Chevere\Exceptions\Route\RouteNameInvalidException`
+`Chevere\Exceptions\Router\Route\RouteNameInvalidException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Route/RouteNameInvalidException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Route/RouteNameInvalidException.php)
 
 ## Implements
 
@@ -15,7 +15,7 @@ editLink: false
 
 ## Extends
 
-- [Exception](../Core/Exception.md)
+- [Exception](../../Core/Exception.md)
 
 ## Description
 
@@ -27,7 +27,7 @@ Exception thrown when the route name is invalid.
 
 #### Parameters
 
-1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
+1. [MessageInterface](../../../Interfaces/Message/MessageInterface.md) `$message`
 2. int `$code`
 3. [Throwable](https://www.php.net/manual/class.throwable) `$previous`
 
@@ -36,7 +36,7 @@ Exception thrown when the route name is invalid.
 ### message()
 
 ::: tip RETURN
-[MessageInterface](../../Interfaces/Message/MessageInterface.md)
+[MessageInterface](../../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---

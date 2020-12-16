@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# SpecPathInterface
+# SpecDirInterface
 
-`Chevere\Interfaces\Spec\SpecPathInterface`
+`Chevere\Interfaces\Spec\SpecDirInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecPathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecDirInterface.php)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Describes the component in charge of handling a spec path.
 
 #### Parameters
 
-1. string `$path`
+1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -43,7 +43,7 @@ Returns a child instance for the given `$childPath`.
 :::
 
 ::: tip RETURN
-SpecPathInterface
+SpecDirInterface
 :::
 
 ---

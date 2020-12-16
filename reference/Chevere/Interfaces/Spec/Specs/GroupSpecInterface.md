@@ -23,7 +23,7 @@ Describes the component in charge of defining the group spec.
 
 #### Parameters
 
-1. [SpecPathInterface](../SpecPathInterface.md) `$specPath`
+1. [SpecDirInterface](../SpecDirInterface.md) `$specPath`
 2. string `$group`
 
 ---

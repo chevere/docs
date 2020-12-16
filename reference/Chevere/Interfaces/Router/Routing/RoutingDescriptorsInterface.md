@@ -4,9 +4,9 @@ editLink: false
 
 # RoutingDescriptorsInterface
 
-`Chevere\Interfaces\Routing\RoutingDescriptorsInterface`
+`Chevere\Interfaces\Router\Routing\RoutingDescriptorsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Routing/RoutingDescriptorsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Routing/RoutingDescriptorsInterface.php)
 
 ## Extends
 
@@ -27,7 +27,7 @@ Return an instance with the specified `$descriptor` added.
 1. [RoutingDescriptorInterface](./RoutingDescriptorInterface.md) `$descriptor`
 
 ::: danger THROWS
-- [OverflowException](../../Exceptions/Core/OverflowException.md) 
+- [OverflowException](../../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -60,7 +60,7 @@ bool
 1. int `$position`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

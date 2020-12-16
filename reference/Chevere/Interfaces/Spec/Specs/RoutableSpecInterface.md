@@ -23,7 +23,7 @@ Describes the component in charge of defining a routable spec.
 
 #### Parameters
 
-1. [SpecPathInterface](../SpecPathInterface.md) `$specGroupPath`
+1. [SpecDirInterface](../SpecDirInterface.md) `$specGroupPath`
 2. [RoutableInterface](../../Router/RoutableInterface.md) `$routable`
 
 ---

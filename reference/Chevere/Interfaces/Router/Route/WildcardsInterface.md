@@ -4,16 +4,16 @@ editLink: false
 
 # WildcardsInterface
 
-`Chevere\Interfaces\Route\WildcardsInterface`
+`Chevere\Interfaces\Router\Route\WildcardsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Route/WildcardsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Route/WildcardsInterface.php)
 
 ## Extends
 
-- [MappedInterface](../DataStructures/MappedInterface.md)
-- [ToArrayInterface](../To/ToArrayInterface.md)
-- [GetGeneratorInterface](../DataStructures/GetGeneratorInterface.md)
-- [KeysInterface](../DataStructures/KeysInterface.md)
+- [MappedInterface](../../DataStructures/MappedInterface.md)
+- [ToArrayInterface](../../To/ToArrayInterface.md)
+- [GetGeneratorInterface](../../DataStructures/GetGeneratorInterface.md)
+- [KeysInterface](../../DataStructures/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description

@@ -23,8 +23,8 @@ Describes the component in charge of defining a route endpoint spec.
 
 #### Parameters
 
-1. [SpecPathInterface](../SpecPathInterface.md) `$specPath`
-2. [RouteEndpointInterface](../../Route/RouteEndpointInterface.md) `$routeEndpoint`
+1. [SpecDirInterface](../SpecDirInterface.md) `$specPath`
+2. [RouteEndpointInterface](../../Router/Route/RouteEndpointInterface.md) `$routeEndpoint`
 
 ::: danger THROWS
 - [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 
