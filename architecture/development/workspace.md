@@ -8,21 +8,24 @@ Chevere provides snippets and recommendation on extensions that goes better for 
 
 > 🧔🏾 The default IDE of choice is [Visual Studio Code](https://code.visualstudio.com/)
 
+### Assets
+
+All Visual Studio Code assets and settings are at the [.vscode/](https://github.com/chevere/chevere/tree/master/.vscode) folder.
+
 ### Extensions
 
 This is a list of the essential extensions that I can recommend for using Visual Studio Code for developing Chevere.
 
+* [Psalm (PHP Static Analysis Linting Machine)](https://marketplace.visualstudio.com/items?itemName=getpsalm.psalm-vscode-plugin)
 * [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
-* [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer)
 * [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 * [PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver)
 * [PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit)
+* [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
 
 ## Template Snippets
 
 [Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) in Visual Studio Code provide an easy way to define templates for code. It is a productivity tool that allows to rapidly cast source code just typing a keyword in the IDE.
-
-Chevere snippets are at [.vscode/](https://github.com/chevere/chevere/tree/master/.vscode).
 
 Snippets provide this functionality for the IDE:
 
@@ -32,9 +35,7 @@ Note that for the example above, the header comment and `strict_types` declarati
 
 ## Coding Standards Formatting
 
-The [coding standard](../coding/coding-standard.md) is automatically implemented by extension [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer), which allows to register PHP CS Fixer as formatter.
-
-> 🧙🏾 Formatting can be configured on save and or typing
+The [coding standard](../coding/coding-standard.md) is automatically implemented on save.
 
 ## Testing
 
