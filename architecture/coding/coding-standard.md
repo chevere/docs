@@ -13,7 +13,7 @@ The coding standard exists as good practice for keeping the source cohesive as p
 Code style is implemented using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard) defined at the [ecs.php](https://github.com/chevere/chevere/blob/master/ecs.php) file.
 
 ::: tip
-Check the instructions on [implementing  code style](#implementing-code-style) to get the same code style on your own project.
+Check the instructions on [implementing  code style](#implementing-code-style) to get the same styling in your project.
 :::
 
 ## Implementing Code Style
@@ -22,7 +22,7 @@ The repository [chevere/code-style](https://github.com/chevere/code-style) is us
 
 ### Adding the repository
 
-Run the following command to add `chevere/code-style` repository as `code-style` remote in your project root.W
+Run the following command to add `chevere/code-style` repository as `code-style` remote in your project root.
 
 ```sh
 git remote add code-style git@github.com:chevere/code-style.git
