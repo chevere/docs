@@ -144,7 +144,6 @@ editLink: false
 ## Spec
 
 - [SpecInvalidArgumentException](./Chevere/Exceptions/Spec/SpecInvalidArgumentException.md)
-- [SpecPathException](./Chevere/Exceptions/Spec/SpecPathException.md)
 
 ## Str
 

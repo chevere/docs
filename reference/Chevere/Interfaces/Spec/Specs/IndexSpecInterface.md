@@ -23,7 +23,7 @@ Describes the component in charge of defining the index spec.
 
 #### Parameters
 
-1. [SpecDirInterface](../SpecDirInterface.md) `$specPath`
+1. [DirInterface](../../Filesystem/DirInterface.md) `$specDir`
 
 ---
 

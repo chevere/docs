@@ -207,7 +207,7 @@ Return an instance with the specified `$known` object IDs.
 
 #### Parameters
 
-1. [Ds\Set](https://www.php.net/manual/class.ds\set) `$known`
+1. Ds\Set `$known`
 
 ::: tip RETURN
 VarDumperInterface
@@ -223,7 +223,7 @@ an instance that contains the specified `$known` object IDs.
 Provides access to the known object ids.
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

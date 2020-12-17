@@ -135,7 +135,6 @@ editLink: false
 
 ## Spec
 
-- [SpecDirInterface](./Chevere/Interfaces/Spec/SpecDirInterface.md)
 - [SpecEndpointsInterface](./Chevere/Interfaces/Spec/SpecEndpointsInterface.md)
 - [SpecIndexInterface](./Chevere/Interfaces/Spec/SpecIndexInterface.md)
 - [SpecIndexMapInterface](./Chevere/Interfaces/Spec/SpecIndexMapInterface.md)

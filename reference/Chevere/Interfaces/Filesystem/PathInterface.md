@@ -8,6 +8,10 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/PathInterface.php)
 
+## Extends
+
+- [ToStringInterface](../To/ToStringInterface.md)
+
 ## Description
 
 Describes the component in charge of interact with filesystem paths.
@@ -29,7 +33,7 @@ Describes the component in charge of interact with filesystem paths.
 
 ---
 
-### absolute()
+### toString()
 
 ::: tip RETURN
 string

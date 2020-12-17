@@ -23,7 +23,7 @@ Describes the component in charge of defining a route endpoint spec.
 
 #### Parameters
 
-1. [SpecDirInterface](../SpecDirInterface.md) `$specPath`
+1. [DirInterface](../../Filesystem/DirInterface.md) `$specDir`
 2. [RouteEndpointInterface](../../Router/Route/RouteEndpointInterface.md) `$routeEndpoint`
 
 ::: danger THROWS

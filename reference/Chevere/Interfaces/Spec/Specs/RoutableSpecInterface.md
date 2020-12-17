@@ -23,8 +23,9 @@ Describes the component in charge of defining a routable spec.
 
 #### Parameters
 
-1. [SpecDirInterface](../SpecDirInterface.md) `$specGroupPath`
+1. [DirInterface](../../Filesystem/DirInterface.md) `$specDir`
 2. [RoutableInterface](../../Router/RoutableInterface.md) `$routable`
+3. string `$repository`
 
 ---
 
