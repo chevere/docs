@@ -21,7 +21,7 @@ Describes the base interface used by typed plug queues.
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ::: tip RETURN
-PlugsQueueTypedInterface
+self
 :::
 
 ---

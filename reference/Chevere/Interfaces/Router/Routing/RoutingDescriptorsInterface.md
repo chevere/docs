@@ -31,7 +31,7 @@ Return an instance with the specified `$descriptor` added.
 :::
 
 ::: tip RETURN
-RoutingDescriptorsInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

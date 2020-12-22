@@ -36,7 +36,7 @@ Return an instance with the specified `$groupSpec`.
 1. [GroupSpecInterface](./GroupSpecInterface.md) `$groupSpec`
 
 ::: tip RETURN
-IndexSpecInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

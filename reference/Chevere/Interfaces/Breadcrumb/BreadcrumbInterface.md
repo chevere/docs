@@ -53,7 +53,7 @@ Return an instance with the specified added item.
 1. string `$item`
 
 ::: tip RETURN
-BreadcrumbInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -74,7 +74,7 @@ Return an instance with the specified pos removed.
 :::
 
 ::: tip RETURN
-BreadcrumbInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

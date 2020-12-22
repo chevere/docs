@@ -187,7 +187,7 @@ Return an instance with the specified verbosity.
 1. int `$verbosity`
 
 ::: tip RETURN
-ThrowableHandlerDocumentInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

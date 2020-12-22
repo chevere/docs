@@ -32,7 +32,7 @@ Return an instance with the specified `$vars`.
 1.  `$vars`
 
 ::: tip RETURN
-VarDumpInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -49,7 +49,7 @@ Return an instance with the specified `$shift` traces shifted.
 1. int `$shift`
 
 ::: tip RETURN
-VarDumpInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

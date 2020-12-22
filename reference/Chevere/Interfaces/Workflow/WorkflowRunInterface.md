@@ -67,7 +67,7 @@ Provides access to the ArgumentsInterface instance.
 :::
 
 ::: tip RETURN
-WorkflowRunInterface
+self
 :::
 
 ---

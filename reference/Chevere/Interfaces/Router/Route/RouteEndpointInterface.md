@@ -78,7 +78,7 @@ Return an instance with the specified `$description`.
 1. string `$description`
 
 ::: tip RETURN
-RouteEndpointInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -99,7 +99,7 @@ Return an instance with the specified `$parameter` removed.
 :::
 
 ::: tip RETURN
-RouteEndpointInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

@@ -125,7 +125,7 @@ Return an instance with the specified string translation.
 2. string `$replace`
 
 ::: tip RETURN
-MessageInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -143,7 +143,7 @@ Return an instance with the specified `$search` replaced with `$replace` emphasi
 2. string `$replace`
 
 ::: tip RETURN
-MessageInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -161,7 +161,7 @@ Return an instance with the specified `$search` replaced with `$replace` as stro
 2. string `$replace`
 
 ::: tip RETURN
-MessageInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -179,7 +179,7 @@ Return an instance with the specified underline.
 2. string `$replace`
 
 ::: tip RETURN
-MessageInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -197,7 +197,7 @@ Return an instance with the specified `$search` replaced with `$replace` as code
 2. string `$replace`
 
 ::: tip RETURN
-MessageInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

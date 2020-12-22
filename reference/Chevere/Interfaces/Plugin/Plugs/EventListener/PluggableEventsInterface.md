@@ -33,7 +33,7 @@ Return an instance with the specified `$runner`.
 1. [EventListenersRunnerInterface](./EventListenersRunnerInterface.md) `$runner`
 
 ::: tip RETURN
-PluggableEventsInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

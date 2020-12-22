@@ -45,7 +45,7 @@ Return an instance with the specified `$plugsMap`.
 :::
 
 ::: tip RETURN
-PlugsMapCacheInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

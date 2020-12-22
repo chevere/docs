@@ -30,7 +30,7 @@ Return an instance with the specified `$routeEndpointSpec`.
 1. [RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md) `$routeEndpointSpec`
 
 ::: tip RETURN
-RouteEndpointSpecsInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

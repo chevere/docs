@@ -31,7 +31,7 @@ Describes the component in charge of string manipulation.
 Return an instance with the chars lower cased (UTF-8).
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -44,7 +44,7 @@ an instance that contains the chars lower cased.
 Return an instance with the chars upper cased (UTF-8).
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -57,7 +57,7 @@ an instance that contains the chars upper cased.
 Return an instance with the white space stripped.
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -70,7 +70,7 @@ an instance that contains the white space stripped.
 Return an instance with the extra white space stripped.
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -83,7 +83,7 @@ an instance that contains the extra white space stripped.
 Return an instance with the non-alphanumeric chars stripped.
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -96,7 +96,7 @@ an instance that contains the non-alphanumeric chars stripped.
 Return an instance with the back slashes converted to forward slashes.
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -113,7 +113,7 @@ Return an instance with the specified `$tail` on left.
 1. string `$tail`
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -130,7 +130,7 @@ Return an instance with the specified `$tail` on right.
 1. string `$tail`
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -148,7 +148,7 @@ Return an instance with the specified `$search` replaced with `$replace` on the 
 2. string `$replace`
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -166,7 +166,7 @@ Return an instance with the specified `$search` replaced with `$replace` on the 
 2. string `$replace`
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -184,7 +184,7 @@ Return an instance with the specified `$search` replaced with `$replace` on all 
 2. string `$replace`
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -197,7 +197,7 @@ an instance that contains the specified `$search` replaced with `$replace` on al
 Return an instance with the ANSI colors stripped.
 
 ::: tip RETURN
-StrInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

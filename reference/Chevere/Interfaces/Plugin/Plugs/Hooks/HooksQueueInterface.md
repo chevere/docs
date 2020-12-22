@@ -25,7 +25,7 @@ Describes the component in charge of type-hint a hooks queue.
 1. [PlugInterface](../../PlugInterface.md) `$plug`
 
 ::: tip RETURN
-[PlugsQueueTypedInterface](../../PlugsQueueTypedInterface.md)
+self
 :::
 
 ---

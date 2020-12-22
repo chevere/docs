@@ -31,7 +31,7 @@ Asserts that the string is empty.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -45,7 +45,7 @@ Asserts that the string is not empty.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -59,7 +59,7 @@ Asserts that the string is ctype space.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -73,7 +73,7 @@ Asserts that the string is not ctype space.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -87,7 +87,7 @@ Asserts that the string is ctype digit.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -101,7 +101,7 @@ Asserts that the string is not ctype digit.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -115,7 +115,7 @@ Asserts that the string is starts with ctype digit.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -129,7 +129,7 @@ Asserts that the string not starts with ctype digit.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -147,7 +147,7 @@ Asserts that the string is starts with `$needle`.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -165,7 +165,7 @@ Asserts that the string not starts with `$needle`.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -183,7 +183,7 @@ Asserts that the string ends with `$needle`.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -201,7 +201,7 @@ Asserts that the string not ends with `$needle`.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -219,7 +219,7 @@ Asserts that the string is same as `$string`.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -237,7 +237,7 @@ Asserts that the string is not same as `$string`.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -255,7 +255,7 @@ Asserts that the string contains `$string`.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---
@@ -273,7 +273,7 @@ Asserts that the string not contains `$string`.
 :::
 
 ::: tip RETURN
-StrAssertInterface
+self
 :::
 
 ---

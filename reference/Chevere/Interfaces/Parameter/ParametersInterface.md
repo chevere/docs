@@ -42,7 +42,7 @@ Return an instance with the specified required `$parameter` instance added.
 :::
 
 ::: tip RETURN
-ParametersInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -63,7 +63,7 @@ Return an instance with the specified optional `$parameter` instance added.
 :::
 
 ::: tip RETURN
-ParametersInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -84,7 +84,7 @@ Return an instance with the specified `$parameter` modifying an already added pa
 :::
 
 ::: tip RETURN
-ParametersInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

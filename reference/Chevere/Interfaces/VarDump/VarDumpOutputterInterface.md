@@ -29,6 +29,16 @@ void
 
 ---
 
+### tearDown()
+
+Ends the outputter.
+
+::: tip RETURN
+void
+:::
+
+---
+
 ### backtrace()
 
 Provides access to the instance backtrace.
@@ -52,16 +62,6 @@ string
 ### prepare()
 
 This method is executed before `tearDown()`.
-
-::: tip RETURN
-void
-:::
-
----
-
-### tearDown()
-
-Ends the outputter.
 
 ::: tip RETURN
 void

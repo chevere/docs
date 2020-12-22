@@ -31,7 +31,7 @@ Return an instance with the specified `$wildcard`.
 1. [RouteWildcardInterface](./RouteWildcardInterface.md) `$wildcard`
 
 ::: tip RETURN
-WildcardsInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

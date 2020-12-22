@@ -42,7 +42,7 @@ Return an instance with the specified `$regex`.
 :::
 
 ::: tip RETURN
-StringParameterInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -63,7 +63,7 @@ Return an instance with the specified `$default` value.
 :::
 
 ::: tip RETURN
-StringParameterInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -98,7 +98,7 @@ Provides access to the type instance.
 1. string `$description`
 
 ::: tip RETURN
-[ParameterInterface](./ParameterInterface.md)
+self
 :::
 
 ---
@@ -116,7 +116,7 @@ Return an instance with the specified `$attribute` added.
 :::
 
 ::: tip RETURN
-[ParameterInterface](./ParameterInterface.md)
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -137,7 +137,7 @@ Return an instance with the specified `$attribute` removed.
 :::
 
 ::: tip RETURN
-[ParameterInterface](./ParameterInterface.md)
+self
 :::
 
 This method MUST retain the state of the current instance, and return

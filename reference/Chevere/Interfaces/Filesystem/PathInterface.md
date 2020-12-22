@@ -134,7 +134,7 @@ Get a child instance for the target child path.
 :::
 
 ::: tip RETURN
-PathInterface
+self
 :::
 
 ---

@@ -146,7 +146,7 @@ Return an instance with the specified `$indent`.
 1. int `$indent`
 
 ::: tip RETURN
-VarDumperInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -183,7 +183,7 @@ Return an instance with the specified `$depth`.
 1. int `$depth`
 
 ::: tip RETURN
-VarDumperInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -210,7 +210,7 @@ Return an instance with the specified `$known` object IDs.
 1. Ds\Set `$known`
 
 ::: tip RETURN
-VarDumperInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -233,7 +233,7 @@ Ds\Set
 Process the dump.
 
 ::: tip RETURN
-VarDumperInterface
+self
 :::
 
 ---

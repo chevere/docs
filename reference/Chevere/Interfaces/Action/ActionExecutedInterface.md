@@ -52,7 +52,7 @@ Return an instance with the specified throwable, with its exit code.
 2. int `$code`
 
 ::: tip RETURN
-ActionExecutedInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

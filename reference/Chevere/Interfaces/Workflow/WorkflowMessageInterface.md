@@ -23,7 +23,7 @@ Return an instance with the specified `$priority`.
 1. int `$priority`
 
 ::: tip RETURN
-WorkflowMessageInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -40,7 +40,7 @@ Return an instance with the specified delay in `$seconds`.
 1. int `$seconds`
 
 ::: tip RETURN
-WorkflowMessageInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -57,7 +57,7 @@ Return an instance with the specified expiration in `$seconds`.
 1. int `$seconds`
 
 ::: tip RETURN
-WorkflowMessageInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

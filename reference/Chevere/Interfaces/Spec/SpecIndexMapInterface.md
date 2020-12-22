@@ -31,7 +31,7 @@ Return an instance with the specified `$specEndpoints` for `$routeName`.
 2. [SpecEndpointsInterface](./SpecEndpointsInterface.md) `$specEndpoints`
 
 ::: tip RETURN
-SpecIndexMapInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

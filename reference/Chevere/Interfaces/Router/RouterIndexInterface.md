@@ -33,7 +33,7 @@ Return an instance with the specified `$routable` added.
 :::
 
 ::: tip RETURN
-RouterIndexInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

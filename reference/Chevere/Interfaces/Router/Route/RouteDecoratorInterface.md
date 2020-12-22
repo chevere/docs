@@ -18,16 +18,16 @@ Describes the component in charge of decorate a route.
 
 #### Parameters
 
-1. [RouteNameInterface](./RouteNameInterface.md) `$name`
+1. [RouteLocatorInterface](./RouteLocatorInterface.md) `$locator`
 
 ---
 
-### name()
+### locator()
 
 Provides access to the route name.
 
 ::: tip RETURN
-[RouteNameInterface](./RouteNameInterface.md)
+[RouteLocatorInterface](./RouteLocatorInterface.md)
 :::
 
 ---
@@ -41,7 +41,7 @@ Return an instance with the specified `$wildcards` instance.
 1. [WildcardsInterface](./WildcardsInterface.md) `$wildcards`
 
 ::: tip RETURN
-RouteDecoratorInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

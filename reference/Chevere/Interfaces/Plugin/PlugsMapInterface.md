@@ -50,7 +50,7 @@ Return an instance with the specified added `$plug`.
 :::
 
 ::: tip RETURN
-PlugsMapInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

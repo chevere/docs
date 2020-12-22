@@ -22,7 +22,7 @@ Describes the component in charge of handling route paths.
 
 #### Parameters
 
-1. string `$path`
+1. string `$route`
 
 ::: danger THROWS
 - [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 
@@ -47,6 +47,14 @@ Provides access to the regex instance.
 
 ::: tip RETURN
 [RegexInterface](../../Regex/RegexInterface.md)
+:::
+
+---
+
+### name()
+
+::: tip RETURN
+string
 :::
 
 ---

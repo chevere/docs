@@ -37,7 +37,7 @@ Return an instance with the specified `$routableSpec`.
 1. [RoutableSpecInterface](./RoutableSpecInterface.md) `$routableSpec`
 
 ::: tip RETURN
-GroupSpecInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

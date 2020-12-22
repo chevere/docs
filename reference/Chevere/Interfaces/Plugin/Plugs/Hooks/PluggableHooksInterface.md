@@ -33,7 +33,7 @@ Return an instance with the specified `$runner`.
 1. [HooksRunnerInterface](./HooksRunnerInterface.md) `$runner`
 
 ::: tip RETURN
-PluggableHooksInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

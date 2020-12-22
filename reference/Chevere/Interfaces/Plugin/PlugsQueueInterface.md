@@ -40,7 +40,7 @@ Return an instance with the specified `$plug`.
 :::
 
 ::: tip RETURN
-PlugsQueueInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

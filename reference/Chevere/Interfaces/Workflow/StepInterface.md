@@ -35,7 +35,7 @@ Return an instance with the specified named `$namedArguments`.
 1. mixed `$namedArguments`
 
 ::: tip RETURN
-StepInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

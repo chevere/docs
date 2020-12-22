@@ -115,7 +115,7 @@ Gets a child `DirInterface` for the added path.
 :::
 
 ::: tip RETURN
-DirInterface
+self
 :::
 
 ---

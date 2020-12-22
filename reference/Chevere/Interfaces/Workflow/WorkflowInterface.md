@@ -67,7 +67,7 @@ Return an instance with the specified `$step`.
 :::
 
 ::: tip RETURN
-WorkflowInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -89,7 +89,7 @@ Return an instance with the specified `$step` added before `$before`.
 :::
 
 ::: tip RETURN
-WorkflowInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -111,7 +111,7 @@ Return an instance with the specified `$step` added after `$after`.
 :::
 
 ::: tip RETURN
-WorkflowInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

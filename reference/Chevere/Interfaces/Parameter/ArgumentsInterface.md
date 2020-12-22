@@ -74,7 +74,7 @@ Return an instance with the specified controller argument.
 :::
 
 ::: tip RETURN
-ArgumentsInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

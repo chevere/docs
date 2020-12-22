@@ -58,7 +58,7 @@ Put item in cache.
 2. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
 
 ::: tip RETURN
-CacheInterface
+self
 :::
 
 Return an instance with the specified put.
@@ -81,7 +81,7 @@ Remove item from cache.
 :::
 
 ::: tip RETURN
-CacheInterface
+self
 :::
 
 Return an instance with the specified removed.

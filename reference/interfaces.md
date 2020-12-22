@@ -111,7 +111,7 @@ editLink: false
 - [RouteEndpointInterface](./Chevere/Interfaces/Router/Route/RouteEndpointInterface.md)
 - [RouteEndpointsInterface](./Chevere/Interfaces/Router/Route/RouteEndpointsInterface.md)
 - [RouteInterface](./Chevere/Interfaces/Router/Route/RouteInterface.md)
-- [RouteNameInterface](./Chevere/Interfaces/Router/Route/RouteNameInterface.md)
+- [RouteLocatorInterface](./Chevere/Interfaces/Router/Route/RouteLocatorInterface.md)
 - [RoutePathInterface](./Chevere/Interfaces/Router/Route/RoutePathInterface.md)
 - [RouteWildcardInterface](./Chevere/Interfaces/Router/Route/RouteWildcardInterface.md)
 - [RouteWildcardMatchInterface](./Chevere/Interfaces/Router/Route/RouteWildcardMatchInterface.md)

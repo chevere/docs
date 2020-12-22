@@ -27,7 +27,7 @@ Return an instance with the specified data.
 1. array `$data`
 
 ::: tip RETURN
-ResponseFailureInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

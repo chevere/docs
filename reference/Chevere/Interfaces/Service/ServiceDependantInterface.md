@@ -21,7 +21,7 @@ Describes the component in charge of defining a class with explicit dependencies
 1. mixed `$namedArguments`
 
 ::: tip RETURN
-ServiceDependantInterface
+self
 :::
 
 ---

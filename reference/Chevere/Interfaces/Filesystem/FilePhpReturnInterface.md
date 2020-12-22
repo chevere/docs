@@ -45,7 +45,7 @@ Return an instance with the strict flag.
 1. bool `$strict`
 
 ::: tip RETURN
-FilePhpReturnInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

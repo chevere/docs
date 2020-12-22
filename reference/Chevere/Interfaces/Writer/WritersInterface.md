@@ -27,7 +27,7 @@ Return an instance with the specified $writer for all writers.
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
 ::: tip RETURN
-WritersInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -44,7 +44,7 @@ Return an instance with the specified out WriterInterface.
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
 ::: tip RETURN
-WritersInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -69,7 +69,7 @@ Return an instance with the specified error WriterInterface.
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
 ::: tip RETURN
-WritersInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -94,7 +94,7 @@ Return an instance with the specified debug WriterInterface.
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
 ::: tip RETURN
-WritersInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -119,7 +119,7 @@ Return an instance with the specified log WriterInterface.
 1. [WriterInterface](./WriterInterface.md) `$writer`
 
 ::: tip RETURN
-WritersInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

@@ -27,7 +27,7 @@ Return an instance with the specified data.
 1. array `$data`
 
 ::: tip RETURN
-ResponseSuccessInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -44,7 +44,7 @@ Return an instance with the specified workflow message.
 1. [WorkflowMessageInterface](../Workflow/WorkflowMessageInterface.md) `$workflowMessage`
 
 ::: tip RETURN
-ResponseSuccessInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return

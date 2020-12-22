@@ -36,7 +36,7 @@ Return an instance with the specified className mapping.
 :::
 
 ::: tip RETURN
-ClassMapInterface
+self
 :::
 
 This method MUST retain the state of the current instance, and return
