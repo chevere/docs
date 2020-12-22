@@ -2,7 +2,7 @@
 
 The Action component is in charge of providing a context for executing any given instruction. Action is the basic building block for incoming actions to the application.
 
-[ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md) describes the interface for the component in charge of defining an action.
+[ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md) describes the interface for the component in charge of defining an Action.
 
 ## Defining an Action
 
