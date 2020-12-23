@@ -4,9 +4,9 @@ editLink: false
 
 # KeysInterface
 
-`Chevere\Interfaces\DataStructures\KeysInterface`
+`Chevere\Interfaces\DataStructure\KeysInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/DataStructures/KeysInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/DataStructure/KeysInterface.php)
 
 ## Description
 

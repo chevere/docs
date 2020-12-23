@@ -10,9 +10,9 @@ editLink: false
 
 ## Extends
 
-- [MappedInterface](../../DataStructures/MappedInterface.md)
-- [GetGeneratorInterface](../../DataStructures/GetGeneratorInterface.md)
-- [KeysInterface](../../DataStructures/KeysInterface.md)
+- [MappedInterface](../../DataStructure/MappedInterface.md)
+- [GetGeneratorInterface](../../DataStructure/GetGeneratorInterface.md)
+- [KeysInterface](../../DataStructure/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
 ## Description

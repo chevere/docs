@@ -4,9 +4,9 @@ editLink: false
 
 # GetGeneratorInterface
 
-`Chevere\Interfaces\DataStructures\GetGeneratorInterface`
+`Chevere\Interfaces\DataStructure\GetGeneratorInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/DataStructures/GetGeneratorInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/DataStructure/GetGeneratorInterface.php)
 
 ## Description
 

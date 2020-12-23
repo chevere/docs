@@ -4,9 +4,9 @@ editLink: false
 
 # MapInterface
 
-`Chevere\Interfaces\DataStructures\MapInterface`
+`Chevere\Interfaces\DataStructure\MapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/DataStructures/MapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/DataStructure/MapInterface.php)
 
 ## Extends
 

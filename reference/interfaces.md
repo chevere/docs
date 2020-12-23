@@ -27,12 +27,12 @@ editLink: false
 
 - [ClassMapInterface](./Chevere/Interfaces/ClassMap/ClassMapInterface.md)
 
-## DataStructures
+## DataStructure
 
-- [GetGeneratorInterface](./Chevere/Interfaces/DataStructures/GetGeneratorInterface.md)
-- [KeysInterface](./Chevere/Interfaces/DataStructures/KeysInterface.md)
-- [MapInterface](./Chevere/Interfaces/DataStructures/MapInterface.md)
-- [MappedInterface](./Chevere/Interfaces/DataStructures/MappedInterface.md)
+- [GetGeneratorInterface](./Chevere/Interfaces/DataStructure/GetGeneratorInterface.md)
+- [KeysInterface](./Chevere/Interfaces/DataStructure/KeysInterface.md)
+- [MapInterface](./Chevere/Interfaces/DataStructure/MapInterface.md)
+- [MappedInterface](./Chevere/Interfaces/DataStructure/MappedInterface.md)
 
 ## Description
 
