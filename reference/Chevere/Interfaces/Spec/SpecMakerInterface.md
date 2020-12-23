@@ -19,7 +19,7 @@ Describes the component in charge of creating a routing spec.
 #### Parameters
 
 1. [DirInterface](../Filesystem/DirInterface.md) `$specDir`
-2. [DirInterface](../Filesystem/DirInterface.md) `$workingDir`
+2. [DirInterface](../Filesystem/DirInterface.md) `$outputDir`
 3. [RouterInterface](../Router/RouterInterface.md) `$router`
 
 ::: danger THROWS

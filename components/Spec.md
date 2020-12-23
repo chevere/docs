@@ -2,41 +2,86 @@
 
 The Spec component is in charge of creating a distributed JSON representation for the endpoints in a given [Router](./Router.md), allowing to provide instructions in how to interact with the application exposed endpoints.
 
-## Files
+## JSON files
 
-Table below summarizes the type of files created by the Spec component.
+The Spec representation is isolated, distributed in many files to always provide a relevant `.json` spec for the application endpoints being used by a given application consumer.
 
-| Name                | Path                           | Description                                  |
-| ------------------- | ------------------------------ | -------------------------------------------- |
-| `index.json`        | /                              | The entire Spec in one single file           |
-| `routes.json`       | /`<repository>`/               | Sub-spec for routes in the given repository  |
-| `route.json`        | /`<repository>`/`<routePath>`/ | Sub-spec for endpoints in a given route path |
-| `<methodName>.json` | /`<repository>`/`<routePath>`/ | Sub-spec a given method name                 |
+::: tip
+You can check the spec [generated](https://github.com/Chevereto/chevereto/tree/master/volumes/public/spec) for Chevereto, which is sourced from [application routing](https://github.com/Chevereto/chevereto/tree/master/app/routing).
+:::
 
-## Format
+### `index.json`
+
+A JSON containing the Spec for all the route repositories, it provides the entire Spec in one single file at `/`.
+
+> See Chevereto [index.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/index.json) for a real example.
+
+```json
+{
+    "repositories": {...}
+}
+```
+
+### `routes.json`
+
+A JSON containing the sub-spec for routes in the given repository at `/<repository>/`.
+
+> See Chevereto [routes.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/routes.json) for a real example.
+
+```json
+{
+    "name": "api-v1",
+    "spec": "\/spec\/api-v1\/routes.json",
+    "routes": {...}
+}
+```
+
+### `route.json`
+
+A JSON containing the sub-spec for endpoints in a given route path at `/<repository>/<routePath>/`.
+
+> See Chevereto [route.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/api/1/upload/route.json) for a real example.
+
+```json
+{
+    "name": "\/api\/1\/upload",
+    "locator": "api-v1:\/api\/1\/upload",
+    "spec": "\/spec\/api-v1\/api\/1\/upload\/route.json",
+    "regex": "#\/api\/1\/upload#",
+    "wildcards": {},
+    "endpoints": {...}
+}
+```
+
+### `<methodName>.json`
+
+A JSON containing the sub-spec for a given method name at `/<repository>/<routePath>/`.
+
+> See Chevereto [POST.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/api/1/upload/POST.json) for a real example.
+
+```json
+{
+    "name": "POST",
+    "spec": "\/spec\/api-v1\/api\/1\/upload\/POST.json",
+    "description": "Uploads an image resource.",
+    "parameters": {...}
+}
+```
+
+## Tree
 
 Code below shows and example tree representation for a router containing `GET /route-path/{id}`.
 
 ```sh
-└── spec <- 1st level
+└── spec
     ├── index.json
-    └── repository <- 2nd level
+    └── repository
         ├── route-path
-        │   └── {id} <- routePath: /spec/repository/route-path/{id}
+        │   └── {id}
         │       ├── GET.json
         │       └── route.json
         └── routes.json
 ```
-
-### First-level
-
-This only contains `index.json` and folders for each routing repository.
-
-### Second-level
-
-The each folder at the second level represents a routing repository, and contains a `routes.json` file with the Spec for the routes in the repository. Sub-folders will be used accordingly to reflect the declared [Routing](./Router.md#routing).
-
-For the example above, `/spec/repository/route-path/{id}/GET.json` provides the Spec for `GET /route-path/{id}`.
 
 ## Creating Spec
 
