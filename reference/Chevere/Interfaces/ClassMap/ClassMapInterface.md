@@ -72,7 +72,7 @@ bool
 
 ---
 
-### get()
+### key()
 
 Provides access to the class name mapping.
 
@@ -90,7 +90,7 @@ string
 
 ---
 
-### getClass()
+### className()
 
 Provides access to the class name mapped by key.
 

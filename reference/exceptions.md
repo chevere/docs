@@ -89,17 +89,17 @@ editLink: false
 - [ArgumentRequiredException](./Chevere/Exceptions/Parameter/ArgumentRequiredException.md)
 - [ParameterNameInvalidException](./Chevere/Exceptions/Parameter/ParameterNameInvalidException.md)
 
-## Plugin
+## Pluggable
 
-- [PlugInterfaceException](./Chevere/Exceptions/Plugin/PlugInterfaceException.md)
-- [PlugRegisteredException](./Chevere/Exceptions/Plugin/PlugRegisteredException.md)
-- [PluggableAnchorExistsException](./Chevere/Exceptions/Plugin/PluggableAnchorExistsException.md)
-- [PluggableAnchorNotExistsException](./Chevere/Exceptions/Plugin/PluggableAnchorNotExistsException.md)
-- [PluggableAnchorsException](./Chevere/Exceptions/Plugin/PluggableAnchorsException.md)
-- [PluggableNotExistsException](./Chevere/Exceptions/Plugin/PluggableNotExistsException.md)
-- [PluggableNotRegisteredException](./Chevere/Exceptions/Plugin/PluggableNotRegisteredException.md)
-- [PlugsFileNotExistsException](./Chevere/Exceptions/Plugin/PlugsFileNotExistsException.md)
-- [PlugsQueueInterfaceException](./Chevere/Exceptions/Plugin/PlugsQueueInterfaceException.md)
+- [PlugInterfaceException](./Chevere/Exceptions/Pluggable/PlugInterfaceException.md)
+- [PlugRegisteredException](./Chevere/Exceptions/Pluggable/PlugRegisteredException.md)
+- [PluggableAnchorExistsException](./Chevere/Exceptions/Pluggable/PluggableAnchorExistsException.md)
+- [PluggableAnchorNotExistsException](./Chevere/Exceptions/Pluggable/PluggableAnchorNotExistsException.md)
+- [PluggableAnchorsException](./Chevere/Exceptions/Pluggable/PluggableAnchorsException.md)
+- [PluggableNotExistsException](./Chevere/Exceptions/Pluggable/PluggableNotExistsException.md)
+- [PluggableNotRegisteredException](./Chevere/Exceptions/Pluggable/PluggableNotRegisteredException.md)
+- [PlugsFileNotExistsException](./Chevere/Exceptions/Pluggable/PlugsFileNotExistsException.md)
+- [PlugsQueueInterfaceException](./Chevere/Exceptions/Pluggable/PlugsQueueInterfaceException.md)
 
 ## Plugs
 
