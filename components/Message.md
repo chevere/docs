@@ -23,7 +23,7 @@ $message = $message
     ->replace('%to%', 'Rodolfo'); // Hello, Rodolfo!
 ```
 
-## Replacing with formatting
+## Formatting
 
 A Message can be formatted using methods that take a `$search` needle and replace it with `$replace` prepared with the desired formatting.
 

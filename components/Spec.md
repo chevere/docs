@@ -12,7 +12,7 @@ You can check the spec [generated](https://github.com/Chevereto/chevereto/tree/m
 
 ### `index.json`
 
-A JSON containing the Spec for all the route repositories, it provides the entire Spec in one single file at `/`.
+Contains the Spec for all the route repositories, it provides the entire Spec in one single file at `/`.
 
 > See Chevereto [index.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/index.json) for a real example.
 
@@ -24,7 +24,7 @@ A JSON containing the Spec for all the route repositories, it provides the entir
 
 ### `routes.json`
 
-A JSON containing the sub-spec for routes in the given repository at `/<repository>/`.
+Contains the sub-spec for routes in the given repository at `/<repository>/`.
 
 > See Chevereto [routes.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/routes.json) for a real example.
 
@@ -38,7 +38,7 @@ A JSON containing the sub-spec for routes in the given repository at `/<reposito
 
 ### `route.json`
 
-A JSON containing the sub-spec for endpoints in a given route path at `/<repository>/<routePath>/`.
+Contains the sub-spec for endpoints in a given route path at `/<repository>/<routePath>/`.
 
 > See Chevereto [route.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/api/1/upload/route.json) for a real example.
 
@@ -55,7 +55,7 @@ A JSON containing the sub-spec for endpoints in a given route path at `/<reposit
 
 ### `<methodName>.json`
 
-A JSON containing the sub-spec for a given method name at `/<repository>/<routePath>/`.
+Contains the sub-spec for a given method name at `/<repository>/<routePath>/`.
 
 > See Chevereto [POST.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/api/1/upload/POST.json) for a real example.
 

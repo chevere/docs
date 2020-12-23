@@ -6,15 +6,15 @@ A class defining pluggable logic is known as _pluggable_.
 
 ## Types
 
-The Pluggable component defines two plug types, both implementing [PlugTypeInterface](../reference/Chevere/Interfaces/Pluggable/PlugTypeInterface.md):
+The Pluggable component defines two plug types, both implementing [PlugTypeInterface](../reference/Chevere/Interfaces/Pluggable/PlugTypeInterface.md).
 
 ### EventPlugType
 
-[EventPlugType](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Types/EventPlugType.php) with [Pluggable Events](#pluggable-events) to [Event Plug](#event-plug)
+Events defined by [EventPlugType](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Types/EventPlugType.php) with [Pluggable Events](#pluggable-events) to [Event Plug](#event-plug).
 
 ### HookPlugType
 
-[HookPlugType](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Types/HookPlugType.php) with [Pluggable Hooks](#pluggable-hooks) to [Hook Plug](#hook-plug)
+Hooks defined by [HookPlugType](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Types/HookPlugType.php) with [Pluggable Hooks](#pluggable-hooks) to [Hook Plug](#hook-plug).
 
 ## Pluggable Events
 
