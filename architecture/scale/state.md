@@ -10,7 +10,9 @@ Conventional PHP applications usually rely in just one big application state. Fo
 
 In Chevere we do the opposite, building **many** different application entry points for _n_ application states where each state is optimized for it single given task.
 
-> 🧔🏾 You see, it's all about loading only what you need at runtime and to have states that we can run in the event loop.
+::: tip
+🧔🏾 Is all about loading only what you need at runtime and to have states that we can re-run in the event loop.
+:::
 
 Thanks to this, a Chevere application may have one state for public HTTP traffic, another state for background processing, another for logged users, etc. Each state is built around the same business, it just changes how it will be used and where it will run.
 
@@ -42,4 +44,4 @@ The example belows shows hows a `./states` tree looks like. Both `web` and `api`
 
 The example at [03.Http/00.router-make.php](https://github.com/chevere/examples/blob/master/03.Http/00.router-make.php) creates an state at [03.Http/cache](https://github.com/chevere/examples/tree/master/03.Http/cache), which is used by all the other examples in that scope.
 
-> 🧔🏾 The exact same state is used to showcase HTTP resolving, Swoole and RoadRunner examples
+> 🧔🏾 The same state is used to showcase HTTP resolving, Swoole and RoadRunner examples

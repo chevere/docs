@@ -6,4 +6,6 @@ There is a standard for formatting and coding style that must be followed among 
 
 If you want to contribute with Chevere development this is a **must read**.
 
-> 😉 This is a reference for the Chevere framework architecture itself, not for applications developed on top of it.
+::: tip
+😉 This is a reference for the Chevere framework architecture itself, not for applications made on top of it.
+:::

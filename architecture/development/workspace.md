@@ -6,7 +6,9 @@ The workspace refers to the working directory where Chevere is developed.
 
 Chevere provides snippets and recommendation on extensions that goes better for development, this includes the provisioning IDE resources.
 
-> 🧔🏾 The default IDE of choice is [Visual Studio Code](https://code.visualstudio.com/)
+::: tip
+🧔🏾 The default IDE of choice is [Visual Studio Code](https://code.visualstudio.com/)
+:::
 
 ### Assets
 
