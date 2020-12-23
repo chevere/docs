@@ -1,6 +1,6 @@
 # Regex
 
-The Regex component is in charge of providing tooling for regex patterns.
+The Regex component is in charge of providing tooling for typed regex patterns.
 
 [RegexInterface](../reference/Chevere/Interfaces/Regex/RegexInterface.md) describes the interface for the component in charge of defining a Regex.
 
