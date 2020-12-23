@@ -88,7 +88,7 @@ public function withoutAddedString(int $pos): MyInterface;
 
 ### Cloning
 
-Chevere uses [object cloning](https://www.php.net/manual/en/language.oop5.cloning.php) for pseudo-immutability. It is called that way because `clone` creates a shallow copy.
+Chevere uses [object cloning](https://www.php.net/oop5.cloning) for pseudo-immutability. It is called that way because `clone` creates a shallow copy.
 
 ```php
 class MyImmutable implements MyImmutableInterface

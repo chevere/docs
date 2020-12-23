@@ -40,7 +40,7 @@ $writers = $writers
 
 ### StreamWriter
 
-The `Chevere\Components\Writer\StreamWriter` is a writer that writes to a [stream](https://www.php.net/manual/en/intro.stream.php).
+The `Chevere\Components\Writer\StreamWriter` is a writer that writes to a [stream](https://www.php.net/stream).
 
 Code below shows how to initiate a `StreamWriter` for a `given string`.
 

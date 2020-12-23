@@ -1,6 +1,6 @@
 # ThrowableHandler
 
-The ThrowableHandler component provides handling for [throwable](https://www.php.net/manual/en/class.throwable.php) with rich formatting support for console, HTML and plain text.
+The ThrowableHandler component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text.
 
 [ThrowableHandlerInterface](../reference/Chevere/Interfaces/ThrowableHandler/ThrowableHandlerInterface.md) describe the interface for a component in charge of providing a throwable handling.
 

@@ -1,6 +1,6 @@
 # Cache
 
-The Cache component is in charge of providing a filesystem-based persistent application cache layer. It is intended to be used to cache application states accelerated on top of [OPcache](https://www.php.net/manual/book.opcache.php).
+The Cache component is in charge of providing a filesystem-based persistent application cache layer. It is intended to be used to cache application states accelerated on top of [OPcache](https://www.php.net/opcache).
 
 [CacheInterface](../reference/Chevere/Interfaces/Cache/CacheInterface.md) describes the interface for the component in charge of handling cache.
 
