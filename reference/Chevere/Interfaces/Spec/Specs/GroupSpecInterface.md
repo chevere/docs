@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [SpecInterface](../SpecInterface.md)
-- [ToArrayInterface](../../To/ToArrayInterface.md)
+- [ToArrayInterface](../../Common/ToArrayInterface.md)
 
 ## Description
 

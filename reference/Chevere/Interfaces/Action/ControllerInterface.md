@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [ActionInterface](./ActionInterface.md)
-- [DescriptionInterface](../Description/DescriptionInterface.md)
+- [DescriptionInterface](../Common/DescriptionInterface.md)
 
 ## Description
 

@@ -23,16 +23,18 @@ editLink: false
 
 - [ClassMapInterface](./Chevere/Interfaces/ClassMap/ClassMapInterface.md)
 
+## Common
+
+- [DescriptionInterface](./Chevere/Interfaces/Common/DescriptionInterface.md)
+- [ToArrayInterface](./Chevere/Interfaces/Common/ToArrayInterface.md)
+- [ToStringInterface](./Chevere/Interfaces/Common/ToStringInterface.md)
+
 ## DataStructure
 
 - [GetGeneratorInterface](./Chevere/Interfaces/DataStructure/GetGeneratorInterface.md)
 - [KeysInterface](./Chevere/Interfaces/DataStructure/KeysInterface.md)
 - [MapInterface](./Chevere/Interfaces/DataStructure/MapInterface.md)
 - [MappedInterface](./Chevere/Interfaces/DataStructure/MappedInterface.md)
-
-## Description
-
-- [DescriptionInterface](./Chevere/Interfaces/Description/DescriptionInterface.md)
 
 ## Filesystem
 
@@ -47,11 +49,6 @@ editLink: false
 
 - [HttpStatusInterface](./Chevere/Interfaces/Http/HttpStatusInterface.md)
 - [MethodInterface](./Chevere/Interfaces/Http/MethodInterface.md)
-
-## Identifier
-
-- [GetIdentifierInterface](./Chevere/Interfaces/Identifier/GetIdentifierInterface.md)
-- [IdentifierInterface](./Chevere/Interfaces/Identifier/IdentifierInterface.md)
 
 ## Iterator
 
@@ -163,11 +160,6 @@ editLink: false
 - [ThrowableReadInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableReadInterface.md)
 - [ThrowableTraceEntryInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableTraceEntryInterface.md)
 - [ThrowableTraceFormatterInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableTraceFormatterInterface.md)
-
-## To
-
-- [ToArrayInterface](./Chevere/Interfaces/To/ToArrayInterface.md)
-- [ToStringInterface](./Chevere/Interfaces/To/ToStringInterface.md)
 
 ## Type
 

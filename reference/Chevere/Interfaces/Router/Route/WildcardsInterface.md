@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [MappedInterface](../../DataStructure/MappedInterface.md)
-- [ToArrayInterface](../../To/ToArrayInterface.md)
+- [ToArrayInterface](../../Common/ToArrayInterface.md)
 - [GetGeneratorInterface](../../DataStructure/GetGeneratorInterface.md)
 - [KeysInterface](../../DataStructure/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)

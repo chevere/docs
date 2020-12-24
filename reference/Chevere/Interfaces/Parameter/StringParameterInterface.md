@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [ParameterInterface](./ParameterInterface.md)
-- [DescriptionInterface](../Description/DescriptionInterface.md)
+- [DescriptionInterface](../Common/DescriptionInterface.md)
 
 ## Description
 
@@ -164,7 +164,7 @@ bool
 Provides access to the attributes instance.
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

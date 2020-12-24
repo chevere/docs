@@ -10,7 +10,7 @@ editLink: false
 
 ## Extends
 
-- [ToStringInterface](../../To/ToStringInterface.md)
+- [ToStringInterface](../../Common/ToStringInterface.md)
 
 ## Description
 

@@ -10,7 +10,7 @@ editLink: false
 
 ## Extends
 
-- [DescriptionInterface](../Description/DescriptionInterface.md)
+- [DescriptionInterface](../Common/DescriptionInterface.md)
 
 ## Description
 

@@ -161,7 +161,7 @@ bool
 ### required()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
@@ -169,7 +169,7 @@ Ds\Set
 ### optional()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

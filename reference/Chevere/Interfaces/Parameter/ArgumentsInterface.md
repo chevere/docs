@@ -10,7 +10,7 @@ editLink: false
 
 ## Extends
 
-- [ToArrayInterface](../To/ToArrayInterface.md)
+- [ToArrayInterface](../Common/ToArrayInterface.md)
 
 ## Description
 

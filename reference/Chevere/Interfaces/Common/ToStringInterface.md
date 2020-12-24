@@ -4,9 +4,9 @@ editLink: false
 
 # ToStringInterface
 
-`Chevere\Interfaces\To\ToStringInterface`
+`Chevere\Interfaces\Common\ToStringInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/To/ToStringInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Common/ToStringInterface.php)
 
 ## Description
 

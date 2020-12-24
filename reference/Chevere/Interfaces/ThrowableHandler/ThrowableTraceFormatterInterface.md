@@ -10,8 +10,8 @@ editLink: false
 
 ## Extends
 
-- [ToArrayInterface](../To/ToArrayInterface.md)
-- [ToStringInterface](../To/ToStringInterface.md)
+- [ToArrayInterface](../Common/ToArrayInterface.md)
+- [ToStringInterface](../Common/ToStringInterface.md)
 
 ## Description
 

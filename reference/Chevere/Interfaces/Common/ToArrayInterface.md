@@ -4,9 +4,9 @@ editLink: false
 
 # ToArrayInterface
 
-`Chevere\Interfaces\To\ToArrayInterface`
+`Chevere\Interfaces\Common\ToArrayInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/To/ToArrayInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Common/ToArrayInterface.php)
 
 ## Description
 
