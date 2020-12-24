@@ -55,7 +55,7 @@ Put item in cache.
 #### Parameters
 
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
-2. [VarExportableInterface](../VarExportable/VarExportableInterface.md) `$varExportable`
+2. [VarStorableInterface](../VarStorable/VarStorableInterface.md) `$varExportable`
 
 ::: tip RETURN
 self

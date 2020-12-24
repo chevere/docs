@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# VarExportableException
+# VarStorableException
 
-`Chevere\Exceptions\VarExportable\VarExportableException`
+`Chevere\Exceptions\VarStorable\VarStorableException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/VarExportable/VarExportableException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/VarStorable/VarStorableException.php)
 
 ## Implements
 
@@ -19,7 +19,7 @@ editLink: false
 
 ## Description
 
-Exception thrown by the component implementing `VarExportableInterface`.
+Exception thrown by the component implementing `VarStorableInterface`.
 
 ## Methods
 

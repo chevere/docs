@@ -184,9 +184,9 @@ editLink: false
 - [VarDumperInterface](./Chevere/Interfaces/VarDump/VarDumperInterface.md)
 - [VarOutputterInterface](./Chevere/Interfaces/VarDump/VarOutputterInterface.md)
 
-## VarExportable
+## VarStorable
 
-- [VarExportableInterface](./Chevere/Interfaces/VarExportable/VarExportableInterface.md)
+- [VarStorableInterface](./Chevere/Interfaces/VarStorable/VarStorableInterface.md)
 
 ## Workflow
 

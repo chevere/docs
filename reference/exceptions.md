@@ -169,7 +169,6 @@ editLink: false
 
 - [TypeNotFoundException](./Chevere/Exceptions/Type/TypeNotFoundException.md)
 
-## VarExportable
+## VarStorable
 
-- [VarExportableException](./Chevere/Exceptions/VarExportable/VarExportableException.md)
-- [VarExportableIsResourceException](./Chevere/Exceptions/VarExportable/VarExportableIsResourceException.md)
+- [VarStorableException](./Chevere/Exceptions/VarStorable/VarStorableException.md)

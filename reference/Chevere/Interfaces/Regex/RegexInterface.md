@@ -40,7 +40,7 @@ array (
 
 #### Parameters
 
-1. string `$string`
+1. string `$pattern`
 
 ::: danger THROWS
 - [RegexInvalidException](../../Exceptions/Regex/RegexInvalidException.md) 
