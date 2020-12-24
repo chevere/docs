@@ -134,7 +134,7 @@ Put `$var` into the file using var_export return and strict format.
 
 #### Parameters
 
-1. [VarStorableInterface](../VarStorable/VarStorableInterface.md) `$varExportable`
+1. [VarStorableInterface](../VarStorable/VarStorableInterface.md) `$varStorable`
 
 ::: danger THROWS
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 

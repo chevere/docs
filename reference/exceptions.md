@@ -5,10 +5,6 @@ editLink: false
 
 # Exceptions
 
-## Breadcrumb
-
-- [BreadcrumbException](./Chevere/Exceptions/Breadcrumb/BreadcrumbException.md)
-
 ## Cache
 
 - [CacheInvalidKeyException](./Chevere/Exceptions/Cache/CacheInvalidKeyException.md)
@@ -83,6 +79,10 @@ editLink: false
 
 - [MethodNotAllowedException](./Chevere/Exceptions/Http/MethodNotAllowedException.md)
 
+## Iterator
+
+- [BreadcrumbException](./Chevere/Exceptions/Iterator/BreadcrumbException.md)
+
 ## Parameter
 
 - [ArgumentRegexMatchException](./Chevere/Exceptions/Parameter/ArgumentRegexMatchException.md)
@@ -135,6 +135,7 @@ editLink: false
 
 ## Serialize
 
+- [SerializeException](./Chevere/Exceptions/Serialize/SerializeException.md)
 - [UnserializeException](./Chevere/Exceptions/Serialize/UnserializeException.md)
 
 ## Service

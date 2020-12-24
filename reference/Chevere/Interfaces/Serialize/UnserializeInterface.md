@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of handling unserialize.
+Describes the component in charge of handling `unserialize()`.
 
 ## Methods
 
@@ -28,7 +28,7 @@ Describes the component in charge of handling unserialize.
 
 ### var()
 
-Provides access to the unserialized variable.
+Provides access to the unserialize variable.
 
 ::: tip RETURN
 void
@@ -38,7 +38,7 @@ void
 
 ### type()
 
-Provides access to the TypeInterface instance for the unserialized variable.
+Provides access to the TypeInterface instance for the unserialize variable.
 
 ::: tip RETURN
 [TypeInterface](../Type/TypeInterface.md)

@@ -4,9 +4,9 @@ editLink: false
 
 # BreadcrumbInterface
 
-`Chevere\Interfaces\Breadcrumb\BreadcrumbInterface`
+`Chevere\Interfaces\Iterator\BreadcrumbInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Breadcrumb/BreadcrumbInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Iterator/BreadcrumbInterface.php)
 
 ## Extends
 

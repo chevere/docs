@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# BreadcrumbException
+# SerializeException
 
-`Chevere\Exceptions\Breadcrumb\BreadcrumbException`
+`Chevere\Exceptions\Serialize\SerializeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Breadcrumb/BreadcrumbException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Serialize/SerializeException.php)
 
 ## Implements
 
@@ -19,7 +19,7 @@ editLink: false
 
 ## Description
 
-Exception thrown by the BreadcrumbInterface.
+Exception thrown when unable to serialize
 
 ## Methods
 
