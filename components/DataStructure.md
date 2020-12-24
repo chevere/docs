@@ -8,7 +8,7 @@ Data structures are provisioned as stand-alone classes and/or traits, which adds
 
 ## Map
 
-The Map component is in charge of extending [DS\Map](https://www.php.net/manual/en/class.ds-map.php) functionality to provide **the** array replacement for Chevere.
+The Map component is in charge of extending [DS\Map](https://www.php.net/ds-map) functionality to provide **the** array replacement for Chevere.
 
 [MapInterface](../reference/Chevere/Interfaces/DataStructure/MapInterface.md) describes the interface for the component in charge of defining a Map utility.
 

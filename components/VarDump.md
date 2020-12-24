@@ -1,6 +1,6 @@
 # VarDump
 
-The VarDump component provides an alternative to [var_dump](https://www.php.net/manual/en/function.var-dump.php), but with a richer feature set including formatting for the generation of different type of documents.
+The VarDump component provides an alternative to [var_dump](https://www.php.net/var-dump), but with a richer feature set including formatting for the generation of different type of documents.
 
 [VarDumpInterface](../reference/Chevere/Interfaces/VarDump/VarDumpInterface.md) describe the interface for a component in charge of providing the ability to dump any variable.
 
