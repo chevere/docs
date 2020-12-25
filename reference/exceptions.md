@@ -43,6 +43,10 @@ editLink: false
 - [UnderflowException](./Chevere/Exceptions/Core/UnderflowException.md)
 - [UnexpectedValueException](./Chevere/Exceptions/Core/UnexpectedValueException.md)
 
+## Dependent
+
+- [DependentException](./Chevere/Exceptions/Dependent/DependentException.md)
+
 ## Filesystem
 
 - [DirExistsException](./Chevere/Exceptions/Filesystem/DirExistsException.md)

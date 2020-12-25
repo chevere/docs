@@ -36,6 +36,10 @@ editLink: false
 - [MapInterface](./Chevere/Interfaces/DataStructure/MapInterface.md)
 - [MappedInterface](./Chevere/Interfaces/DataStructure/MappedInterface.md)
 
+## Dependent
+
+- [DependentInterface](./Chevere/Interfaces/Dependent/DependentInterface.md)
+
 ## Filesystem
 
 - [AssertPathFormatInterface](./Chevere/Interfaces/Filesystem/AssertPathFormatInterface.md)
@@ -126,10 +130,6 @@ editLink: false
 
 - [SerializeInterface](./Chevere/Interfaces/Serialize/SerializeInterface.md)
 - [UnserializeInterface](./Chevere/Interfaces/Serialize/UnserializeInterface.md)
-
-## Service
-
-- [ServiceDependantInterface](./Chevere/Interfaces/Service/ServiceDependantInterface.md)
 
 ## Spec
 
