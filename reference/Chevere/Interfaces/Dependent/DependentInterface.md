@@ -20,7 +20,7 @@ Dependencies must be passed on construct for this interface.
 
 #### Parameters
 
-1. mixed `$namedDependency`
+1. object `$namedDependency`
 
 Each named argument value will be assigned to a property of the
 same name.
@@ -29,7 +29,7 @@ same name.
 class Dependent Implements DependentInterface
 {
      private FooType $foo;
-     private BatType $bar;
+     private BarType $bar;
      // ...
 }
 
@@ -43,7 +43,7 @@ new Dependent(foo: $fooInstance, bar: $barInstance);
 Declares required dependencies as class name -> property name.
 
 ::: tip RETURN
-[ClassMapInterface](../ClassMap/ClassMapInterface.md)
+[DependenciesInterface](./DependenciesInterface.md)
 :::
 
 ---

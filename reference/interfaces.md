@@ -38,6 +38,7 @@ editLink: false
 
 ## Dependent
 
+- [DependenciesInterface](./Chevere/Interfaces/Dependent/DependenciesInterface.md)
 - [DependentInterface](./Chevere/Interfaces/Dependent/DependentInterface.md)
 
 ## Filesystem
