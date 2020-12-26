@@ -61,3 +61,13 @@ void
 :::
 
 ---
+
+### dependencies()
+
+Provides access to the dependencies instance.
+
+::: tip RETURN
+[DependenciesInterface](./DependenciesInterface.md)
+:::
+
+---

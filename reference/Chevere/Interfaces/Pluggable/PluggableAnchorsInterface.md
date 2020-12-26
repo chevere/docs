@@ -54,7 +54,7 @@ bool
 Provides access to a cloned set instance.
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

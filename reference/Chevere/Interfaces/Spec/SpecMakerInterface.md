@@ -44,7 +44,7 @@ Provides access to the generated spec index instance.
 Provides access to the files map instance.
 
 ::: tip RETURN
-[Ds\Map](https://www.php.net/manual/class.ds\map)
+Ds\Map
 :::
 
 ---
