@@ -51,9 +51,17 @@ private FooType $foo;
 private BarType $bar;
 ```
 
+## Accessing Dependencies
+
+The method `dependencies` is used to access [Dependencies](#dependencies) required by Dependent.
+
+```php
+$dependent->dependencies();
+```
+
 ## Passing dependencies
 
-A Dependent requires to pass its dependencies on instance creation.
+A Dependent must be created passing its dependencies on instance creation.
 
 ```php
 /**
@@ -66,9 +74,9 @@ $dependent = new MyDependent(
 );
 ```
 
-## Asserting Dependencies
+## Asserting dependencies
 
-The method `assertDependencies` allows to assert if a Dependent meets all dependencies.
+The method `assertDependencies` asserts if a Dependent meets all dependencies.
 
 ```php
 $dependent->assertDependencies();
