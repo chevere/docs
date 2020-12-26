@@ -21,7 +21,7 @@ Describes the component in charge of writing information about a variable.
 1. [WriterInterface](../Writer/WriterInterface.md) `$writer`
 2. array `$debugBacktrace`
 3. [VarDumpFormatterInterface](./VarDumpFormatterInterface.md) `$formatter`
-4.  `$vars`
+4.  `...$vars`
 
 ---
 

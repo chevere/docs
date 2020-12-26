@@ -29,7 +29,7 @@ Return an instance with the specified `$vars`.
 
 #### Parameters
 
-1.  `$vars`
+1.  `...$vars`
 
 ::: tip RETURN
 self

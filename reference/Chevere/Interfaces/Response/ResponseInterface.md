@@ -18,8 +18,24 @@ Describes the component in charge of handling the response.
 
 #### Parameters
 
-1. [ParametersInterface](../Parameter/ParametersInterface.md) `$parameters`
-2. array `$data`
+1. mixed `...$data`
+
+---
+
+### withData()
+
+Return an instance with the specified data.
+
+#### Parameters
+
+1. mixed `...$data`
+
+::: tip RETURN
+self
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified data.
 
 ---
 

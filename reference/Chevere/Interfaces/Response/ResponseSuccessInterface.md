@@ -14,26 +14,9 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of defining a provisional response.
+Describes the component in charge of defining a success response.
 
 ## Methods
-
-### withData()
-
-Return an instance with the specified data.
-
-#### Parameters
-
-1. array `$data`
-
-::: tip RETURN
-self
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified data.
-
----
 
 ### withWorkflowMessage()
 
@@ -64,8 +47,24 @@ an instance that contains the specified workflow message.
 
 #### Parameters
 
-1. [ParametersInterface](../Parameter/ParametersInterface.md) `$parameters`
-2. array `$data`
+1. mixed `...$data`
+
+---
+
+### withData()
+
+Return an instance with the specified data.
+
+#### Parameters
+
+1. mixed `...$data`
+
+::: tip RETURN
+self
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified data.
 
 ---
 

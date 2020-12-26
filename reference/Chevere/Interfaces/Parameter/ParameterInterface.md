@@ -46,7 +46,7 @@ Return an instance with the specified `$attribute` added.
 
 #### Parameters
 
-1. string `$attribute`
+1. string `...$attribute`
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -67,7 +67,7 @@ Return an instance with the specified `$attribute` removed.
 
 #### Parameters
 
-1. string `$attribute`
+1. string `...$attribute`
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -88,7 +88,7 @@ Indicates whether the instance has the given `$attribute`.
 
 #### Parameters
 
-1. string `$attribute`
+1. string `...$attribute`
 
 ::: tip RETURN
 bool

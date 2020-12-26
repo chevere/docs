@@ -25,7 +25,7 @@ Describes the component in charge of defining an immutable map.
 
 #### Parameters
 
-1. mixed `$namedArguments`
+1. mixed `...$namedArguments`
 
 ---
 
@@ -46,7 +46,7 @@ self
 
 #### Parameters
 
-1. string `$key`
+1. string `...$key`
 
 ::: tip RETURN
 void

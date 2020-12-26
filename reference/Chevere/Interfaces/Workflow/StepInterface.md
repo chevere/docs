@@ -32,7 +32,7 @@ Return an instance with the specified named `$namedArguments`.
 
 #### Parameters
 
-1. mixed `$namedArguments`
+1. mixed `...$namedArguments`
 
 ::: tip RETURN
 self

@@ -35,7 +35,7 @@ Return an instance with the specified required `$parameter` instance added.
 
 #### Parameters
 
-1. [ParameterInterface](./ParameterInterface.md) `$parameter`
+1. [ParameterInterface](./ParameterInterface.md) `...$parameter`
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -56,7 +56,7 @@ Return an instance with the specified optional `$parameter` instance added.
 
 #### Parameters
 
-1. [ParameterInterface](./ParameterInterface.md) `$parameter`
+1. [ParameterInterface](./ParameterInterface.md) `...$parameter`
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -77,7 +77,7 @@ Return an instance with the specified `$parameter` modifying an already added pa
 
 #### Parameters
 
-1. [ParameterInterface](./ParameterInterface.md) `$parameter`
+1. [ParameterInterface](./ParameterInterface.md) `...$parameter`
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

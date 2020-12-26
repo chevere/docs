@@ -60,7 +60,7 @@ Return an instance with the specified `$step`.
 
 #### Parameters
 
-1. [StepInterface](./StepInterface.md) `$step`
+1. [StepInterface](./StepInterface.md) `...$step`
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -82,7 +82,7 @@ Return an instance with the specified `$step` added before `$before`.
 #### Parameters
 
 1. string `$before`
-2. [StepInterface](./StepInterface.md) `$step`
+2. [StepInterface](./StepInterface.md) `...$step`
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -104,7 +104,7 @@ Return an instance with the specified `$step` added after `$after`.
 #### Parameters
 
 1. string `$after`
-2. [StepInterface](./StepInterface.md) `$step`
+2. [StepInterface](./StepInterface.md) `...$step`
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 

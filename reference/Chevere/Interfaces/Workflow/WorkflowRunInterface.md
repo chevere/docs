@@ -19,7 +19,7 @@ Describes the component in charge of defining a workflow run, with the arguments
 #### Parameters
 
 1. [WorkflowInterface](./WorkflowInterface.md) `$workflow`
-2. mixed `$namedArguments`
+2. mixed `...$namedArguments`
 
 ---
 

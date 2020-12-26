@@ -23,7 +23,7 @@ Describes the component in charge of defining a set of parameters with arguments
 #### Parameters
 
 1. [ParametersInterface](./ParametersInterface.md) `$parameters`
-2. mixed `$namedArguments`
+2. mixed `...$namedArguments`
 
 ::: danger THROWS
 - ⚠ Unknown type `ArgumentRequiredException` declared in `@throws` tag`
