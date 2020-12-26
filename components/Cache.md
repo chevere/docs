@@ -10,12 +10,10 @@ Check the Router [make](https://github.com/chevere/examples/tree/master/03.Http#
 
 ## Creating Cache
 
-Cache works per directory, with keys represented by PHP return files in the filesystem.
+Create a Cache by passing the cache working directory.
 
 ```php
 use Chevere\Components\Cache\Cache;
-use Chevere\Components\FileSystem\Dir;
-use Chevere\Components\FileSystem\Path;
 use function Chevere\Components\Filesystem\dirForPath;
 
 $cache = new Cache(dirForPath('/to-cache/'));
@@ -36,7 +34,7 @@ $cache = $cache->withPut(
 );
 ```
 
-`VarExportable` is required to check if the `$var` to cache can be actually cached.
+> Cache keys represent PHP return files in the filesystem.
 
 ## Puts
 
@@ -46,9 +44,9 @@ The `puts` method provides access to the cache put, which is an `array` containi
 $puts = $cache->puts();
 ```
 
-## Check
+## Exists
 
-The `exists` method is used to determine if cache exists at `$key`.
+The `exists` method is used to determine if cache exists for `$key`.
 
 ```php
 use Chevere\Components\Cache\Cache;

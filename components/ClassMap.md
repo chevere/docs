@@ -49,5 +49,5 @@ $classMap->key('className'); // my-key
 The `className` method is used to get the class name mapped to the given key.
 
 ```php
-$classMap->getCLass('my-key'); // className
+$classMap->getClass('my-key'); // className
 ```
