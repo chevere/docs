@@ -26,9 +26,9 @@ Describes the component in charge of defining a set of parameters with arguments
 2. mixed `$namedArguments`
 
 ::: danger THROWS
-- [ArgumentRequiredException](../../Exceptions/Parameter/ArgumentRequiredException.md) 
+- ⚠ Unknown type `ArgumentRequiredException` declared in `@throws` tag`
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
-- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md) 
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
@@ -69,7 +69,7 @@ Return an instance with the specified controller argument.
 2.  `$value`
 
 ::: danger THROWS
-- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md) 
+- ⚠ Unknown type `ArgumentValueRegexMatchException` declared in `@throws` tag`
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) If `$name` is not a known controller parameter.
 :::
 

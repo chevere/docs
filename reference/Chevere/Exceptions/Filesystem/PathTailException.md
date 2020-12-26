@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# PluggableAnchorExistsException
+# PathTailException
 
-`Chevere\Exceptions\Pluggable\PluggableAnchorExistsException`
+`Chevere\Exceptions\Filesystem\PathTailException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Pluggable/PluggableAnchorExistsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathTailException.php)
 
 ## Implements
 
@@ -19,7 +19,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when a pluggable anchor already exists.
+Exception thrown when the path tail (/) is missing.
 
 ## Methods
 

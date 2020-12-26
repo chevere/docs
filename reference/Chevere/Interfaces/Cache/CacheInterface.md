@@ -114,7 +114,7 @@ Get a cache item.
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
 
 ::: danger THROWS
-- [CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md) 
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

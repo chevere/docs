@@ -21,7 +21,7 @@ Describes the component in charge of handling storable variables.
 1.  `$var`
 
 ::: danger THROWS
-- [VarStorableException](../../Exceptions/VarStorable/VarStorableException.md) if `$var` can't be exported.
+- [NotVarStorableException](../../Exceptions/VarStorable/NotVarStorableException.md) if `$var` can't be exported.
 :::
 
 ---

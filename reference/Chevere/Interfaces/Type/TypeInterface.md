@@ -140,7 +140,7 @@ array (
 1. string `$type`
 
 ::: danger THROWS
-- [TypeNotFoundException](../../Exceptions/Type/TypeNotFoundException.md) if the type doesn't exists
+- ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
 :::
 
 ---

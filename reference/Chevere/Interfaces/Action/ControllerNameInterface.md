@@ -25,9 +25,7 @@ Describes the component in charge of handling the controller name.
 1. string `$name`
 
 ::: danger THROWS
-- [ControllerNameException](../../Exceptions/Controller/ControllerNameException.md) 
-- [ControllerNotExistsException](../../Exceptions/Controller/ControllerNotExistsException.md) 
-- [ControllerInterfaceException](../../Exceptions/Controller/ControllerInterfaceException.md) 
+- ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
 :::
 
 ---

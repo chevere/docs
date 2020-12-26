@@ -35,7 +35,7 @@ Return an instance with the specified `$plug`.
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ::: danger THROWS
-- [PlugInterfaceException](../../Exceptions/Pluggable/PlugInterfaceException.md) 
+- ⚠ Unknown type `TypeException` declared in `@throws` tag`
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 

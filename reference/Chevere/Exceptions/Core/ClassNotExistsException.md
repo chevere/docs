@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ArgumentRegexMatchException
+# ClassNotExistsException
 
-`Chevere\Exceptions\Parameter\ArgumentRegexMatchException`
+`Chevere\Exceptions\Core\ClassNotExistsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Parameter/ArgumentRegexMatchException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/ClassNotExistsException.php)
 
 ## Implements
 
@@ -15,11 +15,11 @@ editLink: false
 
 ## Extends
 
-- [Exception](../Core/Exception.md)
+- [Exception](./Exception.md)
 
 ## Description
 
-Exception thrown when the argument fails to match the regex.
+Exception thrown when a class doesn't exists.
 
 ## Methods
 

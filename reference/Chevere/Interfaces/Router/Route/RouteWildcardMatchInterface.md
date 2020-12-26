@@ -25,7 +25,7 @@ Describes the component in charge of defining a route wildcard match.
 1. string `$string`
 
 ::: danger THROWS
-- [RegexException](../../../Exceptions/Regex/RegexException.md) If `$string` is an invalid regex matcher.
+- [UnexpectedValueException](../../../Exceptions/Core/UnexpectedValueException.md) If `$string` is an invalid regex matcher.
 :::
 
 ---

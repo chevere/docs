@@ -31,8 +31,8 @@ Return an instance with the specified className mapping.
 2. string `$key`
 
 ::: danger THROWS
-- [ClassNotExistsException](../../Exceptions/ClassMap/ClassNotExistsException.md) 
-- [StringMappedException](../../Exceptions/ClassMap/StringMappedException.md) 
+- [ClassNotExistsException](../../Exceptions/Core/ClassNotExistsException.md) 
+- [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
 ::: tip RETURN
@@ -81,7 +81,7 @@ Provides access to the class name mapping.
 1. string `$className`
 
 ::: danger THROWS
-- [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md) 
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -99,7 +99,7 @@ Provides access to the class name mapped by key.
 1. string `$key`
 
 ::: danger THROWS
-- [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md) 
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN

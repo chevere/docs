@@ -22,7 +22,7 @@ Describes the component in charge of interacting with filesystem directories.
 
 ::: danger THROWS
 - [PathIsFileException](../../Exceptions/Filesystem/PathIsFileException.md) 
-- [DirTailException](../../Exceptions/Filesystem/DirTailException.md) 
+- [PathTailException](../../Exceptions/Filesystem/PathTailException.md) 
 :::
 
 ---

@@ -35,7 +35,7 @@ Type `string`
 1. string `$key`
 
 ::: danger THROWS
-- [CacheInvalidKeyException](../../Exceptions/Cache/CacheInvalidKeyException.md) 
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
