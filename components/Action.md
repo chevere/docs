@@ -85,13 +85,13 @@ public function run(ArgumentsInterface $arguments): ResponseSuccessInterface
 {
     $id = $arguments->getInteger('id');
     $user = new User($id);
-    return $this->getResponseSuccess([
-        'email' => $user->email
-    ]);
+    return $this->getResponseSuccess(
+        email: $user->email
+    );
 }
 ```
 
-The `$arguments` passed will be typed against the defined action parameters.
+Passed named arguments will be typed against the defined action parameters.
 
 ## Controller
 
