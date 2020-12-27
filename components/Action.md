@@ -1,12 +1,12 @@
 # Action
 
-The Action component is in charge of providing a context for executing any given instruction. Action is the basic building block for incoming actions to the application.
+The Action component is in charge of providing a context for executing any given instruction.
 
 [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md) describes the interface for the component in charge of defining an Action.
 
 ## Defining an Action
 
-There's a base [Action](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Action/Action.php) available to extend. Code below defines class `SomeAction` by extending `Action`.
+Action is the basic building block for incoming actions to the application and there's a base [Action](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Action/Action.php) available to extend. Code below defines class `SomeAction` by extending `Action`.
 
 ```php
 use Chevere\Components\Action\Action;
