@@ -101,9 +101,7 @@ editLink: false
 
 ## Response
 
-- [ResponseFailureInterface](./Chevere/Interfaces/Response/ResponseFailureInterface.md)
 - [ResponseInterface](./Chevere/Interfaces/Response/ResponseInterface.md)
-- [ResponseSuccessInterface](./Chevere/Interfaces/Response/ResponseSuccessInterface.md)
 
 ## Router
 
@@ -188,6 +186,7 @@ editLink: false
 - [WorkflowInterface](./Chevere/Interfaces/Workflow/WorkflowInterface.md)
 - [WorkflowMessageInterface](./Chevere/Interfaces/Workflow/WorkflowMessageInterface.md)
 - [WorkflowProviderInterface](./Chevere/Interfaces/Workflow/WorkflowProviderInterface.md)
+- [WorkflowResponseInterface](./Chevere/Interfaces/Workflow/WorkflowResponseInterface.md)
 - [WorkflowRunInterface](./Chevere/Interfaces/Workflow/WorkflowRunInterface.md)
 - [WorkflowRunnerInterface](./Chevere/Interfaces/Workflow/WorkflowRunnerInterface.md)
 

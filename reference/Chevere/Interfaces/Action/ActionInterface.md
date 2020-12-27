@@ -51,7 +51,7 @@ Method called when running the action.
 1. [ArgumentsInterface](../Parameter/ArgumentsInterface.md) `$arguments`
 
 ::: tip RETURN
-[ResponseSuccessInterface](../Response/ResponseSuccessInterface.md)
+[ResponseInterface](../Response/ResponseInterface.md)
 :::
 
 ---
@@ -97,7 +97,7 @@ Retrieves a new success response with type-hinted data.
 1. mixed `...$data`
 
 ::: tip RETURN
-[ResponseSuccessInterface](../Response/ResponseSuccessInterface.md)
+[ResponseInterface](../Response/ResponseInterface.md)
 :::
 
 ---

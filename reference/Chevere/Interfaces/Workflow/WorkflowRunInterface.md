@@ -60,7 +60,7 @@ Provides access to the ArgumentsInterface instance.
 #### Parameters
 
 1. string `$step`
-2. [ResponseSuccessInterface](../Response/ResponseSuccessInterface.md) `$response`
+2. [ResponseInterface](../Response/ResponseInterface.md) `$response`
 
 ::: danger THROWS
 - [ArgumentCountException](../../Exceptions/Core/ArgumentCountException.md) 
