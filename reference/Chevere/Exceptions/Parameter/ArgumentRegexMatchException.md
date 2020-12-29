@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Parameter\ArgumentRegexMatchException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/ArgumentRegexMatchException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Parameter/ArgumentRegexMatchException.php)
 
 ## Implements
 

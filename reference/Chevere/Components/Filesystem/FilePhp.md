@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Filesystem\FilePhp`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/FilePhp.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Filesystem/FilePhp.php)
 
 ## Implements
 

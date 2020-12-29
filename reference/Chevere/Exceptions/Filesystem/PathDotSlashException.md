@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathDotSlashException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/PathDotSlashException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathDotSlashException.php)
 
 ## Implements
 

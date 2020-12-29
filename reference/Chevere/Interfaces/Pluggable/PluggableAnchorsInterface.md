@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Pluggable\PluggableAnchorsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PluggableAnchorsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Pluggable/PluggableAnchorsInterface.php)
 
 ## Description
 

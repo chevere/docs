@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Workflow\WorkflowMessage`
 
-[view source](https://github.com/chevere/chevere/blob/master/Workflow/WorkflowMessage.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Workflow/WorkflowMessage.php)
 
 ## Implements
 

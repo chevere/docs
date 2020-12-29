@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Action\ActionInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Action/ActionInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Action/ActionInterface.php)
 
 ## Extends
 

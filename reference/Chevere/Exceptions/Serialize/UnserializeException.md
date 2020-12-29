@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Serialize\UnserializeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Serialize/UnserializeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Serialize/UnserializeException.php)
 
 ## Implements
 

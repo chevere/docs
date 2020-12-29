@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Pluggable\PlugRegisteredException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugRegisteredException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Pluggable/PlugRegisteredException.php)
 
 ## Implements
 

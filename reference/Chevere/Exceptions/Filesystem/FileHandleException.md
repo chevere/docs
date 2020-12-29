@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\FileHandleException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/FileHandleException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/FileHandleException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Pluggable\PluggableNotRegisteredException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PluggableNotRegisteredException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Pluggable/PluggableNotRegisteredException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\TypeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Core/TypeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/TypeException.php)
 
 ## Implements
 

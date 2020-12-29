@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Spec\SpecMaker`
 
-[view source](https://github.com/chevere/chevere/blob/master/Spec/SpecMaker.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Spec/SpecMaker.php)
 
 ## Implements
 

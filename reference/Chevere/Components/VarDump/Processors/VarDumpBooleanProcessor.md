@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Processors\VarDumpBooleanProcessor`
 
-[view source](https://github.com/chevere/chevere/blob/master/VarDump/Processors/VarDumpBooleanProcessor.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Processors/VarDumpBooleanProcessor.php)
 
 ## Implements
 

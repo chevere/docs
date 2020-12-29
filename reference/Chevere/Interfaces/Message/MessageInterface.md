@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Message\MessageInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Message/MessageInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Message/MessageInterface.php)
 
 ## Extends
 

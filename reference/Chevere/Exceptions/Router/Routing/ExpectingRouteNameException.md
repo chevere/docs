@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Routing\ExpectingRouteNameException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Routing/ExpectingRouteNameException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Routing/ExpectingRouteNameException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Controller\ControllerNameException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Controller/ControllerNameException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Controller/ControllerNameException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Formatters\VarDumpConsoleFormatter`
 
-[view source](https://github.com/chevere/chevere/blob/master/VarDump/Formatters/VarDumpConsoleFormatter.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Formatters/VarDumpConsoleFormatter.php)
 
 ## Implements
 

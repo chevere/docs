@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\FileUnableToRemoveException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/FileUnableToRemoveException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/FileUnableToRemoveException.php)
 
 ## Implements
 

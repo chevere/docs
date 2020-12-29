@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\MethodNotAllowedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/MethodNotAllowedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/MethodNotAllowedException.php)
 
 ## Implements
 

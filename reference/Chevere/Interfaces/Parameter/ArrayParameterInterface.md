@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ArrayParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/ArrayParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ArrayParameterInterface.php)
 
 ## Extends
 

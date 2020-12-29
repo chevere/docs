@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Controller\ControllerNotExistsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Controller/ControllerNotExistsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Controller/ControllerNotExistsException.php)
 
 ## Implements
 

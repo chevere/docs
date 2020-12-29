@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Http\Methods\GetMethod`
 
-[view source](https://github.com/chevere/chevere/blob/master/Http/Methods/GetMethod.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Http/Methods/GetMethod.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Message\Message`
 
-[view source](https://github.com/chevere/chevere/blob/master/Message/Message.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Message/Message.php)
 
 ## Implements
 

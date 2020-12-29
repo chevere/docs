@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\Plug\Event\EventsRunner`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/Plug/Event/EventsRunner.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Plug/Event/EventsRunner.php)
 
 ## Implements
 

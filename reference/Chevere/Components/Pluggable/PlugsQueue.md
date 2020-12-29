@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\PlugsQueue`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugsQueue.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/PlugsQueue.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Pluggable\PlugsQueueInterfaceException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugsQueueInterfaceException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Pluggable/PlugsQueueInterfaceException.php)
 
 ## Implements
 

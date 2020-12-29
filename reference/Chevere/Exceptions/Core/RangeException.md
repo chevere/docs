@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\RangeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Core/RangeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/RangeException.php)
 
 ## Implements
 

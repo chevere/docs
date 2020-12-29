@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathNotExistsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/PathNotExistsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathNotExistsException.php)
 
 ## Implements
 

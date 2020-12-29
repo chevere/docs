@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\Traits\TypedPlugsQueueTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/Traits/TypedPlugsQueueTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Traits/TypedPlugsQueueTrait.php)
 
 ## Methods
 

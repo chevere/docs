@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\DirUnableToCreateException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/DirUnableToCreateException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/DirUnableToCreateException.php)
 
 ## Implements
 

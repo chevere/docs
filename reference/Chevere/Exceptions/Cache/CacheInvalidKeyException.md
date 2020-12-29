@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Cache\CacheInvalidKeyException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Cache/CacheInvalidKeyException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Cache/CacheInvalidKeyException.php)
 
 ## Implements
 

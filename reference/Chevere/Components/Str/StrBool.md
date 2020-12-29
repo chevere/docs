@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Str\StrBool`
 
-[view source](https://github.com/chevere/chevere/blob/master/Str/StrBool.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Str/StrBool.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Pluggable\AssertPlugInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/AssertPlugInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Pluggable/AssertPlugInterface.php)
 
 ## Description
 

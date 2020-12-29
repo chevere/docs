@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Serialize\SerializeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Serialize/SerializeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Serialize/SerializeInterface.php)
 
 ## Extends
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Cache\Cache`
 
-[view source](https://github.com/chevere/chevere/blob/master/Cache/Cache.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Cache/Cache.php)
 
 ## Implements
 

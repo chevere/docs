@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Dependent\DependenciesInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Dependent/DependenciesInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Dependent/DependenciesInterface.php)
 
 ## Extends
 

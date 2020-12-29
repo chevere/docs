@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Routing\RoutingDescriptorAlreadyAddedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Routing/RoutingDescriptorAlreadyAddedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Routing/RoutingDescriptorAlreadyAddedException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Type\TypeNotFoundException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Type/TypeNotFoundException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Type/TypeNotFoundException.php)
 
 ## Implements
 

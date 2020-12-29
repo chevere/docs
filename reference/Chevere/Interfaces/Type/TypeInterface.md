@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Type\TypeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Type/TypeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Type/TypeInterface.php)
 
 ## Description
 

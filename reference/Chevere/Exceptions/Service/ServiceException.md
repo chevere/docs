@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Service\ServiceException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Service/ServiceException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Service/ServiceException.php)
 
 ## Implements
 

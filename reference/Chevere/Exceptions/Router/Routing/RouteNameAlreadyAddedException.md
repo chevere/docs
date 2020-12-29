@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Routing\RouteNameAlreadyAddedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Routing/RouteNameAlreadyAddedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Routing/RouteNameAlreadyAddedException.php)
 
 ## Implements
 

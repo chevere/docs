@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Highlighters\Traits\AssertKeyTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/VarDump/Highlighters/Traits/AssertKeyTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Highlighters/Traits/AssertKeyTrait.php)
 
 ## Methods
 

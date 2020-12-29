@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\DirTailException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/DirTailException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/DirTailException.php)
 
 ## Implements
 

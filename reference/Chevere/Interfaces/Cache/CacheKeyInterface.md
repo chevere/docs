@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Cache\CacheKeyInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Cache/CacheKeyInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Cache/CacheKeyInterface.php)
 
 ## Extends
 

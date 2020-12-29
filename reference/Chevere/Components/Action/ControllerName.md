@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Action\ControllerName`
 
-[view source](https://github.com/chevere/chevere/blob/master/Action/ControllerName.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Action/ControllerName.php)
 
 ## Implements
 

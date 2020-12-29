@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\DataStructure\Traits\MapTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/DataStructure/Traits/MapTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/DataStructure/Traits/MapTrait.php)
 
 ## Methods
 

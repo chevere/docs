@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Processors\VarDumpResourceProcessor`
 
-[view source](https://github.com/chevere/chevere/blob/master/VarDump/Processors/VarDumpResourceProcessor.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Processors/VarDumpResourceProcessor.php)
 
 ## Implements
 

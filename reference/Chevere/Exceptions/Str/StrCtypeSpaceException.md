@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrCtypeSpaceException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Str/StrCtypeSpaceException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrCtypeSpaceException.php)
 
 ## Implements
 

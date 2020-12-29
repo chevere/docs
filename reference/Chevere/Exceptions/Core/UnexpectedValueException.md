@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\UnexpectedValueException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Core/UnexpectedValueException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/UnexpectedValueException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Parameter\FloatParameter`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/FloatParameter.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Parameter/FloatParameter.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\FileNotExistsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/FileNotExistsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/FileNotExistsException.php)
 
 ## Implements
 

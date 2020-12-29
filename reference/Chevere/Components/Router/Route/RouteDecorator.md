@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\Route\RouteDecorator`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Route/RouteDecorator.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/Route/RouteDecorator.php)
 
 ## Implements
 

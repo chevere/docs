@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\DataStructure\MappedInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/DataStructure/MappedInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/DataStructure/MappedInterface.php)
 
 ## Extends
 

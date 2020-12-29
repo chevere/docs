@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Dependent\DependentInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Dependent/DependentInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Dependent/DependentInterface.php)
 
 ## Description
 

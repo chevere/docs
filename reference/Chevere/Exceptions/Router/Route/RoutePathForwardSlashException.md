@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Route\RoutePathForwardSlashException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Route/RoutePathForwardSlashException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Route/RoutePathForwardSlashException.php)
 
 ## Implements
 

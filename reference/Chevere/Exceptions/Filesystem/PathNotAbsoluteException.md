@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathNotAbsoluteException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/PathNotAbsoluteException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathNotAbsoluteException.php)
 
 ## Implements
 

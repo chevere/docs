@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Writer\Writers`
 
-[view source](https://github.com/chevere/chevere/blob/master/Writer/Writers.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Writer/Writers.php)
 
 ## Implements
 

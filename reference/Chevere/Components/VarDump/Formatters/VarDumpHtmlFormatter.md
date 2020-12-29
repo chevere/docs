@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Formatters\VarDumpHtmlFormatter`
 
-[view source](https://github.com/chevere/chevere/blob/master/VarDump/Formatters/VarDumpHtmlFormatter.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Formatters/VarDumpHtmlFormatter.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Parameter\ArgumentRequiredException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/ArgumentRequiredException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Parameter/ArgumentRequiredException.php)
 
 ## Implements
 

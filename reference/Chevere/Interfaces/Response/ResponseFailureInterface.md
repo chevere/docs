@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Response\ResponseFailureInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Response/ResponseFailureInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Response/ResponseFailureInterface.php)
 
 ## Extends
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Spec\SpecMakerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Spec/SpecMakerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecMakerInterface.php)
 
 ## Description
 

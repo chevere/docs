@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Dependent\Traits\DependentTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/Dependent/Traits/DependentTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Dependent/Traits/DependentTrait.php)
 
 ## Methods
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Http\Methods\PutMethod`
 
-[view source](https://github.com/chevere/chevere/blob/master/Http/Methods/PutMethod.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Http/Methods/PutMethod.php)
 
 ## Implements
 

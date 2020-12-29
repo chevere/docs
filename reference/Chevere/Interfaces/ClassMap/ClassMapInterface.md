@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\ClassMap\ClassMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/ClassMap/ClassMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ClassMap/ClassMapInterface.php)
 
 ## Extends
 

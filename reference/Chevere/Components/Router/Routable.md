@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\Routable`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Routable.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/Routable.php)
 
 ## Implements
 

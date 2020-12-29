@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Route\RouteWildcardInvalidRegexException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Route/RouteWildcardInvalidRegexException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Route/RouteWildcardInvalidRegexException.php)
 
 ## Implements
 

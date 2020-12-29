@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Spec\SpecInvalidArgumentException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Spec/SpecInvalidArgumentException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Spec/SpecInvalidArgumentException.php)
 
 ## Implements
 

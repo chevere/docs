@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Response\ResponseSuccess`
 
-[view source](https://github.com/chevere/chevere/blob/master/Response/ResponseSuccess.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Response/ResponseSuccess.php)
 
 ## Implements
 

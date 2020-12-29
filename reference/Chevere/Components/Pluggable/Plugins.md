@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\Plugins`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/Plugins.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Plugins.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrAssertException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Str/StrAssertException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrAssertException.php)
 
 ## Implements
 

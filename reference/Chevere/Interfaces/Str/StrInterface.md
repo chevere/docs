@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Str\StrInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Str/StrInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Str/StrInterface.php)
 
 ## Extends
 

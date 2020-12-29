@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\PlugsMapper`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugsMapper.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/PlugsMapper.php)
 
 ## Methods
 

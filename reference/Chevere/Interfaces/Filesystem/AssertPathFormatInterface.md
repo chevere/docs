@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\AssertPathFormatInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/AssertPathFormatInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/AssertPathFormatInterface.php)
 
 ## Description
 

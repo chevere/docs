@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\RouterIndexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/RouterIndexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/RouterIndexInterface.php)
 
 ## Extends
 

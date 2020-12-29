@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\Plug\Hook\HooksRunnerNull`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/Plug/Hook/HooksRunnerNull.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Plug/Hook/HooksRunnerNull.php)
 
 ## Implements
 

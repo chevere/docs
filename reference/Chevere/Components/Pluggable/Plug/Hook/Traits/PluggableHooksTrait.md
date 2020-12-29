@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\Plug\Hook\Traits\PluggableHooksTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/Plug/Hook/Traits/PluggableHooksTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Plug/Hook/Traits/PluggableHooksTrait.php)
 
 ## Methods
 

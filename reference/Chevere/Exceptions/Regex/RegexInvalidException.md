@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Regex\RegexInvalidException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Regex/RegexInvalidException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Regex/RegexInvalidException.php)
 
 ## Implements
 

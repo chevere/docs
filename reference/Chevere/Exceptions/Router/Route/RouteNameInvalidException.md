@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Route\RouteNameInvalidException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Route/RouteNameInvalidException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Route/RouteNameInvalidException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\Route\RouteWildcardMatchInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Route/RouteWildcardMatchInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Route/RouteWildcardMatchInterface.php)
 
 ## Extends
 

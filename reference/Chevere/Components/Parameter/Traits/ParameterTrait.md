@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Parameter\Traits\ParameterTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/Traits/ParameterTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Parameter/Traits/ParameterTrait.php)
 
 ## Methods
 

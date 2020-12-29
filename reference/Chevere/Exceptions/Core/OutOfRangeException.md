@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\OutOfRangeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Core/OutOfRangeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/OutOfRangeException.php)
 
 ## Implements
 

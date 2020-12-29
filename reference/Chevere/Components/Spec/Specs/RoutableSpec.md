@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Spec\Specs\RoutableSpec`
 
-[view source](https://github.com/chevere/chevere/blob/master/Spec/Specs/RoutableSpec.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Spec/Specs/RoutableSpec.php)
 
 ## Implements
 

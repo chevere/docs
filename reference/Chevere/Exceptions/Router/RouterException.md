@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\RouterException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/RouterException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/RouterException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Spec\SpecIndex`
 
-[view source](https://github.com/chevere/chevere/blob/master/Spec/SpecIndex.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Spec/SpecIndex.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\ClassMap\ClassNotMappedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/ClassMap/ClassNotMappedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/ClassMap/ClassNotMappedException.php)
 
 ## Implements
 

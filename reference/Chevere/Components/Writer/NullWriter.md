@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Writer\NullWriter`
 
-[view source](https://github.com/chevere/chevere/blob/master/Writer/NullWriter.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Writer/NullWriter.php)
 
 ## Implements
 

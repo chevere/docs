@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Http\Methods\ConnectMethod`
 
-[view source](https://github.com/chevere/chevere/blob/master/Http/Methods/ConnectMethod.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Http/Methods/ConnectMethod.php)
 
 ## Implements
 

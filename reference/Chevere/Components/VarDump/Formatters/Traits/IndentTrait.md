@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Formatters\Traits\IndentTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/VarDump/Formatters/Traits/IndentTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Formatters/Traits/IndentTrait.php)
 
 ## Methods
 

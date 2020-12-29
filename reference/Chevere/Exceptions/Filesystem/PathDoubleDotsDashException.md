@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathDoubleDotsDashException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/PathDoubleDotsDashException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathDoubleDotsDashException.php)
 
 ## Implements
 

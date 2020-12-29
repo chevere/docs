@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\ThrowableHandler\ThrowableHandler`
 
-[view source](https://github.com/chevere/chevere/blob/master/ThrowableHandler/ThrowableHandler.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ThrowableHandler/ThrowableHandler.php)
 
 ## Implements
 

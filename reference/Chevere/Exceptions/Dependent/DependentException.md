@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Dependent\DependentException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Dependent/DependentException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Dependent/DependentException.php)
 
 ## Implements
 

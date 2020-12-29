@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Http\Methods\PatchMethod`
 
-[view source](https://github.com/chevere/chevere/blob/master/Http/Methods/PatchMethod.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Http/Methods/PatchMethod.php)
 
 ## Implements
 

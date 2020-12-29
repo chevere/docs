@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\ClassMap\ClassMap`
 
-[view source](https://github.com/chevere/chevere/blob/master/ClassMap/ClassMap.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ClassMap/ClassMap.php)
 
 ## Implements
 

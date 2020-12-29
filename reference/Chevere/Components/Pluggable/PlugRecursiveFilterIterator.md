@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\PlugRecursiveFilterIterator`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugRecursiveFilterIterator.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/PlugRecursiveFilterIterator.php)
 
 ## Implements
 

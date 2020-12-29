@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\Plug\Event\Traits\PluggableEventsTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/Plug/Event/Traits/PluggableEventsTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Plug/Event/Traits/PluggableEventsTrait.php)
 
 ## Methods
 

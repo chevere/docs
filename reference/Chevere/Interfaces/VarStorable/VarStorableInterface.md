@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\VarStorable\VarStorableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/VarStorable/VarStorableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/VarStorable/VarStorableInterface.php)
 
 ## Description
 

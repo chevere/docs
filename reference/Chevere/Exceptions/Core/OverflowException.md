@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\OverflowException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Core/OverflowException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/OverflowException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Regex\Regex`
 
-[view source](https://github.com/chevere/chevere/blob/master/Regex/Regex.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Regex/Regex.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Controller\ControllerInterfaceException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Controller/ControllerInterfaceException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Controller/ControllerInterfaceException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Spec\Specs\RoutableSpecInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Spec/Specs/RoutableSpecInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/Specs/RoutableSpecInterface.php)
 
 ## Extends
 

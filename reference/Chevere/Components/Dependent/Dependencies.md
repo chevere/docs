@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Dependent\Dependencies`
 
-[view source](https://github.com/chevere/chevere/blob/master/Dependent/Dependencies.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Dependent/Dependencies.php)
 
 ## Implements
 

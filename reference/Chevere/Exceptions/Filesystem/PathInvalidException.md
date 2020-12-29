@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathInvalidException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Filesystem/PathInvalidException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathInvalidException.php)
 
 ## Implements
 

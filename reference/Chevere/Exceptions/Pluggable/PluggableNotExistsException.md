@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Pluggable\PluggableNotExistsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PluggableNotExistsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Pluggable/PluggableNotExistsException.php)
 
 ## Implements
 

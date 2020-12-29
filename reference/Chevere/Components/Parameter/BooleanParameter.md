@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Parameter\BooleanParameter`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/BooleanParameter.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Parameter/BooleanParameter.php)
 
 ## Implements
 

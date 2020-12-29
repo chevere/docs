@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\PlugTypesList`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugTypesList.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/PlugTypesList.php)
 
 ## Implements
 

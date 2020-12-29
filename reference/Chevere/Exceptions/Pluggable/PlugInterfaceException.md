@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Pluggable\PlugInterfaceException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugInterfaceException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Pluggable/PlugInterfaceException.php)
 
 ## Implements
 

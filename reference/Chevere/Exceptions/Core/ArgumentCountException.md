@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\ArgumentCountException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Core/ArgumentCountException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/ArgumentCountException.php)
 
 ## Implements
 

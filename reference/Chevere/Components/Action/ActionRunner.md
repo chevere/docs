@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Action\ActionRunner`
 
-[view source](https://github.com/chevere/chevere/blob/master/Action/ActionRunner.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Action/ActionRunner.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Spec\SpecIndexMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/Spec/SpecIndexMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecIndexMapInterface.php)
 
 ## Extends
 

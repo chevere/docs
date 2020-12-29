@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Plugs\Hooks\HookableInterfaceException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Plugs/Hooks/HookableInterfaceException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Plugs/Hooks/HookableInterfaceException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Routing\RoutePathAlreadyAddedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/Routing/RoutePathAlreadyAddedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Routing/RoutePathAlreadyAddedException.php)
 
 ## Implements
 

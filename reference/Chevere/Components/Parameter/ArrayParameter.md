@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Parameter\ArrayParameter`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/ArrayParameter.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Parameter/ArrayParameter.php)
 
 ## Implements
 

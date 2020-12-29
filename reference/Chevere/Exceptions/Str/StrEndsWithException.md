@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrEndsWithException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Str/StrEndsWithException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrEndsWithException.php)
 
 ## Implements
 

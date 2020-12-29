@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Parameter\ParameterNameInvalidException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/ParameterNameInvalidException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Parameter/ParameterNameInvalidException.php)
 
 ## Implements
 

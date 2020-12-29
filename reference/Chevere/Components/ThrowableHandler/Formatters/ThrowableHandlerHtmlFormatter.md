@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\ThrowableHandler\Formatters\ThrowableHandlerHtmlFormatter`
 
-[view source](https://github.com/chevere/chevere/blob/master/ThrowableHandler/Formatters/ThrowableHandlerHtmlFormatter.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerHtmlFormatter.php)
 
 ## Implements
 

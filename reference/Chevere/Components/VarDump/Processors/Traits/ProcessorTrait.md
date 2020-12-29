@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Processors\Traits\ProcessorTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/VarDump/Processors/Traits/ProcessorTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Processors/Traits/ProcessorTrait.php)
 
 ## Methods
 

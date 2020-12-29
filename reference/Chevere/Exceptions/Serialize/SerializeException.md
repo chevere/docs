@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Serialize\SerializeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Serialize/SerializeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Serialize/SerializeException.php)
 
 ## Implements
 

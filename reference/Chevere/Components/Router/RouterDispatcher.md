@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\RouterDispatcher`
 
-[view source](https://github.com/chevere/chevere/blob/master/Router/RouterDispatcher.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/RouterDispatcher.php)
 
 ## Implements
 

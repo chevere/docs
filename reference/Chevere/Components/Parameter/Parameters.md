@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Parameter\Parameters`
 
-[view source](https://github.com/chevere/chevere/blob/master/Parameter/Parameters.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Parameter/Parameters.php)
 
 ## Implements
 

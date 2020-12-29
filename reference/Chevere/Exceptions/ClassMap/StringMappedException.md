@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\ClassMap\StringMappedException`
 
-[view source](https://github.com/chevere/chevere/blob/master/ClassMap/StringMappedException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/ClassMap/StringMappedException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Iterator\BreadcrumbException`
 
-[view source](https://github.com/chevere/chevere/blob/master/Iterator/BreadcrumbException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Iterator/BreadcrumbException.php)
 
 ## Implements
 
