@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Route\RouteEndpointConflictException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Route/RouteEndpointConflictException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Router/Route/RouteEndpointConflictException.php)
 
 ## Implements
 

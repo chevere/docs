@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Spec\Specs\GroupSpecInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/Specs/GroupSpecInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Spec/Specs/GroupSpecInterface.php)
 
 ## Extends
 

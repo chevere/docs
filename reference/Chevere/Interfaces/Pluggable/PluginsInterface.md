@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Pluggable\PluginsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Pluggable/PluginsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PluginsInterface.php)
 
 ## Description
 
@@ -44,6 +44,7 @@ Returns the plugs queue for the given `$pluggableName`.
 - [PluggableNotRegisteredException](../../Exceptions/Pluggable/PluggableNotRegisteredException.md) 
 - [PlugsFileNotExistsException](../../Exceptions/Pluggable/PlugsFileNotExistsException.md) 
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
+- [PlugsQueueInterfaceException](../../Exceptions/Pluggable/PlugsQueueInterfaceException.md) 
 :::
 
 ::: tip RETURN

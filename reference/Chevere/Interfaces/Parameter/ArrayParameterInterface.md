@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ArrayParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ArrayParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Parameter/ArrayParameterInterface.php)
 
 ## Extends
 
@@ -133,7 +133,7 @@ bool
 Provides access to the attributes instance.
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

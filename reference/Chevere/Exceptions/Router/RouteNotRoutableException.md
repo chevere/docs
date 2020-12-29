@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\RouteNotRoutableException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/RouteNotRoutableException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Router/RouteNotRoutableException.php)
 
 ## Implements
 

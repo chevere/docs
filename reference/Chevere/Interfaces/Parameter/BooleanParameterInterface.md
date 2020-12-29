@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\BooleanParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/BooleanParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Parameter/BooleanParameterInterface.php)
 
 ## Extends
 
@@ -133,7 +133,7 @@ bool
 Provides access to the attributes instance.
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

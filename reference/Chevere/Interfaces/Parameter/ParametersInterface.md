@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ParametersInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ParametersInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Parameter/ParametersInterface.php)
 
 ## Extends
 
@@ -161,7 +161,7 @@ bool
 ### required()
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---
@@ -169,7 +169,7 @@ bool
 ### optional()
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

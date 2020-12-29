@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Str\StrBoolInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Str/StrBoolInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Str/StrBoolInterface.php)
 
 ## Description
 

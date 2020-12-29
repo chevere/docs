@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\FileInvalidContentsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/FileInvalidContentsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/FileInvalidContentsException.php)
 
 ## Implements
 

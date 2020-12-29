@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\FileUnableToPutException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/FileUnableToPutException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/FileUnableToPutException.php)
 
 ## Implements
 

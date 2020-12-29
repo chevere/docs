@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Pluggable\Plug\Hook\HookInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Pluggable/Plug/Hook/HookInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Pluggable/Plug/Hook/HookInterface.php)
 
 ## Extends
 

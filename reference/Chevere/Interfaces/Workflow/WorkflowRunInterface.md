@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Workflow\WorkflowRunInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Workflow/WorkflowRunInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Workflow/WorkflowRunInterface.php)
 
 ## Description
 
@@ -60,7 +60,7 @@ Provides access to the ArgumentsInterface instance.
 #### Parameters
 
 1. string `$step`
-2. [ResponseInterface](../Response/ResponseInterface.md) `$response`
+2. [ResponseSuccessInterface](../Response/ResponseSuccessInterface.md) `$response`
 
 ::: danger THROWS
 - [ArgumentCountException](../../Exceptions/Core/ArgumentCountException.md) 

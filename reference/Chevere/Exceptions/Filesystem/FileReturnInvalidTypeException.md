@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\FileReturnInvalidTypeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/FileReturnInvalidTypeException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/FileReturnInvalidTypeException.php)
 
 ## Implements
 

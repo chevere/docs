@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Spec\SpecEndpointsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecEndpointsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Spec/SpecEndpointsInterface.php)
 
 ## Extends
 

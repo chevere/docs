@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Cache\CacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Cache/CacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Cache/CacheInterface.php)
 
 ## Description
 
@@ -114,7 +114,7 @@ Get a cache item.
 1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [CacheKeyNotFoundException](../../Exceptions/Cache/CacheKeyNotFoundException.md) 
 :::
 
 ::: tip RETURN

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathIsFileException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathIsFileException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/PathIsFileException.php)
 
 ## Implements
 

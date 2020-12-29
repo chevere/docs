@@ -1,0 +1,35 @@
+---
+editLink: false
+---
+
+# PutMethod
+
+`Chevere\Components\Http\Methods\PutMethod`
+
+[view source](https://github.com/chevere/chevere/blob/master/Http/Methods/PutMethod.php)
+
+## Implements
+
+- [MethodInterface](../../../Interfaces/Http/MethodInterface.md)
+
+## Description
+
+
+
+## Methods
+
+### name()
+
+::: tip RETURN
+string
+:::
+
+---
+
+### description()
+
+::: tip RETURN
+string
+:::
+
+---

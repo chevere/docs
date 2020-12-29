@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\DirInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/DirInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/DirInterface.php)
 
 ## Description
 
@@ -22,7 +22,7 @@ Describes the component in charge of interacting with filesystem directories.
 
 ::: danger THROWS
 - [PathIsFileException](../../Exceptions/Filesystem/PathIsFileException.md) 
-- [PathTailException](../../Exceptions/Filesystem/PathTailException.md) 
+- [DirTailException](../../Exceptions/Filesystem/DirTailException.md) 
 :::
 
 ---

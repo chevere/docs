@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ArgumentsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ArgumentsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Parameter/ArgumentsInterface.php)
 
 ## Extends
 
@@ -26,9 +26,9 @@ Describes the component in charge of defining a set of parameters with arguments
 2. mixed `...$namedArguments`
 
 ::: danger THROWS
-- ⚠ Unknown type `ArgumentRequiredException` declared in `@throws` tag`
+- [ArgumentRequiredException](../../Exceptions/Parameter/ArgumentRequiredException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
+- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md) 
 :::
 
 ---
@@ -69,7 +69,7 @@ Return an instance with the specified controller argument.
 2.  `$value`
 
 ::: danger THROWS
-- ⚠ Unknown type `ArgumentValueRegexMatchException` declared in `@throws` tag`
+- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) If `$name` is not a known controller parameter.
 :::
 

@@ -6,51 +6,26 @@ editLink: false
 
 `Chevere\Interfaces\Response\ResponseInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Response/ResponseInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Response/ResponseInterface.php)
 
 ## Description
 
-Describes the component in charge of defining a success response.
+Describes the component in charge of handling the response.
 
 ## Methods
 
-### withStatus()
-
-Return an instance with the specified status.
+### __construct()
 
 #### Parameters
 
-1. int `$code`
-
-::: tip RETURN
-self
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified status.
-
----
-
-### withData()
-
-Return an instance with the specified data.
-
-#### Parameters
-
-1. mixed `...$data`
-
-::: tip RETURN
-self
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified data.
+1. [ParametersInterface](../Parameter/ParametersInterface.md) `$parameters`
+2. array `$data`
 
 ---
 
 ### uuid()
 
-Provides access to uuid.
+Provides access to response uuid.
 
 ::: tip RETURN
 string
@@ -60,7 +35,7 @@ string
 
 ### token()
 
-Provides access to token.
+Provides access to response token.
 
 ::: tip RETURN
 string
@@ -70,20 +45,10 @@ string
 
 ### data()
 
-Provides access to data.
+Provides access to response data.
 
 ::: tip RETURN
 array
-:::
-
----
-
-### status()
-
-Provides access to status.
-
-::: tip RETURN
-int
 :::
 
 ---

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\StringParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/StringParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Parameter/StringParameterInterface.php)
 
 ## Extends
 
@@ -164,7 +164,7 @@ bool
 Provides access to the attributes instance.
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

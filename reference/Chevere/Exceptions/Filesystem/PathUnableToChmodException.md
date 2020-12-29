@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathUnableToChmodException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathUnableToChmodException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/PathUnableToChmodException.php)
 
 ## Implements
 

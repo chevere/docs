@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathIsNotDirectoryException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathIsNotDirectoryException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/PathIsNotDirectoryException.php)
 
 ## Implements
 

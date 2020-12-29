@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Pluggable\PlugsMapCacheInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Pluggable/PlugsMapCacheInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugsMapCacheInterface.php)
 
 ## Description
 

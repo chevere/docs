@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Pluggable\PlugsQueueInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Pluggable/PlugsQueueInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Pluggable/PlugsQueueInterface.php)
 
 ## Extends
 
@@ -35,7 +35,7 @@ Return an instance with the specified `$plug`.
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ::: danger THROWS
-- ⚠ Unknown type `TypeException` declared in `@throws` tag`
+- [PlugInterfaceException](../../Exceptions/Pluggable/PlugInterfaceException.md) 
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 

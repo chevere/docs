@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrSameException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrSameException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Str/StrSameException.php)
 
 ## Implements
 

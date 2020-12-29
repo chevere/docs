@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\DirUnableToRemoveException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/DirUnableToRemoveException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/DirUnableToRemoveException.php)
 
 ## Implements
 

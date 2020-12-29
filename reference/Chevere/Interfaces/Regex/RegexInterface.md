@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Regex\RegexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Regex/RegexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Regex/RegexInterface.php)
 
 ## Extends
 
@@ -43,7 +43,7 @@ array (
 1. string `$pattern`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
+- [RegexInvalidException](../../Exceptions/Regex/RegexInvalidException.md) 
 :::
 
 ---

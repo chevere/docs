@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Cache\CacheKeyInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Cache/CacheKeyInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Cache/CacheKeyInterface.php)
 
 ## Extends
 
@@ -35,7 +35,7 @@ Type `string`
 1. string `$key`
 
 ::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
+- [CacheInvalidKeyException](../../Exceptions/Cache/CacheInvalidKeyException.md) 
 :::
 
 ---

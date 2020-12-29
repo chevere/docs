@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Action\ControllerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Action/ControllerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Action/ControllerInterface.php)
 
 ## Extends
 
@@ -114,7 +114,7 @@ Method called when running the action.
 1. [ArgumentsInterface](../Parameter/ArgumentsInterface.md) `$arguments`
 
 ::: tip RETURN
-[ResponseInterface](../Response/ResponseInterface.md)
+[ResponseSuccessInterface](../Response/ResponseSuccessInterface.md)
 :::
 
 ---
@@ -157,10 +157,10 @@ Retrieves a new success response with type-hinted data.
 
 #### Parameters
 
-1. mixed `...$data`
+1. array `$data`
 
 ::: tip RETURN
-[ResponseInterface](../Response/ResponseInterface.md)
+[ResponseSuccessInterface](../Response/ResponseSuccessInterface.md)
 :::
 
 ---

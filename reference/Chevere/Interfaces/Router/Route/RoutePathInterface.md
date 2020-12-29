@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\Route\RoutePathInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Route/RoutePathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Router/Route/RoutePathInterface.php)
 
 ## Extends
 

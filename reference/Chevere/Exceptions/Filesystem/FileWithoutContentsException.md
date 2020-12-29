@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\FileWithoutContentsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/FileWithoutContentsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Filesystem/FileWithoutContentsException.php)
 
 ## Implements
 

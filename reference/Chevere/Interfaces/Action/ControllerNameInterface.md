@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Action\ControllerNameInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Action/ControllerNameInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Action/ControllerNameInterface.php)
 
 ## Extends
 
@@ -25,7 +25,9 @@ Describes the component in charge of handling the controller name.
 1. string `$name`
 
 ::: danger THROWS
-- ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
+- [ControllerNameException](../../Exceptions/Controller/ControllerNameException.md) 
+- [ControllerNotExistsException](../../Exceptions/Controller/ControllerNotExistsException.md) 
+- [ControllerInterfaceException](../../Exceptions/Controller/ControllerInterfaceException.md) 
 :::
 
 ---

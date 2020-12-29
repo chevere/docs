@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Spec\SpecMakerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/SpecMakerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Spec/SpecMakerInterface.php)
 
 ## Description
 
@@ -44,7 +44,7 @@ Provides access to the generated spec index instance.
 Provides access to the files map instance.
 
 ::: tip RETURN
-[Ds\Map](https://www.php.net/manual/class.ds\map)
+Ds\Map
 :::
 
 ---

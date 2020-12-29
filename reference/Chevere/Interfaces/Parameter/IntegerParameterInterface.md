@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\IntegerParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/IntegerParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Parameter/IntegerParameterInterface.php)
 
 ## Extends
 
@@ -133,7 +133,7 @@ bool
 Provides access to the attributes instance.
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

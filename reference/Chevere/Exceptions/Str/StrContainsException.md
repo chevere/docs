@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrContainsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrContainsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Str/StrContainsException.php)
 
 ## Implements
 

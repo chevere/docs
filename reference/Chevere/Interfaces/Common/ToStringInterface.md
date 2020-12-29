@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Common\ToStringInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Common/ToStringInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Common/ToStringInterface.php)
 
 ## Description
 

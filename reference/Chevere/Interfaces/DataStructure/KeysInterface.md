@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\DataStructure\KeysInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/DataStructure/KeysInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/DataStructure/KeysInterface.php)
 
 ## Description
 

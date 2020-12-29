@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\VarDump\VarDumpableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/VarDump/VarDumpableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/VarDump/VarDumpableInterface.php)
 
 ## Description
 

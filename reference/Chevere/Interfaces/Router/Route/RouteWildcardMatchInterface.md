@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\Route\RouteWildcardMatchInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Route/RouteWildcardMatchInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Router/Route/RouteWildcardMatchInterface.php)
 
 ## Extends
 
@@ -25,7 +25,7 @@ Describes the component in charge of defining a route wildcard match.
 1. string `$string`
 
 ::: danger THROWS
-- [UnexpectedValueException](../../../Exceptions/Core/UnexpectedValueException.md) If `$string` is an invalid regex matcher.
+- [RegexException](../../../Exceptions/Regex/RegexException.md) If `$string` is an invalid regex matcher.
 :::
 
 ---

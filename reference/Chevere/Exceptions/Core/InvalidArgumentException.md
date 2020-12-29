@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\InvalidArgumentException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/InvalidArgumentException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Core/InvalidArgumentException.php)
 
 ## Implements
 

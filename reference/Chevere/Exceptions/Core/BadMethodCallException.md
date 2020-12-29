@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\BadMethodCallException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/BadMethodCallException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Core/BadMethodCallException.php)
 
 ## Implements
 

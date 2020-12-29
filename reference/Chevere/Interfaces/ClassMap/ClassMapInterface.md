@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\ClassMap\ClassMapInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ClassMap/ClassMapInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/ClassMap/ClassMapInterface.php)
 
 ## Extends
 
@@ -31,8 +31,8 @@ Return an instance with the specified className mapping.
 2. string `$key`
 
 ::: danger THROWS
-- [ClassNotExistsException](../../Exceptions/Core/ClassNotExistsException.md) 
-- [OverflowException](../../Exceptions/Core/OverflowException.md) 
+- [ClassNotExistsException](../../Exceptions/ClassMap/ClassNotExistsException.md) 
+- [StringMappedException](../../Exceptions/ClassMap/StringMappedException.md) 
 :::
 
 ::: tip RETURN
@@ -81,7 +81,7 @@ Provides access to the class name mapping.
 1. string `$className`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md) 
 :::
 
 ::: tip RETURN
@@ -99,7 +99,7 @@ Provides access to the class name mapped by key.
 1. string `$key`
 
 ::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+- [ClassNotMappedException](../../Exceptions/ClassMap/ClassNotMappedException.md) 
 :::
 
 ::: tip RETURN

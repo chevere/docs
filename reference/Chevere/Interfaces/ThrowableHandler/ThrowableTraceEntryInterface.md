@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableTraceEntryInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ThrowableHandler/ThrowableTraceEntryInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/ThrowableHandler/ThrowableTraceEntryInterface.php)
 
 ## Description
 

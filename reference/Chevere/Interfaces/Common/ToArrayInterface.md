@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Common\ToArrayInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Common/ToArrayInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Common/ToArrayInterface.php)
 
 ## Description
 

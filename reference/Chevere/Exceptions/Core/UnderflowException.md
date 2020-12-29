@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\UnderflowException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/UnderflowException.php)
+[view source](https://github.com/chevere/chevere/blob/master/Core/UnderflowException.php)
 
 ## Implements
 

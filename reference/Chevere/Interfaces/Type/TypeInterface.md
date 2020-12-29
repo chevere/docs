@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Type\TypeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Type/TypeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/Type/TypeInterface.php)
 
 ## Description
 
@@ -140,7 +140,7 @@ array (
 1. string `$type`
 
 ::: danger THROWS
-- ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
+- [TypeNotFoundException](../../Exceptions/Type/TypeNotFoundException.md) if the type doesn't exists
 :::
 
 ---
