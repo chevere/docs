@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ControllerNotExistsException
+# NotVarStorableException
 
-`Chevere\Exceptions\Controller\ControllerNotExistsException`
+`Chevere\Exceptions\VarStorable\NotVarStorableException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Controller/ControllerNotExistsException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/VarStorable/NotVarStorableException.php)
 
 ## Implements
 
@@ -19,7 +19,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when a controller doesn't exists.
+Exception thrown when a `$var` can't be stored.
 
 ## Methods
 

@@ -2,17 +2,46 @@
 editLink: false
 ---
 
-# ResponseInterface
+# WorkflowResponseInterface
 
-`Chevere\Interfaces\Response\ResponseInterface`
+`Chevere\Interfaces\Workflow\WorkflowResponseInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Response/ResponseInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Workflow/WorkflowResponseInterface.php)
+
+## Extends
+
+- [ResponseInterface](../Response/ResponseInterface.md)
 
 ## Description
 
-Describes the component in charge of defining a success response.
+Describes the component in charge of providing a workflow response.
 
 ## Methods
+
+### withWorkflowMessage()
+
+Return an instance with the specified workflow message.
+
+#### Parameters
+
+1. [WorkflowMessageInterface](./WorkflowMessageInterface.md) `$workflowMessage`
+
+::: tip RETURN
+self
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified workflow message.
+
+---
+
+### workflowMessage()
+
+::: tip RETURN
+[WorkflowMessageInterface](./WorkflowMessageInterface.md)
+:::
+
+---
 
 ### withStatus()
 

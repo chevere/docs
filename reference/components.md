@@ -108,8 +108,7 @@ editLink: false
 
 ## Response
 
-- [ResponseFailure](./Chevere/Components/Response/ResponseFailure.md)
-- [ResponseSuccess](./Chevere/Components/Response/ResponseSuccess.md)
+- [Response](./Chevere/Components/Response/Response.md)
 - [ResponseTrait](./Chevere/Components/Response/Traits/ResponseTrait.md)
 
 ## Router
@@ -162,12 +161,12 @@ editLink: false
 
 ## ThrowableHandler
 
-- [ThrowableHandlerAbstractDocument](./Chevere/Components/ThrowableHandler/Documents/ThrowableHandlerAbstractDocument.md)
 - [ThrowableHandlerConsoleDocument](./Chevere/Components/ThrowableHandler/Documents/ThrowableHandlerConsoleDocument.md)
+- [ThrowableHandlerDocument](./Chevere/Components/ThrowableHandler/Documents/ThrowableHandlerDocument.md)
 - [ThrowableHandlerHtmlDocument](./Chevere/Components/ThrowableHandler/Documents/ThrowableHandlerHtmlDocument.md)
 - [ThrowableHandlerPlainDocument](./Chevere/Components/ThrowableHandler/Documents/ThrowableHandlerPlainDocument.md)
-- [ThrowableHandlerAbstractFormatter](./Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerAbstractFormatter.md)
 - [ThrowableHandlerConsoleFormatter](./Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerConsoleFormatter.md)
+- [ThrowableHandlerFormatter](./Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerFormatter.md)
 - [ThrowableHandlerHtmlFormatter](./Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerHtmlFormatter.md)
 - [ThrowableHandlerPlainFormatter](./Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerPlainFormatter.md)
 - [ThrowableHandler](./Chevere/Components/ThrowableHandler/ThrowableHandler.md)
@@ -217,6 +216,7 @@ editLink: false
 - [Step](./Chevere/Components/Workflow/Step.md)
 - [Workflow](./Chevere/Components/Workflow/Workflow.md)
 - [WorkflowMessage](./Chevere/Components/Workflow/WorkflowMessage.md)
+- [WorkflowResponse](./Chevere/Components/Workflow/WorkflowResponse.md)
 - [WorkflowRun](./Chevere/Components/Workflow/WorkflowRun.md)
 - [WorkflowRunner](./Chevere/Components/Workflow/WorkflowRunner.md)
 

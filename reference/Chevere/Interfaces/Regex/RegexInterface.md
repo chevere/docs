@@ -43,7 +43,7 @@ array (
 1. string `$pattern`
 
 ::: danger THROWS
-- [RegexInvalidException](../../Exceptions/Regex/RegexInvalidException.md) 
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---

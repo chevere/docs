@@ -10,11 +10,15 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### withDependencies()
 
 #### Parameters
 
 1. object `...$namedDependency`
+
+::: tip RETURN
+self
+:::
 
 ---
 
@@ -38,18 +42,6 @@ void
 
 ::: tip RETURN
 [DependenciesInterface](../../../Interfaces/Dependent/DependenciesInterface.md)
-:::
-
----
-
-### setDependencies()
-
-#### Parameters
-
-1. object `...$namedDependency`
-
-::: tip RETURN
-void
 :::
 
 ---

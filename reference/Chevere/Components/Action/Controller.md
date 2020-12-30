@@ -109,7 +109,7 @@ void
 1. [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md) `$arguments`
 
 ::: tip RETURN
-[ResponseSuccessInterface](../../Interfaces/Response/ResponseSuccessInterface.md)
+[ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
@@ -142,14 +142,14 @@ void
 
 ---
 
-### getResponseSuccess()
+### getResponse()
 
 #### Parameters
 
-1. array `$data`
+1. mixed `...$data`
 
 ::: tip RETURN
-[ResponseSuccessInterface](../../Interfaces/Response/ResponseSuccessInterface.md)
+[ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---

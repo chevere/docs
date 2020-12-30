@@ -21,10 +21,8 @@ Describes the component in charge of asserting a plug.
 1. [PlugInterface](./PlugInterface.md) `$plug`
 
 ::: danger THROWS
-- [PlugInterfaceException](../../Exceptions/Pluggable/PlugInterfaceException.md) 
-- [PluggableNotExistsException](../../Exceptions/Pluggable/PluggableNotExistsException.md) 
-- [PluggableAnchorsException](../../Exceptions/Pluggable/PluggableAnchorsException.md) 
-- [PluggableAnchorNotExistsException](../../Exceptions/Pluggable/PluggableAnchorNotExistsException.md) 
+- [TypeException](../../Exceptions/Core/TypeException.md) 
+- ⚠ Unknown type `LogicException` declared in `@throws` tag`
 :::
 
 ---

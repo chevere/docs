@@ -44,7 +44,6 @@ Returns the plugs queue for the given `$pluggableName`.
 - [PluggableNotRegisteredException](../../Exceptions/Pluggable/PluggableNotRegisteredException.md) 
 - [PlugsFileNotExistsException](../../Exceptions/Pluggable/PlugsFileNotExistsException.md) 
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
-- [PlugsQueueInterfaceException](../../Exceptions/Pluggable/PlugsQueueInterfaceException.md) 
 :::
 
 ::: tip RETURN

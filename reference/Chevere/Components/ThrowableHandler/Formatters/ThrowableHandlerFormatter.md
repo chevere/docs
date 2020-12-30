@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ThrowableHandlerAbstractFormatter
+# ThrowableHandlerFormatter
 
-`Chevere\Components\ThrowableHandler\Formatters\ThrowableHandlerAbstractFormatter`
+`Chevere\Components\ThrowableHandler\Formatters\ThrowableHandlerFormatter`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerAbstractFormatter.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerFormatter.php)
 
 ## Implements
 

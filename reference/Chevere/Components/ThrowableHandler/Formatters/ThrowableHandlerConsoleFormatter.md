@@ -14,7 +14,7 @@ editLink: false
 
 ## Extends
 
-- [ThrowableHandlerAbstractFormatter](./ThrowableHandlerAbstractFormatter.md)
+- [ThrowableHandlerFormatter](./ThrowableHandlerFormatter.md)
 
 ## Methods
 

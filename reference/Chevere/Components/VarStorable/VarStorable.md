@@ -65,7 +65,7 @@ void
 1.  `$var`
 
 ::: danger THROWS
-- [VarStorableException](../../Exceptions/VarStorable/VarStorableException.md) 
+- [NotVarStorableException](../../Exceptions/VarStorable/NotVarStorableException.md) 
 :::
 
 ::: tip RETURN

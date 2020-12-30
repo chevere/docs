@@ -18,10 +18,10 @@ Describes the component in charge of handling `unserialize()`.
 
 #### Parameters
 
-1. string `$serialized`
+1. string `$unserializable`
 
 ::: danger THROWS
-- [UnserializeException](../../Exceptions/Serialize/UnserializeException.md) 
+- ⚠ Unknown type `LogicException` declared in `@throws` tag`
 :::
 
 ---

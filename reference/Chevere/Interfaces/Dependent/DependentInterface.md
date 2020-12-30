@@ -14,13 +14,17 @@ Describes the component in charge of defining a class with explicit dependencies
 
 ## Methods
 
-### __construct()
+### withDependencies()
 
 Dependencies must be passed on construct for this interface.
 
 #### Parameters
 
 1. object `...$namedDependency`
+
+::: tip RETURN
+void
+:::
 
 Each named argument value will be assigned to a property of the
 same name.

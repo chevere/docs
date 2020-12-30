@@ -86,7 +86,7 @@ array (
 
 ### className()
 
-Provides access to the exception class name.
+Provides access to the throwable class name.
 
 ::: tip RETURN
 string
@@ -96,7 +96,7 @@ string
 
 ### code()
 
-Provides access to the exception code.
+Provides access to the throwable code.
 
 ::: tip RETURN
 string
@@ -106,7 +106,7 @@ string
 
 ### severity()
 
-Provides access to the exception severity.
+Provides access to the throwable severity.
 
 ::: tip RETURN
 int
@@ -116,7 +116,7 @@ int
 
 ### loggerLevel()
 
-Provides access to the exception logger level.
+Provides access to the throwable logger level.
 
 ::: tip RETURN
 string
@@ -126,7 +126,7 @@ string
 
 ### type()
 
-Provides access to the exception type.
+Provides access to the throwable type.
 
 ::: tip RETURN
 string
@@ -136,7 +136,7 @@ string
 
 ### message()
 
-Provides access to the exception message.
+Provides access to the throwable message.
 
 ::: tip RETURN
 [MessageInterface](../Message/MessageInterface.md)
@@ -146,7 +146,7 @@ Provides access to the exception message.
 
 ### file()
 
-Provides access to the exception file.
+Provides access to the throwable file.
 
 ::: tip RETURN
 string
@@ -156,7 +156,7 @@ string
 
 ### line()
 
-Provides access to the exception line.
+Provides access to the throwable line.
 
 ::: tip RETURN
 int
@@ -166,10 +166,34 @@ int
 
 ### trace()
 
-Provides access to the exception trace.
+Provides access to the throwable trace.
 
 ::: tip RETURN
 array
+:::
+
+---
+
+### hasPrevious()
+
+Indicates whether the instance has a previous throwable.
+
+::: tip RETURN
+bool
+:::
+
+---
+
+### previous()
+
+Provides access to previous throwable.
+
+::: danger THROWS
+- [TypeError](https://www.php.net/manual/class.typeerror) 
+:::
+
+::: tip RETURN
+[Throwable](https://www.php.net/manual/class.throwable)
 :::
 
 ---

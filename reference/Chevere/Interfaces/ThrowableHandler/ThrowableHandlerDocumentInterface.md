@@ -34,6 +34,14 @@ Type `string`
 'message'
 ```
 
+### SECTION_CHAIN
+
+Type `string`
+
+```php
+'chain'
+```
+
 ### SECTION_ID
 
 Type `string`
@@ -138,6 +146,14 @@ Type `string`
 '%phpUname%'
 ```
 
+### TAG_CHAIN
+
+Type `string`
+
+```php
+'%chain%'
+```
+
 ### SECTIONS
 
 Type `array`
@@ -145,11 +161,12 @@ Type `array`
 ```php
 array (
   0 => 'title',
-  1 => 'message',
-  2 => 'id',
-  3 => 'time',
-  4 => 'stack',
-  5 => 'server',
+  1 => 'chain',
+  2 => 'message',
+  3 => 'id',
+  4 => 'time',
+  5 => 'stack',
+  6 => 'server',
 )
 ```
 
@@ -160,6 +177,7 @@ Type `array`
 ```php
 array (
   'title' => 16,
+  'chain' => 16,
   'message' => 16,
   'id' => 16,
   'time' => 64,
@@ -220,6 +238,16 @@ string
 ### getSectionMessage()
 
 Returns the document message section.
+
+::: tip RETURN
+string
+:::
+
+---
+
+### getSectionChain()
+
+Returns the document chain section.
 
 ::: tip RETURN
 string

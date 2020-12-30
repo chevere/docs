@@ -18,7 +18,7 @@ editLink: false
 
 #### Parameters
 
-1. string `$serialized`
+1. string `$unserializable`
 
 ---
 

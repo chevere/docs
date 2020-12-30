@@ -31,14 +31,6 @@ string
 
 ---
 
-### assertName()
-
-::: tip RETURN
-void
-:::
-
----
-
 ### assertController()
 
 ::: tip RETURN

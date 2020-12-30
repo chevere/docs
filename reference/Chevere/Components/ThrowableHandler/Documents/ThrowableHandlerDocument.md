@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# ThrowableHandlerAbstractDocument
+# ThrowableHandlerDocument
 
-`Chevere\Components\ThrowableHandler\Documents\ThrowableHandlerAbstractDocument`
+`Chevere\Components\ThrowableHandler\Documents\ThrowableHandlerDocument`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ThrowableHandler/Documents/ThrowableHandlerAbstractDocument.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ThrowableHandler/Documents/ThrowableHandlerDocument.php)
 
 ## Implements
 
@@ -29,6 +29,14 @@ Type `string`
 
 ```php
 'message'
+```
+
+### SECTION_CHAIN
+
+Type `string`
+
+```php
+'chain'
 ```
 
 ### SECTION_ID
@@ -135,6 +143,14 @@ Type `string`
 '%phpUname%'
 ```
 
+### TAG_CHAIN
+
+Type `string`
+
+```php
+'%chain%'
+```
+
 ### SECTIONS
 
 Type `array`
@@ -142,11 +158,12 @@ Type `array`
 ```php
 array (
   0 => 'title',
-  1 => 'message',
-  2 => 'id',
-  3 => 'time',
-  4 => 'stack',
-  5 => 'server',
+  1 => 'chain',
+  2 => 'message',
+  3 => 'id',
+  4 => 'time',
+  5 => 'stack',
+  6 => 'server',
 )
 ```
 
@@ -157,6 +174,7 @@ Type `array`
 ```php
 array (
   'title' => 16,
+  'chain' => 16,
   'message' => 16,
   'id' => 16,
   'time' => 64,
@@ -247,6 +265,14 @@ string
 
 ---
 
+### getSectionChain()
+
+::: tip RETURN
+string
+:::
+
+---
+
 ### getSectionId()
 
 ::: tip RETURN
@@ -293,7 +319,11 @@ string
 
 ---
 
-### getExceptionCode()
+### getThrowableReadCode()
+
+#### Parameters
+
+1. [ThrowableReadInterface](../../../Interfaces/ThrowableHandler/ThrowableReadInterface.md) `$throwableRead`
 
 ::: tip RETURN
 string

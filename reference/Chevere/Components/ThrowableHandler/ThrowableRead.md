@@ -152,6 +152,22 @@ array
 
 ---
 
+### hasPrevious()
+
+::: tip RETURN
+bool
+:::
+
+---
+
+### previous()
+
+::: tip RETURN
+[Throwable](https://www.php.net/manual/class.throwable)
+:::
+
+---
+
 ### assertSeverity()
 
 ::: tip RETURN

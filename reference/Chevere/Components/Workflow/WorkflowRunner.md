@@ -73,7 +73,7 @@ array
 
 1. string `$name`
 2. [StepInterface](../../Interfaces/Workflow/StepInterface.md) `$step`
-3. [ResponseSuccessInterface](../../Interfaces/Response/ResponseSuccessInterface.md) `$response`
+3. [ResponseInterface](../../Interfaces/Response/ResponseInterface.md) `$response`
 
 ::: tip RETURN
 void

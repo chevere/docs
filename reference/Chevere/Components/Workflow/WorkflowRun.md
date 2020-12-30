@@ -52,7 +52,7 @@ string
 #### Parameters
 
 1. string `$step`
-2. [ResponseSuccessInterface](../../Interfaces/Response/ResponseSuccessInterface.md) `$response`
+2. [ResponseInterface](../../Interfaces/Response/ResponseInterface.md) `$response`
 
 ::: tip RETURN
 [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)

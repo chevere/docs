@@ -2,11 +2,15 @@
 editLink: false
 ---
 
-# ResponseTrait
+# Response
 
-`Chevere\Components\Response\Traits\ResponseTrait`
+`Chevere\Components\Response\Response`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Response/Traits/ResponseTrait.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Response/Response.php)
+
+## Implements
+
+- [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 
 ## Methods
 

@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# RegexException
+# MissingDependenciesException
 
-`Chevere\Exceptions\Regex\RegexException`
+`Chevere\Exceptions\Dependent\MissingDependenciesException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Regex/RegexException.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Dependent/MissingDependenciesException.php)
 
 ## Implements
 
@@ -19,7 +19,7 @@ editLink: false
 
 ## Description
 
-Exception thrown by the RegexInterface.
+Exception thrown when missing dependencies.
 
 ## Methods
 

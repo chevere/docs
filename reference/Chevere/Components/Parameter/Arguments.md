@@ -165,7 +165,7 @@ void
 1. string `$name`
 
 ::: danger THROWS
-- [ArgumentRequiredException](../../Exceptions/Parameter/ArgumentRequiredException.md) 
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
 ::: tip RETURN
@@ -183,7 +183,7 @@ void
 3. string `$argument`
 
 ::: danger THROWS
-- [ArgumentRegexMatchException](../../Exceptions/Parameter/ArgumentRegexMatchException.md) 
+- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ::: tip RETURN
