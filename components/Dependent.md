@@ -12,8 +12,6 @@ A Dependent is a class that expose dependencies required to be provided on insta
 ⏩ Use [DependentTrait](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Dependent/Traits/DependentTrait.php) to quickly implement the `DependentInterface`.
 :::
 
-For the code below, `DependentTrait` provides a `__constructor` method that handles dependencies checking for us.
-
 ```php
 use Chevere\Interfaces\Dependent\DependentInterface;
 use Chevere\Components\Dependent\Traits\DependentTrait;
@@ -61,17 +59,18 @@ $dependent->dependencies();
 
 ## Passing dependencies
 
-A Dependent must be created passing its dependencies on instance creation.
+Method `withDependencies` is used to pass dependencies.
 
 ```php
 /**
  * @var FooType $fooInject
  * @var BarType $barInject
  */
-$dependent = new MyDependent(
-    foo: $fooInject,
-    bar: $barInject
-);
+$dependent = (new MyDependent())
+    ->withDependencies(
+        foo: $fooInject,
+        bar: $barInject
+    );
 ```
 
 ## Asserting dependencies
