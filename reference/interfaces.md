@@ -13,6 +13,11 @@ editLink: false
 - [ControllerInterface](./Chevere/Interfaces/Action/ControllerInterface.md)
 - [ControllerNameInterface](./Chevere/Interfaces/Action/ControllerNameInterface.md)
 
+## Benchmark
+
+- [BenchmarkInterface](./Chevere/Interfaces/Benchmark/BenchmarkInterface.md)
+- [BenchmarkRunInterface](./Chevere/Interfaces/Benchmark/BenchmarkRunInterface.md)
+
 ## Cache
 
 - [CacheInterface](./Chevere/Interfaces/Cache/CacheInterface.md)
@@ -49,6 +54,10 @@ editLink: false
 - [FilePhpInterface](./Chevere/Interfaces/Filesystem/FilePhpInterface.md)
 - [FilePhpReturnInterface](./Chevere/Interfaces/Filesystem/FilePhpReturnInterface.md)
 - [PathInterface](./Chevere/Interfaces/Filesystem/PathInterface.md)
+
+## HrTime
+
+- [HrTimeInterface](./Chevere/Interfaces/HrTime/HrTimeInterface.md)
 
 ## Http
 
@@ -159,6 +168,10 @@ editLink: false
 - [ThrowableReadInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableReadInterface.md)
 - [ThrowableTraceEntryInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableTraceEntryInterface.md)
 - [ThrowableTraceFormatterInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableTraceFormatterInterface.md)
+
+## Translation
+
+- [TranslationLoadInterface](./Chevere/Interfaces/Translation/TranslationLoadInterface.md)
 
 ## Type
 

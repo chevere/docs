@@ -14,7 +14,7 @@ editLink: false
 
 #### Parameters
 
-1. object `...$namedDependency`
+1. object `...$namedDependencies`
 
 ::: tip RETURN
 self

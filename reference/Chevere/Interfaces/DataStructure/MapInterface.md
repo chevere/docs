@@ -46,7 +46,7 @@ self
 
 #### Parameters
 
-1. string `...$key`
+1. string `...$keys`
 
 ::: tip RETURN
 void

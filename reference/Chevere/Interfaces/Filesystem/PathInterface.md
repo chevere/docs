@@ -41,6 +41,20 @@ string
 
 ---
 
+### assertExists()
+
+Asserts whether the path exists.
+
+::: danger THROWS
+- [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md) 
+:::
+
+::: tip RETURN
+void
+:::
+
+---
+
 ### exists()
 
 Indicates whether the path exists.

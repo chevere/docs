@@ -37,7 +37,7 @@ Return an instance with the specified data.
 
 #### Parameters
 
-1. mixed `...$data`
+1. mixed `...$namedData`
 
 ::: tip RETURN
 self

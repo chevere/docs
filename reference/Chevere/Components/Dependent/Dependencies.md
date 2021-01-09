@@ -26,7 +26,7 @@ editLink: false
 
 #### Parameters
 
-1. string `...$namedDependency`
+1. string `...$namedDependencies`
 
 ::: tip RETURN
 [DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)

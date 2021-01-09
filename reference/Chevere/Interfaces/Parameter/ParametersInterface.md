@@ -31,11 +31,11 @@ Describes the component in charge of collecting objects implementing `ParameterI
 
 ### withAddedRequired()
 
-Return an instance with the specified required `$parameter` instance added.
+Return an instance with the specified required `$parameters` instance added.
 
 #### Parameters
 
-1. [ParameterInterface](./ParameterInterface.md) `...$parameter`
+1. [ParameterInterface](./ParameterInterface.md) `...$parameters`
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -46,17 +46,17 @@ self
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified required `$parameter` instance added.
+an instance that contains the specified required `$parameters` instance added.
 
 ---
 
 ### withAddedOptional()
 
-Return an instance with the specified optional `$parameter` instance added.
+Return an instance with the specified optional `$parameters` instance added.
 
 #### Parameters
 
-1. [ParameterInterface](./ParameterInterface.md) `...$parameter`
+1. [ParameterInterface](./ParameterInterface.md) `...$parameters`
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -67,17 +67,17 @@ self
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified optional `$parameter` instance added.
+an instance that contains the specified optional `$parameters` instance added.
 
 ---
 
 ### withModify()
 
-Return an instance with the specified `$parameter` modifying an already added parameter.
+Return an instance with the specified `$parameters` modifying an already added parameter.
 
 #### Parameters
 
-1. [ParameterInterface](./ParameterInterface.md) `...$parameter`
+1. [ParameterInterface](./ParameterInterface.md) `...$parameters`
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -88,7 +88,7 @@ self
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$parameter` modifying an already added parameter.
+an instance that contains the specified `$parameters` modifying an already added parameter.
 
 ---
 
@@ -161,7 +161,7 @@ bool
 ### required()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
@@ -169,7 +169,7 @@ Ds\Set
 ### optional()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

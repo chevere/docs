@@ -80,7 +80,7 @@ Provides access to the expected response data parameters.
 
 #### Parameters
 
-1. mixed `...$arguments`
+1. mixed `...$namedArguments`
 
 ::: tip RETURN
 [ArgumentsInterface](../Parameter/ArgumentsInterface.md)
@@ -94,7 +94,7 @@ Retrieves a new success response with type-hinted data.
 
 #### Parameters
 
-1. mixed `...$data`
+1. mixed `...$namedData`
 
 ::: tip RETURN
 [ResponseInterface](../Response/ResponseInterface.md)

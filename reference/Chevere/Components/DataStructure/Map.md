@@ -51,7 +51,7 @@ self
 
 #### Parameters
 
-1. string `...$key`
+1. string `...$keys`
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

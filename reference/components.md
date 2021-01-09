@@ -14,6 +14,11 @@ editLink: false
 - [ControllerName](./Chevere/Components/Action/ControllerName.md)
 - [ControllerWorkflow](./Chevere/Components/Action/ControllerWorkflow.md)
 
+## Benchmark
+
+- [Benchmark](./Chevere/Components/Benchmark/Benchmark.md)
+- [BenchmarkRun](./Chevere/Components/Benchmark/BenchmarkRun.md)
+
 ## Cache
 
 - [Cache](./Chevere/Components/Cache/Cache.md)
@@ -47,6 +52,10 @@ editLink: false
 - [FilePhp](./Chevere/Components/Filesystem/FilePhp.md)
 - [FilePhpReturn](./Chevere/Components/Filesystem/FilePhpReturn.md)
 - [Path](./Chevere/Components/Filesystem/Path.md)
+
+## HrTime
+
+- [HrTime](./Chevere/Components/HrTime/HrTime.md)
 
 ## Http
 
@@ -173,6 +182,11 @@ editLink: false
 - [ThrowableRead](./Chevere/Components/ThrowableHandler/ThrowableRead.md)
 - [ThrowableTraceEntry](./Chevere/Components/ThrowableHandler/ThrowableTraceEntry.md)
 - [ThrowableTraceFormatter](./Chevere/Components/ThrowableHandler/ThrowableTraceFormatter.md)
+
+## Translation
+
+- [TranslatorInstance](./Chevere/Components/Translation/TranslatorInstance.md)
+- [TranslatorLoader](./Chevere/Components/Translation/TranslatorLoader.md)
 
 ## Type
 

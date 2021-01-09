@@ -34,7 +34,7 @@ self
 
 #### Parameters
 
-1. mixed `...$data`
+1. mixed `...$namedData`
 
 ::: tip RETURN
 self

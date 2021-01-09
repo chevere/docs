@@ -45,7 +45,7 @@ bool
 ### clonedSet()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

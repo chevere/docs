@@ -34,7 +34,7 @@ void
 
 #### Parameters
 
-1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameter`
+1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameters`
 
 ::: tip RETURN
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
@@ -46,7 +46,7 @@ void
 
 #### Parameters
 
-1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameter`
+1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameters`
 
 ::: tip RETURN
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
@@ -58,7 +58,7 @@ void
 
 #### Parameters
 
-1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameter`
+1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameters`
 
 ::: tip RETURN
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
@@ -117,7 +117,7 @@ bool
 ### required()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
@@ -125,7 +125,7 @@ Ds\Set
 ### optional()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

@@ -84,7 +84,7 @@ self
 
 #### Parameters
 
-1. string `...$attribute`
+1. string `...$attributes`
 
 ::: tip RETURN
 self
@@ -135,7 +135,7 @@ bool
 ### attributes()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

@@ -143,7 +143,7 @@ bool
 
 #### Parameters
 
-1. mixed `...$arguments`
+1. mixed `...$namedArguments`
 
 ::: tip RETURN
 [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
@@ -155,7 +155,7 @@ bool
 
 #### Parameters
 
-1. mixed `...$data`
+1. mixed `...$namedData`
 
 ::: tip RETURN
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)

@@ -25,7 +25,7 @@ Describes the component in charge of defining dependencies.
 
 #### Parameters
 
-1. string `...$namedDependency`
+1. string `...$namedDependencies`
 
 ::: tip RETURN
 self
