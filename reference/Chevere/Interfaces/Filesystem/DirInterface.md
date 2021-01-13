@@ -55,6 +55,24 @@ void
 
 ---
 
+### createIfNotExists()
+
+Creates the directory if it doesn't exists.
+
+#### Parameters
+
+1. int `$mode`
+
+::: danger THROWS
+- [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md) 
+:::
+
+::: tip RETURN
+void
+:::
+
+---
+
 ### exists()
 
 Returns a boolean indicating whether the directory exists.
@@ -66,6 +84,10 @@ bool
 ---
 
 ### assertExists()
+
+::: danger THROWS
+- [DirNotExistsException](../../Exceptions/Filesystem/DirNotExistsException.md) 
+:::
 
 ::: tip RETURN
 void

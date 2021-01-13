@@ -4,9 +4,13 @@ editLink: false
 
 # TranslatorLoader
 
-`Chevere\Components\Translation\TranslatorLoader`
+`Chevere\Components\Translator\TranslatorLoader`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translation/TranslatorLoader.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translator/TranslatorLoader.php)
+
+## Implements
+
+- [TranslatorLoaderInterface](../../Interfaces/Translator/TranslatorLoaderInterface.md)
 
 ## Methods
 

@@ -118,11 +118,11 @@ void
 
 ---
 
-### runCallable()
+### runCallableAt()
 
 #### Parameters
 
-1. callable `$callable`
+1. int `$pos`
 
 ::: tip RETURN
 void
@@ -143,7 +143,7 @@ void
 
 ---
 
-### processCallablesStats()
+### processCallableStats()
 
 ::: tip RETURN
 void
@@ -171,7 +171,7 @@ void
 
 #### Parameters
 
-1. int `$id`
+1. string `$name`
 
 ::: tip RETURN
 string

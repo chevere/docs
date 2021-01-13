@@ -38,8 +38,7 @@ void
 
 #### Parameters
 
-1. string `$key`
-2.  `$value`
+1. mixed `...$namedValues`
 
 ::: tip RETURN
 self

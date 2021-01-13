@@ -17,7 +17,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of defining an immutable map.
+Describes the component in charge of providing an immutable Ds\Map interface.
 
 ## Methods
 
@@ -33,8 +33,7 @@ Describes the component in charge of defining an immutable map.
 
 #### Parameters
 
-1. string `$key`
-2.  `$value`
+1. mixed `...$namedValues`
 
 ::: tip RETURN
 self

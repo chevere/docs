@@ -23,6 +23,14 @@ editLink: false
 
 ---
 
+### __clone()
+
+::: tip RETURN
+void
+:::
+
+---
+
 ### uuid()
 
 ::: tip RETURN

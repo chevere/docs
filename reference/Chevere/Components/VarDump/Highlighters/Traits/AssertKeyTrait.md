@@ -10,7 +10,7 @@ editLink: false
 
 ## Methods
 
-### pallet()
+### palette()
 
 ::: tip RETURN
 array

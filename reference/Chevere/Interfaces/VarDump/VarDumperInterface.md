@@ -84,10 +84,10 @@ Type `array`
 
 ```php
 array (
-  'boolean' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpBooleanProcessor',
+  'bool' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpBooleanProcessor',
   'array' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpArrayProcessor',
   'object' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpObjectProcessor',
-  'integer' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpIntegerProcessor',
+  'int' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpIntegerProcessor',
   'string' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpStringProcessor',
   'float' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpFloatProcessor',
   'null' => 'Chevere\\Components\\VarDump\\Processors\\VarDumpNullProcessor',

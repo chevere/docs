@@ -169,9 +169,11 @@ editLink: false
 - [ThrowableTraceEntryInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableTraceEntryInterface.md)
 - [ThrowableTraceFormatterInterface](./Chevere/Interfaces/ThrowableHandler/ThrowableTraceFormatterInterface.md)
 
-## Translation
+## Translator
 
-- [TranslationLoadInterface](./Chevere/Interfaces/Translation/TranslationLoadInterface.md)
+- [PoMakerInterface](./Chevere/Interfaces/Translator/PoMakerInterface.md)
+- [TranslatorLoaderInterface](./Chevere/Interfaces/Translator/TranslatorLoaderInterface.md)
+- [TranslatorMakerInterface](./Chevere/Interfaces/Translator/TranslatorMakerInterface.md)
 
 ## Type
 

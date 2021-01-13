@@ -18,6 +18,14 @@ editLink: false
 
 ---
 
+### __clone()
+
+::: tip RETURN
+void
+:::
+
+---
+
 ### arguments()
 
 ::: tip RETURN
@@ -53,7 +61,7 @@ self
 ### callables()
 
 ::: tip RETURN
-array
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
@@ -61,12 +69,16 @@ array
 ### index()
 
 ::: tip RETURN
-array
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
 ### assertUniqueCallableName()
+
+#### Parameters
+
+1. string `$name`
 
 ::: tip RETURN
 void
@@ -75,6 +87,10 @@ void
 ---
 
 ### assertCallableArgumentsCount()
+
+#### Parameters
+
+1. string `$name`
 
 ::: tip RETURN
 void

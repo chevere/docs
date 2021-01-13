@@ -4,9 +4,9 @@ editLink: false
 
 # TranslatorInstance
 
-`Chevere\Components\Translation\TranslatorInstance`
+`Chevere\Components\Translator\TranslatorInstance`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translation/TranslatorInstance.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translator/TranslatorInstance.php)
 
 ## Methods
 

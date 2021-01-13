@@ -72,6 +72,7 @@ editLink: false
 ## Iterator
 
 - [Breadcrumb](./Chevere/Components/Iterator/Breadcrumb.md)
+- [RecursiveFileFilterIterator](./Chevere/Components/Iterator/RecursiveFileFilterIterator.md)
 
 ## Message
 
@@ -99,7 +100,6 @@ editLink: false
 - [HooksRunner](./Chevere/Components/Pluggable/Plug/Hook/HooksRunner.md)
 - [HooksRunnerNull](./Chevere/Components/Pluggable/Plug/Hook/HooksRunnerNull.md)
 - [PluggableHooksTrait](./Chevere/Components/Pluggable/Plug/Hook/Traits/PluggableHooksTrait.md)
-- [PlugRecursiveFilterIterator](./Chevere/Components/Pluggable/PlugRecursiveFilterIterator.md)
 - [PlugTypesList](./Chevere/Components/Pluggable/PlugTypesList.md)
 - [PluggableAnchors](./Chevere/Components/Pluggable/PluggableAnchors.md)
 - [Plugins](./Chevere/Components/Pluggable/Plugins.md)
@@ -141,6 +141,7 @@ editLink: false
 - [RouterIndex](./Chevere/Components/Router/RouterIndex.md)
 - [RoutingDescriptor](./Chevere/Components/Router/Routing/RoutingDescriptor.md)
 - [RoutingDescriptors](./Chevere/Components/Router/Routing/RoutingDescriptors.md)
+- [RoutingDescriptorsIterator](./Chevere/Components/Router/Routing/RoutingDescriptorsIterator.md)
 - [RoutingDescriptorsMaker](./Chevere/Components/Router/Routing/RoutingDescriptorsMaker.md)
 
 ## Serialize
@@ -183,10 +184,12 @@ editLink: false
 - [ThrowableTraceEntry](./Chevere/Components/ThrowableHandler/ThrowableTraceEntry.md)
 - [ThrowableTraceFormatter](./Chevere/Components/ThrowableHandler/ThrowableTraceFormatter.md)
 
-## Translation
+## Translator
 
-- [TranslatorInstance](./Chevere/Components/Translation/TranslatorInstance.md)
-- [TranslatorLoader](./Chevere/Components/Translation/TranslatorLoader.md)
+- [PoMaker](./Chevere/Components/Translator/PoMaker.md)
+- [TranslatorInstance](./Chevere/Components/Translator/TranslatorInstance.md)
+- [TranslatorLoader](./Chevere/Components/Translator/TranslatorLoader.md)
+- [TranslatorMaker](./Chevere/Components/Translator/TranslatorMaker.md)
 
 ## Type
 

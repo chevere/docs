@@ -22,8 +22,8 @@ Type `array`
 array (
   0 => 'string',
   1 => 'float',
-  2 => 'integer',
-  3 => 'boolean',
+  2 => 'int',
+  3 => 'bool',
   4 => 'null',
   5 => 'object',
   6 => 'array',
@@ -68,9 +68,9 @@ string
 
 ---
 
-### pallet()
+### palette()
 
-Provide access to the color pallet.
+Provide access to the color palette.
 
 ::: tip RETURN
 array

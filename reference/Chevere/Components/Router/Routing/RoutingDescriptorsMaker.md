@@ -55,15 +55,3 @@ string
 :::
 
 ---
-
-### getRecursiveFilterIterator()
-
-#### Parameters
-
-1. [RecursiveDirectoryIterator](https://www.php.net/manual/class.recursivedirectoryiterator) `$recursiveDirectoryIterator`
-
-::: tip RETURN
-[RecursiveFilterIterator](https://www.php.net/manual/class.recursivefilteriterator)
-:::
-
----

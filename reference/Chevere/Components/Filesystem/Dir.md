@@ -70,6 +70,18 @@ void
 
 ---
 
+### createIfNotExists()
+
+#### Parameters
+
+1. int `$mode`
+
+::: tip RETURN
+void
+:::
+
+---
+
 ### remove()
 
 ::: tip RETURN
@@ -103,6 +115,18 @@ void
 ---
 
 ### assertIsDir()
+
+::: tip RETURN
+void
+:::
+
+---
+
+### assertCreate()
+
+#### Parameters
+
+1. int `$mode`
 
 ::: tip RETURN
 void

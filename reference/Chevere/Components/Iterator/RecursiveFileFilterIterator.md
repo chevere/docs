@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# PlugRecursiveFilterIterator
+# RecursiveFileFilterIterator
 
-`Chevere\Components\Pluggable\PlugRecursiveFilterIterator`
+`Chevere\Components\Iterator\RecursiveFileFilterIterator`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/PlugRecursiveFilterIterator.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Iterator/RecursiveFileFilterIterator.php)
 
 ## Implements
 

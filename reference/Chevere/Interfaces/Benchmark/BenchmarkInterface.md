@@ -10,7 +10,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of defining a Benchmark for callable.
+Describes the component in charge of providing a Benchmark for type callable.
 
 ## Methods
 
@@ -53,7 +53,7 @@ array
 ### callables()
 
 ::: tip RETURN
-array
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
@@ -61,7 +61,7 @@ array
 ### index()
 
 ::: tip RETURN
-array
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

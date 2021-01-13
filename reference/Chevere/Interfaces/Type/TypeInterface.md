@@ -14,20 +14,20 @@ Describes the component in charge of dynamic type validation.
 
 ## Constants
 
-### BOOLEAN
+### BOOL
 
 Type `string`
 
 ```php
-'boolean'
+'bool'
 ```
 
-### INTEGER
+### INT
 
 Type `string`
 
 ```php
-'integer'
+'int'
 ```
 
 ### FLOAT
@@ -117,10 +117,10 @@ Type `array`
 ```php
 array (
   'array' => 'is_array',
-  'boolean' => 'is_bool',
+  'bool' => 'is_bool',
   'callable' => 'is_callable',
   'float' => 'is_float',
-  'integer' => 'is_integer',
+  'int' => 'is_integer',
   'iterable' => 'is_iterable',
   'null' => 'is_null',
   'object' => 'is_object',

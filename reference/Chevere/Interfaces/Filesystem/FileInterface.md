@@ -144,6 +144,18 @@ void
 
 ---
 
+### removeIfExists()
+
+::: danger THROWS
+- [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) 
+:::
+
+::: tip RETURN
+void
+:::
+
+---
+
 ### create()
 
 Create the file.

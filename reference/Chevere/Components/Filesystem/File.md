@@ -109,6 +109,14 @@ void
 
 ---
 
+### removeIfExists()
+
+::: tip RETURN
+void
+:::
+
+---
+
 ### create()
 
 ::: tip RETURN
@@ -138,6 +146,14 @@ void
 ---
 
 ### assertIsNotDir()
+
+::: tip RETURN
+void
+:::
+
+---
+
+### assertUnlink()
 
 ::: tip RETURN
 void

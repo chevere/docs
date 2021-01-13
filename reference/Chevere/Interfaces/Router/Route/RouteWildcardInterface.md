@@ -18,14 +18,6 @@ Describes the component in charge of defining a route wildcard.
 
 ## Constants
 
-### REGEX_MATCH_DEFAULT
-
-Type `string`
-
-```php
-'[A-z0-9\\_\\-\\%]+'
-```
-
 ### ACCEPT_CHARS
 
 Type `string`

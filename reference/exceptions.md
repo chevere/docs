@@ -33,6 +33,7 @@ editLink: false
 
 ## Filesystem
 
+- [DirExistsException](./Chevere/Exceptions/Filesystem/DirExistsException.md)
 - [DirNotExistsException](./Chevere/Exceptions/Filesystem/DirNotExistsException.md)
 - [DirUnableToCreateException](./Chevere/Exceptions/Filesystem/DirUnableToCreateException.md)
 - [DirUnableToRemoveException](./Chevere/Exceptions/Filesystem/DirUnableToRemoveException.md)

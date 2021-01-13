@@ -15,14 +15,6 @@ editLink: false
 
 ## Constants
 
-### REGEX_MATCH_DEFAULT
-
-Type `string`
-
-```php
-'[A-z0-9\\_\\-\\%]+'
-```
-
 ### ACCEPT_CHARS
 
 Type `string`
