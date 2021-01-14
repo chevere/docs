@@ -35,7 +35,7 @@ $pathisWritable = $path->isWritable();
 The `isReadable` method determines if the path is readable. It returns `true` when a path is readable.
 
 ```php
-$pathisReadable = $path->isReadable();
+$pathIsReadable = $path->isReadable();
 ```
 
 #### Path is a Directory
