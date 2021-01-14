@@ -2,19 +2,21 @@
 
 The Translator component is in charge of providing generation and loading for translations.
 
+This implementation **doesn't support** domain-related gettext functions for translatable strings neither follows gettext directory structure.
+
 ## How it Works
 
 Translator is built on top of [gettext](https://www.gnu.org/software/gettext/) and it provides a set of [functions](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translator/functions.php) that are used to designate translatable strings, which will define a base language translation file which can be used as the base translation for other languages.
-
-::: warning
-This implementation **doesn't support** domain-related gettext functions for translatable strings neither follows gettext directory structure.
-:::
 
 ::: tip
 Using services like [OneSky](https://www.oneskyapp.com/) you can allow others to easily collaborate with translations.
 :::
 
-### Singular Forms
+## Translatable Functions
+
+All translatable [functions](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translator/functions.php) are provided at the global namespace.
+
+## Singular
 
 Singular form expressions can be handled with `__` function:
 
@@ -23,14 +25,18 @@ __(message: 'Hi there');
 // Hola ahí
 ```
 
-Formatting based on [sprintf](https://www.php.net/sprintf) is supported with `__f` function:
+### Singular formatting
+
+Formatting based on [sprintf](https://php.net/sprintf) is supported with `__f` function:
 
 ```php
 __f(message: 'Hi %s', $userFirstName);
 // Hola Rodolfo
 ```
 
-Formatting based on [strtr](https://www.php.net/strtr) is supported with `__t` function:
+### Singular replacement
+
+Replacement based on [strtr](https://php.net/strtr) is supported with `__t` function:
 
 ```php
 __t(
@@ -43,7 +49,7 @@ __t(
 // Hola Rodolfo, Bombo Fica ahora te está siguiendo!
 ```
 
-### Plural Forms
+## Plural
 
 Expressions that depends on the subject number can be handled with `__n`, in which is required to pass singular expression, plural expression and the subject count.
 
@@ -55,7 +61,9 @@ __(
 );
 ```
 
-Formatting based on [sprintf](https://www.php.net/sprintf) is supported with `__nf` function. Note that `count` determines the singular/plural form to use and `$arg` is the actual argument passed to `sprintf`.
+### Plural formatting
+
+Formatting based on [sprintf](https://php.net/sprintf) is supported with `__nf` function. Note that `count` determines the singular/plural form to use and `$arg` is the actual argument passed to `sprintf`.
 
 ```php
 __nf(
@@ -66,7 +74,9 @@ __nf(
 );
 ```
 
-Formatting based on [strtr](https://www.php.net/strtr) is supported with `__nt` function:
+### Plural replacement
+
+Replacement based on [strtr](https://php.net/strtr) is supported with `__nt` function:
 
 ```php
 __nt(
@@ -147,9 +157,7 @@ $translatorMaker = $translatorMaker->withMakeTranslation(
 
 ## TranslatorLoader
 
-TranslatorLoader is in charge of providing a Translator, which uses PHP translations.
-
-[TranslatorLoaderInterface](../reference/Chevere/Interfaces/Translator/TranslatorLoaderInterface.md) describes the interface for the component in charge of defining a TranslatorLoader.
+[TranslatorLoader](../reference/Chevere/Components/Translator/TranslatorLoader.md) is in charge of providing a Translator, which provides PHP translations.
 
 ### Creating TranslatorLoader
 
@@ -163,11 +171,39 @@ $translatorLoader = new TranslatorLoader(loadDir: $dir);
 
 ### Get Translator
 
-The `getTranslator` method allows to get the Translator for the PHP translation file at `{loadDir}/en-US/message.php`.
+The `getTranslator` method allows to get the [Translator](https://github.com/php-gettext/Translator) for the PHP translation file at `{loadDir}/{locale}/{domain}.php`.
 
 ```php
 $translator = $translatorLoader->getTranslator(
     locale: 'en-US',
     domain: 'message'
 );
+```
+
+## TranslatorInstance
+
+[TranslatorInstance](../reference/Chevere/Components/Translator/TranslatorInstance.md) is in charge of providing a static translator instance.
+
+## Creating TranslatorInstance
+
+A static instance can be provided by creating a [TranslatorInstance](../reference/Chevere/Components/Translator/TranslatorInstance.md).
+
+```php
+use Chevere\Components\Translator\TranslatorInstance;
+
+new TranslatorInstance($translator);
+```
+
+This will bind `$translator` as the runtime translator service.
+
+## Functions
+
+### getTranslator
+
+Function `getTranslator` allows to get the current registered Translator by [TranslatorInstance](#translatorinstance).
+
+```php
+use function Chevere\Components\Translator\getTranslator;
+
+$translator = getTranslator();
 ```
