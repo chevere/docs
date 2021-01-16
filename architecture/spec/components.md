@@ -1,6 +1,6 @@
 # Components
 
-All components must follow the [Interfaces](./interfaces.md), [Exceptions](./exceptions.md) and [Testing](./testing.md) spec. On top of that, components have some extra conventions.
+All [Components](../../reference/components.md) must follow the [Interfaces](./interfaces.md), [Exceptions](./exceptions.md) and [Testing](./testing.md) spec.
 
 Components **must**:
 
