@@ -6,12 +6,14 @@ Chevere system requirements can be found in the [composer.json](https://github.c
 
 ### PHP
 
+Chevere is built and tested using the [PHP packages](https://deb.sury.org/) made by Ondřej Surý. PHP Extensions are provided by [PECL](https://pecl.php.net/).
+
 * [PHP 8](https://www.php.net/releases/8.0)
-* ext-ctype
-* ext-ds
-* ext-json
-* ext-mbstring
-* ext-zend-opcache
+* [ext-ctype](https://www.php.net/ctype)
+* [ext-json](https://www.php.net/json)
+* [ext-ds](https://www.php.net/ds)
+* [ext-mbstring](https://www.php.net/mbstring)
+* [ext-zend-opcache](https://www.php.net/opcache)
 
 The [chevere.ini](https://github.com/chevere/chevere/blob/master/chevere.ini) file provides the PHP settings required for Chevere.
 
