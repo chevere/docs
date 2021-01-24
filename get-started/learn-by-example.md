@@ -47,8 +47,8 @@ php 00.HelloWorld/00.controller.php
 ## Recommendations
 
 * Use an IDE for code and reference highlighting
-* Check the [interfaces](../reference/interfaces.md) and [exceptions](../reference/exceptions.md) reference
-* Check [Chevere\Tests](https://github.com/chevere/chevere/tree/master/tests) namespace which contains [testing](../architecture/spec/testing.md) on everything
+* Check the [components](../reference/components.md), [interfaces](../reference/interfaces.md) and [exceptions](../reference/exceptions.md) reference
+* Check at [Chevere\Tests](https://github.com/chevere/chevere/tree/master/tests) namespace which contains [testing](../architecture/standard/testing.md) on everything
 
 ## Contributing
 

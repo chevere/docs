@@ -18,40 +18,46 @@ The use of the term has roots in the [Chevereto](#origin) software, which simply
 
 ## Core concepts
 
-### Extensibility
-
-Chevere aims to ease the process of crafting extensible applications by providing an architecture allowing to safely extend and plug the application logic. Extensible applications not only do more, also engage more users and provide a solid foundation for your own application ecosystem.
-
-> 🔌 Pluggable logic allows to be open to do *more*.
-
 ### Clean & Typed
 
 Chevere follows Clean Code principles, which can be resumed as the practice of creating code that is easy to understand, to change and maintain.
 
 It uses strict strong-types for safe run-time operations and relies mostly on the language to avoid boilerplate code needed to validate dynamic types.
 
-> 🏷 Typed code is easier to read and safer to work with. You will notice it when you work with it.
+> ✨ Typed code is easier to read and safer to work with. You will notice it when you work with it.
 
 ### General Purpose
 
 Chevere is tech-neutral and it provides an immutable core library suitable to build _anything_. The tooling is for general purposes, with enough flexibility to allow the creation a myriad of systems with the same know-how.
 
-> 💎 It is tech neutral and not web-centric.
+> 🏭  It is tech neutral and not web-centric. Your knowledge does more here.
+
+### Indie Developed
+
+Everything in Chevere feels right in its place, like something that it was diligently designed by a single person with a wide context of service provision and user needs.
+
+> 👨🏾‍💻 It is the result of years of iteration and user feedback.
+
+### Extensible
+
+Chevere provides the tooling you need to safely extend and plug-in addons to the application logic. Extensible applications not only do more, also engage more users and provide a solid foundation for your own application ecosystem.
+
+> 🔌 Pluggable logic allows to be open to do *more*.
 
 ### Consistent
 
-Everything in Chevere feels in its place, like something that it was diligently designed by a single person.
+The code base and the whole project is highly opinionated, with many coding standards and conventions seeking for cohesion.
 
-> 👨‍💻 Surprise, it is made by a single developer!.
-
-In Chevere the code is highly opinionated, with many coding standards and conventions seeking for cohesion, and the best usage (in my opinion) of the programming language and tooling available.
+> 💎 It is the result of the best usage (in my opinion) of the PHP language and tooling available for self-hosted projects.
 
 ### Quality
 
-Chevere code is checked against many tools and services.
+Chevere follows a [quality standard](../architecture/standard/quality.md) and provides very shiny tools so you can enjoy and trust when you work with it. The code base is checked against many tools and services seeking for top-quality code.
 
 [![Build](https://img.shields.io/github/workflow/status/chevere/chevere/CI/master?style=flat-square)](https://github.com/chevere/chevere/actions) [![Quality Gate Status](https://img.shields.io/sonar/alert_status/chevere_chevere?server=https%3A%2F%2Fsonarcloud.io&style=flat-square
 )](https://sonarcloud.io/dashboard?id=chevere_chevere) [![codecov](https://img.shields.io/codecov/c/github/chevere/chevere?style=flat-square)](https://codecov.io/gh/chevere/chevere) [![CodeFactor](https://img.shields.io/codefactor/grade/github/chevere/chevere?label=code%20grade&style=flat-square)](https://www.codefactor.io/repository/github/chevere/chevere) [![Codacy Badge](https://img.shields.io/codacy/grade/b956754f8ff04aaa9ca24a6e4cc21661?style=flat-square)](https://www.codacy.com/gh/chevere/chevere?utm_source=github.com&utm_medium=referral&utm_content=chevere/chevere&utm_campaign=Badge_Grade) [![Maintainability](https://img.shields.io/codeclimate/maintainability/chevere/chevere?style=flat-square)](https://codeclimate.com/github/chevere/chevere) [![Tech Debt](https://img.shields.io/codeclimate/tech-debt/chevere/chevere?style=flat-square)](https://codeclimate.com/github/chevere/chevere)
+
+Dependencies are picked with these same high-standards. If a dependency doesn't meet our quality standard, then I take the responsability to create the stuff we need. Chevere will never compromise quality.
 
 ## Origin
 

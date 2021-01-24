@@ -37,33 +37,11 @@ Note that for the example above, the header comment and `strict_types` declarati
 
 ## Coding Standards Formatting
 
-The [coding standard](../coding/coding-standard.md) is automatically implemented on save.
+The [coding standard](../standard/coding.md) is automatically implemented on save.
 
 ## Testing
 
 [PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit) provides inline tools for code execution and reviewing. It allows to easily handle all tests.
-
-### Running tests
-
-To run tests:
-
-```shell
-vendor/bin/phpunit -c phpunit.xml
-```
-
-To run tests with code coverage report at `./build/coverage/html`:
-
-```shell
-vendor/bin/phpunit -c phpunit-report.xml
-```
-
-To run filtered tests use the `--filter` option:
-
-```shell
-vendor/bin/phpunit -c phpunit-report.xml --filter ActionTest
-```
-
-Kindly check [PHPUnit Documentation](https://phpunit.de/documentation.html) for all available options.
 
 ## Code Coverage
 

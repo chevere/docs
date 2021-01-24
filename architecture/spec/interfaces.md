@@ -1,4 +1,4 @@
-# Interfaces
+# Interfaces Spec
 
 Interfaces describe the public methods implemented by a given class. In Chevere, all components **must** define their own interface.
 

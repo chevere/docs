@@ -1,10 +1,8 @@
 # Introduction
 
-This section outlines the architecture concepts implemented in Chevere.
+This section outlines the architecture concepts implemented in Chevere. There's a [coding standard](standard/coding.md) among several specs and best practices for pretty much everything.
 
-There is a standard for formatting and coding style that must be followed among several conventions and best practices. All these rules have been established to provide consistency for the project.
-
-If you want to contribute with Chevere development this is a **must read**.
+All these rules have been established to provide consistency for the project, to leverage choices and to provide users with less decisions to make.
 
 ::: tip
 😉 This is a reference for the Chevere framework architecture itself, not for applications made on top of it.

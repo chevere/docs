@@ -1,4 +1,4 @@
-# Exceptions
+# Exceptions Spec
 
 Exceptions are error events that happens on runtime, that disrupts the execution of the software. Chevere extends all [SPL exceptions](https://www.php.net/manual/en/spl.exceptions.php) with support for [Message](./../../components/Message.md).
 

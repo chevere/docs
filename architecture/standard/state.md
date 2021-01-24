@@ -1,4 +1,4 @@
-# State
+# State Standard
 
 An [application state](https://en.wikipedia.org/wiki/State_(computer_science)) refers to an application with all the config, variables, objects and so forth previously stored.
 

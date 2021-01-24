@@ -1,4 +1,4 @@
-# Components
+# Components Spec
 
 All [Components](../../reference/components.md) must follow the [Interfaces](./interfaces.md), [Exceptions](./exceptions.md) and [Testing](./testing.md) spec.
 
