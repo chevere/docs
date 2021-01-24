@@ -52,12 +52,10 @@ The code base and the whole project is highly opinionated, with many coding stan
 
 ### Quality
 
-Chevere follows a [quality standard](../architecture/standard/quality.md) and provides very shiny tools so you can enjoy and trust when you work with it. The code base is checked against many tools and services seeking for top-quality code.
+Chevere follows a [quality standard](../architecture/standard/quality.md) and provides **very** shiny and clean tools. You can enjoy and trust when you work with it.
 
 [![Build](https://img.shields.io/github/workflow/status/chevere/chevere/CI/master?style=flat-square)](https://github.com/chevere/chevere/actions) [![Quality Gate Status](https://img.shields.io/sonar/alert_status/chevere_chevere?server=https%3A%2F%2Fsonarcloud.io&style=flat-square
 )](https://sonarcloud.io/dashboard?id=chevere_chevere) [![codecov](https://img.shields.io/codecov/c/github/chevere/chevere?style=flat-square)](https://codecov.io/gh/chevere/chevere) [![CodeFactor](https://img.shields.io/codefactor/grade/github/chevere/chevere?label=code%20grade&style=flat-square)](https://www.codefactor.io/repository/github/chevere/chevere) [![Codacy Badge](https://img.shields.io/codacy/grade/b956754f8ff04aaa9ca24a6e4cc21661?style=flat-square)](https://www.codacy.com/gh/chevere/chevere?utm_source=github.com&utm_medium=referral&utm_content=chevere/chevere&utm_campaign=Badge_Grade) [![Maintainability](https://img.shields.io/codeclimate/maintainability/chevere/chevere?style=flat-square)](https://codeclimate.com/github/chevere/chevere) [![Tech Debt](https://img.shields.io/codeclimate/tech-debt/chevere/chevere?style=flat-square)](https://codeclimate.com/github/chevere/chevere)
-
-Dependencies are picked with these same high-standards. If a dependency doesn't meet our quality standard, then I take the responsability to create the stuff we need. Chevere will never compromise quality.
 
 ## Origin
 
