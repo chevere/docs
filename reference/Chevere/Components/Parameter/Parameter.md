@@ -98,7 +98,7 @@ bool
 ### attributes()
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

@@ -12,6 +12,10 @@ editLink: false
 
 - [PoMakerInterface](../../Interfaces/Translator/PoMakerInterface.md)
 
+## Description
+
+
+
 ## Constants
 
 ### FUNCTIONS
@@ -40,7 +44,7 @@ array (
 
 ---
 
-### withScannerFor()
+### withScanFor()
 
 #### Parameters
 
@@ -52,7 +56,7 @@ self
 
 ---
 
-### makeAt()
+### make()
 
 #### Parameters
 
@@ -68,6 +72,26 @@ void
 
 ::: tip RETURN
 [RecursiveIteratorIterator](https://www.php.net/manual/class.recursiveiteratoriterator)
+:::
+
+---
+
+### withWriter()
+
+#### Parameters
+
+1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+
+::: tip RETURN
+self
+:::
+
+---
+
+### writer()
+
+::: tip RETURN
+[WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 
 ---

@@ -35,7 +35,7 @@ editLink: false
 ### files()
 
 ::: tip RETURN
-[Ds\Map](https://www.php.net/manual/class.ds\map)
+Ds\Map
 :::
 
 ---

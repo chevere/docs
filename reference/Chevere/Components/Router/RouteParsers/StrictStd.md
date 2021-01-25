@@ -27,7 +27,7 @@ Strict version of `FastRoute\RouteParser\Std`, without optional routing.
 Type `string`
 
 ```php
-'#^\\/$|^\\/(?:[^\\/]+\\/)*[^\\/]*[^\\/]$#'
+'#^\\/$|^\\/(?:[^\\/]+\\/)*[^\\/]*$#'
 ```
 
 ### VARIABLE_REGEX

@@ -243,3 +243,4 @@ editLink: false
 - [StreamWriter](./Chevere/Components/Writer/StreamWriter.md)
 - [Writers](./Chevere/Components/Writer/Writers.md)
 - [WritersInstance](./Chevere/Components/Writer/WritersInstance.md)
+- [WriterTrait](./Chevere/Components/Writer/traits/WriterTrait.md)

@@ -8,14 +8,29 @@ editLink: false
 
 [view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/PlugsMapper.php)
 
+## Description
+
+
+
 ## Methods
 
 ### __construct()
 
 #### Parameters
 
+1. [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md) `$plugType`
+
+---
+
+### withPlugsMapFor()
+
+#### Parameters
+
 1. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$dir`
-2. [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md) `$plugType`
+
+::: tip RETURN
+self
+:::
 
 ---
 
@@ -35,6 +50,26 @@ editLink: false
 
 ::: tip RETURN
 void
+:::
+
+---
+
+### withWriter()
+
+#### Parameters
+
+1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+
+::: tip RETURN
+self
+:::
+
+---
+
+### writer()
+
+::: tip RETURN
+[WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 
 ---

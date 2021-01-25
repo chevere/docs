@@ -19,10 +19,69 @@ Describes the component in charge of generating routing descriptors from a given
 #### Parameters
 
 1. string `$repository`
-2. [DirInterface](../../Filesystem/DirInterface.md) `$dir`
 
 ::: danger THROWS
 - [LogicException](../../../Exceptions/Core/LogicException.md) 
+:::
+
+---
+
+### withWriter()
+
+#### Parameters
+
+1. [WriterInterface](../../Writer/WriterInterface.md) `$writer`
+
+::: tip RETURN
+self
+:::
+
+---
+
+### withTrailingSlash()
+
+#### Parameters
+
+1. bool `$bool`
+
+::: tip RETURN
+self
+:::
+
+---
+
+### withDescriptorsFor()
+
+#### Parameters
+
+1. [DirInterface](../../Filesystem/DirInterface.md) `$dir`
+
+::: tip RETURN
+self
+:::
+
+---
+
+### writer()
+
+::: tip RETURN
+[WriterInterface](../../Writer/WriterInterface.md)
+:::
+
+---
+
+### useTrailingSlash()
+
+::: tip RETURN
+bool
+:::
+
+---
+
+### repository()
+
+::: tip RETURN
+string
 :::
 
 ---

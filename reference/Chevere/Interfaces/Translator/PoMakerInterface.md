@@ -23,7 +23,7 @@ Describes the component in charge of providing a `.po` maker.
 
 ---
 
-### withScannerFor()
+### withScanFor()
 
 #### Parameters
 
@@ -41,7 +41,7 @@ self
 
 ---
 
-### makeAt()
+### make()
 
 #### Parameters
 

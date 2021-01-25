@@ -12,6 +12,10 @@ editLink: false
 
 - [RoutingDescriptorsMakerInterface](../../../Interfaces/Router/Routing/RoutingDescriptorsMakerInterface.md)
 
+## Description
+
+
+
 ## Methods
 
 ### __construct()
@@ -19,7 +23,54 @@ editLink: false
 #### Parameters
 
 1. string `$repository`
-2. [DirInterface](../../../Interfaces/Filesystem/DirInterface.md) `$dir`
+
+---
+
+### withTrailingSlash()
+
+#### Parameters
+
+1. bool `$bool`
+
+::: tip RETURN
+self
+:::
+
+---
+
+### withDescriptorsFor()
+
+#### Parameters
+
+1. [DirInterface](../../../Interfaces/Filesystem/DirInterface.md) `$dir`
+
+::: tip RETURN
+self
+:::
+
+---
+
+### repository()
+
+::: tip RETURN
+string
+:::
+
+---
+
+### writer()
+
+::: tip RETURN
+[WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
+:::
+
+---
+
+### useTrailingSlash()
+
+::: tip RETURN
+bool
+:::
 
 ---
 
@@ -52,6 +103,18 @@ void
 
 ::: tip RETURN
 string
+:::
+
+---
+
+### withWriter()
+
+#### Parameters
+
+1. [WriterInterface](../../../Interfaces/Writer/WriterInterface.md) `$writer`
+
+::: tip RETURN
+self
 :::
 
 ---

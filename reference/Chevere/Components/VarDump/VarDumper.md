@@ -183,7 +183,7 @@ int
 
 #### Parameters
 
-1. [Ds\Set](https://www.php.net/manual/class.ds\set) `$known`
+1. Ds\Set `$known`
 
 ::: tip RETURN
 [VarDumperInterface](../../Interfaces/VarDump/VarDumperInterface.md)
@@ -194,7 +194,7 @@ int
 ### known()
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---

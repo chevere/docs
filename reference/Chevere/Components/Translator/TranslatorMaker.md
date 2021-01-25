@@ -23,14 +23,6 @@ editLink: false
 
 ---
 
-### locale()
-
-::: tip RETURN
-string
-:::
-
----
-
 ### sourceDir()
 
 ::: tip RETURN
@@ -47,11 +39,12 @@ string
 
 ---
 
-### withLocale()
+### withMakeTranslation()
 
 #### Parameters
 
 1. string `$locale`
+2. string `$domain`
 
 ::: tip RETURN
 self
@@ -59,23 +52,11 @@ self
 
 ---
 
-### make()
+### handleLocale()
 
 #### Parameters
 
-1. string `$domain`
-
-::: tip RETURN
-string
-:::
-
----
-
-### assertHasLocale()
-
-#### Parameters
-
-1. string `$method`
+1. string `$locale`
 
 ::: tip RETURN
 void

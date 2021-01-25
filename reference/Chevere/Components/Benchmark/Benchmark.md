@@ -16,6 +16,10 @@ editLink: false
 
 ### __construct()
 
+#### Parameters
+
+1.  `...$namedArguments`
+
 ---
 
 ### __clone()
@@ -34,14 +38,18 @@ array
 
 ---
 
-### withArguments()
-
-#### Parameters
-
-1.  `...$namedArguments`
+### callables()
 
 ::: tip RETURN
-self
+Ds\Set
+:::
+
+---
+
+### index()
+
+::: tip RETURN
+Ds\Set
 :::
 
 ---
@@ -54,22 +62,6 @@ self
 
 ::: tip RETURN
 self
-:::
-
----
-
-### callables()
-
-::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
-:::
-
----
-
-### index()
-
-::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

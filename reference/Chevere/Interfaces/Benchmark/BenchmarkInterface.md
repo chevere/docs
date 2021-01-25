@@ -16,29 +16,9 @@ Describes the component in charge of providing a Benchmark for type callable.
 
 ### __construct()
 
----
-
-### withArguments()
-
 #### Parameters
 
 1.  `...$namedArguments`
-
-::: tip RETURN
-self
-:::
-
----
-
-### withAddedCallable()
-
-#### Parameters
-
-1. callable `...$namedCallable`
-
-::: tip RETURN
-self
-:::
 
 ---
 
@@ -53,7 +33,7 @@ array
 ### callables()
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
 :::
 
 ---
@@ -61,7 +41,19 @@ array
 ### index()
 
 ::: tip RETURN
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+Ds\Set
+:::
+
+---
+
+### withAddedCallable()
+
+#### Parameters
+
+1. callable `...$namedCallable`
+
+::: tip RETURN
+self
 :::
 
 ---

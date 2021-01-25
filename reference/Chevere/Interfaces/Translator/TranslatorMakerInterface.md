@@ -23,14 +23,6 @@ Describes the component in charge of make a translator.
 
 ---
 
-### locale()
-
-::: tip RETURN
-string
-:::
-
----
-
 ### sourceDir()
 
 ::: tip RETURN
@@ -47,26 +39,15 @@ string
 
 ---
 
-### withLocale()
+### withMakeTranslation()
 
 #### Parameters
 
 1. string `$locale`
+2. string `$domain`
 
 ::: tip RETURN
 self
-:::
-
----
-
-### make()
-
-#### Parameters
-
-1. string `$domain`
-
-::: tip RETURN
-string
 :::
 
 ---
