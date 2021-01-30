@@ -16,17 +16,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ThrowableReadInterface](../../Interfaces/ThrowableHandler/ThrowableReadInterface.md) `$throwableRead`
+- *throwableRead*: [ThrowableReadInterface](../../Interfaces/ThrowableHandler/ThrowableReadInterface.md)
 
 ---
 
 ### withIsDebug()
 
-#### Parameters
+**Parameters:**
 
-1. bool `$isDebug`
+- *isDebug*: bool
 
 ::: tip RETURN
 [ThrowableHandlerInterface](../../Interfaces/ThrowableHandler/ThrowableHandlerInterface.md)

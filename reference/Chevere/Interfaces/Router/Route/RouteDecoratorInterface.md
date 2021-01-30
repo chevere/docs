@@ -16,9 +16,9 @@ Describes the component in charge of decorate a route.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [RouteLocatorInterface](./RouteLocatorInterface.md) `$locator`
+- *locator*: [RouteLocatorInterface](./RouteLocatorInterface.md)
 
 ---
 
@@ -36,9 +36,9 @@ Provides access to the route name.
 
 Return an instance with the specified `$wildcards` instance.
 
-#### Parameters
+**Parameters:**
 
-1. [WildcardsInterface](./WildcardsInterface.md) `$wildcards`
+- *wildcards*: [WildcardsInterface](./WildcardsInterface.md)
 
 ::: tip RETURN
 self

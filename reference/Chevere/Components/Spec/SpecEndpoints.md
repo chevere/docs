@@ -20,9 +20,9 @@ editLink: false
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. [RouteEndpointSpecInterface](../../Interfaces/Spec/Specs/RouteEndpointSpecInterface.md) `$routeEndpointSpec`
+- *routeEndpointSpec*: [RouteEndpointSpecInterface](../../Interfaces/Spec/Specs/RouteEndpointSpecInterface.md)
 
 ::: tip RETURN
 [SpecEndpointsInterface](../../Interfaces/Spec/SpecEndpointsInterface.md)
@@ -32,9 +32,9 @@ editLink: false
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$methodName`
+- *methodName*: string
 
 ::: tip RETURN
 bool
@@ -44,9 +44,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$methodName`
+- *methodName*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 

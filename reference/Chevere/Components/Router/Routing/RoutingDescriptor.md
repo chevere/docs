@@ -20,11 +20,11 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../../Interfaces/Filesystem/DirInterface.md) `$dir`
-2. [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md) `$path`
-3. [RouteDecoratorInterface](../../../Interfaces/Router/Route/RouteDecoratorInterface.md) `$decorator`
+- *dir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
+- *path*: [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md)
+- *decorator*: [RouteDecoratorInterface](../../../Interfaces/Router/Route/RouteDecoratorInterface.md)
 
 ---
 

@@ -135,9 +135,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$type`
+- *type*: string
 
 ::: danger THROWS
 - ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
@@ -171,9 +171,9 @@ It will return either the class name, interface, or the primitive.
 
 Returns a boolean indicating if `$var` validates against the type.
 
-#### Parameters
+**Parameters:**
 
-1.  `$var`
+- *var*: 
 
 ::: tip RETURN
 bool

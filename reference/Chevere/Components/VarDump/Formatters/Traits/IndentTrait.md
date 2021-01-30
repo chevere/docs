@@ -12,9 +12,9 @@ editLink: false
 
 ### indent()
 
-#### Parameters
+**Parameters:**
 
-1. int `$indent`
+- *indent*: int
 
 ::: tip RETURN
 string

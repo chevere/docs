@@ -33,9 +33,9 @@ Describes the component in charge of collecting objects implementing `ParameterI
 
 Return an instance with the specified required `$parameters` instance added.
 
-#### Parameters
+**Parameters:**
 
-1. [ParameterInterface](./ParameterInterface.md) `...$parameters`
+- *...parameters*: [ParameterInterface](./ParameterInterface.md)
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -54,9 +54,9 @@ an instance that contains the specified required `$parameters` instance added.
 
 Return an instance with the specified optional `$parameters` instance added.
 
-#### Parameters
+**Parameters:**
 
-1. [ParameterInterface](./ParameterInterface.md) `...$parameters`
+- *...parameters*: [ParameterInterface](./ParameterInterface.md)
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -75,9 +75,9 @@ an instance that contains the specified optional `$parameters` instance added.
 
 Return an instance with the specified `$parameters` modifying an already added parameter.
 
-#### Parameters
+**Parameters:**
 
-1. [ParameterInterface](./ParameterInterface.md) `...$parameters`
+- *...parameters*: [ParameterInterface](./ParameterInterface.md)
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -96,9 +96,9 @@ an instance that contains the specified `$parameters` modifying an already added
 
 Indicates whether the instance has a parameter by name.
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: tip RETURN
 bool
@@ -110,9 +110,9 @@ bool
 
 Indicates whether the `$parameter` identified by its name is required.
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -128,9 +128,9 @@ bool
 
 Indicates whether the `$parameter` identified by its name is optional.
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -144,9 +144,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -161,7 +161,7 @@ bool
 ### required()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
@@ -169,7 +169,7 @@ Ds\Set
 ### optional()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

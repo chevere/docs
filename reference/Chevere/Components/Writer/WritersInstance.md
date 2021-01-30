@@ -12,9 +12,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WritersInterface](../../Interfaces/Writer/WritersInterface.md) `$writers`
+- *writers*: [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
 
 ---
 

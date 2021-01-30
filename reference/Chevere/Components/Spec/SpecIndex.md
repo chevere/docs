@@ -20,10 +20,10 @@ editLink: false
 
 ### withAddedRoute()
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
-2. [RouteEndpointSpecInterface](../../Interfaces/Spec/Specs/RouteEndpointSpecInterface.md) `$routeEndpointSpec`
+- *routeName*: string
+- *routeEndpointSpec*: [RouteEndpointSpecInterface](../../Interfaces/Spec/Specs/RouteEndpointSpecInterface.md)
 
 ::: tip RETURN
 [SpecIndexInterface](../../Interfaces/Spec/SpecIndexInterface.md)
@@ -33,10 +33,10 @@ editLink: false
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
-2. string `$methodName`
+- *routeName*: string
+- *methodName*: string
 
 ::: tip RETURN
 bool
@@ -46,10 +46,10 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
-2. string `$methodName`
+- *routeName*: string
+- *methodName*: string
 
 ::: tip RETURN
 string

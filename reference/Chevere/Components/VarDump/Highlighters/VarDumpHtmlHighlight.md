@@ -42,17 +42,17 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ---
 
 ### highlight()
 
-#### Parameters
+**Parameters:**
 
-1. string `$dump`
+- *dump*: string
 
 ::: tip RETURN
 string
@@ -64,18 +64,6 @@ string
 
 ::: tip RETURN
 array
-:::
-
----
-
-### assertKey()
-
-#### Parameters
-
-1. string `$key`
-
-::: tip RETURN
-void
 :::
 
 ---

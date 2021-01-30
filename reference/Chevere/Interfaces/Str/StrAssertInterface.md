@@ -16,9 +16,9 @@ Describes the component in charge of string asserting.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ---
 
@@ -138,9 +138,9 @@ self
 
 Asserts that the string is starts with `$needle`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: danger THROWS
 - [StrNotStartsWithException](../../Exceptions/Str/StrNotStartsWithException.md) 
@@ -156,9 +156,9 @@ self
 
 Asserts that the string not starts with `$needle`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: danger THROWS
 - [StrStartsWithException](../../Exceptions/Str/StrStartsWithException.md) 
@@ -174,9 +174,9 @@ self
 
 Asserts that the string ends with `$needle`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: danger THROWS
 - [StrNotEndsWithException](../../Exceptions/Str/StrNotEndsWithException.md) 
@@ -192,9 +192,9 @@ self
 
 Asserts that the string not ends with `$needle`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: danger THROWS
 - [StrEndsWithException](../../Exceptions/Str/StrEndsWithException.md) 
@@ -210,9 +210,9 @@ self
 
 Asserts that the string is same as `$string`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: danger THROWS
 - [StrNotSameException](../../Exceptions/Str/StrNotSameException.md) 
@@ -228,9 +228,9 @@ self
 
 Asserts that the string is not same as `$string`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: danger THROWS
 - [StrSameException](../../Exceptions/Str/StrSameException.md) 
@@ -246,9 +246,9 @@ self
 
 Asserts that the string contains `$string`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: danger THROWS
 - [StrNotContainsException](../../Exceptions/Str/StrNotContainsException.md) 
@@ -264,9 +264,9 @@ self
 
 Asserts that the string not contains `$string`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: danger THROWS
 - [StrContainsException](../../Exceptions/Str/StrContainsException.md) 

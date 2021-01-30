@@ -12,9 +12,9 @@ editLink: false
 
 ### withHooksRunner()
 
-#### Parameters
+**Parameters:**
 
-1. [HooksRunnerInterface](../../../../../Interfaces/Pluggable/Plug/Hook/HooksRunnerInterface.md) `$hooksRunner`
+- *hooksRunner*: [HooksRunnerInterface](../../../../../Interfaces/Pluggable/Plug/Hook/HooksRunnerInterface.md)
 
 ::: tip RETURN
 [PluggableHooksInterface](../../../../../Interfaces/Pluggable/Plug/Hook/PluggableHooksInterface.md)
@@ -24,10 +24,10 @@ editLink: false
 
 ### hook()
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2.  `$argument`
+- *anchor*: string
+- *argument*: 
 
 ::: tip RETURN
 void

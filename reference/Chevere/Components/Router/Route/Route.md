@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md) `$routePath`
+- *routePath*: [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md)
 
 ---
 
@@ -40,9 +40,9 @@ array
 
 ### withAddedEndpoint()
 
-#### Parameters
+**Parameters:**
 
-1. [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md) `$endpoint`
+- *endpoint*: [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)
 
 ::: tip RETURN
 [RouteInterface](../../../Interfaces/Router/Route/RouteInterface.md)
@@ -54,43 +54,6 @@ array
 
 ::: tip RETURN
 [RouteEndpointsInterface](../../../Interfaces/Router/Route/RouteEndpointsInterface.md)
-:::
-
----
-
-### assertUnique()
-
-#### Parameters
-
-1. [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md) `$endpoint`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertNoConflict()
-
-#### Parameters
-
-1. [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md) `$endpoint`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertWildcardEndpoint()
-
-#### Parameters
-
-1. [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md) `$wildcard`
-2. [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md) `$endpoint`
-
-::: tip RETURN
-void
 :::
 
 ---

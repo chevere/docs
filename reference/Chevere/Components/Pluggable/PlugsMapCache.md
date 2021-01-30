@@ -26,17 +26,17 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [CacheInterface](../../Interfaces/Cache/CacheInterface.md) `$cache`
+- *cache*: [CacheInterface](../../Interfaces/Cache/CacheInterface.md)
 
 ---
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugsMapInterface](../../Interfaces/Pluggable/PlugsMapInterface.md) `$plugsMap`
+- *plugsMap*: [PlugsMapInterface](../../Interfaces/Pluggable/PlugsMapInterface.md)
 
 ::: tip RETURN
 [PlugsMapCacheInterface](../../Interfaces/Pluggable/PlugsMapCacheInterface.md)
@@ -46,9 +46,9 @@ Type `string`
 
 ### hasPlugsQueueTypedFor()
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
+- *className*: string
 
 ::: tip RETURN
 bool
@@ -58,28 +58,12 @@ bool
 
 ### getPlugsQueueTypedFor()
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
+- *className*: string
 
 ::: tip RETURN
 [PlugsQueueTypedInterface](../../Interfaces/Pluggable/PlugsQueueTypedInterface.md)
-:::
-
----
-
-### getClassMapFromCache()
-
-::: tip RETURN
-[ClassMapInterface](../../Interfaces/ClassMap/ClassMapInterface.md)
-:::
-
----
-
-### assertClassMap()
-
-::: tip RETURN
-void
 :::
 
 ---

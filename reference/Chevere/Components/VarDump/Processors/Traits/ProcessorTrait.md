@@ -36,9 +36,9 @@ string
 
 ### highlightOperator()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string
@@ -48,9 +48,9 @@ string
 
 ### highlightParentheses()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string
@@ -70,14 +70,6 @@ string
 
 ::: tip RETURN
 string
-:::
-
----
-
-### assertType()
-
-::: tip RETURN
-void
 :::
 
 ---

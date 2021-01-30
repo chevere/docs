@@ -25,9 +25,9 @@ Describes the component in charge of collecting objects implementing `RoutableIn
 
 Return an instance with the specified `$routable`.
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableInterface](./RoutableInterface.md) `$routable`
+- *routable*: [RoutableInterface](./RoutableInterface.md)
 
 ::: tip RETURN
 self
@@ -42,9 +42,9 @@ an instance that contains the specified `$routable`.
 
 Indicates whether the instance has a routable identified by its `$name`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 bool
@@ -56,9 +56,9 @@ bool
 
 Returns the routable identified by its `$name`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

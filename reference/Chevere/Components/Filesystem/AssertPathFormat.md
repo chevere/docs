@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$path`
+- *path*: string
 
 ---
 
@@ -26,38 +26,6 @@ editLink: false
 
 ::: tip RETURN
 string
-:::
-
----
-
-### assertAbsolutePath()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertNoDoubleDots()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertNoDots()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertNoExtraSlashes()
-
-::: tip RETURN
-void
 :::
 
 ---

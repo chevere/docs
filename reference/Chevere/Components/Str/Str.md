@@ -17,9 +17,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ---
 
@@ -81,9 +81,9 @@ string
 
 ### withLeftTail()
 
-#### Parameters
+**Parameters:**
 
-1. string `$tail`
+- *tail*: string
 
 ::: tip RETURN
 [StrInterface](../../Interfaces/Str/StrInterface.md)
@@ -93,9 +93,9 @@ string
 
 ### withRightTail()
 
-#### Parameters
+**Parameters:**
 
-1. string `$tail`
+- *tail*: string
 
 ::: tip RETURN
 [StrInterface](../../Interfaces/Str/StrInterface.md)
@@ -105,10 +105,10 @@ string
 
 ### withReplaceFirst()
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 [StrInterface](../../Interfaces/Str/StrInterface.md)
@@ -118,10 +118,10 @@ string
 
 ### withReplaceLast()
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 [StrInterface](../../Interfaces/Str/StrInterface.md)
@@ -131,10 +131,10 @@ string
 
 ### withReplaceAll()
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 [StrInterface](../../Interfaces/Str/StrInterface.md)

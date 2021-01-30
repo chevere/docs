@@ -25,9 +25,9 @@ Describes the component in charge of collecting objects implementing `RoutableSp
 
 Return an instance with the specified `$routableSpec`.
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableSpecInterface](./RoutableSpecInterface.md) `$routableSpec`
+- *routableSpec*: [RoutableSpecInterface](./RoutableSpecInterface.md)
 
 ::: tip RETURN
 self
@@ -42,9 +42,9 @@ an instance that contains the specified `$routableSpec`.
 
 Indicates whether the instance has a routable spec identified by its `$routeName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
+- *routeName*: string
 
 ::: tip RETURN
 bool
@@ -56,9 +56,9 @@ bool
 
 Returns the routable spec identified by its `$routeName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
+- *routeName*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 

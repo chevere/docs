@@ -16,9 +16,9 @@ Describes the component in charge of defining a routable.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. Route/RouteInterface.md `$route`
+- *route*: Route/RouteInterface.md
 
 ::: danger THROWS
 - [RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md) 

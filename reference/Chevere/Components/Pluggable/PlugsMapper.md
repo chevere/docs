@@ -16,17 +16,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md) `$plugType`
+- *plugType*: [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
 
 ---
 
 ### withPlugsMapFor()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$dir`
+- *dir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 
 ::: tip RETURN
 self
@@ -42,23 +42,11 @@ self
 
 ---
 
-### classAnalyze()
-
-#### Parameters
-
-1. string `$filename`
-
-::: tip RETURN
-void
-:::
-
----
-
 ### withWriter()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 self

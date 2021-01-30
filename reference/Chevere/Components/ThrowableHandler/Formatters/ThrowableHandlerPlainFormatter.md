@@ -64,9 +64,9 @@ string
 
 ### wrapLink()
 
-#### Parameters
+**Parameters:**
 
-1. string `$value`
+- *value*: string
 
 ::: tip RETURN
 string
@@ -76,9 +76,9 @@ string
 
 ### wrapSectionTitle()
 
-#### Parameters
+**Parameters:**
 
-1. string `$value`
+- *value*: string
 
 ::: tip RETURN
 string
@@ -88,9 +88,9 @@ string
 
 ### wrapTitle()
 
-#### Parameters
+**Parameters:**
 
-1. string `$value`
+- *value*: string
 
 ::: tip RETURN
 string

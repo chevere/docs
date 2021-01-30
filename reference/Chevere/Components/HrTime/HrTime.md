@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. int `$hrTime`
+- *hrTime*: int
 
 ---
 

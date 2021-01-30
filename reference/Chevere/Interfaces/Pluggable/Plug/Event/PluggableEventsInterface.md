@@ -28,9 +28,9 @@ Returns the declared event anchors able to plug.
 
 Return an instance with the specified `$runner`.
 
-#### Parameters
+**Parameters:**
 
-1. [EventsRunnerInterface](./EventsRunnerInterface.md) `$runner`
+- *runner*: [EventsRunnerInterface](./EventsRunnerInterface.md)
 
 ::: tip RETURN
 self
@@ -47,10 +47,10 @@ This method should be implemented in the runtime strategy before running events.
 
 Run events for the given anchor (if-any).
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2. array `$data`
+- *anchor*: string
+- *data*: array
 
 ::: tip RETURN
 void

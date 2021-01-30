@@ -25,10 +25,10 @@ Describes the component in charge of collecting route spec endpoints.
 
 Return an instance with the specified `$specEndpoints` for `$routeName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
-2. [SpecEndpointsInterface](./SpecEndpointsInterface.md) `$specEndpoints`
+- *routeName*: string
+- *specEndpoints*: [SpecEndpointsInterface](./SpecEndpointsInterface.md)
 
 ::: tip RETURN
 self
@@ -43,9 +43,9 @@ an instance that contains the specified `$specEndpoints` for `$routeName`.
 
 Indicates whether the instance has a spec endpoints identified by `$routeName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
+- *routeName*: string
 
 ::: tip RETURN
 bool
@@ -57,9 +57,9 @@ bool
 
 Returns the route endpoint spec identified by its `$key`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
+- *routeName*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

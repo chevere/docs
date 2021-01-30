@@ -18,10 +18,10 @@ Describes the component in charge of handling routing.
 
 Return an instance with the specified added `$routable`.
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableInterface](./RoutableInterface.md) `$routable`
-2. string `$group`
+- *routable*: [RoutableInterface](./RoutableInterface.md)
+- *group*: string
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) if `$group` is invalid.

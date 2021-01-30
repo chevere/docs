@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [FileInterface](../../Interfaces/Filesystem/FileInterface.md) `$file`
+- *file*: [FileInterface](../../Interfaces/Filesystem/FileInterface.md)
 
 ---
 
@@ -39,14 +39,6 @@ void
 ---
 
 ### flush()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertFilePhp()
 
 ::: tip RETURN
 void

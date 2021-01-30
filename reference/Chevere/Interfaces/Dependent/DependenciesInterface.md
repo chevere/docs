@@ -23,9 +23,9 @@ Describes the component in charge of defining dependencies.
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. string `...$namedDependencies`
+- *...namedDependencies*: string
 
 ::: tip RETURN
 self

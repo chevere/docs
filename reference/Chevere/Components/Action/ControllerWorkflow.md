@@ -61,9 +61,9 @@ Type `string`
 
 ### withContextArguments()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedArguments`
+- *...namedArguments*: mixed
 
 ::: tip RETURN
 self
@@ -113,9 +113,9 @@ bool
 
 ### run()
 
-#### Parameters
+**Parameters:**
 
-1. [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md) `$arguments`
+- *arguments*: [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
 
 ::: tip RETURN
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
@@ -141,9 +141,9 @@ bool
 
 ### getArguments()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedArguments`
+- *...namedArguments*: mixed
 
 ::: tip RETURN
 [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
@@ -153,9 +153,9 @@ bool
 
 ### getResponse()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedData`
+- *...namedData*: mixed
 
 ::: tip RETURN
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)

@@ -21,9 +21,9 @@ Describes the component in charge of defining the index spec.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Filesystem/DirInterface.md) `$specDir`
+- *specDir*: [DirInterface](../../Filesystem/DirInterface.md)
 
 ---
 
@@ -31,9 +31,9 @@ Describes the component in charge of defining the index spec.
 
 Return an instance with the specified `$groupSpec`.
 
-#### Parameters
+**Parameters:**
 
-1. [GroupSpecInterface](./GroupSpecInterface.md) `$groupSpec`
+- *groupSpec*: [GroupSpecInterface](./GroupSpecInterface.md)
 
 ::: tip RETURN
 self

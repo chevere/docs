@@ -18,10 +18,10 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../../Interfaces/Filesystem/DirInterface.md) `$specDir`
-2. [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md) `$routeEndpoint`
+- *specDir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
+- *routeEndpoint*: [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)
 
 ---
 

@@ -35,10 +35,10 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
-2. [RouteWildcardMatchInterface](../../../Interfaces/Router/Route/RouteWildcardMatchInterface.md) `$match`
+- *name*: string
+- *match*: [RouteWildcardMatchInterface](../../../Interfaces/Router/Route/RouteWildcardMatchInterface.md)
 
 ---
 
@@ -54,14 +54,6 @@ string
 
 ::: tip RETURN
 [RouteWildcardMatchInterface](../../../Interfaces/Router/Route/RouteWildcardMatchInterface.md)
-:::
-
----
-
-### assertName()
-
-::: tip RETURN
-void
 :::
 
 ---

@@ -25,14 +25,14 @@ Extends \ErrorException with Message support.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
-2. int `$code`
-3. int `$severity`
-4. string `$filename`
-5. int `$lineno`
-6. [Throwable](https://www.php.net/manual/class.throwable) `$previous`
+- *message*: [MessageInterface](../../Interfaces/Message/MessageInterface.md)
+- *code*: int
+- *severity*: int
+- *filename*: string
+- *lineno*: int
+- *previous*: [Throwable](https://www.php.net/manual/class.throwable)
 
 ---
 

@@ -23,9 +23,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [RecursiveDirectoryIterator](https://www.php.net/manual/class.recursivedirectoryiterator) `$iterator`
+- *iterator*: [RecursiveDirectoryIterator](https://www.php.net/manual/class.recursivedirectoryiterator)
 
 ---
 

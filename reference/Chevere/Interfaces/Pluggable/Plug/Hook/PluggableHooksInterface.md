@@ -28,9 +28,9 @@ Returns the declared hook anchors able to plug.
 
 Return an instance with the specified `$runner`.
 
-#### Parameters
+**Parameters:**
 
-1. [HooksRunnerInterface](./HooksRunnerInterface.md) `$runner`
+- *runner*: [HooksRunnerInterface](./HooksRunnerInterface.md)
 
 ::: tip RETURN
 self
@@ -47,10 +47,10 @@ This method should be implemented in the runtime strategy before running hooks.
 
 Run hooks for the given anchor (if-any).
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2.  `$argument`
+- *anchor*: string
+- *argument*: 
 
 ::: tip RETURN
 void

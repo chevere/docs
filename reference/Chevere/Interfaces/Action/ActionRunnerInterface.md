@@ -16,9 +16,9 @@ Describes the component in charge of running the controller.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ControllerInterface](./ControllerInterface.md) `$controller`
+- *controller*: [ControllerInterface](./ControllerInterface.md)
 
 ---
 
@@ -26,9 +26,9 @@ Describes the component in charge of running the controller.
 
 Executes the controller with the given `$arguments`.
 
-#### Parameters
+**Parameters:**
 
-1. array `$arguments`
+- *arguments*: array
 
 ::: tip RETURN
 [ActionExecutedInterface](./ActionExecutedInterface.md)

@@ -16,11 +16,11 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$specDir`
-2. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$outputDir`
-3. [RouterInterface](../../Interfaces/Router/RouterInterface.md) `$router`
+- *specDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+- *outputDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+- *router*: [RouterInterface](../../Interfaces/Router/RouterInterface.md)
 
 ---
 
@@ -35,59 +35,7 @@ editLink: false
 ### files()
 
 ::: tip RETURN
-Ds\Map
-:::
-
----
-
-### assertDir()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertRouter()
-
-::: tip RETURN
-void
-:::
-
----
-
-### makeJsonFile()
-
-#### Parameters
-
-1. [SpecInterface](../../Interfaces/Spec/SpecInterface.md) `$spec`
-
-::: tip RETURN
-void
-:::
-
----
-
-### getPathFor()
-
-#### Parameters
-
-1. string `$jsonPath`
-
-::: tip RETURN
-[PathInterface](../../Interfaces/Filesystem/PathInterface.md)
-:::
-
----
-
-### toJson()
-
-#### Parameters
-
-1. array `$array`
-
-::: tip RETURN
-string
+[Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 
 ---

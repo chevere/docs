@@ -16,9 +16,9 @@ Describes the component in charge of asserting a plug.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](./PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](./PlugInterface.md)
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 

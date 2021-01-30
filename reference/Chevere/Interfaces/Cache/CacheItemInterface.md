@@ -16,9 +16,9 @@ Describes the component that defines a cache item.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [FilePhpReturnInterface](../Filesystem/FilePhpReturnInterface.md) `$phpFileReturn`
+- *phpFileReturn*: [FilePhpReturnInterface](../Filesystem/FilePhpReturnInterface.md)
 
 ---
 

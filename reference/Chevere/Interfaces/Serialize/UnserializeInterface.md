@@ -16,9 +16,9 @@ Describes the component in charge of handling `unserialize()`.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$unserializable`
+- *unserializable*: string
 
 ::: danger THROWS
 - ⚠ Unknown type `LogicException` declared in `@throws` tag`

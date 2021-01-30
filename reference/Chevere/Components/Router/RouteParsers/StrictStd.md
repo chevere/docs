@@ -55,9 +55,9 @@ Type `string`
 
 ### parse()
 
-#### Parameters
+**Parameters:**
 
-1.  `$route`
+- *route*: 
 
 ::: tip RETURN
 void

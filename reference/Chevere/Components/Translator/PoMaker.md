@@ -37,18 +37,18 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$locale`
-2. string `$domain`
+- *locale*: string
+- *domain*: string
 
 ---
 
 ### withScanFor()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$sourceDir`
+- *sourceDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 
 ::: tip RETURN
 self
@@ -58,9 +58,9 @@ self
 
 ### make()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$targetDir`
+- *targetDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 
 ::: tip RETURN
 void
@@ -68,19 +68,11 @@ void
 
 ---
 
-### getIterator()
-
-::: tip RETURN
-[RecursiveIteratorIterator](https://www.php.net/manual/class.recursiveiteratoriterator)
-:::
-
----
-
 ### withWriter()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 self

@@ -17,15 +17,3 @@ array
 :::
 
 ---
-
-### assertKey()
-
-#### Parameters
-
-1. string `$key`
-
-::: tip RETURN
-void
-:::
-
----

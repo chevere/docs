@@ -20,9 +20,9 @@ Describes the component in charge of defining a generic plugs queue.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugTypeInterface](./PlugTypeInterface.md) `$plugType`
+- *plugType*: [PlugTypeInterface](./PlugTypeInterface.md)
 
 ---
 
@@ -30,9 +30,9 @@ Describes the component in charge of defining a generic plugs queue.
 
 Return an instance with the specified `$plug`.
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](./PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](./PlugInterface.md)
 
 ::: danger THROWS
 - ⚠ Unknown type `TypeException` declared in `@throws` tag`

@@ -34,17 +34,17 @@ Type `integer`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [FilePhpInterface](../../Interfaces/Filesystem/FilePhpInterface.md) `$filePhp`
+- *filePhp*: [FilePhpInterface](../../Interfaces/Filesystem/FilePhpInterface.md)
 
 ---
 
 ### withStrict()
 
-#### Parameters
+**Parameters:**
 
-1. bool `$strict`
+- *strict*: bool
 
 ::: tip RETURN
 [FilePhpReturnInterface](../../Interfaces/Filesystem/FilePhpReturnInterface.md)
@@ -87,9 +87,9 @@ void
 
 ### varType()
 
-#### Parameters
+**Parameters:**
 
-1. [TypeInterface](../../Interfaces/Type/TypeInterface.md) `$type`
+- *type*: [TypeInterface](../../Interfaces/Type/TypeInterface.md)
 
 ::: tip RETURN
 void
@@ -99,64 +99,9 @@ void
 
 ### put()
 
-#### Parameters
+**Parameters:**
 
-1. [VarStorableInterface](../../Interfaces/VarStorable/VarStorableInterface.md) `$varStorable`
-
-::: tip RETURN
-void
-:::
-
----
-
-### getReturnVar()
-
-#### Parameters
-
-1.  `$var`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assert()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertStrict()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertNonStrict()
-
-::: danger THROWS
-- [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
-- [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md) 
-- [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md) 
-- [FileInvalidContentsException](../../Exceptions/Filesystem/FileInvalidContentsException.md) 
-:::
-
-::: tip RETURN
-void
-:::
-
----
-
-### getFileReturnVar()
-
-#### Parameters
-
-1.  `$var`
+- *varStorable*: [VarStorableInterface](../../Interfaces/VarStorable/VarStorableInterface.md)
 
 ::: tip RETURN
 void

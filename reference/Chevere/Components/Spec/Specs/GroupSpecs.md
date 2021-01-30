@@ -20,9 +20,9 @@ editLink: false
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. [GroupSpecInterface](../../../Interfaces/Spec/Specs/GroupSpecInterface.md) `$groupSpec`
+- *groupSpec*: [GroupSpecInterface](../../../Interfaces/Spec/Specs/GroupSpecInterface.md)
 
 ::: tip RETURN
 [GroupSpecsInterface](../../../Interfaces/Spec/Specs/GroupSpecsInterface.md)
@@ -32,9 +32,9 @@ editLink: false
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 bool
@@ -44,9 +44,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: danger THROWS
 - [TypeException](../../../Exceptions/Core/TypeException.md) 

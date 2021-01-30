@@ -25,11 +25,11 @@ Exception thrown when the type gives the cacha.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [MessageInterface](../../Interfaces/Message/MessageInterface.md) `$message`
-2. int `$code`
-3. [Throwable](https://www.php.net/manual/class.throwable) `$previous`
+- *message*: [MessageInterface](../../Interfaces/Message/MessageInterface.md)
+- *code*: int
+- *previous*: [Throwable](https://www.php.net/manual/class.throwable)
 
 ---
 

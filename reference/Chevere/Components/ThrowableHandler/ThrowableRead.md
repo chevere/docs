@@ -74,9 +74,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [Throwable](https://www.php.net/manual/class.throwable) `$throwable`
+- *throwable*: [Throwable](https://www.php.net/manual/class.throwable)
 
 ---
 
@@ -164,14 +164,6 @@ bool
 
 ::: tip RETURN
 [Throwable](https://www.php.net/manual/class.throwable)
-:::
-
----
-
-### assertSeverity()
-
-::: tip RETURN
-void
 :::
 
 ---

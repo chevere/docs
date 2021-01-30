@@ -16,42 +16,18 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [HooksQueueInterface](../../../../Interfaces/Pluggable/Plug/Hook/HooksQueueInterface.md) `$hooksQueue`
+- *hooksQueue*: [HooksQueueInterface](../../../../Interfaces/Pluggable/Plug/Hook/HooksQueueInterface.md)
 
 ---
 
 ### run()
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2.  `$argument`
-
-::: tip RETURN
-void
-:::
-
----
-
-### getType()
-
-#### Parameters
-
-1.  `$argument`
-
-::: tip RETURN
-string
-:::
-
----
-
-### setHook()
-
-#### Parameters
-
-1. string `$entry`
+- *anchor*: string
+- *argument*: 
 
 ::: tip RETURN
 void

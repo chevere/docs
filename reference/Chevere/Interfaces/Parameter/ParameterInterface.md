@@ -30,9 +30,9 @@ Provides access to the type instance.
 
 ### withDescription()
 
-#### Parameters
+**Parameters:**
 
-1. string `$description`
+- *description*: string
 
 ::: tip RETURN
 self
@@ -44,9 +44,9 @@ self
 
 Return an instance with the specified `$attributes` added.
 
-#### Parameters
+**Parameters:**
 
-1. string `...$attributes`
+- *...attributes*: string
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -65,9 +65,9 @@ an instance that contains the specified `$attributes` added.
 
 Return an instance with the specified `$attributes` removed.
 
-#### Parameters
+**Parameters:**
 
-1. string `...$attributes`
+- *...attributes*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -86,9 +86,9 @@ an instance that contains the specified `$attributes` removed.
 
 Indicates whether the instance has the given `$attributes`.
 
-#### Parameters
+**Parameters:**
 
-1. string `...$attributes`
+- *...attributes*: string
 
 ::: tip RETURN
 bool
@@ -101,7 +101,7 @@ bool
 Provides access to the attributes instance.
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

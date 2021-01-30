@@ -190,9 +190,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ThrowableHandlerInterface](./ThrowableHandlerInterface.md) `$throwableHandler`
+- *throwableHandler*: [ThrowableHandlerInterface](./ThrowableHandlerInterface.md)
 
 ---
 
@@ -200,9 +200,9 @@ array (
 
 Return an instance with the specified verbosity.
 
-#### Parameters
+**Parameters:**
 
-1. int `$verbosity`
+- *verbosity*: int
 
 ::: tip RETURN
 self
@@ -299,9 +299,9 @@ string
 
 Returns a formatted content for a section.
 
-#### Parameters
+**Parameters:**
 
-1. string `$content`
+- *content*: string
 
 ::: tip RETURN
 string

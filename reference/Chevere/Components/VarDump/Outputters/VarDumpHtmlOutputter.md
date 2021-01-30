@@ -63,10 +63,10 @@ void
 
 ### setUp()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../../Interfaces/Writer/WriterInterface.md) `$writer`
-2. array `$backtrace`
+- *writer*: [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
+- *backtrace*: array
 
 ::: tip RETURN
 void
@@ -86,14 +86,6 @@ array
 
 ::: tip RETURN
 string
-:::
-
----
-
-### writer()
-
-::: tip RETURN
-[WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
 :::
 
 ---

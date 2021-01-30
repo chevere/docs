@@ -34,9 +34,9 @@ Type `integer`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PathInterface](../../Interfaces/Filesystem/PathInterface.md) `$path`
+- *path*: [PathInterface](../../Interfaces/Filesystem/PathInterface.md)
 
 ---
 
@@ -127,33 +127,9 @@ void
 
 ### put()
 
-#### Parameters
+**Parameters:**
 
-1. string `$contents`
-
-::: tip RETURN
-void
-:::
-
----
-
-### createPath()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertIsNotDir()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertUnlink()
+- *contents*: string
 
 ::: tip RETURN
 void

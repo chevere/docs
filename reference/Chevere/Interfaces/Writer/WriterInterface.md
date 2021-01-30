@@ -22,9 +22,9 @@ Describes the component in charge of writing strings.
 
 Writes the given string.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: danger THROWS
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 

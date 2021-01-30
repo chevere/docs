@@ -20,18 +20,18 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. FastRoute\RouteCollector `$routeCollector`
+- *routeCollector*: FastRoute\RouteCollector
 
 ---
 
 ### dispatch()
 
-#### Parameters
+**Parameters:**
 
-1. string `$httpMethod`
-2. string `$uri`
+- *httpMethod*: string
+- *uri*: string
 
 ::: tip RETURN
 [RoutedInterface](../../Interfaces/Router/RoutedInterface.md)

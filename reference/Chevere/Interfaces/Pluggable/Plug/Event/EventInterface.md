@@ -22,10 +22,10 @@ Describes the component in charge of defining an event listener plug.
 
 Executes the event listener.
 
-#### Parameters
+**Parameters:**
 
-1. array `$data`
-2. [WritersInterface](../../../Writer/WritersInterface.md) `$writers`
+- *data*: array
+- *writers*: [WritersInterface](../../../Writer/WritersInterface.md)
 
 ::: tip RETURN
 void

@@ -12,9 +12,9 @@ editLink: false
 
 ### filterEncodedChars()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string

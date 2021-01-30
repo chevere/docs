@@ -33,9 +33,9 @@ void
 
 ### withAddedWildcard()
 
-#### Parameters
+**Parameters:**
 
-1. [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md) `$routeWildcard`
+- *routeWildcard*: [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md)
 
 ::: tip RETURN
 [WildcardsInterface](../../../Interfaces/Router/Route/WildcardsInterface.md)
@@ -45,9 +45,9 @@ void
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$wildcardName`
+- *wildcardName*: string
 
 ::: tip RETURN
 bool
@@ -57,9 +57,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$wildcardName`
+- *wildcardName*: string
 
 ::: tip RETURN
 [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md)
@@ -69,9 +69,9 @@ bool
 
 ### hasPos()
 
-#### Parameters
+**Parameters:**
 
-1. int `$pos`
+- *pos*: int
 
 ::: tip RETURN
 bool
@@ -81,9 +81,9 @@ bool
 
 ### getPos()
 
-#### Parameters
+**Parameters:**
 
-1. int `$pos`
+- *pos*: int
 
 ::: tip RETURN
 [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md)

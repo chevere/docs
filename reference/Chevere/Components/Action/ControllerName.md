@@ -17,9 +17,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ---
 
@@ -27,14 +27,6 @@ editLink: false
 
 ::: tip RETURN
 string
-:::
-
----
-
-### assertController()
-
-::: tip RETURN
-void
 :::
 
 ---

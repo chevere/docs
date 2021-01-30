@@ -18,9 +18,9 @@ Describes the component in charge of defining pluggable anchors.
 
 Return an instance with the specified added `$anchor`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
+- *anchor*: string
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -39,9 +39,9 @@ an instance that contains the specified added `$anchor`.
 
 Indicates whether the instance has the given `$anchor`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
+- *anchor*: string
 
 ::: tip RETURN
 bool
@@ -54,7 +54,7 @@ bool
 Provides access to a cloned set instance.
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

@@ -16,17 +16,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$action`
+- *action*: string
 
 ---
 
 ### withArguments()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedArguments`
+- *...namedArguments*: mixed
 
 ::: tip RETURN
 [StepInterface](../../Interfaces/Workflow/StepInterface.md)
@@ -46,18 +46,6 @@ string
 
 ::: tip RETURN
 array
-:::
-
----
-
-### assertArgumentsCount()
-
-#### Parameters
-
-1. array `$arguments`
-
-::: tip RETURN
-void
 :::
 
 ---

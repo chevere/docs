@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [FilePhpReturnInterface](../../Interfaces/Filesystem/FilePhpReturnInterface.md) `$phpFileReturn`
+- *phpFileReturn*: [FilePhpReturnInterface](../../Interfaces/Filesystem/FilePhpReturnInterface.md)
 
 ---
 

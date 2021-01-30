@@ -74,9 +74,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [Throwable](https://www.php.net/manual/class.throwable) `$throwable`
+- *throwable*: [Throwable](https://www.php.net/manual/class.throwable)
 
 ::: danger THROWS
 - [RangeException](../../Exceptions/Core/RangeException.md) If unable to read `$throwable`

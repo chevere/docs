@@ -16,10 +16,10 @@ Describes the component in charge of running the event listeners queue.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [EventsQueue](../../../../Components/Pluggable/Plug/Event/EventsQueue.md) `$queue`
-2. [WritersInterface](../../../Writer/WritersInterface.md) `$writers`
+- *queue*: [EventsQueue](../../../../Components/Pluggable/Plug/Event/EventsQueue.md)
+- *writers*: [WritersInterface](../../../Writer/WritersInterface.md)
 
 ---
 
@@ -27,10 +27,10 @@ Describes the component in charge of running the event listeners queue.
 
 Run registered event listeners for the target event anchor.
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2. array `$data`
+- *anchor*: string
+- *data*: array
 
 ::: danger THROWS
 - [RuntimeException](../../../../Exceptions/Core/RuntimeException.md) 

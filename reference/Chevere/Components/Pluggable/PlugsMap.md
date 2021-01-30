@@ -17,9 +17,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md) `$type`
+- *type*: [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
 
 ---
 
@@ -33,9 +33,9 @@ editLink: false
 
 ### withAdded()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
 
 ::: tip RETURN
 [PlugsMapInterface](../../Interfaces/Pluggable/PlugsMapInterface.md)
@@ -53,9 +53,9 @@ int
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
 
 ::: tip RETURN
 bool
@@ -65,9 +65,9 @@ bool
 
 ### hasPlugsFor()
 
-#### Parameters
+**Parameters:**
 
-1. string `$pluggable`
+- *pluggable*: string
 
 ::: tip RETURN
 bool
@@ -77,9 +77,9 @@ bool
 
 ### getPlugsQueueTypedFor()
 
-#### Parameters
+**Parameters:**
 
-1. string `$pluggable`
+- *pluggable*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 
@@ -96,18 +96,6 @@ bool
 
 ::: tip RETURN
 [Generator](https://www.php.net/manual/class.generator)
-:::
-
----
-
-### assertUnique()
-
-#### Parameters
-
-1. [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md) `$plug`
-
-::: tip RETURN
-void
 :::
 
 ---

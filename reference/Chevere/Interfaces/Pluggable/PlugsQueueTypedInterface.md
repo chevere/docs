@@ -16,9 +16,9 @@ Describes the base interface used by typed plug queues.
 
 ### withAdded()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](./PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](./PlugInterface.md)
 
 ::: tip RETURN
 self

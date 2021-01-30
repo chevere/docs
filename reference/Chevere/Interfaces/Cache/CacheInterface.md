@@ -28,9 +28,9 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
+- *dir*: [DirInterface](../Filesystem/DirInterface.md)
 
 ::: danger THROWS
 - [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md) if $dir doesn't exists and unable to create
@@ -52,10 +52,10 @@ Provides access to the cache directory.
 
 Put item in cache.
 
-#### Parameters
+**Parameters:**
 
-1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
-2. [VarStorableInterface](../VarStorable/VarStorableInterface.md) `$varStorable`
+- *key*: [CacheKeyInterface](./CacheKeyInterface.md)
+- *varStorable*: [VarStorableInterface](../VarStorable/VarStorableInterface.md)
 
 ::: tip RETURN
 self
@@ -72,9 +72,9 @@ an instance that contains the specified put.
 
 Remove item from cache.
 
-#### Parameters
+**Parameters:**
 
-1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
+- *key*: [CacheKeyInterface](./CacheKeyInterface.md)
 
 ::: danger THROWS
 - [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) if unable to remove the cache file
@@ -95,9 +95,9 @@ an instance that contains the specified removed.
 
 Indicates whether the cache exists for the given key.
 
-#### Parameters
+**Parameters:**
 
-1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
+- *key*: [CacheKeyInterface](./CacheKeyInterface.md)
 
 ::: tip RETURN
 bool
@@ -109,9 +109,9 @@ bool
 
 Get a cache item.
 
-#### Parameters
+**Parameters:**
 
-1. [CacheKeyInterface](./CacheKeyInterface.md) `$key`
+- *key*: [CacheKeyInterface](./CacheKeyInterface.md)
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

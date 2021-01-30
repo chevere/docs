@@ -16,9 +16,9 @@ Describes the component in charge of defining a task (a unit of job).
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$action`
+- *action*: string
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -30,9 +30,9 @@ Describes the component in charge of defining a task (a unit of job).
 
 Return an instance with the specified `$namedArguments`.
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedArguments`
+- *...namedArguments*: mixed
 
 ::: tip RETURN
 self

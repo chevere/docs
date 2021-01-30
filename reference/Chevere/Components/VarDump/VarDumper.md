@@ -99,11 +99,11 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
-2. [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md) `$formatter`
-3. [VarDumpableInterface](../../Interfaces/VarDump/VarDumpableInterface.md) `$dumpable`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+- *formatter*: [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md)
+- *dumpable*: [VarDumpableInterface](../../Interfaces/VarDump/VarDumpableInterface.md)
 
 ---
 
@@ -133,9 +133,9 @@ array (
 
 ### withIndent()
 
-#### Parameters
+**Parameters:**
 
-1. int `$indent`
+- *indent*: int
 
 ::: tip RETURN
 [VarDumperInterface](../../Interfaces/VarDump/VarDumperInterface.md)
@@ -161,9 +161,9 @@ string
 
 ### withDepth()
 
-#### Parameters
+**Parameters:**
 
-1. int `$depth`
+- *depth*: int
 
 ::: tip RETURN
 [VarDumperInterface](../../Interfaces/VarDump/VarDumperInterface.md)
@@ -181,9 +181,9 @@ int
 
 ### withKnownObjects()
 
-#### Parameters
+**Parameters:**
 
-1. Ds\Set `$known`
+- *known*: [Ds\Set](https://www.php.net/manual/class.ds\set)
 
 ::: tip RETURN
 [VarDumperInterface](../../Interfaces/VarDump/VarDumperInterface.md)
@@ -194,7 +194,7 @@ int
 ### known()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

@@ -20,9 +20,9 @@ Pluggable -> plugs.php interaction
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ClassMapInterface](../../Interfaces/ClassMap/ClassMapInterface.md) `$pluggablesToPlugs`
+- *pluggablesToPlugs*: [ClassMapInterface](../../Interfaces/ClassMap/ClassMapInterface.md)
 
 ---
 
@@ -36,32 +36,12 @@ Pluggable -> plugs.php interaction
 
 ### getPlugsQueue()
 
-#### Parameters
+**Parameters:**
 
-1. string `$pluggableName`
+- *pluggableName*: string
 
 ::: tip RETURN
 [PlugsQueueInterface](../../Interfaces/Pluggable/PlugsQueueInterface.md)
-:::
-
----
-
-### assertSetPlugsPath()
-
-#### Parameters
-
-1. string `$pluggableName`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertPlugsPath()
-
-::: tip RETURN
-void
 :::
 
 ---

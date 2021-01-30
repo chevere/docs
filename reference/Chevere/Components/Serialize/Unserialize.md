@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$unserializable`
+- *unserializable*: string
 
 ---
 

@@ -16,24 +16,24 @@ editLink: false
 
 ### withStatus()
 
-#### Parameters
+**Parameters:**
 
-1. int `$code`
+- *code*: int
 
 ::: tip RETURN
-self
+[ResponseInterface](../../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
 
 ### withData()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedData`
+- *...namedData*: mixed
 
 ::: tip RETURN
-self
+[ResponseInterface](../../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---

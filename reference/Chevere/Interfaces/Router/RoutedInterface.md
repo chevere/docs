@@ -16,10 +16,10 @@ Describes the component in charge of defining a routed route.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ControllerNameInterface](../Action/ControllerNameInterface.md) `$controllerName`
-2. array `$arguments`
+- *controllerName*: [ControllerNameInterface](../Action/ControllerNameInterface.md)
+- *arguments*: array
 
 ---
 

@@ -20,9 +20,9 @@ Describes the component in charge of handling the controller name.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: danger THROWS
 - ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`

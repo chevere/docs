@@ -12,9 +12,9 @@ editLink: false
 
 ### withDependencies()
 
-#### Parameters
+**Parameters:**
 
-1. object `...$namedDependencies`
+- *...namedDependencies*: object
 
 ::: tip RETURN
 self
@@ -42,32 +42,6 @@ void
 
 ::: tip RETURN
 [DependenciesInterface](../../../Interfaces/Dependent/DependenciesInterface.md)
-:::
-
----
-
-### assertType()
-
-#### Parameters
-
-1. string `$className`
-2. string `$name`
-3. object `$value`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertNotMissing()
-
-#### Parameters
-
-1. array `$missing`
-
-::: tip RETURN
-void
 :::
 
 ---

@@ -25,9 +25,9 @@ Describes the component in charge of collecting objects implementing `RouteEndpo
 
 Return an instance with the specified `$routeEndpointSpec`.
 
-#### Parameters
+**Parameters:**
 
-1. [RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md) `$routeEndpointSpec`
+- *routeEndpointSpec*: [RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md)
 
 ::: tip RETURN
 self
@@ -42,9 +42,9 @@ an instance that contains the specified `$routeEndpointSpec`.
 
 Indicates whether the instance has a route endpoint spec identified by its `$methodName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$methodName`
+- *methodName*: string
 
 ::: tip RETURN
 bool
@@ -56,9 +56,9 @@ bool
 
 Returns the route endpoint spec identified by its `$methodName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$methodName`
+- *methodName*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 

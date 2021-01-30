@@ -26,9 +26,9 @@ Describes the component in charge of collecting objects implementing `RouteWildc
 
 Return an instance with the specified `$wildcard`.
 
-#### Parameters
+**Parameters:**
 
-1. [RouteWildcardInterface](./RouteWildcardInterface.md) `$wildcard`
+- *wildcard*: [RouteWildcardInterface](./RouteWildcardInterface.md)
 
 ::: tip RETURN
 self
@@ -45,9 +45,9 @@ This method should overrides existing wildcards.
 
 Returns a boolean indicating whether the instance has a given RouteWildcardInterface.
 
-#### Parameters
+**Parameters:**
 
-1. string `$wildcardName`
+- *wildcardName*: string
 
 ::: tip RETURN
 bool
@@ -59,9 +59,9 @@ bool
 
 Provides access to the target RouteWildcardInterface instance.
 
-#### Parameters
+**Parameters:**
 
-1. string `$wildcardName`
+- *wildcardName*: string
 
 ::: tip RETURN
 [RouteWildcardInterface](./RouteWildcardInterface.md)
@@ -73,9 +73,9 @@ Provides access to the target RouteWildcardInterface instance.
 
 Returns a boolean indicating whether the instance has RouteWildcardInterface in the given pos.
 
-#### Parameters
+**Parameters:**
 
-1. int `$pos`
+- *pos*: int
 
 ::: tip RETURN
 bool
@@ -87,9 +87,9 @@ bool
 
 Provides access to the target RouteWildcardInterface instance in the given pos.
 
-#### Parameters
+**Parameters:**
 
-1. int `$pos`
+- *pos*: int
 
 ::: tip RETURN
 [RouteWildcardInterface](./RouteWildcardInterface.md)

@@ -18,9 +18,9 @@ Describes the component in charge of defining a class with explicit dependencies
 
 Dependencies must be passed on construct for this interface.
 
-#### Parameters
+**Parameters:**
 
-1. object `...$namedDependency`
+- *...namedDependency*: object
 
 ::: tip RETURN
 void

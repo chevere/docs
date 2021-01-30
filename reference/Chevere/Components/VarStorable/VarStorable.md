@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `$var`
+- *var*: mixed
 
 ---
 
@@ -42,62 +42,6 @@ string
 
 ::: tip RETURN
 string
-:::
-
----
-
-### assertExportable()
-
-#### Parameters
-
-1.  `$var`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertIsNotResource()
-
-#### Parameters
-
-1.  `$var`
-
-::: danger THROWS
-- [NotVarStorableException](../../Exceptions/VarStorable/NotVarStorableException.md) 
-:::
-
-::: tip RETURN
-void
-:::
-
----
-
-### breadcrumbIterable()
-
-#### Parameters
-
-1. iterable `$var`
-
-::: danger THROWS
-- ⚠ Unknown type `VarExportableIsResourceException` declared in `@throws` tag`
-:::
-
-::: tip RETURN
-void
-:::
-
----
-
-### breadcrumbObject()
-
-#### Parameters
-
-1. object `$var`
-
-::: tip RETURN
-void
 :::
 
 ---

@@ -18,9 +18,9 @@ Describes the component in charge of defining a workflow queue.
 
 Return an instance with the specified `$priority`.
 
-#### Parameters
+**Parameters:**
 
-1. int `$priority`
+- *priority*: int
 
 ::: tip RETURN
 self
@@ -35,9 +35,9 @@ an instance that contains the specified `$priority`.
 
 Return an instance with the specified delay in `$seconds`.
 
-#### Parameters
+**Parameters:**
 
-1. int `$seconds`
+- *seconds*: int
 
 ::: tip RETURN
 self
@@ -52,9 +52,9 @@ an instance that contains the specified delay in `$seconds`.
 
 Return an instance with the specified expiration in `$seconds`.
 
-#### Parameters
+**Parameters:**
 
-1. int `$seconds`
+- *seconds*: int
 
 ::: tip RETURN
 self

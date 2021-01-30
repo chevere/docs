@@ -24,9 +24,9 @@ editLink: false
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. string `...$namedDependencies`
+- *...namedDependencies*: string
 
 ::: tip RETURN
 [DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)

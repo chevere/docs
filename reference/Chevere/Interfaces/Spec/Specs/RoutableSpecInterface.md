@@ -21,11 +21,11 @@ Describes the component in charge of defining a routable spec.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Filesystem/DirInterface.md) `$specDir`
-2. [RoutableInterface](../../Router/RoutableInterface.md) `$routable`
-3. string `$repository`
+- *specDir*: [DirInterface](../../Filesystem/DirInterface.md)
+- *routable*: [RoutableInterface](../../Router/RoutableInterface.md)
+- *repository*: string
 
 ---
 

@@ -20,9 +20,9 @@ Describes the component in charge of type-hint a hooks queue.
 
 ### withAdded()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](../../PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](../../PlugInterface.md)
 
 ::: tip RETURN
 self

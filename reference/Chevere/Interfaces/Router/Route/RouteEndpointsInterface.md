@@ -25,9 +25,9 @@ Describes the component in charge of collecting objects implementing `RouteEndpo
 
 Return an instance with the specified `$routeEndpoint`.
 
-#### Parameters
+**Parameters:**
 
-1. [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
+- *routeEndpoint*: [RouteEndpointInterface](./RouteEndpointInterface.md)
 
 ::: tip RETURN
 self
@@ -42,9 +42,9 @@ an instance that contains the specified `$routeEndpoint`.
 
 Returns a boolean indicating whether the instance has `$key`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: tip RETURN
 bool
@@ -56,9 +56,9 @@ bool
 
 Provides access to the RouteEndpointInterface identified by `$key`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 

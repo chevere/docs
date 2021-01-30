@@ -16,9 +16,9 @@ Describes the component in charge of string conditionals.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ---
 
@@ -66,9 +66,9 @@ bool
 
 Indicates whether the string starts with `$needle`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: tip RETURN
 bool
@@ -80,9 +80,9 @@ bool
 
 Indicates whether the string ends with `$needle`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: tip RETURN
 bool
@@ -94,9 +94,9 @@ bool
 
 Indicates whether the string is the same as `$needle`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 bool

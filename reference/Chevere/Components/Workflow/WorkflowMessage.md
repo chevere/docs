@@ -16,17 +16,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md) `$workflowRun`
+- *workflowRun*: [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
 
 ---
 
 ### withPriority()
 
-#### Parameters
+**Parameters:**
 
-1. int `$priority`
+- *priority*: int
 
 ::: tip RETURN
 [WorkflowMessageInterface](../../Interfaces/Workflow/WorkflowMessageInterface.md)
@@ -36,9 +36,9 @@ editLink: false
 
 ### withDelay()
 
-#### Parameters
+**Parameters:**
 
-1. int `$seconds`
+- *seconds*: int
 
 ::: tip RETURN
 [WorkflowMessageInterface](../../Interfaces/Workflow/WorkflowMessageInterface.md)
@@ -48,9 +48,9 @@ editLink: false
 
 ### withExpiration()
 
-#### Parameters
+**Parameters:**
 
-1. int `$seconds`
+- *seconds*: int
 
 ::: tip RETURN
 [WorkflowMessageInterface](../../Interfaces/Workflow/WorkflowMessageInterface.md)
@@ -94,18 +94,6 @@ int
 
 ::: tip RETURN
 int
-:::
-
----
-
-### assertTime()
-
-#### Parameters
-
-1. int `$time`
-
-::: tip RETURN
-void
 :::
 
 ---

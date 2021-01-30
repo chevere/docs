@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ---
 
@@ -88,9 +88,9 @@ editLink: false
 
 ### startsWith()
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: tip RETURN
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
@@ -100,9 +100,9 @@ editLink: false
 
 ### notStartsWith()
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: tip RETURN
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
@@ -112,9 +112,9 @@ editLink: false
 
 ### endsWith()
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: tip RETURN
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
@@ -124,9 +124,9 @@ editLink: false
 
 ### notEndsWith()
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: tip RETURN
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
@@ -136,9 +136,9 @@ editLink: false
 
 ### same()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
@@ -148,9 +148,9 @@ editLink: false
 
 ### notSame()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
@@ -160,9 +160,9 @@ editLink: false
 
 ### contains()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
@@ -172,9 +172,9 @@ editLink: false
 
 ### notContains()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)

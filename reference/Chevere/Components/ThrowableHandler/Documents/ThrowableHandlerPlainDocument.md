@@ -199,17 +199,17 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ThrowableHandlerInterface](../../../Interfaces/ThrowableHandler/ThrowableHandlerInterface.md) `$throwableHandler`
+- *throwableHandler*: [ThrowableHandlerInterface](../../../Interfaces/ThrowableHandler/ThrowableHandlerInterface.md)
 
 ---
 
 ### withVerbosity()
 
-#### Parameters
+**Parameters:**
 
-1. int `$verbosity`
+- *verbosity*: int
 
 ::: tip RETURN
 [ThrowableHandlerDocumentInterface](../../../Interfaces/ThrowableHandler/ThrowableHandlerDocumentInterface.md)
@@ -243,9 +243,9 @@ array
 
 ### getContent()
 
-#### Parameters
+**Parameters:**
 
-1. string `$content`
+- *content*: string
 
 ::: tip RETURN
 string
@@ -305,48 +305,6 @@ string
 
 ::: tip RETURN
 string
-:::
-
----
-
-### prepare()
-
-Prepare the document, useful to wrap headers, scripts, etc.
-
-#### Parameters
-
-1. string `$document`
-
-::: tip RETURN
-string
-:::
-
----
-
-### getThrowableReadCode()
-
-#### Parameters
-
-1. [ThrowableReadInterface](../../../Interfaces/ThrowableHandler/ThrowableReadInterface.md) `$throwableRead`
-
-::: tip RETURN
-string
-:::
-
----
-
-### getStackTrace()
-
-::: tip RETURN
-string
-:::
-
----
-
-### handleVerbositySections()
-
-::: tip RETURN
-void
 :::
 
 ---

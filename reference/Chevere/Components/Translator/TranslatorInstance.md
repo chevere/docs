@@ -12,9 +12,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. Gettext\TranslatorInterface `$translator`
+- *translator*: Gettext\TranslatorInterface
 
 ---
 

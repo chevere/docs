@@ -40,9 +40,9 @@ Type `integer`
 
 Return an instance with the strict flag.
 
-#### Parameters
+**Parameters:**
 
-1. bool `$strict`
+- *strict*: bool
 
 ::: tip RETURN
 self
@@ -108,9 +108,9 @@ void
 
 Same as `var()`, but checking the variable `$type`.
 
-#### Parameters
+**Parameters:**
 
-1. [TypeInterface](../Type/TypeInterface.md) `$type`
+- *type*: [TypeInterface](../Type/TypeInterface.md)
 
 ::: danger THROWS
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
@@ -132,9 +132,9 @@ void
 
 Put `$var` into the file using var_export return and strict format.
 
-#### Parameters
+**Parameters:**
 
-1. [VarStorableInterface](../VarStorable/VarStorableInterface.md) `$varStorable`
+- *varStorable*: [VarStorableInterface](../VarStorable/VarStorableInterface.md)
 
 ::: danger THROWS
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 

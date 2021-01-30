@@ -32,9 +32,9 @@ void
 
 ### withAddedRequired()
 
-#### Parameters
+**Parameters:**
 
-1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameters`
+- *...parameters*: [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
 
 ::: tip RETURN
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
@@ -44,9 +44,9 @@ void
 
 ### withAddedOptional()
 
-#### Parameters
+**Parameters:**
 
-1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameters`
+- *...parameters*: [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
 
 ::: tip RETURN
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
@@ -56,9 +56,9 @@ void
 
 ### withModify()
 
-#### Parameters
+**Parameters:**
 
-1. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `...$parameters`
+- *...parameters*: [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
 
 ::: tip RETURN
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
@@ -68,9 +68,9 @@ void
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: tip RETURN
 bool
@@ -80,9 +80,9 @@ bool
 
 ### isRequired()
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: tip RETURN
 bool
@@ -92,9 +92,9 @@ bool
 
 ### isOptional()
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: tip RETURN
 bool
@@ -104,9 +104,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
@@ -117,7 +117,7 @@ bool
 ### required()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
@@ -125,31 +125,7 @@ Ds\Set
 ### optional()
 
 ::: tip RETURN
-Ds\Set
-:::
-
----
-
-### assertNoOutOfBounds()
-
-#### Parameters
-
-1. string `$parameter`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertNoOverflow()
-
-#### Parameters
-
-1. string `$name`
-
-::: tip RETURN
-void
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

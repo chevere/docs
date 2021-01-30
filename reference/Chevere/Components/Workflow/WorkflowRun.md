@@ -16,10 +16,10 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md) `$workflow`
-2. mixed `...$namedArguments`
+- *workflow*: [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
+- *...namedArguments*: mixed
 
 ---
 
@@ -57,10 +57,10 @@ string
 
 ### withStepResponse()
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
-2. [ResponseInterface](../../Interfaces/Response/ResponseInterface.md) `$response`
+- *step*: string
+- *response*: [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 
 ::: tip RETURN
 [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
@@ -70,9 +70,9 @@ string
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 bool
@@ -82,9 +82,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 

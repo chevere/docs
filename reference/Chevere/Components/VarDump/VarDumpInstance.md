@@ -12,9 +12,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [VarDumpInterface](../../Interfaces/VarDump/VarDumpInterface.md) `$varDump`
+- *varDump*: [VarDumpInterface](../../Interfaces/VarDump/VarDumpInterface.md)
 
 ---
 

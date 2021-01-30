@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ---
 
@@ -56,9 +56,9 @@ bool
 
 ### startsWith()
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: tip RETURN
 bool
@@ -68,9 +68,9 @@ bool
 
 ### endsWith()
 
-#### Parameters
+**Parameters:**
 
-1. string `$needle`
+- *needle*: string
 
 ::: tip RETURN
 bool
@@ -80,9 +80,9 @@ bool
 
 ### same()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 bool
@@ -92,9 +92,9 @@ bool
 
 ### contains()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 bool

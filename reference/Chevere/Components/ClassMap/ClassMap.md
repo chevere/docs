@@ -32,10 +32,10 @@ void
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
-2. string `$key`
+- *className*: string
+- *key*: string
 
 ::: tip RETURN
 [ClassMapInterface](../../Interfaces/ClassMap/ClassMapInterface.md)
@@ -45,9 +45,9 @@ void
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
+- *className*: string
 
 ::: tip RETURN
 bool
@@ -57,9 +57,9 @@ bool
 
 ### hasKey()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: tip RETURN
 bool
@@ -69,9 +69,9 @@ bool
 
 ### key()
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
+- *className*: string
 
 ::: tip RETURN
 string
@@ -89,9 +89,9 @@ array
 
 ### className()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: tip RETURN
 string

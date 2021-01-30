@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [RouteInterface](../../Interfaces/Router/Route/RouteInterface.md) `$route`
+- *route*: [RouteInterface](../../Interfaces/Router/Route/RouteInterface.md)
 
 ---
 
@@ -26,26 +26,6 @@ editLink: false
 
 ::: tip RETURN
 [RouteInterface](../../Interfaces/Router/Route/RouteInterface.md)
-:::
-
----
-
-### assertExportable()
-
-::: danger THROWS
-- [RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md) 
-:::
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertMethodControllers()
-
-::: tip RETURN
-void
 :::
 
 ---

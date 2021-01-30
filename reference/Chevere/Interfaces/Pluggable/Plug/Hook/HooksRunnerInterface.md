@@ -18,10 +18,10 @@ Describes the component in charge of running the hooks queue.
 
 Run the registered hooks at the given anchor.
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2.  `$argument`
+- *anchor*: string
+- *argument*: 
 
 ::: danger THROWS
 - [InvalidArgumentException](../../../../Exceptions/Core/InvalidArgumentException.md) If the $argument type changes.

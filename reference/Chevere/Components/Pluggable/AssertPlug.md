@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
 
 ---
 
@@ -34,34 +34,6 @@ editLink: false
 
 ::: tip RETURN
 [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
-:::
-
----
-
-### assertType()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertPluggableExists()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertAnchors()
-
-#### Parameters
-
-1. [PluggableAnchors](./PluggableAnchors.md) `$anchors`
-
-::: tip RETURN
-void
 :::
 
 ---

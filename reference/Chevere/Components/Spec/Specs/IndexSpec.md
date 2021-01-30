@@ -18,17 +18,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../../Interfaces/Filesystem/DirInterface.md) `$specDir`
+- *specDir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
 
 ---
 
 ### withAddedGroup()
 
-#### Parameters
+**Parameters:**
 
-1. [GroupSpecInterface](../../../Interfaces/Spec/Specs/GroupSpecInterface.md) `$groupSpec`
+- *groupSpec*: [GroupSpecInterface](../../../Interfaces/Spec/Specs/GroupSpecInterface.md)
 
 ::: tip RETURN
 [IndexSpecInterface](../../../Interfaces/Spec/Specs/IndexSpecInterface.md)

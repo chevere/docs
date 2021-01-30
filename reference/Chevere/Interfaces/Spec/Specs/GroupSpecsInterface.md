@@ -25,9 +25,9 @@ Describes the component in charge of collecting objects implementing `GroupSpecI
 
 Return an instance with the specified `$groupSpec`.
 
-#### Parameters
+**Parameters:**
 
-1. [GroupSpecInterface](./GroupSpecInterface.md) `$groupSpec`
+- *groupSpec*: [GroupSpecInterface](./GroupSpecInterface.md)
 
 ::: tip RETURN
 self
@@ -42,9 +42,9 @@ an instance that contains the specified `$groupSpec`.
 
 Indicates whether the instance has a group spec identified by its `$groupName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$groupName`
+- *groupName*: string
 
 ::: tip RETURN
 bool
@@ -56,9 +56,9 @@ bool
 
 Returns the group spec identified by its `$groupName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$groupName`
+- *groupName*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 

@@ -18,18 +18,18 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../../Interfaces/Filesystem/DirInterface.md) `$specDir`
-2. string `$groupName`
+- *specDir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
+- *groupName*: string
 
 ---
 
 ### withAddedRoutableSpec()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md) `$routableSpec`
+- *routableSpec*: [RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md)
 
 ::: tip RETURN
 [GroupSpecInterface](../../../Interfaces/Spec/Specs/GroupSpecInterface.md)

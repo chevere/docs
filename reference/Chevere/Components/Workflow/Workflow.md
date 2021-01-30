@@ -35,9 +35,9 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ---
 
@@ -59,9 +59,9 @@ int
 
 ### withAdded()
 
-#### Parameters
+**Parameters:**
 
-1. [StepInterface](../../Interfaces/Workflow/StepInterface.md) `...$step`
+- *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 
 ::: tip RETURN
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
@@ -71,10 +71,10 @@ int
 
 ### withAddedBefore()
 
-#### Parameters
+**Parameters:**
 
-1. string `$before`
-2. [StepInterface](../../Interfaces/Workflow/StepInterface.md) `...$step`
+- *before*: string
+- *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 
 ::: tip RETURN
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
@@ -84,10 +84,10 @@ int
 
 ### withAddedAfter()
 
-#### Parameters
+**Parameters:**
 
-1. string `$after`
-2. [StepInterface](../../Interfaces/Workflow/StepInterface.md) `...$step`
+- *after*: string
+- *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 
 ::: tip RETURN
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
@@ -97,9 +97,9 @@ int
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
+- *step*: string
 
 ::: tip RETURN
 bool
@@ -109,9 +109,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
+- *step*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 
@@ -142,9 +142,9 @@ array
 
 ### hasVar()
 
-#### Parameters
+**Parameters:**
 
-1. string `$variable`
+- *variable*: string
 
 ::: tip RETURN
 bool
@@ -154,9 +154,9 @@ bool
 
 ### getVar()
 
-#### Parameters
+**Parameters:**
 
-1. string `$variable`
+- *variable*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 
@@ -171,9 +171,9 @@ array
 
 ### getExpected()
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
+- *step*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 
@@ -190,81 +190,6 @@ array
 
 ::: tip RETURN
 [Generator](https://www.php.net/manual/class.generator)
-:::
-
----
-
-### assertNoOverflow()
-
-#### Parameters
-
-1. string `$step`
-
-::: tip RETURN
-void
-:::
-
----
-
-### setParameters()
-
-#### Parameters
-
-1. string `$name`
-2. [StepInterface](../../Interfaces/Workflow/StepInterface.md) `$step`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertHasStepByName()
-
-#### Parameters
-
-1. string `$step`
-
-::: tip RETURN
-void
-:::
-
----
-
-### getPosByName()
-
-#### Parameters
-
-1. string `$step`
-
-::: tip RETURN
-int
-:::
-
----
-
-### putParameter()
-
-#### Parameters
-
-1. string `$name`
-2. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `$parameter`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertStepExists()
-
-#### Parameters
-
-1. string `$step`
-2. array `$matches`
-
-::: tip RETURN
-void
 :::
 
 ---

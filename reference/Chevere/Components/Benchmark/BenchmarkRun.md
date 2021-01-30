@@ -31,9 +31,9 @@ Type `integer`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [BenchmarkInterface](../../Interfaces/Benchmark/BenchmarkInterface.md) `$benchmark`
+- *benchmark*: [BenchmarkInterface](../../Interfaces/Benchmark/BenchmarkInterface.md)
 
 ::: danger THROWS
 - [ArgumentCountException](../../Exceptions/Core/ArgumentCountException.md) if the argument count doesn't match the callable parameters
@@ -44,9 +44,9 @@ Type `integer`
 
 ### withRequestTime()
 
-#### Parameters
+**Parameters:**
 
-1. float `$time`
+- *time*: float
 
 ::: tip RETURN
 self
@@ -56,9 +56,9 @@ self
 
 ### withTimes()
 
-#### Parameters
+**Parameters:**
 
-1. int `$times`
+- *times*: int
 
 ::: tip RETURN
 [BenchmarkRunInterface](../../Interfaces/Benchmark/BenchmarkRunInterface.md)
@@ -76,9 +76,9 @@ int
 
 ### withTimeLimit()
 
-#### Parameters
+**Parameters:**
 
-1. int `$timeLimit`
+- *timeLimit*: int
 
 ::: tip RETURN
 [BenchmarkRunInterface](../../Interfaces/Benchmark/BenchmarkRunInterface.md)
@@ -106,91 +106,6 @@ void
 
 ::: tip RETURN
 string
-:::
-
----
-
-### handleCallables()
-
-::: tip RETURN
-void
-:::
-
----
-
-### runCallableAt()
-
-#### Parameters
-
-1. int `$pos`
-
-::: tip RETURN
-void
-:::
-
----
-
-### getErrorMessage()
-
-#### Parameters
-
-1. string `$name`
-2. string `$message`
-
-::: tip RETURN
-[MessageInterface](../../Interfaces/Message/MessageInterface.md)
-:::
-
----
-
-### processCallableStats()
-
-::: tip RETURN
-void
-:::
-
----
-
-### processResults()
-
-::: tip RETURN
-void
-:::
-
----
-
-### handleAborted()
-
-::: tip RETURN
-void
-:::
-
----
-
-### getResultTitle()
-
-#### Parameters
-
-1. string `$name`
-
-::: tip RETURN
-string
-:::
-
----
-
-### canSelfKeepGoing()
-
-::: tip RETURN
-bool
-:::
-
----
-
-### canPHPKeepGoing()
-
-::: tip RETURN
-bool
 :::
 
 ---

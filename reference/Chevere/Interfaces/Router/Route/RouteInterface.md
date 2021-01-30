@@ -16,9 +16,9 @@ Describes the component in charge of defining a route.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutePathInterface](./RoutePathInterface.md) `$path`
+- *path*: [RoutePathInterface](./RoutePathInterface.md)
 
 ---
 
@@ -46,9 +46,9 @@ array
 
 Return an instance with the specified added `$routeEndpoint`.
 
-#### Parameters
+**Parameters:**
 
-1. [RouteEndpointInterface](./RouteEndpointInterface.md) `$routeEndpoint`
+- *routeEndpoint*: [RouteEndpointInterface](./RouteEndpointInterface.md)
 
 ::: danger THROWS
 - [OverflowException](../../../Exceptions/Core/OverflowException.md) 

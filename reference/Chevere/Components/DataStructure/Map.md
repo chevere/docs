@@ -20,9 +20,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedArguments`
+- *...namedArguments*: mixed
 
 ---
 
@@ -36,9 +36,9 @@ void
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedValues`
+- *...namedValues*: mixed
 
 ::: tip RETURN
 self
@@ -48,9 +48,9 @@ self
 
 ### assertHasKey()
 
-#### Parameters
+**Parameters:**
 
-1. string `...$keys`
+- *...keys*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -64,9 +64,9 @@ void
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

@@ -10,6 +10,16 @@ editLink: false
 
 ## Methods
 
+### __construct()
+
+**Parameters:**
+
+- *message*: [MessageInterface](../../../Interfaces/Message/MessageInterface.md)
+- *code*: int
+- *previous*: [Throwable](https://www.php.net/manual/class.throwable)
+
+---
+
 ### message()
 
 ::: tip RETURN

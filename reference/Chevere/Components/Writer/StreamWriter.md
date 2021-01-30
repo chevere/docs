@@ -21,17 +21,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. Psr\Http\Message\StreamInterface `$stream`
+- *stream*: Psr\Http\Message\StreamInterface
 
 ---
 
 ### write()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 void

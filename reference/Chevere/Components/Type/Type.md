@@ -135,9 +135,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$type`
+- *type*: string
 
 ---
 
@@ -167,9 +167,9 @@ string
 
 ### validate()
 
-#### Parameters
+**Parameters:**
 
-1.  `$var`
+- *var*: 
 
 ::: tip RETURN
 bool
@@ -181,66 +181,6 @@ bool
 
 ::: tip RETURN
 bool
-:::
-
----
-
-### isAbleToValidateObjects()
-
-::: tip RETURN
-bool
-:::
-
----
-
-### validateObject()
-
-#### Parameters
-
-1. object `$object`
-
-::: tip RETURN
-bool
-:::
-
----
-
-### isClassName()
-
-#### Parameters
-
-1. string `$objectClass`
-
-::: tip RETURN
-bool
-:::
-
----
-
-### isInterfaceImplemented()
-
-#### Parameters
-
-1. object `$object`
-
-::: tip RETURN
-bool
-:::
-
----
-
-### setPrimitive()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertHasPrimitive()
-
-::: tip RETURN
-void
 :::
 
 ---

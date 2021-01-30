@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$dir`
+- *dir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 
 ---
 
@@ -32,10 +32,10 @@ editLink: false
 
 ### getTranslator()
 
-#### Parameters
+**Parameters:**
 
-1. string `$locale`
-2. string `$domain`
+- *locale*: string
+- *domain*: string
 
 ::: tip RETURN
 Gettext\TranslatorInterface

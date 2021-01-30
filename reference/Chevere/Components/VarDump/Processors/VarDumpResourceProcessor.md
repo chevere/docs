@@ -26,9 +26,9 @@ Type `integer`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [VarDumperInterface](../../../Interfaces/VarDump/VarDumperInterface.md) `$varDumper`
+- *varDumper*: [VarDumperInterface](../../../Interfaces/VarDump/VarDumperInterface.md)
 
 ---
 
@@ -66,9 +66,9 @@ string
 
 ### highlightOperator()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string
@@ -78,9 +78,9 @@ string
 
 ### highlightParentheses()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string
@@ -100,14 +100,6 @@ string
 
 ::: tip RETURN
 string
-:::
-
----
-
-### assertType()
-
-::: tip RETURN
-void
 :::
 
 ---

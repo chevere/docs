@@ -16,9 +16,9 @@ editLink: false
 
 ### withWriter()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 self

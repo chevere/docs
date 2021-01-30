@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md) `$workflowRun`
+- *workflowRun*: [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
 
 ---
 
@@ -32,51 +32,12 @@ editLink: false
 
 ### run()
 
-#### Parameters
+**Parameters:**
 
-1.  `$container`
+- *container*: 
 
 ::: tip RETURN
 [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
-:::
-
----
-
-### injectDependencies()
-
-#### Parameters
-
-1. [ActionInterface](../../Interfaces/Action/ActionInterface.md) `$action`
-2.  `$container`
-
-::: tip RETURN
-void
-:::
-
----
-
-### getArguments()
-
-#### Parameters
-
-1. [StepInterface](../../Interfaces/Workflow/StepInterface.md) `$step`
-
-::: tip RETURN
-array
-:::
-
----
-
-### addStep()
-
-#### Parameters
-
-1. string `$name`
-2. [StepInterface](../../Interfaces/Workflow/StepInterface.md) `$step`
-3. [ResponseInterface](../../Interfaces/Response/ResponseInterface.md) `$response`
-
-::: tip RETURN
-void
 :::
 
 ---

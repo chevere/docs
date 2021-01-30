@@ -21,10 +21,10 @@ Describes the component in charge of defining a route endpoint spec.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Filesystem/DirInterface.md) `$specDir`
-2. [RouteEndpointInterface](../../Router/Route/RouteEndpointInterface.md) `$routeEndpoint`
+- *specDir*: [DirInterface](../../Filesystem/DirInterface.md)
+- *routeEndpoint*: [RouteEndpointInterface](../../Router/Route/RouteEndpointInterface.md)
 
 ::: danger THROWS
 - [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 

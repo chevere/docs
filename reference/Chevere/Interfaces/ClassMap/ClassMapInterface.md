@@ -25,10 +25,10 @@ Describes the component in charge of mapping classes to keys.
 
 Return an instance with the specified className mapping.
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
-2. string `$key`
+- *className*: string
+- *key*: string
 
 ::: danger THROWS
 - [ClassNotExistsException](../../Exceptions/Core/ClassNotExistsException.md) 
@@ -48,9 +48,9 @@ an instance that contains the specified className mapping.
 
 Indicates whether the instance is mapping the given class name.
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
+- *className*: string
 
 ::: tip RETURN
 bool
@@ -62,9 +62,9 @@ bool
 
 Indicates whether the instance maps the given key.
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: tip RETURN
 bool
@@ -76,9 +76,9 @@ bool
 
 Provides access to the class name mapping.
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
+- *className*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -94,9 +94,9 @@ string
 
 Provides access to the class name mapped by key.
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

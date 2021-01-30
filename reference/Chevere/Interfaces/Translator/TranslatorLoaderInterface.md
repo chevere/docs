@@ -16,9 +16,9 @@ Describes the component in charge of load php translations.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../Filesystem/DirInterface.md) `$dir`
+- *dir*: [DirInterface](../Filesystem/DirInterface.md)
 
 ::: danger THROWS
 - [DirNotExistsException](../../Exceptions/Filesystem/DirNotExistsException.md) 
@@ -36,10 +36,10 @@ Describes the component in charge of load php translations.
 
 ### getTranslator()
 
-#### Parameters
+**Parameters:**
 
-1. string `$locale`
-2. string `$domain`
+- *locale*: string
+- *domain*: string
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) If $locale doesn't exists.

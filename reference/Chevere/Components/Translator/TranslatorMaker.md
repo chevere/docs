@@ -16,10 +16,10 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$sourceDir`
-2. [DirInterface](../../Interfaces/Filesystem/DirInterface.md) `$targetDir`
+- *sourceDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+- *targetDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 
 ---
 
@@ -41,25 +41,13 @@ editLink: false
 
 ### withMakeTranslation()
 
-#### Parameters
+**Parameters:**
 
-1. string `$locale`
-2. string `$domain`
+- *locale*: string
+- *domain*: string
 
 ::: tip RETURN
 self
-:::
-
----
-
-### handleLocale()
-
-#### Parameters
-
-1. string `$locale`
-
-::: tip RETURN
-void
 :::
 
 ---

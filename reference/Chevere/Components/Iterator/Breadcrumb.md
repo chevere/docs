@@ -19,9 +19,9 @@ editLink: false
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. int `$pos`
+- *pos*: int
 
 ::: tip RETURN
 bool
@@ -47,9 +47,9 @@ int
 
 ### withAddedItem()
 
-#### Parameters
+**Parameters:**
 
-1. string `$item`
+- *item*: string
 
 ::: tip RETURN
 [BreadcrumbInterface](../../Interfaces/Iterator/BreadcrumbInterface.md)
@@ -59,9 +59,9 @@ int
 
 ### withRemovedItem()
 
-#### Parameters
+**Parameters:**
 
-1. int `$pos`
+- *pos*: int
 
 ::: tip RETURN
 [BreadcrumbInterface](../../Interfaces/Iterator/BreadcrumbInterface.md)

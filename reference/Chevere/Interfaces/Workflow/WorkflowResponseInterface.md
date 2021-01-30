@@ -22,9 +22,9 @@ Describes the component in charge of providing a workflow response.
 
 Return an instance with the specified workflow message.
 
-#### Parameters
+**Parameters:**
 
-1. [WorkflowMessageInterface](./WorkflowMessageInterface.md) `$workflowMessage`
+- *workflowMessage*: [WorkflowMessageInterface](./WorkflowMessageInterface.md)
 
 ::: tip RETURN
 self
@@ -47,9 +47,9 @@ an instance that contains the specified workflow message.
 
 Return an instance with the specified status.
 
-#### Parameters
+**Parameters:**
 
-1. int `$code`
+- *code*: int
 
 ::: tip RETURN
 self
@@ -64,9 +64,9 @@ an instance that contains the specified status.
 
 Return an instance with the specified data.
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedData`
+- *...namedData*: mixed
 
 ::: tip RETURN
 self

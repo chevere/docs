@@ -16,10 +16,10 @@ Describes the component in charge of defining a workflow run, with the arguments
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WorkflowInterface](./WorkflowInterface.md) `$workflow`
-2. mixed `...$namedArguments`
+- *workflow*: [WorkflowInterface](./WorkflowInterface.md)
+- *...namedArguments*: mixed
 
 ---
 
@@ -57,10 +57,10 @@ Provides access to the ArgumentsInterface instance.
 
 ### withStepResponse()
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
-2. [ResponseInterface](../Response/ResponseInterface.md) `$response`
+- *step*: string
+- *response*: [ResponseInterface](../Response/ResponseInterface.md)
 
 ::: danger THROWS
 - [ArgumentCountException](../../Exceptions/Core/ArgumentCountException.md) 
@@ -76,9 +76,9 @@ self
 
 Indicates whether the instance has the given `$step`. Will return `true` if step has ran.
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
+- *step*: string
 
 ::: tip RETURN
 bool
@@ -90,9 +90,9 @@ bool
 
 Provides access to the ResponseInterface instance for the given `$step`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
+- *step*: string
 
 ::: tip RETURN
 [ResponseInterface](../Response/ResponseInterface.md)

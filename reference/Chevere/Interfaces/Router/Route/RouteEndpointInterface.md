@@ -42,10 +42,10 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [MethodInterface](../../Http/MethodInterface.md) `$method`
-2. [ControllerInterface](../../Action/ControllerInterface.md) `$controller`
+- *method*: [MethodInterface](../../Http/MethodInterface.md)
+- *controller*: [ControllerInterface](../../Action/ControllerInterface.md)
 
 ---
 
@@ -73,9 +73,9 @@ Provides access to the `$controller` instance.
 
 Return an instance with the specified `$description`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$description`
+- *description*: string
 
 ::: tip RETURN
 self
@@ -90,9 +90,9 @@ an instance that contains the specified `$description`.
 
 Return an instance with the specified `$parameter` removed.
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 

@@ -20,9 +20,9 @@ Describes the component in charge of mapping plugs in the file system.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugTypeInterface](./PlugTypeInterface.md) `$type`
+- *type*: [PlugTypeInterface](./PlugTypeInterface.md)
 
 ---
 
@@ -40,9 +40,9 @@ Provides access to the plugs type instance.
 
 Return an instance with the specified added `$plug`.
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](./PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](./PlugInterface.md)
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -62,9 +62,9 @@ an instance that contains the specified added `$plug`.
 
 Indicates whether the instance has the given `$plug`.
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](./PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](./PlugInterface.md)
 
 ::: tip RETURN
 bool
@@ -76,9 +76,9 @@ bool
 
 Indicates whether the instance has plugs for the given `$pluggable`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$pluggable`
+- *pluggable*: string
 
 ::: tip RETURN
 bool
@@ -90,9 +90,9 @@ bool
 
 Return the plugs queue typed for the given `$pluggable`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$pluggable`
+- *pluggable*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

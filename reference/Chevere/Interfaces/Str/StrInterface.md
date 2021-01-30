@@ -20,9 +20,9 @@ Describes the component in charge of string manipulation.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ---
 
@@ -108,9 +108,9 @@ an instance that contains the back slashes converted to forward slashes.
 
 Return an instance with the specified `$tail` on left.
 
-#### Parameters
+**Parameters:**
 
-1. string `$tail`
+- *tail*: string
 
 ::: tip RETURN
 self
@@ -125,9 +125,9 @@ an instance that contains the specified `$tail` on left.
 
 Return an instance with the specified `$tail` on right.
 
-#### Parameters
+**Parameters:**
 
-1. string `$tail`
+- *tail*: string
 
 ::: tip RETURN
 self
@@ -142,10 +142,10 @@ an instance that contains the specified `$tail` on right.
 
 Return an instance with the specified `$search` replaced with `$replace` on the first occurrence.
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 self
@@ -160,10 +160,10 @@ an instance that contains the specified `$search` replaced with `$replace` on th
 
 Return an instance with the specified `$search` replaced with `$replace` on the last occurrence.
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 self
@@ -178,10 +178,10 @@ an instance that contains the specified `$search` replaced with `$replace` on th
 
 Return an instance with the specified `$search` replaced with `$replace` on all occurrences.
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 self

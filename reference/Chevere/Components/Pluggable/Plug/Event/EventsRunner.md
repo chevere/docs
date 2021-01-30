@@ -16,19 +16,19 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [EventQueueInterface](../../../../Interfaces/Pluggable/Plug/Event/EventQueueInterface.md) `$queue`
-2. [WritersInterface](../../../../Interfaces/Writer/WritersInterface.md) `$writers`
+- *queue*: [EventQueueInterface](../../../../Interfaces/Pluggable/Plug/Event/EventQueueInterface.md)
+- *writers*: [WritersInterface](../../../../Interfaces/Writer/WritersInterface.md)
 
 ---
 
 ### run()
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2. array `$data`
+- *anchor*: string
+- *data*: array
 
 ::: tip RETURN
 void

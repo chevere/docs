@@ -17,9 +17,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `$var`
+- *var*: mixed
 
 ---
 

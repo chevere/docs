@@ -22,9 +22,9 @@ Describes the component in charge of collecting objects implementing `RoutingDes
 
 Return an instance with the specified `$descriptor` added.
 
-#### Parameters
+**Parameters:**
 
-1. [RoutingDescriptorInterface](./RoutingDescriptorInterface.md) `$descriptor`
+- *descriptor*: [RoutingDescriptorInterface](./RoutingDescriptorInterface.md)
 
 ::: danger THROWS
 - [OverflowException](../../../Exceptions/Core/OverflowException.md) 
@@ -43,9 +43,9 @@ an instance that contains the specified `$descriptor` added.
 
 Indicates whether the instance has the given `$descriptor`.
 
-#### Parameters
+**Parameters:**
 
-1. [RoutingDescriptorInterface](./RoutingDescriptorInterface.md) `$descriptor`
+- *descriptor*: [RoutingDescriptorInterface](./RoutingDescriptorInterface.md)
 
 ::: tip RETURN
 bool
@@ -55,9 +55,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. int `$position`
+- *position*: int
 
 ::: danger THROWS
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 

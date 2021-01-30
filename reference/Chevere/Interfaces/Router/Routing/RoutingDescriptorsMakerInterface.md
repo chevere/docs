@@ -16,9 +16,9 @@ Describes the component in charge of generating routing descriptors from a given
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$repository`
+- *repository*: string
 
 ::: danger THROWS
 - [LogicException](../../../Exceptions/Core/LogicException.md) 
@@ -28,9 +28,9 @@ Describes the component in charge of generating routing descriptors from a given
 
 ### withWriter()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Writer/WriterInterface.md)
 
 ::: tip RETURN
 self
@@ -40,9 +40,9 @@ self
 
 ### withTrailingSlash()
 
-#### Parameters
+**Parameters:**
 
-1. bool `$bool`
+- *bool*: bool
 
 ::: tip RETURN
 self
@@ -52,9 +52,9 @@ self
 
 ### withDescriptorsFor()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Filesystem/DirInterface.md) `$dir`
+- *dir*: [DirInterface](../../Filesystem/DirInterface.md)
 
 ::: tip RETURN
 self

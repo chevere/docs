@@ -16,17 +16,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PathInterface](../../Interfaces/Filesystem/PathInterface.md) `$path`
+- *path*: [PathInterface](../../Interfaces/Filesystem/PathInterface.md)
 
 ---
 
 ### getChild()
 
-#### Parameters
+**Parameters:**
 
-1. string `$path`
+- *path*: string
 
 ::: tip RETURN
 [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
@@ -60,9 +60,9 @@ void
 
 ### create()
 
-#### Parameters
+**Parameters:**
 
-1. int `$mode`
+- *mode*: int
 
 ::: tip RETURN
 void
@@ -72,9 +72,9 @@ void
 
 ### createIfNotExists()
 
-#### Parameters
+**Parameters:**
 
-1. int `$mode`
+- *mode*: int
 
 ::: tip RETURN
 void
@@ -94,50 +94,6 @@ array
 
 ::: tip RETURN
 array
-:::
-
----
-
-### assertIsNotFile()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertTailDir()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertIsDir()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertCreate()
-
-#### Parameters
-
-1. int `$mode`
-
-::: tip RETURN
-void
-:::
-
----
-
-### rmdir()
-
-::: tip RETURN
-void
 :::
 
 ---

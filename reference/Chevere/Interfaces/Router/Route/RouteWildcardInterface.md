@@ -38,10 +38,10 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
-2. [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md) `$match`
+- *name*: string
+- *match*: [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md)
 
 ::: danger THROWS
 - [RouteWildcardInvalidException](../../../Exceptions/Router/Route/RouteWildcardInvalidException.md) 

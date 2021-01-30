@@ -21,9 +21,9 @@ editLink: false
 
 ### withAdded()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutingDescriptorInterface](../../../Interfaces/Router/Routing/RoutingDescriptorInterface.md) `$descriptor`
+- *descriptor*: [RoutingDescriptorInterface](../../../Interfaces/Router/Routing/RoutingDescriptorInterface.md)
 
 ::: tip RETURN
 [RoutingDescriptorsInterface](../../../Interfaces/Router/Routing/RoutingDescriptorsInterface.md)
@@ -49,9 +49,9 @@ int
 
 ### contains()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutingDescriptorInterface](../../../Interfaces/Router/Routing/RoutingDescriptorInterface.md) `$descriptor`
+- *descriptor*: [RoutingDescriptorInterface](../../../Interfaces/Router/Routing/RoutingDescriptorInterface.md)
 
 ::: tip RETURN
 bool
@@ -61,36 +61,12 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. int `$position`
+- *position*: int
 
 ::: tip RETURN
 [RoutingDescriptorInterface](../../../Interfaces/Router/Routing/RoutingDescriptorInterface.md)
-:::
-
----
-
-### assertPushPath()
-
-#### Parameters
-
-1. string `$path`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertPushName()
-
-#### Parameters
-
-1. string `$name`
-
-::: tip RETURN
-void
 :::
 
 ---

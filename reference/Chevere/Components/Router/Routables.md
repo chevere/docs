@@ -20,9 +20,9 @@ editLink: false
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableInterface](../../Interfaces/Router/RoutableInterface.md) `$routable`
+- *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
 
 ::: tip RETURN
 [RoutablesInterface](../../Interfaces/Router/RoutablesInterface.md)
@@ -32,9 +32,9 @@ editLink: false
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 bool
@@ -44,9 +44,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 

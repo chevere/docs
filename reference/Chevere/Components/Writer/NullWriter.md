@@ -21,9 +21,9 @@ editLink: false
 
 ### write()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 void

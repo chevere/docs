@@ -17,9 +17,9 @@ editLink: false
 
 ### withWorkflowMessage()
 
-#### Parameters
+**Parameters:**
 
-1. [WorkflowMessageInterface](../../Interfaces/Workflow/WorkflowMessageInterface.md) `$workflowMessage`
+- *workflowMessage*: [WorkflowMessageInterface](../../Interfaces/Workflow/WorkflowMessageInterface.md)
 
 ::: tip RETURN
 self
@@ -41,24 +41,24 @@ self
 
 ### withStatus()
 
-#### Parameters
+**Parameters:**
 
-1. int `$code`
+- *code*: int
 
 ::: tip RETURN
-self
+[ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
 
 ### withData()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedData`
+- *...namedData*: mixed
 
 ::: tip RETURN
-self
+[ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---

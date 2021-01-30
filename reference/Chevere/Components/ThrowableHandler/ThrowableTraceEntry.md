@@ -42,9 +42,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. array `$entry`
+- *entry*: array
 
 ---
 
@@ -100,38 +100,6 @@ string
 
 ::: tip RETURN
 array
-:::
-
----
-
-### assertEntry()
-
-::: tip RETURN
-void
-:::
-
----
-
-### processEntry()
-
-::: tip RETURN
-void
-:::
-
----
-
-### handleMissingClassFile()
-
-::: tip RETURN
-void
-:::
-
----
-
-### handleAnonClass()
-
-::: tip RETURN
-void
 :::
 
 ---

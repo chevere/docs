@@ -30,17 +30,17 @@ Type `integer`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [BenchmarkInterface](./BenchmarkInterface.md) `$benchmark`
+- *benchmark*: [BenchmarkInterface](./BenchmarkInterface.md)
 
 ---
 
 ### withTimes()
 
-#### Parameters
+**Parameters:**
 
-1. int `$times`
+- *times*: int
 
 ::: tip RETURN
 self
@@ -58,9 +58,9 @@ int
 
 ### withTimeLimit()
 
-#### Parameters
+**Parameters:**
 
-1. int `$timeLimit`
+- *timeLimit*: int
 
 ::: tip RETURN
 self

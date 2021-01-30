@@ -20,10 +20,10 @@ editLink: false
 
 ### withAddedRoutable()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableInterface](../../Interfaces/Router/RoutableInterface.md) `$routable`
-2. string `$group`
+- *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
+- *group*: string
 
 ::: tip RETURN
 [RouterInterface](../../Interfaces/Router/RouterInterface.md)

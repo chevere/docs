@@ -34,9 +34,9 @@ Type `integer`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PathInterface](./PathInterface.md) `$path`
+- *path*: [PathInterface](./PathInterface.md)
 
 ::: danger THROWS
 - [PathIsDirException](../../Exceptions/Filesystem/PathIsDirException.md) 
@@ -175,9 +175,9 @@ void
 
 Put contents to the file. If the file doesn't exists it will be created.
 
-#### Parameters
+**Parameters:**
 
-1. string `$contents`
+- *contents*: string
 
 ::: danger THROWS
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 

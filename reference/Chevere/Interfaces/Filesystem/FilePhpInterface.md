@@ -16,9 +16,9 @@ Describes the component in charge of interact with `.php` files.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [FileInterface](./FileInterface.md) `$file`
+- *file*: [FileInterface](./FileInterface.md)
 
 ::: danger THROWS
 - [FileNotPhpException](../../Exceptions/Filesystem/FileNotPhpException.md) 

@@ -22,9 +22,9 @@ Describes the component in charge of defining a hook plug.
 
 Executes the hook listener.
 
-#### Parameters
+**Parameters:**
 
-1.  `$argument`
+- *argument*: 
 
 ::: tip RETURN
 void

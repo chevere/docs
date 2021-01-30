@@ -38,9 +38,9 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ---
 
@@ -58,9 +58,9 @@ string
 
 Return an instance with the specified `$step`.
 
-#### Parameters
+**Parameters:**
 
-1. [StepInterface](./StepInterface.md) `...$step`
+- *...step*: [StepInterface](./StepInterface.md)
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -79,10 +79,10 @@ an instance that contains the specified `$step`.
 
 Return an instance with the specified `$step` added before `$before`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$before`
-2. [StepInterface](./StepInterface.md) `...$step`
+- *before*: string
+- *...step*: [StepInterface](./StepInterface.md)
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -101,10 +101,10 @@ an instance that contains the specified `$step` added before `$before`.
 
 Return an instance with the specified `$step` added after `$after`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$after`
-2. [StepInterface](./StepInterface.md) `...$step`
+- *after*: string
+- *...step*: [StepInterface](./StepInterface.md)
 
 ::: danger THROWS
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
@@ -121,9 +121,9 @@ an instance that contains the specified `$step` added after `$after`.
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
+- *step*: string
 
 ::: tip RETURN
 bool
@@ -133,9 +133,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
+- *step*: string
 
 ::: tip RETURN
 [StepInterface](./StepInterface.md)
@@ -161,9 +161,9 @@ array
 
 ### hasVar()
 
-#### Parameters
+**Parameters:**
 
-1. string `$var`
+- *var*: string
 
 ::: tip RETURN
 bool
@@ -175,9 +175,9 @@ bool
 
 Provides access to the `$var` mapping for job variables.
 
-#### Parameters
+**Parameters:**
 
-1. string `$var`
+- *var*: string
 
 ::: tip RETURN
 array
@@ -201,9 +201,9 @@ return ['step', 'var'];
 
 Provides access to the expected return arguments for the given `$step`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$step`
+- *step*: string
 
 ::: tip RETURN
 array

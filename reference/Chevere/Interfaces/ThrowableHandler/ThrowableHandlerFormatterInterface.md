@@ -68,9 +68,9 @@ string
 
 Returns `$value` formatted as wrapped link.
 
-#### Parameters
+**Parameters:**
 
-1. string `$value`
+- *value*: string
 
 ::: tip RETURN
 string
@@ -82,9 +82,9 @@ string
 
 Returns `$value` formatted as section title.
 
-#### Parameters
+**Parameters:**
 
-1. string `$value`
+- *value*: string
 
 ::: tip RETURN
 string
@@ -96,9 +96,9 @@ string
 
 Returns `$value` formatted as title.
 
-#### Parameters
+**Parameters:**
 
-1. string `$value`
+- *value*: string
 
 ::: tip RETURN
 string

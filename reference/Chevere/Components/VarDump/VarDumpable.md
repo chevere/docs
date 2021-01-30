@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1.  `$var`
+- *var*: 
 
 ---
 
@@ -42,14 +42,6 @@ string
 
 ::: tip RETURN
 string
-:::
-
----
-
-### assertSetProcessorName()
-
-::: tip RETURN
-void
 :::
 
 ---

@@ -16,9 +16,9 @@ Describes the component in charge of handling dumpable variables.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1.  `$var`
+- *var*: 
 
 ::: danger THROWS
 - [LogicException](../../Exceptions/Core/LogicException.md) if unable to process `$var` type.

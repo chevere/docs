@@ -16,10 +16,10 @@ editLink: false
 
 ### highlight()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
-2. string `$string`
+- *key*: string
+- *string*: string
 
 ::: tip RETURN
 string
@@ -29,9 +29,9 @@ string
 
 ### emphasis()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string
@@ -41,9 +41,9 @@ string
 
 ### indent()
 
-#### Parameters
+**Parameters:**
 
-1. int `$indent`
+- *indent*: int
 
 ::: tip RETURN
 string
@@ -53,9 +53,9 @@ string
 
 ### filterEncodedChars()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string

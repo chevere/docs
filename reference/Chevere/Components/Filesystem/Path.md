@@ -17,9 +17,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$absolute`
+- *absolute*: string
 
 ---
 
@@ -65,9 +65,9 @@ bool
 
 ### chmod()
 
-#### Parameters
+**Parameters:**
 
-1. int `$mode`
+- *mode*: int
 
 ::: tip RETURN
 void
@@ -93,20 +93,12 @@ bool
 
 ### getChild()
 
-#### Parameters
+**Parameters:**
 
-1. string `$path`
+- *path*: string
 
 ::: tip RETURN
 [PathInterface](../../Interfaces/Filesystem/PathInterface.md)
-:::
-
----
-
-### clearStatCache()
-
-::: tip RETURN
-void
 :::
 
 ---

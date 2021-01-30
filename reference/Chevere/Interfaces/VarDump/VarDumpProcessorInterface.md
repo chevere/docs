@@ -26,9 +26,9 @@ Type `integer`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [VarDumperInterface](./VarDumperInterface.md) `$varDumper`
+- *varDumper*: [VarDumperInterface](./VarDumperInterface.md)
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -70,9 +70,9 @@ string
 
 Highlights the given operator `$string`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string
@@ -84,9 +84,9 @@ string
 
 Highlights and wraps in parentheses the given `$string`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string

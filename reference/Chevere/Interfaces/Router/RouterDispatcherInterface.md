@@ -16,9 +16,9 @@ Describes the component in charge of dispatch router.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. FastRoute\RouteCollector `$routeCollector`
+- *routeCollector*: FastRoute\RouteCollector
 
 ---
 
@@ -26,10 +26,10 @@ Describes the component in charge of dispatch router.
 
 Dispatches against the provided HTTP method verb and URI.
 
-#### Parameters
+**Parameters:**
 
-1. string `$httpMethod`
-2. string `$uri`
+- *httpMethod*: string
+- *uri*: string
 
 ::: danger THROWS
 - [RouteNotFoundException](../../Exceptions/Router/RouteNotFoundException.md) 

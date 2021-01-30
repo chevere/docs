@@ -37,9 +37,9 @@ string
 
 ### withAdded()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](../../../../Interfaces/Pluggable/PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](../../../../Interfaces/Pluggable/PlugInterface.md)
 
 ::: tip RETURN
 [PlugsQueueTypedInterface](../../../../Interfaces/Pluggable/PlugsQueueTypedInterface.md)

@@ -102,10 +102,10 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. array `$trace`
-2. [ThrowableHandlerFormatterInterface](./ThrowableHandlerFormatterInterface.md) `$formatter`
+- *trace*: array
+- *formatter*: [ThrowableHandlerFormatterInterface](./ThrowableHandlerFormatterInterface.md)
 
 ---
 

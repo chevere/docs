@@ -17,17 +17,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md) `$plugType`
+- *plugType*: [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
 
 ---
 
 ### withAdded()
 
-#### Parameters
+**Parameters:**
 
-1. [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md) `$plug`
+- *plug*: [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
 
 ::: tip RETURN
 [PlugsQueueInterface](../../Interfaces/Pluggable/PlugsQueueInterface.md)
@@ -47,30 +47,6 @@ editLink: false
 
 ::: tip RETURN
 array
-:::
-
----
-
-### assertUnique()
-
-#### Parameters
-
-1. string `$plugName`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertInterface()
-
-#### Parameters
-
-1. [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md) `$plug`
-
-::: tip RETURN
-void
 :::
 
 ---

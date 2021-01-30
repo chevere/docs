@@ -16,17 +16,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ControllerInterface](../../Interfaces/Action/ControllerInterface.md) `$controller`
+- *controller*: [ControllerInterface](../../Interfaces/Action/ControllerInterface.md)
 
 ---
 
 ### execute()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$arguments`
+- *...arguments*: mixed
 
 ::: tip RETURN
 [ActionExecutedInterface](../../Interfaces/Action/ActionExecutedInterface.md)

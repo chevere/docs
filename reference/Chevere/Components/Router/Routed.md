@@ -16,10 +16,10 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ControllerNameInterface](../../Interfaces/Action/ControllerNameInterface.md) `$controllerName`
-2. array `$arguments`
+- *controllerName*: [ControllerNameInterface](../../Interfaces/Action/ControllerNameInterface.md)
+- *arguments*: array
 
 ---
 

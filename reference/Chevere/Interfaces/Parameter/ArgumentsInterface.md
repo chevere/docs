@@ -20,10 +20,10 @@ Describes the component in charge of defining a set of parameters with arguments
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ParametersInterface](./ParametersInterface.md) `$parameters`
-2. mixed `...$namedArguments`
+- *parameters*: [ParametersInterface](./ParametersInterface.md)
+- *...namedArguments*: mixed
 
 ::: danger THROWS
 - ⚠ Unknown type `ArgumentRequiredException` declared in `@throws` tag`
@@ -63,10 +63,10 @@ return [
 
 Return an instance with the specified controller argument.
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
-2.  `$value`
+- *name*: string
+- *value*: 
 
 ::: danger THROWS
 - ⚠ Unknown type `ArgumentValueRegexMatchException` declared in `@throws` tag`
@@ -86,9 +86,9 @@ an instance that contains the specified controller argument.
 
 Indicates whether the instance has an argument for the parameter `$name`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 bool
@@ -100,9 +100,9 @@ bool
 
 Provides access to the argument value for the parameter `$name`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -118,9 +118,9 @@ void
 
 Provides access to the argument value for the parameter `$boolean` type-hinted as boolean.
 
-#### Parameters
+**Parameters:**
 
-1. string `$boolean`
+- *boolean*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -137,9 +137,9 @@ bool
 
 Provides access to the argument value for the parameter `$string` type-hinted as string.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -156,9 +156,9 @@ string
 
 Provides access to the argument value for the parameter `$integer` type-hinted as integer.
 
-#### Parameters
+**Parameters:**
 
-1. string `$integer`
+- *integer*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -175,9 +175,9 @@ int
 
 Provides access to the argument value for the parameter `$float` type-hinted as float.
 
-#### Parameters
+**Parameters:**
 
-1. string `$float`
+- *float*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -194,9 +194,9 @@ float
 
 Provides access to the argument value for the parameter `$array` type-hinted as array.
 
-#### Parameters
+**Parameters:**
 
-1. string `$array`
+- *array*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

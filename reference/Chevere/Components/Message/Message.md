@@ -57,9 +57,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$template`
+- *template*: string
 
 ---
 
@@ -113,10 +113,10 @@ string
 
 ### strtr()
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
@@ -126,10 +126,10 @@ string
 
 ### emphasis()
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
@@ -139,10 +139,10 @@ string
 
 ### strong()
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
@@ -152,10 +152,10 @@ string
 
 ### underline()
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
@@ -165,24 +165,10 @@ string
 
 ### code()
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
-
-::: tip RETURN
-[MessageInterface](../../Interfaces/Message/MessageInterface.md)
-:::
-
----
-
-### put()
-
-#### Parameters
-
-1. string `$format`
-2. string `$search`
-3. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)

@@ -20,17 +20,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$repository`
+- *repository*: string
 
 ---
 
 ### withTrailingSlash()
 
-#### Parameters
+**Parameters:**
 
-1. bool `$bool`
+- *bool*: bool
 
 ::: tip RETURN
 self
@@ -40,9 +40,9 @@ self
 
 ### withDescriptorsFor()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../../Interfaces/Filesystem/DirInterface.md) `$dir`
+- *dir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
 
 ::: tip RETURN
 self
@@ -82,36 +82,11 @@ bool
 
 ---
 
-### iterate()
-
-#### Parameters
-
-1. [RecursiveIteratorIterator](https://www.php.net/manual/class.recursiveiteratoriterator) `$iterator`
-
-::: tip RETURN
-void
-:::
-
----
-
-### getPathForParameters()
-
-#### Parameters
-
-1. [StrInterface](../../../Interfaces/Str/StrInterface.md) `$path`
-2. array `$parameters`
-
-::: tip RETURN
-string
-:::
-
----
-
 ### withWriter()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 self

@@ -21,10 +21,10 @@ Describes the component in charge of defining the group spec.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../Filesystem/DirInterface.md) `$specDir`
-2. string `$group`
+- *specDir*: [DirInterface](../../Filesystem/DirInterface.md)
+- *group*: string
 
 ---
 
@@ -32,9 +32,9 @@ Describes the component in charge of defining the group spec.
 
 Return an instance with the specified `$routableSpec`.
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableSpecInterface](./RoutableSpecInterface.md) `$routableSpec`
+- *routableSpec*: [RoutableSpecInterface](./RoutableSpecInterface.md)
 
 ::: tip RETURN
 self

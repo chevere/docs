@@ -45,9 +45,9 @@ Defines context parameters.
 
 ### withContextArguments()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedArguments`
+- *...namedArguments*: mixed
 
 ::: tip RETURN
 self
@@ -109,9 +109,9 @@ Defines expected response data parameters when executing `run` method.
 
 Method called when running the action.
 
-#### Parameters
+**Parameters:**
 
-1. [ArgumentsInterface](../Parameter/ArgumentsInterface.md) `$arguments`
+- *arguments*: [ArgumentsInterface](../Parameter/ArgumentsInterface.md)
 
 ::: tip RETURN
 [ResponseInterface](../Response/ResponseInterface.md)
@@ -141,9 +141,9 @@ Provides access to the expected response data parameters.
 
 ### getArguments()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedArguments`
+- *...namedArguments*: mixed
 
 ::: tip RETURN
 [ArgumentsInterface](../Parameter/ArgumentsInterface.md)
@@ -155,9 +155,9 @@ Provides access to the expected response data parameters.
 
 Retrieves a new success response with type-hinted data.
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedData`
+- *...namedData*: mixed
 
 ::: tip RETURN
 [ResponseInterface](../Response/ResponseInterface.md)

@@ -16,10 +16,10 @@ Describes the component in charge of make a translator.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../Filesystem/DirInterface.md) `$sourceDir`
-2. [DirInterface](../Filesystem/DirInterface.md) `$targetDir`
+- *sourceDir*: [DirInterface](../Filesystem/DirInterface.md)
+- *targetDir*: [DirInterface](../Filesystem/DirInterface.md)
 
 ---
 
@@ -41,10 +41,10 @@ Describes the component in charge of make a translator.
 
 ### withMakeTranslation()
 
-#### Parameters
+**Parameters:**
 
-1. string `$locale`
-2. string `$domain`
+- *locale*: string
+- *domain*: string
 
 ::: tip RETURN
 self

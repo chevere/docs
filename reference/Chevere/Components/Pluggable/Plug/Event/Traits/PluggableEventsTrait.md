@@ -12,9 +12,9 @@ editLink: false
 
 ### withEventsRunner()
 
-#### Parameters
+**Parameters:**
 
-1. [EventsRunnerInterface](../../../../../Interfaces/Pluggable/Plug/Event/EventsRunnerInterface.md) `$eventsRunner`
+- *eventsRunner*: [EventsRunnerInterface](../../../../../Interfaces/Pluggable/Plug/Event/EventsRunnerInterface.md)
 
 ::: tip RETURN
 [PluggableEventsInterface](../../../../../Interfaces/Pluggable/Plug/Event/PluggableEventsInterface.md)
@@ -24,10 +24,10 @@ editLink: false
 
 ### event()
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2. array `$data`
+- *anchor*: string
+- *data*: array
 
 ::: tip RETURN
 void

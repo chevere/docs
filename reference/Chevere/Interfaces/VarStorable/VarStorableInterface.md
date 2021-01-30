@@ -16,9 +16,9 @@ Describes the component in charge of handling storable variables.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1.  `$var`
+- *var*: 
 
 ::: danger THROWS
 - [NotVarStorableException](../../Exceptions/VarStorable/NotVarStorableException.md) if `$var` can't be exported.

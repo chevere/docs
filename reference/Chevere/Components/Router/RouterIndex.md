@@ -21,10 +21,10 @@ editLink: false
 
 ### withAddedRoutable()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableInterface](../../Interfaces/Router/RoutableInterface.md) `$routable`
-2. string `$group`
+- *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
+- *group*: string
 
 ::: tip RETURN
 [RouterIndexInterface](../../Interfaces/Router/RouterIndexInterface.md)
@@ -34,9 +34,9 @@ editLink: false
 
 ### hasRouteName()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 bool
@@ -46,9 +46,9 @@ bool
 
 ### getRouteIdentifier()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 
@@ -63,9 +63,9 @@ bool
 
 ### hasGroup()
 
-#### Parameters
+**Parameters:**
 
-1. string `$group`
+- *group*: string
 
 ::: tip RETURN
 bool
@@ -75,9 +75,9 @@ bool
 
 ### getGroupRouteNames()
 
-#### Parameters
+**Parameters:**
 
-1. string `$group`
+- *group*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 
@@ -92,9 +92,9 @@ array
 
 ### getRouteGroup()
 
-#### Parameters
+**Parameters:**
 
-1. string `$group`
+- *group*: string
 
 ::: danger THROWS
 - [TypeException](../../Exceptions/Core/TypeException.md) 

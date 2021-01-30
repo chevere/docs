@@ -22,10 +22,10 @@ Describes the component in charge of indexing named routes.
 
 Return an instance with the specified `$routable` added.
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableInterface](./RoutableInterface.md) `$routable`
-2. string `$group`
+- *routable*: [RoutableInterface](./RoutableInterface.md)
+- *group*: string
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -45,9 +45,9 @@ an instance that contains the specified `$routable` added.
 
 Indicates whether the instance has a route identified by its `$name`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 bool
@@ -59,9 +59,9 @@ bool
 
 Returns the route identifier for the given route `$name`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -77,9 +77,9 @@ Returns the route identifier for the given route `$name`.
 
 Indicates whether the instance has routes for the given `$group`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$group`
+- *group*: string
 
 ::: tip RETURN
 bool
@@ -91,9 +91,9 @@ bool
 
 Returns an array containing the route names for the given `$group`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$group`
+- *group*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
@@ -109,9 +109,9 @@ array
 
 Returns the route group for the route identified by its `$name`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$group`
+- *group*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

@@ -99,10 +99,10 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. array `$trace`
-2. [ThrowableHandlerFormatterInterface](../../Interfaces/ThrowableHandler/ThrowableHandlerFormatterInterface.md) `$formatter`
+- *trace*: array
+- *formatter*: [ThrowableHandlerFormatterInterface](../../Interfaces/ThrowableHandler/ThrowableHandlerFormatterInterface.md)
 
 ---
 
@@ -118,43 +118,6 @@ array
 
 ::: tip RETURN
 string
-:::
-
----
-
-### getTrTable()
-
-#### Parameters
-
-1. int `$pos`
-2. [ThrowableTraceEntryInterface](../../Interfaces/ThrowableHandler/ThrowableTraceEntryInterface.md) `$entry`
-
-::: tip RETURN
-array
-:::
-
----
-
-### wrapStringHr()
-
-#### Parameters
-
-1. string `$text`
-
-::: tip RETURN
-string
-:::
-
----
-
-### glueString()
-
-#### Parameters
-
-1. array `$array`
-
-::: tip RETURN
-void
 :::
 
 ---

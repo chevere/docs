@@ -16,10 +16,10 @@ editLink: false
 
 ### run()
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
-2.  `$argument`
+- *anchor*: string
+- *argument*: 
 
 ::: tip RETURN
 void

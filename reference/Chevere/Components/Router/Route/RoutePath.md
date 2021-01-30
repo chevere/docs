@@ -17,9 +17,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$route`
+- *route*: string
 
 ---
 
@@ -51,14 +51,6 @@ string
 
 ::: tip RETURN
 string
-:::
-
----
-
-### setName()
-
-::: tip RETURN
-void
 :::
 
 ---

@@ -20,9 +20,9 @@ Describes the component in charge of interact with filesystem paths.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$absolute`
+- *absolute*: string
 
 ::: danger THROWS
 - [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md) 
@@ -89,9 +89,9 @@ bool
 
 Wrapper for `\chmod`.
 
-#### Parameters
+**Parameters:**
 
-1. int `$mode`
+- *mode*: int
 
 ::: danger THROWS
 - [PathIsNotDirectoryException](../../Exceptions/Filesystem/PathIsNotDirectoryException.md) 
@@ -136,9 +136,9 @@ bool
 
 Get a child instance for the target child path.
 
-#### Parameters
+**Parameters:**
 
-1. string `$path`
+- *path*: string
 
 ::: danger THROWS
 - [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md) 

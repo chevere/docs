@@ -59,9 +59,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$template`
+- *template*: string
 
 ---
 
@@ -119,10 +119,10 @@ string
 
 Return an instance with the specified string translation.
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 self
@@ -137,10 +137,10 @@ an instance that contains the specified string translation.
 
 Return an instance with the specified `$search` replaced with `$replace` emphasis tag.
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 self
@@ -155,10 +155,10 @@ an instance that contains the specified `$search` replaced with `$replace` empha
 
 Return an instance with the specified `$search` replaced with `$replace` as strong tag.
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 self
@@ -173,10 +173,10 @@ an instance that contains the specified `$search` replaced with `$replace` as st
 
 Return an instance with the specified underline.
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 self
@@ -191,10 +191,10 @@ an instance that contains the specified underline.
 
 Return an instance with the specified `$search` replaced with `$replace` as code tag.
 
-#### Parameters
+**Parameters:**
 
-1. string `$search`
-2. string `$replace`
+- *search*: string
+- *replace*: string
 
 ::: tip RETURN
 self

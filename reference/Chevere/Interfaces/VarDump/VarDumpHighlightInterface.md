@@ -44,9 +44,9 @@ array (
 
 Constructs a highlight instance specified by `$key`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: danger THROWS
 - [OutOfRangeException](../../Exceptions/Core/OutOfRangeException.md) 
@@ -58,9 +58,9 @@ Constructs a highlight instance specified by `$key`.
 
 Highlights `$string`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string

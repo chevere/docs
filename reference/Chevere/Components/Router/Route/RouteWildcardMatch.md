@@ -17,9 +17,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ---
 
@@ -40,14 +40,6 @@ string
 ---
 
 ### assertRegexNoCapture()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertFormat()
 
 ::: tip RETURN
 void

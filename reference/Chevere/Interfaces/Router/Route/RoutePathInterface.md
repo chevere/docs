@@ -20,9 +20,9 @@ Describes the component in charge of handling route paths.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$route`
+- *route*: string
 
 ::: danger THROWS
 - [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 

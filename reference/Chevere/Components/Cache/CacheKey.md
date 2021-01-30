@@ -27,9 +27,9 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ---
 
@@ -37,14 +37,6 @@ Type `string`
 
 ::: tip RETURN
 string
-:::
-
----
-
-### assertKey()
-
-::: tip RETURN
-void
 :::
 
 ---

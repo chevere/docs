@@ -17,10 +17,10 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$repository`
-2. string `$path`
+- *repository*: string
+- *path*: string
 
 ---
 

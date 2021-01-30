@@ -17,9 +17,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [TypeInterface](../../Interfaces/Type/TypeInterface.md) `$type`
+- *type*: [TypeInterface](../../Interfaces/Type/TypeInterface.md)
 
 ---
 
@@ -33,9 +33,9 @@ void
 
 ### withDescription()
 
-#### Parameters
+**Parameters:**
 
-1. string `$description`
+- *description*: string
 
 ::: tip RETURN
 self
@@ -45,9 +45,9 @@ self
 
 ### withAddedAttribute()
 
-#### Parameters
+**Parameters:**
 
-1. string `...$attributes`
+- *...attributes*: string
 
 ::: tip RETURN
 self
@@ -57,9 +57,9 @@ self
 
 ### withRemovedAttribute()
 
-#### Parameters
+**Parameters:**
 
-1. string `...$attribute`
+- *...attribute*: string
 
 ::: tip RETURN
 [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
@@ -85,9 +85,9 @@ string
 
 ### hasAttribute()
 
-#### Parameters
+**Parameters:**
 
-1. string `...$attribute`
+- *...attribute*: string
 
 ::: tip RETURN
 bool
@@ -98,7 +98,7 @@ bool
 ### attributes()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

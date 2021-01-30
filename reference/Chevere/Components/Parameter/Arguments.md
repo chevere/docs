@@ -17,10 +17,10 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md) `$parameters`
-2. mixed `...$namedArguments`
+- *parameters*: [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
+- *...namedArguments*: mixed
 
 ---
 
@@ -42,10 +42,10 @@ array
 
 ### withArgument()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
-2.  `$value`
+- *name*: string
+- *value*: 
 
 ::: tip RETURN
 [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
@@ -55,9 +55,9 @@ array
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 bool
@@ -67,9 +67,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$name`
+- *name*: string
 
 ::: tip RETURN
 void
@@ -79,9 +79,9 @@ void
 
 ### getBoolean()
 
-#### Parameters
+**Parameters:**
 
-1. string `$boolean`
+- *boolean*: string
 
 ::: tip RETURN
 bool
@@ -91,9 +91,9 @@ bool
 
 ### getString()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 string
@@ -103,9 +103,9 @@ string
 
 ### getInteger()
 
-#### Parameters
+**Parameters:**
 
-1. string `$integer`
+- *integer*: string
 
 ::: tip RETURN
 int
@@ -115,9 +115,9 @@ int
 
 ### getFloat()
 
-#### Parameters
+**Parameters:**
 
-1. string `$float`
+- *float*: string
 
 ::: tip RETURN
 float
@@ -127,93 +127,12 @@ float
 
 ### getArray()
 
-#### Parameters
+**Parameters:**
 
-1. string `$array`
+- *array*: string
 
 ::: tip RETURN
 array
-:::
-
----
-
-### assertCount()
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertType()
-
-#### Parameters
-
-1. string `$name`
-2.  `$value`
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertHasParameter()
-
-#### Parameters
-
-1. string `$name`
-
-::: danger THROWS
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
-:::
-
-::: tip RETURN
-void
-:::
-
----
-
-### assertStringArgument()
-
-#### Parameters
-
-1. string `$name`
-2. [StringParameterInterface](../../Interfaces/Parameter/StringParameterInterface.md) `$parameter`
-3. string `$argument`
-
-::: danger THROWS
-- [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
-:::
-
-::: tip RETURN
-void
-:::
-
----
-
-### handleParameter()
-
-#### Parameters
-
-1. string `$name`
-2. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `$parameter`
-
-::: tip RETURN
-void
-:::
-
----
-
-### handleParameterDefault()
-
-#### Parameters
-
-1. string `$name`
-2. [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md) `$parameter`
-
-::: tip RETURN
-void
 :::
 
 ---

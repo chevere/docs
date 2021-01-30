@@ -20,9 +20,9 @@ editLink: false
 
 ### with()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
@@ -32,9 +32,9 @@ editLink: false
 
 ### withOut()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
@@ -44,9 +44,9 @@ editLink: false
 
 ### withError()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
@@ -56,9 +56,9 @@ editLink: false
 
 ### withDebug()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
@@ -68,9 +68,9 @@ editLink: false
 
 ### withLog()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)

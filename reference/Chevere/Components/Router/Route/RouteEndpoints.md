@@ -20,9 +20,9 @@ editLink: false
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md) `$routeEndpoint`
+- *routeEndpoint*: [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)
 
 ::: tip RETURN
 [RouteEndpointsInterface](../../../Interfaces/Router/Route/RouteEndpointsInterface.md)
@@ -32,9 +32,9 @@ editLink: false
 
 ### hasKey()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: tip RETURN
 bool
@@ -44,9 +44,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: tip RETURN
 [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)

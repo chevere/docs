@@ -37,10 +37,10 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [MethodInterface](../../../Interfaces/Http/MethodInterface.md) `$method`
-2. [ControllerInterface](../../../Interfaces/Action/ControllerInterface.md) `$controller`
+- *method*: [MethodInterface](../../../Interfaces/Http/MethodInterface.md)
+- *controller*: [ControllerInterface](../../../Interfaces/Action/ControllerInterface.md)
 
 ---
 
@@ -62,9 +62,9 @@ array (
 
 ### withDescription()
 
-#### Parameters
+**Parameters:**
 
-1. string `$description`
+- *description*: string
 
 ::: tip RETURN
 [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)
@@ -82,9 +82,9 @@ string
 
 ### withoutParameter()
 
-#### Parameters
+**Parameters:**
 
-1. string `$parameter`
+- *parameter*: string
 
 ::: tip RETURN
 [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)

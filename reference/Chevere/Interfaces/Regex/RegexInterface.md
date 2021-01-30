@@ -38,9 +38,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$pattern`
+- *pattern*: string
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -72,9 +72,9 @@ string
 
 Matches string.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: danger THROWS
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
@@ -90,9 +90,9 @@ array
 
 Matches all string.
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: danger THROWS
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 

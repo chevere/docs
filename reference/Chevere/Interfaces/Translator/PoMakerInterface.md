@@ -16,18 +16,18 @@ Describes the component in charge of providing a `.po` maker.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$locale`
-2. string `$domain`
+- *locale*: string
+- *domain*: string
 
 ---
 
 ### withScanFor()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../Filesystem/DirInterface.md) `$sourceDir`
+- *sourceDir*: [DirInterface](../Filesystem/DirInterface.md)
 
 ::: danger THROWS
 - [DirNotExistsException](../../Exceptions/Filesystem/DirNotExistsException.md) 
@@ -43,9 +43,9 @@ self
 
 ### make()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../Filesystem/DirInterface.md) `$targetDir`
+- *targetDir*: [DirInterface](../Filesystem/DirInterface.md)
 
 ::: danger THROWS
 - [BadMethodCallException](https://www.php.net/manual/class.badmethodcallexception) If called without scanner.

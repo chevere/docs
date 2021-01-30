@@ -42,9 +42,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. array `$entry`
+- *entry*: array
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 

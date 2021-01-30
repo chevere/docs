@@ -16,9 +16,9 @@ Describes the component in charge of handling throwables.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ThrowableReadInterface](./ThrowableReadInterface.md) `$throwableRead`
+- *throwableRead*: [ThrowableReadInterface](./ThrowableReadInterface.md)
 
 ::: danger THROWS
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
@@ -30,9 +30,9 @@ Describes the component in charge of handling throwables.
 
 Return an instance with the specified `$debug` flag.
 
-#### Parameters
+**Parameters:**
 
-1. bool `$isDebug`
+- *isDebug*: bool
 
 ::: tip RETURN
 self

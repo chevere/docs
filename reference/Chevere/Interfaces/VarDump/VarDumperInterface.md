@@ -99,11 +99,11 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../Writer/WriterInterface.md) `$writer`
-2. [VarDumpFormatterInterface](./VarDumpFormatterInterface.md) `$formatter`
-3. [VarDumpableInterface](./VarDumpableInterface.md) `$dumpable`
+- *writer*: [WriterInterface](../Writer/WriterInterface.md)
+- *formatter*: [VarDumpFormatterInterface](./VarDumpFormatterInterface.md)
+- *dumpable*: [VarDumpableInterface](./VarDumpableInterface.md)
 
 ---
 
@@ -141,9 +141,9 @@ Provides access to the `$dumpable` instance.
 
 Return an instance with the specified `$indent`.
 
-#### Parameters
+**Parameters:**
 
-1. int `$indent`
+- *indent*: int
 
 ::: tip RETURN
 self
@@ -178,9 +178,9 @@ string
 
 Return an instance with the specified `$depth`.
 
-#### Parameters
+**Parameters:**
 
-1. int `$depth`
+- *depth*: int
 
 ::: tip RETURN
 self
@@ -205,9 +205,9 @@ int
 
 Return an instance with the specified `$known` object IDs.
 
-#### Parameters
+**Parameters:**
 
-1. Ds\Set `$known`
+- *known*: [Ds\Set](https://www.php.net/manual/class.ds\set)
 
 ::: tip RETURN
 self
@@ -223,7 +223,7 @@ an instance that contains the specified `$known` object IDs.
 Provides access to the known object ids.
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

@@ -24,9 +24,9 @@ Describe a general purpose iterator companion.
 
 Indicates whether the instance has the given position.
 
-#### Parameters
+**Parameters:**
 
-1. int `$pos`
+- *pos*: int
 
 ::: tip RETURN
 bool
@@ -48,9 +48,9 @@ int
 
 Return an instance with the specified added item.
 
-#### Parameters
+**Parameters:**
 
-1. string `$item`
+- *item*: string
 
 ::: tip RETURN
 self
@@ -65,9 +65,9 @@ an instance that contains the specified added item.
 
 Return an instance with the specified pos removed.
 
-#### Parameters
+**Parameters:**
 
-1. int `$pos`
+- *pos*: int
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

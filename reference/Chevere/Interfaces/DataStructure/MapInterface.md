@@ -23,17 +23,17 @@ Describes the component in charge of providing an immutable Ds\Map interface.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedArguments`
+- *...namedArguments*: mixed
 
 ---
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `...$namedValues`
+- *...namedValues*: mixed
 
 ::: tip RETURN
 self
@@ -43,9 +43,9 @@ self
 
 ### assertHasKey()
 
-#### Parameters
+**Parameters:**
 
-1. string `...$keys`
+- *...keys*: string
 
 ::: tip RETURN
 void
@@ -55,9 +55,9 @@ void
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$key`
+- *key*: string
 
 ::: tip RETURN
 void

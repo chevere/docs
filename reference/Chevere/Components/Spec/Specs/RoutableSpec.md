@@ -18,11 +18,11 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [DirInterface](../../../Interfaces/Filesystem/DirInterface.md) `$specDir`
-2. [RoutableInterface](../../../Interfaces/Router/RoutableInterface.md) `$routable`
-3. string `$repository`
+- *specDir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
+- *routable*: [RoutableInterface](../../../Interfaces/Router/RoutableInterface.md)
+- *repository*: string
 
 ---
 

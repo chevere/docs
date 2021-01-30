@@ -16,18 +16,18 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md) `$formatter`
-2. [VarDumpOutputterInterface](../../Interfaces/VarDump/VarDumpOutputterInterface.md) `$outputter`
+- *formatter*: [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md)
+- *outputter*: [VarDumpOutputterInterface](../../Interfaces/VarDump/VarDumpOutputterInterface.md)
 
 ---
 
 ### withVars()
 
-#### Parameters
+**Parameters:**
 
-1.  `...$vars`
+- *...vars*: 
 
 ::: tip RETURN
 [VarDumpInterface](../../Interfaces/VarDump/VarDumpInterface.md)
@@ -37,9 +37,9 @@ editLink: false
 
 ### withShift()
 
-#### Parameters
+**Parameters:**
 
-1. int `$shift`
+- *shift*: int
 
 ::: tip RETURN
 [VarDumpInterface](../../Interfaces/VarDump/VarDumpInterface.md)
@@ -49,9 +49,9 @@ editLink: false
 
 ### process()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 
 ::: tip RETURN
 void
@@ -71,14 +71,6 @@ array
 
 ::: tip RETURN
 int
-:::
-
----
-
-### setDebugBacktrace()
-
-::: tip RETURN
-void
 :::
 
 ---

@@ -16,44 +16,20 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WriterInterface](../../Interfaces/Writer/WriterInterface.md) `$writer`
-2. array `$debugBacktrace`
-3. [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md) `$formatter`
-4.  `...$vars`
+- *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+- *debugBacktrace*: array
+- *formatter*: [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md)
+- *...vars*: 
 
 ---
 
 ### process()
 
-#### Parameters
+**Parameters:**
 
-1. [VarDumpOutputterInterface](../../Interfaces/VarDump/VarDumpOutputterInterface.md) `$outputter`
-
-::: tip RETURN
-void
-:::
-
----
-
-### handleClassFunction()
-
-::: tip RETURN
-void
-:::
-
----
-
-### writeCallerFile()
-
-::: tip RETURN
-void
-:::
-
----
-
-### handleArgs()
+- *outputter*: [VarDumpOutputterInterface](../../Interfaces/VarDump/VarDumpOutputterInterface.md)
 
 ::: tip RETURN
 void

@@ -20,9 +20,9 @@ editLink: false
 
 ### withPut()
 
-#### Parameters
+**Parameters:**
 
-1. [RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md) `$routableSpec`
+- *routableSpec*: [RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md)
 
 ::: tip RETURN
 [RoutableSpecsInterface](../../../Interfaces/Spec/Specs/RoutableSpecsInterface.md)
@@ -32,9 +32,9 @@ editLink: false
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
+- *routeName*: string
 
 ::: tip RETURN
 bool
@@ -44,9 +44,9 @@ bool
 
 ### get()
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
+- *routeName*: string
 
 ::: danger THROWS
 - [TypeException](../../../Exceptions/Core/TypeException.md) 

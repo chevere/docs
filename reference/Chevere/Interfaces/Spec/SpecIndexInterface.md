@@ -25,10 +25,10 @@ Describes the component in charge of indexing endpoint specs for each route.
 
 Return an instance with the specified `$routeEndpointSpec` for `$routeName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
-2. Specs/RouteEndpointSpecInterface.md `$routeEndpointSpec`
+- *routeName*: string
+- *routeEndpointSpec*: Specs/RouteEndpointSpecInterface.md
 
 ::: tip RETURN
 self
@@ -43,10 +43,10 @@ an instance that contains the specified `$routeEndpointSpec` for `$routeName`.
 
 Indicates whether the instance has a route endpoint spec for `$routeName` at the given `$methodName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
-2. string `$methodName`
+- *routeName*: string
+- *methodName*: string
 
 ::: tip RETURN
 bool
@@ -58,10 +58,10 @@ bool
 
 Returns the spec path.
 
-#### Parameters
+**Parameters:**
 
-1. string `$routeName`
-2. string `$methodName`
+- *routeName*: string
+- *methodName*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

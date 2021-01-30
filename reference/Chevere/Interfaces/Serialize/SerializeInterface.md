@@ -20,9 +20,9 @@ Describes the component in charge of handling `serialize()`.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. mixed `$var`
+- *var*: mixed
 
 ---
 

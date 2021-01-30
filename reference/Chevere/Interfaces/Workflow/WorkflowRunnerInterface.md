@@ -16,9 +16,9 @@ Describes the component in charge of doing.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [WorkflowRunInterface](./WorkflowRunInterface.md) `$workflowRun`
+- *workflowRun*: [WorkflowRunInterface](./WorkflowRunInterface.md)
 
 ---
 
@@ -32,9 +32,9 @@ Describes the component in charge of doing.
 
 ### run()
 
-#### Parameters
+**Parameters:**
 
-1.  `$container`
+- *container*: 
 
 ::: tip RETURN
 [WorkflowRunInterface](./WorkflowRunInterface.md)

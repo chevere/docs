@@ -26,9 +26,9 @@ Type `string`
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [CacheInterface](../Cache/CacheInterface.md) `$cache`
+- *cache*: [CacheInterface](../Cache/CacheInterface.md)
 
 ---
 
@@ -36,9 +36,9 @@ Type `string`
 
 Return an instance with the specified `$plugsMap`.
 
-#### Parameters
+**Parameters:**
 
-1. [PlugsMapInterface](./PlugsMapInterface.md) `$plugsMap`
+- *plugsMap*: [PlugsMapInterface](./PlugsMapInterface.md)
 
 ::: danger THROWS
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
@@ -57,9 +57,9 @@ an instance that contains the specified `$plugsMap`.
 
 Indicates whether the instance has a plugs queue typed for `$className`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
+- *className*: string
 
 ::: tip RETURN
 bool
@@ -71,9 +71,9 @@ bool
 
 Returns the plugs queue typed for `$className`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$className`
+- *className*: string
 
 ::: danger THROWS
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 

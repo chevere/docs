@@ -16,9 +16,9 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. array `$data`
+- *data*: array
 
 ---
 
@@ -40,10 +40,10 @@ array
 
 ### withThrowable()
 
-#### Parameters
+**Parameters:**
 
-1. [Throwable](https://www.php.net/manual/class.throwable) `$throwable`
-2. int `$code`
+- *throwable*: [Throwable](https://www.php.net/manual/class.throwable)
+- *code*: int
 
 ::: tip RETURN
 [ActionExecutedInterface](../../Interfaces/Action/ActionExecutedInterface.md)

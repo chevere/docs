@@ -20,10 +20,10 @@ Describes the component in charge of defining a route name.
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$repository`
-2. string `$name`
+- *repository*: string
+- *name*: string
 
 ---
 

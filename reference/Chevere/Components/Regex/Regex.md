@@ -35,9 +35,9 @@ array (
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$pattern`
+- *pattern*: string
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -71,9 +71,9 @@ string
 
 ### match()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 array
@@ -83,20 +83,12 @@ array
 
 ### matchAll()
 
-#### Parameters
+**Parameters:**
 
-1. string `$string`
+- *string*: string
 
 ::: tip RETURN
 array
-:::
-
----
-
-### assertRegex()
-
-::: tip RETURN
-void
 :::
 
 ---

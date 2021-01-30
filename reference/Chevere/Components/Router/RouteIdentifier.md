@@ -17,10 +17,10 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. string `$group`
-2. string `$name`
+- *group*: string
+- *name*: string
 
 ::: danger THROWS
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -48,18 +48,6 @@ string
 
 ::: tip RETURN
 array
-:::
-
----
-
-### assertString()
-
-#### Parameters
-
-1. string `$argumentName`
-
-::: tip RETURN
-void
 :::
 
 ---

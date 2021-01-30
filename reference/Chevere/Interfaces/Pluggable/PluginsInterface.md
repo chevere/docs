@@ -16,9 +16,9 @@ Describes the component in charge of the interaction of pluggable and their plug
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [ClassMapInterface](../ClassMap/ClassMapInterface.md) `$pluggablesToPlugs`
+- *pluggablesToPlugs*: [ClassMapInterface](../ClassMap/ClassMapInterface.md)
 
 ---
 
@@ -36,9 +36,9 @@ Provides access to the a the cloned class map instance.
 
 Returns the plugs queue for the given `$pluggableName`.
 
-#### Parameters
+**Parameters:**
 
-1. string `$pluggableName`
+- *pluggableName*: string
 
 ::: danger THROWS
 - [PluggableNotRegisteredException](../../Exceptions/Pluggable/PluggableNotRegisteredException.md) 

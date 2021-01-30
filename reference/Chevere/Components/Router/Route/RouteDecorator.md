@@ -16,17 +16,17 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [RouteLocatorInterface](../../../Interfaces/Router/Route/RouteLocatorInterface.md) `$name`
+- *name*: [RouteLocatorInterface](../../../Interfaces/Router/Route/RouteLocatorInterface.md)
 
 ---
 
 ### withWildcards()
 
-#### Parameters
+**Parameters:**
 
-1. [WildcardsInterface](../../../Interfaces/Router/Route/WildcardsInterface.md) `$wildcards`
+- *wildcards*: [WildcardsInterface](../../../Interfaces/Router/Route/WildcardsInterface.md)
 
 ::: tip RETURN
 [RouteDecoratorInterface](../../../Interfaces/Router/Route/RouteDecoratorInterface.md)

@@ -20,9 +20,9 @@ editLink: false
 
 ### withAdded()
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
+- *anchor*: string
 
 ::: tip RETURN
 [PluggableAnchorsInterface](../../Interfaces/Pluggable/PluggableAnchorsInterface.md)
@@ -32,9 +32,9 @@ editLink: false
 
 ### has()
 
-#### Parameters
+**Parameters:**
 
-1. string `$anchor`
+- *anchor*: string
 
 ::: tip RETURN
 bool
@@ -45,7 +45,7 @@ bool
 ### clonedSet()
 
 ::: tip RETURN
-Ds\Set
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

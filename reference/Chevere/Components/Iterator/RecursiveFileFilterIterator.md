@@ -27,10 +27,10 @@ editLink: false
 
 ### __construct()
 
-#### Parameters
+**Parameters:**
 
-1. [RecursiveIterator](https://www.php.net/manual/class.recursiveiterator) `$recursiveIterator`
-2. string `$trailingName`
+- *recursiveIterator*: [RecursiveIterator](https://www.php.net/manual/class.recursiveiterator)
+- *trailingName*: string
 
 ---
 
