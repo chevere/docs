@@ -14,169 +14,169 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
 ---
 
-### empty()
+### empty
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### notEmpty()
+### notEmpty
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### ctypeSpace()
+### ctypeSpace
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### notCtypeSpace()
+### notCtypeSpace
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### ctypeDigit()
+### ctypeDigit
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### notCtypeDigit()
+### notCtypeDigit
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### startsWithCtypeDigit()
+### startsWithCtypeDigit
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### notStartsWithCtypeDigit()
+### notStartsWithCtypeDigit
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### startsWith()
+### startsWith
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### notStartsWith()
+### notStartsWith
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### endsWith()
+### endsWith
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### notEndsWith()
+### notEndsWith
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### same()
+### same
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### notSame()
+### notSame
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### contains()
+### contains
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 
 ---
 
-### notContains()
+### notContains
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrAssertInterface](../../Interfaces/Str/StrAssertInterface.md)
 :::
 

@@ -20,39 +20,39 @@ Describe a general purpose iterator companion.
 
 ## Methods
 
-### has()
+### has
 
 Indicates whether the instance has the given position.
 
-**Parameters:**
-
+::: warning Parameters
 - *pos*: int
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### pos()
+### pos
 
 Returns the current breadcrumb position.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### withAddedItem()
+### withAddedItem
 
 Return an instance with the specified added item.
 
-**Parameters:**
-
+::: warning Parameters
 - *item*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -61,19 +61,19 @@ an instance that contains the specified added item.
 
 ---
 
-### withRemovedItem()
+### withRemovedItem
 
 Return an instance with the specified pos removed.
 
-**Parameters:**
-
+::: warning Parameters
 - *pos*: int
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -82,11 +82,11 @@ an instance that contains the specified pos removed.
 
 ---
 
-### toArray()
+### toArray
 
 Returns an array representation of the object.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
@@ -96,11 +96,11 @@ return [0 => 'item',];
 
 ---
 
-### toString()
+### toString
 
 Returns an string representation of the object.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

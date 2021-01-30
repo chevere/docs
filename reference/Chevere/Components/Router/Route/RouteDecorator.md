@@ -14,37 +14,37 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: [RouteLocatorInterface](../../../Interfaces/Router/Route/RouteLocatorInterface.md)
+:::
 
 ---
 
-### withWildcards()
+### withWildcards
 
-**Parameters:**
-
+::: warning Parameters
 - *wildcards*: [WildcardsInterface](../../../Interfaces/Router/Route/WildcardsInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [RouteDecoratorInterface](../../../Interfaces/Router/Route/RouteDecoratorInterface.md)
 :::
 
 ---
 
-### locator()
+### locator
 
-::: tip RETURN
+::: tip Return
 [RouteLocatorInterface](../../../Interfaces/Router/Route/RouteLocatorInterface.md)
 :::
 
 ---
 
-### wildcards()
+### wildcards
 
-::: tip RETURN
+::: tip Return
 [WildcardsInterface](../../../Interfaces/Router/Route/WildcardsInterface.md)
 :::
 

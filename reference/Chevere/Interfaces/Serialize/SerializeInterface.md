@@ -18,19 +18,19 @@ Describes the component in charge of handling `serialize()`.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: mixed
+:::
 
 ---
 
-### toString()
+### toString
 
 Returns a string, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

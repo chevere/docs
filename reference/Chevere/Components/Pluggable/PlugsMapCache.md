@@ -24,45 +24,45 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *cache*: [CacheInterface](../../Interfaces/Cache/CacheInterface.md)
+:::
 
 ---
 
-### withPut()
+### withPut
 
-**Parameters:**
-
+::: warning Parameters
 - *plugsMap*: [PlugsMapInterface](../../Interfaces/Pluggable/PlugsMapInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [PlugsMapCacheInterface](../../Interfaces/Pluggable/PlugsMapCacheInterface.md)
 :::
 
 ---
 
-### hasPlugsQueueTypedFor()
+### hasPlugsQueueTypedFor
 
-**Parameters:**
-
+::: warning Parameters
 - *className*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getPlugsQueueTypedFor()
+### getPlugsQueueTypedFor
 
-**Parameters:**
-
+::: warning Parameters
 - *className*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueTypedInterface](../../Interfaces/Pluggable/PlugsQueueTypedInterface.md)
 :::
 

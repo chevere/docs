@@ -14,17 +14,17 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: string
+:::
 
 ---
 
-### path()
+### path
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

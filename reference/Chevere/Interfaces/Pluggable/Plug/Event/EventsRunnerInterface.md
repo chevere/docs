@@ -14,29 +14,29 @@ Describes the component in charge of running the event listeners queue.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *queue*: [EventsQueue](../../../../Components/Pluggable/Plug/Event/EventsQueue.md)
 - *writers*: [WritersInterface](../../../Writer/WritersInterface.md)
+:::
 
 ---
 
-### run()
+### run
 
 Run registered event listeners for the target event anchor.
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *data*: array
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RuntimeException](../../../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

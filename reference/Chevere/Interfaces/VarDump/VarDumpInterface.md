@@ -14,24 +14,24 @@ Describes the component in charge of providing a `\var_dump()` replacement.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *formatter*: [VarDumpFormatterInterface](./VarDumpFormatterInterface.md)
 - *outputter*: [VarDumpOutputterInterface](./VarDumpOutputterInterface.md)
+:::
 
 ---
 
-### withVars()
+### withVars
 
 Return an instance with the specified `$vars`.
 
-**Parameters:**
-
+::: warning Parameters
 - *...vars*: 
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -40,15 +40,15 @@ an instance that contains the specified `$vars`.
 
 ---
 
-### withShift()
+### withShift
 
 Return an instance with the specified `$shift` traces shifted.
 
-**Parameters:**
-
+::: warning Parameters
 - *shift*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -59,35 +59,35 @@ This method removes `$shift` traces from `\debug_backtrace()`
 
 ---
 
-### process()
+### process
 
 Process the dump writing
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### vars()
+### vars
 
 Provides access to the instance vars.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### shift()
+### shift
 
 Provides access to the shift value.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

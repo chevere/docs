@@ -18,77 +18,77 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *repository*: string
+:::
 
 ---
 
-### withTrailingSlash()
+### withTrailingSlash
 
-**Parameters:**
-
+::: warning Parameters
 - *bool*: bool
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### withDescriptorsFor()
+### withDescriptorsFor
 
-**Parameters:**
-
+::: warning Parameters
 - *dir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### repository()
+### repository
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### writer()
+### writer
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
 :::
 
 ---
 
-### useTrailingSlash()
+### useTrailingSlash
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### descriptors()
+### descriptors
 
-::: tip RETURN
+::: tip Return
 [RoutingDescriptorsInterface](../../../Interfaces/Router/Routing/RoutingDescriptorsInterface.md)
 :::
 
 ---
 
-### withWriter()
+### withWriter
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

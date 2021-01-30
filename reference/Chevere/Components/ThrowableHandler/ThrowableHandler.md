@@ -14,53 +14,53 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *throwableRead*: [ThrowableReadInterface](../../Interfaces/ThrowableHandler/ThrowableReadInterface.md)
+:::
 
 ---
 
-### withIsDebug()
+### withIsDebug
 
-**Parameters:**
-
+::: warning Parameters
 - *isDebug*: bool
+:::
 
-::: tip RETURN
+::: tip Return
 [ThrowableHandlerInterface](../../Interfaces/ThrowableHandler/ThrowableHandlerInterface.md)
 :::
 
 ---
 
-### isDebug()
+### isDebug
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### dateTimeUtc()
+### dateTimeUtc
 
-::: tip RETURN
+::: tip Return
 [DateTimeInterface](https://www.php.net/manual/class.datetimeinterface)
 :::
 
 ---
 
-### throwableRead()
+### throwableRead
 
-::: tip RETURN
+::: tip Return
 [ThrowableReadInterface](../../Interfaces/ThrowableHandler/ThrowableReadInterface.md)
 :::
 
 ---
 
-### id()
+### id
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

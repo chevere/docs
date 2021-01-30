@@ -97,111 +97,111 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 - *formatter*: [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md)
 - *dumpable*: [VarDumpableInterface](../../Interfaces/VarDump/VarDumpableInterface.md)
+:::
 
 ---
 
-### writer()
+### writer
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 
 ---
 
-### formatter()
+### formatter
 
-::: tip RETURN
+::: tip Return
 [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md)
 :::
 
 ---
 
-### dumpable()
+### dumpable
 
-::: tip RETURN
+::: tip Return
 [VarDumpableInterface](../../Interfaces/VarDump/VarDumpableInterface.md)
 :::
 
 ---
 
-### withIndent()
+### withIndent
 
-**Parameters:**
-
+::: warning Parameters
 - *indent*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [VarDumperInterface](../../Interfaces/VarDump/VarDumperInterface.md)
 :::
 
 ---
 
-### indent()
+### indent
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### indentString()
+### indentString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### withDepth()
+### withDepth
 
-**Parameters:**
-
+::: warning Parameters
 - *depth*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [VarDumperInterface](../../Interfaces/VarDump/VarDumperInterface.md)
 :::
 
 ---
 
-### depth()
+### depth
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### withKnownObjects()
+### withKnownObjects
 
-**Parameters:**
-
+::: warning Parameters
 - *known*: [Ds\Set](https://www.php.net/manual/class.ds\set)
+:::
 
-::: tip RETURN
+::: tip Return
 [VarDumperInterface](../../Interfaces/VarDump/VarDumperInterface.md)
 :::
 
 ---
 
-### known()
+### known
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### withProcess()
+### withProcess
 
-::: tip RETURN
+::: tip Return
 [VarDumperInterface](../../Interfaces/VarDump/VarDumperInterface.md)
 :::
 

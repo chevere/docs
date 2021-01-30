@@ -10,17 +10,17 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *translator*: Gettext\TranslatorInterface
+:::
 
 ---
 
-### get()
+### get
 
-::: tip RETURN
+::: tip Return
 Gettext\TranslatorInterface
 :::
 

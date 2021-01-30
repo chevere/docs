@@ -26,38 +26,38 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *dir*: [DirInterface](../Filesystem/DirInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md) if $dir doesn't exists and unable to create
 :::
 
 ---
 
-### dir()
+### dir
 
 Provides access to the cache directory.
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../Filesystem/DirInterface.md)
 :::
 
 ---
 
-### withPut()
+### withPut
 
 Put item in cache.
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: [CacheKeyInterface](./CacheKeyInterface.md)
 - *varStorable*: [VarStorableInterface](../VarStorable/VarStorableInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -68,19 +68,19 @@ an instance that contains the specified put.
 
 ---
 
-### without()
+### without
 
 Remove item from cache.
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: [CacheKeyInterface](./CacheKeyInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) if unable to remove the cache file
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -91,43 +91,43 @@ an instance that contains the specified removed.
 
 ---
 
-### exists()
+### exists
 
 Indicates whether the cache exists for the given key.
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: [CacheKeyInterface](./CacheKeyInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
 Get a cache item.
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: [CacheKeyInterface](./CacheKeyInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [CacheItemInterface](./CacheItemInterface.md)
 :::
 
 ---
 
-### puts()
+### puts
 
 Provides access to the array containing puts.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

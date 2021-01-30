@@ -40,29 +40,29 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
 ---
 
-### highlight()
+### highlight
 
-**Parameters:**
-
+::: warning Parameters
 - *dump*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### palette()
+### palette
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

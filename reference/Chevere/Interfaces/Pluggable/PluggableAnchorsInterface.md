@@ -14,19 +14,19 @@ Describes the component in charge of defining pluggable anchors.
 
 ## Methods
 
-### withAdded()
+### withAdded
 
 Return an instance with the specified added `$anchor`.
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -35,25 +35,25 @@ an instance that contains the specified added `$anchor`.
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has the given `$anchor`.
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### clonedSet()
+### clonedSet
 
 Provides access to a cloned set instance.
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 

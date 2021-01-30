@@ -18,41 +18,41 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### withPut()
+### withPut
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedDependencies*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)
 :::
 
 ---
 
-### keys()
+### keys
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

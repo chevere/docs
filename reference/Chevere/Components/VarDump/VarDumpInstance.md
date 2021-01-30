@@ -10,17 +10,17 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *varDump*: [VarDumpInterface](../../Interfaces/VarDump/VarDumpInterface.md)
+:::
 
 ---
 
-### get()
+### get
 
-::: tip RETURN
+::: tip Return
 [VarDumpInterface](../../Interfaces/VarDump/VarDumpInterface.md)
 :::
 

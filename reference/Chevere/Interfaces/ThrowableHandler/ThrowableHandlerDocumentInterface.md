@@ -188,23 +188,23 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *throwableHandler*: [ThrowableHandlerInterface](./ThrowableHandlerInterface.md)
+:::
 
 ---
 
-### withVerbosity()
+### withVerbosity
 
 Return an instance with the specified verbosity.
 
-**Parameters:**
-
+::: warning Parameters
 - *verbosity*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -215,105 +215,105 @@ Calling this method will reset the document sections to fit the target verbosity
 
 ---
 
-### verbosity()
+### verbosity
 
 Provides access to the instance verbosity.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getSectionTitle()
+### getSectionTitle
 
 Returns the document title section.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionMessage()
+### getSectionMessage
 
 Returns the document message section.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionChain()
+### getSectionChain
 
 Returns the document chain section.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionId()
+### getSectionId
 
 Returns the document id section.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionTime()
+### getSectionTime
 
 Returns the document time section.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionStack()
+### getSectionStack
 
 Returns the document stack section.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionServer()
+### getSectionServer
 
 Returns the document server section.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getContent()
+### getContent
 
 Returns a formatted content for a section.
 
-**Parameters:**
-
+::: warning Parameters
 - *content*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getTemplate()
+### getTemplate
 
 Returns the template used for translating placeholders tags.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
@@ -325,21 +325,21 @@ return [
 
 ---
 
-### getFormatter()
+### getFormatter
 
 Returns the document formatter.
 
-::: tip RETURN
+::: tip Return
 [ThrowableHandlerFormatterInterface](./ThrowableHandlerFormatterInterface.md)
 :::
 
 ---
 
-### toString()
+### toString
 
 Returns a string, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

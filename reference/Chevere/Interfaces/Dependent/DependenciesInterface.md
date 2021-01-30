@@ -21,31 +21,31 @@ Describes the component in charge of defining dependencies.
 
 ## Methods
 
-### withPut()
+### withPut
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedDependencies*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

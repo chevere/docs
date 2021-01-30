@@ -14,23 +14,23 @@ Describes the component in charge of running the controller.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *controller*: [ControllerInterface](./ControllerInterface.md)
+:::
 
 ---
 
-### execute()
+### execute
 
 Executes the controller with the given `$arguments`.
 
-**Parameters:**
-
+::: warning Parameters
 - *arguments*: array
+:::
 
-::: tip RETURN
+::: tip Return
 [ActionExecutedInterface](./ActionExecutedInterface.md)
 :::
 

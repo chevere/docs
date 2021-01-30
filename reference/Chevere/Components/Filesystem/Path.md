@@ -15,89 +15,89 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *absolute*: string
+:::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### exists()
+### exists
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### assertExists()
+### assertExists
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### isDir()
+### isDir
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isFile()
+### isFile
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### chmod()
+### chmod
 
-**Parameters:**
-
+::: warning Parameters
 - *mode*: int
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### isWritable()
+### isWritable
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isReadable()
+### isReadable
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getChild()
+### getChild
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [PathInterface](../../Interfaces/Filesystem/PathInterface.md)
 :::
 

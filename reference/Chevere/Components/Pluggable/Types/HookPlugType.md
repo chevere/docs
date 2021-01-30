@@ -14,41 +14,41 @@ editLink: false
 
 ## Methods
 
-### interface()
+### interface
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### plugsTo()
+### plugsTo
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### trailingName()
+### trailingName
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getPlugsQueueTyped()
+### getPlugsQueueTyped
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueTypedInterface](../../../Interfaces/Pluggable/PlugsQueueTypedInterface.md)
 :::
 
 ---
 
-### pluggableAnchorsMethod()
+### pluggableAnchorsMethod
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

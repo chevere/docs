@@ -18,38 +18,38 @@ Describes the component in charge of mapping plugs in the file system.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *type*: [PlugTypeInterface](./PlugTypeInterface.md)
+:::
 
 ---
 
-### plugType()
+### plugType
 
 Provides access to the plugs type instance.
 
-::: tip RETURN
+::: tip Return
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
 
 ---
 
-### withAdded()
+### withAdded
 
 Return an instance with the specified added `$plug`.
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](./PlugInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -58,55 +58,55 @@ an instance that contains the specified added `$plug`.
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has the given `$plug`.
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](./PlugInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### hasPlugsFor()
+### hasPlugsFor
 
 Indicates whether the instance has plugs for the given `$pluggable`.
 
-**Parameters:**
-
+::: warning Parameters
 - *pluggable*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getPlugsQueueTypedFor()
+### getPlugsQueueTypedFor
 
 Return the plugs queue typed for the given `$pluggable`.
 
-**Parameters:**
-
+::: warning Parameters
 - *pluggable*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

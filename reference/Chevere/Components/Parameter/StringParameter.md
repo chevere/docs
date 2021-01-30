@@ -16,133 +16,133 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### withRegex()
+### withRegex
 
-**Parameters:**
-
+::: warning Parameters
 - *regex*: [RegexInterface](../../Interfaces/Regex/RegexInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [StringParameterInterface](../../Interfaces/Parameter/StringParameterInterface.md)
 :::
 
 ---
 
-### withDefault()
+### withDefault
 
-**Parameters:**
-
+::: warning Parameters
 - *default*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StringParameterInterface](../../Interfaces/Parameter/StringParameterInterface.md)
 :::
 
 ---
 
-### regex()
+### regex
 
-::: tip RETURN
+::: tip Return
 [RegexInterface](../../Interfaces/Regex/RegexInterface.md)
 :::
 
 ---
 
-### default()
+### default
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### withDescription()
+### withDescription
 
-**Parameters:**
-
+::: warning Parameters
 - *description*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### withAddedAttribute()
+### withAddedAttribute
 
-**Parameters:**
-
+::: warning Parameters
 - *...attributes*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### withRemovedAttribute()
+### withRemovedAttribute
 
-**Parameters:**
-
+::: warning Parameters
 - *...attribute*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
 :::
 
 ---
 
-### type()
+### type
 
-::: tip RETURN
+::: tip Return
 [TypeInterface](../../Interfaces/Type/TypeInterface.md)
 :::
 
 ---
 
-### description()
+### description
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### hasAttribute()
+### hasAttribute
 
-**Parameters:**
-
+::: warning Parameters
 - *...attribute*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### attributes()
+### attributes
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### getDescription()
+### getDescription
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

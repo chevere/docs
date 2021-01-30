@@ -15,25 +15,25 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### write()
+### write
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

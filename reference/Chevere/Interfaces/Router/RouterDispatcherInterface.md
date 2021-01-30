@@ -14,30 +14,30 @@ Describes the component in charge of dispatch router.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *routeCollector*: FastRoute\RouteCollector
+:::
 
 ---
 
-### dispatch()
+### dispatch
 
 Dispatches against the provided HTTP method verb and URI.
 
-**Parameters:**
-
+::: warning Parameters
 - *httpMethod*: string
 - *uri*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RouteNotFoundException](../../Exceptions/Router/RouteNotFoundException.md) 
 - [MethodNotAllowedException](../../Exceptions/Http/MethodNotAllowedException.md) 
 - [LogicException](../../Exceptions/Core/LogicException.md) if dispatcher returns an unexpected code.
 :::
 
-::: tip RETURN
+::: tip Return
 [RoutedInterface](./RoutedInterface.md)
 :::
 

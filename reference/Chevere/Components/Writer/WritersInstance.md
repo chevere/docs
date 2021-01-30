@@ -10,17 +10,17 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *writers*: [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
+:::
 
 ---
 
-### get()
+### get
 
-::: tip RETURN
+::: tip Return
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
 :::
 

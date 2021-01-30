@@ -14,93 +14,93 @@ Describes the component in charge of formatting a throwable handler document.
 
 ## Methods
 
-### varDumpFormatter()
+### varDumpFormatter
 
 Provides access to the VarDumpFormatterInterface instance.
 
-::: tip RETURN
+::: tip Return
 [VarDumpFormatterInterface](../VarDump/VarDumpFormatterInterface.md)
 :::
 
 ---
 
-### getVarDumpFormatter()
+### getVarDumpFormatter
 
 Get a new object implementing the VarDumpFormatterInterface.
 
-::: tip RETURN
+::: tip Return
 [VarDumpFormatterInterface](../VarDump/VarDumpFormatterInterface.md)
 :::
 
 ---
 
-### getTraceEntryTemplate()
+### getTraceEntryTemplate
 
 Returns the template used for each trace entry.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getHr()
+### getHr
 
 Returns formatted horizontal rule.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getLineBreak()
+### getLineBreak
 
 Returns formatted line break.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### wrapLink()
+### wrapLink
 
 Returns `$value` formatted as wrapped link.
 
-**Parameters:**
-
+::: warning Parameters
 - *value*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### wrapSectionTitle()
+### wrapSectionTitle
 
 Returns `$value` formatted as section title.
 
-**Parameters:**
-
+::: warning Parameters
 - *value*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### wrapTitle()
+### wrapTitle
 
 Returns `$value` formatted as title.
 
-**Parameters:**
-
+::: warning Parameters
 - *value*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

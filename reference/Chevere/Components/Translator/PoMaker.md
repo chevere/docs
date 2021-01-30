@@ -35,54 +35,54 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *locale*: string
 - *domain*: string
+:::
 
 ---
 
-### withScanFor()
+### withScanFor
 
-**Parameters:**
-
+::: warning Parameters
 - *sourceDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### make()
+### make
 
-**Parameters:**
-
+::: warning Parameters
 - *targetDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### withWriter()
+### withWriter
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### writer()
+### writer
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 

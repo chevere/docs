@@ -18,45 +18,45 @@ Describes the component in charge of defining a hook plug.
 
 ## Methods
 
-### __invoke()
+### __invoke
 
 Executes the hook listener.
 
-**Parameters:**
-
+::: warning Parameters
 - *argument*: 
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### anchor()
+### anchor
 
 Plugs at anchor.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### at()
+### at
 
 Plugs at class name.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### priority()
+### priority
 
 Plugs at priority.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

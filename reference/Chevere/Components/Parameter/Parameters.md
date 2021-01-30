@@ -18,137 +18,137 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### withAddedRequired()
+### withAddedRequired
 
-**Parameters:**
-
+::: warning Parameters
 - *...parameters*: [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### withAddedOptional()
+### withAddedOptional
 
-**Parameters:**
-
+::: warning Parameters
 - *...parameters*: [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### withModify()
+### withModify
 
-**Parameters:**
-
+::: warning Parameters
 - *...parameters*: [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *parameter*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isRequired()
+### isRequired
 
-**Parameters:**
-
+::: warning Parameters
 - *parameter*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isOptional()
+### isOptional
 
-**Parameters:**
-
+::: warning Parameters
 - *parameter*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
 :::
 
 ---
 
-### required()
+### required
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### optional()
+### optional
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### keys()
+### keys
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

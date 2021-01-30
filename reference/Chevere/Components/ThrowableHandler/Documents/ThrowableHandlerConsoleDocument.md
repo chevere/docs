@@ -189,121 +189,121 @@ array (
 
 ## Methods
 
-### getFormatter()
+### getFormatter
 
-::: tip RETURN
+::: tip Return
 [ThrowableHandlerFormatterInterface](../../../Interfaces/ThrowableHandler/ThrowableHandlerFormatterInterface.md)
 :::
 
 ---
 
-### getSectionTitle()
+### getSectionTitle
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *throwableHandler*: [ThrowableHandlerInterface](../../../Interfaces/ThrowableHandler/ThrowableHandlerInterface.md)
+:::
 
 ---
 
-### withVerbosity()
+### withVerbosity
 
-**Parameters:**
-
+::: warning Parameters
 - *verbosity*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [ThrowableHandlerDocumentInterface](../../../Interfaces/ThrowableHandler/ThrowableHandlerDocumentInterface.md)
 :::
 
 ---
 
-### verbosity()
+### verbosity
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getTemplate()
+### getTemplate
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getContent()
+### getContent
 
-**Parameters:**
-
+::: warning Parameters
 - *content*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionMessage()
+### getSectionMessage
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionChain()
+### getSectionChain
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionId()
+### getSectionId
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionTime()
+### getSectionTime
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionStack()
+### getSectionStack
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSectionServer()
+### getSectionServer
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

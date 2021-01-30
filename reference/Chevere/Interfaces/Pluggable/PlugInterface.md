@@ -14,31 +14,31 @@ Describes the component in charge of defining a plug.
 
 ## Methods
 
-### anchor()
+### anchor
 
 Plugs at anchor.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### at()
+### at
 
 Plugs at class name.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### priority()
+### priority
 
 Plugs at priority.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

@@ -23,19 +23,19 @@ Exception thrown if an error which can only be found on runtime occurs.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *message*: [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 - *code*: int
 - *previous*: [Throwable](https://www.php.net/manual/class.throwable)
+:::
 
 ---
 
-### message()
+### message
 
-::: tip RETURN
+::: tip Return
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
 

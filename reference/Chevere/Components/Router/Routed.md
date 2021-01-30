@@ -14,34 +14,34 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *controllerName*: [ControllerNameInterface](../../Interfaces/Action/ControllerNameInterface.md)
 - *arguments*: array
+:::
 
 ---
 
-### controllerName()
+### controllerName
 
-::: tip RETURN
+::: tip Return
 [ControllerNameInterface](../../Interfaces/Action/ControllerNameInterface.md)
 :::
 
 ---
 
-### getController()
+### getController
 
-::: tip RETURN
+::: tip Return
 [ControllerInterface](../../Interfaces/Action/ControllerInterface.md)
 :::
 
 ---
 
-### arguments()
+### arguments
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

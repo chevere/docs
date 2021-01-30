@@ -31,149 +31,149 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### getWorkflow()
+### getWorkflow
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
 :::
 
 ---
 
-### workflow()
+### workflow
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
 :::
 
 ---
 
-### getContextParameters()
+### getContextParameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### withContextArguments()
+### withContextArguments
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### contextArguments()
+### contextArguments
 
-::: tip RETURN
+::: tip Return
 [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### hasContextArguments()
+### hasContextArguments
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### contextParameters()
+### contextParameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### getParameters()
+### getParameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### getResponseDataParameters()
+### getResponseDataParameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### run()
+### run
 
-**Parameters:**
-
+::: warning Parameters
 - *arguments*: [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
 
-### parameters()
+### parameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### responseDataParameters()
+### responseDataParameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### getArguments()
+### getArguments
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### getResponse()
+### getResponse
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedData*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
 
-### getDescription()
+### getDescription
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### description()
+### description
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

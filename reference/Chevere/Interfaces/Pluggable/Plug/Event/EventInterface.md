@@ -18,46 +18,46 @@ Describes the component in charge of defining an event listener plug.
 
 ## Methods
 
-### __invoke()
+### __invoke
 
 Executes the event listener.
 
-**Parameters:**
-
+::: warning Parameters
 - *data*: array
 - *writers*: [WritersInterface](../../../Writer/WritersInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### anchor()
+### anchor
 
 Plugs at anchor.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### at()
+### at
 
 Plugs at class name.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### priority()
+### priority
 
 Plugs at priority.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

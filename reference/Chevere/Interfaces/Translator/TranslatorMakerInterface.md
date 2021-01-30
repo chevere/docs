@@ -14,39 +14,39 @@ Describes the component in charge of make a translator.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *sourceDir*: [DirInterface](../Filesystem/DirInterface.md)
 - *targetDir*: [DirInterface](../Filesystem/DirInterface.md)
+:::
 
 ---
 
-### sourceDir()
+### sourceDir
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../Filesystem/DirInterface.md)
 :::
 
 ---
 
-### targetDir()
+### targetDir
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../Filesystem/DirInterface.md)
 :::
 
 ---
 
-### withMakeTranslation()
+### withMakeTranslation
 
-**Parameters:**
-
+::: warning Parameters
 - *locale*: string
 - *domain*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

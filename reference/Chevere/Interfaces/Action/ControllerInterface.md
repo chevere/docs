@@ -33,153 +33,153 @@ Type `string`
 
 ## Methods
 
-### getContextParameters()
+### getContextParameters
 
 Defines context parameters.
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### withContextArguments()
+### withContextArguments
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### contextArguments()
+### contextArguments
 
-::: tip RETURN
+::: tip Return
 [ArgumentsInterface](../Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### hasContextArguments()
+### hasContextArguments
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### contextParameters()
+### contextParameters
 
 Provides access to context parameters.
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### __construct()
+### __construct
 
 ---
 
-### getParameters()
+### getParameters
 
 Defines parameters.
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### getResponseDataParameters()
+### getResponseDataParameters
 
 Defines expected response data parameters when executing `run` method.
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### run()
+### run
 
 Method called when running the action.
 
-**Parameters:**
-
+::: warning Parameters
 - *arguments*: [ArgumentsInterface](../Parameter/ArgumentsInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../Response/ResponseInterface.md)
 :::
 
 ---
 
-### parameters()
+### parameters
 
 Provides access to the parameters.
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### responseDataParameters()
+### responseDataParameters
 
 Provides access to the expected response data parameters.
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### getArguments()
+### getArguments
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [ArgumentsInterface](../Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### getResponse()
+### getResponse
 
 Retrieves a new success response with type-hinted data.
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedData*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../Response/ResponseInterface.md)
 :::
 
 ---
 
-### description()
+### description
 
 Provides access to the description.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getDescription()
+### getDescription
 
 Defines the description.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

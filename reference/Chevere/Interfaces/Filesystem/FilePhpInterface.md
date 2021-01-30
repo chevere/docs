@@ -14,52 +14,52 @@ Describes the component in charge of interact with `.php` files.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *file*: [FileInterface](./FileInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [FileNotPhpException](../../Exceptions/Filesystem/FileNotPhpException.md) 
 :::
 
 ---
 
-### file()
+### file
 
 Provides access to the FileInterface instance.
 
-::: tip RETURN
+::: tip Return
 [FileInterface](./FileInterface.md)
 :::
 
 ---
 
-### cache()
+### cache
 
 Applies OPCache.
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) If OPCache is disabled.
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### flush()
+### flush
 
 Flushes OPCache.
 
-::: danger THROWS
+::: danger Throws
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) If OPCache is disabled.
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

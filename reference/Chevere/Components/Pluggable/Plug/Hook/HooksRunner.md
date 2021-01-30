@@ -14,22 +14,22 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *hooksQueue*: [HooksQueueInterface](../../../../Interfaces/Pluggable/Plug/Hook/HooksQueueInterface.md)
+:::
 
 ---
 
-### run()
+### run
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *argument*: 
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

@@ -14,47 +14,47 @@ Describes the component in charge of providing a `.po` maker.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *locale*: string
 - *domain*: string
+:::
 
 ---
 
-### withScanFor()
+### withScanFor
 
-**Parameters:**
-
+::: warning Parameters
 - *sourceDir*: [DirInterface](../Filesystem/DirInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [DirNotExistsException](../../Exceptions/Filesystem/DirNotExistsException.md) 
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 - [LogicException](../../Exceptions/Core/LogicException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### make()
+### make
 
-**Parameters:**
-
+::: warning Parameters
 - *targetDir*: [DirInterface](../Filesystem/DirInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [BadMethodCallException](https://www.php.net/manual/class.badmethodcallexception) If called without scanner.
 - ⚠ Unknown type `DirUnableToCreateException` declared in `@throws` tag`
 - ⚠ Unknown type `FileUnableToRemoveException` declared in `@throws` tag`
 - [LogicException](../../Exceptions/Core/LogicException.md) If unable to create the translation file.
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

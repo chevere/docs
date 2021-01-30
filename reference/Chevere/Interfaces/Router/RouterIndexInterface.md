@@ -18,21 +18,21 @@ Describes the component in charge of indexing named routes.
 
 ## Methods
 
-### withAddedRoutable()
+### withAddedRoutable
 
 Return an instance with the specified `$routable` added.
 
-**Parameters:**
-
+::: warning Parameters
 - *routable*: [RoutableInterface](./RoutableInterface.md)
 - *group*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -41,93 +41,93 @@ an instance that contains the specified `$routable` added.
 
 ---
 
-### hasRouteName()
+### hasRouteName
 
 Indicates whether the instance has a route identified by its `$name`.
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getRouteIdentifier()
+### getRouteIdentifier
 
 Returns the route identifier for the given route `$name`.
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [RouteIdentifierInterface](./RouteIdentifierInterface.md)
 :::
 
 ---
 
-### hasGroup()
+### hasGroup
 
 Indicates whether the instance has routes for the given `$group`.
 
-**Parameters:**
-
+::: warning Parameters
 - *group*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getGroupRouteNames()
+### getGroupRouteNames
 
 Returns an array containing the route names for the given `$group`.
 
-**Parameters:**
-
+::: warning Parameters
 - *group*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getRouteGroup()
+### getRouteGroup
 
 Returns the route group for the route identified by its `$name`.
 
-**Parameters:**
-
+::: warning Parameters
 - *group*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toArray()
+### toArray
 
 Returns an array, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

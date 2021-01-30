@@ -14,50 +14,50 @@ editLink: false
 
 ## Methods
 
-### setUp()
+### setUp
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
 - *backtrace*: array
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### backtrace()
+### backtrace
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### caller()
+### caller
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### tearDown()
+### tearDown
 
 Ends the outputter.
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### prepare()
+### prepare
 
 This method is executed before `tearDown()`.
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

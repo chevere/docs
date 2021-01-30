@@ -14,45 +14,45 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *routePath*: [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md)
+:::
 
 ---
 
-### path()
+### path
 
-::: tip RETURN
+::: tip Return
 [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md)
 :::
 
 ---
 
-### maker()
+### maker
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### withAddedEndpoint()
+### withAddedEndpoint
 
-**Parameters:**
-
+::: warning Parameters
 - *endpoint*: [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [RouteInterface](../../../Interfaces/Router/Route/RouteInterface.md)
 :::
 
 ---
 
-### endpoints()
+### endpoints
 
-::: tip RETURN
+::: tip Return
 [RouteEndpointsInterface](../../../Interfaces/Router/Route/RouteEndpointsInterface.md)
 :::
 

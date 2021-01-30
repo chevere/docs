@@ -14,40 +14,40 @@ Describes the component in charge of defining a routed route.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *controllerName*: [ControllerNameInterface](../Action/ControllerNameInterface.md)
 - *arguments*: array
+:::
 
 ---
 
-### controllerName()
+### controllerName
 
 Provides access to the `$controllerName` instance.
 
-::: tip RETURN
+::: tip Return
 [ControllerNameInterface](../Action/ControllerNameInterface.md)
 :::
 
 ---
 
-### getController()
+### getController
 
 Provides access to a new `$controllerName` instance.
 
-::: tip RETURN
+::: tip Return
 [ControllerInterface](../Action/ControllerInterface.md)
 :::
 
 ---
 
-### arguments()
+### arguments
 
 Provides access to the `$arguments` instance.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

@@ -14,43 +14,43 @@ Describes the component in charge of defining a route.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: [RoutePathInterface](./RoutePathInterface.md)
+:::
 
 ---
 
-### path()
+### path
 
 Provides access to the `$path` instance.
 
-::: tip RETURN
+::: tip Return
 [RoutePathInterface](./RoutePathInterface.md)
 :::
 
 ---
 
-### maker()
+### maker
 
 Provides access to the file maker.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### withAddedEndpoint()
+### withAddedEndpoint
 
 Return an instance with the specified added `$routeEndpoint`.
 
-**Parameters:**
-
+::: warning Parameters
 - *routeEndpoint*: [RouteEndpointInterface](./RouteEndpointInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../../Exceptions/Core/OverflowException.md) 
 - [RouteEndpointConflictException](../../../Exceptions/Router/Route/RouteEndpointConflictException.md) 
 - [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 
@@ -58,7 +58,7 @@ Return an instance with the specified added `$routeEndpoint`.
 - [RouteWildcardConflictException](../../../Exceptions/Router/Route/RouteWildcardConflictException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -69,11 +69,11 @@ This method should allow to override any previous `$routeEndpoint`.
 
 ---
 
-### endpoints()
+### endpoints
 
 Provides access to the endpoints instance.
 
-::: tip RETURN
+::: tip Return
 [RouteEndpointsInterface](./RouteEndpointsInterface.md)
 :::
 

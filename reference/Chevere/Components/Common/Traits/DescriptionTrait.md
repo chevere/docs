@@ -14,17 +14,17 @@ editLink: false
 
 ## Methods
 
-### getDescription()
+### getDescription
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### description()
+### description
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

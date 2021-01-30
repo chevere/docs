@@ -32,159 +32,159 @@ Type `integer`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: [PathInterface](./PathInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [PathIsDirException](../../Exceptions/Filesystem/PathIsDirException.md) 
 :::
 
 ---
 
-### path()
+### path
 
 Provides access to the PathInterface instance.
 
-::: tip RETURN
+::: tip Return
 [PathInterface](./PathInterface.md)
 :::
 
 ---
 
-### isPhp()
+### isPhp
 
 Returns a boolean indicating whether the file name is a PHP file.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### exists()
+### exists
 
 Returns a boolean indicating whether the file exists.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### assertExists()
+### assertExists
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### getChecksum()
+### getChecksum
 
 Retrieves the file checksum using the CHECKSUM_ALGO algorithm.
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSize()
+### getSize
 
 Retrieves the file size using `filesize`.
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### contents()
+### contents
 
 Retrieves the file contents.
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### remove()
+### remove
 
 Remove the file.
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### removeIfExists()
+### removeIfExists
 
-::: danger THROWS
+::: danger Throws
 - [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### create()
+### create
 
 Create the file.
 
-::: danger THROWS
+::: danger Throws
 - [FileExistsException](../../Exceptions/Filesystem/FileExistsException.md) 
 - [FileUnableToCreateException](../../Exceptions/Filesystem/FileUnableToCreateException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### put()
+### put
 
 Put contents to the file. If the file doesn't exists it will be created.
 
-**Parameters:**
-
+::: warning Parameters
 - *contents*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

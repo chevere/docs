@@ -19,29 +19,29 @@ Describes the component in charge of defining a parameter of type string.
 
 ## Methods
 
-### regex()
+### regex
 
 Provides access to the regex instance.
 
-::: tip RETURN
+::: tip Return
 [RegexInterface](../Regex/RegexInterface.md)
 :::
 
 ---
 
-### withRegex()
+### withRegex
 
 Return an instance with the specified `$regex`.
 
-**Parameters:**
-
+::: warning Parameters
 - *regex*: [RegexInterface](../Regex/RegexInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [BadFunctionCallException](../../Exceptions/Core/BadFunctionCallException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -50,19 +50,19 @@ an instance that contains the specified `$regex`.
 
 ---
 
-### withDefault()
+### withDefault
 
 Return an instance with the specified `$default` value.
 
-**Parameters:**
-
+::: warning Parameters
 - *default*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -71,51 +71,51 @@ an instance that contains the specified `$default` value.
 
 ---
 
-### default()
+### default
 
 Provides access to the default value.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### type()
+### type
 
 Provides access to the type instance.
 
-::: tip RETURN
+::: tip Return
 [TypeInterface](../Type/TypeInterface.md)
 :::
 
 ---
 
-### withDescription()
+### withDescription
 
-**Parameters:**
-
+::: warning Parameters
 - *description*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### withAddedAttribute()
+### withAddedAttribute
 
 Return an instance with the specified `$attributes` added.
 
-**Parameters:**
-
+::: warning Parameters
 - *...attributes*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -124,19 +124,19 @@ an instance that contains the specified `$attributes` added.
 
 ---
 
-### withRemovedAttribute()
+### withRemovedAttribute
 
 Return an instance with the specified `$attributes` removed.
 
-**Parameters:**
-
+::: warning Parameters
 - *...attributes*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -145,45 +145,45 @@ an instance that contains the specified `$attributes` removed.
 
 ---
 
-### hasAttribute()
+### hasAttribute
 
 Indicates whether the instance has the given `$attributes`.
 
-**Parameters:**
-
+::: warning Parameters
 - *...attributes*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### attributes()
+### attributes
 
 Provides access to the attributes instance.
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### description()
+### description
 
 Provides access to the description.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getDescription()
+### getDescription
 
 Defines the description.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

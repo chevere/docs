@@ -57,74 +57,74 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *template*: string
+:::
 
 ---
 
-### template()
+### template
 
 Provides access to the message template.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### trTable()
+### trTable
 
 Provides access to the message translation table.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### toConsole()
+### toConsole
 
 Returns a console message representation.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toHtml()
+### toHtml
 
 Returns a HTML message representation.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toString()
+### toString
 
 Returns a text message representation.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### strtr()
+### strtr
 
 Return an instance with the specified string translation.
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -133,16 +133,16 @@ an instance that contains the specified string translation.
 
 ---
 
-### emphasis()
+### emphasis
 
 Return an instance with the specified `$search` replaced with `$replace` emphasis tag.
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -151,16 +151,16 @@ an instance that contains the specified `$search` replaced with `$replace` empha
 
 ---
 
-### strong()
+### strong
 
 Return an instance with the specified `$search` replaced with `$replace` as strong tag.
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -169,16 +169,16 @@ an instance that contains the specified `$search` replaced with `$replace` as st
 
 ---
 
-### underline()
+### underline
 
 Return an instance with the specified underline.
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -187,16 +187,16 @@ an instance that contains the specified underline.
 
 ---
 
-### code()
+### code
 
 Return an instance with the specified `$search` replaced with `$replace` as code tag.
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

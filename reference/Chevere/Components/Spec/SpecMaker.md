@@ -14,27 +14,27 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *specDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 - *outputDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 - *router*: [RouterInterface](../../Interfaces/Router/RouterInterface.md)
+:::
 
 ---
 
-### specIndex()
+### specIndex
 
-::: tip RETURN
+::: tip Return
 [SpecIndexInterface](../../Interfaces/Spec/SpecIndexInterface.md)
 :::
 
 ---
 
-### files()
+### files
 
-::: tip RETURN
+::: tip Return
 [Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 

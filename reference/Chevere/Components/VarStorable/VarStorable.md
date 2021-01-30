@@ -14,33 +14,33 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: mixed
+:::
 
 ---
 
-### var()
+### var
 
-::: tip RETURN
+::: tip Return
 mixed
 :::
 
 ---
 
-### toExport()
+### toExport
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toSerialize()
+### toSerialize
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

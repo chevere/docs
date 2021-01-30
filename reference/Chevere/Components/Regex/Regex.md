@@ -33,61 +33,61 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *pattern*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toNoDelimiters()
+### toNoDelimiters
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toNoDelimitersNoAnchors()
+### toNoDelimitersNoAnchors
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### match()
+### match
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### matchAll()
+### matchAll
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

@@ -19,29 +19,29 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *stream*: Psr\Http\Message\StreamInterface
+:::
 
 ---
 
-### write()
+### write
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

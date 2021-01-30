@@ -14,29 +14,29 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *workflowRun*: [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
+:::
 
 ---
 
-### workflowRun()
+### workflowRun
 
-::: tip RETURN
+::: tip Return
 [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
 :::
 
 ---
 
-### run()
+### run
 
-**Parameters:**
-
+::: warning Parameters
 - *container*: 
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
 :::
 

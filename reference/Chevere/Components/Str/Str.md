@@ -15,136 +15,136 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### withLowercase()
+### withLowercase
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withUppercase()
+### withUppercase
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withStripWhitespace()
+### withStripWhitespace
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withStripExtraWhitespace()
+### withStripExtraWhitespace
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withStripNonAlphanumerics()
+### withStripNonAlphanumerics
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withForwardSlashes()
+### withForwardSlashes
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withLeftTail()
+### withLeftTail
 
-**Parameters:**
-
+::: warning Parameters
 - *tail*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withRightTail()
+### withRightTail
 
-**Parameters:**
-
+::: warning Parameters
 - *tail*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withReplaceFirst()
+### withReplaceFirst
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withReplaceLast()
+### withReplaceLast
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withReplaceAll()
+### withReplaceAll
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 
 ---
 
-### withStripANSIColors()
+### withStripANSIColors
 
-::: tip RETURN
+::: tip Return
 [StrInterface](../../Interfaces/Str/StrInterface.md)
 :::
 

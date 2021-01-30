@@ -18,15 +18,15 @@ Describes the component in charge of providing a workflow response.
 
 ## Methods
 
-### withWorkflowMessage()
+### withWorkflowMessage
 
 Return an instance with the specified workflow message.
 
-**Parameters:**
-
+::: warning Parameters
 - *workflowMessage*: [WorkflowMessageInterface](./WorkflowMessageInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -35,23 +35,23 @@ an instance that contains the specified workflow message.
 
 ---
 
-### workflowMessage()
+### workflowMessage
 
-::: tip RETURN
+::: tip Return
 [WorkflowMessageInterface](./WorkflowMessageInterface.md)
 :::
 
 ---
 
-### withStatus()
+### withStatus
 
 Return an instance with the specified status.
 
-**Parameters:**
-
+::: warning Parameters
 - *code*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -60,15 +60,15 @@ an instance that contains the specified status.
 
 ---
 
-### withData()
+### withData
 
 Return an instance with the specified data.
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedData*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -77,41 +77,41 @@ an instance that contains the specified data.
 
 ---
 
-### uuid()
+### uuid
 
 Provides access to uuid.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### token()
+### token
 
 Provides access to token.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### data()
+### data
 
 Provides access to data.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### status()
+### status
 
 Provides access to status.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

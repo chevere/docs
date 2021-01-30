@@ -28,23 +28,23 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### toString()
+### toString
 
 Provides access to `$key`.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

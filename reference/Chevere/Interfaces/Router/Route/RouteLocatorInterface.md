@@ -18,36 +18,36 @@ Describes the component in charge of defining a route name.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *repository*: string
 - *name*: string
+:::
 
 ---
 
-### repository()
+### repository
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### path()
+### path
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toString()
+### toString
 
 Returns a string, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

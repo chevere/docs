@@ -14,21 +14,21 @@ Describes the component in charge of handling routing.
 
 ## Methods
 
-### withAddedRoutable()
+### withAddedRoutable
 
 Return an instance with the specified added `$routable`.
 
-**Parameters:**
-
+::: warning Parameters
 - *routable*: [RoutableInterface](./RoutableInterface.md)
 - *group*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) if `$group` is invalid.
 - [OverflowException](../../Exceptions/Core/OverflowException.md) if `$routable` has been already added.
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -37,31 +37,31 @@ an instance that contains the specified added `$routable`.
 
 ---
 
-### index()
+### index
 
 Provides access to the index instance.
 
-::: tip RETURN
+::: tip Return
 [RouterIndexInterface](./RouterIndexInterface.md)
 :::
 
 ---
 
-### routables()
+### routables
 
 Provides access to the routables instance.
 
-::: tip RETURN
+::: tip Return
 [RoutablesInterface](./RoutablesInterface.md)
 :::
 
 ---
 
-### routeCollector()
+### routeCollector
 
 Provides access to the route collector instance.
 
-::: tip RETURN
+::: tip Return
 FastRoute\RouteCollector
 :::
 

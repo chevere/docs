@@ -14,15 +14,15 @@ Describes the component in charge of defining a class with explicit dependencies
 
 ## Methods
 
-### withDependencies()
+### withDependencies
 
 Dependencies must be passed on construct for this interface.
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedDependency*: object
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
@@ -42,35 +42,35 @@ new Dependent(foo: $fooInstance, bar: $barInstance);
 
 ---
 
-### getDependencies()
+### getDependencies
 
 Declares required dependencies as class name -> property name.
 
-::: tip RETURN
+::: tip Return
 [DependenciesInterface](./DependenciesInterface.md)
 :::
 
 ---
 
-### assertDependencies()
+### assertDependencies
 
 Asserts that the instance meets all dependencies.
 
-::: danger THROWS
+::: danger Throws
 - [LogicException](../../Exceptions/Core/LogicException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### dependencies()
+### dependencies
 
 Provides access to the dependencies instance.
 
-::: tip RETURN
+::: tip Return
 [DependenciesInterface](./DependenciesInterface.md)
 :::
 

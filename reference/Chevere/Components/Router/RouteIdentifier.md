@@ -15,38 +15,38 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *group*: string
 - *name*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### group()
+### group
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### name()
+### name
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

@@ -14,42 +14,42 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### withAddedRoutable()
+### withAddedRoutable
 
-**Parameters:**
-
+::: warning Parameters
 - *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
 - *group*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [RouterInterface](../../Interfaces/Router/RouterInterface.md)
 :::
 
 ---
 
-### index()
+### index
 
-::: tip RETURN
+::: tip Return
 [RouterIndexInterface](../../Interfaces/Router/RouterIndexInterface.md)
 :::
 
 ---
 
-### routables()
+### routables
 
-::: tip RETURN
+::: tip Return
 [RoutablesInterface](../../Interfaces/Router/RoutablesInterface.md)
 :::
 
 ---
 
-### routeCollector()
+### routeCollector
 
-::: tip RETURN
+::: tip Return
 FastRoute\RouteCollector
 :::
 

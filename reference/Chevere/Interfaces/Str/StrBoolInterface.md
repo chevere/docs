@@ -14,91 +14,91 @@ Describes the component in charge of string conditionals.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
 ---
 
-### empty()
+### empty
 
 Indicates whether the string is empty.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### ctypeSpace()
+### ctypeSpace
 
 Indicates whether the string is ctype space.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### ctypeDigit()
+### ctypeDigit
 
 Indicates whether the string is ctype digit.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### startsWithCtypeDigit()
+### startsWithCtypeDigit
 
 Indicates whether the string starts with ctype digit.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### startsWith()
+### startsWith
 
 Indicates whether the string starts with `$needle`.
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### endsWith()
+### endsWith
 
 Indicates whether the string ends with `$needle`.
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### same()
+### same
 
 Indicates whether the string is the same as `$needle`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 

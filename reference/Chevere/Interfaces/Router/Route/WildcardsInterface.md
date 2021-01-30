@@ -22,15 +22,15 @@ Describes the component in charge of collecting objects implementing `RouteWildc
 
 ## Methods
 
-### withAddedWildcard()
+### withAddedWildcard
 
 Return an instance with the specified `$wildcard`.
 
-**Parameters:**
-
+::: warning Parameters
 - *wildcard*: [RouteWildcardInterface](./RouteWildcardInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -41,85 +41,85 @@ This method should overrides existing wildcards.
 
 ---
 
-### has()
+### has
 
 Returns a boolean indicating whether the instance has a given RouteWildcardInterface.
 
-**Parameters:**
-
+::: warning Parameters
 - *wildcardName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
 Provides access to the target RouteWildcardInterface instance.
 
-**Parameters:**
-
+::: warning Parameters
 - *wildcardName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [RouteWildcardInterface](./RouteWildcardInterface.md)
 :::
 
 ---
 
-### hasPos()
+### hasPos
 
 Returns a boolean indicating whether the instance has RouteWildcardInterface in the given pos.
 
-**Parameters:**
-
+::: warning Parameters
 - *pos*: int
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getPos()
+### getPos
 
 Provides access to the target RouteWildcardInterface instance in the given pos.
 
-**Parameters:**
-
+::: warning Parameters
 - *pos*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [RouteWildcardInterface](./RouteWildcardInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### toArray()
+### toArray
 
 Returns an array, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

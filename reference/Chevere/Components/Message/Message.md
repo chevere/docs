@@ -55,122 +55,122 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *template*: string
+:::
 
 ---
 
-### __toString()
+### __toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### template()
+### template
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### trTable()
+### trTable
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### toConsole()
+### toConsole
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toHtml()
+### toHtml
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### strtr()
+### strtr
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---
 
-### emphasis()
+### emphasis
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---
 
-### strong()
+### strong
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---
 
-### underline()
+### underline
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---
 
-### code()
+### code
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
 

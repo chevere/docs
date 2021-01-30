@@ -21,15 +21,15 @@ Describes the component in charge of collecting objects implementing `GroupSpecI
 
 ## Methods
 
-### withPut()
+### withPut
 
 Return an instance with the specified `$groupSpec`.
 
-**Parameters:**
-
+::: warning Parameters
 - *groupSpec*: [GroupSpecInterface](./GroupSpecInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -38,51 +38,51 @@ an instance that contains the specified `$groupSpec`.
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has a group spec identified by its `$groupName`.
 
-**Parameters:**
-
+::: warning Parameters
 - *groupName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
 Returns the group spec identified by its `$groupName`.
 
-**Parameters:**
-
+::: warning Parameters
 - *groupName*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [GroupSpecInterface](./GroupSpecInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

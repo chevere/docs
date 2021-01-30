@@ -36,34 +36,34 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
 - *match*: [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RouteWildcardInvalidException](../../../Exceptions/Router/Route/RouteWildcardInvalidException.md) 
 :::
 
 ---
 
-### match()
+### match
 
 Provides access to the match instance.
 
-::: tip RETURN
+::: tip Return
 [RouteWildcardMatchInterface](./RouteWildcardMatchInterface.md)
 :::
 
 ---
 
-### toString()
+### toString
 
 Returns a string, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

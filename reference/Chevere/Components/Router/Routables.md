@@ -18,78 +18,78 @@ editLink: false
 
 ## Methods
 
-### withPut()
+### withPut
 
-**Parameters:**
-
+::: warning Parameters
 - *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [RoutablesInterface](../../Interfaces/Router/RoutablesInterface.md)
 :::
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
 :::
 
 ---
 
-### __construct()
+### __construct
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### keys()
+### keys
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

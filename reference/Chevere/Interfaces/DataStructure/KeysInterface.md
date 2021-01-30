@@ -14,11 +14,11 @@ Describes the component in charge of providing an interface exposing object keys
 
 ## Methods
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

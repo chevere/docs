@@ -14,13 +14,13 @@ Describes the component in charge of asserting filesystem path format.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md) 
 - [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md) 
 - [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md) 
@@ -29,9 +29,9 @@ Describes the component in charge of asserting filesystem path format.
 
 ---
 
-### path()
+### path
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

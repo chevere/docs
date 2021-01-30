@@ -14,54 +14,54 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *data*: array
+:::
 
 ---
 
-### code()
+### code
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### data()
+### data
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### withThrowable()
+### withThrowable
 
-**Parameters:**
-
+::: warning Parameters
 - *throwable*: [Throwable](https://www.php.net/manual/class.throwable)
 - *code*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [ActionExecutedInterface](../../Interfaces/Action/ActionExecutedInterface.md)
 :::
 
 ---
 
-### hasThrowable()
+### hasThrowable
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### throwable()
+### throwable
 
-::: tip RETURN
+::: tip Return
 [Throwable](https://www.php.net/manual/class.throwable)
 :::
 

@@ -15,37 +15,37 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *plugType*: [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
+:::
 
 ---
 
-### withAdded()
+### withAdded
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueInterface](../../Interfaces/Pluggable/PlugsQueueInterface.md)
 :::
 
 ---
 
-### plugType()
+### plugType
 
-::: tip RETURN
+::: tip Return
 [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

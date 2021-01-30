@@ -24,78 +24,78 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *dir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md) 
 :::
 
 ---
 
-### dir()
+### dir
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 :::
 
 ---
 
-### withPut()
+### withPut
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: [CacheKeyInterface](../../Interfaces/Cache/CacheKeyInterface.md)
 - *varStorable*: [VarStorableInterface](../../Interfaces/VarStorable/VarStorableInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [CacheInterface](../../Interfaces/Cache/CacheInterface.md)
 :::
 
 ---
 
-### without()
+### without
 
-**Parameters:**
-
+::: warning Parameters
 - *cacheKey*: [CacheKeyInterface](../../Interfaces/Cache/CacheKeyInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [CacheInterface](../../Interfaces/Cache/CacheInterface.md)
 :::
 
 ---
 
-### exists()
+### exists
 
-**Parameters:**
-
+::: warning Parameters
 - *cacheKey*: [CacheKeyInterface](../../Interfaces/Cache/CacheKeyInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *cacheKey*: [CacheKeyInterface](../../Interfaces/Cache/CacheKeyInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [CacheItemInterface](../../Interfaces/Cache/CacheItemInterface.md)
 :::
 
 ---
 
-### puts()
+### puts
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

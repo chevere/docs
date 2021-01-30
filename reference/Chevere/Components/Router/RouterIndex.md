@@ -15,101 +15,101 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### withAddedRoutable()
+### withAddedRoutable
 
-**Parameters:**
-
+::: warning Parameters
 - *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
 - *group*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [RouterIndexInterface](../../Interfaces/Router/RouterIndexInterface.md)
 :::
 
 ---
 
-### hasRouteName()
+### hasRouteName
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getRouteIdentifier()
+### getRouteIdentifier
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [RouteIdentifierInterface](../../Interfaces/Router/RouteIdentifierInterface.md)
 :::
 
 ---
 
-### hasGroup()
+### hasGroup
 
-**Parameters:**
-
+::: warning Parameters
 - *group*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getGroupRouteNames()
+### getGroupRouteNames
 
-**Parameters:**
-
+::: warning Parameters
 - *group*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getRouteGroup()
+### getRouteGroup
 
-**Parameters:**
-
+::: warning Parameters
 - *group*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

@@ -14,97 +14,97 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### with()
+### with
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
 :::
 
 ---
 
-### withOut()
+### withOut
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
 :::
 
 ---
 
-### withError()
+### withError
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
 :::
 
 ---
 
-### withDebug()
+### withDebug
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
 :::
 
 ---
 
-### withLog()
+### withLog
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WritersInterface](../../Interfaces/Writer/WritersInterface.md)
 :::
 
 ---
 
-### out()
+### out
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 
 ---
 
-### error()
+### error
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 
 ---
 
-### debug()
+### debug
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 
 ---
 
-### log()
+### log
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 

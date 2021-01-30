@@ -14,53 +14,53 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: 
+:::
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### arguments()
+### arguments
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### callables()
+### callables
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### index()
+### index
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### withAddedCallable()
+### withAddedCallable
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedCallable*: callable
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

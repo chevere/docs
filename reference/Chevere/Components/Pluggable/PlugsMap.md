@@ -15,86 +15,86 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *type*: [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
+:::
 
 ---
 
-### plugType()
+### plugType
 
-::: tip RETURN
+::: tip Return
 [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
 :::
 
 ---
 
-### withAdded()
+### withAdded
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [PlugsMapInterface](../../Interfaces/Pluggable/PlugsMapInterface.md)
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### hasPlugsFor()
+### hasPlugsFor
 
-**Parameters:**
-
+::: warning Parameters
 - *pluggable*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getPlugsQueueTypedFor()
+### getPlugsQueueTypedFor
 
-**Parameters:**
-
+::: warning Parameters
 - *pluggable*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueTypedInterface](../../Interfaces/Pluggable/PlugsQueueTypedInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

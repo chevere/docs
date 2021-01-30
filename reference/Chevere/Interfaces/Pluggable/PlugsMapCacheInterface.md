@@ -24,27 +24,27 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *cache*: [CacheInterface](../Cache/CacheInterface.md)
+:::
 
 ---
 
-### withPut()
+### withPut
 
 Return an instance with the specified `$plugsMap`.
 
-**Parameters:**
-
+::: warning Parameters
 - *plugsMap*: [PlugsMapInterface](./PlugsMapInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -53,33 +53,33 @@ an instance that contains the specified `$plugsMap`.
 
 ---
 
-### hasPlugsQueueTypedFor()
+### hasPlugsQueueTypedFor
 
 Indicates whether the instance has a plugs queue typed for `$className`.
 
-**Parameters:**
-
+::: warning Parameters
 - *className*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getPlugsQueueTypedFor()
+### getPlugsQueueTypedFor
 
 Returns the plugs queue typed for `$className`.
 
-**Parameters:**
-
+::: warning Parameters
 - *className*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
 :::
 

@@ -14,24 +14,24 @@ Describes the component in charge of defining a routable.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *route*: Route/RouteInterface.md
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RouteNotRoutableException](../../Exceptions/Router/RouteNotRoutableException.md) 
 - [RouteWithoutEndpointsException](../../Exceptions/Router/RouteWithoutEndpointsException.md) 
 :::
 
 ---
 
-### route()
+### route
 
 Provides access to the RouteInterface instance.
 
-::: tip RETURN
+::: tip Return
 Route/RouteInterface.md
 :::
 

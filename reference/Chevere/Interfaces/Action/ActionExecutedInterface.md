@@ -14,44 +14,44 @@ Describes the component in charge of handling the controller execution outcome.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *data*: array
+:::
 
 ---
 
-### code()
+### code
 
 Provides access to the controller returned code.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### data()
+### data
 
 Provides access to the controller returned data.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### withThrowable()
+### withThrowable
 
 Return an instance with the specified throwable, with its exit code.
 
-**Parameters:**
-
+::: warning Parameters
 - *throwable*: [Throwable](https://www.php.net/manual/class.throwable)
 - *code*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -60,21 +60,21 @@ an instance that contains the specified throwable, with its exit code.
 
 ---
 
-### hasThrowable()
+### hasThrowable
 
 Indicates whether the instance has a `\Throwable`.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### throwable()
+### throwable
 
 Provides access to the `\Throwable` instance.
 
-::: tip RETURN
+::: tip Return
 [Throwable](https://www.php.net/manual/class.throwable)
 :::
 

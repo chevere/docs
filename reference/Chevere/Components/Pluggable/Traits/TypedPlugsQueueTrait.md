@@ -10,41 +10,41 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### withAdded()
+### withAdded
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](../../../Interfaces/Pluggable/PlugInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueTypedInterface](../../../Interfaces/Pluggable/PlugsQueueTypedInterface.md)
 :::
 
 ---
 
-### interface()
+### interface
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getPlugType()
+### getPlugType
 
-::: tip RETURN
+::: tip Return
 [PlugTypeInterface](../../../Interfaces/Pluggable/PlugTypeInterface.md)
 :::
 
 ---
 
-### plugsQueue()
+### plugsQueue
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueInterface](../../../Interfaces/Pluggable/PlugsQueueInterface.md)
 :::
 

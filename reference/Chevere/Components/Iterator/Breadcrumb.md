@@ -17,69 +17,69 @@ editLink: false
 
 ## Methods
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *pos*: int
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### pos()
+### pos
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### withAddedItem()
+### withAddedItem
 
-**Parameters:**
-
+::: warning Parameters
 - *item*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [BreadcrumbInterface](../../Interfaces/Iterator/BreadcrumbInterface.md)
 :::
 
 ---
 
-### withRemovedItem()
+### withRemovedItem
 
-**Parameters:**
-
+::: warning Parameters
 - *pos*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [BreadcrumbInterface](../../Interfaces/Iterator/BreadcrumbInterface.md)
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

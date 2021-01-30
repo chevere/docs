@@ -19,23 +19,23 @@ Describes the component in charge of defining the index spec.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *specDir*: [DirInterface](../../Filesystem/DirInterface.md)
+:::
 
 ---
 
-### withAddedGroup()
+### withAddedGroup
 
 Return an instance with the specified `$groupSpec`.
 
-**Parameters:**
-
+::: warning Parameters
 - *groupSpec*: [GroupSpecInterface](./GroupSpecInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -44,31 +44,31 @@ an instance that contains the specified `$groupSpec`.
 
 ---
 
-### jsonPath()
+### jsonPath
 
 Provides access to the json path.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### key()
+### key
 
 Provides access to the key.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toArray()
+### toArray
 
 Returns an array, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

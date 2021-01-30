@@ -14,50 +14,50 @@ editLink: false
 
 ## Methods
 
-### highlight()
+### highlight
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### emphasis()
+### emphasis
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### indent()
+### indent
 
-**Parameters:**
-
+::: warning Parameters
 - *indent*: int
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### filterEncodedChars()
+### filterEncodedChars
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

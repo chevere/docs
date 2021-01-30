@@ -29,82 +29,82 @@ Type `integer`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *benchmark*: [BenchmarkInterface](../../Interfaces/Benchmark/BenchmarkInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [ArgumentCountException](../../Exceptions/Core/ArgumentCountException.md) if the argument count doesn't match the callable parameters
 - [TypeException](../../Exceptions/Core/TypeException.md) if the argument types doesn't match
 :::
 
 ---
 
-### withRequestTime()
+### withRequestTime
 
-**Parameters:**
-
+::: warning Parameters
 - *time*: float
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### withTimes()
+### withTimes
 
-**Parameters:**
-
+::: warning Parameters
 - *times*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [BenchmarkRunInterface](../../Interfaces/Benchmark/BenchmarkRunInterface.md)
 :::
 
 ---
 
-### times()
+### times
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### withTimeLimit()
+### withTimeLimit
 
-**Parameters:**
-
+::: warning Parameters
 - *timeLimit*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [BenchmarkRunInterface](../../Interfaces/Benchmark/BenchmarkRunInterface.md)
 :::
 
 ---
 
-### timeLimit()
+### timeLimit
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### exec()
+### exec
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

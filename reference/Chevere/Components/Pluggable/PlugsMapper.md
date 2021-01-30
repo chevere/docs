@@ -14,49 +14,49 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *plugType*: [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
+:::
 
 ---
 
-### withPlugsMapFor()
+### withPlugsMapFor
 
-**Parameters:**
-
+::: warning Parameters
 - *dir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### plugsMap()
+### plugsMap
 
-::: tip RETURN
+::: tip Return
 [PlugsMapInterface](../../Interfaces/Pluggable/PlugsMapInterface.md)
 :::
 
 ---
 
-### withWriter()
+### withWriter
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### writer()
+### writer
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 :::
 

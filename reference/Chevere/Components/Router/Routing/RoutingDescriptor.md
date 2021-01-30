@@ -18,35 +18,35 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *dir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
 - *path*: [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md)
 - *decorator*: [RouteDecoratorInterface](../../../Interfaces/Router/Route/RouteDecoratorInterface.md)
+:::
 
 ---
 
-### dir()
+### dir
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
 :::
 
 ---
 
-### path()
+### path
 
-::: tip RETURN
+::: tip Return
 [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md)
 :::
 
 ---
 
-### decorator()
+### decorator
 
-::: tip RETURN
+::: tip Return
 [RouteDecoratorInterface](../../../Interfaces/Router/Route/RouteDecoratorInterface.md)
 :::
 

@@ -40,65 +40,65 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *entry*: array
+:::
 
 ---
 
-### file()
+### file
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### line()
+### line
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### fileLine()
+### fileLine
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### function()
+### function
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### class()
+### class
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### type()
+### type
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### args()
+### args
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

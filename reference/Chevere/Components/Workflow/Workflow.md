@@ -33,162 +33,162 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
 ---
 
-### name()
+### name
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### withAdded()
+### withAdded
 
-**Parameters:**
-
+::: warning Parameters
 - *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
 :::
 
 ---
 
-### withAddedBefore()
+### withAddedBefore
 
-**Parameters:**
-
+::: warning Parameters
 - *before*: string
 - *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
 :::
 
 ---
 
-### withAddedAfter()
+### withAddedAfter
 
-**Parameters:**
-
+::: warning Parameters
 - *after*: string
 - *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
 :::
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 :::
 
 ---
 
-### parameters()
+### parameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### order()
+### order
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### hasVar()
+### hasVar
 
-**Parameters:**
-
+::: warning Parameters
 - *variable*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getVar()
+### getVar
 
-**Parameters:**
-
+::: warning Parameters
 - *variable*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getExpected()
+### getExpected
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

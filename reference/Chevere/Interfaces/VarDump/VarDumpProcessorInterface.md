@@ -24,101 +24,101 @@ Type `integer`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *varDumper*: [VarDumperInterface](./VarDumperInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### type()
+### type
 
 Provides the variable type (primitive).
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### info()
+### info
 
 Provides info about the variable like `size=1`, `length=6`, 'Object #id'
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### typeHighlighted()
+### typeHighlighted
 
 Provides a highlighted type.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### highlightOperator()
+### highlightOperator
 
 Highlights the given operator `$string`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### highlightParentheses()
+### highlightParentheses
 
 Highlights and wraps in parentheses the given `$string`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### circularReference()
+### circularReference
 
 Provides the `*circular reference*` flag.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### maxDepthReached()
+### maxDepthReached
 
 Provides the `*max depth reached*` flag.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### write()
+### write
 
 Write the dump to the stream.
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

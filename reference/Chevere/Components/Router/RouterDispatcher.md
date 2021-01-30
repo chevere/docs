@@ -18,22 +18,22 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *routeCollector*: FastRoute\RouteCollector
+:::
 
 ---
 
-### dispatch()
+### dispatch
 
-**Parameters:**
-
+::: warning Parameters
 - *httpMethod*: string
 - *uri*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [RoutedInterface](../../Interfaces/Router/RoutedInterface.md)
 :::
 

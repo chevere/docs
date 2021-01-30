@@ -15,41 +15,41 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *route*: string
+:::
 
 ---
 
-### wildcards()
+### wildcards
 
-::: tip RETURN
+::: tip Return
 [WildcardsInterface](../../../Interfaces/Router/Route/WildcardsInterface.md)
 :::
 
 ---
 
-### regex()
+### regex
 
-::: tip RETURN
+::: tip Return
 [RegexInterface](../../../Interfaces/Regex/RegexInterface.md)
 :::
 
 ---
 
-### name()
+### name
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

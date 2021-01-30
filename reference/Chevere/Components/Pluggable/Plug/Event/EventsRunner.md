@@ -14,23 +14,23 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *queue*: [EventQueueInterface](../../../../Interfaces/Pluggable/Plug/Event/EventQueueInterface.md)
 - *writers*: [WritersInterface](../../../../Interfaces/Writer/WritersInterface.md)
+:::
 
 ---
 
-### run()
+### run
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *data*: array
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

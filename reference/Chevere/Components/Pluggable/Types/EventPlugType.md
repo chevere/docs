@@ -18,41 +18,41 @@ Describes the component in charge of defining a plug ot type event listener.
 
 ## Methods
 
-### interface()
+### interface
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### plugsTo()
+### plugsTo
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### trailingName()
+### trailingName
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getPlugsQueueTyped()
+### getPlugsQueueTyped
 
-::: tip RETURN
+::: tip Return
 [EventQueueInterface](../../../Interfaces/Pluggable/Plug/Event/EventQueueInterface.md)
 :::
 
 ---
 
-### pluggableAnchorsMethod()
+### pluggableAnchorsMethod
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

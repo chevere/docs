@@ -40,39 +40,39 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
 Constructs a highlight instance specified by `$key`.
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfRangeException](../../Exceptions/Core/OutOfRangeException.md) 
 :::
 
 ---
 
-### highlight()
+### highlight
 
 Highlights `$string`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### palette()
+### palette
 
 Provide access to the color palette.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

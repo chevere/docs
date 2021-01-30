@@ -14,27 +14,27 @@ Describes the component in charge of defining a task (a unit of job).
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *action*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### withArguments()
+### withArguments
 
 Return an instance with the specified `$namedArguments`.
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -43,17 +43,17 @@ an instance that contains the specified `$namedArguments`.
 
 ---
 
-### action()
+### action
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### arguments()
+### arguments
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

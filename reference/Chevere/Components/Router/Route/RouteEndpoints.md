@@ -18,73 +18,73 @@ editLink: false
 
 ## Methods
 
-### withPut()
+### withPut
 
-**Parameters:**
-
+::: warning Parameters
 - *routeEndpoint*: [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [RouteEndpointsInterface](../../../Interfaces/Router/Route/RouteEndpointsInterface.md)
 :::
 
 ---
 
-### hasKey()
+### hasKey
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)
 :::
 
 ---
 
-### __construct()
+### __construct
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### keys()
+### keys
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

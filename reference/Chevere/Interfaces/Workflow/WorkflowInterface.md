@@ -36,37 +36,37 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
 ---
 
-### name()
+### name
 
 Provides access to the instance name.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### withAdded()
+### withAdded
 
 Return an instance with the specified `$step`.
 
-**Parameters:**
-
+::: warning Parameters
 - *...step*: [StepInterface](./StepInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -75,20 +75,20 @@ an instance that contains the specified `$step`.
 
 ---
 
-### withAddedBefore()
+### withAddedBefore
 
 Return an instance with the specified `$step` added before `$before`.
 
-**Parameters:**
-
+::: warning Parameters
 - *before*: string
 - *...step*: [StepInterface](./StepInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -97,20 +97,20 @@ an instance that contains the specified `$step` added before `$before`.
 
 ---
 
-### withAddedAfter()
+### withAddedAfter
 
 Return an instance with the specified `$step` added after `$after`.
 
-**Parameters:**
-
+::: warning Parameters
 - *after*: string
 - *...step*: [StepInterface](./StepInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -119,67 +119,67 @@ an instance that contains the specified `$step` added after `$after`.
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [StepInterface](./StepInterface.md)
 :::
 
 ---
 
-### parameters()
+### parameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### order()
+### order
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### hasVar()
+### hasVar
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getVar()
+### getVar
 
 Provides access to the `$var` mapping for job variables.
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: string
+:::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
@@ -197,23 +197,23 @@ return ['step', 'var'];
 
 ---
 
-### getExpected()
+### getExpected
 
 Provides access to the expected return arguments for the given `$step`.
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
+:::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

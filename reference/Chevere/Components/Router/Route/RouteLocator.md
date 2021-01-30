@@ -15,34 +15,34 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *repository*: string
 - *path*: string
+:::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### repository()
+### repository
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### path()
+### path
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

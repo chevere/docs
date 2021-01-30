@@ -15,57 +15,57 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### withAdded()
+### withAdded
 
-**Parameters:**
-
+::: warning Parameters
 - *descriptor*: [RoutingDescriptorInterface](../../../Interfaces/Router/Routing/RoutingDescriptorInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [RoutingDescriptorsInterface](../../../Interfaces/Router/Routing/RoutingDescriptorsInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### contains()
+### contains
 
-**Parameters:**
-
+::: warning Parameters
 - *descriptor*: [RoutingDescriptorInterface](../../../Interfaces/Router/Routing/RoutingDescriptorInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *position*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [RoutingDescriptorInterface](../../../Interfaces/Router/Routing/RoutingDescriptorInterface.md)
 :::
 

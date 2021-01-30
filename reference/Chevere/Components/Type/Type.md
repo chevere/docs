@@ -133,53 +133,53 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *type*: string
+:::
 
 ---
 
-### validator()
+### validator
 
-::: tip RETURN
+::: tip Return
 callable
 :::
 
 ---
 
-### primitive()
+### primitive
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### typeHinting()
+### typeHinting
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### validate()
+### validate
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: 
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isScalar()
+### isScalar
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 

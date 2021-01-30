@@ -14,33 +14,33 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: 
+:::
 
 ---
 
-### var()
+### var
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### type()
+### type
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### processorName()
+### processorName
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

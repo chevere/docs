@@ -14,17 +14,17 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *route*: [RouteInterface](../../Interfaces/Router/Route/RouteInterface.md)
+:::
 
 ---
 
-### route()
+### route
 
-::: tip RETURN
+::: tip Return
 [RouteInterface](../../Interfaces/Router/Route/RouteInterface.md)
 :::
 

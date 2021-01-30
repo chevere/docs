@@ -10,17 +10,17 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *hrTime*: int
+:::
 
 ---
 
-### toReadMs()
+### toReadMs
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

@@ -14,17 +14,17 @@ Describes the component that defines an HTTP method according to RFC 7231.
 
 ## Methods
 
-### name()
+### name
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### description()
+### description
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

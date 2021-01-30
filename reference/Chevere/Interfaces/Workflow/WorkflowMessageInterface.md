@@ -14,15 +14,15 @@ Describes the component in charge of defining a workflow queue.
 
 ## Methods
 
-### withPriority()
+### withPriority
 
 Return an instance with the specified `$priority`.
 
-**Parameters:**
-
+::: warning Parameters
 - *priority*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -31,15 +31,15 @@ an instance that contains the specified `$priority`.
 
 ---
 
-### withDelay()
+### withDelay
 
 Return an instance with the specified delay in `$seconds`.
 
-**Parameters:**
-
+::: warning Parameters
 - *seconds*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -48,15 +48,15 @@ an instance that contains the specified delay in `$seconds`.
 
 ---
 
-### withExpiration()
+### withExpiration
 
 Return an instance with the specified expiration in `$seconds`.
 
-**Parameters:**
-
+::: warning Parameters
 - *seconds*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -65,51 +65,51 @@ an instance that contains the specified expiration in `$seconds`.
 
 ---
 
-### workflowRun()
+### workflowRun
 
 Provides access to the instance WorkflowRunInterface.
 
-::: tip RETURN
+::: tip Return
 [WorkflowRunInterface](./WorkflowRunInterface.md)
 :::
 
 ---
 
-### uuid()
+### uuid
 
 Provides access to the token.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### priority()
+### priority
 
 Provides access to the priority execution.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### delay()
+### delay
 
 Provides access to the delay execution.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### expiration()
+### expiration
 
 Provides access to the expiration, in milliseconds.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

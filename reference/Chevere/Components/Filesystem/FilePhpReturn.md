@@ -32,37 +32,37 @@ Type `integer`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *filePhp*: [FilePhpInterface](../../Interfaces/Filesystem/FilePhpInterface.md)
+:::
 
 ---
 
-### withStrict()
+### withStrict
 
-**Parameters:**
-
+::: warning Parameters
 - *strict*: bool
+:::
 
-::: tip RETURN
+::: tip Return
 [FilePhpReturnInterface](../../Interfaces/Filesystem/FilePhpReturnInterface.md)
 :::
 
 ---
 
-### filePhp()
+### filePhp
 
-::: tip RETURN
+::: tip Return
 [FilePhpInterface](../../Interfaces/Filesystem/FilePhpInterface.md)
 :::
 
 ---
 
-### raw()
+### raw
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md) 
 - [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md) 
@@ -71,39 +71,39 @@ Type `integer`
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### var()
+### var
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### varType()
+### varType
 
-**Parameters:**
-
+::: warning Parameters
 - *type*: [TypeInterface](../../Interfaces/Type/TypeInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### put()
+### put
 
-**Parameters:**
-
+::: warning Parameters
 - *varStorable*: [VarStorableInterface](../../Interfaces/VarStorable/VarStorableInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

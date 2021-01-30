@@ -18,85 +18,85 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### withPut()
+### withPut
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedValues*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### assertHasKey()
+### assertHasKey
 
-**Parameters:**
-
+::: warning Parameters
 - *...keys*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### keys()
+### keys
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

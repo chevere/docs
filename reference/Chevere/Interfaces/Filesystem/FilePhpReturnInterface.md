@@ -36,15 +36,15 @@ Type `integer`
 
 ## Methods
 
-### withStrict()
+### withStrict
 
 Return an instance with the strict flag.
 
-**Parameters:**
-
+::: warning Parameters
 - *strict*: bool
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -56,21 +56,21 @@ against `FilePhpReturnInterface::PHP_RETURN`
 
 ---
 
-### filePhp()
+### filePhp
 
 Provides access to the FilePhpInterface instance.
 
-::: tip RETURN
+::: tip Return
 [FilePhpInterface](./FilePhpInterface.md)
 :::
 
 ---
 
-### raw()
+### raw
 
 Retrieves the file return (as-is).
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md) 
 - [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md) 
@@ -79,17 +79,17 @@ Retrieves the file return (as-is).
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### var()
+### var
 
 Retrieves a PHP variable, applying unserialize to objects (if any).
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md) 
 - [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md) 
@@ -98,21 +98,21 @@ Retrieves a PHP variable, applying unserialize to objects (if any).
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### varType()
+### varType
 
 Same as `var()`, but checking the variable `$type`.
 
-**Parameters:**
-
+::: warning Parameters
 - *type*: [TypeInterface](../Type/TypeInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileHandleException](../../Exceptions/Filesystem/FileHandleException.md) 
 - [FileWithoutContentsException](../../Exceptions/Filesystem/FileWithoutContentsException.md) 
@@ -122,26 +122,26 @@ Same as `var()`, but checking the variable `$type`.
 - [FileReturnInvalidTypeException](../../Exceptions/Filesystem/FileReturnInvalidTypeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### put()
+### put
 
 Put `$var` into the file using var_export return and strict format.
 
-**Parameters:**
-
+::: warning Parameters
 - *varStorable*: [VarStorableInterface](../VarStorable/VarStorableInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileUnableToPutException](../../Exceptions/Filesystem/FileUnableToPutException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

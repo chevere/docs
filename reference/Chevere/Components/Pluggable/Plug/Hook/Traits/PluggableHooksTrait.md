@@ -10,26 +10,26 @@ editLink: false
 
 ## Methods
 
-### withHooksRunner()
+### withHooksRunner
 
-**Parameters:**
-
+::: warning Parameters
 - *hooksRunner*: [HooksRunnerInterface](../../../../../Interfaces/Pluggable/Plug/Hook/HooksRunnerInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [PluggableHooksInterface](../../../../../Interfaces/Pluggable/Plug/Hook/PluggableHooksInterface.md)
 :::
 
 ---
 
-### hook()
+### hook
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *argument*: 
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

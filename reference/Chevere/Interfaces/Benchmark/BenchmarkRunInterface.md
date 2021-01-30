@@ -28,65 +28,65 @@ Type `integer`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *benchmark*: [BenchmarkInterface](./BenchmarkInterface.md)
+:::
 
 ---
 
-### withTimes()
+### withTimes
 
-**Parameters:**
-
+::: warning Parameters
 - *times*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### times()
+### times
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### withTimeLimit()
+### withTimeLimit
 
-**Parameters:**
-
+::: warning Parameters
 - *timeLimit*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### timeLimit()
+### timeLimit
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### exec()
+### exec
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

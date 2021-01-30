@@ -14,25 +14,25 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *phpFileReturn*: [FilePhpReturnInterface](../../Interfaces/Filesystem/FilePhpReturnInterface.md)
+:::
 
 ---
 
-### raw()
+### raw
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### var()
+### var
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

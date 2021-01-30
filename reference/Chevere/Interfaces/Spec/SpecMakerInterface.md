@@ -14,36 +14,36 @@ Describes the component in charge of creating a routing spec.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *specDir*: [DirInterface](../Filesystem/DirInterface.md)
 - *outputDir*: [DirInterface](../Filesystem/DirInterface.md)
 - *router*: [RouterInterface](../Router/RouterInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [FilesystemException](../../Exceptions/Filesystem/FilesystemException.md) 
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### specIndex()
+### specIndex
 
 Provides access to the generated spec index instance.
 
-::: tip RETURN
+::: tip Return
 [SpecIndexInterface](./SpecIndexInterface.md)
 :::
 
 ---
 
-### files()
+### files
 
 Provides access to the files map instance.
 
-::: tip RETURN
+::: tip Return
 [Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 

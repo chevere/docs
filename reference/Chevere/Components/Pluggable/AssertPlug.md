@@ -14,25 +14,25 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
+:::
 
 ---
 
-### plugType()
+### plugType
 
-::: tip RETURN
+::: tip Return
 [PlugTypeInterface](../../Interfaces/Pluggable/PlugTypeInterface.md)
 :::
 
 ---
 
-### plug()
+### plug
 
-::: tip RETURN
+::: tip Return
 [PlugInterface](../../Interfaces/Pluggable/PlugInterface.md)
 :::
 

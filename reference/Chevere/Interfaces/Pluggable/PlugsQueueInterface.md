@@ -18,28 +18,28 @@ Describes the component in charge of defining a generic plugs queue.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *plugType*: [PlugTypeInterface](./PlugTypeInterface.md)
+:::
 
 ---
 
-### withAdded()
+### withAdded
 
 Return an instance with the specified `$plug`.
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](./PlugInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - ⚠ Unknown type `TypeException` declared in `@throws` tag`
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -48,17 +48,17 @@ an instance that contains the specified `$plug`.
 
 ---
 
-### plugType()
+### plugType
 
 Provides access to the plug type instance.
 
-::: tip RETURN
+::: tip Return
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
 
 ---
 
-### toArray()
+### toArray
 
 ```php
 return [
@@ -66,7 +66,7 @@ return [
 ]
 ```
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

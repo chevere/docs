@@ -14,84 +14,84 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *workflow*: [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
 - *...namedArguments*: mixed
+:::
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### uuid()
+### uuid
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### workflow()
+### workflow
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](../../Interfaces/Workflow/WorkflowInterface.md)
 :::
 
 ---
 
-### arguments()
+### arguments
 
-::: tip RETURN
+::: tip Return
 [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### withStepResponse()
+### withStepResponse
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
 - *response*: [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
 :::
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 

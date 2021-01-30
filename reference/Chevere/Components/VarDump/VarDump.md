@@ -14,62 +14,62 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *formatter*: [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md)
 - *outputter*: [VarDumpOutputterInterface](../../Interfaces/VarDump/VarDumpOutputterInterface.md)
+:::
 
 ---
 
-### withVars()
+### withVars
 
-**Parameters:**
-
+::: warning Parameters
 - *...vars*: 
+:::
 
-::: tip RETURN
+::: tip Return
 [VarDumpInterface](../../Interfaces/VarDump/VarDumpInterface.md)
 :::
 
 ---
 
-### withShift()
+### withShift
 
-**Parameters:**
-
+::: warning Parameters
 - *shift*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [VarDumpInterface](../../Interfaces/VarDump/VarDumpInterface.md)
 :::
 
 ---
 
-### process()
+### process
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### vars()
+### vars
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### shift()
+### shift
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

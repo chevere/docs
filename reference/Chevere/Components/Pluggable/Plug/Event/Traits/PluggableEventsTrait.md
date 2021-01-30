@@ -10,26 +10,26 @@ editLink: false
 
 ## Methods
 
-### withEventsRunner()
+### withEventsRunner
 
-**Parameters:**
-
+::: warning Parameters
 - *eventsRunner*: [EventsRunnerInterface](../../../../../Interfaces/Pluggable/Plug/Event/EventsRunnerInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [PluggableEventsInterface](../../../../../Interfaces/Pluggable/Plug/Event/PluggableEventsInterface.md)
 :::
 
 ---
 
-### event()
+### event
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *data*: array
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

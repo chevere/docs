@@ -14,89 +14,89 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
 ---
 
-### empty()
+### empty
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### ctypeSpace()
+### ctypeSpace
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### ctypeDigit()
+### ctypeDigit
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### startsWithCtypeDigit()
+### startsWithCtypeDigit
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### startsWith()
+### startsWith
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### endsWith()
+### endsWith
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### same()
+### same
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### contains()
+### contains
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 

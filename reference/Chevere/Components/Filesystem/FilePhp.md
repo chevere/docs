@@ -14,33 +14,33 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *file*: [FileInterface](../../Interfaces/Filesystem/FileInterface.md)
+:::
 
 ---
 
-### file()
+### file
 
-::: tip RETURN
+::: tip Return
 [FileInterface](../../Interfaces/Filesystem/FileInterface.md)
 :::
 
 ---
 
-### cache()
+### cache
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### flush()
+### flush
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

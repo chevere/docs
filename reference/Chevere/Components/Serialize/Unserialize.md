@@ -14,25 +14,25 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *unserializable*: string
+:::
 
 ---
 
-### var()
+### var
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### type()
+### type
 
-::: tip RETURN
+::: tip Return
 [TypeInterface](../../Interfaces/Type/TypeInterface.md)
 :::
 

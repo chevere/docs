@@ -14,31 +14,31 @@ Describes the component in charge of handling a route element.
 
 ## Methods
 
-### dir()
+### dir
 
 Provides access to the dir instance.
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../../Filesystem/DirInterface.md)
 :::
 
 ---
 
-### path()
+### path
 
 Provides access to the route path instance.
 
-::: tip RETURN
+::: tip Return
 [RoutePathInterface](../Route/RoutePathInterface.md)
 :::
 
 ---
 
-### decorator()
+### decorator
 
 Provides access to the route decorator instance.
 
-::: tip RETURN
+::: tip Return
 [RouteDecoratorInterface](../Route/RouteDecoratorInterface.md)
 :::
 

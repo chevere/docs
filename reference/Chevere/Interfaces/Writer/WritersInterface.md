@@ -10,23 +10,23 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-::: danger THROWS
+::: danger Throws
 - [LogicException](../../Exceptions/Core/LogicException.md) 
 :::
 
 ---
 
-### with()
+### with
 
 Return an instance with the specified $writer for all writers.
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](./WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -35,15 +35,15 @@ an instance that contains the specified $writer for all writers.
 
 ---
 
-### withOut()
+### withOut
 
 Return an instance with the specified out WriterInterface.
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](./WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -52,23 +52,23 @@ an instance that contains the specified out WriterInterface.
 
 ---
 
-### out()
+### out
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](./WriterInterface.md)
 :::
 
 ---
 
-### withError()
+### withError
 
 Return an instance with the specified error WriterInterface.
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](./WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -77,23 +77,23 @@ an instance that contains the specified error WriterInterface.
 
 ---
 
-### error()
+### error
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](./WriterInterface.md)
 :::
 
 ---
 
-### withDebug()
+### withDebug
 
 Return an instance with the specified debug WriterInterface.
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](./WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -102,23 +102,23 @@ an instance that contains the specified debug WriterInterface.
 
 ---
 
-### debug()
+### debug
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](./WriterInterface.md)
 :::
 
 ---
 
-### withLog()
+### withLog
 
 Return an instance with the specified log WriterInterface.
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](./WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -127,9 +127,9 @@ an instance that contains the specified log WriterInterface.
 
 ---
 
-### log()
+### log
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](./WriterInterface.md)
 :::
 

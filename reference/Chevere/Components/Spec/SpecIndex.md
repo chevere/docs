@@ -18,76 +18,76 @@ editLink: false
 
 ## Methods
 
-### withAddedRoute()
+### withAddedRoute
 
-**Parameters:**
-
+::: warning Parameters
 - *routeName*: string
 - *routeEndpointSpec*: [RouteEndpointSpecInterface](../../Interfaces/Spec/Specs/RouteEndpointSpecInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [SpecIndexInterface](../../Interfaces/Spec/SpecIndexInterface.md)
 :::
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *routeName*: string
 - *methodName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *routeName*: string
 - *methodName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### __construct()
+### __construct
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### keys()
+### keys
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

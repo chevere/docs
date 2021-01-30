@@ -21,17 +21,17 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *iterator*: [RecursiveDirectoryIterator](https://www.php.net/manual/class.recursivedirectoryiterator)
+:::
 
 ---
 
-### accept()
+### accept
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 

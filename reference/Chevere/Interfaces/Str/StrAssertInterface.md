@@ -14,265 +14,265 @@ Describes the component in charge of string asserting.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
 ---
 
-### empty()
+### empty
 
 Asserts that the string is empty.
 
-::: danger THROWS
+::: danger Throws
 - [StrNotEmptyException](../../Exceptions/Str/StrNotEmptyException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### notEmpty()
+### notEmpty
 
 Asserts that the string is not empty.
 
-::: danger THROWS
+::: danger Throws
 - [StrEmptyException](../../Exceptions/Str/StrEmptyException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### ctypeSpace()
+### ctypeSpace
 
 Asserts that the string is ctype space.
 
-::: danger THROWS
+::: danger Throws
 - [StrNotCtypeSpaceException](../../Exceptions/Str/StrNotCtypeSpaceException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### notCtypeSpace()
+### notCtypeSpace
 
 Asserts that the string is not ctype space.
 
-::: danger THROWS
+::: danger Throws
 - [StrCtypeSpaceException](../../Exceptions/Str/StrCtypeSpaceException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### ctypeDigit()
+### ctypeDigit
 
 Asserts that the string is ctype digit.
 
-::: danger THROWS
+::: danger Throws
 - [StrNotCtypeDigitException](../../Exceptions/Str/StrNotCtypeDigitException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### notCtypeDigit()
+### notCtypeDigit
 
 Asserts that the string is not ctype digit.
 
-::: danger THROWS
+::: danger Throws
 - [StrCtypeDigitException](../../Exceptions/Str/StrCtypeDigitException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### startsWithCtypeDigit()
+### startsWithCtypeDigit
 
 Asserts that the string is starts with ctype digit.
 
-::: danger THROWS
+::: danger Throws
 - [StrNotStartsWithCtypeDigitException](../../Exceptions/Str/StrNotStartsWithCtypeDigitException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### notStartsWithCtypeDigit()
+### notStartsWithCtypeDigit
 
 Asserts that the string not starts with ctype digit.
 
-::: danger THROWS
+::: danger Throws
 - [StrStartsWithCtypeDigitException](../../Exceptions/Str/StrStartsWithCtypeDigitException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### startsWith()
+### startsWith
 
 Asserts that the string is starts with `$needle`.
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [StrNotStartsWithException](../../Exceptions/Str/StrNotStartsWithException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### notStartsWith()
+### notStartsWith
 
 Asserts that the string not starts with `$needle`.
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [StrStartsWithException](../../Exceptions/Str/StrStartsWithException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### endsWith()
+### endsWith
 
 Asserts that the string ends with `$needle`.
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [StrNotEndsWithException](../../Exceptions/Str/StrNotEndsWithException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### notEndsWith()
+### notEndsWith
 
 Asserts that the string not ends with `$needle`.
 
-**Parameters:**
-
+::: warning Parameters
 - *needle*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [StrEndsWithException](../../Exceptions/Str/StrEndsWithException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### same()
+### same
 
 Asserts that the string is same as `$string`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [StrNotSameException](../../Exceptions/Str/StrNotSameException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### notSame()
+### notSame
 
 Asserts that the string is not same as `$string`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [StrSameException](../../Exceptions/Str/StrSameException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### contains()
+### contains
 
 Asserts that the string contains `$string`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [StrNotContainsException](../../Exceptions/Str/StrNotContainsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### notContains()
+### notContains
 
 Asserts that the string not contains `$string`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [StrContainsException](../../Exceptions/Str/StrContainsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

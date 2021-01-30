@@ -32,106 +32,106 @@ Type `integer`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: [PathInterface](../../Interfaces/Filesystem/PathInterface.md)
+:::
 
 ---
 
-### path()
+### path
 
-::: tip RETURN
+::: tip Return
 [PathInterface](../../Interfaces/Filesystem/PathInterface.md)
 :::
 
 ---
 
-### isPhp()
+### isPhp
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### exists()
+### exists
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### assertExists()
+### assertExists
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### getChecksum()
+### getChecksum
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getSize()
+### getSize
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### contents()
+### contents
 
-::: danger THROWS
+::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
 - [FileUnableToGetException](../../Exceptions/Filesystem/FileUnableToGetException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### remove()
+### remove
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### removeIfExists()
+### removeIfExists
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### create()
+### create
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### put()
+### put
 
-**Parameters:**
-
+::: warning Parameters
 - *contents*: string
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

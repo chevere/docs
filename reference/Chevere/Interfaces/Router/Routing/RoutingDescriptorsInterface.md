@@ -18,19 +18,19 @@ Describes the component in charge of collecting objects implementing `RoutingDes
 
 ## Methods
 
-### withAdded()
+### withAdded
 
 Return an instance with the specified `$descriptor` added.
 
-**Parameters:**
-
+::: warning Parameters
 - *descriptor*: [RoutingDescriptorInterface](./RoutingDescriptorInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -39,39 +39,39 @@ an instance that contains the specified `$descriptor` added.
 
 ---
 
-### contains()
+### contains
 
 Indicates whether the instance has the given `$descriptor`.
 
-**Parameters:**
-
+::: warning Parameters
 - *descriptor*: [RoutingDescriptorInterface](./RoutingDescriptorInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *position*: int
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [RoutingDescriptorInterface](./RoutingDescriptorInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

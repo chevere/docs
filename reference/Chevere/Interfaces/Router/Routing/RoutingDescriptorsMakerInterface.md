@@ -14,83 +14,83 @@ Describes the component in charge of generating routing descriptors from a given
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *repository*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [LogicException](../../../Exceptions/Core/LogicException.md) 
 :::
 
 ---
 
-### withWriter()
+### withWriter
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### withTrailingSlash()
+### withTrailingSlash
 
-**Parameters:**
-
+::: warning Parameters
 - *bool*: bool
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### withDescriptorsFor()
+### withDescriptorsFor
 
-**Parameters:**
-
+::: warning Parameters
 - *dir*: [DirInterface](../../Filesystem/DirInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### writer()
+### writer
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../Writer/WriterInterface.md)
 :::
 
 ---
 
-### useTrailingSlash()
+### useTrailingSlash
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### repository()
+### repository
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### descriptors()
+### descriptors
 
 Provides access to the generated routing descriptors.
 
-::: tip RETURN
+::: tip Return
 [RoutingDescriptorsInterface](./RoutingDescriptorsInterface.md)
 :::
 

@@ -21,15 +21,15 @@ Describes the component in charge of collecting objects implementing `RoutableIn
 
 ## Methods
 
-### withPut()
+### withPut
 
 Return an instance with the specified `$routable`.
 
-**Parameters:**
-
+::: warning Parameters
 - *routable*: [RoutableInterface](./RoutableInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -38,51 +38,51 @@ an instance that contains the specified `$routable`.
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has a routable identified by its `$name`.
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
 Returns the routable identified by its `$name`.
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [RoutableInterface](./RoutableInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

@@ -14,9 +14,9 @@ Describes the component in charge of defining a plugs types list.
 
 ## Methods
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

@@ -14,17 +14,17 @@ Describes the component in charge of providing a workflow.
 
 ## Methods
 
-### getWorkflow()
+### getWorkflow
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](./WorkflowInterface.md)
 :::
 
 ---
 
-### workflow()
+### workflow
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](./WorkflowInterface.md)
 :::
 

@@ -16,46 +16,46 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *specDir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
 - *groupName*: string
+:::
 
 ---
 
-### withAddedRoutableSpec()
+### withAddedRoutableSpec
 
-**Parameters:**
-
+::: warning Parameters
 - *routableSpec*: [RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [GroupSpecInterface](../../../Interfaces/Spec/Specs/GroupSpecInterface.md)
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### jsonPath()
+### jsonPath
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### key()
+### key
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

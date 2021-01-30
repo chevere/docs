@@ -21,21 +21,21 @@ Describes the component in charge of mapping classes to keys.
 
 ## Methods
 
-### withPut()
+### withPut
 
 Return an instance with the specified className mapping.
 
-**Parameters:**
-
+::: warning Parameters
 - *className*: string
 - *key*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [ClassNotExistsException](../../Exceptions/Core/ClassNotExistsException.md) 
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -44,95 +44,95 @@ an instance that contains the specified className mapping.
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance is mapping the given class name.
 
-**Parameters:**
-
+::: warning Parameters
 - *className*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### hasKey()
+### hasKey
 
 Indicates whether the instance maps the given key.
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### key()
+### key
 
 Provides access to the class name mapping.
 
-**Parameters:**
-
+::: warning Parameters
 - *className*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### className()
+### className
 
 Provides access to the class name mapped by key.
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
 Provides a generator with `className => key`
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### toArray()
+### toArray
 
 Provides access to the class map `className => key`
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

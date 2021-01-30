@@ -14,11 +14,11 @@ Describes the component that implements `toArray()` method.
 
 ## Methods
 
-### toArray()
+### toArray
 
 Returns an array, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

@@ -14,43 +14,43 @@ Describes the component in charge of handling storable variables.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: 
+:::
 
-::: danger THROWS
+::: danger Throws
 - [NotVarStorableException](../../Exceptions/VarStorable/NotVarStorableException.md) if `$var` can't be exported.
 :::
 
 ---
 
-### var()
+### var
 
 Provides access to `$var`.
 
-::: tip RETURN
+::: tip Return
 mixed
 :::
 
 ---
 
-### toExport()
+### toExport
 
 Shorthand for `\var_export($var)`.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toSerialize()
+### toSerialize
 
 Shorthand for `\serialize($var)`.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

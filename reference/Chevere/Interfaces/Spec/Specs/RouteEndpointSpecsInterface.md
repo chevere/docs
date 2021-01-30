@@ -21,15 +21,15 @@ Describes the component in charge of collecting objects implementing `RouteEndpo
 
 ## Methods
 
-### withPut()
+### withPut
 
 Return an instance with the specified `$routeEndpointSpec`.
 
-**Parameters:**
-
+::: warning Parameters
 - *routeEndpointSpec*: [RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -38,51 +38,51 @@ an instance that contains the specified `$routeEndpointSpec`.
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has a route endpoint spec identified by its `$methodName`.
 
-**Parameters:**
-
+::: warning Parameters
 - *methodName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
 Returns the route endpoint spec identified by its `$methodName`.
 
-**Parameters:**
-
+::: warning Parameters
 - *methodName*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [RouteEndpointSpecInterface](./RouteEndpointSpecInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

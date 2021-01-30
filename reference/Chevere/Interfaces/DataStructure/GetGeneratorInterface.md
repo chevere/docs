@@ -14,11 +14,11 @@ Describes the component in charge of providing a generator.
 
 ## Methods
 
-### getGenerator()
+### getGenerator
 
 Provides the generator.
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

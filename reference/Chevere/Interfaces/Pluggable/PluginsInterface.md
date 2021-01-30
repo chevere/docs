@@ -14,39 +14,39 @@ Describes the component in charge of the interaction of pluggable and their plug
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *pluggablesToPlugs*: [ClassMapInterface](../ClassMap/ClassMapInterface.md)
+:::
 
 ---
 
-### clonedClassMap()
+### clonedClassMap
 
 Provides access to the a the cloned class map instance.
 
-::: tip RETURN
+::: tip Return
 [ClassMapInterface](../ClassMap/ClassMapInterface.md)
 :::
 
 ---
 
-### getPlugsQueue()
+### getPlugsQueue
 
 Returns the plugs queue for the given `$pluggableName`.
 
-**Parameters:**
-
+::: warning Parameters
 - *pluggableName*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [PluggableNotRegisteredException](../../Exceptions/Pluggable/PluggableNotRegisteredException.md) 
 - [PlugsFileNotExistsException](../../Exceptions/Pluggable/PlugsFileNotExistsException.md) 
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueInterface](./PlugsQueueInterface.md)
 :::
 

@@ -14,129 +14,129 @@ Describes the component in charge of interacting with filesystem directories.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: [PathInterface](./PathInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [PathIsFileException](../../Exceptions/Filesystem/PathIsFileException.md) 
 - [PathTailException](../../Exceptions/Filesystem/PathTailException.md) 
 :::
 
 ---
 
-### path()
+### path
 
 Provides access to the PathInterface instance.
 
-::: tip RETURN
+::: tip Return
 [PathInterface](./PathInterface.md)
 :::
 
 ---
 
-### create()
+### create
 
 Creates the directory.
 
-**Parameters:**
-
+::: warning Parameters
 - *mode*: int
+:::
 
-::: danger THROWS
+::: danger Throws
 - [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### createIfNotExists()
+### createIfNotExists
 
 Creates the directory if it doesn't exists.
 
-**Parameters:**
-
+::: warning Parameters
 - *mode*: int
+:::
 
-::: danger THROWS
+::: danger Throws
 - [DirUnableToCreateException](../../Exceptions/Filesystem/DirUnableToCreateException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### exists()
+### exists
 
 Returns a boolean indicating whether the directory exists.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### assertExists()
+### assertExists
 
-::: danger THROWS
+::: danger Throws
 - [DirNotExistsException](../../Exceptions/Filesystem/DirNotExistsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### removeContents()
+### removeContents
 
 Removes the contents from a path without deleting the path.
 
-::: danger THROWS
+::: danger Throws
 - [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md) if unable to remove the directory
 - [FileUnableToRemoveException](../../Exceptions/Filesystem/FileUnableToRemoveException.md) if unable to remove a file in the directory
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### remove()
+### remove
 
 Removes the directory.
 
-::: danger THROWS
+::: danger Throws
 - [DirUnableToRemoveException](../../Exceptions/Filesystem/DirUnableToRemoveException.md) if unable to remove the directory
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getChild()
+### getChild
 
 Gets a child `DirInterface` for the added path.
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [PathInvalidException](../../Exceptions/Filesystem/PathInvalidException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

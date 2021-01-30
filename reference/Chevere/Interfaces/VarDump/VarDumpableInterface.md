@@ -14,43 +14,43 @@ Describes the component in charge of handling dumpable variables.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: 
+:::
 
-::: danger THROWS
+::: danger Throws
 - [LogicException](../../Exceptions/Core/LogicException.md) if unable to process `$var` type.
 :::
 
 ---
 
-### var()
+### var
 
 Provides access to the variable.
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### type()
+### type
 
 Provides access to the variable type.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### processorName()
+### processorName
 
 Provides access to the processor name used for handling.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

@@ -16,43 +16,43 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *specDir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
 - *routable*: [RoutableInterface](../../../Interfaces/Router/RoutableInterface.md)
 - *repository*: string
+:::
 
 ---
 
-### clonedRouteEndpointSpecs()
+### clonedRouteEndpointSpecs
 
-::: tip RETURN
+::: tip Return
 [RouteEndpointSpecs](./RouteEndpointSpecs.md)
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### jsonPath()
+### jsonPath
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### key()
+### key
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

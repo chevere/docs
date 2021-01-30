@@ -14,20 +14,20 @@ Describes the component in charge of defining a workflow run, with the arguments
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *workflow*: [WorkflowInterface](./WorkflowInterface.md)
 - *...namedArguments*: mixed
+:::
 
 ---
 
-### uuid()
+### uuid
 
 Provides access to workflow uuid V4 (RFC 4122).
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
@@ -35,66 +35,66 @@ https://tools.ietf.org/html/rfc4122
 
 ---
 
-### workflow()
+### workflow
 
 Provides access to the WorkflowInterface instance.
 
-::: tip RETURN
+::: tip Return
 [WorkflowInterface](./WorkflowInterface.md)
 :::
 
 ---
 
-### arguments()
+### arguments
 
 Provides access to the ArgumentsInterface instance.
 
-::: tip RETURN
+::: tip Return
 [ArgumentsInterface](../Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### withStepResponse()
+### withStepResponse
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
 - *response*: [ResponseInterface](../Response/ResponseInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [ArgumentCountException](../../Exceptions/Core/ArgumentCountException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has the given `$step`. Will return `true` if step has ran.
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
 Provides access to the ResponseInterface instance for the given `$step`.
 
-**Parameters:**
-
+::: warning Parameters
 - *step*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../Response/ResponseInterface.md)
 :::
 

@@ -14,85 +14,85 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: [PathInterface](../../Interfaces/Filesystem/PathInterface.md)
+:::
 
 ---
 
-### getChild()
+### getChild
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 :::
 
 ---
 
-### path()
+### path
 
-::: tip RETURN
+::: tip Return
 [PathInterface](../../Interfaces/Filesystem/PathInterface.md)
 :::
 
 ---
 
-### exists()
+### exists
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### assertExists()
+### assertExists
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### create()
+### create
 
-**Parameters:**
-
+::: warning Parameters
 - *mode*: int
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### createIfNotExists()
+### createIfNotExists
 
-**Parameters:**
-
+::: warning Parameters
 - *mode*: int
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### remove()
+### remove
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### removeContents()
+### removeContents
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

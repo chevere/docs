@@ -10,37 +10,37 @@ editLink: false
 
 ## Methods
 
-### withDependencies()
+### withDependencies
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedDependencies*: object
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### getDependencies()
+### getDependencies
 
-::: tip RETURN
+::: tip Return
 [DependenciesInterface](../../../Interfaces/Dependent/DependenciesInterface.md)
 :::
 
 ---
 
-### assertDependencies()
+### assertDependencies
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### dependencies()
+### dependencies
 
-::: tip RETURN
+::: tip Return
 [DependenciesInterface](../../../Interfaces/Dependent/DependenciesInterface.md)
 :::
 

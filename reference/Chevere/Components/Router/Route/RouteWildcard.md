@@ -33,26 +33,26 @@ Type `string`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
 - *match*: [RouteWildcardMatchInterface](../../../Interfaces/Router/Route/RouteWildcardMatchInterface.md)
+:::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### match()
+### match
 
-::: tip RETURN
+::: tip Return
 [RouteWildcardMatchInterface](../../../Interfaces/Router/Route/RouteWildcardMatchInterface.md)
 :::
 

@@ -21,65 +21,65 @@ Describes the component in charge of providing an immutable Ds\Map interface.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
 ---
 
-### withPut()
+### withPut
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedValues*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### assertHasKey()
+### assertHasKey
 
-**Parameters:**
-
+::: warning Parameters
 - *...keys*: string
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
 Provides the generator.
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

@@ -72,97 +72,97 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *throwable*: [Throwable](https://www.php.net/manual/class.throwable)
+:::
 
 ---
 
-### className()
+### className
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### code()
+### code
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### severity()
+### severity
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### loggerLevel()
+### loggerLevel
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### type()
+### type
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### message()
+### message
 
-::: tip RETURN
+::: tip Return
 [MessageInterface](../../Interfaces/Message/MessageInterface.md)
 :::
 
 ---
 
-### file()
+### file
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### line()
+### line
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### trace()
+### trace
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### hasPrevious()
+### hasPrevious
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### previous()
+### previous
 
-::: tip RETURN
+::: tip Return
 [Throwable](https://www.php.net/manual/class.throwable)
 :::
 

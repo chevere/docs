@@ -14,26 +14,26 @@ Describes the component in charge of writing information about a variable.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../Writer/WriterInterface.md)
 - *debugBacktrace*: array
 - *formatter*: [VarDumpFormatterInterface](./VarDumpFormatterInterface.md)
 - *...vars*: 
+:::
 
 ---
 
-### process()
+### process
 
 Process the var output streaming.
 
-**Parameters:**
-
+::: warning Parameters
 - *outputter*: [VarDumpOutputterInterface](./VarDumpOutputterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

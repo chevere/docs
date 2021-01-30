@@ -14,21 +14,21 @@ Describes the component in charge of providing an interface for its description.
 
 ## Methods
 
-### description()
+### description
 
 Provides access to the description.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getDescription()
+### getDescription
 
 Defines the description.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

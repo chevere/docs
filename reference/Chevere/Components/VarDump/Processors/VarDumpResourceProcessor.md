@@ -24,81 +24,81 @@ Type `integer`
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *varDumper*: [VarDumperInterface](../../../Interfaces/VarDump/VarDumperInterface.md)
+:::
 
 ---
 
-### type()
+### type
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### write()
+### write
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### info()
+### info
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### typeHighlighted()
+### typeHighlighted
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### highlightOperator()
+### highlightOperator
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### highlightParentheses()
+### highlightParentheses
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### circularReference()
+### circularReference
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### maxDepthReached()
+### maxDepthReached
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

@@ -15,123 +15,123 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *parameters*: [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 - *...namedArguments*: mixed
+:::
 
 ---
 
-### parameters()
+### parameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### withArgument()
+### withArgument
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
 - *value*: 
+:::
 
-::: tip RETURN
+::: tip Return
 [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### getBoolean()
+### getBoolean
 
-**Parameters:**
-
+::: warning Parameters
 - *boolean*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getString()
+### getString
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getInteger()
+### getInteger
 
-**Parameters:**
-
+::: warning Parameters
 - *integer*: string
+:::
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getFloat()
+### getFloat
 
-**Parameters:**
-
+::: warning Parameters
 - *float*: string
+:::
 
-::: tip RETURN
+::: tip Return
 float
 :::
 
 ---
 
-### getArray()
+### getArray
 
-**Parameters:**
-
+::: warning Parameters
 - *array*: string
+:::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

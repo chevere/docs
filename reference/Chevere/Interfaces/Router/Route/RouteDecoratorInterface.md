@@ -14,33 +14,33 @@ Describes the component in charge of decorate a route.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *locator*: [RouteLocatorInterface](./RouteLocatorInterface.md)
+:::
 
 ---
 
-### locator()
+### locator
 
 Provides access to the route name.
 
-::: tip RETURN
+::: tip Return
 [RouteLocatorInterface](./RouteLocatorInterface.md)
 :::
 
 ---
 
-### withWildcards()
+### withWildcards
 
 Return an instance with the specified `$wildcards` instance.
 
-**Parameters:**
-
+::: warning Parameters
 - *wildcards*: [WildcardsInterface](./WildcardsInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -49,11 +49,11 @@ an instance that contains the specified `$wildcards` instance.
 
 ---
 
-### wildcards()
+### wildcards
 
 Provides access to the route wildcards.
 
-::: tip RETURN
+::: tip Return
 [WildcardsInterface](./WildcardsInterface.md)
 :::
 

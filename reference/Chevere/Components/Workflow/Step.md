@@ -14,37 +14,37 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *action*: string
+:::
 
 ---
 
-### withArguments()
+### withArguments
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 :::
 
 ---
 
-### action()
+### action
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### arguments()
+### arguments
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

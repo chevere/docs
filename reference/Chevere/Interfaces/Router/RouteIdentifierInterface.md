@@ -18,44 +18,44 @@ Describes the component in charge of describing the route identifier.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *group*: string
 - *name*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### group()
+### group
 
 Provides access to the `$group` instance.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### name()
+### name
 
 Provides access to the `$name` instance.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toArray()
+### toArray
 
 Returns an array, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

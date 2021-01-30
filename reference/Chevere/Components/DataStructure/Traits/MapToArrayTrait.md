@@ -10,9 +10,9 @@ editLink: false
 
 ## Methods
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

@@ -14,85 +14,85 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *workflowRun*: [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
+:::
 
 ---
 
-### withPriority()
+### withPriority
 
-**Parameters:**
-
+::: warning Parameters
 - *priority*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowMessageInterface](../../Interfaces/Workflow/WorkflowMessageInterface.md)
 :::
 
 ---
 
-### withDelay()
+### withDelay
 
-**Parameters:**
-
+::: warning Parameters
 - *seconds*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowMessageInterface](../../Interfaces/Workflow/WorkflowMessageInterface.md)
 :::
 
 ---
 
-### withExpiration()
+### withExpiration
 
-**Parameters:**
-
+::: warning Parameters
 - *seconds*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowMessageInterface](../../Interfaces/Workflow/WorkflowMessageInterface.md)
 :::
 
 ---
 
-### workflowRun()
+### workflowRun
 
-::: tip RETURN
+::: tip Return
 [WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
 :::
 
 ---
 
-### uuid()
+### uuid
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### priority()
+### priority
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### delay()
+### delay
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### expiration()
+### expiration
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

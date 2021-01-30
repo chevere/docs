@@ -14,51 +14,51 @@ Describes the component in charge of defining a generic plug type.
 
 ## Methods
 
-### interface()
+### interface
 
 Returns the interface that the plug must implement.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### plugsTo()
+### plugsTo
 
 Returns the applicable pluggable interface.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### trailingName()
+### trailingName
 
 Returns trailing component name, like `name.php`.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getPlugsQueueTyped()
+### getPlugsQueueTyped
 
 Gets a new plugs queue typed instance.
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueTypedInterface](./PlugsQueueTypedInterface.md)
 :::
 
 ---
 
-### pluggableAnchorsMethod()
+### pluggableAnchorsMethod
 
 Returns the name of the pluggable method which returns the plug anchors.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

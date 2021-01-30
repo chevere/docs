@@ -18,46 +18,46 @@ editLink: false
 
 ## Methods
 
-### tearDown()
+### tearDown
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### prepare()
+### prepare
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### setUp()
+### setUp
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
 - *backtrace*: array
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### backtrace()
+### backtrace
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### caller()
+### caller
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

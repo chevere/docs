@@ -40,44 +40,44 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *method*: [MethodInterface](../../Http/MethodInterface.md)
 - *controller*: [ControllerInterface](../../Action/ControllerInterface.md)
+:::
 
 ---
 
-### method()
+### method
 
 Provides access to the `$method` instance.
 
-::: tip RETURN
+::: tip Return
 [MethodInterface](../../Http/MethodInterface.md)
 :::
 
 ---
 
-### controller()
+### controller
 
 Provides access to the `$controller` instance.
 
-::: tip RETURN
+::: tip Return
 [ControllerInterface](../../Action/ControllerInterface.md)
 :::
 
 ---
 
-### withDescription()
+### withDescription
 
 Return an instance with the specified `$description`.
 
-**Parameters:**
-
+::: warning Parameters
 - *description*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -86,19 +86,19 @@ an instance that contains the specified `$description`.
 
 ---
 
-### withoutParameter()
+### withoutParameter
 
 Return an instance with the specified `$parameter` removed.
 
-**Parameters:**
-
+::: warning Parameters
 - *parameter*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -107,11 +107,11 @@ an instance that contains the specified `$parameter` removed.
 
 ---
 
-### parameters()
+### parameters
 
 Provides access to the parameters.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
@@ -128,21 +128,21 @@ return [
 
 ---
 
-### description()
+### description
 
 Provides access to the description.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getDescription()
+### getDescription
 
 Defines the description.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

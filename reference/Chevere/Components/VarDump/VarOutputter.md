@@ -14,24 +14,24 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
 - *debugBacktrace*: array
 - *formatter*: [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md)
 - *...vars*: 
+:::
 
 ---
 
-### process()
+### process
 
-**Parameters:**
-
+::: warning Parameters
 - *outputter*: [VarDumpOutputterInterface](../../Interfaces/VarDump/VarDumpOutputterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

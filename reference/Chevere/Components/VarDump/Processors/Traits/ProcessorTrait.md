@@ -10,65 +10,65 @@ editLink: false
 
 ## Methods
 
-### type()
+### type
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### info()
+### info
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### typeHighlighted()
+### typeHighlighted
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### highlightOperator()
+### highlightOperator
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### highlightParentheses()
+### highlightParentheses
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### circularReference()
+### circularReference
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### maxDepthReached()
+### maxDepthReached
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

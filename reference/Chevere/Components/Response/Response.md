@@ -14,61 +14,61 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### withStatus()
+### withStatus
 
-**Parameters:**
-
+::: warning Parameters
 - *code*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
 
-### withData()
+### withData
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedData*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
 
-### uuid()
+### uuid
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### token()
+### token
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### data()
+### data
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### status()
+### status
 
-::: tip RETURN
+::: tip Return
 int
 :::
 

@@ -72,127 +72,127 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *throwable*: [Throwable](https://www.php.net/manual/class.throwable)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RangeException](../../Exceptions/Core/RangeException.md) If unable to read `$throwable`
 :::
 
 ---
 
-### className()
+### className
 
 Provides access to the throwable class name.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### code()
+### code
 
 Provides access to the throwable code.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### severity()
+### severity
 
 Provides access to the throwable severity.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### loggerLevel()
+### loggerLevel
 
 Provides access to the throwable logger level.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### type()
+### type
 
 Provides access to the throwable type.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### message()
+### message
 
 Provides access to the throwable message.
 
-::: tip RETURN
+::: tip Return
 [MessageInterface](../Message/MessageInterface.md)
 :::
 
 ---
 
-### file()
+### file
 
 Provides access to the throwable file.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### line()
+### line
 
 Provides access to the throwable line.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### trace()
+### trace
 
 Provides access to the throwable trace.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### hasPrevious()
+### hasPrevious
 
 Indicates whether the instance has a previous throwable.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### previous()
+### previous
 
 Provides access to previous throwable.
 
-::: danger THROWS
+::: danger Throws
 - [TypeError](https://www.php.net/manual/class.typeerror) 
 :::
 
-::: tip RETURN
+::: tip Return
 [Throwable](https://www.php.net/manual/class.throwable)
 :::
 

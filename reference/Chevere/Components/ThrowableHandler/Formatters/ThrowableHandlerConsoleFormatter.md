@@ -18,81 +18,81 @@ editLink: false
 
 ## Methods
 
-### getVarDumpFormatter()
+### getVarDumpFormatter
 
-::: tip RETURN
+::: tip Return
 [VarDumpFormatterInterface](../../../Interfaces/VarDump/VarDumpFormatterInterface.md)
 :::
 
 ---
 
-### getTraceEntryTemplate()
+### getTraceEntryTemplate
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getHr()
+### getHr
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### wrapLink()
+### wrapLink
 
-**Parameters:**
-
+::: warning Parameters
 - *value*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### wrapSectionTitle()
+### wrapSectionTitle
 
-**Parameters:**
-
+::: warning Parameters
 - *value*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### __construct()
+### __construct
 
 ---
 
-### varDumpFormatter()
+### varDumpFormatter
 
-::: tip RETURN
+::: tip Return
 [VarDumpFormatterInterface](../../../Interfaces/VarDump/VarDumpFormatterInterface.md)
 :::
 
 ---
 
-### getLineBreak()
+### getLineBreak
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### wrapTitle()
+### wrapTitle
 
-**Parameters:**
-
+::: warning Parameters
 - *value*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

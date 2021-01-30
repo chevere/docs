@@ -14,34 +14,34 @@ Describes the component in charge of asserting a plug.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](./PlugInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [TypeException](../../Exceptions/Core/TypeException.md) 
 - ⚠ Unknown type `LogicException` declared in `@throws` tag`
 :::
 
 ---
 
-### plugType()
+### plugType
 
 Provides access to the plug type instance.
 
-::: tip RETURN
+::: tip Return
 [PlugTypeInterface](./PlugTypeInterface.md)
 :::
 
 ---
 
-### plug()
+### plug
 
 Provides access to the plug instance.
 
-::: tip RETURN
+::: tip Return
 [PlugInterface](./PlugInterface.md)
 :::
 

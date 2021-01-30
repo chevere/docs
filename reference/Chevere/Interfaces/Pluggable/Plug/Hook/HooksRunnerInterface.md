@@ -14,20 +14,20 @@ Describes the component in charge of running the hooks queue.
 
 ## Methods
 
-### run()
+### run
 
 Run the registered hooks at the given anchor.
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *argument*: 
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../../../Exceptions/Core/InvalidArgumentException.md) If the $argument type changes.
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

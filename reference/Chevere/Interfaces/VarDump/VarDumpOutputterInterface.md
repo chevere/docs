@@ -14,56 +14,56 @@ Describes the component in charge of orchestrating the var dump output processin
 
 ## Methods
 
-### setUp()
+### setUp
 
 This method is executed before `prepare()`.
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../Writer/WriterInterface.md)
 - *backtrace*: array
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### tearDown()
+### tearDown
 
 Ends the outputter.
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### backtrace()
+### backtrace
 
 Provides access to the instance backtrace.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### caller()
+### caller
 
 Provides access to the instance caller.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### prepare()
+### prepare
 
 This method is executed before `tearDown()`.
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

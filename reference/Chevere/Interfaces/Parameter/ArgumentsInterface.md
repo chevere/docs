@@ -18,14 +18,14 @@ Describes the component in charge of defining a set of parameters with arguments
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *parameters*: [ParametersInterface](./ParametersInterface.md)
 - *...namedArguments*: mixed
+:::
 
-::: danger THROWS
+::: danger Throws
 - ⚠ Unknown type `ArgumentRequiredException` declared in `@throws` tag`
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
@@ -33,21 +33,21 @@ Describes the component in charge of defining a set of parameters with arguments
 
 ---
 
-### parameters()
+### parameters
 
 Provides access to the parameters instance.
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](./ParametersInterface.md)
 :::
 
 ---
 
-### toArray()
+### toArray
 
 Provides access to the controller arguments as array.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
@@ -59,21 +59,21 @@ return [
 
 ---
 
-### withArgument()
+### withArgument
 
 Return an instance with the specified controller argument.
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
 - *value*: 
+:::
 
-::: danger THROWS
+::: danger Throws
 - ⚠ Unknown type `ArgumentValueRegexMatchException` declared in `@throws` tag`
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) If `$name` is not a known controller parameter.
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -82,128 +82,128 @@ an instance that contains the specified controller argument.
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has an argument for the parameter `$name`.
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
 Provides access to the argument value for the parameter `$name`.
 
-**Parameters:**
-
+::: warning Parameters
 - *name*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### getBoolean()
+### getBoolean
 
 Provides access to the argument value for the parameter `$boolean` type-hinted as boolean.
 
-**Parameters:**
-
+::: warning Parameters
 - *boolean*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 - [TypeError](https://www.php.net/manual/class.typeerror) 
 :::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getString()
+### getString
 
 Provides access to the argument value for the parameter `$string` type-hinted as string.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 - [TypeError](https://www.php.net/manual/class.typeerror) 
 :::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getInteger()
+### getInteger
 
 Provides access to the argument value for the parameter `$integer` type-hinted as integer.
 
-**Parameters:**
-
+::: warning Parameters
 - *integer*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 - [TypeError](https://www.php.net/manual/class.typeerror) 
 :::
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getFloat()
+### getFloat
 
 Provides access to the argument value for the parameter `$float` type-hinted as float.
 
-**Parameters:**
-
+::: warning Parameters
 - *float*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 - [TypeError](https://www.php.net/manual/class.typeerror) 
 :::
 
-::: tip RETURN
+::: tip Return
 float
 :::
 
 ---
 
-### getArray()
+### getArray
 
 Provides access to the argument value for the parameter `$array` type-hinted as array.
 
-**Parameters:**
-
+::: warning Parameters
 - *array*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 - [TypeError](https://www.php.net/manual/class.typeerror) 
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

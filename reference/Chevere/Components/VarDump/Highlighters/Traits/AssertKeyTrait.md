@@ -10,9 +10,9 @@ editLink: false
 
 ## Methods
 
-### palette()
+### palette
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

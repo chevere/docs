@@ -40,43 +40,43 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *entry*: array
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### file()
+### file
 
 Provides access to the filename.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### line()
+### line
 
 Provides access to the line.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### fileLine()
+### fileLine
 
 Provides access to the file plus line.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
@@ -86,41 +86,41 @@ return 'path_to_file:1';
 
 ---
 
-### function()
+### function
 
 Provides access to the function.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### class()
+### class
 
 Provides access to the class (if any).
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### type()
+### type
 
 Provides access to the type, either `::` or '->'.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### args()
+### args
 
 Provides access the arguments array.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

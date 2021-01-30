@@ -20,21 +20,21 @@ Describes the component in charge of defining a mapped interface.
 
 ## Methods
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
 Provides the generator.
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 

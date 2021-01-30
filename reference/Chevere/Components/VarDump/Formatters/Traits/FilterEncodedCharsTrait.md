@@ -10,13 +10,13 @@ editLink: false
 
 ## Methods
 
-### filterEncodedChars()
+### filterEncodedChars
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

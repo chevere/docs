@@ -14,30 +14,30 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *dir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+:::
 
 ---
 
-### dir()
+### dir
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 :::
 
 ---
 
-### getTranslator()
+### getTranslator
 
-**Parameters:**
-
+::: warning Parameters
 - *locale*: string
 - *domain*: string
+:::
 
-::: tip RETURN
+::: tip Return
 Gettext\TranslatorInterface
 :::
 

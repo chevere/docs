@@ -21,27 +21,27 @@ Describes the component in charge of collecting objects implementing `ParameterI
 
 ## Methods
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### withAddedRequired()
+### withAddedRequired
 
 Return an instance with the specified required `$parameters` instance added.
 
-**Parameters:**
-
+::: warning Parameters
 - *...parameters*: [ParameterInterface](./ParameterInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -50,19 +50,19 @@ an instance that contains the specified required `$parameters` instance added.
 
 ---
 
-### withAddedOptional()
+### withAddedOptional
 
 Return an instance with the specified optional `$parameters` instance added.
 
-**Parameters:**
-
+::: warning Parameters
 - *...parameters*: [ParameterInterface](./ParameterInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OverflowException](../../Exceptions/Core/OverflowException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -71,19 +71,19 @@ an instance that contains the specified optional `$parameters` instance added.
 
 ---
 
-### withModify()
+### withModify
 
 Return an instance with the specified `$parameters` modifying an already added parameter.
 
-**Parameters:**
-
+::: warning Parameters
 - *...parameters*: [ParameterInterface](./ParameterInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -92,93 +92,93 @@ an instance that contains the specified `$parameters` modifying an already added
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has a parameter by name.
 
-**Parameters:**
-
+::: warning Parameters
 - *parameter*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isRequired()
+### isRequired
 
 Indicates whether the `$parameter` identified by its name is required.
 
-**Parameters:**
-
+::: warning Parameters
 - *parameter*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isOptional()
+### isOptional
 
 Indicates whether the `$parameter` identified by its name is optional.
 
-**Parameters:**
-
+::: warning Parameters
 - *parameter*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *parameter*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [ParameterInterface](./ParameterInterface.md)
 :::
 
 ---
 
-### required()
+### required
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### optional()
+### optional
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

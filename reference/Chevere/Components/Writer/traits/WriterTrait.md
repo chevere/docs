@@ -14,21 +14,21 @@ editLink: false
 
 ## Methods
 
-### withWriter()
+### withWriter
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### writer()
+### writer
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../../../Interfaces/Writer/WriterInterface.md)
 :::
 

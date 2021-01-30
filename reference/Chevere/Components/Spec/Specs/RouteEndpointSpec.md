@@ -16,34 +16,34 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *specDir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
 - *routeEndpoint*: [RouteEndpointInterface](../../../Interfaces/Router/Route/RouteEndpointInterface.md)
+:::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### jsonPath()
+### jsonPath
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### key()
+### key
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

@@ -14,25 +14,25 @@ Describes the interface for components requiring to implement pluggable events.
 
 ## Methods
 
-### getEventAnchors()
+### getEventAnchors
 
 Returns the declared event anchors able to plug.
 
-::: tip RETURN
+::: tip Return
 [PluggableAnchorsInterface](../../PluggableAnchorsInterface.md)
 :::
 
 ---
 
-### withEventsRunner()
+### withEventsRunner
 
 Return an instance with the specified `$runner`.
 
-**Parameters:**
-
+::: warning Parameters
 - *runner*: [EventsRunnerInterface](./EventsRunnerInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -43,16 +43,16 @@ This method should be implemented in the runtime strategy before running events.
 
 ---
 
-### event()
+### event
 
 Run events for the given anchor (if-any).
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *data*: array
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

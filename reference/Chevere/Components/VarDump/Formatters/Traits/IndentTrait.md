@@ -10,13 +10,13 @@ editLink: false
 
 ## Methods
 
-### indent()
+### indent
 
-**Parameters:**
-
+::: warning Parameters
 - *indent*: int
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

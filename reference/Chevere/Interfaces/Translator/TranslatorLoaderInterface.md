@@ -14,40 +14,40 @@ Describes the component in charge of load php translations.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *dir*: [DirInterface](../Filesystem/DirInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [DirNotExistsException](../../Exceptions/Filesystem/DirNotExistsException.md) 
 :::
 
 ---
 
-### dir()
+### dir
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../Filesystem/DirInterface.md)
 :::
 
 ---
 
-### getTranslator()
+### getTranslator
 
-**Parameters:**
-
+::: warning Parameters
 - *locale*: string
 - *domain*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) If $locale doesn't exists.
 - [DomainException](../../Exceptions/Core/DomainException.md) If $domain doesn't exists.
 - ⚠ Unknown type `LogicException` declared in `@throws` tag`
 :::
 
-::: tip RETURN
+::: tip Return
 Gettext\TranslatorInterface
 :::
 

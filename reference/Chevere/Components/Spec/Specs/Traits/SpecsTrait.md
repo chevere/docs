@@ -10,25 +10,25 @@ editLink: false
 
 ## Methods
 
-### jsonPath()
+### jsonPath
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### key()
+### key
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

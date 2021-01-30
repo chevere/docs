@@ -53,13 +53,13 @@ Type `string`
 
 ## Methods
 
-### parse()
+### parse
 
-**Parameters:**
-
+::: warning Parameters
 - *route*: 
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

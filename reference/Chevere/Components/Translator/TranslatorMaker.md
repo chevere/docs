@@ -14,39 +14,39 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *sourceDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 - *targetDir*: [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
+:::
 
 ---
 
-### sourceDir()
+### sourceDir
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 :::
 
 ---
 
-### targetDir()
+### targetDir
 
-::: tip RETURN
+::: tip Return
 [DirInterface](../../Interfaces/Filesystem/DirInterface.md)
 :::
 
 ---
 
-### withMakeTranslation()
+### withMakeTranslation
 
-**Parameters:**
-
+::: warning Parameters
 - *locale*: string
 - *domain*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

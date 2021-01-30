@@ -133,33 +133,33 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *type*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - ⚠ Unknown type `InvalidArgumentException` declared in `@throws` tag`
 :::
 
 ---
 
-### primitive()
+### primitive
 
 Returns the type primitive (array, bool, object, ..., className, interfaceName).
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### typeHinting()
+### typeHinting
 
 Returns the type hinting.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
@@ -167,35 +167,35 @@ It will return either the class name, interface, or the primitive.
 
 ---
 
-### validate()
+### validate
 
 Returns a boolean indicating if `$var` validates against the type.
 
-**Parameters:**
-
+::: warning Parameters
 - *var*: 
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### validator()
+### validator
 
 Returns the validator callable.
 
-::: tip RETURN
+::: tip Return
 callable
 :::
 
 ---
 
-### isScalar()
+### isScalar
 
 Returns a boolean indicating if type is scalar.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 

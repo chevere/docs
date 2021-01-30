@@ -14,29 +14,29 @@ Describes the component in charge of doing.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *workflowRun*: [WorkflowRunInterface](./WorkflowRunInterface.md)
+:::
 
 ---
 
-### workflowRun()
+### workflowRun
 
-::: tip RETURN
+::: tip Return
 [WorkflowRunInterface](./WorkflowRunInterface.md)
 :::
 
 ---
 
-### run()
+### run
 
-**Parameters:**
-
+::: warning Parameters
 - *container*: 
+:::
 
-::: tip RETURN
+::: tip Return
 [WorkflowRunInterface](./WorkflowRunInterface.md)
 :::
 

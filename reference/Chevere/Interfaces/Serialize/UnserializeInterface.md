@@ -14,33 +14,33 @@ Describes the component in charge of handling `unserialize()`.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *unserializable*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - ⚠ Unknown type `LogicException` declared in `@throws` tag`
 :::
 
 ---
 
-### var()
+### var
 
 Provides access to the unserialize variable.
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### type()
+### type
 
 Provides access to the TypeInterface instance for the unserialize variable.
 
-::: tip RETURN
+::: tip Return
 [TypeInterface](../Type/TypeInterface.md)
 :::
 

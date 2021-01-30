@@ -18,43 +18,43 @@ Describes the component in charge of type-hint an event listeners queue.
 
 ## Methods
 
-### withAdded()
+### withAdded
 
-**Parameters:**
-
+::: warning Parameters
 - *plug*: [PlugInterface](../../PlugInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
 ---
 
-### interface()
+### interface
 
 Returns the interface name of plug members.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### getPlugType()
+### getPlugType
 
 Returns a new instance for the members plug type.
 
-::: tip RETURN
+::: tip Return
 [PlugTypeInterface](../../PlugTypeInterface.md)
 :::
 
 ---
 
-### plugsQueue()
+### plugsQueue
 
 Provides access to the plugs queue instance.
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueInterface](../../PlugsQueueInterface.md)
 :::
 

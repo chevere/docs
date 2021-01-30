@@ -21,15 +21,15 @@ Describes the component in charge of collecting objects implementing `RoutableSp
 
 ## Methods
 
-### withPut()
+### withPut
 
 Return an instance with the specified `$routableSpec`.
 
-**Parameters:**
-
+::: warning Parameters
 - *routableSpec*: [RoutableSpecInterface](./RoutableSpecInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -38,51 +38,51 @@ an instance that contains the specified `$routableSpec`.
 
 ---
 
-### has()
+### has
 
 Indicates whether the instance has a routable spec identified by its `$routeName`.
 
-**Parameters:**
-
+::: warning Parameters
 - *routeName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
 Returns the routable spec identified by its `$routeName`.
 
-**Parameters:**
-
+::: warning Parameters
 - *routeName*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [OutOfBoundsException](../../../Exceptions/Core/OutOfBoundsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 [RoutableSpecInterface](./RoutableSpecInterface.md)
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### keys()
+### keys
 
 Provides access to the object keys.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

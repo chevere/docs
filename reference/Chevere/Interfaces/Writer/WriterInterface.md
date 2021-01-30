@@ -18,29 +18,29 @@ Describes the component in charge of writing strings.
 
 ## Methods
 
-### write()
+### write
 
 Writes the given string.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### toString()
+### toString
 
 Returns the contents written. Must not alter the file cursor.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

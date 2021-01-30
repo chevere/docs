@@ -15,89 +15,89 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### getParameters()
+### getParameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### getResponseDataParameters()
+### getResponseDataParameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### run()
+### run
 
-**Parameters:**
-
+::: warning Parameters
 - *arguments*: [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
 
-### parameters()
+### parameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### responseDataParameters()
+### responseDataParameters
 
-::: tip RETURN
+::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---
 
-### getArguments()
+### getArguments
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedArguments*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
 :::
 
 ---
 
-### getResponse()
+### getResponse
 
-**Parameters:**
-
+::: warning Parameters
 - *...namedData*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 :::
 
 ---
 
-### getDescription()
+### getDescription
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### description()
+### description
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

@@ -14,25 +14,25 @@ Describes the interface for components requiring to implement pluggable hooks.
 
 ## Methods
 
-### getHookAnchors()
+### getHookAnchors
 
 Returns the declared hook anchors able to plug.
 
-::: tip RETURN
+::: tip Return
 [PluggableAnchorsInterface](../../PluggableAnchorsInterface.md)
 :::
 
 ---
 
-### withHooksRunner()
+### withHooksRunner
 
 Return an instance with the specified `$runner`.
 
-**Parameters:**
-
+::: warning Parameters
 - *runner*: [HooksRunnerInterface](./HooksRunnerInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -43,16 +43,16 @@ This method should be implemented in the runtime strategy before running hooks.
 
 ---
 
-### hook()
+### hook
 
 Run hooks for the given anchor (if-any).
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *argument*: 
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

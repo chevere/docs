@@ -18,19 +18,19 @@ Describes the component in charge of string manipulation.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
 ---
 
-### withLowercase()
+### withLowercase
 
 Return an instance with the chars lower cased (UTF-8).
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -39,11 +39,11 @@ an instance that contains the chars lower cased.
 
 ---
 
-### withUppercase()
+### withUppercase
 
 Return an instance with the chars upper cased (UTF-8).
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -52,11 +52,11 @@ an instance that contains the chars upper cased.
 
 ---
 
-### withStripWhitespace()
+### withStripWhitespace
 
 Return an instance with the white space stripped.
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -65,11 +65,11 @@ an instance that contains the white space stripped.
 
 ---
 
-### withStripExtraWhitespace()
+### withStripExtraWhitespace
 
 Return an instance with the extra white space stripped.
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -78,11 +78,11 @@ an instance that contains the extra white space stripped.
 
 ---
 
-### withStripNonAlphanumerics()
+### withStripNonAlphanumerics
 
 Return an instance with the non-alphanumeric chars stripped.
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -91,11 +91,11 @@ an instance that contains the non-alphanumeric chars stripped.
 
 ---
 
-### withForwardSlashes()
+### withForwardSlashes
 
 Return an instance with the back slashes converted to forward slashes.
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -104,15 +104,15 @@ an instance that contains the back slashes converted to forward slashes.
 
 ---
 
-### withLeftTail()
+### withLeftTail
 
 Return an instance with the specified `$tail` on left.
 
-**Parameters:**
-
+::: warning Parameters
 - *tail*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -121,15 +121,15 @@ an instance that contains the specified `$tail` on left.
 
 ---
 
-### withRightTail()
+### withRightTail
 
 Return an instance with the specified `$tail` on right.
 
-**Parameters:**
-
+::: warning Parameters
 - *tail*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -138,16 +138,16 @@ an instance that contains the specified `$tail` on right.
 
 ---
 
-### withReplaceFirst()
+### withReplaceFirst
 
 Return an instance with the specified `$search` replaced with `$replace` on the first occurrence.
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -156,16 +156,16 @@ an instance that contains the specified `$search` replaced with `$replace` on th
 
 ---
 
-### withReplaceLast()
+### withReplaceLast
 
 Return an instance with the specified `$search` replaced with `$replace` on the last occurrence.
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -174,16 +174,16 @@ an instance that contains the specified `$search` replaced with `$replace` on th
 
 ---
 
-### withReplaceAll()
+### withReplaceAll
 
 Return an instance with the specified `$search` replaced with `$replace` on all occurrences.
 
-**Parameters:**
-
+::: warning Parameters
 - *search*: string
 - *replace*: string
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -192,11 +192,11 @@ an instance that contains the specified `$search` replaced with `$replace` on al
 
 ---
 
-### withStripANSIColors()
+### withStripANSIColors
 
 Return an instance with the ANSI colors stripped.
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -205,11 +205,11 @@ an instance that contains the ANSI colors stripped.
 
 ---
 
-### toString()
+### toString
 
 Returns a string, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

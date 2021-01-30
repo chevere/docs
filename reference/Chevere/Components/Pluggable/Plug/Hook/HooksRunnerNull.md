@@ -14,14 +14,14 @@ editLink: false
 
 ## Methods
 
-### run()
+### run
 
-**Parameters:**
-
+::: warning Parameters
 - *anchor*: string
 - *argument*: 
+:::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 

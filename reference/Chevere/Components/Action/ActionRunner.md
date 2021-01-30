@@ -14,21 +14,21 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *controller*: [ControllerInterface](../../Interfaces/Action/ControllerInterface.md)
+:::
 
 ---
 
-### execute()
+### execute
 
-**Parameters:**
-
+::: warning Parameters
 - *...arguments*: mixed
+:::
 
-::: tip RETURN
+::: tip Return
 [ActionExecutedInterface](../../Interfaces/Action/ActionExecutedInterface.md)
 :::
 

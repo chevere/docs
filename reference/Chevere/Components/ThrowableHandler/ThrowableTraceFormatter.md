@@ -97,26 +97,26 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *trace*: array
 - *formatter*: [ThrowableHandlerFormatterInterface](../../Interfaces/ThrowableHandler/ThrowableHandlerFormatterInterface.md)
+:::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

@@ -97,55 +97,55 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *writer*: [WriterInterface](../Writer/WriterInterface.md)
 - *formatter*: [VarDumpFormatterInterface](./VarDumpFormatterInterface.md)
 - *dumpable*: [VarDumpableInterface](./VarDumpableInterface.md)
+:::
 
 ---
 
-### writer()
+### writer
 
 Provides access to the `$writer` instance.
 
-::: tip RETURN
+::: tip Return
 [WriterInterface](../Writer/WriterInterface.md)
 :::
 
 ---
 
-### formatter()
+### formatter
 
 Provides access to the `$formatter` instance.
 
-::: tip RETURN
+::: tip Return
 [VarDumpFormatterInterface](./VarDumpFormatterInterface.md)
 :::
 
 ---
 
-### dumpable()
+### dumpable
 
 Provides access to the `$dumpable` instance.
 
-::: tip RETURN
+::: tip Return
 [VarDumpableInterface](./VarDumpableInterface.md)
 :::
 
 ---
 
-### withIndent()
+### withIndent
 
 Return an instance with the specified `$indent`.
 
-**Parameters:**
-
+::: warning Parameters
 - *indent*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -154,35 +154,35 @@ an instance that contains the specified `$indent`.
 
 ---
 
-### indent()
+### indent
 
 Provides access to the instance indent value.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### indentString()
+### indentString
 
 Provides access to the instance indent string.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### withDepth()
+### withDepth
 
 Return an instance with the specified `$depth`.
 
-**Parameters:**
-
+::: warning Parameters
 - *depth*: int
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -191,25 +191,25 @@ an instance that contains the specified `$depth`.
 
 ---
 
-### depth()
+### depth
 
 Provides access to the instance `$depth`.
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### withKnownObjects()
+### withKnownObjects
 
 Return an instance with the specified `$known` object IDs.
 
-**Parameters:**
-
+::: warning Parameters
 - *known*: [Ds\Set](https://www.php.net/manual/class.ds\set)
+:::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 
@@ -218,21 +218,21 @@ an instance that contains the specified `$known` object IDs.
 
 ---
 
-### known()
+### known
 
 Provides access to the known object ids.
 
-::: tip RETURN
+::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
 
-### withProcess()
+### withProcess
 
 Process the dump.
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

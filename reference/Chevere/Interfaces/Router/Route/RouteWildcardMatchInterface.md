@@ -18,33 +18,33 @@ Describes the component in charge of defining a route wildcard match.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [UnexpectedValueException](../../../Exceptions/Core/UnexpectedValueException.md) If `$string` is an invalid regex matcher.
 :::
 
 ---
 
-### toAnchored()
+### toAnchored
 
 Same as `toString` but with starting `^` and ending `$`.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toString()
+### toString
 
 Returns a string, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

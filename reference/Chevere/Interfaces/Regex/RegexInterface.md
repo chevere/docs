@@ -36,79 +36,79 @@ array (
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *pattern*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### toNoDelimiters()
+### toNoDelimiters
 
 Provides access to the the regex string without delimiters.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toNoDelimitersNoAnchors()
+### toNoDelimitersNoAnchors
 
 Provides access to the regex string without delimiters and without anchors (`^`, `$`).
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### match()
+### match
 
 Matches string.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### matchAll()
+### matchAll
 
 Matches all string.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### toString()
+### toString
 
 Returns a string, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

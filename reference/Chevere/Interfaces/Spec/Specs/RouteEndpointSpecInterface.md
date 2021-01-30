@@ -19,44 +19,44 @@ Describes the component in charge of defining a route endpoint spec.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *specDir*: [DirInterface](../../Filesystem/DirInterface.md)
 - *routeEndpoint*: [RouteEndpointInterface](../../Router/Route/RouteEndpointInterface.md)
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 
 :::
 
 ---
 
-### jsonPath()
+### jsonPath
 
 Provides access to the json path.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### key()
+### key
 
 Provides access to the key.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toArray()
+### toArray
 
 Returns an array, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

@@ -19,51 +19,51 @@ Describes the component in charge of defining a routable spec.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *specDir*: [DirInterface](../../Filesystem/DirInterface.md)
 - *routable*: [RoutableInterface](../../Router/RoutableInterface.md)
 - *repository*: string
+:::
 
 ---
 
-### clonedRouteEndpointSpecs()
+### clonedRouteEndpointSpecs
 
 Provides access to a cloned `RouteEndpointSpecs` which doesn't affects the object instance used in `toArray`.
 
-::: tip RETURN
+::: tip Return
 [RouteEndpointSpecs](../../../Components/Spec/Specs/RouteEndpointSpecs.md)
 :::
 
 ---
 
-### jsonPath()
+### jsonPath
 
 Provides access to the json path.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### key()
+### key
 
 Provides access to the key.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toArray()
+### toArray
 
 Returns an array, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

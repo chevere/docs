@@ -19,105 +19,105 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
 ---
 
-### __clone()
+### __clone
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### withAddedWildcard()
+### withAddedWildcard
 
-**Parameters:**
-
+::: warning Parameters
 - *routeWildcard*: [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md)
+:::
 
-::: tip RETURN
+::: tip Return
 [WildcardsInterface](../../../Interfaces/Router/Route/WildcardsInterface.md)
 :::
 
 ---
 
-### has()
+### has
 
-**Parameters:**
-
+::: warning Parameters
 - *wildcardName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### get()
+### get
 
-**Parameters:**
-
+::: warning Parameters
 - *wildcardName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md)
 :::
 
 ---
 
-### hasPos()
+### hasPos
 
-**Parameters:**
-
+::: warning Parameters
 - *pos*: int
+:::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getPos()
+### getPos
 
-**Parameters:**
-
+::: warning Parameters
 - *pos*: int
+:::
 
-::: tip RETURN
+::: tip Return
 [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md)
 :::
 
 ---
 
-### keys()
+### keys
 
-::: tip RETURN
+::: tip Return
 array
 :::
 
 ---
 
-### count()
+### count
 
-::: tip RETURN
+::: tip Return
 int
 :::
 
 ---
 
-### getGenerator()
+### getGenerator
 
-::: tip RETURN
+::: tip Return
 [Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---
 
-### toArray()
+### toArray
 
-::: tip RETURN
+::: tip Return
 array
 :::
 

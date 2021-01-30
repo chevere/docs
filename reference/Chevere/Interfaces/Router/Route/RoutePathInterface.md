@@ -18,52 +18,52 @@ Describes the component in charge of handling route paths.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *route*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [InvalidArgumentException](../../../Exceptions/Core/InvalidArgumentException.md) 
 - [LogicException](../../../Exceptions/Core/LogicException.md) 
 :::
 
 ---
 
-### wildcards()
+### wildcards
 
 Provides access to the wildcards instance.
 
-::: tip RETURN
+::: tip Return
 [WildcardsInterface](./WildcardsInterface.md)
 :::
 
 ---
 
-### regex()
+### regex
 
 Provides access to the regex instance.
 
-::: tip RETURN
+::: tip Return
 [RegexInterface](../../Regex/RegexInterface.md)
 :::
 
 ---
 
-### name()
+### name
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toString()
+### toString
 
 Returns a string, representing the object itself or some of its data/properties.
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

@@ -25,26 +25,26 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *recursiveIterator*: [RecursiveIterator](https://www.php.net/manual/class.recursiveiterator)
 - *trailingName*: string
+:::
 
 ---
 
-### accept()
+### accept
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getChildren()
+### getChildren
 
-::: tip RETURN
+::: tip Return
 [RecursiveFilterIterator](https://www.php.net/manual/class.recursivefilteriterator)
 :::
 

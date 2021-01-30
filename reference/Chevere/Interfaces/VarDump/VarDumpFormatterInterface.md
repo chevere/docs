@@ -14,58 +14,58 @@ Describes the component in charge of formatting the var dump strings.
 
 ## Methods
 
-### indent()
+### indent
 
 Get indent for the given `$indent` size.
 
-**Parameters:**
-
+::: warning Parameters
 - *indent*: int
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### emphasis()
+### emphasis
 
 Get emphasis for the given `$string`.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### filterEncodedChars()
+### filterEncodedChars
 
 Get `$string` without encoded chars.
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### highlight()
+### highlight
 
 Get highlighted `$string` identified by `$key`.
 
-**Parameters:**
-
+::: warning Parameters
 - *key*: string
 - *string*: string
+:::
 
-::: tip RETURN
+::: tip Return
 string
 :::
 

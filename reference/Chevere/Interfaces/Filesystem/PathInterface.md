@@ -18,13 +18,13 @@ Describes the component in charge of interact with filesystem paths.
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *absolute*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md) 
 - [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md) 
 - [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md) 
@@ -33,121 +33,121 @@ Describes the component in charge of interact with filesystem paths.
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### assertExists()
+### assertExists
 
 Asserts whether the path exists.
 
-::: danger THROWS
+::: danger Throws
 - [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### exists()
+### exists
 
 Indicates whether the path exists.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isDir()
+### isDir
 
 Indicates whether the path is a directory and exists.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isFile()
+### isFile
 
 Indicates whether the path is a file and exists.
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### chmod()
+### chmod
 
 Wrapper for `\chmod`.
 
-**Parameters:**
-
+::: warning Parameters
 - *mode*: int
+:::
 
-::: danger THROWS
+::: danger Throws
 - [PathIsNotDirectoryException](../../Exceptions/Filesystem/PathIsNotDirectoryException.md) 
 - [PathUnableToChmodException](../../Exceptions/Filesystem/PathUnableToChmodException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
 ---
 
-### isWritable()
+### isWritable
 
 Wrapper for `\is_writeable`.
 
-::: danger THROWS
+::: danger Throws
 - [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### isReadable()
+### isReadable
 
 Wrapper for `\is_readable`.
 
-::: danger THROWS
+::: danger Throws
 - [PathNotExistsException](../../Exceptions/Filesystem/PathNotExistsException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 bool
 :::
 
 ---
 
-### getChild()
+### getChild
 
 Get a child instance for the target child path.
 
-**Parameters:**
-
+::: warning Parameters
 - *path*: string
+:::
 
-::: danger THROWS
+::: danger Throws
 - [PathDotSlashException](../../Exceptions/Filesystem/PathDotSlashException.md) 
 - [PathDoubleDotsDashException](../../Exceptions/Filesystem/PathDoubleDotsDashException.md) 
 - [PathExtraSlashesException](../../Exceptions/Filesystem/PathExtraSlashesException.md) 
 - [PathNotAbsoluteException](../../Exceptions/Filesystem/PathNotAbsoluteException.md) 
 :::
 
-::: tip RETURN
+::: tip Return
 self
 :::
 

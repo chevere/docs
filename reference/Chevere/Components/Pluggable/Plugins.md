@@ -18,29 +18,29 @@ Pluggable -> plugs.php interaction
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *pluggablesToPlugs*: [ClassMapInterface](../../Interfaces/ClassMap/ClassMapInterface.md)
+:::
 
 ---
 
-### clonedClassMap()
+### clonedClassMap
 
-::: tip RETURN
+::: tip Return
 [ClassMapInterface](../../Interfaces/ClassMap/ClassMapInterface.md)
 :::
 
 ---
 
-### getPlugsQueue()
+### getPlugsQueue
 
-**Parameters:**
-
+::: warning Parameters
 - *pluggableName*: string
+:::
 
-::: tip RETURN
+::: tip Return
 [PlugsQueueInterface](../../Interfaces/Pluggable/PlugsQueueInterface.md)
 :::
 

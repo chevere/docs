@@ -15,33 +15,33 @@ editLink: false
 
 ## Methods
 
-### __construct()
+### __construct
 
-**Parameters:**
-
+::: warning Parameters
 - *string*: string
+:::
 
 ---
 
-### toString()
+### toString
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### toAnchored()
+### toAnchored
 
-::: tip RETURN
+::: tip Return
 string
 :::
 
 ---
 
-### assertRegexNoCapture()
+### assertRegexNoCapture
 
-::: tip RETURN
+::: tip Return
 void
 :::
 
