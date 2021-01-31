@@ -1,8 +1,6 @@
 # ClassMap
 
-The ClassMap component is in charge of collecting full-qualified class names.
-
-[ClassMapInterface](../reference/Chevere/Interfaces/ClassMap/ClassMapInterface.md) describes the interface for the component in charge of defining a ClassMap.
+The [ClassMap](../reference/Chevere/Components/ClassMap/ClassMap.md) component is in charge of collecting full-qualified class names.
 
 ## Creating ClassMap
 
@@ -14,10 +12,13 @@ $classMap = new ClassMap();
 
 ## Adding class mappings
 
-The `withPut` method is used to add a class name mapping to a given key.
+The `withPut` method is used to add a mapping for a  fully-qualified class name to a given key.
 
 ```php
-$classMap = $classMap->WithPut('className', 'my-key');
+$classMap = $classMap->withPut(
+    className: 'SomeClassName',
+    key: 'my-key'
+);
 ```
 
 ## Has class name
@@ -25,7 +26,7 @@ $classMap = $classMap->WithPut('className', 'my-key');
 The `has` method is used to check if the mapping contains a given class name.
 
 ```php
-$classMap->has('otherClassName'); // false
+$classMap->has(className: 'otherClassName'); // false
 ```
 
 ## Has key
@@ -33,7 +34,7 @@ $classMap->has('otherClassName'); // false
 The `hasKey` method is used to check if the mapping contains a class name for the given key.
 
 ```php
-$classMap->hasKey('my-key'); // true
+$classMap->hasKey(key: 'my-key'); // true
 ```
 
 ## Get key
@@ -41,7 +42,15 @@ $classMap->hasKey('my-key'); // true
 The `key` method is used to get the mapping key for the given class name.
 
 ```php
-$classMap->key('className'); // my-key
+$classMap->key(className: 'SomeClassName'); // my-key
+```
+
+## Get all keys
+
+The `keys` method returns an array of all keys.
+
+```php
+$classMap->keys(); // ['my-key',];
 ```
 
 ## Get class name
@@ -49,5 +58,5 @@ $classMap->key('className'); // my-key
 The `className` method is used to get the class name mapped to the given key.
 
 ```php
-$classMap->getClass('my-key'); // className
+$classMap->className(key: 'my-key'); // className
 ```
