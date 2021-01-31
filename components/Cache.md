@@ -1,8 +1,6 @@
 # Cache
 
-The Cache component is in charge of providing a filesystem-based persistent application cache layer. It is intended to be used to cache application states accelerated on top of [OPcache](https://www.php.net/opcache).
-
-[CacheInterface](../reference/Chevere/Interfaces/Cache/CacheInterface.md) describes the interface for the component in charge of handling cache.
+The [Cache](../reference/Chevere/Components/Cache/Cache.md) component is in charge of providing a filesystem-based persistent application cache layer. It is intended to be used to cache application states accelerated on top of [OPcache](https://www.php.net/opcache).
 
 ::: tip Learn by Example
 Check the Router [make](https://github.com/chevere/examples/tree/master/03.Http#00router-makephp) and [resolve](https://github.com/chevere/examples/tree/master/03.Http#01router-resolvephp) for a working use-case of the Cache component.
@@ -16,21 +14,31 @@ Create a Cache by passing the cache working directory.
 use Chevere\Components\Cache\Cache;
 use function Chevere\Components\Filesystem\dirForPath;
 
-$cache = new Cache(dirForPath('/to-cache/'));
+$cache = new Cache(dir: dirForPath('/to-cache/'));
+```
+
+## Cache Key
+
+The [CacheKey](../reference/Chevere/Components/Cache/CacheKey.md) component provides cache keys to be used with the cache component. This is used to [put](#put), [get](#get), [exists](#exists) and [remove](#remove) cache.
+
+```php
+use Chevere\Components\Cache\CacheKey;
+
+$key = new CacheKey(key: 'the_cache_key'),
 ```
 
 ## Put
 
-The `withPut` method is used to cache a variable. The code below shows how to cache an entry identified by the key `the_cache_key`.
+The `withPut` method is used to cache a `var` which must be of type [VarStorable](../reference/Chevere/Components/VarStorable/VarStorable.md).
 
 ```php
 use Chevere\Components\Cache\Cache;
 use Chevere\Components\Cache\CacheKey;
-use Chevere\Components\Variable\VarExportable;
+use Chevere\Components\Variable\VarStorable;
 
 $cache = $cache->withPut(
-    new CacheKey('the_cache_key'),
-    new VarExportable($var)
+    key: $key,
+    var: new VarStorable($var)
 );
 ```
 
@@ -50,9 +58,7 @@ The `exists` method is used to determine if cache exists for `$key`.
 
 ```php
 use Chevere\Components\Cache\Cache;
-use Chevere\Components\Cache\CacheKey;
 
-$key = new CacheKey('the_cache_key');
 $exists = $cache->exists($key);
 ```
 
@@ -62,9 +68,7 @@ The `get` method is used to retrieve a cached entry at the given `$key`. It retu
 
 ```php
 use Chevere\Components\Cache\Cache;
-use Chevere\Components\Cache\CacheKey;
 
-$key = new CacheKey('the_cache_key');
 $var = $cache->get($key);
 ```
 
@@ -74,7 +78,6 @@ The `withRemove` method is used to remove the cache at the given `$key`.
 
 ```php
 use Chevere\Components\Cache\Cache;
-use Chevere\Components\Cache\CacheKey;
 
 $cache = $cache->withRemove($key);
 ```
