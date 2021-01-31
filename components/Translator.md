@@ -93,9 +93,7 @@ __nt(
 
 ## PoMaker
 
-PoMaker is in charge of providing generation of translations in [PO File](https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html) format.
-
-[PoMakerInterface](../reference/Chevere/Interfaces/Translator/PoMakerInterface.md) describes the interface for the component in charge of defining a PoMaker.
+The [PoMaker](../reference/Chevere/Components/Translator/PoMaker.md) component is in charge of providing generation of translations in [PO File](https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html) format.
 
 ### Creating PoMaker
 
@@ -125,9 +123,7 @@ $poMaker->make(targetDir: $target);
 
 ## TranslatorMaker
 
-TranslatorMaker is in charge of converting from PO File format to PHP, which is the format that will be actually used at runtime.
-
-[TranslatorMakerInterface](../reference/Chevere/Interfaces/Translator/TranslatorMakerInterface.md) describes the interface for the component in charge of defining a TranslatorMaker.
+The [TranslatorMaker](../reference/Chevere/Components/Translator/TranslatorMaker.md) component is in charge of converting from PO File format to PHP, which is the format that will be actually used at runtime.
 
 ### Creating TranslatorMaker
 
@@ -157,7 +153,7 @@ $translatorMaker = $translatorMaker->withMakeTranslation(
 
 ## TranslatorLoader
 
-[TranslatorLoader](../reference/Chevere/Components/Translator/TranslatorLoader.md) is in charge of providing a Translator, which provides PHP translations.
+The [TranslatorLoader](../reference/Chevere/Components/Translator/TranslatorLoader.md) component is in charge of providing a Translator, which provides PHP translations.
 
 ### Creating TranslatorLoader
 
@@ -182,11 +178,11 @@ $translator = $translatorLoader->getTranslator(
 
 ## TranslatorInstance
 
-[TranslatorInstance](../reference/Chevere/Components/Translator/TranslatorInstance.md) is in charge of providing a static translator instance.
+The [TranslatorInstance](../reference/Chevere/Components/Translator/TranslatorInstance.md) component is in charge of providing a static translator instance.
 
 ## Creating TranslatorInstance
 
-A static instance can be provided by creating a [TranslatorInstance](../reference/Chevere/Components/Translator/TranslatorInstance.md).
+A static instance can be provided by creating a new instance:
 
 ```php
 use Chevere\Components\Translator\TranslatorInstance;
