@@ -1,8 +1,6 @@
 # Parameter
 
-The Parameter component is in charge of providing extended type support with the ability to handle variadic typed parameters and its argument matching. It allows to provide variable parameter-argument type matching.
-
-[ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md) describes the interface for the component in charge of defining a typed parameter relying on the [Type](./Type.md) component.
+The [Parameter](../reference/Chevere/Components/Parameter/Parameter.md) component is in charge of providing extended type support with the ability to handle variadic typed parameters and its argument matching. It allows to provide variable parameter-argument type matching relying on the [Type](./Type.md) component.
 
 ## Creating a Parameter
 
@@ -52,7 +50,7 @@ The following parameter type classes are provided for convenience.
 
 ### Array Parameter
 
-[ArrayParameterInterface](../reference/Chevere/Interfaces/Parameter/ArrayParameterInterface.md) describes the component in charge of defining a parameter of type array. It support default `array` value.
+The [ArrayParameter](../reference/Chevere/Components/Parameter/ArrayParameter.md) component in charge of defining a parameter of type array. It support default `array` value.
 
 ```php
 use Chevere\Components\Parameter\ArrayParameter;
@@ -63,7 +61,7 @@ use Chevere\Components\Parameter\ArrayParameter;
 
 ### Boolean Parameter
 
-[BooleanParameterInterface](../reference/Chevere/Interfaces/Parameter/BooleanParameterInterface.md) describes the component in charge of defining a parameter of type boolean. It support default `boolean` value.
+The [BooleanParameter](../reference/Chevere/Components/Parameter/BooleanParameter.md) component in charge of defining a parameter of type boolean. It support default `boolean` value.
 
 ```php
 use Chevere\Components\Parameter\BooleanParameter;
@@ -74,7 +72,7 @@ use Chevere\Components\Parameter\BooleanParameter;
 
 ### Float Parameter
 
-[FloatParameterInterface](../reference/Chevere/Interfaces/Parameter/FloatParameterInterface.md) describes the component in charge of defining a parameter of type float. It support default `float` value.
+The [FloatParameter](../reference/Chevere/Components/Parameter/FloatParameter.md) component in charge of defining a parameter of type float. It support default `float` value.
 
 ```php
 use Chevere\Components\Parameter\FloatParameter;
@@ -85,7 +83,7 @@ use Chevere\Components\Parameter\FloatParameter;
 
 ### Integer Parameter
 
-[IntegerParameterInterface](../reference/Chevere/Interfaces/Parameter/IntegerParameterInterface.md) describes the component in charge of defining a parameter of type integer. It support `integer` default value.
+The [IntegerParameter](../reference/Chevere/Components/Parameter/IntegerParameter.md) component in charge of defining a parameter of type integer. It support `integer` default value.
 
 ```php
 use Chevere\Components\Parameter\IntegerParameter;
@@ -96,7 +94,7 @@ use Chevere\Components\Parameter\IntegerParameter;
 
 ### String Parameter
 
-[StringParameterInterface](../reference/Chevere/Interfaces/Parameter/StringParameterInterface.md) describes the component in charge of defining a parameter of type string. It support regex and `string` default value.
+The [StringParameter](../reference/Chevere/Components/Parameter/StringParameter.md) component in charge of defining a parameter of type string. It support regex and `string` default value.
 
 ```php
 use Chevere\Components\Parameter\StringParameter;
@@ -111,7 +109,7 @@ The above parameter will require an argument like `id-123` to validate.
 
 ## Parameters
 
-[ParametersInterface](../reference/Chevere/Interfaces/Parameter/ParametersInterface.md) describe the component in charge of collecting objects implementing the [ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md).
+The [Parameters](../reference/Chevere/Components/Parameter/Parameters.md) component in charge of collecting objects implementing the [ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md).
 
 ```php
 use Chevere\Components\Parameter\Parameters;
@@ -132,7 +130,7 @@ Parameters can be added either as required or optional.
 
 ## Arguments
 
-[ArgumentsInterface](../reference/Chevere/Interfaces/Parameter/ArgumentsInterface.md) describe the component in charge of providing arguments matching the declared Parameters.
+The [Arguments](../reference/Chevere/Components/Parameter/Arguments.md) component in charge of providing arguments matching the declared [Parameters](#parameters).
 
 ```php
 use Chevere\Components\Parameter\Arguments;
