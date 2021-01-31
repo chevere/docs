@@ -6,7 +6,7 @@ The Http component is in charge of providing typed HTTP methods according to [RF
 
 ## ConnectMethod
 
-`CONNECT`
+`CONNECT` defined by [ConnectMethod](../reference/Chevere/Components/Http/Methods/ConnectMethod.md).
 
 Establish a tunnel to the server identified by the target resource.
 
@@ -18,7 +18,7 @@ $connect = new ConnectMethod();
 
 ## DeleteMethod
 
-`DELETE`
+`DELETE` defined by [DeleteMethod](../reference/Chevere/Components/Http/Methods/DeleteMethod.md).
 
 Remove all current representations of the target resource.
 
@@ -30,7 +30,7 @@ $delete = new DeleteMethod();
 
 ## GetMethod
 
-`GET`
+`GET` defined by [GetMethod](../reference/Chevere/Components/Http/Methods/GetMethod.md).
 
 Transfer a current representation of the target resource.
 
@@ -42,7 +42,7 @@ $get = new GetMethod();
 
 ## HeadMethod
 
-`HEAD`
+`HEAD` defined by [HeadMethod](../reference/Chevere/Components/Http/Methods/HeadMethod.md).
 
 Same as GET, but only transfer the status line and header section.
 
@@ -54,7 +54,7 @@ $head = new HeadMethod();
 
 ## OptionsMethod
 
-`OPTIONS`
+`OPTIONS` defined by [OptionsMethod](../reference/Chevere/Components/Http/Methods/OptionsMethod.md).
 
 Describe the communication options for the target resource.
 
@@ -66,7 +66,7 @@ $options = new OptionsMethod();
 
 ## PatchMethod
 
-`PATCH`
+`PATCH` defined by [PatchMethod](../reference/Chevere/Components/Http/Methods/PatchMethod.md).
 
 Apply partial modifications described in the request entity to the target resource.
 
@@ -78,7 +78,7 @@ $path = new PatchMethod();
 
 ## PostMethod
 
-`POST`
+`POST` defined by [PostMethod](../reference/Chevere/Components/Http/Methods/PostMethod.md).
 
 Perform resource-specific processing on the request payload.
 
@@ -90,7 +90,7 @@ $post = new PostMethod();
 
 ## PutMethod
 
-`PUT`
+`PUT` defined by [PutMethod](../reference/Chevere/Components/Http/Methods/PutMethod.md).
 
 Replace all current representations of the target resource with the request payload.
 
@@ -102,7 +102,7 @@ $put = new PutMethod();
 
 ## TraceMethod
 
-`TRACE`
+`TRACE` defined by [TraceMethod](../reference/Chevere/Components/Http/Methods/TraceMethod.md).
 
 Perform a message loop-back test along the path to the target resource.
 
