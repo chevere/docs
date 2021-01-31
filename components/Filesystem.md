@@ -84,7 +84,7 @@ use function Chevere\Components\Filesystem\dirForPath;
 
 $path = '/home/var/';
 $dir = new Dir(new Path($path))
-// It can be also created with...
+// It can be also created with:
 $dir = dirForPath($path);
 ```
 
@@ -146,7 +146,7 @@ use function Chevere\Components\Filesystem\fileForPath;
 
 $path = '/home/var/the-file.php';
 $file = new File(new Path($path));
-// It can be also created with...
+// It can be also created with:
 $file = fileForPath($path);
 ```
 

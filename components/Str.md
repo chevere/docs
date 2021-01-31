@@ -6,7 +6,7 @@ Str is a collection of classes that interact with strings. Namespace `Chevere\Co
 
 Manipulating strings refers to the process of altering an argument of type `string`.
 
-[StrInterface](../reference/Chevere/Interfaces/Str/StrInterface.md) describe the interface for a component in charge of string manipulation.
+The [Str](../reference/Chevere/Components/Str/Str.md) component in charge of string manipulation.
 
 ```php
 use Chevere\Components\Str\Str;
@@ -27,7 +27,7 @@ Asserting strings refers to the process of asserting an argument of type `string
 
 ### StrAssert
 
-[StrAssert](../reference/Chevere/Interfaces/Str/StrAssertInterface.md) describe the interface for a component in charge of string asserting.
+The [StrAssert](../reference/Chevere/Components/Str/StrAssert.md)  component in charge of string asserting.
 
 ```php
 use new Chevere\Components\Str\StrAssert;
@@ -47,7 +47,7 @@ Bool string refers to the process of validate an argument of type `string` again
 
 ### StrBool
 
-[StrBoolInterface](../reference/Chevere/Interfaces/Str/StrBoolInterface.md) describe the interface for a component in charge of string validation.
+The [StrBool](../reference/Chevere/Components/Str/StrBool.md) component in charge of string validation.
 
 ```php
 use new Chevere\Components\Str\StrBool;

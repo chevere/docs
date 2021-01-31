@@ -98,7 +98,7 @@ Check the Controller [example](https://github.com/chevere/examples/tree/master/0
 
 ### Defining a Controller
 
-Code below defines class `SomeController` by extending the base [Controller](Controller.../reference/Chevere/Components/Action/ControllerName.md).
+Code below defines class `SomeController` by extending the base [Controller](../reference/Chevere/Components/Action/Controller.md).
 
 ```php
 use Chevere\Components\Actions\Controller;
