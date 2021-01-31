@@ -1,8 +1,6 @@
 # Response
 
-The Response component is in charge of handling responses.
-
-[ResponseInterface](../reference/Chevere/Interfaces/Response/ResponseInterface.md) describes the interface for the component in charge of defining a Response.
+The [Response](../reference/Chevere/Components/Response/Response.md) component is in charge of handling responses.
 
 ## Creating Response
 
@@ -30,7 +28,7 @@ $response = $response
 The `withStatus` method is used to set Response status code.
 
 ```php
-$response = $response->withStatus(0);
+$response = $response->withStatus(code: 0);
 ```
 
 ### Status codes
