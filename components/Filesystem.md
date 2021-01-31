@@ -4,7 +4,7 @@ The Filesystem component is in charge of interact with the filesystem, offering 
 
 ## Path
 
-[PathInterface](../reference/Chevere/Interfaces/Filesystem/PathInterface.md) describe the interface for the component in charge of interact with filesystem paths.
+The [Path](../reference/Chevere/Components/Filesystem/Path.md) component is charge of interact with filesystem paths.
 
 ```php
 use Chevere\Components\Filesystem\Path;
@@ -24,10 +24,10 @@ $pathExists = $path->exists();
 
 #### Path is Writable
 
-The `isWritable` method determines if the path is writable. It returns `true` when a path is writeable.
+The `isWritable` method determines if the path is writable. It returns `true` when a path is writable and it supports NFS mounts.
 
 ```php
-$pathisWritable = $path->isWritable();
+$pathIsWritable = $path->isWritable();
 ```
 
 #### Path is Readable
@@ -75,7 +75,7 @@ $childPathFile  = $path->getChild('child-2/some-file.php'); // /home/var/child-2
 
 ## Dir
 
-[DirInterface](../reference/Chevere/Interfaces/Filesystem/DirInterface.md) describe the interface for the component in charge of interact with filesystem directories.
+The [Dir](../reference/Chevere/Components/Filesystem/Dir.md) component is in charge of interact with filesystem directories.
 
 ```php
 use Chevere\Components\Filesystem\Dir;
@@ -137,7 +137,7 @@ $childDir  = $dir->getChild('child/'); // /home/var/child/
 
 ## File
 
-[FileInterface](../reference/Chevere/Interfaces/Filesystem/FileInterface.md) describe the interface for the component in charge of interact with filesystem files.
+The [File](../reference/Chevere/Components/Filesystem/File.md) component in charge of interact with filesystem files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -176,7 +176,7 @@ The `exist` method determines if the file exists. It returns `true` when a file 
 $fileExists = $file->exists();
 ```
 
-#### Assert File Exists 
+#### Assert File Exists
 
 The `assertExists` method asserts if the file exists. Throws exception when the file doesn't exists in the filesystem.
 
@@ -214,7 +214,6 @@ $checksum = $file->checksum(); // sha256'd
 
 > 👍🏾 FileInterface::CHECKSUM_ALGO determines the algorithm used for file hashing.
 
-
 ### Removing a File
 
 The `remove` method removes the file.
@@ -225,7 +224,7 @@ $file->remove(); // file is gone
 
 ## File PHP
 
-[FilePhpInterface](../reference/Chevere/Interfaces/Filesystem/FilePhpInterface.md) describe the interface for the component in charge of interact with PHP files.
+The [FilePhp](../reference/Chevere/Components/Filesystem/FilePhp.md) component in charge of interact with PHP files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -251,7 +250,7 @@ $filePhp->flush(); // OPCache cache is gone
 
 ## File PHP Return
 
-[FilePhpReturnInterface](../reference/Chevere/Interfaces/Filesystem/FilePhpReturnInterface.md) describe the interface for the component in charge og interact with the return value of PHP files.
+The [FilePhpReturn](../reference/Chevere/Components/Filesystem/FilePhpReturn.md) component in charge og interact with the return value of PHP files.
 
 ```php
 use Chevere\Components\Filesystem\File;
@@ -265,7 +264,7 @@ $filePhpReturn = new FilePhpReturn($filePhp);
 $filePhpReturn = $filePhpReturn->withStrict(false);
 ```
 
-The `withStrict` method allows to set the flag for file contents validation. Strict `true` will require that the file contents begins with `<?php return `. Strict `false` will allow comments and other code before `return`.
+The `withStrict` method allows to set the flag for file contents validation. Strict `true` will require that the file contents begins with `<?php return`. Strict `false` will allow comments and other code before `return`.
 
 ### Reading File PHP
 
@@ -279,7 +278,7 @@ $filePhpReturn->raw();
 
 #### Var contents
 
-The `var` method retuns a PHP variable. If the return value of the PHP file is a serialized string, it will return the unserialized object instance.
+The `var` method retuns a PHP variable. If the return value of the PHP file is a serialized string, it will return the not serialized object instance.
 
 ```php
 $filePhpReturn->var();
