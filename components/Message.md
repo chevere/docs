@@ -1,8 +1,6 @@
 # Message
 
-The Message component allows to create messages with rich formatting support for console, HTML and plain text.
-
-[MessageInterface](../reference/Chevere/Interfaces/Message/MessageInterface.md) describe the interface for a component in charge of providing a common message standard for system messages.
+The [Message](../reference/Chevere/Components/Message/Message.md) component allows to create messages with rich formatting support for console, HTML and plain text.
 
 ## Creating a Message
 
@@ -79,8 +77,8 @@ The `toConsole` method returns a console highlighted string.
 $message->toConsole();
 ```
 
-> 👍🏾 The console output is raw ASCII string which looks like the example below.
-> 
+The console output is raw ASCII string which looks like the example below.
+
 > <em>ERROR</em> <strong>/where-it-happened.php</strong> <u>"Por la cresta!"</u> <code>[WhatChuchaHappen]</code>
 
 ### To HTML
