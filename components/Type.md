@@ -1,22 +1,20 @@
 # Type
 
-The Type component is in charge of providing a layer for dynamic type handling.
-
-[TypeInterface](../reference/Chevere/Interfaces/Type/TypeInterface.md) describes the component in charge of defining a type.
+The [Type](../reference/Chevere/Components/Type/Type.md) component is in charge of providing a layer for dynamic type handling.
 
 ## Creating a Type
 
-A Type gets created by passing a `$type` keyword.
+A Type gets created by passing a `type` [keyword](#type-keywords).
 
 ```php
 use Chevere\Components\Type\Type;
 
-new Type(Type::STRING);
+$type = new Type(Type::STRING);
 ```
 
-## Type Keywords
+## Type keywords
 
-Available keywords defined in [TypeInterface](../reference/Chevere/Interfaces/Type/TypeInterface.md#constants):
+Available keywords:
 
 - `Type::BOOLEAN`
 - `Type::INTEGER`
@@ -29,7 +27,9 @@ Available keywords defined in [TypeInterface](../reference/Chevere/Interfaces/Ty
 - `Type::RESOURCE`
 - `Type::NULL`
 
-Note that **class names** and **interface names** can be also passed as type keyword.
+::: tip
+Fully-qualified **class names** and **interface names** can be also passed as type keyword.
+:::
 
 ## Primitive & Type-hinting
 
@@ -37,8 +37,8 @@ The return values for methods `primitive` and `typeHinting` is explained in the 
 
 | Type          | primitive()     | typeHinting()   |
 | ------------- | --------------- | --------------- |
-| *keyword      | `*keyword`      | `*keyword*`     |
-| SomeClass     | `className`     | `ClassName`     |
+| keyword       | `keyword`       | `keyword`       |
+| SomeClass     | `className`     | `SomeClass`     |
 | SomeInterface | `interfaceName` | `SomeInterface` |
 
 For [keywords](#keywords), the return value of `primitive` and `typeHinting` is same as the actual keyword.
@@ -51,9 +51,7 @@ The `validate` method allows to validate any `$var` against the declared type.
 use Chevere\Interfaces\Type\TypeInterface;
 
 /**
- * @var mixed $mixed
- * @var TypeInterface $type
  * @var bool $validate
  */
-$validate = $type->validate($mixed);
+$validate = $type->validate(var: $var);
 ```
