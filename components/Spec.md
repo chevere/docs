@@ -1,10 +1,29 @@
 # Spec
 
-The Spec component is in charge of creating a distributed JSON representation for the endpoints in a given [Router](./Router.md), allowing to provide instructions in how to interact with the application exposed endpoints.
+The Spec component is in charge of creating a JSON representation for endpoints of a given [Router](./Router.md), allowing to provide instructions in how to interact with the application exposed endpoints.
+
+## Creating Spec
+
+The [SpecMaker](../reference/Chevere/Components/Spec/SpecMaker.md) is in charge of creating an application Spec.
+
+```php
+use Chevere\Components\Spec\SpecMaker;
+use Chevere\Components\Router\Router;
+use function Chevere\Components\Filesystem\dirForPath;
+
+/**
+ * @var Router $router
+ */
+new SpecMaker(
+    specDir: dirForPath('/spec/'),
+    outputDir: dirForPath('/var/public/spec/'),
+    router: $router
+);
+```
 
 ## JSON files
 
-The Spec representation is isolated, distributed in many files to always provide a relevant `.json` spec for the application endpoints being used by a given application consumer.
+The Spec representation is isolated, distributed in the file-system to provide a relevant `.json` spec for the application endpoints being used by a given application consumer.
 
 ::: tip
 You can check the spec [generated](https://github.com/Chevereto/chevereto/tree/master/volumes/public/spec) for Chevereto, which is sourced from [application routing](https://github.com/Chevereto/chevereto/tree/master/app/routing).
@@ -81,23 +100,4 @@ Code below shows and example tree representation for a router containing `GET /r
         │       ├── GET.json
         │       └── route.json
         └── routes.json
-```
-
-## Creating Spec
-
-A SpecMaker is in charge of creating the Spec. [SpecMakerInterface](../reference/Chevere/Interfaces/Spec/SpecMakerInterface.md) describes the interface for the component in charge of defining a SpecMaker.
-
-```php
-use Chevere\Components\Spec\SpecMaker;
-use Chevere\Components\Router\Router;
-use function Chevere\Components\Filesystem\dirForPath;
-
-/**
- * @var Router $router
- */
-new SpecMaker(
-    specDir: dirForPath('/spec/'),
-    outputDir: dirForPath('/var/public/spec/'),
-    router: $router
-);
 ```
