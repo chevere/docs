@@ -14,7 +14,7 @@ $message = new Message(template: 'Hello, %to%!');
 
 ## Replacing sub-strings
 
-The `replace` method allows to prepare sub-string replacement without formatting.
+The `strtr` method allows to prepare sub-string replacement without formatting.
 
 ```php
 $message = $message
