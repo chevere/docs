@@ -1,12 +1,19 @@
 # VarDump
 
-The VarDump component provides an alternative to [var_dump](https://www.php.net/var-dump), but with a richer feature set including formatting for the generation of different type of documents.
-
-[VarDumpInterface](../reference/Chevere/Interfaces/VarDump/VarDumpInterface.md) describe the interface for a component in charge of providing the ability to dump any variable.
+The [VarDump](../reference/Chevere/Components/VarDump/VarDump.md) component provides an alternative to [var_dump](https://www.php.net/var-dump), but with a richer feature set including formatting for the generation of different type of documents.
 
 ::: tip Learn by Example
 Check the VarDump [examples](https://github.com/chevere/examples/tree/master/02.VarDump) to learn directly playing with code.
 :::
+
+## Formatters & Helpers
+
+The following helper functions can be used to save some boilerplate when needing to initialize a VarDump instance.
+
+* Namespace `Chevere\Components\VarDump`
+  * `getVarDumpPlain` to create a plain var dump
+  * `getVarDumpConsole` to create a console var dump
+  * `getVarDumpHtml` to create a HTML var dump
 
 ## Initialization
 
@@ -21,8 +28,8 @@ use Chevere\Components\VarDump\VarDump;
 use function Chevere\Components\VarDump\getVarDumpConsole;
 
 $varDump = new VarDump(
-    new VarDumpConsoleFormatter,
-    new VarDumpConsoleOutputter
+    formatter: new VarDumpConsoleFormatter,
+    outputter: new VarDumpConsoleOutputter
 );
 // Same as:
 $varDump = getVarDumpConsole();
@@ -44,8 +51,9 @@ The method `process` is used to trigger the var dumping process. It requires to 
 use Chevere\Components\Writer\StreamWriter;
 use function Chevere\Components\Writer\streamFor;
 
-$writer = new StreamWriter(streamFor('php://stdout', 'w'));
-$varDump->process($writer);
+$varDump->process(
+    writer: new StreamWriter(streamFor('php://stdout', 'w'))
+);
 ```
 
 ## Shifting traces
@@ -54,17 +62,18 @@ The dump information could be affected by layers on top of VarDump, the method `
 
 > 😉 Check [source code](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php) for functions `xd` and `xdd` for a better understanding
 
-## Helper functions
-
-The following helper functions can be used to save some boilerplate.
-
-* Namespace `Chevere\Components\VarDump`
-  * `getVarDumpPlain` to create a plain var dump
-  * `getVarDumpConsole` to create a console var dump
-  * `getVarDumpHtml` to create a HTML var dump
-
 ## Replacing `var_dump`
 
-Function [xd](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L75) prints information about one of more variables to the output stream. It is a drop-in replacement for `var_dump`.
+Following functions can be used as drop-in replacement for [var_dump](https://www.php.net/var-dump).
+
+### xd
+
+Function [xd](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L75) is a drop-in replacement for `var_dump` and it prints information about one of more variables to the output stream.
+
+### xdd
 
 Function [xdd](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L101) does the same as `xd`, but it `exit`.
+
+### Customizing output stream
+
+By declaring [VarDumpInstance](../reference/Chevere/Components/VarDump/VarDumpInstance.md) you can change the default stream used by `xd` and `xdd`.
