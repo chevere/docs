@@ -1,8 +1,8 @@
 # Router
 
-The Router component is in charge of handling routeables. [RouterInterface](../reference/Chevere/Interfaces/Router/RouterInterface.md) describes the component in charge of defining a router, which is a collection of objects implementing [RouteableInterface](../reference/Chevere/Interfaces/Router/RoutableInterface.md).
+The [Router](../reference/Chevere/Components/Router/Router.md) component is in charge of collecting [Routables](../reference/Chevere/Components/Router/Routables.md).
 
-The router component is built on top of [FastRoute](https://github.com/nikic/FastRoute), but with added context for the chevere realm.
+The router component is built on top of [FastRoute](https://github.com/nikic/FastRoute), but with added context for the Chevere realm which also means more strictness.
 
 ::: tip Learn by Example
 Check the Router [examples](https://github.com/chevere/examples/tree/master/03.Http#00router-makephp) to learn directly playing with code.
@@ -71,9 +71,7 @@ The Router can be easily generated using the built-in tooling.
 
 ### Descriptors Maker
 
-The RoutingDescriptorsMaker component is in charge of creating the routing descriptors, which is the collection of routes interpreted from the filesystem.
-
-[RoutingDescriptorsInterface](../reference/Chevere/Interfaces/Routing/RoutingDescriptorsInterface.md) describes the interface for the component in charge of defining a RoutingDescriptorsMaker.
+The [RoutingDescriptorsMaker](../reference/Chevere/Components/Router/Routing/RoutingDescriptorsMaker.md) component is in charge of creating the routing descriptors, which is the collection of routes interpreted from the filesystem.
 
 ```php
 use Chevere\Components\Routing\RoutingDescriptorsMaker;
