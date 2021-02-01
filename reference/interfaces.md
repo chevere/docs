@@ -136,8 +136,8 @@ editLink: false
 
 ## Serialize
 
+- [DeserializeInterface](./Chevere/Interfaces/Serialize/DeserializeInterface.md)
 - [SerializeInterface](./Chevere/Interfaces/Serialize/SerializeInterface.md)
-- [UnserializeInterface](./Chevere/Interfaces/Serialize/UnserializeInterface.md)
 
 ## Spec
 

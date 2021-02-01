@@ -1,10 +1,8 @@
 # Serialize
 
-The Serialize component is in charge of handling variable serializing.
+The [Serialize](../reference/Chevere/Components/Serialize/Serialize.md) component is in charge of handling variable [serialize](https://www.php.net/serialize).
 
 ## Serialize a variable
-
-[SerializeInterface](../reference/Chevere/Interfaces/Serialize/SerializeInterface.md) describes the interface for the component in charge of handling [serialize](https://www.php.net/serialize).
 
 ```php
 use Chevere\Components\Serialize\Serialize;
@@ -18,28 +16,28 @@ The `toString` method is used to access the serialized variable.
 $serialize->toString();
 ```
 
-## Unserialize a variable
+## Deserialize a variable
 
-[UnserializeInterface](../reference/Chevere/Interfaces/Serialize/UnserializeInterface.md) describes the interface for the component in charge of handling [unserialize](https://www.php.net/unserialize).
+The [Deserialize](../reference/Chevere/Components/Serialize/Deserialize.md) component is in charge of handling [unserialize](https://www.php.net/unserialize).
 
 ```php
-use Chevere\Components\Serialize\Unserialize;
+use Chevere\Components\Serialize\Deserialize;
 
-$unserialize = new Unserialize(serialized: $bar);
+$deserialize = new Deserialize(serialized: $bar);
 ```
 
 ### Access variable
 
-The `var` method is used to access the unserialized variable.
+The `var` method is used to access the deserialized variable.
 
 ```php
-$unserialize->var(); // mixed
+$deserialize->var();
 ```
 
 ### Variable type
 
-The `type` method is used to access the unserialized variable type.
+The `type` method is used to access the deserialized variable [type](Type.md).
 
 ```php
-$unserialize->type(); // TypeInterface
+$deserialize->type();
 ```

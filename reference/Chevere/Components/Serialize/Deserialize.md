@@ -2,15 +2,15 @@
 editLink: false
 ---
 
-# Unserialize
+# Deserialize
 
-`Chevere\Components\Serialize\Unserialize`
+`Chevere\Components\Serialize\Deserialize`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Serialize/Unserialize.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Serialize/Deserialize.php)
 
 ## Implements
 
-- [UnserializeInterface](../../Interfaces/Serialize/UnserializeInterface.md)
+- [DeserializeInterface](../../Interfaces/Serialize/DeserializeInterface.md)
 
 ## Methods
 

@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# UnserializeInterface
+# DeserializeInterface
 
-`Chevere\Interfaces\Serialize\UnserializeInterface`
+`Chevere\Interfaces\Serialize\DeserializeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Serialize/UnserializeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Serialize/DeserializeInterface.php)
 
 ## Description
 
