@@ -1,6 +1,6 @@
 # DataStructure
 
-The DataStructure component is in charge of providing typed immutable-like data structures, is built on top of [php-ds](https://github.com/php-ds/ext-ds).
+The `Chevere\Components\DataStructure` namespace provides components for providing typed immutable-like data structures, is built on top of [php-ds](https://github.com/php-ds/ext-ds).
 
 ::: tip
 Data structures are provisioned as stand-alone classes and/or traits, which adds data structure functionality directly.
@@ -8,9 +8,7 @@ Data structures are provisioned as stand-alone classes and/or traits, which adds
 
 ## Map
 
-The Map component is in charge of extending [DS\Map](https://www.php.net/ds-map) functionality to provide **the** array replacement for Chevere.
-
-[MapInterface](../reference/Chevere/Interfaces/DataStructure/MapInterface.md) describes the interface for the component in charge of defining a Map utility.
+The [Map](../reference/Chevere/Components/DataStructure/Map.md) component is in charge of extending [DS\Map](https://www.php.net/ds-map) functionality to provide **the** array replacement for Chevere.
 
 ### Creating Map
 
@@ -27,7 +25,7 @@ $map = new Map(foo: $foo, bar: $bar);
 The `withPut` method is used to put a value to the Map at the given key.
 
 ```php
-$map = $map->withPut(key: 'id', $id);
+$map = $map->withPut(foo: $foo, bar: $bar);
 ```
 
 ### Asserting keys
@@ -35,7 +33,7 @@ $map = $map->withPut(key: 'id', $id);
 The `assertHasKey` method is used to assert if the Map contains the given key(s).
 
 ```php
-$map->assertHasKey(key: 'foo');
+$map->assertHasKey(key: 'foo'); // true
 $map->assertHasKey(key: 'notFound'); // throws Throwable
 ```
 
@@ -46,7 +44,6 @@ The `get` method is used to retrieve the Map value for the given key.
 ```php
 $getFoo = $map->get(key: 'foo'); // $foo
 $getBar = $map->get(key: 'bar'); // $bar
-$getId = $map->get(key: 'id'); // $id
 ```
 
 ### Typed Map
