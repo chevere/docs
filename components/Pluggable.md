@@ -1,20 +1,22 @@
 # Pluggable
 
-The Pluggable component consists in a set of tools providing pluggable logic allowing instructions to be extended, specially by third-parties.
+The `Chevere\Components\Pluggable`  namespace provides components for providing pluggable logic, allowing instructions to be easily extended.
 
+::: tip
 A class defining pluggable logic is known as _pluggable_.
+:::
 
 ## Types
 
-The Pluggable component defines two plug types, both implementing [PlugTypeInterface](../reference/Chevere/Interfaces/Pluggable/PlugTypeInterface.md).
+Two plug types are defined, both implementing [PlugTypeInterface](../reference/Chevere/Interfaces/Pluggable/PlugTypeInterface.md).
 
 ### EventPlugType
 
-Events defined by [EventPlugType](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Types/EventPlugType.php) with [Pluggable Events](#pluggable-events) to [Event Plug](#event-plug).
+Events defined by [EventPlugType](../reference/Chevere/Components/Pluggable/Types/EventPlugType.md) with [Pluggable Events](#pluggable-events) to [Event Plug](#event-plug).
 
 ### HookPlugType
 
-Hooks defined by [HookPlugType](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Types/HookPlugType.php) with [Pluggable Hooks](#pluggable-hooks) to [Hook Plug](#hook-plug).
+Hooks defined by [HookPlugType](../reference/Chevere/Components/Pluggable/Types/HookPlugType.md) with [Pluggable Hooks](#pluggable-hooks) to [Hook Plug](#hook-plug).
 
 ## Pluggable Events
 
@@ -29,7 +31,7 @@ Pluggable events are used when is intended to broadcast that something took plac
 In the code below, calls to `event` method allows to emit an event once `set` method logic was executed.
 
 ```php
-use Chevere\Interfaces\Pluggable\PlugAnchorsInterface;
+use Chevere\Interfaces\Pluggable\PluggableAnchorsInterface;
 use Chevere\Components\Pluggable\Plug\Event\Traits\PluggableEventsTrait;
 use Chevere\Interfaces\Pluggable\Plug\Hook\PluggableHooksInterface;
 
@@ -39,18 +41,24 @@ final class DoesSomething implements PluggableEventsInterface
 
     private string $string = '';
 
-    public static function getEventAnchors(): PlugAnchorsInterface
+    public static function getEventAnchors(): PluggableAnchorsInterface
     {
-        return (new PlugAnchors)
-            ->withAnchor('beforeSet')
-            ->withAnchor('onSet');
+        return (new PluggableAnchors)
+            ->withAdded(anchor: 'beforeSet')
+            ->withAdded(anchor: 'onSet');
     }
 
     public function set(string $value): void
     {
-        $this->event('beforeSet', new Event([]));
+        $this->event(
+            anchor: 'beforeSet',
+            data: ['some data']
+        );
         $this->string = 'set=' . $value;
-        $this->event('onSet', new Event([]));
+        $this->event(
+            anchor: 'onSet',
+            data: ['some data']
+        );
     }
 }
 ```
@@ -67,7 +75,7 @@ The `getEventAnchors` method is used to define event anchors available to implem
 Pluggable events use the `event` method to emit the event which will listened by registered events (if-any).
 
 ```php
-$this->event('anchor-name', $event);
+$this->event(anchor: 'anchor-name', data: $data);
 ```
 
 ## Pluggable Hooks
@@ -83,7 +91,7 @@ Hooks are used when it is intended to allow modification on variables. A class m
 In the code below, calls to `hook` method allows to extend the behavior of the base `set` method.
 
 ```php
-use Chevere\Interfaces\Pluggable\PlugAnchorsInterface;
+use Chevere\Interfaces\Pluggable\PluggableAnchorsInterface;
 use Chevere\Components\Pluggable\Plug\Hook\Traits\PluggableHooksTrait;
 use Chevere\Interfaces\Pluggable\Plug\Hook\PluggableHooksInterface;
 
@@ -93,21 +101,27 @@ final class DoesSomething implements PluggableHooksInterface
 
     private string $string = '';
 
-    public static function getHookAnchors(): PlugAnchorsInterface
+    public static function getHookAnchors(): PluggableAnchorsInterface
     {
-        return (new PlugAnchors)
-            ->withAnchor('hook:before')
-            ->withAnchor('hook:after');
+        return (new PluggableAnchors)
+            ->withAdded(anchor: 'hook:before')
+            ->withAdded(anchor: 'hook:after');
     }
 
     public function set(string $value): void
     {
         // value*alter
-        $this->hook('hook:before', $value);
+        $this->hook(
+            anchor: 'hook:before',
+            argument: $value
+        );
         // set=value*alter
         $this->string = 'set=' . $value;
         // set=value*`alter*again
-        $this->hook('hook:after', $value);
+        $this->hook(
+            anchor: 'hook:after',
+            argument: $value
+        );
     }
 }
 ```
@@ -121,7 +135,7 @@ The `getHookAnchors` method is used to define the hook anchors available to impl
 Pluggable hooks use the `hook` method to define a hookable code entry which will run hooks (if-any).
 
 ```php
-$this->hook('anchor-name', $argument);
+$this->hook(anchor: 'anchor-name', argument: $argument);
 ```
 
 The argument `$argument` is passed by reference and it can be of any type. It is intended to be susceptible to be modified by potentially unknown logic instructions.
