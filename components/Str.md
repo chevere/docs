@@ -1,6 +1,6 @@
 # Str
 
-The `Chevere\Components\Str` namespace provides classes that interact with strings, offering a myriad of string related functionalities.
+The `Chevere\Components\Str` namespace provides components that interact with strings, allowing [manipulation](#manipulation), [asserting](#asserting) and [boolean checking](#boolean-checking) for strings.
 
 ## Manipulation
 
