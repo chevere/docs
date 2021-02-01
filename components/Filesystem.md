@@ -9,7 +9,7 @@ The [Path](../reference/Chevere/Components/Filesystem/Path.md) component is char
 ```php
 use Chevere\Components\Filesystem\Path;
 
-$path = new Path('/home/var/the-path/');
+$path = new Path(absolute: '/home/var/the-path/');
 ```
 
 ### Checking a Path
@@ -61,7 +61,7 @@ $pathIsFile = $path->isFile();
 The `chmod` method applies chmod on the path.
 
 ```php
-$path->chmod(0777);
+$path->chmod(mode: 0777);
 ```
 
 ### Getting Child Path
@@ -69,8 +69,8 @@ $path->chmod(0777);
 The `getChild` method allows to create new Path instances for sub-paths.
 
 ```php
-$childPathDir  = $path->getChild('child/'); // /home/var/child/
-$childPathFile  = $path->getChild('child-2/some-file.php'); // /home/var/child-2/some-child.php
+$childPathDir  = $path->getChild(path: 'child/'); // /home/var/child/
+$childPathFile  = $path->getChild(path: 'child-2/some-file.php'); // /home/var/child-2/some-child.php
 ```
 
 ## Dir
@@ -106,7 +106,7 @@ The `exist` method determines if the directory exists. It returns `true` when a 
 $dirExists = $dir->exists();
 ```
 
-#### Assert Directory Exists 
+#### Assert Directory Exists
 
 The `assertExists` method asserts if the directory exists. Throws exception when the directory doesn't exists in the filesystem.
 
@@ -118,7 +118,7 @@ $dir->assertExists(); // Throws DirNotExistsException
 
 ### Removing a Directory
 
-The `removeContents` method removes the _contents_ of the directory. The `remove` method removes the directory and its contents. 
+The `removeContents` method removes the _contents_ of the directory. The `remove` method removes the directory and its contents.
 
 ```php
 $removed = $dir->removeContents(); // dir is now empty
@@ -132,7 +132,7 @@ Both methods returns type `array` with a list of removed paths.
 The `getChild` method allows to create new Dir instances for sub-dirs.
 
 ```php
-$childDir  = $dir->getChild('child/'); // /home/var/child/
+$childDir  = $dir->getChild(path: 'child/'); // /home/var/child/
 ```
 
 ## File
