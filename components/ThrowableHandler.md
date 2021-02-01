@@ -1,8 +1,6 @@
 # ThrowableHandler
 
-The ThrowableHandler component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text.
-
-[ThrowableHandlerInterface](../reference/Chevere/Interfaces/ThrowableHandler/ThrowableHandlerInterface.md) describe the interface for a component in charge of providing a throwable handling.
+The [ThrowableHandler](../reference/Chevere/Components/ThrowableHandler/ThrowableHandler.md) component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text.
 
 ::: tip Learn by Example
 Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/master/01.ThrowableHandler) to learn directly playing with code.
@@ -10,19 +8,17 @@ Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/m
 
 ## Initialization
 
-In the example below, a `ThrowableHandler` object is created by passing a `ThrowableRead` object.
+In the example below, a `ThrowableHandler` object is created by passing a [ThrowableRead](../reference/Chevere/Components/ThrowableHandler/ThrowableRead.md).
 
 ```php
 use Chevere\Components\ThrowableHandler\ThrowableHandler;
 use Chevere\Components\ThrowableHandler\ThrowableRead;
 
-// $e implements Throwable
-$handler = new ThrowableHandler(
-    new ThrowableRead($e)
-);
+$read = new ThrowableRead($e);
+$handler = new ThrowableHandler($read);
 ```
 
-## Debug Flag
+## Debug
 
 The debug flag can be passed to alter the document generation. This flag will be used by ThrowableHandler documents, and it defaults to `true`.
 
@@ -53,5 +49,5 @@ $html = new HtmlDocument($handler);
 Use `toString` method to access the document contents. In the example below, the `$console` document is printed to the output.
 
 ```php
-echo $console->toString() . "\n";
+echo $console->toString();
 ```
