@@ -1,8 +1,6 @@
 # Workflow
 
-The Workflow component provides the ability to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It allows to define a series of individual steps, each triggering responses with the goal to produce a final outcome.
-
-[WorkflowInterface](../reference/Chevere/Interfaces/Workflow/WorkflowInterface.md) describes the interface for the component in charge of defining a Workflow.
+The [Workflow](../reference/Chevere/Components/Workflow/Workflow.md) component provides the ability to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It allows to define a series of individual interconnected steps with goal to describe and execute any given procedure.
 
 ## Creating a Workflow
 
@@ -11,7 +9,7 @@ To create a workflow pass the workflow name:
 ```php
 use Chevere\Components\Workflow\Workflow;
 
-$workflow = new Workflow('insert-user');
+$workflow = new Workflow(name: 'insert-user');
 ```
 
 ## Adding Steps
@@ -77,12 +75,12 @@ $workflow = $workflow
 
 ## Step
 
-A Step define an [Action](Action.md) with arguments to pass. [StepInterface](../reference/Chevere/Interfaces/Workflow/StepInterface.md) describes the interface for the component in charge of defining a Step.
+The [Step](../reference/Chevere/Components/Workflow/Step.md) component define an [Action](Action.md) with arguments to pass.
 
 ```php
 use Chevere\Components\Workflow\Step;
 
-new Step('SomeActionClassName');
+new Step(action: 'SomeActionClassName');
 ```
 
 For the code above, the argument passed must be a class name implementing the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md).
