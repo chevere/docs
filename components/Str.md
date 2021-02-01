@@ -1,6 +1,6 @@
 # Str
 
-Str is a collection of classes that interact with strings. Namespace `Chevere\Components\Str` holds all the Str classes, offering a myriad of string related functionalities.
+The `Chevere\Components\Str` namespace provides classes that interact with strings, offering a myriad of string related functionalities.
 
 ## Manipulation
 
