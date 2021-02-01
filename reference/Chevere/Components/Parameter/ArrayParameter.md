@@ -23,7 +23,7 @@ editLink: false
 ### withDefault
 
 ::: warning Parameters
-- *default*: array
+- *value*: array
 :::
 
 ::: tip Return

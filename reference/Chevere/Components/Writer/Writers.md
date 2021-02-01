@@ -30,7 +30,7 @@ editLink: false
 
 ---
 
-### withOut
+### withOutput
 
 ::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
@@ -78,7 +78,7 @@ editLink: false
 
 ---
 
-### out
+### output
 
 ::: tip Return
 [WriterInterface](../../Interfaces/Writer/WriterInterface.md)

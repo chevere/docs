@@ -24,7 +24,7 @@ Describes the component in charge of defining a parameter of type float.
 Return an instance with the specified `$default` value.
 
 ::: warning Parameters
-- *default*: float
+- *value*: float
 :::
 
 ::: danger Throws

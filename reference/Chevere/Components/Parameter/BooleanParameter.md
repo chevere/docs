@@ -23,7 +23,7 @@ editLink: false
 ### withDefault
 
 ::: warning Parameters
-- *default*: bool
+- *value*: bool
 :::
 
 ::: tip Return

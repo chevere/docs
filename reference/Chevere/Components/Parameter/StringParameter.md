@@ -35,7 +35,7 @@ editLink: false
 ### withDefault
 
 ::: warning Parameters
-- *default*: string
+- *value*: string
 :::
 
 ::: tip Return

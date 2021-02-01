@@ -35,7 +35,7 @@ an instance that contains the specified $writer for all writers.
 
 ---
 
-### withOut
+### withOutput
 
 Return an instance with the specified out WriterInterface.
 
@@ -52,7 +52,7 @@ an instance that contains the specified out WriterInterface.
 
 ---
 
-### out
+### output
 
 ::: tip Return
 [WriterInterface](./WriterInterface.md)

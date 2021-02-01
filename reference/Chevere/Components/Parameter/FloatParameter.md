@@ -23,7 +23,7 @@ editLink: false
 ### withDefault
 
 ::: warning Parameters
-- *default*: float
+- *value*: float
 :::
 
 ::: tip Return

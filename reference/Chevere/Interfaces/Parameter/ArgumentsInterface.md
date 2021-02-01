@@ -119,7 +119,7 @@ void
 Provides access to the argument value for the parameter `$boolean` type-hinted as boolean.
 
 ::: warning Parameters
-- *boolean*: string
+- *name*: string
 :::
 
 ::: danger Throws
@@ -138,7 +138,7 @@ bool
 Provides access to the argument value for the parameter `$string` type-hinted as string.
 
 ::: warning Parameters
-- *string*: string
+- *name*: string
 :::
 
 ::: danger Throws
@@ -157,7 +157,7 @@ string
 Provides access to the argument value for the parameter `$integer` type-hinted as integer.
 
 ::: warning Parameters
-- *integer*: string
+- *name*: string
 :::
 
 ::: danger Throws
@@ -176,7 +176,7 @@ int
 Provides access to the argument value for the parameter `$float` type-hinted as float.
 
 ::: warning Parameters
-- *float*: string
+- *name*: string
 :::
 
 ::: danger Throws
@@ -195,7 +195,7 @@ float
 Provides access to the argument value for the parameter `$array` type-hinted as array.
 
 ::: warning Parameters
-- *array*: string
+- *name*: string
 :::
 
 ::: danger Throws

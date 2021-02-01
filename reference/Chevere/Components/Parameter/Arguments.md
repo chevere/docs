@@ -80,7 +80,7 @@ void
 ### getBoolean
 
 ::: warning Parameters
-- *boolean*: string
+- *name*: string
 :::
 
 ::: tip Return
@@ -92,7 +92,7 @@ bool
 ### getString
 
 ::: warning Parameters
-- *string*: string
+- *name*: string
 :::
 
 ::: tip Return
@@ -104,7 +104,7 @@ string
 ### getInteger
 
 ::: warning Parameters
-- *integer*: string
+- *name*: string
 :::
 
 ::: tip Return
@@ -116,7 +116,7 @@ int
 ### getFloat
 
 ::: warning Parameters
-- *float*: string
+- *name*: string
 :::
 
 ::: tip Return
@@ -128,7 +128,7 @@ float
 ### getArray
 
 ::: warning Parameters
-- *array*: string
+- *name*: string
 :::
 
 ::: tip Return

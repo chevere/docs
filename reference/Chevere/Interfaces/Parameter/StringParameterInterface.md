@@ -55,7 +55,7 @@ an instance that contains the specified `$regex`.
 Return an instance with the specified `$default` value.
 
 ::: warning Parameters
-- *default*: string
+- *value*: string
 :::
 
 ::: danger Throws

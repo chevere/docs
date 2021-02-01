@@ -24,7 +24,7 @@ Describes the component in charge of defining a parameter of type array.
 Return an instance with the specified `$default` value.
 
 ::: warning Parameters
-- *default*: array
+- *value*: array
 :::
 
 ::: danger Throws

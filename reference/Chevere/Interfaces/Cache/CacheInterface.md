@@ -54,7 +54,7 @@ Put item in cache.
 
 ::: warning Parameters
 - *key*: [CacheKeyInterface](./CacheKeyInterface.md)
-- *varStorable*: [VarStorableInterface](../VarStorable/VarStorableInterface.md)
+- *var*: [VarStorableInterface](../VarStorable/VarStorableInterface.md)
 :::
 
 ::: tip Return

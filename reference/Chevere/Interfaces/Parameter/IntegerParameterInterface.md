@@ -24,7 +24,7 @@ Describes the component in charge of defining a parameter of type integer.
 Return an instance with the specified `$default` value.
 
 ::: warning Parameters
-- *default*: int
+- *value*: int
 :::
 
 ::: danger Throws
