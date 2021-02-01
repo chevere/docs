@@ -1,19 +1,17 @@
 # VarStorable
 
-The VarStorable component is in charge of handling a storable variable.
-
-[VarStorableInterface](../reference/Chevere/Interfaces/VarStorable/VarStorableInterface.md) describes the interface for the component in charge of defining a VarStorable.
+The [VarStorable](../reference/Chevere/Components/VarStorable/VarStorable.md) component is in charge of handling a storable variable.
 
 ## Storable variables
 
-A storable variable for Chevere is any PHP variable that can be stored as a string representation. Almost all variable types can be stored, except type `resource`.
+A storable variable for Chevere is any PHP variable that can be stored as a string representation. All variable types can be stored, except type `resource`.
 
 ## Creating VarStorable
 
 ```php
 use Chevere\Components\VarStorable\VarStorable;
 
-$varStorable = new VarStorable($var);
+$varStorable = new VarStorable(var: $var);
 ```
 
 ## Export
