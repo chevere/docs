@@ -74,14 +74,15 @@ The Router can be easily generated using the built-in tooling.
 The [RoutingDescriptorsMaker](../reference/Chevere/Components/Router/Routing/RoutingDescriptorsMaker.md) component is in charge of creating the routing descriptors, which is the collection of routes interpreted from the filesystem.
 
 ```php
-use Chevere\Components\Routing\RoutingDescriptorsMaker;
+use Chevere\Components\Router\Routing\RoutingDescriptorsMaker;
 use function Chevere\Components\Filesystem\dirForPath;
 
 $routingDescriptorsMaker = new RoutingDescriptorsMaker(
-    'repository',
-    dirForPath('/var/routing/')
+    repository: 'app-routes'
 );
-$routingDescriptors = $routingDescriptorsMaker->descriptors();
+$routingDescriptors = $routingDescriptorsMaker
+    ->withDescriptorsFor(dir: dirForPath('/var/routing/'))
+    ->descriptors();
 ```
 
 ### Router for Descriptors
@@ -91,9 +92,9 @@ The function `routerForRoutingDescriptors` allows to generate a router from Rout
 In the code below, `$router` is generated from `$routingDescriptors` and bound to `my-group`.
 
 ```php
-use function Chevere\Components\Routing\routerForRoutingDescriptors;
+use function Chevere\Components\Router\Routing\routerForRoutingDescriptors;
 
-$router = routerForRoutingDescriptors($routingDescriptors, 'my-group');
+$router = routerForRoutingDescriptors(descriptors: $routingDescriptors);
 ```
 
 ## Using Router
