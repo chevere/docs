@@ -1,8 +1,10 @@
 # Dependent
 
-The Dependent component is in charge of providing handling for object dependencies that must be injected. The concept is well-known as [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
+The `Chevere\Components\Dependent` component is in charge of providing handling for object dependencies that must be injected. The concept is well-known as [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
 
-A Dependent is a class that expose dependencies required to be provided on instance creation.
+::: tip
+A class that expose dependencies required to be provided on instance creation is known as a _dependent_.
+:::
 
 ## Implementing
 
