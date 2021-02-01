@@ -44,6 +44,7 @@ module.exports = {
         logo: '/logo-transparent.svg',
         repo: 'chevere/chevere',
         docsRepo: 'chevere/docs',
+        docsBranch: 'main',
         smoothScroll: true,
         editLinks: true,
         lastUpdated: true,
