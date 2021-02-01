@@ -1,8 +1,6 @@
 # Regex
 
-The Regex component is in charge of providing tooling for typed regex patterns.
-
-[RegexInterface](../reference/Chevere/Interfaces/Regex/RegexInterface.md) describes the interface for the component in charge of defining a Regex.
+The [Regex](../reference/Chevere/Components/Regex/Regex.md) component is in charge of providing tooling for regex patterns.
 
 ## Creating Regex
 
@@ -14,7 +12,7 @@ use Chevere\Components\Regex\Regex;
 $regex = new Regex(pattern: '/^Hello World!$/');
 ```
 
-## Accessing pattern
+## Accessing Pattern
 
 ### As-is (constructor)
 
