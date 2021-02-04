@@ -1,6 +1,6 @@
 # Dependent
 
-The `Chevere\Components\Dependent` namespace provides components f0r providing handling for object dependencies that must be injected. The concept is well-known as [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
+The `Chevere\Components\Dependent` namespace provides components for providing handling for object dependencies that must be injected. The concept is well-known as [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
 
 ::: tip
 A class that expose dependencies required to be provided on instance creation is known as a _dependent_.
