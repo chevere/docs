@@ -72,15 +72,15 @@ It must return a [Response](../reference/Chevere/Components/Response/Response.md
 ```php
 use Chevere\Components\Parameter\IntegerParameter;
 use Chevere\Components\Parameter\Parameters;
-use Chevere\Components\Response\ResponseSuccess;
+use Chevere\Components\Response\Response;
 use Chevere\Interfaces\Parameter\ArgumentsInterface;
 use Chevere\Interfaces\Parameter\ParametersInterface;
-use Chevere\Interfaces\Response\ResponseSuccessInterface;
+use Chevere\Interfaces\Response\ResponseInterface;
 
-public function run(ArgumentsInterface $arguments): ResponseSuccessInterface
+public function run(ArgumentsInterface $arguments): ResponseInterface
 {
     $id = $arguments->getInteger(name: 'id');
-    return $this->getResponseSuccess(
+    return $this->getResponse(
         email: (new User($id))->email
     );
 }
