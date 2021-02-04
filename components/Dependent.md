@@ -34,20 +34,19 @@ The `getDependencies` method allows to define the [Dependencies](#dependencies) 
 use Chevere\Components\Dependent\Dependencies;
 
 public function getDependencies(): DependenciesInterface
-    {
-        return (new Dependencies())
-            ->withPut(
-                foo: 'FooType',
-                bar: 'BarType',
-            );
-    }
+{
+    return (new Dependencies())
+        ->withPut(
+            foo: 'FooType',
+            bar: 'BarType',
+        );
+}
 ```
 
 Use typed properties to add type-checking to dependencies.
 
 ```php
 private FooType $foo;
-
 private BarType $bar;
 ```
 
