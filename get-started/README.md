@@ -63,4 +63,4 @@ Chevere begun as the supporting framework for [Chevereto 4](https://github.com/c
 
 While Chevereto drove initial development, Chevere is a different organization with its own goals.
 
-> Both Chevere and Chevereto are made by the same developer, [Rodolfo Berrios](https://github.com/rodolfoberrios) (Hey there 👋🏾).
+> Both [Chevere](https://chevere.org) and [Chevereto](https://chevereto.com) are made by the same developer, [Rodolfo Berrios](https://rodolfoberrios.com) (Hey there 👋🏾).
