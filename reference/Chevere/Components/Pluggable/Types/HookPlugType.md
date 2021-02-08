@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\Types\HookPlugType`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Types/HookPlugType.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Pluggable/Types/HookPlugType.php)
 
 ## Implements
 

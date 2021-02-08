@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Spec\Specs\GroupSpecs`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Spec/Specs/GroupSpecs.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Spec/Specs/GroupSpecs.php)
 
 ## Implements
 

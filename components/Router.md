@@ -5,7 +5,7 @@ The [Router](../reference/Chevere/Components/Router/Router.md) component is in c
 The router component is built on top of [FastRoute](https://github.com/nikic/FastRoute), but with added context for the Chevere realm which also means more strictness.
 
 ::: tip Learn by Example
-Check the Router [examples](https://github.com/chevere/examples/tree/master/03.Http#00router-makephp) to learn directly playing with code.
+Check the Router [examples](https://github.com/chevere/examples/tree/main/03.Http#00router-makephp) to learn directly playing with code.
 :::
 
 ## Routing
@@ -100,5 +100,5 @@ $router = routerForRoutingDescriptors(descriptors: $routingDescriptors);
 ## Using Router
 
 ::: tip Learn by Example
-Head over to the [Router resolve](https://github.com/chevere/examples/tree/master/03.Http#01router-resolvephp) example to see use-cases for the Router.
+Head over to the [Router resolve](https://github.com/chevere/examples/tree/main/03.Http#01router-resolvephp) example to see use-cases for the Router.
 :::

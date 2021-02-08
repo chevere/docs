@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Workflow\WorkflowRunner`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Workflow/WorkflowRunner.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Workflow/WorkflowRunner.php)
 
 ## Implements
 

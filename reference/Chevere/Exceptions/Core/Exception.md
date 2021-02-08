@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\Exception`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/Exception.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Core/Exception.php)
 
 ## Implements
 

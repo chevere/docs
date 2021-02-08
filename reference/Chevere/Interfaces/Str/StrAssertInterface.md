@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Str\StrAssertInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Str/StrAssertInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Str/StrAssertInterface.php)
 
 ## Description
 

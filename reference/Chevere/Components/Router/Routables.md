@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\Routables`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/Routables.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Router/Routables.php)
 
 ## Implements
 

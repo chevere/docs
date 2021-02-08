@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Workflow\WorkflowRunInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Workflow/WorkflowRunInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Workflow/WorkflowRunInterface.php)
 
 ## Description
 

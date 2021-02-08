@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathTailException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathTailException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Filesystem/PathTailException.php)
 
 ## Implements
 

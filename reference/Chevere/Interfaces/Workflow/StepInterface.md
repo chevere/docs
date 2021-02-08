@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Workflow\StepInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Workflow/StepInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Workflow/StepInterface.php)
 
 ## Description
 

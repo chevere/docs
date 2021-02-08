@@ -3,7 +3,7 @@
 The [VarDump](../reference/Chevere/Components/VarDump/VarDump.md) component provides an alternative to [var_dump](https://www.php.net/var-dump), but with a richer feature set including formatting for the generation of different type of documents.
 
 ::: tip Learn by Example
-Check the VarDump [examples](https://github.com/chevere/examples/tree/master/02.VarDump) to learn directly playing with code.
+Check the VarDump [examples](https://github.com/chevere/examples/tree/main/02.VarDump) to learn directly playing with code.
 :::
 
 ## Formatters & Helpers
@@ -60,7 +60,7 @@ $varDump->process(
 
 The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous back traces should be removed.
 
-> 😉 Check [source code](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php) for functions `xd` and `xdd` for a better understanding
+> 😉 Check [source code](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php) for functions `xd` and `xdd` for a better understanding
 
 ## Replacing `var_dump`
 
@@ -68,11 +68,11 @@ Following functions can be used as drop-in replacement for [var_dump](https://ww
 
 ### xd
 
-Function [xd](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L75) is a drop-in replacement for `var_dump` and it prints information about one of more variables to the output stream.
+Function [xd](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php#L75) is a drop-in replacement for `var_dump` and it prints information about one of more variables to the output stream.
 
 ### xdd
 
-Function [xdd](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/functions.php#L101) does the same as `xd`, but it `exit`.
+Function [xdd](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php#L101) does the same as `xd`, but it `exit`.
 
 ### Customizing output stream
 

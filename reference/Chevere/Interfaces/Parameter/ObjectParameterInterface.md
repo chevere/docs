@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# IntegerParameterInterface
+# ObjectParameterInterface
 
-`Chevere\Interfaces\Parameter\IntegerParameterInterface`
+`Chevere\Interfaces\Parameter\ObjectParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Parameter/IntegerParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Parameter/ObjectParameterInterface.php)
 
 ## Extends
 
@@ -15,37 +15,18 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of defining a parameter of type integer.
+Describes the component in charge of defining a parameter of type object (typed).
 
 ## Methods
 
-### withDefault
-
-Return an instance with the specified `$default` value.
+### __construct
 
 ::: warning Parameters
-- *value*: int
+- *className*: string
 :::
 
 ::: danger Throws
 - [InvalidArgumentException](../../Exceptions/Core/InvalidArgumentException.md) 
-:::
-
-::: tip Return
-self
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$default` value.
-
----
-
-### default
-
-Provides access to the default value.
-
-::: tip Return
-int
 :::
 
 ---

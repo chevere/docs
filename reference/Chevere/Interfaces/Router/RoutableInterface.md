@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\RoutableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/RoutableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Router/RoutableInterface.php)
 
 ## Description
 

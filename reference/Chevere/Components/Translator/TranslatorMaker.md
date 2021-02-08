@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Translator\TranslatorMaker`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translator/TranslatorMaker.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/TranslatorMaker.php)
 
 ## Implements
 

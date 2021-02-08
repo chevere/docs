@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\FilePhpReturnInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/FilePhpReturnInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Filesystem/FilePhpReturnInterface.php)
 
 ## Description
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Benchmark\BenchmarkRunInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Benchmark/BenchmarkRunInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Benchmark/BenchmarkRunInterface.php)
 
 ## Extends
 

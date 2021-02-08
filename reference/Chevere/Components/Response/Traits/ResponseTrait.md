@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Response\Traits\ResponseTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Response/Traits/ResponseTrait.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Response/Traits/ResponseTrait.php)
 
 ## Methods
 

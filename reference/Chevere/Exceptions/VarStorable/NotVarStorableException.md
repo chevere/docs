@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\VarStorable\NotVarStorableException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/VarStorable/NotVarStorableException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/VarStorable/NotVarStorableException.php)
 
 ## Implements
 

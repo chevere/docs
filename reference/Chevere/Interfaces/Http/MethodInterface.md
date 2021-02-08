@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Http\MethodInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Http/MethodInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Http/MethodInterface.php)
 
 ## Description
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Workflow\WorkflowProviderInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Workflow/WorkflowProviderInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Workflow/WorkflowProviderInterface.php)
 
 ## Description
 

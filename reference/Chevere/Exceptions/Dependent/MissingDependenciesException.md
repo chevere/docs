@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Dependent\MissingDependenciesException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Dependent/MissingDependenciesException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Dependent/MissingDependenciesException.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\FloatParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/FloatParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Parameter/FloatParameterInterface.php)
 
 ## Extends
 

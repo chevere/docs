@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Iterator\Breadcrumb`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Iterator/Breadcrumb.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Iterator/Breadcrumb.php)
 
 ## Implements
 

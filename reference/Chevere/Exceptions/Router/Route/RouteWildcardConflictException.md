@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\Route\RouteWildcardConflictException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/Route/RouteWildcardConflictException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Router/Route/RouteWildcardConflictException.php)
 
 ## Implements
 

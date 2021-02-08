@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Cache\CacheItemInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Cache/CacheItemInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Cache/CacheItemInterface.php)
 
 ## Description
 

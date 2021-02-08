@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\RouterDispatcherInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/RouterDispatcherInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Router/RouterDispatcherInterface.php)
 
 ## Description
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Pluggable\PlugsQueueTypedInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Pluggable/PlugsQueueTypedInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Pluggable/PlugsQueueTypedInterface.php)
 
 ## Description
 

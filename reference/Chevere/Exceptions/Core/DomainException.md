@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\DomainException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/DomainException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Core/DomainException.php)
 
 ## Implements
 

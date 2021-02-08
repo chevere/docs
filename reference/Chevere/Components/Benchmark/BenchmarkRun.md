@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Benchmark\BenchmarkRun`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Benchmark/BenchmarkRun.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Benchmark/BenchmarkRun.php)
 
 ## Implements
 

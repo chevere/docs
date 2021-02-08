@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Pluggable\Types\EventPlugType`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Pluggable/Types/EventPlugType.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Pluggable/Types/EventPlugType.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Outputters\VarDumpAbstractOutputter`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Outputters/VarDumpAbstractOutputter.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/Outputters/VarDumpAbstractOutputter.php)
 
 ## Implements
 

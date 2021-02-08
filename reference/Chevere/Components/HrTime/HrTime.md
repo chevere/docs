@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\HrTime\HrTime`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/HrTime/HrTime.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/HrTime/HrTime.php)
 
 ## Implements
 

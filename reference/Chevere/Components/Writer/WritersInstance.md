@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Writer\WritersInstance`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Writer/WritersInstance.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Writer/WritersInstance.php)
 
 ## Methods
 

@@ -79,6 +79,7 @@ editLink: false
 - [BooleanParameterInterface](./Chevere/Interfaces/Parameter/BooleanParameterInterface.md)
 - [FloatParameterInterface](./Chevere/Interfaces/Parameter/FloatParameterInterface.md)
 - [IntegerParameterInterface](./Chevere/Interfaces/Parameter/IntegerParameterInterface.md)
+- [ObjectParameterInterface](./Chevere/Interfaces/Parameter/ObjectParameterInterface.md)
 - [ParameterInterface](./Chevere/Interfaces/Parameter/ParameterInterface.md)
 - [ParametersInterface](./Chevere/Interfaces/Parameter/ParametersInterface.md)
 - [StringParameterInterface](./Chevere/Interfaces/Parameter/StringParameterInterface.md)

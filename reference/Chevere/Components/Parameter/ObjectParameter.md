@@ -2,44 +2,24 @@
 editLink: false
 ---
 
-# ArrayParameter
+# ObjectParameter
 
-`Chevere\Components\Parameter\ArrayParameter`
+`Chevere\Components\Parameter\ObjectParameter`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Parameter/ArrayParameter.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Parameter/ObjectParameter.php)
 
 ## Implements
 
-- [ArrayParameterInterface](../../Interfaces/Parameter/ArrayParameterInterface.md)
+- [ObjectParameterInterface](../../Interfaces/Parameter/ObjectParameterInterface.md)
 - [DescriptionInterface](../../Interfaces/Common/DescriptionInterface.md)
 - [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
-
-## Description
-
-
 
 ## Methods
 
 ### __construct
 
----
-
-### withDefault
-
 ::: warning Parameters
-- *value*: array
-:::
-
-::: tip Return
-[ArrayParameterInterface](../../Interfaces/Parameter/ArrayParameterInterface.md)
-:::
-
----
-
-### default
-
-::: tip Return
-array
+- *className*: string
 :::
 
 ---

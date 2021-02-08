@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\PathInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/PathInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Filesystem/PathInterface.php)
 
 ## Extends
 

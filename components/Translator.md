@@ -6,7 +6,7 @@ This implementation **doesn't support** domain-related gettext functions for tra
 
 ## How it Works
 
-Translator is built on top of [gettext](https://www.gnu.org/software/gettext/) and it provides a set of [functions](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translator/functions.php) that are used to designate translatable strings, which will define a base language translation file which can be used as the base translation for other languages.
+Translator is built on top of [gettext](https://www.gnu.org/software/gettext/) and it provides a set of [functions](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/functions.php) that are used to designate translatable strings, which will define a base language translation file which can be used as the base translation for other languages.
 
 ::: tip
 Using services like [OneSky](https://www.oneskyapp.com/) you can allow others to easily collaborate with translations.
@@ -14,7 +14,7 @@ Using services like [OneSky](https://www.oneskyapp.com/) you can allow others to
 
 ## Translatable Functions
 
-All translatable [functions](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translator/functions.php) are provided at the global namespace.
+All translatable [functions](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/functions.php) are provided at the global namespace.
 
 ## Singular
 

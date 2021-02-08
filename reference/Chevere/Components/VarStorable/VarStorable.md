@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarStorable\VarStorable`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarStorable/VarStorable.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarStorable/VarStorable.php)
 
 ## Implements
 

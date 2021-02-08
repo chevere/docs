@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\Highlighters\VarDumpHtmlHighlight`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/Highlighters/VarDumpHtmlHighlight.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/Highlighters/VarDumpHtmlHighlight.php)
 
 ## Implements
 

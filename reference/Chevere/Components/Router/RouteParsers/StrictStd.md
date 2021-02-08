@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\RouteParsers\StrictStd`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/RouteParsers/StrictStd.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Router/RouteParsers/StrictStd.php)
 
 ## Implements
 

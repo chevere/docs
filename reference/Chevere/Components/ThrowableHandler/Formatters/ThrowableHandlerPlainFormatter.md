@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\ThrowableHandler\Formatters\ThrowableHandlerPlainFormatter`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerPlainFormatter.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerPlainFormatter.php)
 
 ## Implements
 

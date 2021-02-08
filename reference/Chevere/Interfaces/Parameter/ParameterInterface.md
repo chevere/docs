@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Parameter/ParameterInterface.php)
 
 ## Extends
 

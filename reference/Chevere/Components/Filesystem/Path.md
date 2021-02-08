@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Filesystem\Path`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Filesystem/Path.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Filesystem/Path.php)
 
 ## Implements
 

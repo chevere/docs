@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableTraceFormatterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ThrowableHandler/ThrowableTraceFormatterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/ThrowableHandler/ThrowableTraceFormatterInterface.php)
 
 ## Extends
 

@@ -6,13 +6,17 @@ editLink: false
 
 `Chevere\Components\Parameter\StringParameter`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Parameter/StringParameter.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Parameter/StringParameter.php)
 
 ## Implements
 
 - [StringParameterInterface](../../Interfaces/Parameter/StringParameterInterface.md)
 - [DescriptionInterface](../../Interfaces/Common/DescriptionInterface.md)
 - [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+
+## Description
+
+
 
 ## Methods
 
@@ -99,7 +103,7 @@ self
 :::
 
 ::: tip Return
-[ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+self
 :::
 
 ---

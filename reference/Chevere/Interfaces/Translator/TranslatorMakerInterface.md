@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Translator\TranslatorMakerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Translator/TranslatorMakerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Translator/TranslatorMakerInterface.php)
 
 ## Description
 

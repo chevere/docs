@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Action\ActionExecuted`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Action/ActionExecuted.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Action/ActionExecuted.php)
 
 ## Implements
 

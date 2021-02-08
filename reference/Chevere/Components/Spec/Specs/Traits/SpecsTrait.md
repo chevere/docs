@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Spec\Specs\Traits\SpecsTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Spec/Specs/Traits/SpecsTrait.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Spec/Specs/Traits/SpecsTrait.php)
 
 ## Methods
 

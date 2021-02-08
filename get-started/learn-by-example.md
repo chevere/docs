@@ -28,7 +28,7 @@ The dependencies will be at `vendor/`.
 
 ## Browsing
 
-Each folder represents an example topic, like [00.HelloWorld/](https://github.com/chevere/examples/tree/master/00.HelloWorld) for "Hello, World" or [02.VarDump/](https://github.com/chevere/examples/tree/master/02.VarDump) for [VarDump component](../components/VarDump.md).
+Each folder represents an example topic, like [00.HelloWorld/](https://github.com/chevere/examples/tree/main/00.HelloWorld) for "Hello, World" or [02.VarDump/](https://github.com/chevere/examples/tree/main/02.VarDump) for [VarDump component](../components/VarDump.md).
 
 > 👴🏾 All files and folders use a numeric index representing levels of complexity
 
@@ -48,7 +48,7 @@ php 00.HelloWorld/00.controller.php
 
 * Use an IDE for code and reference highlighting
 * Check the [components](../reference/components.md), [interfaces](../reference/interfaces.md) and [exceptions](../reference/exceptions.md) reference
-* Check at [Chevere\Tests](https://github.com/chevere/chevere/tree/master/tests) namespace which contains [testing](../architecture/standard/testing.md) on everything
+* Check at [Chevere\Tests](https://github.com/chevere/chevere/tree/main/tests) namespace which contains [testing](../architecture/standard/testing.md) on everything
 
 ## Contributing
 

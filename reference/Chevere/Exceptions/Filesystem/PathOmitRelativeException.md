@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Filesystem\PathOmitRelativeException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Filesystem/PathOmitRelativeException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Filesystem/PathOmitRelativeException.php)
 
 ## Implements
 

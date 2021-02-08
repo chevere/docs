@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Action\ActionRunnerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Action/ActionRunnerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Action/ActionRunnerInterface.php)
 
 ## Description
 

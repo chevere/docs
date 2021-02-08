@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\Routing\RoutingDescriptors`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/Routing/RoutingDescriptors.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Router/Routing/RoutingDescriptors.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Action\ControllerWorkflow`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Action/ControllerWorkflow.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Action/ControllerWorkflow.php)
 
 ## Implements
 

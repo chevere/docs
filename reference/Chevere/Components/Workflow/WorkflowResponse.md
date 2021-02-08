@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Workflow\WorkflowResponse`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Workflow/WorkflowResponse.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Workflow/WorkflowResponse.php)
 
 ## Implements
 

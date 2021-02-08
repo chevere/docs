@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\VarDump\VarDumpable`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/VarDump/VarDumpable.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/VarDumpable.php)
 
 ## Implements
 
