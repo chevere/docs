@@ -22,7 +22,7 @@ The [chevere.ini](https://github.com/chevere/chevere/blob/master/chevere.ini) fi
 * Requires [Composer](https://getcomposer.org/)
 
 ```sh
-composer require chevere/chevere dev-master
+composer require chevere/chevere dev-main
 ```
 
 The above command will install Chevere and its dependencies at `vendor/`.
