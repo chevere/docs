@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Http\Methods\HeadMethod`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Http/Methods/HeadMethod.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Http/Methods/HeadMethod.php)
 
 ## Implements
 

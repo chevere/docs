@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Workflow\Step`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Workflow/Step.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Workflow/Step.php)
 
 ## Implements
 

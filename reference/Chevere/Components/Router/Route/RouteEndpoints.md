@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\Route\RouteEndpoints`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/Route/RouteEndpoints.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Router/Route/RouteEndpoints.php)
 
 ## Implements
 

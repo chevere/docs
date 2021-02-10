@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Router\RouteWithoutEndpointsException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Router/RouteWithoutEndpointsException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Router/RouteWithoutEndpointsException.php)
 
 ## Implements
 

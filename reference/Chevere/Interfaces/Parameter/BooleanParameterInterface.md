@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\BooleanParameterInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/BooleanParameterInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Parameter/BooleanParameterInterface.php)
 
 ## Extends
 

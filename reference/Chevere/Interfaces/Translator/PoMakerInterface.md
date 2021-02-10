@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Translator\PoMakerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Translator/PoMakerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Translator/PoMakerInterface.php)
 
 ## Description
 

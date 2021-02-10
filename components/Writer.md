@@ -3,7 +3,7 @@
 The [WriterInterface](../reference/Chevere/Interfaces/Writer/WriterInterface.md) describes the interface for a component in charge of writing strings to streams.
 
 ::: tip Learn by Example
-Check the Writer [example](https://github.com/chevere/examples/tree/master/00.HelloWorld#01writerphp) to learn directly playing with code.
+Check the Writer [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#01writerphp) to learn directly playing with code.
 :::
 
 ## Writers Container

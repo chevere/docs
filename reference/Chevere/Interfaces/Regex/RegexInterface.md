@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Regex\RegexInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Regex/RegexInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Regex/RegexInterface.php)
 
 ## Extends
 

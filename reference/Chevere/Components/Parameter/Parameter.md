@@ -6,12 +6,16 @@ editLink: false
 
 `Chevere\Components\Parameter\Parameter`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Parameter/Parameter.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Parameter/Parameter.php)
 
 ## Implements
 
 - [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
 - [DescriptionInterface](../../Interfaces/Common/DescriptionInterface.md)
+
+## Description
+
+
 
 ## Methods
 
@@ -62,7 +66,7 @@ self
 :::
 
 ::: tip Return
-[ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+self
 :::
 
 ---

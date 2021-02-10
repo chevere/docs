@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Spec\Specs\RouteEndpointSpecsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Spec/Specs/RouteEndpointSpecsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Spec/Specs/RouteEndpointSpecsInterface.php)
 
 ## Extends
 

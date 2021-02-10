@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Type\Type`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Type/Type.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Type/Type.php)
 
 ## Implements
 

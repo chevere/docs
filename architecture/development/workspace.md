@@ -12,7 +12,7 @@ Chevere provides snippets and recommendation on extensions that goes better for 
 
 ### Assets
 
-All Visual Studio Code assets and settings are at the [.vscode/](https://github.com/chevere/chevere/tree/master/.vscode) folder.
+All Visual Studio Code assets and settings are at the [.vscode/](https://github.com/chevere/chevere/tree/main/.vscode) folder.
 
 ### Extensions
 

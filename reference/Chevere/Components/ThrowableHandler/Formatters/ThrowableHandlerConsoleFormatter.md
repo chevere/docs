@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\ThrowableHandler\Formatters\ThrowableHandlerConsoleFormatter`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerConsoleFormatter.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/ThrowableHandler/Formatters/ThrowableHandlerConsoleFormatter.php)
 
 ## Implements
 

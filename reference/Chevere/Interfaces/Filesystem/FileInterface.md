@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Filesystem\FileInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Filesystem/FileInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Filesystem/FileInterface.php)
 
 ## Description
 

@@ -6,13 +6,17 @@ editLink: false
 
 `Chevere\Components\Parameter\FloatParameter`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Parameter/FloatParameter.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Parameter/FloatParameter.php)
 
 ## Implements
 
 - [FloatParameterInterface](../../Interfaces/Parameter/FloatParameterInterface.md)
 - [DescriptionInterface](../../Interfaces/Common/DescriptionInterface.md)
 - [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+
+## Description
+
+
 
 ## Methods
 
@@ -79,7 +83,7 @@ self
 :::
 
 ::: tip Return
-[ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+self
 :::
 
 ---

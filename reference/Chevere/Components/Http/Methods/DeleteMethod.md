@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Http\Methods\DeleteMethod`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Http/Methods/DeleteMethod.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Http/Methods/DeleteMethod.php)
 
 ## Implements
 

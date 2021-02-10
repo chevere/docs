@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Serialize\Deserialize`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Serialize/Deserialize.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Serialize/Deserialize.php)
 
 ## Implements
 

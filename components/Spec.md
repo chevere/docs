@@ -26,14 +26,14 @@ new SpecMaker(
 The Spec representation is isolated, distributed in the file-system to provide a relevant `.json` spec for the application endpoints being used by a given application consumer.
 
 ::: tip
-You can check the spec [generated](https://github.com/Chevereto/chevereto/tree/master/volumes/public/spec) for Chevereto, which is sourced from [application routing](https://github.com/Chevereto/chevereto/tree/master/app/routing).
+You can check the spec [generated](https://github.com/Chevereto/chevereto/tree/main/volumes/public/spec) for Chevereto, which is sourced from [application routing](https://github.com/Chevereto/chevereto/tree/main/app/routing).
 :::
 
 ### `index.json`
 
 Contains the Spec for all the route repositories, it provides the entire Spec in one single file at `/`.
 
-> See Chevereto [index.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/index.json) for a real example.
+> See Chevereto [index.json](https://github.com/Chevereto/chevereto/blob/main/volumes/public/spec/index.json) for a real example.
 
 ```json
 {
@@ -45,7 +45,7 @@ Contains the Spec for all the route repositories, it provides the entire Spec in
 
 Contains the sub-spec for routes in the given repository at `/<repository>/`.
 
-> See Chevereto [routes.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/routes.json) for a real example.
+> See Chevereto [routes.json](https://github.com/Chevereto/chevereto/blob/main/volumes/public/spec/api-v1/routes.json) for a real example.
 
 ```json
 {
@@ -59,7 +59,7 @@ Contains the sub-spec for routes in the given repository at `/<repository>/`.
 
 Contains the sub-spec for endpoints in a given route path at `/<repository>/<routePath>/`.
 
-> See Chevereto [route.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/api/1/upload/route.json) for a real example.
+> See Chevereto [route.json](https://github.com/Chevereto/chevereto/blob/main/volumes/public/spec/api-v1/api/1/upload/route.json) for a real example.
 
 ```json
 {
@@ -76,7 +76,7 @@ Contains the sub-spec for endpoints in a given route path at `/<repository>/<rou
 
 Contains the sub-spec for a given method name at `/<repository>/<routePath>/`.
 
-> See Chevereto [POST.json](https://github.com/Chevereto/chevereto/blob/master/volumes/public/spec/api-v1/api/1/upload/POST.json) for a real example.
+> See Chevereto [POST.json](https://github.com/Chevereto/chevereto/blob/main/volumes/public/spec/api-v1/api/1/upload/POST.json) for a real example.
 
 ```json
 {

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Translator\TranslatorInstance`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Translator/TranslatorInstance.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/TranslatorInstance.php)
 
 ## Methods
 

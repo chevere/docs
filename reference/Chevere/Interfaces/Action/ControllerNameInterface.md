@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Action\ControllerNameInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Action/ControllerNameInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Action/ControllerNameInterface.php)
 
 ## Extends
 

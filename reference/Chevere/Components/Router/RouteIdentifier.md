@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\RouteIdentifier`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/RouteIdentifier.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Router/RouteIdentifier.php)
 
 ## Implements
 

@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\ThrowableHandler\ThrowableReadInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/ThrowableHandler/ThrowableReadInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/ThrowableHandler/ThrowableReadInterface.php)
 
 ## Description
 

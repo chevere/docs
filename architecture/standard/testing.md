@@ -4,7 +4,7 @@
 
 Testing is all about make sure that the software behave as expected. That the software will always _responds_ in a predictable way every time.
 
-> 👍🏾 Chevere tests are located at [Chevere\Tests](https://github.com/chevere/chevere/tree/master/Tests) namespace
+> 👍🏾 Chevere tests are located at [Chevere\Tests](https://github.com/chevere/chevere/tree/main/Tests) namespace
 
 ## Testing Framework
 

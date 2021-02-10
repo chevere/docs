@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrStartsWithCtypeDigitException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrStartsWithCtypeDigitException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Str/StrStartsWithCtypeDigitException.php)
 
 ## Implements
 

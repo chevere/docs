@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Writer\StreamWriter`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Writer/StreamWriter.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Writer/StreamWriter.php)
 
 ## Implements
 

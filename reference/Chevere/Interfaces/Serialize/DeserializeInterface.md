@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Serialize\DeserializeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Serialize/DeserializeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Serialize/DeserializeInterface.php)
 
 ## Description
 

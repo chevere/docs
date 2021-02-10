@@ -42,6 +42,6 @@ The example belows shows hows a `./states` tree looks like. Both `web` and `api`
 
 ## Learn By Example
 
-The example at [03.Http/00.router-make.php](https://github.com/chevere/examples/blob/master/03.Http/00.router-make.php) creates an state at [03.Http/cache](https://github.com/chevere/examples/tree/master/03.Http/cache), which is used by all the other examples in that scope.
+The example at [03.Http/00.router-make.php](https://github.com/chevere/examples/blob/main/03.Http/00.router-make.php) creates an state at [03.Http/cache](https://github.com/chevere/examples/tree/main/03.Http/cache), which is used by all the other examples in that scope.
 
 > 🧔🏾 The same state is used to showcase HTTP resolving, Swoole and RoadRunner examples

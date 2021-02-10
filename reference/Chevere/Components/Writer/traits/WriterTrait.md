@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Writer\traits\WriterTrait`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Writer/traits/WriterTrait.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Writer/traits/WriterTrait.php)
 
 ## Description
 

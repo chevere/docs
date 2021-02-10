@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Parameter\ArgumentsInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Parameter/ArgumentsInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Parameter/ArgumentsInterface.php)
 
 ## Extends
 

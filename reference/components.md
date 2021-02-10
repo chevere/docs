@@ -85,6 +85,7 @@ editLink: false
 - [BooleanParameter](./Chevere/Components/Parameter/BooleanParameter.md)
 - [FloatParameter](./Chevere/Components/Parameter/FloatParameter.md)
 - [IntegerParameter](./Chevere/Components/Parameter/IntegerParameter.md)
+- [ObjectParameter](./Chevere/Components/Parameter/ObjectParameter.md)
 - [Parameter](./Chevere/Components/Parameter/Parameter.md)
 - [Parameters](./Chevere/Components/Parameter/Parameters.md)
 - [StringParameter](./Chevere/Components/Parameter/StringParameter.md)

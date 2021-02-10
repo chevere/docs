@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Core\LogicException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Core/LogicException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Core/LogicException.php)
 
 ## Implements
 

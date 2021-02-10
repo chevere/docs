@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\DataStructure\Map`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/DataStructure/Map.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/DataStructure/Map.php)
 
 ## Implements
 

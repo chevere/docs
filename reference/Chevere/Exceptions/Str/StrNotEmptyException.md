@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Exceptions\Str\StrNotEmptyException`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Exceptions/Str/StrNotEmptyException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Str/StrNotEmptyException.php)
 
 ## Implements
 

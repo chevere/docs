@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Str\StrAssert`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Str/StrAssert.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Str/StrAssert.php)
 
 ## Implements
 

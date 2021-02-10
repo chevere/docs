@@ -10,7 +10,7 @@ The coding standard exists as good practice for keeping the source cohesive as p
 
 ## Code Style
 
-Code style is implemented using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard) defined at the [ecs.php](https://github.com/chevere/chevere/blob/master/ecs.php) file.
+Code style is implemented using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard) defined at the [ecs.php](https://github.com/chevere/chevere/blob/main/ecs.php) file.
 
 ::: tip
 Check the instructions on [implementing  code style](#implementing-code-style) to get the same styling in your project.
@@ -36,10 +36,10 @@ Fetch the `code-style` remote, this will pull any changes.
 git fetch code-style
 ```
 
-Then merge `code-style` into your working branch (for example, `master`).
+Then merge `code-style` into your working branch (for example, `main`).
 
 ```sh
-git merge code-style/master --allow-unrelated-histories
+git merge code-style/main --allow-unrelated-histories
 ```
 
 Once done, a `chevere-ecs.php` file will be available in your project root.

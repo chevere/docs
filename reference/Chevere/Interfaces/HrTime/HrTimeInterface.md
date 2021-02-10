@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\HrTime\HrTimeInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/HrTime/HrTimeInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/HrTime/HrTimeInterface.php)
 
 ## Methods
 

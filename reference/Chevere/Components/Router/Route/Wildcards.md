@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Components\Router\Route\Wildcards`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Components/Router/Route/Wildcards.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Router/Route/Wildcards.php)
 
 ## Implements
 

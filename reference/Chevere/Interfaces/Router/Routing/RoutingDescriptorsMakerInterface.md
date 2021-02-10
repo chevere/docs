@@ -6,7 +6,7 @@ editLink: false
 
 `Chevere\Interfaces\Router\Routing\RoutingDescriptorsMakerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/master/src/Chevere/Interfaces/Router/Routing/RoutingDescriptorsMakerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Router/Routing/RoutingDescriptorsMakerInterface.php)
 
 ## Description
 
