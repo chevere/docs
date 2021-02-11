@@ -1,53 +1,45 @@
 # Exceptions Spec
 
-Exceptions are error events that happens on runtime, that disrupts the execution of the software. Chevere extends all [SPL exceptions](https://www.php.net/manual/en/spl.exceptions.php) with support for [Message](./../../components/Message.md).
+Exceptions are error events that happens on runtime, that disrupts the execution of the software.
 
 ::: tip Reference
-Check thee [Exceptions Reference](./../../reference/exceptions.md) for learn about all the interfaces available.
+Check thee [Exceptions Reference](./../../reference/exceptions.md) to learn about all the interfaces available.
 :::
+
+## Conventions
+
+Interfaces **must**:
+
+* Define a descriptive name
+* Named with `Exception` suffix
+* Extend `Chevere\Exceptions\Core\Exception`
+* Located at `Exceptions/<component>/` namespace
 
 ## Design
 
 ### Uniqueness
 
-Each different event **should** have its own unique exception name. This is related to the [SRP](https://en.wikipedia.org/wiki/Single-responsibility_principle) in the way that each event is different, so the exception.
-
-It is encouraged to provide custom exceptions for each different event.
-
-> 👶🏿 Is like naming your children... Don't get two kids named Braulio!
+Each different error event **should** have its own unique exception.
 
 ### Descriptive
 
-The exception name **must** be descriptive as possible.
-
-Use names that explicitly explain the context of the exception. For example, `SomeException` is less descriptive than `UserIdAlreadyTakenException`.
-
-> 🙈 All the info needed to tell what's the event about should be in the exception name
-
-### Documenting
-
-Dockblock summary **should** be provided at class level.
-
-## Conventions
-
-* Must be named with `Exception` suffix
-* Must extend `Chevere\Exceptions\Core\Exception`
-* Must be located at `Exceptions/<component>/`
+Use names that explicitly explain the context of the exception. For example, `SomeException` is less descriptive than `RoutingBadRouteException`.
 
 ## Throwing Exceptions
 
-The exception message **must** explain the event.
+### Exception Message
 
-Provide rich messages with plenty context for the event, like arguments, how exactly the event was triggered, paths or any additional context. It is encouraged to provide a *hint* for the developer dealing with the situation.
+A [Message](../../components/Message.md) **should** explain the error event when needed.
 
-```php
-use Chevere\Exceptions\Core\Exception;
-use Chevere\Components\Message\Message;
+Exception messages **must**:
 
-thrown new Exception(
-    (new Message('An error happened when opening %path% when trying to %action% for %id%))
-        ->strong('%path%', '/the/path/')
-        ->code('%action%', 'register')
-        ->code('%id%', '123')
-);
-```
+* Clearly describe the error
+* Indicate the conflict element
+
+Exception messages **should not**:
+
+* Provide *hints* in how-to deal with the error
+
+### Previous Exception
+
+Passing the previous exception **should** be preferred and wrapping a previous exception **should** be avoided.
