@@ -6,10 +6,6 @@ Although [PHP doesn't support immutability](https://wiki.php.net/rfc/immutabilit
 
 ## Why?
 
-::: tip TL;DR
-Immutables provide thread safety
-:::
-
 ### How PHP handle objects
 
 In PHP objects are passed by reference. For the code below, `$mutable` is just a reference for some id, known as the object id. The variable `$mutable` is just a reference.

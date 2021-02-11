@@ -1,1 +1,1 @@
-<?php return ['', 'installation', 'overview', 'learn-by-example'];
+<?php return ['', 'installation', 'overview', 'guides', 'learn-by-example'];

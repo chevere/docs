@@ -1,4 +1,4 @@
-# Learn By Example
+# Learn by example
 
 A hands-on introduction to Chevere using example scripts.
 

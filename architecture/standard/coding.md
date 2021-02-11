@@ -1,6 +1,6 @@
 # Coding Standard
 
-The coding standard exists as good practice for keeping the source cohesive as possible. That way, Chevere removes lots of "ifs" by sticking to its own set of rules.
+The coding standard exists as good practice for keeping the source cohesive as possible.
 
 ## Casing
 
@@ -69,19 +69,17 @@ The code above will import `ecs-chevere.php` configuration, allowing extra confi
 
 * All parameters, properties and return expressions **should** be type hinted
 
-## Comments
-
-### DocBlocks
-
-DocBlock content should be **short** as possible, **relevant** and **omit** the obvious.
-
-* Use markdown
-* `@throws` must be provided for all known exceptions
-* `@param` and `@return` should be avoided
-
-### Logic
+## Code comments
 
 Comments in logic are ***very*** **discouraged** and it should be used only in the following cases:
 
 * `@codeCoverage` tags
 * Type hinting (for example, in loops)
+
+## DocBlocks
+
+DocBlock content should be **short** as possible, **relevant** and **omit** the obvious.
+
+* Use markdown
+* `@throws` must be provided for all known exceptions
+* `@param` and `@return` should be avoided (prefer typed code)
