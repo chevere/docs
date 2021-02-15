@@ -38,7 +38,6 @@ You will need to create an `ecs.php` [configuration](https://github.com/symplify
 declare(strict_types=1);
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symplify\EasyCodingStandard\ValueObject\Option;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->import(__DIR__ . '/ecs-chevere.php');
@@ -61,6 +60,23 @@ git merge code-style/main --allow-unrelated-histories
 ```
 
 ✔ The `chevere-ecs.php` file will be available in your project root, repeat fetch & merge to keep it updated.
+
+### Custom header comment
+
+Use a file named `.header` in your project root to define the header comment for your `.php` files.
+
+:::tip Example
+Use the following contents as an example for your project.
+:::
+
+```txt
+This file is part of projectName.
+
+(c) My Name <user@email-hostname>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+```
 
 ## Typing
 
