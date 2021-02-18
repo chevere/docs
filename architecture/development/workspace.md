@@ -37,7 +37,20 @@ Note that for the example above, the header comment and `strict_types` declarati
 
 ## Coding Standards Formatting
 
-The [coding standard](../standard/coding.md) is automatically implemented on save.
+The [coding standard](../standard/coding.md) is automatically implemented on save by using [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave) extension.
+
+```json
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.php$",
+                "cmd": "vendor/bin/ecs check ${file} --fix"
+            }
+        ]
+    }
+}
+```
 
 ## Testing
 

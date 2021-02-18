@@ -10,50 +10,34 @@ The coding standard exists as good practice for keeping the source cohesive as p
 
 ## Code Style
 
-Code style is implemented using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard) defined at the [ecs.php](https://github.com/chevere/chevere/blob/main/ecs.php) file.
+Code style is provided using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard), defined at the [ecs.php](https://github.com/chevere/chevere/blob/main/ecs.php) file, which extends [ecs-chevere.php](https://github.com/chevere/code-style/blob/main/ecs-chevere.php).
 
-::: tip
-Check the instructions on [implementing  code style](#implementing-code-style) to get the same styling in your project.
-:::
+## Implement in your project
 
-## Implementing Code Style
+To implement the code style is simple as get the `ecs-chevere.php` file then create your own `ecs.php` file inheriting the base defined by Chevere.
 
-The repository [chevere/code-style](https://github.com/chevere/code-style) is used to provide the code style configuration files.
+### Installing assets
 
-### Adding the repository
+Install ECS with composer.
 
-Run the following command to add `chevere/code-style` repository as `code-style` remote in your project root.
+```sh
+composer require symplify/easy-coding-standard --dev
+```
+
+Install [chevere/code-style](https://github.com/chevere/code-style) remote repository as `code-style` in your project root using GIT.
 
 ```sh
 git remote add code-style git@github.com:chevere/code-style.git
 ```
 
-### Downloading assets
-
-Fetch the `code-style` remote, this will pull any changes.
-
-```sh
-git fetch code-style
-```
-
-Then merge `code-style` into your working branch (for example, `main`).
-
-```sh
-git merge code-style/main --allow-unrelated-histories
-```
-
-Once done, a `chevere-ecs.php` file will be available in your project root.
-
-### Creating `ecs.php`
-
-You will need to create an `ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file in your project root:
+You will need to create an `ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file in your project root.
 
 ```php
-<?php
+<?php // ecs.php
+
 declare(strict_types=1);
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symplify\EasyCodingStandard\ValueObject\Option;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->import(__DIR__ . '/ecs-chevere.php');
@@ -61,7 +45,38 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 };
 ```
 
-The code above will import `ecs-chevere.php` configuration, allowing extra configuration depending on your project needs.
+### Retrieving assets
+
+Fetch `code-style` to download the `ecs-chevere.php` file (or any of its changes).
+
+```sh
+git fetch code-style
+```
+
+Merge `code-style` changes into your working branch (for example, `main`).
+
+```sh
+git merge code-style/main --allow-unrelated-histories
+```
+
+✔ The `chevere-ecs.php` file will be available in your project root, repeat fetch & merge to keep it updated.
+
+### Custom header comment
+
+Use a file named `.header` in your project root to define the header comment for your `.php` files.
+
+:::tip Example
+Use the following contents as an example for your project.
+:::
+
+```txt
+This file is part of projectName.
+
+(c) My Name <user@email-hostname>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+```
 
 ## Typing
 
