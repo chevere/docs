@@ -1,10 +1,8 @@
-# Learn by example
+# Examples Repository
 
-A hands-on self introduction to Chevere running example scripts.
+A hands-on self introduction to Chevere with example scripts.
 
-## Examples Repository
-
-The repository [chevere/examples](https://github.com/chevere/examples) holds a variety of working examples that will help you to learn how to use Chevere.
+The repository at [chevere/examples](https://github.com/chevere/examples) holds a variety of working examples that will help you to learn how to use Chevere.
 
 > 👍🏾 Feel free to [contribute](#contributing) to this repository
 

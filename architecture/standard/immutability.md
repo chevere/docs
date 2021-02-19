@@ -4,9 +4,7 @@ Immutability in Chevere is the concept of that an object once constructed cannot
 
 Although [PHP doesn't support immutability](https://wiki.php.net/rfc/immutability), Chevere use [cloning](#cloning) and [DeepCopy](#deepcopy) to provide pseudo-immutability, which for our use case  achieves the same result as the real thing.
 
-## Why?
-
-### How PHP handle objects
+## PHP objects
 
 In PHP objects are passed by reference. For the code below, `$mutable` is just a reference for some id, known as the object id. The variable `$mutable` is just a reference.
 

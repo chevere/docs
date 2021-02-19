@@ -5,4 +5,5 @@ return [
     'architecture/' => '🏗 arch',
     'components/' => '🎹 compo',
     'reference/' => '📚 refs',
+    'developer/' => '👨🏾‍🚀 dev',
 ];
