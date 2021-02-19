@@ -29,12 +29,12 @@ The above command will install Chevere and its [dependencies](https://github.com
 
 ## Now what?
 
-Chevere will now be available project-wide, just make sure to load `vendor/autoload.php` in your entry point. Simple as:
+Chevere will now be available project-wide. Make sure to load `vendor/autoload.php` in your entry point:
 
 ```php
 require 'vendor/autoload.php';
 ```
 
-From now you can head to [Learn by Example](./learn-by-example.md) to pick-up some general idea on what you can do with this. You can also start learning the [Workflow](../components/Workflow.md), [Action](../components/Action.md), [Parameter](../components/Parameter.md) components which will allow you to get a progressive approach into the Chevere realm.
+From now you can head to [Learn by Example](../developer/examples/repository.md) to pick-up some general idea on what you can do with this. You can also start learning the [Workflow](../components/Workflow.md), [Action](../components/Action.md), [Parameter](../components/Parameter.md) components which will allow you to get a progressive approach into the Chevere realm.
 
 There are also lots of [tests](https://github.com/chevere/chevere/tree/main/tests) to experiment and [run](../architecture/development/workspace.md#running-tests).

@@ -2,5 +2,4 @@
     'README.md',
     'status.md',
     'installation.md',
-    'guides.md'
 ];
