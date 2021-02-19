@@ -49,6 +49,7 @@ editLink: false
 ## Filesystem
 
 - [AssertPathFormatInterface](./Chevere/Interfaces/Filesystem/AssertPathFormatInterface.md)
+- [BasenameInterface](./Chevere/Interfaces/Filesystem/BasenameInterface.md)
 - [DirInterface](./Chevere/Interfaces/Filesystem/DirInterface.md)
 - [FileInterface](./Chevere/Interfaces/Filesystem/FileInterface.md)
 - [FilePhpInterface](./Chevere/Interfaces/Filesystem/FilePhpInterface.md)

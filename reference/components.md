@@ -47,6 +47,7 @@ editLink: false
 ## Filesystem
 
 - [AssertPathFormat](./Chevere/Components/Filesystem/AssertPathFormat.md)
+- [Basename](./Chevere/Components/Filesystem/Basename.md)
 - [Dir](./Chevere/Components/Filesystem/Dir.md)
 - [File](./Chevere/Components/Filesystem/File.md)
 - [FilePhp](./Chevere/Components/Filesystem/FilePhp.md)
