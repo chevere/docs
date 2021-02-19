@@ -1,6 +1,6 @@
 # Coding Standard
 
-The coding standard exists as good practice for keeping the source cohesive as possible.
+The coding standard exists as good practice for keeping the syntax cohesive as possible.
 
 ## Casing
 
@@ -29,6 +29,8 @@ Install [chevere/code-style](https://github.com/chevere/code-style) remote repos
 ```sh
 git remote add code-style git@github.com:chevere/code-style.git
 ```
+
+### `ecs.php`
 
 You will need to create an `ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file in your project root.
 

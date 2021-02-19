@@ -1,6 +1,6 @@
 # Learn by example
 
-A hands-on introduction to Chevere using example scripts.
+A hands-on self introduction to Chevere running example scripts.
 
 ## Examples Repository
 
@@ -10,21 +10,22 @@ The repository [chevere/examples](https://github.com/chevere/examples) holds a v
 
 ## Installing
 
-1. Clone the repository (requires [git](https://git-scm.com/)).
+### Requirements
+
+* [git](https://git-scm.com/)
+* [Composer](https://getcomposer.org/)
+
+Clone the repository in `examples/`.
 
 ```sh
 git clone git@github.com:chevere/examples.git
 ```
 
-Will clone it to `examples/`
-
-1. Install the dependencies (requires [Composer](https://getcomposer.org/)).
+Install dependencies at `vendor/`.
 
 ```sh
 composer install --ignore-platform-reqs
 ```
-
-The dependencies will be at `vendor/`.
 
 ## Browsing
 
@@ -35,7 +36,7 @@ Each folder represents an example topic, like [00.HelloWorld/](https://github.co
 ## Running
 
 ```sh
-php <pathToScript>
+php pathToScript
 ```
 
 To run the ubiquitous "Hello, World":

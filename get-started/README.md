@@ -6,15 +6,11 @@ Chevere is a general purpose PHP development framework made for building extensi
 
 Chevere has this flexibility and mindset because it has been designed to be used to create [self-hosted software](https://github.com/awesome-selfhosted/awesome-selfhosted).
 
-::: tip
-If you are new to all this check the [Beginners Guide](beginners-guide.md).
-:::
-
 ### Name meaning
 
 The term *[chévere](https://en.wiktionary.org/wiki/ch%C3%A9vere)* is a very well known word in spanish speaking countries which means *cool*, *excellent*, *great*, *awesome*, *pretty*, *nice* and *magnific*. The term has a generic connotation of good and can be used in almost any positive context.
 
-The use of the term has roots in the [Chevereto](#origin) software, which simply means "chevere to".
+The use of the term has roots in the [Chevereto](#origin) software..
 
 ## Core concepts
 

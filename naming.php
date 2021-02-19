@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'get-started/' => '🐣 Get Started',
-    'architecture/' => '🏗 Arch',
-    'components/' => '🎹 Components',
-    'reference/' => '📚 Reference',
+    'get-started/' => '🐣 get started',
+    'architecture/' => '🏗 arch',
+    'components/' => '🎹 compo',
+    'reference/' => '📚 refs',
 ];

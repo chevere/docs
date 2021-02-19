@@ -6,7 +6,7 @@ Chevere system requirements can be found in the [composer.json](https://github.c
 
 ### PHP
 
-Chevere is built and tested using the [PHP packages](https://deb.sury.org/) made by Ondřej Surý. PHP Extensions are provided by [PECL](https://pecl.php.net/).
+Chevere is built and tested for [unix-like systems](../architecture/development/system.md).
 
 * [PHP 8](https://www.php.net/releases/8.0)
 * [ext-ctype](https://www.php.net/ctype)
@@ -25,11 +25,11 @@ The [chevere.ini](https://github.com/chevere/chevere/blob/main/chevere.ini) file
 composer require chevere/chevere dev-main
 ```
 
-The above command will install Chevere and its dependencies at `vendor/`.
+The above command will install Chevere and its [dependencies](https://github.com/chevere/chevere/blob/main/composer.json) at `vendor/`.
 
 ## Now what?
 
-Chevere will now be available project-wide, just make sure to load `vendor/autoload.php` in your project.
+Chevere will now be available project-wide, just make sure to load `vendor/autoload.php` in your entry point. Simple as:
 
 ```php
 require 'vendor/autoload.php';
