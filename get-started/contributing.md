@@ -12,7 +12,7 @@ If you found something odd do _please_ inform it.
 
 You can help to build a bigger project by doing the following:
 
-* Engaging in [discussions](https://github.com/chevere/chevere/discussions)
+* Engaging in [GitHub discussions](https://github.com/chevere/chevere/discussions)
 * Mentioning Chevere to your friends or colleagues
 * Writing about it (guides, blog posts, etc.)
 
