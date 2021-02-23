@@ -2,7 +2,7 @@
 
 return [
     'README.md',
-    'standards/',
+    'standard/',
     'spec/',
     'development/',
 ];

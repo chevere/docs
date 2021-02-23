@@ -1,4 +1,4 @@
-# Status
+# ✨ Status
 
 ⚠ Project status is **under development** and it shouldn't be used in production systems.
 
