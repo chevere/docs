@@ -1,6 +1,6 @@
 # ❤ Contributing
 
-🤗 Chevere is indie developed. Any help is really welcome.
+Chevere is indie developed. Any help is really welcome.
 
 ## Code
 

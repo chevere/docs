@@ -1,4 +1,4 @@
-# Immutability Standard
+# 🗿 Immutability Standard
 
 Immutability in Chevere is the concept of that an object once constructed cannot be modified throughout the lifetime of the object. In other words, an immutable object can't change.
 

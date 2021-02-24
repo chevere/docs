@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'standard/' => '🛡 standard',
-    'spec/' => '🧬 spec',
-    'development/' => '🎠 development',
+    'standard/' => 'Standard',
+    'spec/' => 'Spec',
+    'development/' => 'Development',
 ];

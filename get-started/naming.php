@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'README.md' => '👋🏾 introduction',
-    'status.md' => '✨ status',
-    'version.md' => '🎉 version',
-    'installation.md' => '📦 installation',
-    'contributing.md' => '❤ contributing',
+    'README.md' => '👋🏾 Introduction',
+    'status.md' => '✨ Status',
+    'version.md' => '🎉 Version',
+    'installation.md' => '📦 Installation',
+    'contributing.md' => '❤ Contributing',
 ];

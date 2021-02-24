@@ -1,4 +1,4 @@
-# Quality Standard
+# 🛡 Quality Standard
 
 The Chevere quality standard exists to ensure the quality of the software product. It applies to **all code provided**, including third-party dependencies.
 

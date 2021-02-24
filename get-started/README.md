@@ -10,25 +10,25 @@ Chevere has this flexibility and mindset because it has been designed to be used
 
 ### Clean & Typed
 
-✨ Chevere follows Clean Code principles, which can be resumed as the practice of creating code that is easy to understand, to change and maintain.
+Chevere follows Clean Code principles, which can be resumed as the practice of creating code that is easy to understand, to change and maintain.
 
 It uses strict strong-types for safe run-time operations and relies mostly on the language to avoid boilerplate code needed to validate dynamic types.
 
 ### General Purpose
 
-🏭 Chevere is tech-neutral and it provides an immutable core library suitable to build _anything_. The tooling is for general purposes, with enough flexibility to allow the creation a myriad of systems with the same know-how.
+Chevere is tech-neutral and it provides an immutable core library suitable to build _anything_. The tooling is for general purposes, with enough flexibility to allow the creation a myriad of systems with the same know-how.
 
 ### Indie Developed
 
-👨🏾‍💻 Everything in Chevere feels right in its place, like something that it was diligently designed by a single person with a wide context of service provision and user needs.
+Everything in Chevere feels right in its place, like something that it was diligently designed by a single person with a wide context of service provision and user needs.
 
 ### Extensible
 
-🔌 Chevere provides the tooling you need to safely extend and plug-in addons to the application logic. Extensible applications not only do more, also engage more users and provide a solid foundation for your own application ecosystem.
+Chevere provides the tooling you need to safely extend and plug-in addons to the application logic. Extensible applications not only do more, also engage more users and provide a solid foundation for your own application ecosystem.
 
 ### Consistent
 
-💎 The code base and the whole project is highly opinionated, with many coding standards and conventions seeking for cohesion.
+The code base and the whole project is highly opinionated, with many coding standards and conventions seeking for cohesion.
 
 ### Quality
 
