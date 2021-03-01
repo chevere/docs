@@ -19,7 +19,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when a class doesn't exists.
+Exception thrown when a class name doesn't exists.
 
 ## Methods
 

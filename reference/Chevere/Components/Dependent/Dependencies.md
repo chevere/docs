@@ -20,16 +20,60 @@ editLink: false
 
 ### __construct
 
+::: warning Parameters
+- *...dependencies*: string
+:::
+
 ---
 
 ### withPut
 
 ::: warning Parameters
-- *...namedDependencies*: string
+- *...dependencies*: string
 :::
 
 ::: tip Return
 [DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)
+:::
+
+---
+
+### withMerge
+
+::: warning Parameters
+- *dependencies*: [DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)
+:::
+
+::: tip Return
+[DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)
+:::
+
+---
+
+### hasKey
+
+::: warning Parameters
+- *key*: string
+:::
+
+::: tip Return
+bool
+:::
+
+---
+
+### key
+
+::: warning Parameters
+- *key*: string
+:::
+
+::: danger Throws
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+:::
+
+::: tip Return
+string
 :::
 
 ---

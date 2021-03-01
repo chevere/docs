@@ -21,6 +21,14 @@ Describes the component in charge of collecting objects implementing `ParameterI
 
 ## Methods
 
+### __construct
+
+::: warning Parameters
+- *...parameters*: [ParameterInterface](./ParameterInterface.md)
+:::
+
+---
+
 ### getGenerator
 
 ::: tip Return
@@ -29,7 +37,7 @@ Describes the component in charge of collecting objects implementing `ParameterI
 
 ---
 
-### withAddedRequired
+### withAdded
 
 Return an instance with the specified required `$parameters` instance added.
 

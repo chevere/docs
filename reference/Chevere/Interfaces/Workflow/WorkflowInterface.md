@@ -39,17 +39,7 @@ Type `string`
 ### __construct
 
 ::: warning Parameters
-- *name*: string
-:::
-
----
-
-### name
-
-Provides access to the instance name.
-
-::: tip Return
-string
+- *...steps*: [StepInterface](./StepInterface.md)
 :::
 
 ---
@@ -59,7 +49,7 @@ string
 Return an instance with the specified `$step`.
 
 ::: warning Parameters
-- *...step*: [StepInterface](./StepInterface.md)
+- *...steps*: [StepInterface](./StepInterface.md)
 :::
 
 ::: danger Throws
@@ -139,6 +129,14 @@ bool
 
 ::: tip Return
 [StepInterface](./StepInterface.md)
+:::
+
+---
+
+### dependencies
+
+::: tip Return
+[DependenciesInterface](../Dependent/DependenciesInterface.md)
 :::
 
 ---

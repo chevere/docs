@@ -36,15 +36,7 @@ Type `string`
 ### __construct
 
 ::: warning Parameters
-- *name*: string
-:::
-
----
-
-### name
-
-::: tip Return
-string
+- *...steps*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 :::
 
 ---
@@ -60,7 +52,7 @@ int
 ### withAdded
 
 ::: warning Parameters
-- *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+- *...steps*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 :::
 
 ::: tip Return
@@ -120,6 +112,14 @@ bool
 
 ::: tip Return
 [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+:::
+
+---
+
+### dependencies
+
+::: tip Return
+[DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)
 :::
 
 ---
