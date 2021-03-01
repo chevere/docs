@@ -4,17 +4,22 @@ The [Workflow](../reference/Chevere/Components/Workflow/Workflow.md) component p
 
 ## Creating a Workflow
 
-To create a workflow pass the workflow name:
+To create a workflow pass the [steps](#step):
 
 ```php
 use Chevere\Components\Workflow\Workflow;
 
-$workflow = new Workflow(name: 'insert-user');
+$workflow = new Workflow(
+    fetch: (new Step('FetchAction'))
+        ->withArguments(
+            payload: '${payload}'
+        ),
+);
 ```
 
 ## Adding Steps
 
-The `withAdded` method allows to append [steps](#step) to the Workflow. For the code below, note how validate and insert steps [reference arguments](#referenced-arguments) stored in the response of the fetch step.
+The `withAdded` method allows to add [steps](#step) to the Workflow. For the code below, note how validate and insert steps [reference arguments](#referenced-arguments) stored in the response of the fetch step.
 
 Variables `payload` and `useCache` will be required to be provided by the Workflow runner.
 
@@ -23,10 +28,6 @@ use Chevere\Components\Workflow\Step;
 
 $workflow = $workflow
     ->withAdded(
-        fetch: (new Step('FetchAction'))
-            ->withArguments(
-                payload: '${payload}'
-            ),
         validate: (new Step('ValidateAction'))
             ->withArguments(
                 cache: '${useCache}',
@@ -80,10 +81,10 @@ The [Step](../reference/Chevere/Components/Workflow/Step.md) component define an
 ```php
 use Chevere\Components\Workflow\Step;
 
-new Step(action: 'SomeActionClassName');
+new Step(action: 'SomeActionClass');
 ```
 
-For the code above, the argument passed must be a class name implementing the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md).
+The argument passed must be a class name implementing the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md).
 
 ### Step Parameters
 
@@ -96,14 +97,14 @@ The `withArguments` method is used to define arguments passed on runtime to the 
 ```php
 use Chevere\Components\Workflow\Step;
 
-(new Step('SomeAction'))
+(new Step('SomeActionClass'))
     ->withArguments(
         firstName: 'Rodolfo',
         lastName: 'Berrios'
     );
 ```
 
-For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeAction` when running the Workflow. These arguments will be matched against the Parameters defined at the Action.
+For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeActionClass` when running the Workflow. These arguments will be matched against the Parameters defined at the Action.
 
 ### Referenced Arguments
 

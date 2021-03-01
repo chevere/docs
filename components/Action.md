@@ -37,11 +37,10 @@ use Chevere\Components\Parameter\IntegerParameter;
 
 public function getParameters(): ParametersInterface
 {
-    return (new Parameters)
-        ->withAddedRequired(
-            id: (new IntegerParameter)
-                    ->withDescription('The user id.')
-        );
+    return new Parameters(
+        id: (new IntegerParameter)
+                ->withDescription('The user id.')
+    );
 }
 ```
 
@@ -56,10 +55,9 @@ use Chevere\Components\Parameter\IntegerParameter;
 
 public function getResponseDataParameters(): ParametersInterface
 {
-    return (new Parameters)
-        ->withAddedRequired(
-            email: new StringParameter
-        );
+    return new Parameters(
+        email: new StringParameter
+    );
 }
 ```
 
@@ -126,10 +124,10 @@ use Chevere\Components\Parameter\IntegerParameter;
 
 public function getContextParameters(): ParametersInterface
 {
-    return (new Parameters)
-        ->withAddedRequired(
-            min: (new IntegerParameter)->withDefault(value: 10)
-        );
+    return new Parameters(
+        min: (new IntegerParameter)
+                ->withDefault(value: 10)
+    );
 }
 ```
 
