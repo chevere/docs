@@ -41,7 +41,19 @@ self
 
 ---
 
-### assertHasKey
+### has
+
+::: warning Parameters
+- *...keys*: string
+:::
+
+::: tip Return
+bool
+:::
+
+---
+
+### assertHas
 
 ::: warning Parameters
 - *...keys*: string

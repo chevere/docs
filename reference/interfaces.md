@@ -10,8 +10,6 @@ editLink: false
 - [ActionExecutedInterface](./Chevere/Interfaces/Action/ActionExecutedInterface.md)
 - [ActionInterface](./Chevere/Interfaces/Action/ActionInterface.md)
 - [ActionRunnerInterface](./Chevere/Interfaces/Action/ActionRunnerInterface.md)
-- [ControllerInterface](./Chevere/Interfaces/Action/ControllerInterface.md)
-- [ControllerNameInterface](./Chevere/Interfaces/Action/ControllerNameInterface.md)
 
 ## Benchmark
 
@@ -30,9 +28,16 @@ editLink: false
 
 ## Common
 
+- [AttributesInterface](./Chevere/Interfaces/Common/AttributesInterface.md)
 - [DescriptionInterface](./Chevere/Interfaces/Common/DescriptionInterface.md)
 - [ToArrayInterface](./Chevere/Interfaces/Common/ToArrayInterface.md)
 - [ToStringInterface](./Chevere/Interfaces/Common/ToStringInterface.md)
+
+## Controller
+
+- [ControllerInterface](./Chevere/Interfaces/Controller/ControllerInterface.md)
+- [ControllerNameInterface](./Chevere/Interfaces/Controller/ControllerNameInterface.md)
+- [ControllerWorkflowInterface](./Chevere/Interfaces/Controller/ControllerWorkflowInterface.md)
 
 ## DataStructure
 

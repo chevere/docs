@@ -17,7 +17,7 @@ Describes the component in charge of running the controller.
 ### __construct
 
 ::: warning Parameters
-- *controller*: [ControllerInterface](./ControllerInterface.md)
+- *controller*: [ControllerInterface](../Controller/ControllerInterface.md)
 :::
 
 ---

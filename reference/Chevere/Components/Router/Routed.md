@@ -17,7 +17,7 @@ editLink: false
 ### __construct
 
 ::: warning Parameters
-- *controllerName*: [ControllerNameInterface](../../Interfaces/Action/ControllerNameInterface.md)
+- *controllerName*: [ControllerNameInterface](../../Interfaces/Controller/ControllerNameInterface.md)
 - *arguments*: array
 :::
 
@@ -26,7 +26,7 @@ editLink: false
 ### controllerName
 
 ::: tip Return
-[ControllerNameInterface](../../Interfaces/Action/ControllerNameInterface.md)
+[ControllerNameInterface](../../Interfaces/Controller/ControllerNameInterface.md)
 :::
 
 ---
@@ -34,7 +34,7 @@ editLink: false
 ### getController
 
 ::: tip Return
-[ControllerInterface](../../Interfaces/Action/ControllerInterface.md)
+[ControllerInterface](../../Interfaces/Controller/ControllerInterface.md)
 :::
 
 ---

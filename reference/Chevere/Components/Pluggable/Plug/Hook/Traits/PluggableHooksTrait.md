@@ -17,7 +17,7 @@ editLink: false
 :::
 
 ::: tip Return
-[PluggableHooksInterface](../../../../../Interfaces/Pluggable/Plug/Hook/PluggableHooksInterface.md)
+static
 :::
 
 ---

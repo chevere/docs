@@ -44,7 +44,7 @@ array (
 
 ::: warning Parameters
 - *method*: [MethodInterface](../../Http/MethodInterface.md)
-- *controller*: [ControllerInterface](../../Action/ControllerInterface.md)
+- *controller*: [ControllerInterface](../../Controller/ControllerInterface.md)
 :::
 
 ---
@@ -64,7 +64,7 @@ Provides access to the `$method` instance.
 Provides access to the `$controller` instance.
 
 ::: tip Return
-[ControllerInterface](../../Action/ControllerInterface.md)
+[ControllerInterface](../../Controller/ControllerInterface.md)
 :::
 
 ---

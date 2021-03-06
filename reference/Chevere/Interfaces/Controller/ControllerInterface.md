@@ -2,21 +2,49 @@
 editLink: false
 ---
 
-# ActionInterface
+# ControllerInterface
 
-`Chevere\Interfaces\Action\ActionInterface`
+`Chevere\Interfaces\Controller\ControllerInterface`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Action/ActionInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Controller/ControllerInterface.php)
 
 ## Extends
 
+- [ActionInterface](../Action/ActionInterface.md)
 - [DescriptionInterface](../Common/DescriptionInterface.md)
 
 ## Description
 
-Describes the component in charge of defining a single action.
+Describes the component in charge of defining a controller, which is an action
+intended to be exposed closest to an application entry-point HTTP/CLI mapping.
+
+Key point of a controller is that it only takes string arguments and it
+provides an additional layer for context parameters.
+
+## Constants
+
+### PARAMETER_TYPE
+
+Type `string`
+
+```php
+'string'
+```
 
 ## Methods
+
+### withSetup
+
+Return an instance with setup (after plugins and dependency injection).
+
+::: tip Return
+static
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains setup (after plugins and dependency injection).
+
+---
 
 ### __construct
 

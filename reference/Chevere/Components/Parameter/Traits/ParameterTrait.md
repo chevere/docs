@@ -10,14 +10,6 @@ editLink: false
 
 ## Methods
 
-### __clone
-
-::: tip Return
-void
-:::
-
----
-
 ### withDescription
 
 ::: warning Parameters
@@ -25,31 +17,7 @@ void
 :::
 
 ::: tip Return
-self
-:::
-
----
-
-### withAddedAttribute
-
-::: warning Parameters
-- *...attributes*: string
-:::
-
-::: tip Return
-self
-:::
-
----
-
-### withRemovedAttribute
-
-::: warning Parameters
-- *...attribute*: string
-:::
-
-::: tip Return
-self
+static
 :::
 
 ---
@@ -70,10 +38,42 @@ string
 
 ---
 
+### getDescription
+
+::: tip Return
+string
+:::
+
+---
+
+### withAddedAttribute
+
+::: warning Parameters
+- *...attributes*: string
+:::
+
+::: tip Return
+static
+:::
+
+---
+
+### withoutAttribute
+
+::: warning Parameters
+- *...attributes*: string
+:::
+
+::: tip Return
+static
+:::
+
+---
+
 ### hasAttribute
 
 ::: warning Parameters
-- *...attribute*: string
+- *...attributes*: string
 :::
 
 ::: tip Return
@@ -86,14 +86,6 @@ bool
 
 ::: tip Return
 [Ds\Set](https://www.php.net/manual/class.ds\set)
-:::
-
----
-
-### getDescription
-
-::: tip Return
-string
 :::
 
 ---

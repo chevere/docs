@@ -2,24 +2,22 @@
 editLink: false
 ---
 
-# ControllerInterface
+# ControllerWorkflowInterface
 
-`Chevere\Interfaces\Action\ControllerInterface`
+`Chevere\Interfaces\Controller\ControllerWorkflowInterface`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Action/ControllerInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Controller/ControllerWorkflowInterface.php)
 
 ## Extends
 
-- [ActionInterface](./ActionInterface.md)
+- [ControllerInterface](./ControllerInterface.md)
+- [WorkflowProviderInterface](../Workflow/WorkflowProviderInterface.md)
 - [DescriptionInterface](../Common/DescriptionInterface.md)
+- [ActionInterface](../Action/ActionInterface.md)
 
 ## Description
 
-Describes the component in charge of defining a controller, which is an action
-intended to be exposed closest to an application entry-point HTTP/CLI mapping.
-
-Key point of a controller is that it only takes string arguments and it
-provides an additional layer for context parameters.
+Describes the component in charge of defining a Controller with Workflow.
 
 ## Constants
 
@@ -33,51 +31,16 @@ Type `string`
 
 ## Methods
 
-### getContextParameters
+### withSetup
 
-Defines context parameters.
-
-::: tip Return
-[ParametersInterface](../Parameter/ParametersInterface.md)
-:::
-
----
-
-### withContextArguments
-
-::: warning Parameters
-- *...namedArguments*: mixed
-:::
+Return an instance with setup (after plugins and dependency injection).
 
 ::: tip Return
-self
+static
 :::
 
----
-
-### contextArguments
-
-::: tip Return
-[ArgumentsInterface](../Parameter/ArgumentsInterface.md)
-:::
-
----
-
-### hasContextArguments
-
-::: tip Return
-bool
-:::
-
----
-
-### contextParameters
-
-Provides access to context parameters.
-
-::: tip Return
-[ParametersInterface](../Parameter/ParametersInterface.md)
-:::
+This method MUST retain the state of the current instance, and return
+an instance that contains setup (after plugins and dependency injection).
 
 ---
 
@@ -87,7 +50,7 @@ Provides access to context parameters.
 
 ### getParameters
 
-Defines parameters.
+Defines action parameters.
 
 ::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
@@ -95,7 +58,7 @@ Defines parameters.
 
 ---
 
-### getResponseDataParameters
+### getResponseParameters
 
 Defines expected response data parameters when executing `run` method.
 
@@ -129,7 +92,7 @@ Provides access to the parameters.
 
 ---
 
-### responseDataParameters
+### responseParameters
 
 Provides access to the expected response data parameters.
 
@@ -181,6 +144,55 @@ Defines the description.
 
 ::: tip Return
 string
+:::
+
+---
+
+### getWorkflow
+
+Defines the Workflow.
+
+::: tip Return
+[WorkflowInterface](../Workflow/WorkflowInterface.md)
+:::
+
+---
+
+### withWorkflow
+
+Return an instance with the specified Workflow.
+
+::: warning Parameters
+- *workflow*: [WorkflowInterface](../Workflow/WorkflowInterface.md)
+:::
+
+::: tip Return
+static
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified Workflow.
+
+---
+
+### workflow
+
+Provides access to the Workflow instance.
+
+::: tip Return
+[WorkflowInterface](../Workflow/WorkflowInterface.md)
+:::
+
+---
+
+### assertWorkflow
+
+::: danger Throws
+- [LogicException](../../Exceptions/Core/LogicException.md) 
+:::
+
+::: tip Return
+void
 :::
 
 ---

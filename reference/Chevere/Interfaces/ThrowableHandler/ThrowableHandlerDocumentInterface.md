@@ -205,7 +205,7 @@ Return an instance with the specified verbosity.
 :::
 
 ::: tip Return
-self
+static
 :::
 
 This method MUST retain the state of the current instance, and return

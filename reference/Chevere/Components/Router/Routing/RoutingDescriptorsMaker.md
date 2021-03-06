@@ -89,7 +89,7 @@ bool
 :::
 
 ::: tip Return
-self
+static
 :::
 
 ---

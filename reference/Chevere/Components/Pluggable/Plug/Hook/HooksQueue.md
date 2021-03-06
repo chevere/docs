@@ -42,7 +42,7 @@ string
 :::
 
 ::: tip Return
-[PlugsQueueTypedInterface](../../../../Interfaces/Pluggable/PlugsQueueTypedInterface.md)
+static
 :::
 
 ---

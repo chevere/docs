@@ -10,10 +10,10 @@ To create a workflow pass the [steps](#step):
 use Chevere\Components\Workflow\Workflow;
 
 $workflow = new Workflow(
-    fetch: (new Step('FetchAction'))
-        ->withArguments(
-            payload: '${payload}'
-        ),
+    fetch: new Step(
+        'FetchAction',
+        payload: '${payload}'
+    ),
 );
 ```
 
@@ -28,17 +28,17 @@ use Chevere\Components\Workflow\Step;
 
 $workflow = $workflow
     ->withAdded(
-        validate: (new Step('ValidateAction'))
-            ->withArguments(
-                cache: '${useCache}',
-                email: '${fetch:email}',
-                username: '${fetch:username}',
-            ),
-        insert: (new Step('InsertAction'))
-            ->withArguments(
-                email: '${fetch:email}',
-                username: '${fetch:username}',
-            )
+        validate: new Step(
+            'ValidateAction',
+            cache: '${useCache}',
+            email: '${fetch:email}',
+            username: '${fetch:username}',
+        ),
+        insert: new Step(
+            'InsertAction',
+            email: '${fetch:email}',
+            username: '${fetch:username}',
+        )
     );
 ```
 
@@ -92,25 +92,32 @@ Parameters for the step are defined in the [Action Parameters](Action.md#paramet
 
 ### Step Arguments
 
-The `withArguments` method is used to define arguments passed on runtime to the action defined in the step.
+Arguments can be passed on constructor using named arguments.
 
 ```php
 use Chevere\Components\Workflow\Step;
 
-(new Step('SomeActionClass'))
-    ->withArguments(
-        firstName: 'Rodolfo',
-        lastName: 'Berrios'
-    );
+new Step(
+    'SomeActionClass'
+    firstName: 'Rodolfo',
+    lastName: 'Berrios'
+);
 ```
 
 For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeActionClass` when running the Workflow. These arguments will be matched against the Parameters defined at the Action.
+
+The `withArguments` method can be used to modify the step arguments.
 
 ### Referenced Arguments
 
 Referenced arguments can be defined to bind arguments referencing Workflow variables or responses returned after running any previous step.
 
-| Expression        | Meaning                                                      |
-| ----------------- | ------------------------------------------------------------ |
-| `${var}`          | A context argument                                           |
-| `${stepName:key}` | The value of `key` for the response of named step `stepName` |
+| Expression    | Meaning                                        |
+| ------------- | ---------------------------------------------- |
+| `${var}`      | A context argument                             |
+| `${step:key}` | A reference to a previous step response value. |
+
+
+`🚧 Work in progress`
+
+* Workflow run

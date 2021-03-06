@@ -18,6 +18,7 @@ editLink: false
 
 ::: warning Parameters
 - *action*: string
+- *...namedArguments*: mixed
 :::
 
 ---

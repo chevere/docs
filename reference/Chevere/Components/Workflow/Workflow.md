@@ -169,19 +169,14 @@ array
 
 ---
 
-### getExpected
+### getProvided
 
 ::: warning Parameters
 - *step*: string
 :::
 
-::: danger Throws
-- [TypeException](../../Exceptions/Core/TypeException.md) 
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
-:::
-
 ::: tip Return
-array
+[ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---

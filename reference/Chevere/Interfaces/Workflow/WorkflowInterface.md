@@ -195,7 +195,7 @@ return ['step', 'var'];
 
 ---
 
-### getExpected
+### getProvided
 
 Provides access to the expected return arguments for the given `$step`.
 
@@ -204,7 +204,7 @@ Provides access to the expected return arguments for the given `$step`.
 :::
 
 ::: tip Return
-array
+[ParametersInterface](../Parameter/ParametersInterface.md)
 :::
 
 ---

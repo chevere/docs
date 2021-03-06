@@ -10,11 +10,13 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of providing a workflow.
+Describes the component in charge of providing Workflow.
 
 ## Methods
 
 ### getWorkflow
+
+Defines the Workflow.
 
 ::: tip Return
 [WorkflowInterface](./WorkflowInterface.md)
@@ -22,10 +24,41 @@ Describes the component in charge of providing a workflow.
 
 ---
 
+### withWorkflow
+
+Return an instance with the specified Workflow.
+
+::: warning Parameters
+- *workflow*: [WorkflowInterface](./WorkflowInterface.md)
+:::
+
+::: tip Return
+static
+:::
+
+This method MUST retain the state of the current instance, and return
+an instance that contains the specified Workflow.
+
+---
+
 ### workflow
+
+Provides access to the Workflow instance.
 
 ::: tip Return
 [WorkflowInterface](./WorkflowInterface.md)
+:::
+
+---
+
+### assertWorkflow
+
+::: danger Throws
+- [LogicException](../../Exceptions/Core/LogicException.md) 
+:::
+
+::: tip Return
+void
 :::
 
 ---

@@ -10,9 +10,6 @@ editLink: false
 - [Action](./Chevere/Components/Action/Action.md)
 - [ActionExecuted](./Chevere/Components/Action/ActionExecuted.md)
 - [ActionRunner](./Chevere/Components/Action/ActionRunner.md)
-- [Controller](./Chevere/Components/Action/Controller.md)
-- [ControllerName](./Chevere/Components/Action/ControllerName.md)
-- [ControllerWorkflow](./Chevere/Components/Action/ControllerWorkflow.md)
 
 ## Benchmark
 
@@ -31,7 +28,14 @@ editLink: false
 
 ## Common
 
+- [AttributesTrait](./Chevere/Components/Common/Traits/AttributesTrait.md)
 - [DescriptionTrait](./Chevere/Components/Common/Traits/DescriptionTrait.md)
+
+## Controller
+
+- [Controller](./Chevere/Components/Controller/Controller.md)
+- [ControllerName](./Chevere/Components/Controller/ControllerName.md)
+- [ControllerWorkflow](./Chevere/Components/Controller/ControllerWorkflow.md)
 
 ## DataStructure
 
@@ -233,6 +237,7 @@ editLink: false
 ## Workflow
 
 - [Step](./Chevere/Components/Workflow/Step.md)
+- [WorkflowProviderTrait](./Chevere/Components/Workflow/Traits/WorkflowProviderTrait.md)
 - [Workflow](./Chevere/Components/Workflow/Workflow.md)
 - [WorkflowMessage](./Chevere/Components/Workflow/WorkflowMessage.md)
 - [WorkflowResponse](./Chevere/Components/Workflow/WorkflowResponse.md)

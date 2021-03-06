@@ -43,9 +43,10 @@ final class DoesSomething implements PluggableEventsInterface
 
     public static function getEventAnchors(): PluggableAnchorsInterface
     {
-        return (new PluggableAnchors)
-            ->withAdded(anchor: 'beforeSet')
-            ->withAdded(anchor: 'onSet');
+        return new PluggableAnchors(
+            'beforeSet',
+            'onSet'
+        )
     }
 
     public function set(string $value): void
@@ -103,9 +104,11 @@ final class DoesSomething implements PluggableHooksInterface
 
     public static function getHookAnchors(): PluggableAnchorsInterface
     {
-        return (new PluggableAnchors)
-            ->withAdded(anchor: 'hook:before')
-            ->withAdded(anchor: 'hook:after');
+        return new PluggableAnchors(
+            'hook:before',
+            'hook:after'
+        )
+            
     }
 
     public function set(string $value): void

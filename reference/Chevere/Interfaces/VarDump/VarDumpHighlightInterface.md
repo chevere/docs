@@ -22,8 +22,8 @@ Type `array`
 array (
   0 => 'string',
   1 => 'float',
-  2 => 'int',
-  3 => 'bool',
+  2 => 'integer',
+  3 => 'boolean',
   4 => 'null',
   5 => 'object',
   6 => 'array',

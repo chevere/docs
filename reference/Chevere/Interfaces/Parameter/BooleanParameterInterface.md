@@ -11,6 +11,7 @@ editLink: false
 ## Extends
 
 - [ParameterInterface](./ParameterInterface.md)
+- [AttributesInterface](../Common/AttributesInterface.md)
 - [DescriptionInterface](../Common/DescriptionInterface.md)
 
 ## Description
@@ -67,7 +68,7 @@ Provides access to the type instance.
 :::
 
 ::: tip Return
-self
+static
 :::
 
 ---
@@ -85,7 +86,7 @@ Return an instance with the specified `$attributes` added.
 :::
 
 ::: tip Return
-self
+static
 :::
 
 This method MUST retain the state of the current instance, and return
@@ -93,7 +94,7 @@ an instance that contains the specified `$attributes` added.
 
 ---
 
-### withRemovedAttribute
+### withoutAttribute
 
 Return an instance with the specified `$attributes` removed.
 
@@ -106,7 +107,7 @@ Return an instance with the specified `$attributes` removed.
 :::
 
 ::: tip Return
-self
+static
 :::
 
 This method MUST retain the state of the current instance, and return

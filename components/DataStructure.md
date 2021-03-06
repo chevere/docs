@@ -28,13 +28,22 @@ The `withPut` method is used to put a value to the Map at the given key.
 $map = $map->withPut(foo: $foo, bar: $bar);
 ```
 
-### Asserting keys
+### Checking keys
 
-The `assertHasKey` method is used to assert if the Map contains the given key(s).
+The `has` method is used to check if the Map contains the given key(s).
 
 ```php
-$map->assertHasKey(key: 'foo'); // true
-$map->assertHasKey(key: 'notFound'); // throws Throwable
+$map->has(key: 'foo'); // true
+$map->has(key: 'notFound'); // throws Throwable
+```
+
+### Asserting keys
+
+The `assertHas` method is used to assert if the Map contains the given key(s).
+
+```php
+$map->assertHas(key: 'foo'); // true
+$map->assertHas(key: 'notFound'); // throws Throwable
 ```
 
 ### Get value
