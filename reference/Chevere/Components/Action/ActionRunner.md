@@ -17,7 +17,7 @@ editLink: false
 ### __construct
 
 ::: warning Parameters
-- *controller*: [ControllerInterface](../../Interfaces/Action/ControllerInterface.md)
+- *controller*: [ControllerInterface](../../Interfaces/Controller/ControllerInterface.md)
 :::
 
 ---

@@ -55,7 +55,7 @@ The [ArrayParameter](../reference/Chevere/Components/Parameter/ArrayParameter.md
 ```php
 use Chevere\Components\Parameter\ArrayParameter;
 
-(new ArrayParameter)
+(new ArrayParameter())
     ->withDefault(value: ['do' => true]);
 ```
 
@@ -66,7 +66,7 @@ The [BooleanParameter](../reference/Chevere/Components/Parameter/BooleanParamete
 ```php
 use Chevere\Components\Parameter\BooleanParameter;
 
-(new BooleanParameter)
+(new BooleanParameter())
     ->withDefault(value: true);
 ```
 
@@ -77,7 +77,7 @@ The [FloatParameter](../reference/Chevere/Components/Parameter/FloatParameter.md
 ```php
 use Chevere\Components\Parameter\FloatParameter;
 
-(new FloatParameter)
+(new FloatParameter())
     ->withDefault(value: 12.3);
 ```
 
@@ -88,7 +88,7 @@ The [IntegerParameter](../reference/Chevere/Components/Parameter/IntegerParamete
 ```php
 use Chevere\Components\Parameter\IntegerParameter;
 
-(new IntegerParameter)
+(new IntegerParameter())
     ->withDefault(value: 123);
 ```
 
@@ -100,7 +100,7 @@ The [StringParameter](../reference/Chevere/Components/Parameter/StringParameter.
 use Chevere\Components\Parameter\StringParameter;
 use Chevere\Components\Regex\Regex;
 
-(new StringParameter)
+(new StringParameter())
     ->withDefault(value: 'id-000')
     ->withRegex(regex: new Regex('/^id-[\d]+$/'));
 ```
@@ -173,7 +173,7 @@ use Chevere\Components\Parameter\Parameters;
 
 new Arguments(
     parameters: new Parameters(
-        id: new IntegerParameter
+        id: new IntegerParameter()
     ),
     id: 123
 );
@@ -202,7 +202,7 @@ The following methods are available to provide typed argument retrieval:
 
 | Method       | Return type |
 | ------------ | ----------- |
-| `getBoolean` | `bool`      |
+| `getBoolean` | `boolean`   |
 | `getString`  | `string`    |
 | `getInteger` | `integer`   |
 | `getFloat`   | `float`     |
