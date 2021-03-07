@@ -51,9 +51,9 @@ $workflow = new Workflow(
 );
 ```
 
-For the code above, `${payload}` is declared as a [Workflow reference](#workflow-references), the actual value for it should be provided by the WorkflowRunner.
+For the code above, `${payload}` is declared as a [reference](#references), the actual value for it should be provided by the WorkflowRunner.
 
-## Workflow References
+## References
 
 Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any previous existing Step.
 
@@ -66,7 +66,7 @@ Referenced arguments can be used to bind arguments against Workflow variables or
 
 The `withAdded` method allows to add steps to a existing Workflow.
 
-For the code below, steps `validate` and `insert` are using [Workflow references](#workflow-references) for the expected response keys at `fetch` Step.
+For the code below, steps `validate` and `insert` are using [references](#references) for the expected response keys at `fetch` Step.
 
 ```php
 use Chevere\Components\Workflow\Step;
@@ -132,7 +132,17 @@ $workflow = $workflow
     );
 ```
 
+## Workflow Dependencies
+
+Workflow is aware of actions implementing the [DependentInterface](../reference/Chevere/Interfaces/Dependent/DependentInterface.md). All Action dependencies will be collected by the Workflow.
+
+Use the method `dependencies` to get access to the dependencies for a given Workflow.
+
+```php
+$workflow->dependencies();
+```
+
 `🚧 Work in progress`
 
-* Workflow run
+* WorkflowRun
 * Workflow provider

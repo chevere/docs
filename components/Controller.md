@@ -6,7 +6,7 @@ The Controller component is a special type of action in charge of handling exter
 Check the Controller [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#00controllerphp) to learn directly playing with code.
 :::
 
-## Why string parameters?
+## String Parameters?
 
 Using string parameters enable Controllers to be _wired_ to other devices such as:
 
@@ -14,7 +14,7 @@ Using string parameters enable Controllers to be _wired_ to other devices such a
 * HTTP routing
 * Application runners
 
-Using strings deliberately throws on the Controller the responsibility of type casting.
+Using strings deliberately throws on the Controller the responsibility of [type casting](#type-casting).
 
 ## Creating a Controller
 
