@@ -121,3 +121,4 @@ Referenced arguments can be defined to bind arguments referencing Workflow varia
 `🚧 Work in progress`
 
 * Workflow run
+* Workflow provider

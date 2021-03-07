@@ -68,11 +68,7 @@ The `run` method is used to define the actual action instruction that will carri
 It must return a [Response](../reference/Chevere/Components/Response/Response.md) object.
 
 ```php
-use Chevere\Components\Parameter\IntegerParameter;
-use Chevere\Components\Parameter\Parameters;
-use Chevere\Components\Response\Response;
 use Chevere\Interfaces\Parameter\ArgumentsInterface;
-use Chevere\Interfaces\Parameter\ParametersInterface;
 use Chevere\Interfaces\Response\ResponseInterface;
 
 public function run(ArgumentsInterface $arguments): ResponseInterface
