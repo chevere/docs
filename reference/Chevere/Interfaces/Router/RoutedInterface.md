@@ -17,7 +17,7 @@ Describes the component in charge of defining a routed route.
 ### __construct
 
 ::: warning Parameters
-- *controllerName*: [ControllerNameInterface](../Action/ControllerNameInterface.md)
+- *controllerName*: [ControllerNameInterface](../Controller/ControllerNameInterface.md)
 - *arguments*: array
 :::
 
@@ -28,7 +28,7 @@ Describes the component in charge of defining a routed route.
 Provides access to the `$controllerName` instance.
 
 ::: tip Return
-[ControllerNameInterface](../Action/ControllerNameInterface.md)
+[ControllerNameInterface](../Controller/ControllerNameInterface.md)
 :::
 
 ---
@@ -38,7 +38,7 @@ Provides access to the `$controllerName` instance.
 Provides access to a new `$controllerName` instance.
 
 ::: tip Return
-[ControllerInterface](../Action/ControllerInterface.md)
+[ControllerInterface](../Controller/ControllerInterface.md)
 :::
 
 ---

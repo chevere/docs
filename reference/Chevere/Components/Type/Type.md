@@ -14,20 +14,20 @@ editLink: false
 
 ## Constants
 
-### BOOL
+### BOOLEAN
 
 Type `string`
 
 ```php
-'bool'
+'boolean'
 ```
 
-### INT
+### INTEGER
 
 Type `string`
 
 ```php
-'int'
+'integer'
 ```
 
 ### FLOAT
@@ -117,10 +117,10 @@ Type `array`
 ```php
 array (
   'array' => 'is_array',
-  'bool' => 'is_bool',
+  'boolean' => 'is_bool',
   'callable' => 'is_callable',
   'float' => 'is_float',
-  'int' => 'is_integer',
+  'integer' => 'is_integer',
   'iterable' => 'is_iterable',
   'null' => 'is_null',
   'object' => 'is_object',

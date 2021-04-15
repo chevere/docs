@@ -49,7 +49,7 @@ self
 :::
 
 ::: tip Return
-self
+static
 :::
 
 ---

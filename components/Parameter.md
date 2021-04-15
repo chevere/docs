@@ -55,7 +55,7 @@ The [ArrayParameter](../reference/Chevere/Components/Parameter/ArrayParameter.md
 ```php
 use Chevere\Components\Parameter\ArrayParameter;
 
-(new ArrayParameter)
+(new ArrayParameter())
     ->withDefault(value: ['do' => true]);
 ```
 
@@ -66,7 +66,7 @@ The [BooleanParameter](../reference/Chevere/Components/Parameter/BooleanParamete
 ```php
 use Chevere\Components\Parameter\BooleanParameter;
 
-(new BooleanParameter)
+(new BooleanParameter())
     ->withDefault(value: true);
 ```
 
@@ -77,7 +77,7 @@ The [FloatParameter](../reference/Chevere/Components/Parameter/FloatParameter.md
 ```php
 use Chevere\Components\Parameter\FloatParameter;
 
-(new FloatParameter)
+(new FloatParameter())
     ->withDefault(value: 12.3);
 ```
 
@@ -88,7 +88,7 @@ The [IntegerParameter](../reference/Chevere/Components/Parameter/IntegerParamete
 ```php
 use Chevere\Components\Parameter\IntegerParameter;
 
-(new IntegerParameter)
+(new IntegerParameter())
     ->withDefault(value: 123);
 ```
 
@@ -100,7 +100,7 @@ The [StringParameter](../reference/Chevere/Components/Parameter/StringParameter.
 use Chevere\Components\Parameter\StringParameter;
 use Chevere\Components\Regex\Regex;
 
-(new StringParameter)
+(new StringParameter())
     ->withDefault(value: 'id-000')
     ->withRegex(regex: new Regex('/^id-[\d]+$/'));
 ```
@@ -111,22 +111,57 @@ The above parameter will require an argument like `id-123` to validate.
 
 The [Parameters](../reference/Chevere/Components/Parameter/Parameters.md) component in charge of collecting objects implementing the [ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md).
 
+### Creating Parameters
+
+Create Parameters instance by passing the required parameters on construct.
+
 ```php
 use Chevere\Components\Parameter\Parameters;
 use Chevere\Components\Parameter\IntegerParameter;
 
-(new Parameters)
-    ->withAddedRequired(
-        id: (new IntegerParameter)
-            ->withDefault(value: 123);
-    )
-    ->withAddedOptional(
-        priority: (new IntegerParameter)
-            ->withDefault(value: 1);
-    );
+$parameters = new Parameters(
+    id: (new IntegerParameter())
+        ->withDefault(value: 123)
+);
 ```
 
-Parameters can be added either as required or optional.
+### Adding Parameters
+
+The `withAdded` method is used to add required parameters.
+
+```php
+use Chevere\Components\Parameter\StringParameter;
+
+$parameters->withAdded(
+    name: new StringParameter();
+);
+```
+
+### Adding Optional Parameters
+
+The `withAddedOptional` method is used to add optional parameters.
+
+```php
+use Chevere\Components\Parameter\IntegerParameter;
+
+$parameters->withAddedOptional(
+    priority: (new IntegerParameter())
+        ->withDefault(value: 0);
+)
+```
+
+### Modifying Parameters
+
+The `withModify` method is used to modify parameters.
+
+```php
+use Chevere\Components\Parameter\IntegerParameter;
+
+$parameters->withModify(
+    priority: (new IntegerParameter())
+        ->withDefault(value: 100);
+)
+```
 
 ## Arguments
 
@@ -137,8 +172,9 @@ use Chevere\Components\Parameter\Arguments;
 use Chevere\Components\Parameter\Parameters;
 
 new Arguments(
-    parameters: (new Parameters)
-        ->withAddedRequired(id: new IntegerParameter),
+    parameters: new Parameters(
+        id: new IntegerParameter()
+    ),
     id: 123
 );
 ```
@@ -166,7 +202,7 @@ The following methods are available to provide typed argument retrieval:
 
 | Method       | Return type |
 | ------------ | ----------- |
-| `getBoolean` | `bool`      |
+| `getBoolean` | `boolean`   |
 | `getString`  | `string`    |
 | `getInteger` | `integer`   |
 | `getFloat`   | `float`     |

@@ -212,7 +212,7 @@ array (
 :::
 
 ::: tip Return
-[ThrowableHandlerDocumentInterface](../../../Interfaces/ThrowableHandler/ThrowableHandlerDocumentInterface.md)
+static
 :::
 
 ---

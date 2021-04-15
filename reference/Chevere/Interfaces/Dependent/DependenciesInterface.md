@@ -21,14 +21,66 @@ Describes the component in charge of defining dependencies.
 
 ## Methods
 
+### __construct
+
+::: warning Parameters
+- *...dependencies*: string
+:::
+
+---
+
 ### withPut
 
 ::: warning Parameters
-- *...namedDependencies*: string
+- *...dependencies*: string
 :::
 
 ::: tip Return
 self
+:::
+
+---
+
+### withMerge
+
+::: warning Parameters
+- *dependencies*: self
+:::
+
+::: tip Return
+self
+:::
+
+---
+
+### hasKey
+
+Indicates whether the instance declares a dependency for the given key.
+
+::: warning Parameters
+- *key*: string
+:::
+
+::: tip Return
+bool
+:::
+
+---
+
+### key
+
+Provides access to the dependency class name.
+
+::: warning Parameters
+- *key*: string
+:::
+
+::: danger Throws
+- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
+:::
+
+::: tip Return
+string
 :::
 
 ---

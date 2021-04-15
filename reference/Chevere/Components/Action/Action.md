@@ -27,7 +27,7 @@ editLink: false
 
 ---
 
-### getResponseDataParameters
+### getResponseParameters
 
 ::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
@@ -55,7 +55,7 @@ editLink: false
 
 ---
 
-### responseDataParameters
+### responseParameters
 
 ::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)

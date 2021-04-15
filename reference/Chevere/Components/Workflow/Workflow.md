@@ -36,15 +36,7 @@ Type `string`
 ### __construct
 
 ::: warning Parameters
-- *name*: string
-:::
-
----
-
-### name
-
-::: tip Return
-string
+- *...steps*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 :::
 
 ---
@@ -60,7 +52,7 @@ int
 ### withAdded
 
 ::: warning Parameters
-- *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+- *...steps*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 :::
 
 ::: tip Return
@@ -124,6 +116,14 @@ bool
 
 ---
 
+### dependencies
+
+::: tip Return
+[DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)
+:::
+
+---
+
 ### parameters
 
 ::: tip Return
@@ -169,19 +169,14 @@ array
 
 ---
 
-### getExpected
+### getProvided
 
 ::: warning Parameters
 - *step*: string
 :::
 
-::: danger Throws
-- [TypeException](../../Exceptions/Core/TypeException.md) 
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
-:::
-
 ::: tip Return
-array
+[ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
 :::
 
 ---

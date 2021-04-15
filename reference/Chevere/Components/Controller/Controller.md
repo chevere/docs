@@ -4,19 +4,19 @@ editLink: false
 
 # Controller
 
-`Chevere\Components\Action\Controller`
+`Chevere\Components\Controller\Controller`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Action/Controller.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Controller/Controller.php)
 
 ## Implements
 
 - [ActionInterface](../../Interfaces/Action/ActionInterface.md)
 - [DescriptionInterface](../../Interfaces/Common/DescriptionInterface.md)
-- [ControllerInterface](../../Interfaces/Action/ControllerInterface.md)
+- [ControllerInterface](../../Interfaces/Controller/ControllerInterface.md)
 
 ## Extends
 
-- [Action](./Action.md)
+- [Action](../Action/Action.md)
 
 ## Constants
 
@@ -34,46 +34,10 @@ Type `string`
 
 ---
 
-### getContextParameters
+### withSetup
 
 ::: tip Return
-[ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
-:::
-
----
-
-### withContextArguments
-
-::: warning Parameters
-- *...namedArguments*: mixed
-:::
-
-::: tip Return
-self
-:::
-
----
-
-### contextArguments
-
-::: tip Return
-[ArgumentsInterface](../../Interfaces/Parameter/ArgumentsInterface.md)
-:::
-
----
-
-### hasContextArguments
-
-::: tip Return
-bool
-:::
-
----
-
-### contextParameters
-
-::: tip Return
-[ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
+static
 :::
 
 ---
@@ -86,7 +50,7 @@ bool
 
 ---
 
-### getResponseDataParameters
+### getResponseParameters
 
 ::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
@@ -114,7 +78,7 @@ bool
 
 ---
 
-### responseDataParameters
+### responseParameters
 
 ::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)

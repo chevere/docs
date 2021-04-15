@@ -1,4 +1,4 @@
-# Exceptions Spec
+# 🚨 Exceptions Spec
 
 Exceptions are error events that happens on runtime, that disrupts the execution of the software.
 

@@ -75,7 +75,7 @@ void
 :::
 
 ::: tip Return
-self
+static
 :::
 
 ---

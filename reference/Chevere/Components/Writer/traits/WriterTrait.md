@@ -21,7 +21,7 @@ editLink: false
 :::
 
 ::: tip Return
-self
+static
 :::
 
 ---

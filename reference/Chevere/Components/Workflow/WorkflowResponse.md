@@ -11,6 +11,7 @@ editLink: false
 ## Implements
 
 - [WorkflowResponseInterface](../../Interfaces/Workflow/WorkflowResponseInterface.md)
+- [AttributesInterface](../../Interfaces/Common/AttributesInterface.md)
 - [ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
 
 ## Methods
@@ -37,6 +38,10 @@ self
 
 ### __construct
 
+::: warning Parameters
+- *...namedData*: mixed
+:::
+
 ---
 
 ### withStatus
@@ -46,7 +51,7 @@ self
 :::
 
 ::: tip Return
-[ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
+static
 :::
 
 ---
@@ -58,7 +63,7 @@ self
 :::
 
 ::: tip Return
-[ResponseInterface](../../Interfaces/Response/ResponseInterface.md)
+static
 :::
 
 ---
@@ -91,6 +96,50 @@ array
 
 ::: tip Return
 int
+:::
+
+---
+
+### withAddedAttribute
+
+::: warning Parameters
+- *...attributes*: string
+:::
+
+::: tip Return
+static
+:::
+
+---
+
+### withoutAttribute
+
+::: warning Parameters
+- *...attributes*: string
+:::
+
+::: tip Return
+static
+:::
+
+---
+
+### hasAttribute
+
+::: warning Parameters
+- *...attributes*: string
+:::
+
+::: tip Return
+bool
+:::
+
+---
+
+### attributes
+
+::: tip Return
+[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---

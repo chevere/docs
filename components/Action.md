@@ -37,29 +37,27 @@ use Chevere\Components\Parameter\IntegerParameter;
 
 public function getParameters(): ParametersInterface
 {
-    return (new Parameters)
-        ->withAddedRequired(
-            id: (new IntegerParameter)
-                    ->withDescription('The user id.')
-        );
+    return new Parameters(
+        id: (new IntegerParameter)
+                ->withDescription('The user id.')
+    );
 }
 ```
 
 ### Response Data
 
-The `getResponseDataParameters` method is used to define the response data parameters, which later will be checked against the response data provided in the [run](#run) method.
+The `getResponseParameters` method is used to define the response data parameters, which later will be checked against the response data provided in the [run](#run) method.
 
 ```php
 use Chevere\Interfaces\Parameter\ParametersInterface;
 use Chevere\Components\Parameter\Parameters;
 use Chevere\Components\Parameter\IntegerParameter;
 
-public function getResponseDataParameters(): ParametersInterface
+public function getResponseParameters(): ParametersInterface
 {
-    return (new Parameters)
-        ->withAddedRequired(
-            email: new StringParameter
-        );
+    return new Parameters(
+        email: new StringParameter()
+    );
 }
 ```
 
@@ -70,16 +68,13 @@ The `run` method is used to define the actual action instruction that will carri
 It must return a [Response](../reference/Chevere/Components/Response/Response.md) object.
 
 ```php
-use Chevere\Components\Parameter\IntegerParameter;
-use Chevere\Components\Parameter\Parameters;
-use Chevere\Components\Response\Response;
 use Chevere\Interfaces\Parameter\ArgumentsInterface;
-use Chevere\Interfaces\Parameter\ParametersInterface;
 use Chevere\Interfaces\Response\ResponseInterface;
 
 public function run(ArgumentsInterface $arguments): ResponseInterface
 {
-    $id = $arguments->getInteger(name: 'id');
+    $id = $arguments->getInteger('id');
+
     return $this->getResponse(
         email: (new User($id))->email
     );
@@ -87,59 +82,3 @@ public function run(ArgumentsInterface $arguments): ResponseInterface
 ```
 
 Passed named arguments will be typed against the defined action parameters.
-
-## Controller
-
-Controller is a special type of action in charge of handling user-triggered instructions and to drive it towards application instructions. It extends on top of Action, adding an extra layer of context.
-
-::: tip Learn by Example
-Check the Controller [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#00controllerphp) to learn directly playing with code.
-:::
-
-### Defining a Controller
-
-Code below defines class `SomeController` by extending the base [Controller](../reference/Chevere/Components/Action/Controller.md).
-
-```php
-use Chevere\Components\Actions\Controller;
-
-final class SomeController extends Controller
-{
-    // ...
-}
-```
-
-### Controller Parameters
-
-Controller defines [parameters](#parameters) just like an Action, but all parameters must be of type [StringParameter](../reference/Chevere/Components/Parameter/StringParameter.md). As Controller is designed to be used for handling user-triggered instructions like HTTP endpoints, commands and any other possible layer, the input arguments are of type `string`.
-
-### Controller Context Parameters
-
-Controller adds context to provide runtime variables that aren't directly taken from the user input. The `getContextParameters` method is used to define the action parameters, which later will be checked against arguments in the [run](#run) method.
-
-It must return a [Parameters](../reference/Chevere/Components/Parameter/Parameters.md) object.
-
-```php
-use Chevere\Interfaces\Parameter\ParametersInterface;
-use Chevere\Components\Parameter\Parameters;
-use Chevere\Components\Parameter\IntegerParameter;
-
-public function getContextParameters(): ParametersInterface
-{
-    return (new Parameters)
-        ->withAddedRequired(
-            min: (new IntegerParameter)->withDefault(value: 10)
-        );
-}
-```
-
-On runtime, the context will be added by running the `withContextArguments` method:
-
-```php
-use Chevere\Interfaces\Parameter\ParametersInterface;
-use Chevere\Components\Parameter\Parameters;
-use Chevere\Components\Parameter\IntegerParameter;
-
-$controller = (new SomeController)
-    ->withContextArguments(min: 200);
-```

@@ -65,3 +65,7 @@ class MyToStringClass implements ToStringInterface
     }
 }
 ```
+
+`🚧 Work in progress`
+
+* Attributes

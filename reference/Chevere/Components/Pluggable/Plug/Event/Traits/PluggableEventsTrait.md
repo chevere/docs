@@ -17,7 +17,7 @@ editLink: false
 :::
 
 ::: tip Return
-[PluggableEventsInterface](../../../../../Interfaces/Pluggable/Plug/Event/PluggableEventsInterface.md)
+static
 :::
 
 ---

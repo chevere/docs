@@ -14,12 +14,20 @@ Describes the component in charge of defining pluggable anchors.
 
 ## Methods
 
+### __construct
+
+::: warning Parameters
+- *...anchors*: string
+:::
+
+---
+
 ### withAdded
 
 Return an instance with the specified added `$anchor`.
 
 ::: warning Parameters
-- *anchor*: string
+- *...anchors*: string
 :::
 
 ::: danger Throws
@@ -37,10 +45,10 @@ an instance that contains the specified added `$anchor`.
 
 ### has
 
-Indicates whether the instance has the given `$anchor`.
+Indicates whether the instance has the given `$anchors`.
 
 ::: warning Parameters
-- *anchor*: string
+- *...anchors*: string
 :::
 
 ::: tip Return

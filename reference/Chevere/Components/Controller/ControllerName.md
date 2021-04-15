@@ -4,13 +4,13 @@ editLink: false
 
 # ControllerName
 
-`Chevere\Components\Action\ControllerName`
+`Chevere\Components\Controller\ControllerName`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Action/ControllerName.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Controller/ControllerName.php)
 
 ## Implements
 
-- [ControllerNameInterface](../../Interfaces/Action/ControllerNameInterface.md)
+- [ControllerNameInterface](../../Interfaces/Controller/ControllerNameInterface.md)
 - [ToStringInterface](../../Interfaces/Common/ToStringInterface.md)
 
 ## Methods

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'get-started/' => '🐣 get started',
-    'architecture/' => '🏗 arch',
-    'components/' => '🎹 compo',
-    'reference/' => '📚 refs',
-    'developer/' => '👨🏾‍🚀 dev',
+    'get-started/' => '🐣 Get Started',
+    'architecture/' => '🏗 Arch',
+    'components/' => '🎹 Compo',
+    'reference/' => '📚 Refs',
+    'developer/' => '👨🏾‍🚀 Dev',
 ];

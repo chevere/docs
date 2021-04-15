@@ -4,9 +4,9 @@ editLink: false
 
 # ControllerNameInterface
 
-`Chevere\Interfaces\Action\ControllerNameInterface`
+`Chevere\Interfaces\Controller\ControllerNameInterface`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Action/ControllerNameInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Controller/ControllerNameInterface.php)
 
 ## Extends
 

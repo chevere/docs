@@ -2,77 +2,6 @@
 
 The [Workflow](../reference/Chevere/Components/Workflow/Workflow.md) component provides the ability to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It allows to define a series of individual interconnected steps with goal to describe and execute a sequential procedure.
 
-## Creating a Workflow
-
-To create a workflow pass the workflow name:
-
-```php
-use Chevere\Components\Workflow\Workflow;
-
-$workflow = new Workflow(name: 'insert-user');
-```
-
-## Adding Steps
-
-The `withAdded` method allows to append [steps](#step) to the Workflow. For the code below, note how validate and insert steps [reference arguments](#referenced-arguments) stored in the response of the fetch step.
-
-Variables `payload` and `useCache` will be required to be provided by the Workflow runner.
-
-```php
-use Chevere\Components\Workflow\Step;
-
-$workflow = $workflow
-    ->withAdded(
-        fetch: (new Step('FetchAction'))
-            ->withArguments(
-                payload: '${payload}'
-            ),
-        validate: (new Step('ValidateAction'))
-            ->withArguments(
-                cache: '${useCache}',
-                email: '${fetch:email}',
-                username: '${fetch:username}',
-            ),
-        insert: (new Step('InsertAction'))
-            ->withArguments(
-                email: '${fetch:email}',
-                username: '${fetch:username}',
-            )
-    );
-```
-
-## Adding Steps Before and After
-
-The `withAddedBefore` and `withAddedAfter` methods allows to add steps before/after another step.
-
-Code below modify `$workflow` to extend its functionality.
-
-```sh
-# From this:
-fetch->validate->insert
-
-# To this:
-logging->fetch->validate->insert->updateCount->caching
-```
-
-```php
-use Chevere\Components\Workflow\Step;
-
-$workflow = $workflow
-    ->withAddedBefore(
-        'fetch',
-        logging: (new Step('LoggingAction'))
-            ->withArguments(device: '${logDevice}'),
-    )
-    ->withAddedAfter(
-        'insert',
-        updateCount: (new Step('UpdateUserCountAction'))
-            ->withArguments(add: 1),
-        caching: (new Step('CachingAction'))
-            ->withArguments(userId: '${insert:userId}')
-    );
-```
-
 ## Step
 
 The [Step](../reference/Chevere/Components/Workflow/Step.md) component define an [Action](Action.md) with arguments to pass.
@@ -80,10 +9,10 @@ The [Step](../reference/Chevere/Components/Workflow/Step.md) component define an
 ```php
 use Chevere\Components\Workflow\Step;
 
-new Step(action: 'SomeActionClassName');
+new Step(action: 'SomeActionClass');
 ```
 
-For the code above, the argument passed must be a class name implementing the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md).
+The argument passed must be a class name implementing the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md).
 
 ### Step Parameters
 
@@ -91,25 +20,129 @@ Parameters for the step are defined in the [Action Parameters](Action.md#paramet
 
 ### Step Arguments
 
-The `withArguments` method is used to define arguments passed on runtime to the action defined in the step.
+Arguments can be passed on constructor using named arguments.
 
 ```php
 use Chevere\Components\Workflow\Step;
 
-(new Step('SomeAction'))
-    ->withArguments(
-        firstName: 'Rodolfo',
-        lastName: 'Berrios'
+new Step(
+    'SomeActionClass'
+    firstName: 'Rodolfo',
+    lastName: 'Berrios'
+);
+```
+
+For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeActionClass` when running the Workflow. These arguments will be matched against the Parameters defined at the Action.
+
+The `withArguments` method can be used to modify the step arguments.
+
+## Creating a Workflow
+
+To create a workflow pass the Workflow named [steps](#step):
+
+```php
+use Chevere\Components\Workflow\Workflow;
+
+$workflow = new Workflow(
+    fetch: new Step(
+        'FetchAction',
+        payload: '${payload}'
+    ),
+);
+```
+
+For the code above, `${payload}` is declared as a [reference](#references), the actual value for it should be provided by the WorkflowRunner.
+
+## References
+
+Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any previous existing Step.
+
+| Expression    | Meaning                                       |
+| ------------- | --------------------------------------------- |
+| `${var}`      | A Workflow variable                           |
+| `${step:key}` | The response value at key for a previous Step |
+
+## Adding Steps
+
+The `withAdded` method allows to add steps to a existing Workflow.
+
+For the code below, steps `validate` and `insert` are using [references](#references) for the expected response keys at `fetch` Step.
+
+```php
+use Chevere\Components\Workflow\Step;
+
+$workflow = $workflow
+    ->withAdded(
+        validate: new Step(
+            'ValidateAction',
+            email: '${fetch:email}',
+            username: '${fetch:username}',
+        ),
+        insert: new Step(
+            'InsertAction',
+            email: '${fetch:email}',
+            username: '${fetch:username}',
+        )
     );
 ```
 
-For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeAction` when running the Workflow. These arguments will be matched against the Parameters defined at the Action.
+## Adding Steps Before and After
 
-### Referenced Arguments
+The `withAddedBefore` and `withAddedAfter` methods allows to add steps before/after another step.
 
-Referenced arguments can be defined to bind arguments referencing Workflow variables or responses returned after running any previous step.
+For example, consider this existing flow:
 
-| Expression        | Meaning                                                      |
-| ----------------- | ------------------------------------------------------------ |
-| `${var}`          | A context argument                                           |
-| `${stepName:key}` | The value of `key` for the response of named step `stepName` |
+* Fetch
+* Validate
+* Insert
+
+Requiring to extend to something like this:
+
+* +Logging
+* Fetch
+* Validate
+* +ValidateMore
+* Insert
+* +Caching
+
+```php
+use Chevere\Components\Workflow\Step;
+
+$workflow = $workflow
+    ->withAddedBefore(
+        'fetch',
+        logging: new Step(
+            'LoggingAction',
+            device: '${logDevice}'
+        )
+    )
+    ->withAddedAfter(
+        'validate',
+        validateMore: new Step(
+            'ValidateMoreAction',
+            payload: '${payload}'
+        )
+    )
+    ->withAddedAfter(
+        'insert',
+        caching: new Step(
+            'CachingAction',
+            userId: '${insert:userId}'
+        )
+    );
+```
+
+## Workflow Dependencies
+
+Workflow is aware of actions implementing the [DependentInterface](../reference/Chevere/Interfaces/Dependent/DependentInterface.md). All Action dependencies will be collected by the Workflow.
+
+Use the method `dependencies` to get access to the dependencies for a given Workflow.
+
+```php
+$workflow->dependencies();
+```
+
+`🚧 Work in progress`
+
+* WorkflowRun
+* Workflow provider

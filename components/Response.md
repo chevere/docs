@@ -7,12 +7,12 @@ The [Response](../reference/Chevere/Components/Response/Response.md) component i
 ```php
 use Chevere\Components\Response\Response;
 
-$response = new Response();
+$response = new Response(foo: 'foo');
 ```
 
 ## With data
 
-The `withData` method is used to set Response data.
+The `withData` method is used to set the Response data.
 
 ```php
 /**

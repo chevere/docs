@@ -1,4 +1,4 @@
-# Workspace
+# 📐 Workspace
 
 The workspace refers to the working directory where the software is developed.
 

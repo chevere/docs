@@ -20,6 +20,10 @@ editLink: false
 
 ### __construct
 
+::: warning Parameters
+- *...parameters*: [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)
+:::
+
 ---
 
 ### __clone
@@ -30,7 +34,7 @@ void
 
 ---
 
-### withAddedRequired
+### withAdded
 
 ::: warning Parameters
 - *...parameters*: [ParameterInterface](../../Interfaces/Parameter/ParameterInterface.md)

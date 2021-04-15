@@ -39,7 +39,7 @@ array (
 
 ::: warning Parameters
 - *method*: [MethodInterface](../../../Interfaces/Http/MethodInterface.md)
-- *controller*: [ControllerInterface](../../../Interfaces/Action/ControllerInterface.md)
+- *controller*: [ControllerInterface](../../../Interfaces/Controller/ControllerInterface.md)
 :::
 
 ---
@@ -55,7 +55,7 @@ array (
 ### controller
 
 ::: tip Return
-[ControllerInterface](../../../Interfaces/Action/ControllerInterface.md)
+[ControllerInterface](../../../Interfaces/Controller/ControllerInterface.md)
 :::
 
 ---

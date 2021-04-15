@@ -24,7 +24,7 @@ Describes the component in charge of defining a single action.
 
 ### getParameters
 
-Defines parameters.
+Defines action parameters.
 
 ::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
@@ -32,7 +32,7 @@ Defines parameters.
 
 ---
 
-### getResponseDataParameters
+### getResponseParameters
 
 Defines expected response data parameters when executing `run` method.
 
@@ -66,7 +66,7 @@ Provides access to the parameters.
 
 ---
 
-### responseDataParameters
+### responseParameters
 
 Provides access to the expected response data parameters.
 

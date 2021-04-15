@@ -18,6 +18,7 @@ Describes the component in charge of defining a task (a unit of job).
 
 ::: warning Parameters
 - *action*: string
+- *...namedArguments*: mixed
 :::
 
 ::: danger Throws

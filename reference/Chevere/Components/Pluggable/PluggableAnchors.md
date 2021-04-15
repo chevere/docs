@@ -16,12 +16,16 @@ editLink: false
 
 ### __construct
 
+::: warning Parameters
+- *...anchors*: string
+:::
+
 ---
 
 ### withAdded
 
 ::: warning Parameters
-- *anchor*: string
+- *...anchors*: string
 :::
 
 ::: tip Return
@@ -33,7 +37,7 @@ editLink: false
 ### has
 
 ::: warning Parameters
-- *anchor*: string
+- *...anchors*: string
 :::
 
 ::: tip Return

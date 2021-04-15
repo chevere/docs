@@ -35,11 +35,10 @@ use Chevere\Components\Dependent\Dependencies;
 
 public function getDependencies(): DependenciesInterface
 {
-    return (new Dependencies())
-        ->withPut(
-            foo: 'FooType',
-            bar: 'BarType',
-        );
+    return new Dependencies(
+        foo: 'FooType',
+        bar: 'BarType',
+    );
 }
 ```
 
@@ -67,11 +66,10 @@ Method `withDependencies` is used to pass dependencies.
  * @var FooType $fooInject
  * @var BarType $barInject
  */
-$dependent = (new MyDependent())
-    ->withDependencies(
-        foo: $fooInject,
-        bar: $barInject
-    );
+$dependent = new MyDependent(
+    foo: $fooInject,
+    bar: $barInject
+);
 ```
 
 ## Asserting dependencies
@@ -90,15 +88,17 @@ The Dependencies component is in charge of collecting dependencies.
 
 ### Creating Dependencies
 
+Create Dependencies by passing named dependencies on construct, which must be known classes or interface names.
+
 ```php
 use Chevere\Components\Dependent\Dependencies;
 
-$dependencies = new Dependencies();
+$dependencies = new Dependencies(depends: 'SomeType');
 ```
 
 ### Putting Dependencies
 
-The `withPut` method is used to pass named dependencies.
+The `withPut` method is used to put named dependencies.
 
 ```php
 $dependencies->withPut(foo: 'FooType');
@@ -109,13 +109,13 @@ $dependencies->withPut(foo: 'FooType');
 The `keys` method access all dependency names.
 
 ```php
-$dependencies->keys(); // ['foo']
+$dependencies->keys(); // ['depends', 'foo']
 ```
 
 The `count` method returns the dependencies count.
 
 ```php
-$dependencies->count(); // 1
+$dependencies->count(); // 2
 ```
 
 The `getGenerator` method returns a Generator that can be used to traverse dependencies.
@@ -123,7 +123,6 @@ The `getGenerator` method returns a Generator that can be used to traverse depen
 ```php
 foreach($dependencies->getGenerator() as $name => $className)
 {
-    // $name = 'foo';
-    // $className = 'FooType';
+    // For first item: 'depends' => 'SomeType'
 }
 ```
