@@ -6,7 +6,7 @@
 
 You can help with further development by providing your time and care. Chevere is open for any kind of [issue](https://github.com/chevere/chevere/issues) and [pull request](https://github.com/chevere/chevere/pulls), bug reporting, testing, translating, documenting, design, etc.
 
-If you found something odd do _please_ inform it.
+> By contributing to this project, you agree that your contributions will be licensed under its [MIT License](https://github.com/chevere/chevere/blob/main/LICENSE).
 
 ## Project
 
