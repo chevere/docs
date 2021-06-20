@@ -6,11 +6,11 @@ tagline: Build extensible server-side applications
 actionText: Get Started →
 actionLink: /get-started/
 features:
-- title: ✨ Clean & Typed
+- title: Clean & Typed
   details: Enjoy an immutable and strong-typed clean codebase.
-- title: 🏭 Extensible
+- title: Extensible
   details: Do more building pluggable software.
-- title: 👨🏾‍💻 Modern & High-quality
+- title: Modern & High-quality
   details: All-new PHP ocho codebase with strict standards.
-footer: MIT Licensed | Made with 🐘 by Rodolfo Berrios
+footer: MIT Licensed | Made by Rodolfo Berrios
 ---

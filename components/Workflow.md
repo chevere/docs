@@ -142,7 +142,7 @@ Use the method `dependencies` to get access to the dependencies for a given Work
 $workflow->dependencies();
 ```
 
-`🚧 Work in progress`
+`Work in progress`
 
 * WorkflowRun
 * Workflow provider

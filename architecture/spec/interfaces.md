@@ -1,4 +1,4 @@
-# 🎛 Interfaces Spec
+# Interfaces Spec
 
 Interfaces describe the public methods implemented by a given class. In Chevere, all components **must** define their own interface.
 
@@ -24,7 +24,7 @@ Each interface should describe a unique public procedure that **may** be impleme
 
 Parameters and return types **must** be typed against an scalar or an interface.
 
-> 🧔🏾 Parameters and return types **should not** be typed against concrete implementations
+> Parameters and return types **should not** be typed against concrete implementations
 
 ### Method naming
 
@@ -38,7 +38,7 @@ Accessors **must be nouns** and named as the name of the property it retrieves. 
 public function something(): string;
 ```
 
-> 🧔🏾 Accessors = nouns
+> Accessors = nouns
 
 #### Actions
 
@@ -46,7 +46,7 @@ Actions refers to when the object must **do something**. These actions could ret
 
 A verb **should** be prefixed for any given action. For example, `getSome`, `setValue` or `doStuff`.
 
-> 🧔🏾 Actions = verbs
+> Actions = verbs
 
 In the example below, we do the evolution.
 
@@ -60,7 +60,7 @@ Immutables refers to methods that **returns an altered copy** of the original ob
 
 The `with` prefix is associated with immutables. For example, `withSomething`, `withoutSomething`, `withAddedStuff`, `withRemovedStuff`, etc.
 
-> 🧔🏾 Immutables = with*
+> Immutables = with*
 
 More about immutables at [Immutability](./immutability.md).
 

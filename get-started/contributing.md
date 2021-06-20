@@ -1,4 +1,4 @@
-# ❤ Contributing
+# Contributing
 
 Chevere is indie developed. Any help is really welcome.
 

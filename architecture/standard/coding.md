@@ -1,4 +1,4 @@
-# 👨🏾‍💻 Coding Standard
+# Coding Standard
 
 The coding standard exists as good practice for keeping the syntax cohesive as possible.
 

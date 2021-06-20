@@ -11,7 +11,7 @@ A class that expose dependencies required to be provided on instance creation is
 [DependentInterface](../reference/Chevere/Interfaces/Dependent/DependentInterface.md) describes the interface for the component in charge of defining a Dependent.
 
 ::: tip
-⏩ Use [DependentTrait](../reference/Chevere/Components/Dependent/Traits/DependentTrait.md) to quickly implement the `DependentInterface`.
+Use [DependentTrait](../reference/Chevere/Components/Dependent/Traits/DependentTrait.md) to quickly implement the `DependentInterface`.
 :::
 
 ```php

@@ -60,7 +60,7 @@ $getBar = $map->get(key: 'bar'); // $bar
 The [MappedInterface](../reference/Chevere/Interfaces/DataStructure/MappedInterface.md) describes the interface for a component supporting mapping, like [Map](#map) which doesn't specify any typing.
 
 ::: tip
-⏩ Use [MapTrait](../reference/Chevere/Components/DataStructure/Traits/MapTrait.md) quickly implement the `MappedInterface`.
+Use [MapTrait](../reference/Chevere/Components/DataStructure/Traits/MapTrait.md) quickly implement the `MappedInterface`.
 :::
 
 With this, expose your own setters and getters accordingly to your typing and internally simply rely in the functionality provided by the MapTrait.

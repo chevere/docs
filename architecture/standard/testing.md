@@ -1,10 +1,10 @@
-# 👷🏾 Testing Standard
+# Testing Standard
 
 [Software testing](https://en.wikipedia.org/wiki/Software_testing) is the activity of checking software quality under a test. It is carried to ensure that the software system is free of errors. It helps to detect bugs, errors, missing requirements, etc.
 
 Testing is all about make sure that the software behave as expected. That the software will always _responds_ in a predictable way every time.
 
-> 👍🏾 Chevere tests are located at [Chevere\Tests](https://github.com/chevere/chevere/tree/main/Tests) namespace
+> Chevere tests are located at [Chevere\Tests](https://github.com/chevere/chevere/tree/main/Tests) namespace
 
 ## Testing Framework
 

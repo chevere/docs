@@ -1,4 +1,4 @@
-# 🎹 Components Spec
+# Components Spec
 
 Components are elements that provide concrete functionality.
 
