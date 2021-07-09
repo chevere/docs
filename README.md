@@ -12,5 +12,5 @@ features:
   details: Do more building pluggable software.
 - title: Modern & High-quality
   details: All-new PHP ocho codebase with strict standards.
-footer: MIT Licensed | Made by Rodolfo Berrios
+footer: Made by Rodolfo Berrios
 ---
