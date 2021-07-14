@@ -7,7 +7,7 @@ The Common component provides general purpose tooling.
 [DescriptionInterface](../reference/Chevere/Interfaces/Common/DescriptionInterface.md) describes the interface for a class which describe itself.
 
 ::: tip
-⏩ Use [DescriptionTrait](https://github.com/Chevereto/chevere/blob/main/src/Chevere/Components/Common/Traits/DescriptionTrait.php) to quickly implement the `DescriptionInterface`.
+Use [DescriptionTrait](https://github.com/Chevereto/chevere/blob/main/src/Chevere/Components/Common/Traits/DescriptionTrait.php) to quickly implement the `DescriptionInterface`.
 :::
 
 ```php
@@ -66,6 +66,6 @@ class MyToStringClass implements ToStringInterface
 }
 ```
 
-`🚧 Work in progress`
+`Work in progress`
 
 * Attributes

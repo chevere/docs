@@ -26,7 +26,7 @@ The debug flag can be passed to alter the document generation. This flag will be
 $handler = $handler->withIsDebug(false);
 ```
 
-> 😉 Pass `false` to generate documents that shouldn't disclose sensitive information
+> Pass `false` to generate documents that shouldn't disclose sensitive information
 
 ## Generating Documents
 

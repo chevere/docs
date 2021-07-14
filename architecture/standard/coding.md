@@ -1,4 +1,4 @@
-# 👨🏾‍💻 Coding Standard
+# Coding Standard
 
 The coding standard exists as good practice for keeping the syntax cohesive as possible.
 
@@ -61,7 +61,7 @@ Merge `code-style` changes into your working branch (for example, `main`).
 git merge code-style/main --allow-unrelated-histories
 ```
 
-✔ The `chevere-ecs.php` file will be available in your project root, repeat fetch & merge to keep it updated.
+The `chevere-ecs.php` file will be available in your project root, repeat fetch & merge to keep it updated.
 
 ### Custom header comment
 

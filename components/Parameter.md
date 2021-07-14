@@ -208,4 +208,4 @@ The following methods are available to provide typed argument retrieval:
 | `getFloat`   | `float`     |
 | `getArray`   | `array`     |
 
-> ⚠ **Note** that the above methods will throw a [TypeException](../reference/Chevere/Exceptions/Core/TypeException.md) on type mismatch.
+> **Note** that the above methods will throw a [TypeException](../reference/Chevere/Exceptions/Core/TypeException.md) on type mismatch.

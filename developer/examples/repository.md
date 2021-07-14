@@ -4,7 +4,7 @@ A hands-on self introduction to Chevere with example scripts.
 
 The repository at [chevere/examples](https://github.com/chevere/examples) holds a variety of working examples that will help you to learn how to use Chevere.
 
-> 👍🏾 Feel free to [contribute](#contributing) to this repository
+> Feel free to [contribute](#contributing) to this repository
 
 ## Installing
 
@@ -16,7 +16,7 @@ The repository at [chevere/examples](https://github.com/chevere/examples) holds 
 Clone the repository in `examples/`.
 
 ```sh
-git clone https://github.com/chevere/examples.git
+git clone https://github.com:chevere/examples.git
 ```
 
 Install dependencies at `vendor/`.
@@ -29,7 +29,7 @@ composer install --ignore-platform-reqs
 
 Each folder represents an example topic, like [00.HelloWorld/](https://github.com/chevere/examples/tree/main/00.HelloWorld) for "Hello, World" or [02.VarDump/](https://github.com/chevere/examples/tree/main/02.VarDump) for [VarDump component](../components/VarDump.md).
 
-> 👴🏾 All files and folders use a numeric index representing levels of complexity
+> All files and folders use a numeric index representing levels of complexity
 
 ## Running
 
@@ -55,4 +55,4 @@ The examples repo is a playground, everything concerning potential uses is welco
 
 Feel free to [suggests](https://github.com/chevere/examples/issues/new/choose) examples that should be added or to [share](https://github.com/chevere/examples/compare) your own.
 
-> 🧔🏾 Try to think about Chevere as butter, you want it (mostly) everywhere
+> Try to think about Chevere as butter, you want it (mostly) everywhere

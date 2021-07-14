@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'system.md' => '🖥 System',
-    'workspace.md' => '📐 Workspace',
+    'system.md' => 'System',
+    'workspace.md' => 'Workspace',
 ];

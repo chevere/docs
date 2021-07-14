@@ -1,4 +1,4 @@
-# 🖥 System
+# System
 
 This outlines the relevant system setup and packaging used to create Chevere.
 

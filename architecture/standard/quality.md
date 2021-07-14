@@ -1,4 +1,4 @@
-# 🛡 Quality Standard
+# Quality Standard
 
 The Chevere quality standard exists to ensure the quality of the software. It defines the minimum requirements to consider the software safely to be usable.
 

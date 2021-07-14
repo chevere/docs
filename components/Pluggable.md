@@ -23,7 +23,7 @@ Hooks defined by [HookPlugType](../reference/Chevere/Components/Pluggable/Types/
 Pluggable events are used when is intended to broadcast that something took place. A class must implement [PluggableEventsInterface](../reference/Chevere/Interfaces/Pluggable/Plug/Event/PluggableEventsInterface.md) to allow pluggable events.
 
 ::: tip
-⏩ Use [PluggableEventsTrait](../reference/Chevere/Components/Pluggable/Plug/Event/Traits/PluggableEventsTrait.md) to quickly implement `PluggableEventsInterface`
+Use [PluggableEventsTrait](../reference/Chevere/Components/Pluggable/Plug/Event/Traits/PluggableEventsTrait.md) to quickly implement `PluggableEventsInterface`
 :::
 
 ### How Pluggable Events works
@@ -84,7 +84,7 @@ $this->event(anchor: 'anchor-name', data: $data);
 Hooks are used when it is intended to allow modification on variables. A class must implement [PluggableHooksInterface](../reference/Chevere/Interfaces/Pluggable/Plug/Hook/PluggableHooksInterface.md) to allow pluggable hooks.
 
 ::: tip
-⏩ Use [PluggableHooksTrait](../reference/Chevere/Components/Pluggable/Plug/Hook/Traits/PluggableHooksTrait.md) to quickly implement the `PluggableHooksInterface`
+Use [PluggableHooksTrait](../reference/Chevere/Components/Pluggable/Plug/Hook/Traits/PluggableHooksTrait.md) to quickly implement the `PluggableHooksInterface`
 :::
 
 ### How Pluggable Hooks works

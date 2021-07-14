@@ -60,7 +60,7 @@ $varDump->process(
 
 The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous back traces should be removed.
 
-> 😉 Check [source code](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php) for functions `xd` and `xdd` for a better understanding
+> Check [source code](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php) for functions `xd` and `xdd` for a better understanding
 
 ## Replacing `var_dump`
 
