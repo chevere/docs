@@ -14,3 +14,9 @@ features:
   details: All-new PHP ocho codebase with strict standards.
 footer: Made by Rodolfo Berrios
 ---
+
+# Acknowledgements
+
+Thanks to [DocSearch](https://docsearch.algolia.com/) by Algolia for providing the search functionality in this documentation.
+
+Thanks to [JetBrains](https://www.jetbrains.com/opensource/) for providing software licensing for all their suite.
