@@ -16,7 +16,7 @@ The repository at [chevere/examples](https://github.com/chevere/examples) holds 
 Clone the repository in `examples/`.
 
 ```sh
-git clone git@github.com:chevere/examples.git
+git clone https://github.com/chevere/examples.git
 ```
 
 Install dependencies at `vendor/`.

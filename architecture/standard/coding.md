@@ -27,7 +27,7 @@ composer require symplify/easy-coding-standard --dev
 Install [chevere/code-style](https://github.com/chevere/code-style) remote repository as `code-style` in your project root using GIT.
 
 ```sh
-git remote add code-style git@github.com:chevere/code-style.git
+git remote add code-style https://github.com/chevere/code-style.git
 ```
 
 ### `ecs.php`
