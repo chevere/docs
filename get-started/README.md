@@ -29,7 +29,7 @@ Chevere has been designed from scratch for PHP 8, and it uses all the goodies re
 
 ## Origin
 
-Chevere begun as the supporting framework for [Chevereto 4](https://github.com/chevereto/chevereto). Development started about mid-2018, carrying a complete modernization of the previous Chevereto's supporting framework ([G\ Library](https://g.chevereto.com/)).
+Chevere begun as the supporting framework for Chevereto V4. Development started in May-2018, carrying a complete modernization of the previous Chevereto's supporting framework ([G\ Library](https://g.chevereto.com/)).
 
 While Chevereto drove initial development, Chevere is a different organization with its own goals.
 
