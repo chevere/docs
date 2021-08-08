@@ -57,14 +57,14 @@ For the code above, `${payload}` is declared as a [reference](#references), the 
 
 Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any previous existing Step.
 
-| Expression    | Meaning                                       |
-| ------------- | --------------------------------------------- |
-| `${var}`      | A Workflow variable                           |
-| `${step:key}` | The response value at key for a previous Step |
+| Expression                | Meaning                                            |
+| ------------------------- | -------------------------------------------------- |
+| `${workflow_variable}`    | A Workflow variable (need to be injected).         |
+| `${stepName:responseKey}` | The value at key for the previous `step` response. |
 
 ## Adding Steps
 
-The `withAdded` method allows to add steps to a existing Workflow.
+The `withAdded` method allows to add steps to an existing Workflow.
 
 For the code below, steps `validate` and `insert` are using [references](#references) for the expected response keys at `fetch` Step.
 
@@ -90,13 +90,13 @@ $workflow = $workflow
 
 The `withAddedBefore` and `withAddedAfter` methods allows to add steps before/after another step.
 
-For example, consider this existing flow:
+For example, consider this existing workflow:
 
 * Fetch
 * Validate
 * Insert
 
-Requiring to extend to something like this:
+And the requirement is to extend to something like this:
 
 * +Logging
 * Fetch
@@ -112,8 +112,8 @@ $workflow = $workflow
     ->withAddedBefore(
         'fetch',
         logging: new Step(
-            'LoggingAction',
-            device: '${logDevice}'
+            'LogAction',
+            device: '${LOG_DEVICE}'
         )
     )
     ->withAddedAfter(
@@ -131,6 +131,22 @@ $workflow = $workflow
         )
     );
 ```
+
+## Workflow variable naming
+
+Kindly follow the recommended naming scheme for workflow variables. This will make easier to share and understand workflows for all layers of users of this framework.
+
+### Injected variables
+
+Snake case `${var}` `${snake_case}`.
+
+### Step names
+
+Camel case `step` `stepName`.
+
+### Referenced variables
+
+Camel case `${step:key}` `${stepName:responseKey}`.
 
 ## Workflow Dependencies
 
