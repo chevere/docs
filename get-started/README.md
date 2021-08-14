@@ -24,8 +24,6 @@ Extensible applications engage more users and provide a solid foundation for you
 
 Chevere has been designed from scratch for PHP 8, and it uses all the goodies added to it. On top of that it follows own [quality](../architecture/standard/quality.md) standards.
 
-![Code size](https://img.shields.io/github/languages/code-size/chevere/chevere?style=flat-square) [![Build](https://img.shields.io/github/workflow/status/chevere/chevere/CI/master?style=flat-square)](https://github.com/chevere/chevere/actions) [![Quality Gate Status](https://img.shields.io/sonar/alert_status/chevere_chevere?server=https%3A%2F%2Fsonarcloud.io&style=flat-square)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Coverage](https://img.shields.io/sonar/coverage/chevere_chevere?server=https%3A%2F%2Fsonarcloud.io&style=flat-square)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![CodeFactor code quality](https://img.shields.io/codefactor/grade/github/chevere/chevere?label=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/chevere/chevere) [![Codacy code quality](https://img.shields.io/codacy/grade/b956754f8ff04aaa9ca24a6e4cc21661?label=codacy&style=flat-square)](https://www.codacy.com/gh/chevere/chevere/dashboard) [![Maintainability](https://img.shields.io/codeclimate/maintainability/chevere/chevere?style=flat-square)](https://codeclimate.com/github/chevere/chevere) [![Tech Debt](https://img.shields.io/codeclimate/tech-debt/chevere/chevere?style=flat-square)](https://codeclimate.com/github/chevere/chevere) ![AGPL-3.0-only](https://img.shields.io/github/license/chevere/chevere?style=flat-square)
-
 ## Origin
 
 Chevere begun as the supporting framework for Chevereto V4. Development started in May-2018, carrying a complete modernization of the previous Chevereto's supporting framework ([G\ Library](https://g.chevereto.com/)).
@@ -33,3 +31,8 @@ Chevere begun as the supporting framework for Chevereto V4. Development started 
 While Chevereto drove initial development, Chevere is a different organization with its own goals.
 
 > Both [Chevere](https://chevere.org) and [Chevereto](https://chevereto.com) are made by the same developer, [Rodolfo Berrios](https://rodolfoberrios.com) (Hello!).
+
+## Acknowledgements
+
+* [DocSearch](https://docsearch.algolia.com/) by Algolia for providing the search functionality in this documentation.
+* [JetBrains](https://www.jetbrains.com/opensource/) for providing software licensing for all their suite.
