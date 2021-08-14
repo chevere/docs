@@ -2,19 +2,17 @@
 
 The Translator component is in charge of providing generation and loading for translations.
 
-This implementation **doesn't support** domain-related gettext functions for translatable strings neither follows gettext directory structure.
-
 ## How it Works
 
 Translator is built on top of [gettext](https://www.gnu.org/software/gettext/) and it provides a set of [functions](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/functions.php) that are used to designate translatable strings, which will define a base language translation file which can be used as the base translation for other languages.
 
-::: tip
-Using services like [OneSky](https://www.oneskyapp.com/) you can allow others to easily collaborate with translations.
+::: danger
+This implementation **doesn't support** domain-related gettext functions for translatable strings neither follows gettext directory structure.
 :::
 
 ## Translatable Functions
 
-All translatable [functions](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/functions.php) are provided at the global namespace.
+All translatable [functions](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/functions.php) are provided at the `Chevere\Components\Translator` namespace.
 
 ## Singular
 

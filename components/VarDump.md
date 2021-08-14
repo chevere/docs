@@ -1,14 +1,14 @@
 # VarDump
 
-The [VarDump](../reference/Chevere/Components/VarDump/VarDump.md) component provides an alternative to [var_dump](https://www.php.net/var-dump), but with a richer feature set including formatting for the generation of different type of documents.
+The [VarDump](../reference/Chevere/Components/VarDump/VarDump.md) component provides an alternative to [var_dump](https://www.php.net/var-dump), but with a richer feature set including formatting for the generation of a myriad of dump documents.
 
 ::: tip Learn by Example
-Check the VarDump [examples](https://github.com/chevere/examples/tree/main/02.VarDump) to learn directly playing with code.
+Check the VarDump [examples](https://github.com/chevere/examples/tree/main/02.VarDump) to learn playing with code.
 :::
 
 ## Formatters & Helpers
 
-The following helper functions can be used to save some boilerplate when needing to initialize a VarDump instance.
+The following helper functions can be used to save boilerplate when needing to initialize a VarDump instance.
 
 * Namespace `Chevere\Components\VarDump`
   * `getVarDumpPlain` to create a plain var dump
@@ -58,9 +58,7 @@ $varDump->process(
 
 ## Shifting traces
 
-The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous back traces should be removed.
-
-> Check [source code](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php) for functions `xd` and `xdd` for a better understanding
+The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous backtraces should be removed.
 
 ## Replacing `var_dump`
 
@@ -68,11 +66,11 @@ Following functions can be used as drop-in replacement for [var_dump](https://ww
 
 ### xd
 
-Function [xd](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php#L75) is a drop-in replacement for `var_dump` and it prints information about one of more variables to the output stream.
+Function [xd](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php#L75) is a drop-in replacement for `var_dump`. It prints information about one or more variables to the output stream.
 
 ### xdd
 
-Function [xdd](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php#L101) does the same as `xd`, but it `exit`.
+Function [xdd](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php#L101) does same as `xd`, but with `exit` which halts further execution.
 
 ### Customizing output stream
 

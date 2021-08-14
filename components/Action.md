@@ -4,7 +4,7 @@ The [Action](../reference/Chevere/Components/Action/Action.md) component is in c
 
 ## Defining an Action
 
-Action is the basic building block for incoming actions to the application. Code below defines class `SomeAction` by extending `Action`.
+Action is the core building block for driving actions to the application. Code below defines class `SomeAction` by extending `Action`.
 
 ```php
 use Chevere\Components\Action\Action;
@@ -28,7 +28,7 @@ public function getDescription(): string
 
 ### Parameters
 
-The `getParameters` method is used to define the action [Parameters](../reference/Chevere/Components/Parameter/Parameters.md), which later will be used to provide matching [run](#run) method arguments.
+The `getParameters` method is used to define the action [Parameters](../reference/Chevere/Components/Parameter/Parameters.md), which will be used to provide matching [run](#run) method arguments.
 
 ```php
 use Chevere\Interfaces\Parameter\ParametersInterface;
@@ -46,7 +46,7 @@ public function getParameters(): ParametersInterface
 
 ### Response Data
 
-The `getResponseParameters` method is used to define the response data parameters, which later will be checked against the response data provided in the [run](#run) method.
+The `getResponseParameters` method is used to define the response data parameters, which will be checked against the response data provided in the [run](#run) method.
 
 ```php
 use Chevere\Interfaces\Parameter\ParametersInterface;

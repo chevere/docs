@@ -12,7 +12,7 @@ $classMap = new ClassMap();
 
 ## Adding class mappings
 
-The `withPut` method is used to add a mapping for a  fully-qualified class name to a given key.
+The `withPut` method is used to add a mapping for a  full-qualified class name to a given key.
 
 ```php
 $classMap = $classMap->withPut(

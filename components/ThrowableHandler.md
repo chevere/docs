@@ -3,7 +3,7 @@
 The [ThrowableHandler](../reference/Chevere/Components/ThrowableHandler/ThrowableHandler.md) component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text.
 
 ::: tip Learn by Example
-Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/main/01.ThrowableHandler) to learn directly playing with code.
+Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/main/01.ThrowableHandler) to learn playing with code.
 :::
 
 ## Initialization

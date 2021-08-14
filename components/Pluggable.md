@@ -8,7 +8,7 @@ A class defining pluggable logic is known as _pluggable_.
 
 ## Types
 
-Two plug types are defined, both implementing [PlugTypeInterface](../reference/Chevere/Interfaces/Pluggable/PlugTypeInterface.md).
+Two plug types are defined both implementing [PlugTypeInterface](../reference/Chevere/Interfaces/Pluggable/PlugTypeInterface.md).
 
 ### EventPlugType
 
@@ -28,7 +28,7 @@ Use [PluggableEventsTrait](../reference/Chevere/Components/Pluggable/Plug/Event/
 
 ### How Pluggable Events works
 
-In the code below, calls to `event` method allows to emit an event once `set` method logic was executed.
+In the code below, calls to `event` method allows to emit an event when `set` method logic gets executed.
 
 ```php
 use Chevere\Interfaces\Pluggable\PluggableAnchorsInterface;
@@ -89,7 +89,7 @@ Use [PluggableHooksTrait](../reference/Chevere/Components/Pluggable/Plug/Hook/Tr
 
 ### How Pluggable Hooks works
 
-In the code below, calls to `hook` method allows to extend the behavior of the base `set` method.
+In the code below, calling `hook` method allows to extend the behavior of the base `set` method.
 
 ```php
 use Chevere\Interfaces\Pluggable\PluggableAnchorsInterface;
@@ -129,7 +129,7 @@ final class DoesSomething implements PluggableHooksInterface
 }
 ```
 
-In the example above, `App\DoesSomething` implements pluggable hooks with two anchors which alter `$value` argument, and therefore, the value of the `$string` property.
+In the example above, `App\DoesSomething` implements pluggable hooks with two anchors which alter `$value` argument and the value of the `$string` property.
 
 ### Defining hook anchors
 
@@ -141,7 +141,7 @@ Pluggable hooks use the `hook` method to define a hookable code entry which will
 $this->hook(anchor: 'anchor-name', argument: $argument);
 ```
 
-The argument `$argument` is passed by reference and it can be of any type. It is intended to be susceptible to be modified by potentially unknown logic instructions.
+The argument `$argument` is passed by reference and it can be of any type. It is intended to be susceptible to be modified by unknown logic instructions.
 
 ::: tip Type-checking
 ✅ Chevere checks that the argument passed by reference doesn't alter its type after running any hook instruction.
@@ -156,7 +156,7 @@ Plugin is a class defining extra functionality, it is what a pluggable will _plu
 An Event implements [EventInterface](../reference/Chevere/Interfaces/Pluggable/Plug/Event/EventInterface.md) and is a type of plug that fires when something took place.
 
 ::: tip Learn by Example
-Check the Event [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#03eventphp) to learn directly playing with code.
+Check the Event [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#03eventphp) to learn playing with code.
 :::
 
 ### Hook Plug
@@ -164,5 +164,5 @@ Check the Event [example](https://github.com/chevere/examples/tree/main/00.Hello
 A hook implements [HookInterface](../reference/Chevere/Interfaces/Pluggable/Plug/Hook/HookInterface.md) and is a type of plug that alters a variable.
 
 ::: tip Learn by Example
-Check the Hook [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#02hookphp) to learn directly playing with code.
+Check the Hook [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#02hookphp) to learn playing with code.
 :::

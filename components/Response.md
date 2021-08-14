@@ -36,7 +36,7 @@ $response = $response->withStatus(code: 0);
 | Code          | Description |
 | ------------- | ----------- |
 | `0` (default) | Success     |
-| Nonzero value | Failure     |
+| Non-zero value | Failure     |
 
 ## UUID
 

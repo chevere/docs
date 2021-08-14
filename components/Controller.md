@@ -1,20 +1,20 @@
 # Controller
 
-The Controller component is a special type of action in charge of handling external-driven instructions. It is exactly the same as [Action](Action.md), but it only accepts string parameters.
+The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](Action.md), but it takes string parameters.
 
 ::: tip Learn by Example
-Check the Controller [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#00controllerphp) to learn directly playing with code.
+Check the Controller [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#00controllerphp) to learn playing with code.
 :::
 
 ## String Parameters?
 
-Using string parameters enable Controllers to be _wired_ to other devices such as:
+Controller takes string parameters as it is intended to use them   _wired_ to:
 
 * CLI applications
-* HTTP routing
+* Web Servers
 * Application runners
 
-Using strings deliberately throws on the Controller the responsibility of [type casting](#type-casting).
+If you don't need to wire to these devices you should be using [Action](Action.md), which doesn't restrict the input parameter type.
 
 ## Creating a Controller
 
@@ -66,7 +66,7 @@ public function run(ArgumentsInterface $arguments): ResponseInterface
 
 ## Creating a ControllerWorkflow
 
-A Controller with built-in [Workflow](Workflow.md) integration allows to easily create controllers following the workflow pattern.
+A Controller with built-in [Workflow](Workflow.md) integration allows to create controllers following the workflow pattern.
 
 Code below defines class `SomeWorkflowController` by extending the base [ControllerWorkflow](../reference/Chevere/Components/Controller/ControllerWorkflow.md).
 

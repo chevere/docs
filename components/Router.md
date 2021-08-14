@@ -1,11 +1,13 @@
 # Router
 
+⚠️ OUTDATED DOCS
+
 The [Router](../reference/Chevere/Components/Router/Router.md) component is in charge of collecting [Routables](../reference/Chevere/Components/Router/Routables.md).
 
-The router component is built on top of [FastRoute](https://github.com/nikic/FastRoute), but with added context for the Chevere realm which also means more strictness.
+The router component is built on top of [FastRoute](https://github.com/nikic/FastRoute) with added context for the Chevere realm.
 
 ::: tip Learn by Example
-Check the Router [examples](https://github.com/chevere/examples/tree/main/03.Http#00router-makephp) to learn directly playing with code.
+Check the Router [examples](https://github.com/chevere/examples/tree/main/03.Http#00router-makephp) to learn playing with code.
 :::
 
 ## Routing
@@ -26,7 +28,7 @@ Tree below shows how a routing directory looks like.
 
 File-system folder paths will reflect HTTP route paths.
 
-Table below shows how system paths are interpreted as HTTP route paths for the [tree](#routing-filesystem-structure) above.
+Table below shows how system paths are interpreted as HTTP route paths for the [tree](#routing-filesystem-structure).
 
 | Path                        | HTTP route     | HTTP method |
 | --------------------------- | -------------- | ----------- |

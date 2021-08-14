@@ -28,7 +28,7 @@ Available keywords:
 - `Type::NULL`
 
 ::: tip
-Fully-qualified **class names** and **interface names** can be also passed as type keyword.
+Full-qualified **class names** and **interface names** can be passed as type keyword.
 :::
 
 ## Primitive & Type-hinting
@@ -41,7 +41,7 @@ The return values for methods `primitive` and `typeHinting` is explained in the 
 | SomeClass     | `className`     | `SomeClass`     |
 | SomeInterface | `interfaceName` | `SomeInterface` |
 
-For [keywords](#keywords), the return value of `primitive` and `typeHinting` is same as the actual keyword.
+For [keywords](#keywords), the return value of `primitive` and `typeHinting` is same as the keyword.
 
 ## Validate
 

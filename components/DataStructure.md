@@ -2,10 +2,6 @@
 
 The `Chevere\Components\DataStructure` namespace provides components for providing typed immutable-like data structures, is built on top of [php-ds](https://github.com/php-ds/ext-ds).
 
-::: tip
-Data structures are provisioned as stand-alone classes and/or traits, which adds data structure functionality directly.
-:::
-
 ## Map
 
 The [Map](../reference/Chevere/Components/DataStructure/Map.md) component is in charge of extending [DS\Map](https://www.php.net/ds-map) functionality to provide **the** array replacement for Chevere.
@@ -60,7 +56,5 @@ $getBar = $map->get(key: 'bar'); // $bar
 The [MappedInterface](../reference/Chevere/Interfaces/DataStructure/MappedInterface.md) describes the interface for a component supporting mapping, like [Map](#map) which doesn't specify any typing.
 
 ::: tip
-Use [MapTrait](../reference/Chevere/Components/DataStructure/Traits/MapTrait.md) quickly implement the `MappedInterface`.
+Use [MapTrait](../reference/Chevere/Components/DataStructure/Traits/MapTrait.md) to implement the `MappedInterface`.
 :::
-
-With this, expose your own setters and getters accordingly to your typing and internally simply rely in the functionality provided by the MapTrait.

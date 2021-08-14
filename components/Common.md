@@ -1,13 +1,13 @@
 # Common
 
-The Common component provides general purpose tooling.
+The Common component provides general-purpose tooling.
 
 ## Description
 
 [DescriptionInterface](../reference/Chevere/Interfaces/Common/DescriptionInterface.md) describes the interface for a class which describe itself.
 
 ::: tip
-Use [DescriptionTrait](https://github.com/Chevereto/chevere/blob/main/src/Chevere/Components/Common/Traits/DescriptionTrait.php) to quickly implement the `DescriptionInterface`.
+Use [DescriptionTrait](https://github.com/Chevereto/chevere/blob/main/src/Chevere/Components/Common/Traits/DescriptionTrait.php) to implement the `DescriptionInterface`.
 :::
 
 ```php

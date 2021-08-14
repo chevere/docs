@@ -4,7 +4,7 @@ The [Regex](../reference/Chevere/Components/Regex/Regex.md) component is in char
 
 ## Creating Regex
 
-Create a new Regex by passing the pattern.
+Create a Regex by passing the pattern.
 
 ```php
 use Chevere\Components\Regex\Regex;

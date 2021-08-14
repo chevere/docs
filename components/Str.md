@@ -39,11 +39,11 @@ use new Chevere\Components\Str\StrAssert;
     // Throws StrCtypeSpaceException
 ```
 
-In the code above, executing `notEmpty` won't raise any exception as `$string` is not empty, but executing `notCtypeSpace` will raise an exception as `$string` contains c-type spaces.
+In the code above, executing `notEmpty` won't raise any exception as `$string` is not an empty string, but executing `notCtypeSpace` will raise an exception as `$string` contains c-type spaces.
 
 ## Boolean checking
 
-Bool string refers to the process of validate an argument of type `string` against methods that returns `bool`.
+Bool string refers to the process of validating an argument of type `string` against methods that returns `bool`.
 
 ### StrBool
 

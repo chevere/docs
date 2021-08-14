@@ -1,6 +1,6 @@
 # Cache
 
-The [Cache](../reference/Chevere/Components/Cache/Cache.md) component is in charge of providing a filesystem-based persistent application cache layer. It is intended to be used to cache application states accelerated on top of [OPcache](https://www.php.net/opcache).
+The [Cache](../reference/Chevere/Components/Cache/Cache.md) component is in charge of providing a filesystem-based application cache layer. It is intended to be used to cache application states accelerated on top of [OPcache](https://www.php.net/opcache).
 
 ::: tip Learn by Example
 Check the Router [make](https://github.com/chevere/examples/tree/main/03.Http#00router-makephp) and [resolve](https://github.com/chevere/examples/tree/main/03.Http#01router-resolvephp) for a working use-case of the Cache component.

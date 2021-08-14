@@ -1,6 +1,6 @@
 # Workflow
 
-The [Workflow](../reference/Chevere/Components/Workflow/Workflow.md) component provides the ability to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It allows to define a series of individual interconnected steps with goal to describe and execute a sequential procedure.
+The [Workflow](../reference/Chevere/Components/Workflow/Workflow.md) component provides the ability to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It allows to define a series of individual interconnected steps with goal to describe and execute a sequence of steps.
 
 ## Step
 
@@ -55,12 +55,12 @@ For the code above, `${payload}` is declared as a [reference](#references), the 
 
 ## References
 
-Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any previous existing Step.
+Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any existing Step.
 
 | Expression                | Meaning                                            |
 | ------------------------- | -------------------------------------------------- |
 | `${workflow_variable}`    | A Workflow variable (need to be injected).         |
-| `${stepName:responseKey}` | The value at key for the previous `step` response. |
+| `${stepName:responseKey}` | The value at key `responseKey` for the `stepName` step response. |
 
 ## Adding Steps
 
@@ -90,20 +90,20 @@ $workflow = $workflow
 
 The `withAddedBefore` and `withAddedAfter` methods allows to add steps before/after another step.
 
-For example, consider this existing workflow:
+For example, consider this workflow:
 
 * Fetch
 * Validate
 * Insert
 
-And the requirement is to extend to something like this:
+The requirement is to extend to this, with sorting:
 
-* +Logging
+* (add) Logging 
 * Fetch
 * Validate
-* +ValidateMore
+* (add) ValidateMore
 * Insert
-* +Caching
+* (add) Caching
 
 ```php
 use Chevere\Components\Workflow\Step;
@@ -134,7 +134,9 @@ $workflow = $workflow
 
 ## Workflow variable naming
 
-Kindly follow the recommended naming scheme for workflow variables. This will make easier to share and understand workflows for all layers of users of this framework.
+Follow the recommended naming scheme for Workflow variables.
+
+This will make friendly to share and understand workflows for all layers of users of this framework.
 
 ### Injected variables
 
@@ -148,7 +150,7 @@ Camel case `step` `stepName`.
 
 Camel case `${step:key}` `${stepName:responseKey}`.
 
-## Workflow Dependencies
+## Workflow dependencies
 
 Workflow is aware of actions implementing the [DependentInterface](../reference/Chevere/Interfaces/Dependent/DependentInterface.md). All Action dependencies will be collected by the Workflow.
 
