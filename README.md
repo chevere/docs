@@ -11,7 +11,7 @@ features:
 - title: Extensible
   details: Do more building pluggable software.
 - title: Modern & High-quality
-  details: All-new PHP ocho codebase with strict standards.
+  details: All-new PHP 8 codebase with strict standards.
 footer: Made by Rodolfo Berrios
 ---
 
