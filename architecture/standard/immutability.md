@@ -1,18 +1,18 @@
 # Immutability Standard
 
-Immutability in Chevere is the concept of that an object once constructed cannot be modified throughout the lifetime of the object. In other words, an immutable object can't change.
+Immutability in Chevere is the concept of that an object once created cannot be modified throughout the lifetime of the object. An immutable object can't change.
 
-Although [PHP doesn't support immutability](https://wiki.php.net/rfc/immutability), Chevere use [cloning](#cloning) and [DeepCopy](#deepcopy) to provide pseudo-immutability, which for our use case  achieves the same result as the real thing.
+Although [PHP doesn't support immutability](https://wiki.php.net/rfc/immutability), Chevere uses cloning and DeepCopy to provide pseudo-immutability, which for our use case  achieves the same result.
 
 ## PHP objects
 
-In PHP objects are passed by reference. For the code below, `$mutable` is just a reference for some id, known as the object id. The variable `$mutable` is just a reference.
+In PHP, objects are passed by reference. For the code below, `$mutable` is a reference for the object id `#12345`. The variable `$mutable` is just a reference.
 
 ```php
 $mutable = new stdClass; // id: #12345
 ```
 
-In code below, `$mutable` mutates (changes) from its original state but the reference (object id) is exactly the same as the previous state.
+In code below, `$mutable` changes from its original state but the reference (object id) is the same as the previous state `#12345`.
 
 ```php
 $mutable->prop = 'value'; // id: #12345
@@ -20,7 +20,7 @@ $mutable->prop = 'value'; // id: #12345
 
 ### Mutables aren't safe
 
-The problem with lack of immutability is that the state of `$mutable` is unknown for other code interacting with it so is not safe to rely in `$mutable`.
+The problem with lack of immutability is that the state of `$mutable` is unknown for other code logic interacting with it.  Is not safe to rely in `$mutable`.
 
 In the code below, `$mutable` is passed to `Service` as a dependency.
 
@@ -36,7 +36,7 @@ As `$mutable` can change, `Service` must take the responsibility of observing `$
 The immutability concept is all about dealing with object states, which
 is the characteristic values of a given object at a given time. In immutability, states are each different version of an object.
 
-Think about states as a object snapshots at different times rather than one single object.
+Think about states as an object snapshots at different times rather than one object.
 
 ```php
 $immutable = new SomeImmutable; // id: #1313
@@ -44,13 +44,15 @@ $immutableCopy = $immutable
     ->withProp('altered-value'); // id: #1314
 ```
 
-For the code above, `$immutableCopy` is just an altered copy (another state) of `$immutable`. Objects have different ids (thread safe).
+For the code above, `$immutableCopy` is an altered copy (another state) of `$immutable`. Objects have different ids, they are thread-safe.
 
 ## Conventions
 
 Immutable in Chevere refers to objects which altering methods **returns an altered clone/copy** of the original object.
 
 ### Method naming
+
+#### withX
 
 The `with` prefix **must** be used in methods that provide another object state.
 
@@ -60,22 +62,14 @@ In the example below, the `withString` method sets the value of `$this->string`.
 public function withString(string $string): MyInterface;
 ```
 
+##### withoutX
+
 The `without` prefix **must** be used in methods that remove something from the object.
 
 In the example below, the `withoutString` method unset `$this->string`.
 
 ```php
 public function withoutString(): MyInterface
-```
-
-The `withAdded` and `withoutAdded` prefixes **must** be used in methods working with multiple added values.
-
-In the example below the `withAddedString` method will add `$string` at the given position while `withoutAddedString` will remove it.
-
-```php
-public function withAddedString(int $pos, string $string): MyInterface;
-
-public function withoutAddedString(int $pos): MyInterface;
 ```
 
 ## Implementing

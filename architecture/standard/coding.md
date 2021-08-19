@@ -14,7 +14,7 @@ Code style is provided using [EasyCodingStandard](https://github.com/symplify/ea
 
 ## Implement in your project
 
-To implement the code style is simple as get the `ecs-chevere.php` file then create your own `ecs.php` file inheriting the base defined by Chevere.
+To implement the code style is get the `ecs-chevere.php` file and create your own `ecs.php` file inheriting the base defined by Chevere.
 
 ### Installing assets
 

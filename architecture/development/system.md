@@ -1,6 +1,6 @@
 # System
 
-This outlines the relevant system setup and packaging used to create Chevere.
+This outlines the system setup and packaging used to create Chevere.
 
 ## Operating System
 
@@ -16,5 +16,5 @@ Chevere is [PHP](https://php.net/) software.
 Packages and PECL provides the same convenience, but as packages are made for debian-based systems you should prefer PECL if you don't have a compatible system.
 
 ::: warning Packages vs PECL
-Note that packages not only contain the software, it could also trigger other effects in the system.
+Packages not only contain the software, it could also trigger other effects in the system.
 :::

@@ -65,7 +65,7 @@ Wildcards are expressed as `{var}`  for folder-names as `{id}` in `/articles/{id
 
 Wildcards are used to define route parameters which will be automatically configured to reflect the [Controller](Action.md#controller) parameters defined for the given route.
 
-Note that controllers in the alleged route must define the same base wildcard parameters.
+Controllers in the alleged route must define the same base wildcard parameters.
 
 ## Generating Router
 

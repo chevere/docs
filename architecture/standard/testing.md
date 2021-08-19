@@ -1,19 +1,19 @@
 # Testing Standard
 
-[Software testing](https://en.wikipedia.org/wiki/Software_testing) is the activity of checking software quality under a test. It is carried to ensure that the software system is free of errors. It helps to detect bugs, errors, missing requirements, etc.
-
-Testing is all about make sure that the software behave as expected. That the software will always _responds_ in a predictable way every time.
-
 > Chevere tests are located at [Chevere\Tests](https://github.com/chevere/chevere/tree/main/Tests) namespace
+
+[Software testing](https://en.wikipedia.org/wiki/Software_testing) is the activity of checking software quality under a test. It is carried to ensure that the software system is free of errors. It helps to detect bugs, errors and missing requirements.
+
+Testing is about make sure that the software behave as expected and that the software will _responds_ in a predictable way every time.
 
 ## Testing Framework
 
-Tests should be always compatible with the latest [PHPUnit](https://phpunit.de/) production release. Code coverage requires to install [pcov](https://github.com/krakjoe/pcov).
+* Tests should be compatible with the latest [PHPUnit](https://phpunit.de/) production release.\
+* Code coverage requires to install [pcov](https://github.com/krakjoe/pcov).
 
 ## Requirements
 
-* [Integration testing](https://en.wikipedia.org/wiki/Integration_testing) is **required**
-* All components **must** be covered
+* All components **must** be tested and covered
 
 ## Conventions
 
@@ -22,7 +22,8 @@ Tests should be always compatible with the latest [PHPUnit](https://phpunit.de/)
 
 ## Configuration
 
-Configuration for PHPUnit can be found at `phpunit.xml`. The configuration at `phpunit-report.xml` does testing with code coverage.
+* Configuration for PHPUnit can be found at [phpunit.xml](https://github.com/chevere/chevere/blob/main/phpunit.xml).
+* Use configuration at [phpunit-report.xml](https://github.com/chevere/chevere/blob/main/phpunit-report.xml) for testing with code coverage.
 
 ## Running tests
 

@@ -2,7 +2,7 @@
 
 ## Code
 
-You can help with further development by providing your time and care. Chevere is open for any kind of [issue](https://github.com/chevere/chevere/issues) and [pull request](https://github.com/chevere/chevere/pulls), bug reporting, testing, translating, documenting, design, etc.
+You can help with development by providing your time and care. Chevere is open for any [issue](https://github.com/chevere/chevere/issues) and [pull request](https://github.com/chevere/chevere/pulls), bug reporting, testing, translating, documenting, design, etc.
 
 ## Project
 

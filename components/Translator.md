@@ -61,7 +61,7 @@ __(
 
 ### Plural formatting
 
-Formatting based on [sprintf](https://php.net/sprintf) is supported with `__nf` function. Note that `count` determines the singular/plural form to use and `$arg` is the actual argument passed to `sprintf`.
+Formatting based on [sprintf](https://php.net/sprintf) is supported with `__nf` function. Passing `count` determines the singular/plural form to use and `$arg` is the actual argument passed to `sprintf`.
 
 ```php
 __nf(

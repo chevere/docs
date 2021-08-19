@@ -23,7 +23,7 @@ Each different error event **should** have its own unique exception.
 
 ### Descriptive
 
-Use names that explicitly explain the context of the exception. For example, `SomeException` is less descriptive than `RoutingBadRouteException`.
+Use names that explain the context of the exception. For example, `SomeException` is less descriptive than `RoutingBadRouteException`.
 
 ## Throwing Exceptions
 
@@ -33,7 +33,7 @@ A [Message](../../components/Message.md) **should** explain the error event when
 
 Exception messages **must**:
 
-* Clearly describe the error
+* Describe the error
 * Indicate the conflict element
 
 Exception messages **should not**:
@@ -42,4 +42,4 @@ Exception messages **should not**:
 
 ### Previous Exception
 
-Passing the previous exception **should** be preferred and wrapping a previous exception **should** be avoided.
+Passing previous exception **should** be preferred and wrapping **should** be avoided.

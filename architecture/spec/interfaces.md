@@ -56,13 +56,13 @@ public function doTheEvolution(): void;
 
 #### Immutables
 
+Refer to [Immutability](./immutability.md).
+
 Immutables refers to methods that **returns an altered copy** of the original object.
 
 The `with` prefix is associated with immutables. For example, `withSomething`, `withoutSomething`, `withAddedStuff`, `withRemovedStuff`, etc.
 
 > Immutables = with*
-
-More about immutables at [Immutability](./immutability.md).
 
 #### Conditionals
 
