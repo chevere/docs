@@ -28,27 +28,27 @@ This is a list of the extensions that the main developer recommends for using Vi
 * [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 * [PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver)
 * [PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit)
-* [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
-
+* [Run on Save](https://marketplace.visualstudio.com/items?itemName=pucelle.run-on-save)
 
 ## Coding Standards Formatting
 
-The [coding standard](../standard/coding.md) is automatic implemented on save by using [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave) extension.
+The [coding standard](../standard/coding.md) is automatic implemented on save by using **Run on Save** extension.
 
-::: warning
+::: tip Add your filters
 Make sure to configure your filters in the [ecs.php](../standard/coding.md#ecsphp) file.
 :::
 
 ```json
 {
-    "emeraldwalk.runonsave": {
-        "commands": [
-            {
-                "match": "\\.php$",
-                "cmd": "vendor/bin/ecs check ${file} --fix"
-            }
-        ]
-    }
+    "runOnSave.commands": [
+        {
+            "match": "\\.php$",
+            "command": "php vendor/bin/ecs check ${file} --fix",
+            "runIn": "backend",
+            "runningStatusMessage": "ECS ${fileBasename}",
+            "finishStatusMessage": "${fileBasename} OK"
+        },
+    ]
 }
 ```
 
