@@ -26,23 +26,6 @@ Install [chevere/code-style](https://github.com/chevere/code-style) remote repos
 git remote add code-style https://github.com/chevere/code-style.git
 ```
 
-### `.ecs/ecs.php`
-
-* Create your `ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file at `.ecs/` by importing the `ecs-chevere.php` file.
-
-```php
-<?php // ecs.php
-
-declare(strict_types=1);
-
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-
-return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import(__DIR__ . '/ecs-chevere.php');
-    // extra config here
-};
-```
-
 ### Retrieving assets
 
 Fetch `code-style` to download/update the base styling.
@@ -57,15 +40,26 @@ Merge `code-style` changes into your working branch (for example, `main`).
 git merge code-style/main --allow-unrelated-histories
 ```
 
-The `chevere-ecs.php` file will be available in your project root, repeat fetch & merge to keep it updated.
+### `.ecs/ecs.php`
+
+* Create your `.ecs/ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file by importing the `ecs-chevere.php` file.
+
+```php
+<?php // ecs.php
+
+declare(strict_types=1);
+
+use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+
+return static function (ContainerConfigurator $containerConfigurator): void {
+    $containerConfigurator->import(__DIR__ . '/ecs-chevere.php');
+    // extra config here
+};
+```
 
 ### Custom header comment
 
-Use a file named `.header` at `.ecs/` to define the header comment for your `.php` files.
-
-:::tip `.ecs/.header`
-Use the following contents as an example for your project.
-:::
+Use a plain text file at `.ecs/.header` to define the header comment for your coding standard.
 
 ```txt
 This file is part of projectName.
