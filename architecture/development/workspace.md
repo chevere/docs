@@ -43,7 +43,7 @@ Make sure to configure your filters in the [ecs.php](../standard/coding.md#ecsph
     "runOnSave.commands": [
         {
             "match": "\\.php$",
-            "command": "php vendor/bin/ecs check ${file} --fix",
+            "command": "php vendor/bin/ecs --config='.ecs/ecs.php' check ${file} --fix",
             "runIn": "backend",
             "runningStatusMessage": "ECS ${fileBasename}",
             "finishStatusMessage": "${fileBasename} OK"

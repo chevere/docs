@@ -10,29 +10,25 @@ The coding standard exists as good practice for keeping the syntax cohesive as p
 
 ## Code Style
 
-Code style is provided using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard), defined at the [ecs.php](https://github.com/chevere/chevere/blob/main/ecs.php) file, which extends [ecs-chevere.php](https://github.com/chevere/code-style/blob/main/ecs-chevere.php).
+Code style is provided using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard), defined at the [ecs.php](https://github.com/chevere/chevere/blob/main/.ecs/ecs.php) file, which extends [ecs-chevere.php](https://github.com/chevere/code-style/blob/main/.ecs/ecs-chevere.php).
 
-## Implement in your project
+## Implementing in your project
 
-To implement the code style is get the `ecs-chevere.php` file and create your own `ecs.php` file inheriting the base defined by Chevere.
-
-### Installing assets
-
-Install ECS with composer.
+Install EasyCodingStandard with composer.
 
 ```sh
 composer require symplify/easy-coding-standard --dev
 ```
 
-Install [chevere/code-style](https://github.com/chevere/code-style) remote repository as `code-style` in your project root using GIT.
+Install [chevere/code-style](https://github.com/chevere/code-style) remote repository as `code-style` in your project root. This will provide the `.ecs/` directory.
 
 ```sh
 git remote add code-style https://github.com/chevere/code-style.git
 ```
 
-### `ecs.php`
+### `.ecs/ecs.php`
 
-You will need to create an `ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file in your project root.
+* Create your `ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file at `.ecs/` by importing the `ecs-chevere.php` file.
 
 ```php
 <?php // ecs.php
@@ -49,7 +45,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
 ### Retrieving assets
 
-Fetch `code-style` to download the `ecs-chevere.php` file (or any of its changes).
+Fetch `code-style` to download/update the base styling.
 
 ```sh
 git fetch code-style
@@ -65,9 +61,9 @@ The `chevere-ecs.php` file will be available in your project root, repeat fetch 
 
 ### Custom header comment
 
-Use a file named `.header` in your project root to define the header comment for your `.php` files.
+Use a file named `.header` at `.ecs/` to define the header comment for your `.php` files.
 
-:::tip Example
+:::tip `.ecs/.header`
 Use the following contents as an example for your project.
 :::
 
