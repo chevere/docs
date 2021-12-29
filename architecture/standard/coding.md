@@ -42,18 +42,22 @@ git merge code-style/main --allow-unrelated-histories
 
 ### `.ecs/ecs.php`
 
-* Create your `.ecs/ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file by importing the `ecs-chevere.php` file.
+* Create your `.ecs/ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file by importing the `ecs-chevere.php` file:
 
 ```php
-<?php // ecs.php
+<?php
 
 declare(strict_types=1);
 
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symplify\EasyCodingStandard\ValueObject\Option;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->import(__DIR__ . '/ecs-chevere.php');
-    // extra config here
+    $parameters = $containerConfigurator->parameters();
+    $parameters->set(Option::SKIP, [
+        __DIR__ . '/vendor/*',
+    ]);
 };
 ```
 
@@ -69,6 +73,17 @@ This file is part of projectName.
 For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 ```
+
+### Format code style
+
+To format code style you need to run:
+
+```sh
+vendor/bin/ecs --config='.ecs/ecs.php' check file.php --fix
+```
+
+Check the workspace documentation to configure [automatic code formatting](../development/workspace.md#coding-standards-formatting).
+
 
 ## Typing
 

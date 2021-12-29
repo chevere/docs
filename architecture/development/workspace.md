@@ -32,9 +32,7 @@ This is a list of the extensions that the main developer recommends for using Vi
 
 ## Coding Standards Formatting
 
-The [coding standard](../standard/coding.md) is automatic implemented on save by using **Run on Save** extension.
-
-> Make sure to configure your filters in the [ecs.php](../standard/coding.md#ecsphp) file.
+The [coding standard](../standard/coding.md) can be automatic implemented on save by using **Run on Save** extension.
 
 `.vscode/settings.json`
 
