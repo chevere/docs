@@ -34,9 +34,9 @@ This is a list of the extensions that the main developer recommends for using Vi
 
 The [coding standard](../standard/coding.md) is automatic implemented on save by using **Run on Save** extension.
 
-::: tip Add your filters
-Make sure to configure your filters in the [ecs.php](../standard/coding.md#ecsphp) file.
-:::
+> Make sure to configure your filters in the [ecs.php](../standard/coding.md#ecsphp) file.
+
+`.vscode/settings.json`
 
 ```json
 {
