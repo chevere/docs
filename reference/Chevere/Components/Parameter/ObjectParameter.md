@@ -20,19 +20,43 @@ editLink: false
 ### __construct
 
 ::: warning Parameters
-- *className*: string
+- *description*: string
 :::
 
 ---
 
-### withDescription
+### getType
+
+::: tip Return
+[TypeInterface](../../Interfaces/Type/TypeInterface.md)
+:::
+
+---
+
+### className
+
+::: tip Return
+string
+:::
+
+---
+
+### withClassName
 
 ::: warning Parameters
-- *description*: string
+- *className*: string
 :::
 
 ::: tip Return
-static
+[ObjectParameterInterface](../../Interfaces/Parameter/ObjectParameterInterface.md)
+:::
+
+---
+
+### setUp
+
+::: tip Return
+void
 :::
 
 ---
@@ -100,7 +124,7 @@ bool
 ### attributes
 
 ::: tip Return
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+[Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 
 ---

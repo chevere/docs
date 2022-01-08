@@ -4,13 +4,13 @@ editLink: false
 
 # VarStorable
 
-`Chevere\Components\VarStorable\VarStorable`
+`Chevere\Components\VarSupport\VarStorable`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarStorable/VarStorable.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarSupport/VarStorable.php)
 
 ## Implements
 
-- [VarStorableInterface](../../Interfaces/VarStorable/VarStorableInterface.md)
+- [VarStorableInterface](../../Interfaces/VarSupport/VarStorableInterface.md)
 
 ## Methods
 

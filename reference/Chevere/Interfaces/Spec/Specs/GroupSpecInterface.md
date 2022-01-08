@@ -33,7 +33,7 @@ Describes the component in charge of defining the group spec.
 Return an instance with the specified `$routableSpec`.
 
 ::: warning Parameters
-- *routableSpec*: [RoutableSpecInterface](./RoutableSpecInterface.md)
+- *routableSpec*: [RouteSpecInterface](./RouteSpecInterface.md)
 :::
 
 ::: tip Return

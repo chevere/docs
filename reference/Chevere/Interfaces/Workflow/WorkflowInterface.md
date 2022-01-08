@@ -39,7 +39,23 @@ Type `string`
 ### __construct
 
 ::: warning Parameters
-- *...steps*: [StepInterface](./StepInterface.md)
+- *steps*: [StepsInterface](./StepsInterface.md)
+:::
+
+---
+
+### steps
+
+::: tip Return
+[StepsInterface](./StepsInterface.md)
+:::
+
+---
+
+### vars
+
+::: tip Return
+[Map](../../Components/DataStructure/Map.md)
 :::
 
 ---
@@ -71,7 +87,7 @@ Return an instance with the specified `$step` added before `$before`.
 
 ::: warning Parameters
 - *before*: string
-- *...step*: [StepInterface](./StepInterface.md)
+- *...steps*: [StepInterface](./StepInterface.md)
 :::
 
 ::: danger Throws
@@ -93,7 +109,7 @@ Return an instance with the specified `$step` added after `$after`.
 
 ::: warning Parameters
 - *after*: string
-- *...step*: [StepInterface](./StepInterface.md)
+- *...steps*: [StepInterface](./StepInterface.md)
 :::
 
 ::: danger Throws
@@ -109,62 +125,10 @@ an instance that contains the specified `$step` added after `$after`.
 
 ---
 
-### has
-
-::: warning Parameters
-- *step*: string
-:::
-
-::: tip Return
-bool
-:::
-
----
-
-### get
-
-::: warning Parameters
-- *step*: string
-:::
-
-::: tip Return
-[StepInterface](./StepInterface.md)
-:::
-
----
-
-### dependencies
-
-::: tip Return
-[DependenciesInterface](../Dependent/DependenciesInterface.md)
-:::
-
----
-
 ### parameters
 
 ::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
-:::
-
----
-
-### order
-
-::: tip Return
-array
-:::
-
----
-
-### hasVar
-
-::: warning Parameters
-- *var*: string
-:::
-
-::: tip Return
-bool
 :::
 
 ---
@@ -181,7 +145,7 @@ Provides access to the `$var` mapping for job variables.
 array
 :::
 
-Case `${foo}` (workflow parameters):
+Case `${foo}` (workflow variables):
 
 ```php
 return ['foo'];
@@ -205,14 +169,6 @@ Provides access to the expected return arguments for the given `$step`.
 
 ::: tip Return
 [ParametersInterface](../Parameter/ParametersInterface.md)
-:::
-
----
-
-### getGenerator
-
-::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---

@@ -30,14 +30,14 @@ Describes the component in charge of doing.
 
 ---
 
-### run
+### withRun
 
 ::: warning Parameters
 - *serviceContainer*: [MapInterface](../DataStructure/MapInterface.md)
 :::
 
 ::: tip Return
-[WorkflowRunInterface](./WorkflowRunInterface.md)
+static
 :::
 
 ---

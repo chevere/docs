@@ -19,10 +19,10 @@ editLink: false
 
 ---
 
-### withAddedRoutable
+### withAddedRoute
 
 ::: warning Parameters
-- *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
+- *route*: [RouteInterface](../../Interfaces/Router/Route/RouteInterface.md)
 - *group*: string
 :::
 

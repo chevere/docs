@@ -53,88 +53,8 @@ bool
 
 ### type
 
-Provides access to the type instance.
-
 ::: tip Return
 [TypeInterface](../Type/TypeInterface.md)
-:::
-
----
-
-### withDescription
-
-::: warning Parameters
-- *description*: string
-:::
-
-::: tip Return
-static
-:::
-
----
-
-### withAddedAttribute
-
-Return an instance with the specified `$attributes` added.
-
-::: warning Parameters
-- *...attributes*: string
-:::
-
-::: danger Throws
-- [OverflowException](../../Exceptions/Core/OverflowException.md) 
-:::
-
-::: tip Return
-static
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$attributes` added.
-
----
-
-### withoutAttribute
-
-Return an instance with the specified `$attributes` removed.
-
-::: warning Parameters
-- *...attributes*: string
-:::
-
-::: danger Throws
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
-:::
-
-::: tip Return
-static
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$attributes` removed.
-
----
-
-### hasAttribute
-
-Indicates whether the instance has the given `$attributes`.
-
-::: warning Parameters
-- *...attributes*: string
-:::
-
-::: tip Return
-bool
-:::
-
----
-
-### attributes
-
-Provides access to the attributes instance.
-
-::: tip Return
-[Ds\Set](https://www.php.net/manual/class.ds\set)
 :::
 
 ---
@@ -155,6 +75,50 @@ Defines the description.
 
 ::: tip Return
 string
+:::
+
+---
+
+### withAddedAttribute
+
+::: warning Parameters
+- *...attributes*: string
+:::
+
+::: tip Return
+static
+:::
+
+---
+
+### withoutAttribute
+
+::: warning Parameters
+- *...attributes*: string
+:::
+
+::: tip Return
+static
+:::
+
+---
+
+### hasAttribute
+
+::: warning Parameters
+- *...attributes*: string
+:::
+
+::: tip Return
+bool
+:::
+
+---
+
+### attributes
+
+::: tip Return
+[Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 
 ---

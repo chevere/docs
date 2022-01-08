@@ -33,7 +33,7 @@ Dispatches against the provided HTTP method verb and URI.
 
 ::: danger Throws
 - [RouteNotFoundException](../../Exceptions/Router/RouteNotFoundException.md) 
-- [MethodNotAllowedException](../../Exceptions/Http/MethodNotAllowedException.md) 
+- [HttpMethodNotAllowedException](../../Exceptions/Http/HttpMethodNotAllowedException.md) 
 - [LogicException](../../Exceptions/Core/LogicException.md) if dispatcher returns an unexpected code.
 :::
 

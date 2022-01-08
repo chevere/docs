@@ -18,7 +18,7 @@ editLink: false
 
 ::: warning Parameters
 - *writer*: [WriterInterface](../../Interfaces/Writer/WriterInterface.md)
-- *debugBacktrace*: array
+- *backtrace*: array
 - *formatter*: [VarDumpFormatterInterface](../../Interfaces/VarDump/VarDumpFormatterInterface.md)
 - *...vars*: 
 :::

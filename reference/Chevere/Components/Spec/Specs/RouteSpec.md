@@ -2,15 +2,15 @@
 editLink: false
 ---
 
-# RoutableSpec
+# RouteSpec
 
-`Chevere\Components\Spec\Specs\RoutableSpec`
+`Chevere\Components\Spec\Specs\RouteSpec`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Spec/Specs/RoutableSpec.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Spec/Specs/RouteSpec.php)
 
 ## Implements
 
-- [RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md)
+- [RouteSpecInterface](../../../Interfaces/Spec/Specs/RouteSpecInterface.md)
 - [ToArrayInterface](../../../Interfaces/Common/ToArrayInterface.md)
 - [SpecInterface](../../../Interfaces/Spec/SpecInterface.md)
 
@@ -20,7 +20,7 @@ editLink: false
 
 ::: warning Parameters
 - *specDir*: [DirInterface](../../../Interfaces/Filesystem/DirInterface.md)
-- *routable*: [RoutableInterface](../../../Interfaces/Router/RoutableInterface.md)
+- *route*: [RouteInterface](../../../Interfaces/Router/Route/RouteInterface.md)
 - *repository*: string
 :::
 

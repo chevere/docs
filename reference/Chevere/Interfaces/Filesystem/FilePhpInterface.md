@@ -42,7 +42,7 @@ Applies OPCache.
 
 ::: danger Throws
 - [FileNotExistsException](../../Exceptions/Filesystem/FileNotExistsException.md) 
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md) If OPCache is disabled.
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) If OPCache is not enabled.
 :::
 
 ::: tip Return
@@ -56,7 +56,7 @@ void
 Flushes OPCache.
 
 ::: danger Throws
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md) If OPCache is disabled.
+- [RuntimeException](../../Exceptions/Core/RuntimeException.md) If OPCache is not enabled.
 :::
 
 ::: tip Return

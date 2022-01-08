@@ -64,8 +64,7 @@ return [
 Return an instance with the specified controller argument.
 
 ::: warning Parameters
-- *name*: string
-- *value*: 
+- *...nameValue*: string
 :::
 
 ::: danger Throws

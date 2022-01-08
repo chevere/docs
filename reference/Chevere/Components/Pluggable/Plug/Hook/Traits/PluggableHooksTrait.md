@@ -26,7 +26,7 @@ static
 
 ::: warning Parameters
 - *anchor*: string
-- *argument*: 
+- *argument*: mixed
 :::
 
 ::: tip Return

@@ -104,10 +104,10 @@ Return the plugs queue typed for the given `$pluggable`.
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

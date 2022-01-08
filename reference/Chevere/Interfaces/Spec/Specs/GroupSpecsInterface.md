@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [MappedInterface](../../DataStructure/MappedInterface.md)
-- [GetGeneratorInterface](../../DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../../DataStructure/GetIteratorInterface.md)
 - [KeysInterface](../../DataStructure/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -70,10 +70,10 @@ Returns the group spec identified by its `$groupName`.
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

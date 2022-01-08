@@ -36,7 +36,15 @@ Type `string`
 ### __construct
 
 ::: warning Parameters
-- *...steps*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+- *steps*: [StepsInterface](../../Interfaces/Workflow/StepsInterface.md)
+:::
+
+---
+
+### steps
+
+::: tip Return
+[StepsInterface](../../Interfaces/Workflow/StepsInterface.md)
 :::
 
 ---
@@ -45,6 +53,14 @@ Type `string`
 
 ::: tip Return
 int
+:::
+
+---
+
+### vars
+
+::: tip Return
+[Map](../DataStructure/Map.md)
 :::
 
 ---
@@ -65,7 +81,7 @@ int
 
 ::: warning Parameters
 - *before*: string
-- *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+- *...steps*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 :::
 
 ::: tip Return
@@ -78,7 +94,7 @@ int
 
 ::: warning Parameters
 - *after*: string
-- *...step*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
+- *...steps*: [StepInterface](../../Interfaces/Workflow/StepInterface.md)
 :::
 
 ::: tip Return
@@ -87,67 +103,10 @@ int
 
 ---
 
-### has
-
-::: warning Parameters
-- *step*: string
-:::
-
-::: tip Return
-bool
-:::
-
----
-
-### get
-
-::: warning Parameters
-- *step*: string
-:::
-
-::: danger Throws
-- [TypeException](../../Exceptions/Core/TypeException.md) 
-- [OutOfBoundsException](../../Exceptions/Core/OutOfBoundsException.md) 
-:::
-
-::: tip Return
-[StepInterface](../../Interfaces/Workflow/StepInterface.md)
-:::
-
----
-
-### dependencies
-
-::: tip Return
-[DependenciesInterface](../../Interfaces/Dependent/DependenciesInterface.md)
-:::
-
----
-
 ### parameters
 
 ::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
-:::
-
----
-
-### order
-
-::: tip Return
-array
-:::
-
----
-
-### hasVar
-
-::: warning Parameters
-- *variable*: string
-:::
-
-::: tip Return
-bool
 :::
 
 ---
@@ -177,14 +136,6 @@ array
 
 ::: tip Return
 [ParametersInterface](../../Interfaces/Parameter/ParametersInterface.md)
-:::
-
----
-
-### getGenerator
-
-::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---

@@ -64,7 +64,7 @@ editLink: false
 
 ## Http
 
-- [MethodNotAllowedException](./Chevere/Exceptions/Http/MethodNotAllowedException.md)
+- [HttpMethodNotAllowedException](./Chevere/Exceptions/Http/HttpMethodNotAllowedException.md)
 
 ## Pluggable
 
@@ -100,6 +100,7 @@ editLink: false
 - [StrStartsWithCtypeDigitException](./Chevere/Exceptions/Str/StrStartsWithCtypeDigitException.md)
 - [StrStartsWithException](./Chevere/Exceptions/Str/StrStartsWithException.md)
 
-## VarStorable
+## VarSupport
 
-- [NotVarStorableException](./Chevere/Exceptions/VarStorable/NotVarStorableException.md)
+- [ObjectClonableException](./Chevere/Exceptions/VarSupport/ObjectClonableException.md)
+- [VarStorableException](./Chevere/Exceptions/VarSupport/VarStorableException.md)

@@ -13,7 +13,7 @@ editLink: false
 - [GroupSpecsInterface](../../../Interfaces/Spec/Specs/GroupSpecsInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 - [KeysInterface](../../../Interfaces/DataStructure/KeysInterface.md)
-- [GetGeneratorInterface](../../../Interfaces/DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../../../Interfaces/DataStructure/GetIteratorInterface.md)
 - [MappedInterface](../../../Interfaces/DataStructure/MappedInterface.md)
 
 ## Methods
@@ -87,10 +87,10 @@ int
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

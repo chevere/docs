@@ -2,15 +2,15 @@
 editLink: false
 ---
 
-# Basename
+# Filename
 
-`Chevere\Components\Filesystem\Basename`
+`Chevere\Components\Filesystem\Filename`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Filesystem/Basename.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Filesystem/Filename.php)
 
 ## Implements
 
-- [BasenameInterface](../../Interfaces/Filesystem/BasenameInterface.md)
+- [FilenameInterface](../../Interfaces/Filesystem/FilenameInterface.md)
 
 ## Constants
 

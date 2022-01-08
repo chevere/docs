@@ -17,7 +17,16 @@ editLink: false
 ### __construct
 
 ::: warning Parameters
-- *routePath*: [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md)
+- *name*: string
+- *path*: [RoutePathInterface](../../../Interfaces/Router/Route/RoutePathInterface.md)
+:::
+
+---
+
+### name
+
+::: tip Return
+string
 :::
 
 ---

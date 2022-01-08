@@ -43,8 +43,7 @@ array
 ### withArgument
 
 ::: warning Parameters
-- *name*: string
-- *value*: 
+- *...nameValue*: string
 :::
 
 ::: tip Return

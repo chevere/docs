@@ -20,15 +20,9 @@ Describes the component in charge of handling throwables.
 - *throwableRead*: [ThrowableReadInterface](./ThrowableReadInterface.md)
 :::
 
-::: danger Throws
-- [RuntimeException](../../Exceptions/Core/RuntimeException.md) 
-:::
-
 ---
 
 ### withIsDebug
-
-Return an instance with the specified `$debug` flag.
 
 ::: warning Parameters
 - *isDebug*: bool
@@ -38,14 +32,9 @@ Return an instance with the specified `$debug` flag.
 self
 :::
 
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$debug` flag.
-
 ---
 
 ### isDebug
-
-Indicates whether the instance has `debug=true`.
 
 ::: tip Return
 bool
@@ -55,8 +44,6 @@ bool
 
 ### dateTimeUtc
 
-Provides access to the date time UTC.
-
 ::: tip Return
 [DateTimeInterface](https://www.php.net/manual/class.datetimeinterface)
 :::
@@ -65,8 +52,6 @@ Provides access to the date time UTC.
 
 ### throwableRead
 
-Provides access to the `$throwableRead` instance.
-
 ::: tip Return
 [ThrowableReadInterface](./ThrowableReadInterface.md)
 :::
@@ -74,8 +59,6 @@ Provides access to the `$throwableRead` instance.
 ---
 
 ### id
-
-Provides access to the handler unique id.
 
 ::: tip Return
 string

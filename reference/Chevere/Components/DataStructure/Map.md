@@ -13,7 +13,7 @@ editLink: false
 - [MapInterface](../../Interfaces/DataStructure/MapInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 - [KeysInterface](../../Interfaces/DataStructure/KeysInterface.md)
-- [GetGeneratorInterface](../../Interfaces/DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../../Interfaces/DataStructure/GetIteratorInterface.md)
 - [MappedInterface](../../Interfaces/DataStructure/MappedInterface.md)
 
 ## Methods
@@ -34,10 +34,35 @@ void
 
 ---
 
+### keys
+
+::: tip Return
+array
+:::
+
+---
+
+### count
+
+::: tip Return
+int
+:::
+
+---
+
+### getIterator
+
+::: tip Return
+[Iterator](https://www.php.net/manual/class.iterator)
+:::
+
+---
+
 ### withPut
 
 ::: warning Parameters
-- *...namedValues*: mixed
+- *key*: string
+- *value*: mixed
 :::
 
 ::: tip Return
@@ -86,30 +111,6 @@ void
 
 ::: tip Return
 void
-:::
-
----
-
-### keys
-
-::: tip Return
-array
-:::
-
----
-
-### count
-
-::: tip Return
-int
-:::
-
----
-
-### getGenerator
-
-::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
 :::
 
 ---

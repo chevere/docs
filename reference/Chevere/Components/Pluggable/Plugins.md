@@ -21,7 +21,7 @@ Pluggable -> plugs.php interaction
 ### __construct
 
 ::: warning Parameters
-- *pluggablesToPlugs*: [ClassMapInterface](../../Interfaces/ClassMap/ClassMapInterface.md)
+- *classMap*: [ClassMapInterface](../../Interfaces/ClassMap/ClassMapInterface.md)
 :::
 
 ---

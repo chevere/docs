@@ -12,7 +12,7 @@ editLink: false
 
 - [MappedInterface](../../DataStructure/MappedInterface.md)
 - [ToArrayInterface](../../Common/ToArrayInterface.md)
-- [GetGeneratorInterface](../../DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../../DataStructure/GetIteratorInterface.md)
 - [KeysInterface](../../DataStructure/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -22,7 +22,7 @@ Describes the component in charge of collecting objects implementing `RouteWildc
 
 ## Methods
 
-### withAddedWildcard
+### withPut
 
 Return an instance with the specified `$wildcard`.
 
@@ -97,10 +97,10 @@ Provides access to the target RouteWildcardInterface instance in the given pos.
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

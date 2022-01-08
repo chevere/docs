@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# RoutableSpecInterface
+# RouteSpecInterface
 
-`Chevere\Interfaces\Spec\Specs\RoutableSpecInterface`
+`Chevere\Interfaces\Spec\Specs\RouteSpecInterface`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Spec/Specs/RoutableSpecInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Spec/Specs/RouteSpecInterface.php)
 
 ## Extends
 
@@ -15,7 +15,7 @@ editLink: false
 
 ## Description
 
-Describes the component in charge of defining a routable spec.
+Describes the component in charge of defining a route spec.
 
 ## Methods
 
@@ -23,7 +23,7 @@ Describes the component in charge of defining a routable spec.
 
 ::: warning Parameters
 - *specDir*: [DirInterface](../../Filesystem/DirInterface.md)
-- *routable*: [RoutableInterface](../../Router/RoutableInterface.md)
+- *route*: [RouteInterface](../../Router/Route/RouteInterface.md)
 - *repository*: string
 :::
 

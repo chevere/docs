@@ -14,10 +14,10 @@ Describes the component in charge of defining a plugs types list.
 
 ## Methods
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

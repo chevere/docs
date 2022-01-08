@@ -10,8 +10,8 @@ editLink: false
 
 ## Implements
 
-- [Throwable](https://www.php.net/manual/class.throwable)
 - [Stringable](https://www.php.net/manual/class.stringable)
+- [Throwable](https://www.php.net/manual/class.throwable)
 
 ## Extends
 

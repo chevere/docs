@@ -21,32 +21,30 @@ intended to be exposed closest to an application entry-point HTTP/CLI mapping.
 Key point of a controller is that it only takes string arguments and it
 provides an additional layer for context parameters.
 
-## Constants
-
-### PARAMETER_TYPE
-
-Type `string`
-
-```php
-'string'
-```
-
 ## Methods
 
-### withSetup
+### __construct
 
-Return an instance with setup (after plugins and dependency injection).
-
-::: tip Return
-static
+::: warning Parameters
+- *dispatch*: string
+- *relation*: string
 :::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains setup (after plugins and dependency injection).
 
 ---
 
-### __construct
+### relation
+
+::: tip Return
+string
+:::
+
+---
+
+### parameter
+
+::: tip Return
+[StringParameterInterface](../Parameter/StringParameterInterface.md)
+:::
 
 ---
 

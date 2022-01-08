@@ -2,16 +2,16 @@
 editLink: false
 ---
 
-# NotVarStorableException
+# HttpMethodNotAllowedException
 
-`Chevere\Exceptions\VarStorable\NotVarStorableException`
+`Chevere\Exceptions\Http\HttpMethodNotAllowedException`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/VarStorable/NotVarStorableException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Http/HttpMethodNotAllowedException.php)
 
 ## Implements
 
-- [Throwable](https://www.php.net/manual/class.throwable)
 - [Stringable](https://www.php.net/manual/class.stringable)
+- [Throwable](https://www.php.net/manual/class.throwable)
 
 ## Extends
 
@@ -19,7 +19,7 @@ editLink: false
 
 ## Description
 
-Exception thrown when a `$var` can't be stored.
+Exception thrown when a method is not allowed.
 
 ## Methods
 

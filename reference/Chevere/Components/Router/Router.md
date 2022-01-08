@@ -18,11 +18,11 @@ editLink: false
 
 ---
 
-### withAddedRoutable
+### withAddedRoute
 
 ::: warning Parameters
-- *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
 - *group*: string
+- *route*: [RouteInterface](../../Interfaces/Router/Route/RouteInterface.md)
 :::
 
 ::: tip Return
@@ -39,10 +39,10 @@ editLink: false
 
 ---
 
-### routables
+### routes
 
 ::: tip Return
-[RoutablesInterface](../../Interfaces/Router/RoutablesInterface.md)
+[RoutesInterface](../../Interfaces/Router/RoutesInterface.md)
 :::
 
 ---

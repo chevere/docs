@@ -48,7 +48,7 @@ Type `string`
 
 ::: warning Parameters
 - *key*: [CacheKeyInterface](../../Interfaces/Cache/CacheKeyInterface.md)
-- *var*: [VarStorableInterface](../../Interfaces/VarStorable/VarStorableInterface.md)
+- *var*: [VarStorableInterface](../../Interfaces/VarSupport/VarStorableInterface.md)
 :::
 
 ::: tip Return

@@ -49,7 +49,7 @@ array
 ### withAddedCallable
 
 ::: warning Parameters
-- *...namedCallable*: callable
+- *...callables*: callable
 :::
 
 ::: tip Return

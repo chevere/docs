@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [MappedInterface](../DataStructure/MappedInterface.md)
-- [GetGeneratorInterface](../DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../DataStructure/GetIteratorInterface.md)
 - [KeysInterface](../DataStructure/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -29,10 +29,10 @@ Describes the component in charge of collecting objects implementing `ParameterI
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---
@@ -102,10 +102,10 @@ an instance that contains the specified `$parameters` modifying an already added
 
 ### has
 
-Indicates whether the instance has a parameter by name.
+Indicates whether the instance has a parameter by name(s).
 
 ::: warning Parameters
-- *parameter*: string
+- *...parameter*: string
 :::
 
 ::: tip Return

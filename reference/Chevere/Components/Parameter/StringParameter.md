@@ -23,6 +23,18 @@ editLink: false
 
 ### __construct
 
+::: warning Parameters
+- *description*: string
+:::
+
+---
+
+### getType
+
+::: tip Return
+[TypeInterface](../../Interfaces/Type/TypeInterface.md)
+:::
+
 ---
 
 ### withRegex
@@ -65,14 +77,10 @@ string
 
 ---
 
-### withDescription
-
-::: warning Parameters
-- *description*: string
-:::
+### setUp
 
 ::: tip Return
-static
+void
 :::
 
 ---
@@ -140,7 +148,7 @@ bool
 ### attributes
 
 ::: tip Return
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+[Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 
 ---

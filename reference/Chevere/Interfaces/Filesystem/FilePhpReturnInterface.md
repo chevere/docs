@@ -36,26 +36,6 @@ Type `integer`
 
 ## Methods
 
-### withStrict
-
-Return an instance with the strict flag.
-
-::: warning Parameters
-- *strict*: bool
-:::
-
-::: tip Return
-self
-:::
-
-This method MUST retain the state of the current instance, and return
-an instance that contains the specified the strict flag.
-
-Strict validation refers to match the beginning of the file contents
-against `FilePhpReturnInterface::PHP_RETURN`
-
----
-
 ### filePhp
 
 Provides access to the FilePhpInterface instance.
@@ -133,7 +113,7 @@ void
 Put `$var` into the file using var_export return and strict format.
 
 ::: warning Parameters
-- *varStorable*: [VarStorableInterface](../VarStorable/VarStorableInterface.md)
+- *varStorable*: [VarStorableInterface](../VarSupport/VarStorableInterface.md)
 :::
 
 ::: danger Throws

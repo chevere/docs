@@ -10,14 +10,26 @@ editLink: false
 
 ## Methods
 
-### withDescription
+### getType
+
+::: tip Return
+[TypeInterface](../../../Interfaces/Type/TypeInterface.md)
+:::
+
+---
+
+### __construct
 
 ::: warning Parameters
 - *description*: string
 :::
 
+---
+
+### setUp
+
 ::: tip Return
-static
+void
 :::
 
 ---
@@ -85,7 +97,7 @@ bool
 ### attributes
 
 ::: tip Return
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+[Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 
 ---

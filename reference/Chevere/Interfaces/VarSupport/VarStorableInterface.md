@@ -4,9 +4,9 @@ editLink: false
 
 # VarStorableInterface
 
-`Chevere\Interfaces\VarStorable\VarStorableInterface`
+`Chevere\Interfaces\VarSupport\VarStorableInterface`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/VarStorable/VarStorableInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/VarSupport/VarStorableInterface.php)
 
 ## Description
 
@@ -21,7 +21,7 @@ Describes the component in charge of handling storable variables.
 :::
 
 ::: danger Throws
-- [NotVarStorableException](../../Exceptions/VarStorable/NotVarStorableException.md) if `$var` can't be exported.
+- [VarStorableException](../../Exceptions/VarSupport/VarStorableException.md) if `$var` can't be exported.
 :::
 
 ---

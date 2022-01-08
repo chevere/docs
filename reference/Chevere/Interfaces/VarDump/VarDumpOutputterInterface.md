@@ -14,6 +14,20 @@ Describes the component in charge of orchestrating the var dump output processin
 
 ## Methods
 
+### writeCallerFile
+
+Writes the caller file using the target formatter.
+
+::: warning Parameters
+- *formatter*: [VarDumpFormatterInterface](./VarDumpFormatterInterface.md)
+:::
+
+::: tip Return
+void
+:::
+
+---
+
 ### setUp
 
 This method is executed before `prepare()`.

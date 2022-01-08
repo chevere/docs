@@ -13,7 +13,7 @@ editLink: false
 - [RoutableSpecsInterface](../../../Interfaces/Spec/Specs/RoutableSpecsInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 - [KeysInterface](../../../Interfaces/DataStructure/KeysInterface.md)
-- [GetGeneratorInterface](../../../Interfaces/DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../../../Interfaces/DataStructure/GetIteratorInterface.md)
 - [MappedInterface](../../../Interfaces/DataStructure/MappedInterface.md)
 
 ## Methods
@@ -21,7 +21,7 @@ editLink: false
 ### withPut
 
 ::: warning Parameters
-- *routableSpec*: [RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md)
+- *routableSpec*: [RouteSpecInterface](../../../Interfaces/Spec/Specs/RouteSpecInterface.md)
 :::
 
 ::: tip Return
@@ -54,7 +54,7 @@ bool
 :::
 
 ::: tip Return
-[RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md)
+[RouteSpecInterface](../../../Interfaces/Spec/Specs/RouteSpecInterface.md)
 :::
 
 ---
@@ -87,10 +87,10 @@ int
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

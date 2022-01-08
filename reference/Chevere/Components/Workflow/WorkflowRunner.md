@@ -30,14 +30,14 @@ editLink: false
 
 ---
 
-### run
+### withRun
 
 ::: warning Parameters
 - *serviceContainer*: [MapInterface](../../Interfaces/DataStructure/MapInterface.md)
 :::
 
 ::: tip Return
-[WorkflowRunInterface](../../Interfaces/Workflow/WorkflowRunInterface.md)
+static
 :::
 
 ---

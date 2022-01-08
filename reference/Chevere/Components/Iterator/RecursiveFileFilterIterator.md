@@ -11,9 +11,9 @@ editLink: false
 ## Implements
 
 - [RecursiveIterator](https://www.php.net/manual/class.recursiveiterator)
-- [OuterIterator](https://www.php.net/manual/class.outeriterator)
-- [Traversable](https://www.php.net/manual/class.traversable)
 - [Iterator](https://www.php.net/manual/class.iterator)
+- [Traversable](https://www.php.net/manual/class.traversable)
+- [OuterIterator](https://www.php.net/manual/class.outeriterator)
 
 ## Extends
 

@@ -131,6 +131,25 @@ array (
 )
 ```
 
+### TYPE_ARGUMENTS
+
+Type `array`
+
+```php
+array (
+  0 => 'array',
+  1 => 'boolean',
+  2 => 'callable',
+  3 => 'float',
+  4 => 'integer',
+  5 => 'iterable',
+  6 => 'null',
+  7 => 'object',
+  8 => 'resource',
+  9 => 'string',
+)
+```
+
 ## Methods
 
 ### __construct

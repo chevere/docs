@@ -43,7 +43,7 @@ Type `string`
 '<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>%css%</style></head><body class="%bodyClass%">%body%</body></html>'
 ```
 
-### BODY_DEBUG_0_HTML
+### NO_DEBUG_BODY_HTML
 
 Type `string`
 
@@ -51,7 +51,7 @@ Type `string`
 '<main class="user-select-none"><div>%content%</div></main>'
 ```
 
-### BODY_DEBUG_1_HTML
+### DEBUG_BODY_HTML
 
 Type `string`
 

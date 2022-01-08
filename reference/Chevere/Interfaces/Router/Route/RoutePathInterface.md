@@ -51,14 +51,6 @@ Provides access to the regex instance.
 
 ---
 
-### name
-
-::: tip Return
-string
-:::
-
----
-
 ### toString
 
 Returns a string, representing the object itself or some of its data/properties.

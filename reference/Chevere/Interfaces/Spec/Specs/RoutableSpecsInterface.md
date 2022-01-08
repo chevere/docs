@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [MappedInterface](../../DataStructure/MappedInterface.md)
-- [GetGeneratorInterface](../../DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../../DataStructure/GetIteratorInterface.md)
 - [KeysInterface](../../DataStructure/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -26,7 +26,7 @@ Describes the component in charge of collecting objects implementing `RoutableSp
 Return an instance with the specified `$routableSpec`.
 
 ::: warning Parameters
-- *routableSpec*: [RoutableSpecInterface](./RoutableSpecInterface.md)
+- *routableSpec*: [RouteSpecInterface](./RouteSpecInterface.md)
 :::
 
 ::: tip Return
@@ -65,15 +65,15 @@ Returns the routable spec identified by its `$routeName`.
 :::
 
 ::: tip Return
-[RoutableSpecInterface](./RoutableSpecInterface.md)
+[RouteSpecInterface](./RouteSpecInterface.md)
 :::
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

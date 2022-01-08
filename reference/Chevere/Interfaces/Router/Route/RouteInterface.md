@@ -17,7 +17,16 @@ Describes the component in charge of defining a route.
 ### __construct
 
 ::: warning Parameters
+- *name*: string
 - *path*: [RoutePathInterface](./RoutePathInterface.md)
+:::
+
+---
+
+### name
+
+::: tip Return
+string
 :::
 
 ---

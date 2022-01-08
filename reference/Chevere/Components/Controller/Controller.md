@@ -18,26 +18,42 @@ editLink: false
 
 - [Action](../Action/Action.md)
 
-## Constants
+## Description
 
-### PARAMETER_TYPE
-
-Type `string`
-
-```php
-'string'
-```
+#[Dispatch('dispatchName')]
+#[Relation('relationName')]
 
 ## Methods
 
 ### __construct
 
+::: warning Parameters
+- *dispatch*: string
+- *relation*: string
+:::
+
 ---
 
-### withSetup
+### parameter
 
 ::: tip Return
-static
+[StringParameterInterface](../../Interfaces/Parameter/StringParameterInterface.md)
+:::
+
+---
+
+### relation
+
+::: tip Return
+string
+:::
+
+---
+
+### dispatch
+
+::: tip Return
+string
 :::
 
 ---

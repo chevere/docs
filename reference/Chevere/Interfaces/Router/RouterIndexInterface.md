@@ -18,12 +18,12 @@ Describes the component in charge of indexing named routes.
 
 ## Methods
 
-### withAddedRoutable
+### withAddedRoute
 
-Return an instance with the specified `$routable` added.
+Return an instance with the specified `$route` added.
 
 ::: warning Parameters
-- *routable*: [RoutableInterface](./RoutableInterface.md)
+- *route*: Route/RouteInterface.md
 - *group*: string
 :::
 
@@ -37,7 +37,7 @@ self
 :::
 
 This method MUST retain the state of the current instance, and return
-an instance that contains the specified `$routable` added.
+an instance that contains the specified `$route` added.
 
 ---
 

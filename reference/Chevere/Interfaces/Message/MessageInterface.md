@@ -24,23 +24,10 @@ Type `array`
 
 ```php
 array (
-  'emphasis' => 
-  array (
-    'bold' => 3,
-  ),
-  'strong' => 
-  array (
-    'bold' => 1,
-  ),
-  'underline' => 
-  array (
-    'bold' => 4,
-  ),
-  'code' => 
-  array (
-    'bg' => 37,
-    'fg' => 30,
-  ),
+  'message_emphasis' => 'italic',
+  'message_strong' => 'bold',
+  'message_underline' => 'underline',
+  'message_code' => 'reverse',
 )
 ```
 

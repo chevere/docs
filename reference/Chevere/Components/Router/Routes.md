@@ -2,30 +2,48 @@
 editLink: false
 ---
 
-# Routables
+# Routes
 
-`Chevere\Components\Router\Routables`
+`Chevere\Components\Router\Routes`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Router/Routables.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Router/Routes.php)
 
 ## Implements
 
-- [RoutablesInterface](../../Interfaces/Router/RoutablesInterface.md)
+- [RoutesInterface](../../Interfaces/Router/RoutesInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 - [KeysInterface](../../Interfaces/DataStructure/KeysInterface.md)
-- [GetGeneratorInterface](../../Interfaces/DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../../Interfaces/DataStructure/GetIteratorInterface.md)
 - [MappedInterface](../../Interfaces/DataStructure/MappedInterface.md)
+
+## Constants
+
+### EXCEPTION_CODE_TAKEN_NAME
+
+Type `integer`
+
+```php
+110
+```
+
+### EXCEPTION_CODE_TAKEN_PATH
+
+Type `integer`
+
+```php
+100
+```
 
 ## Methods
 
-### withPut
+### withAdded
 
 ::: warning Parameters
-- *routable*: [RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
+- *...routes*: [RouteInterface](../../Interfaces/Router/Route/RouteInterface.md)
 :::
 
 ::: tip Return
-[RoutablesInterface](../../Interfaces/Router/RoutablesInterface.md)
+[RoutesInterface](../../Interfaces/Router/RoutesInterface.md)
 :::
 
 ---
@@ -33,7 +51,7 @@ editLink: false
 ### has
 
 ::: warning Parameters
-- *name*: string
+- *...paths*: string
 :::
 
 ::: tip Return
@@ -45,7 +63,7 @@ bool
 ### get
 
 ::: warning Parameters
-- *name*: string
+- *path*: string
 :::
 
 ::: danger Throws
@@ -54,7 +72,7 @@ bool
 :::
 
 ::: tip Return
-[RoutableInterface](../../Interfaces/Router/RoutableInterface.md)
+[RouteInterface](../../Interfaces/Router/Route/RouteInterface.md)
 :::
 
 ---
@@ -87,10 +105,10 @@ int
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

@@ -34,6 +34,18 @@ void
 
 ---
 
+### writeCallerFile
+
+::: warning Parameters
+- *formatter*: [VarDumpFormatterInterface](../../../Interfaces/VarDump/VarDumpFormatterInterface.md)
+:::
+
+::: tip Return
+void
+:::
+
+---
+
 ### setUp
 
 ::: warning Parameters

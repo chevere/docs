@@ -2,15 +2,15 @@
 editLink: false
 ---
 
-# BasenameInterface
+# FilenameInterface
 
-`Chevere\Interfaces\Filesystem\BasenameInterface`
+`Chevere\Interfaces\Filesystem\FilenameInterface`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Filesystem/BasenameInterface.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Interfaces/Filesystem/FilenameInterface.php)
 
 ## Description
 
-Describes the component in charge of providing basename handling.
+Describes the component in charge of providing filename handling.
 
 ## Constants
 

@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [MappedInterface](./MappedInterface.md)
-- [GetGeneratorInterface](./GetGeneratorInterface.md)
+- [GetIteratorInterface](./GetIteratorInterface.md)
 - [KeysInterface](./KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -32,7 +32,8 @@ Describes the component in charge of providing an immutable Ds\Map interface.
 ### withPut
 
 ::: warning Parameters
-- *...namedValues*: mixed
+- *key*: string
+- *values*: mixed
 :::
 
 ::: tip Return
@@ -87,12 +88,10 @@ array
 
 ---
 
-### getGenerator
-
-Provides the generator.
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

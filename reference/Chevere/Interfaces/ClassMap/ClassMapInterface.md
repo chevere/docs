@@ -11,7 +11,7 @@ editLink: false
 ## Extends
 
 - [MappedInterface](../DataStructure/MappedInterface.md)
-- [GetGeneratorInterface](../DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../DataStructure/GetIteratorInterface.md)
 - [KeysInterface](../DataStructure/KeysInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 
@@ -108,12 +108,12 @@ string
 
 ---
 
-### getGenerator
+### getIterator
 
-Provides a generator with `className => key`
+Provides a traversable with `className => key`
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

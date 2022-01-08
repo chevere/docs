@@ -12,7 +12,7 @@ editLink: false
 
 - [Countable](https://www.php.net/manual/class.countable)
 - [KeysInterface](./KeysInterface.md)
-- [GetGeneratorInterface](./GetGeneratorInterface.md)
+- [GetIteratorInterface](./GetIteratorInterface.md)
 
 ## Description
 
@@ -30,12 +30,10 @@ array
 
 ---
 
-### getGenerator
-
-Provides the generator.
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

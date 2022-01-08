@@ -139,7 +139,7 @@ bool
 ### attributes
 
 ::: tip Return
-[Ds\Set](https://www.php.net/manual/class.ds\set)
+[Ds\Map](https://www.php.net/manual/class.ds\map)
 :::
 
 ---

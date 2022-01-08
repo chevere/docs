@@ -40,18 +40,6 @@ Type `integer`
 
 ---
 
-### withStrict
-
-::: warning Parameters
-- *strict*: bool
-:::
-
-::: tip Return
-[FilePhpReturnInterface](../../Interfaces/Filesystem/FilePhpReturnInterface.md)
-:::
-
----
-
 ### filePhp
 
 ::: tip Return
@@ -100,7 +88,7 @@ void
 ### put
 
 ::: warning Parameters
-- *varStorable*: [VarStorableInterface](../../Interfaces/VarStorable/VarStorableInterface.md)
+- *varStorable*: [VarStorableInterface](../../Interfaces/VarSupport/VarStorableInterface.md)
 :::
 
 ::: tip Return

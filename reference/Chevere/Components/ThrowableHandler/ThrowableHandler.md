@@ -12,6 +12,48 @@ editLink: false
 
 - [ThrowableHandlerInterface](../../Interfaces/ThrowableHandler/ThrowableHandlerInterface.md)
 
+## Constants
+
+### ERRORS_AS_EXCEPTIONS
+
+Type `string`
+
+```php
+'Chevere\\Components\\ThrowableHandler\\errorsAsExceptions'
+```
+
+### CONSOLE_HANDLER
+
+Type `string`
+
+```php
+'Chevere\\Components\\ThrowableHandler\\consoleHandler'
+```
+
+### HTML_HANDLER
+
+Type `string`
+
+```php
+'Chevere\\Components\\ThrowableHandler\\htmlHandler'
+```
+
+### PLAIN_HANDLER
+
+Type `string`
+
+```php
+'Chevere\\Components\\ThrowableHandler\\plainHandler'
+```
+
+### FATAL_ERROR_HANDLER
+
+Type `string`
+
+```php
+'Chevere\\Components\\ThrowableHandler\\fatalErrorHandler'
+```
+
 ## Methods
 
 ### __construct

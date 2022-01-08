@@ -2,11 +2,11 @@
 editLink: false
 ---
 
-# MethodNotAllowedException
+# VarStorableException
 
-`Chevere\Exceptions\Http\MethodNotAllowedException`
+`Chevere\Exceptions\VarSupport\VarStorableException`
 
-[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/Http/MethodNotAllowedException.php)
+[view source](https://github.com/chevere/chevere/blob/main/src/Chevere/Exceptions/VarSupport/VarStorableException.php)
 
 ## Implements
 
@@ -15,11 +15,11 @@ editLink: false
 
 ## Extends
 
-- [Exception](../Core/Exception.md)
+- [LogicException](../Core/LogicException.md)
 
 ## Description
 
-Exception thrown when a method is not allowed.
+Exception thrown when a `$var` can't be stored.
 
 ## Methods
 

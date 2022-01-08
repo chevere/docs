@@ -39,8 +39,7 @@ Type `string`
 Type `string`
 
 ```php
-'font: 14px \'Fira Code Retina\', \'Operator Mono\', Inconsolata, Consolas,
-    monospace, sans-serif; line-height: 1.2; color: #ecf0f1; padding: 15px; margin: 10px 0; word-break: break-word; white-space: pre-wrap; background: #132537; display: block; text-align: left; border: none; border-radius: 4px;'
+'font: 14px \'Fira Code Retina\', \'Operator Mono\', Inconsolata, Consolas, monospace, sans-serif; line-height: 1.2; color: #ecf0f1; padding: 15px; margin: 10px 0; word-break: break-word; white-space: pre-wrap; background: #132537; display: block; text-align: left; border: none; border-radius: 4px;'
 ```
 
 ## Methods
@@ -54,6 +53,18 @@ void
 ---
 
 ### prepare
+
+::: tip Return
+void
+:::
+
+---
+
+### writeCallerFile
+
+::: warning Parameters
+- *formatter*: [VarDumpFormatterInterface](../../../Interfaces/VarDump/VarDumpFormatterInterface.md)
+:::
 
 ::: tip Return
 void

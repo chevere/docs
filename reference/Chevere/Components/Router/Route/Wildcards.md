@@ -13,7 +13,7 @@ editLink: false
 - [WildcardsInterface](../../../Interfaces/Router/Route/WildcardsInterface.md)
 - [Countable](https://www.php.net/manual/class.countable)
 - [KeysInterface](../../../Interfaces/DataStructure/KeysInterface.md)
-- [GetGeneratorInterface](../../../Interfaces/DataStructure/GetGeneratorInterface.md)
+- [GetIteratorInterface](../../../Interfaces/DataStructure/GetIteratorInterface.md)
 - [ToArrayInterface](../../../Interfaces/Common/ToArrayInterface.md)
 - [MappedInterface](../../../Interfaces/DataStructure/MappedInterface.md)
 
@@ -31,7 +31,7 @@ void
 
 ---
 
-### withAddedWildcard
+### withPut
 
 ::: warning Parameters
 - *routeWildcard*: [RouteWildcardInterface](../../../Interfaces/Router/Route/RouteWildcardInterface.md)
@@ -107,10 +107,10 @@ int
 
 ---
 
-### getGenerator
+### getIterator
 
 ::: tip Return
-[Generator](https://www.php.net/manual/class.generator)
+[Iterator](https://www.php.net/manual/class.iterator)
 :::
 
 ---

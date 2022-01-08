@@ -28,7 +28,7 @@ editLink: false
 ### withAddedRoutableSpec
 
 ::: warning Parameters
-- *routableSpec*: [RoutableSpecInterface](../../../Interfaces/Spec/Specs/RoutableSpecInterface.md)
+- *routableSpec*: [RouteSpecInterface](../../../Interfaces/Spec/Specs/RouteSpecInterface.md)
 :::
 
 ::: tip Return
