@@ -49,7 +49,8 @@ module.exports = {
         editLinks: true,
         lastUpdated: true,
         algolia: {
-            apiKey: '73374d2477d2ae119b1d0288b1e8aa24',
+            appId: 'E23304Y20V',
+            apiKey: '11dc8f9a3f9c8069dc4e98456c3c556c',
             indexName: 'chevere'
         }
     },
