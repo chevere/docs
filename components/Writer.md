@@ -11,7 +11,7 @@ Check the Writer [example](https://github.com/chevere/examples/tree/main/00.Hell
 The [Writers](../reference/Chevere/Components/Writer/Writers.md) component describes a service container providing access to `out`, `error`, `debug` and `log` writers.
 
 ```php
-use Chevere\Components\Writer\Writers;
+use Chevere\Writer\Writers;
 
 $writers = new Writers();
 ```
@@ -23,7 +23,7 @@ By default, it populates `out` and `error` to two temp streams`. Methods [withOu
 Output is the channel used for writing when no error happens.
 
 ```php
-use Chevere\Components\Writer\StreamWriter;
+use Chevere\Writer\StreamWriter;
 use function Chevere\Components\Writer\streamFor;
 
 $writers = $writers
@@ -39,7 +39,7 @@ $writers = $writers
 Error is the channel for writing when some error happens.
 
 ```php
-use Chevere\Components\Writer\StreamWriter;
+use Chevere\Writer\StreamWriter;
 use function Chevere\Components\Writer\streamFor;
 
 $writers = $writers
@@ -55,7 +55,7 @@ $writers = $writers
 Debug is the channel for writing debug information.
 
 ```php
-use Chevere\Components\Writer\StreamWriter;
+use Chevere\Writer\StreamWriter;
 use function Chevere\Components\Writer\streamFor;
 
 $writers = $writers
@@ -71,7 +71,7 @@ $writers = $writers
 Log is the channel for writing log information.
 
 ```php
-use Chevere\Components\Writer\StreamWriter;
+use Chevere\Writer\StreamWriter;
 use function Chevere\Components\Writer\streamFor;
 
 $writers = $writers
@@ -91,7 +91,7 @@ The [StreamWriter](../reference/Chevere/Components/Writer/StreamWriter.md) compo
 Code below shows how to initiate a `StreamWriter` for a `given string`.
 
 ```php
-use Chevere\Components\Writer\StreamWriter;
+use Chevere\Writer\StreamWriter;
 use function Chevere\Components\Writer\streamForString;
 
 $writer = new StreamWriter(

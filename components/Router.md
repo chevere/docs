@@ -76,7 +76,7 @@ The Router can be easily generated using the built-in tooling.
 The [RoutingDescriptorsMaker](../reference/Chevere/Components/Router/Routing/RoutingDescriptorsMaker.md) component is in charge of creating the routing descriptors, which is the collection of routes interpreted from the filesystem.
 
 ```php
-use Chevere\Components\Router\Routing\RoutingDescriptorsMaker;
+use Chevere\Router\Routing\RoutingDescriptorsMaker;
 use function Chevere\Components\Filesystem\dirForPath;
 
 $routingDescriptorsMaker = new RoutingDescriptorsMaker(

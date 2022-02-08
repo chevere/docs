@@ -7,7 +7,7 @@ The [Message](../reference/Chevere/Components/Message/Message.md) component allo
 A Message is created by passing a Message template. In the code below a new Message is created with `Hello, %to%!`.
 
 ```php
-use Chevere\Components\Message\Message;
+use Chevere\Message\Message;
 
 $message = new Message(template: 'Hello, %to%!');
 ```

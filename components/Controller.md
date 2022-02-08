@@ -21,7 +21,7 @@ If you don't need to wire to these devices you should be using [Action](Action.m
 Code below defines class `SomeController` by extending the base [Controller](../reference/Chevere/Components/Controller/Controller.md).
 
 ```php
-use Chevere\Components\Controller\Controller;
+use Chevere\Controller\Controller;
 
 final class SomeController extends Controller
 {
@@ -34,7 +34,7 @@ final class SomeController extends Controller
 Parameters are defined in the `getParameters` method. Parameter types provided must be of type [StringParameter](Parameter.md#string-paramater).
 
 ```php
-use Chevere\Components\Parameter\StringParameter;
+use Chevere\Parameter\StringParameter;
 use Chevere\Interfaces\Parameter\ParametersInterface;
 
 public function getParameters(): ParametersInterface
@@ -51,7 +51,7 @@ public function getParameters(): ParametersInterface
 Type casting can be applied in the `run` method directly on each argument.
 
 ```php
-use Chevere\Components\Response\Response;
+use Chevere\Response\Response;
 use Chevere\Interfaces\Parameter\ArgumentsInterface;
 use Chevere\Interfaces\Response\ResponseInterface;
 
@@ -71,7 +71,7 @@ A Controller with built-in [Workflow](Workflow.md) integration allows to create 
 Code below defines class `SomeWorkflowController` by extending the base [ControllerWorkflow](../reference/Chevere/Components/Controller/ControllerWorkflow.md).
 
 ```php
-use Chevere\Components\Controller\ControllerWorkflow;
+use Chevere\Controller\ControllerWorkflow;
 
 final class SomeWorkflowController extends ControllerWorkflow
 {
@@ -84,7 +84,7 @@ final class SomeWorkflowController extends ControllerWorkflow
 Workflow is defined in the `getWorkflow` method.
 
 ```php
-use Chevere\Components\Workflow\Workflow;
+use Chevere\Workflow\Workflow;
 use Chevere\Interfaces\Workflow\WorkflowInterface;
 
 public function getWorkflow(): WorkflowInterface

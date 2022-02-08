@@ -7,7 +7,7 @@ The [Type](../reference/Chevere/Components/Type/Type.md) component is in charge 
 A Type gets created by passing a `type` [keyword](#type-keywords).
 
 ```php
-use Chevere\Components\Type\Type;
+use Chevere\Type\Type;
 
 $type = new Type(Type::STRING);
 ```

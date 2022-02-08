@@ -5,7 +5,7 @@ The [ClassMap](../reference/Chevere/Components/ClassMap/ClassMap.md) component i
 ## Creating ClassMap
 
 ```php
-use Chevere\Components\ClassMap\ClassMap;
+use Chevere\ClassMap\ClassMap;
 
 $classMap = new ClassMap();
 ```

@@ -9,7 +9,7 @@ Manipulating strings refers to the process of altering an argument of type `stri
 The [Str](../reference/Chevere/Components/Str/Str.md) component in charge of string manipulation.
 
 ```php
-use Chevere\Components\Str\Str;
+use Chevere\Str\Str;
 
 $str = (new Str('  THE STRING  '))
     ->lowercase()

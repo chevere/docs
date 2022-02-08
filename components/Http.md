@@ -11,7 +11,7 @@ The Http component is in charge of providing typed HTTP methods according to [RF
 Establish a tunnel to the server identified by the target resource.
 
 ```php
-use Chevere\Components\Http\Methods\ConnectMethod;
+use Chevere\Http\Methods\ConnectMethod;
 
 $connect = new ConnectMethod();
 ```
@@ -23,7 +23,7 @@ $connect = new ConnectMethod();
 Remove all current representations of the target resource.
 
 ```php
-use Chevere\Components\Http\Methods\DeleteMethod;
+use Chevere\Http\Methods\DeleteMethod;
 
 $delete = new DeleteMethod();
 ```
@@ -35,7 +35,7 @@ $delete = new DeleteMethod();
 Transfer a current representation of the target resource.
 
 ```php
-use Chevere\Components\Http\Methods\GetMethod;
+use Chevere\Http\Methods\GetMethod;
 
 $get = new GetMethod();
 ```
@@ -47,7 +47,7 @@ $get = new GetMethod();
 Same as GET, but only transfer the status line and header section.
 
 ```php
-use Chevere\Components\Http\Methods\HeadMethod;
+use Chevere\Http\Methods\HeadMethod;
 
 $head = new HeadMethod();
 ```
@@ -59,7 +59,7 @@ $head = new HeadMethod();
 Describe the communication options for the target resource.
 
 ```php
-use Chevere\Components\Http\Methods\OptionsMethod;
+use Chevere\Http\Methods\OptionsMethod;
 
 $options = new OptionsMethod();
 ```
@@ -71,7 +71,7 @@ $options = new OptionsMethod();
 Apply partial modifications described in the request entity to the target resource.
 
 ```php
-use Chevere\Components\Http\Methods\PatchMethod;
+use Chevere\Http\Methods\PatchMethod;
 
 $path = new PatchMethod();
 ```
@@ -83,7 +83,7 @@ $path = new PatchMethod();
 Perform resource-specific processing on the request payload.
 
 ```php
-use Chevere\Components\Http\Methods\PostMethod;
+use Chevere\Http\Methods\PostMethod;
 
 $post = new PostMethod();
 ```
@@ -95,7 +95,7 @@ $post = new PostMethod();
 Replace all current representations of the target resource with the request payload.
 
 ```php
-use Chevere\Components\Http\Methods\PutMethod;
+use Chevere\Http\Methods\PutMethod;
 
 $put = new PutMethod();
 ```
@@ -107,7 +107,7 @@ $put = new PutMethod();
 Perform a message loop-back test along the path to the target resource.
 
 ```php
-use Chevere\Components\Http\Methods\TraceMethod;
+use Chevere\Http\Methods\TraceMethod;
 
 $trace = new TraceMethod();
 ```

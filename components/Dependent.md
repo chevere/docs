@@ -18,7 +18,7 @@ Use [DependentTrait](../reference/Chevere/Components/Dependent/Traits/DependentT
 
 ```php
 use Chevere\Interfaces\Dependent\DependentInterface;
-use Chevere\Components\Dependent\Traits\DependentTrait;
+use Chevere\Dependent\Traits\DependentTrait;
 
 class MyDependent implements DependentInterface
 {
@@ -33,7 +33,7 @@ class MyDependent implements DependentInterface
 The `getDependencies` method allows to define the [Dependencies](#dependencies) required by Dependent.
 
 ```php
-use Chevere\Components\Dependent\Dependencies;
+use Chevere\Dependent\Dependencies;
 
 public function getDependencies(): DependenciesInterface
 {
@@ -93,7 +93,7 @@ The Dependencies component is in charge of collecting dependencies.
 Create Dependencies by passing named dependencies on construct, which must be known classes or interface names.
 
 ```php
-use Chevere\Components\Dependent\Dependencies;
+use Chevere\Dependent\Dependencies;
 
 $dependencies = new Dependencies(depends: 'SomeType');
 ```

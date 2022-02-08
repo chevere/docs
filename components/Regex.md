@@ -7,7 +7,7 @@ The [Regex](../reference/Chevere/Components/Regex/Regex.md) component is in char
 Create a Regex by passing the pattern.
 
 ```php
-use Chevere\Components\Regex\Regex;
+use Chevere\Regex\Regex;
 
 $regex = new Regex(pattern: '/^Hello World!$/');
 ```

@@ -5,7 +5,7 @@ The [Response](../reference/Chevere/Components/Response/Response.md) component i
 ## Creating Response
 
 ```php
-use Chevere\Components\Response\Response;
+use Chevere\Response\Response;
 
 $response = new Response(foo: 'foo');
 ```
@@ -33,9 +33,9 @@ $response = $response->withStatus(code: 0);
 
 ### Status codes
 
-| Code          | Description |
-| ------------- | ----------- |
-| `0` (default) | Success     |
+| Code           | Description |
+| -------------- | ----------- |
+| `0` (default)  | Success     |
 | Non-zero value | Failure     |
 
 ## UUID

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'get-started/' => 'Get Started',
-    'architecture/' => 'Arch',
-    'components/' => 'Compo',
-    'reference/' => 'Refs',
-    'developer/' => 'Dev',
+    'README.md' => 'Get started',
+    'status.md' => 'Status',
+    'version.md' => 'Version',
+    'installation.md' => 'Installation',
+    'contributing.md' => 'Contributing',
 ];

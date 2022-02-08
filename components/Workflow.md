@@ -7,7 +7,7 @@ The [Workflow](../reference/Chevere/Components/Workflow/Workflow.md) component p
 The [Step](../reference/Chevere/Components/Workflow/Step.md) component define an [Action](Action.md) with arguments to pass.
 
 ```php
-use Chevere\Components\Workflow\Step;
+use Chevere\Workflow\Step;
 
 new Step(action: 'SomeActionClass');
 ```
@@ -23,7 +23,7 @@ Parameters for the step are defined in the [Action Parameters](Action.md#paramet
 Arguments can be passed on constructor using named arguments.
 
 ```php
-use Chevere\Components\Workflow\Step;
+use Chevere\Workflow\Step;
 
 new Step(
     'SomeActionClass'
@@ -41,7 +41,7 @@ The `withArguments` method can be used to modify the step arguments.
 To create a workflow pass the Workflow named [steps](#step):
 
 ```php
-use Chevere\Components\Workflow\Workflow;
+use Chevere\Workflow\Workflow;
 
 $workflow = new Workflow(
     fetch: new Step(
@@ -57,9 +57,9 @@ For the code above, `${payload}` is declared as a [reference](#references), the 
 
 Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any existing Step.
 
-| Expression                | Meaning                                            |
-| ------------------------- | -------------------------------------------------- |
-| `${workflow_variable}`    | A Workflow variable (need to be injected).         |
+| Expression                | Meaning                                                          |
+| ------------------------- | ---------------------------------------------------------------- |
+| `${workflow_variable}`    | A Workflow variable (need to be injected).                       |
 | `${stepName:responseKey}` | The value at key `responseKey` for the `stepName` step response. |
 
 ## Adding Steps
@@ -69,7 +69,7 @@ The `withAdded` method allows to add steps to an existing Workflow.
 For the code below, steps `validate` and `insert` are using [references](#references) for the expected response keys at `fetch` Step.
 
 ```php
-use Chevere\Components\Workflow\Step;
+use Chevere\Workflow\Step;
 
 $workflow = $workflow
     ->withAdded(
@@ -106,7 +106,7 @@ The requirement is to extend to this, with sorting:
 * (add) Caching
 
 ```php
-use Chevere\Components\Workflow\Step;
+use Chevere\Workflow\Step;
 
 $workflow = $workflow
     ->withAddedBefore(

@@ -12,7 +12,7 @@ Use [DescriptionTrait](https://github.com/Chevereto/chevere/blob/main/src/Chever
 
 ```php
 use Chevere\Interfaces\Common\DescriptionInterface;
-use Chevere\Components\Common\Traits\DescriptionTrait;
+use Chevere\Common\Traits\DescriptionTrait;
 
 class MyDescribedClass implements DescriptionInterface
 {

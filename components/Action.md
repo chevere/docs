@@ -7,7 +7,7 @@ The [Action](../reference/Chevere/Components/Action/Action.md) component is in c
 Action is the core building block for driving actions to the application. Code below defines class `SomeAction` by extending `Action`.
 
 ```php
-use Chevere\Components\Action\Action;
+use Chevere\Action\Action;
 
 final class SomeAction extends Action
 {
@@ -32,8 +32,8 @@ The `getParameters` method is used to define the action [Parameters](../referenc
 
 ```php
 use Chevere\Interfaces\Parameter\ParametersInterface;
-use Chevere\Components\Parameter\Parameters;
-use Chevere\Components\Parameter\IntegerParameter;
+use Chevere\Parameter\Parameters;
+use Chevere\Parameter\IntegerParameter;
 
 public function getParameters(): ParametersInterface
 {
@@ -50,8 +50,8 @@ The `getResponseParameters` method is used to define the response data parameter
 
 ```php
 use Chevere\Interfaces\Parameter\ParametersInterface;
-use Chevere\Components\Parameter\Parameters;
-use Chevere\Components\Parameter\IntegerParameter;
+use Chevere\Parameter\Parameters;
+use Chevere\Parameter\IntegerParameter;
 
 public function getResponseParameters(): ParametersInterface
 {

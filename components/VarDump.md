@@ -22,9 +22,9 @@ VarDump requires a formatter implementing [VarDumpFormatterInterface](../referen
 In the example below, a VarDump is created with console colored formatting and output:
 
 ```php
-use Chevere\Components\VarDump\Formatters\VarDumpConsoleFormatter;
-use Chevere\Components\VarDump\Outputters\VarDumpConsoleOutputter;
-use Chevere\Components\VarDump\VarDump;
+use Chevere\VarDump\Formatters\VarDumpConsoleFormatter;
+use Chevere\VarDump\Outputters\VarDumpConsoleOutputter;
+use Chevere\VarDump\VarDump;
 use function Chevere\Components\VarDump\getVarDumpConsole;
 
 $varDump = new VarDump(
@@ -48,7 +48,7 @@ $varDump = $varDump->withVars('a var', [], null);
 The method `process` is used to trigger the var dumping process. It requires to pass a [writer](Writer.md) where the dump information will be written.
 
 ```php
-use Chevere\Components\Writer\StreamWriter;
+use Chevere\Writer\StreamWriter;
 use function Chevere\Components\Writer\streamFor;
 
 $varDump->process(

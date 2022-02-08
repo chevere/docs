@@ -11,8 +11,8 @@ Check the ThrowableHandler [examples](https://github.com/chevere/examples/tree/m
 In the example below, a `ThrowableHandler` object is created by passing a [ThrowableRead](../reference/Chevere/Components/ThrowableHandler/ThrowableRead.md).
 
 ```php
-use Chevere\Components\ThrowableHandler\ThrowableHandler;
-use Chevere\Components\ThrowableHandler\ThrowableRead;
+use Chevere\ThrowableHandler\ThrowableHandler;
+use Chevere\ThrowableHandler\ThrowableRead;
 
 $read = new ThrowableRead($e);
 $handler = new ThrowableHandler($read);
@@ -33,9 +33,9 @@ $handler = $handler->withIsDebug(false);
 In the code below console, plain and HTML throwable documents are created by passing `$handler`.
 
 ```php
-use Chevere\Components\ThrowableHandler\Documents\ConsoleDocument;
-use Chevere\Components\ThrowableHandler\Documents\HtmlDocument;
-use Chevere\Components\ThrowableHandler\Documents\PlainDocument;
+use Chevere\ThrowableHandler\Documents\ConsoleDocument;
+use Chevere\ThrowableHandler\Documents\HtmlDocument;
+use Chevere\ThrowableHandler\Documents\PlainDocument;
 use Chevere\Interfaces\ThrowableHandler\ThrowableHandler;
 
 /**

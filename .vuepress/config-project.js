@@ -41,7 +41,7 @@ module.exports = {
         }]
     ],
     themeConfig: {
-        logo: '/logo-transparent.svg',
+        logo: '/logo.svg',
         repo: 'chevere/chevere',
         docsRepo: 'chevere/docs',
         docsBranch: 'main',
@@ -52,6 +52,9 @@ module.exports = {
             appId: 'E23304Y20V',
             apiKey: '11dc8f9a3f9c8069dc4e98456c3c556c',
             indexName: 'chevere'
-        }
+        },
+        nav: [
+            { text: 'Get started', link: '/' },
+        ],
     },
 };

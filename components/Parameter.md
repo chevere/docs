@@ -7,8 +7,8 @@ The [Parameter](../reference/Chevere/Components/Parameter/Parameter.md) componen
 In the code below, type for class `FullQualifiedName` is created with a description and an added attribute.
 
 ```php
-use Chevere\Components\Parameter\Parameter;
-use Chevere\Components\Type\Type;
+use Chevere\Parameter\Parameter;
+use Chevere\Type\Type;
 
 $parameter = new Parameter(
     type: new Type('FullQualifiedName')
@@ -20,7 +20,7 @@ $parameter = new Parameter(
 The `withDescription` method is used to provide the parameter description, which is a short summary explaining the purpose of the parameter.
 
 ```php
-use Chevere\Components\Parameter\Parameter;
+use Chevere\Parameter\Parameter;
 
 /**
  * @var Parameter $parameter
@@ -34,7 +34,7 @@ $parameter = $parameter
 The `withAddedAttribute` method is used to provide parameter attributes, which are flags that can tag the parameter.
 
 ```php
-use Chevere\Components\Parameter\Parameter;
+use Chevere\Parameter\Parameter;
 
 /**
  * @var Parameter $parameter
@@ -53,7 +53,7 @@ The following parameter type classes are provided for convenience.
 The [ArrayParameter](../reference/Chevere/Components/Parameter/ArrayParameter.md) component in charge of defining a parameter of type array. It support default `array` value.
 
 ```php
-use Chevere\Components\Parameter\ArrayParameter;
+use Chevere\Parameter\ArrayParameter;
 
 (new ArrayParameter())
     ->withDefault(value: ['do' => true]);
@@ -64,7 +64,7 @@ use Chevere\Components\Parameter\ArrayParameter;
 The [BooleanParameter](../reference/Chevere/Components/Parameter/BooleanParameter.md) component in charge of defining a parameter of type boolean. It support default `boolean` value.
 
 ```php
-use Chevere\Components\Parameter\BooleanParameter;
+use Chevere\Parameter\BooleanParameter;
 
 (new BooleanParameter())
     ->withDefault(value: true);
@@ -75,7 +75,7 @@ use Chevere\Components\Parameter\BooleanParameter;
 The [FloatParameter](../reference/Chevere/Components/Parameter/FloatParameter.md) component in charge of defining a parameter of type float. It support default `float` value.
 
 ```php
-use Chevere\Components\Parameter\FloatParameter;
+use Chevere\Parameter\FloatParameter;
 
 (new FloatParameter())
     ->withDefault(value: 12.3);
@@ -86,7 +86,7 @@ use Chevere\Components\Parameter\FloatParameter;
 The [IntegerParameter](../reference/Chevere/Components/Parameter/IntegerParameter.md) component in charge of defining a parameter of type integer. It support `integer` default value.
 
 ```php
-use Chevere\Components\Parameter\IntegerParameter;
+use Chevere\Parameter\IntegerParameter;
 
 (new IntegerParameter())
     ->withDefault(value: 123);
@@ -97,8 +97,8 @@ use Chevere\Components\Parameter\IntegerParameter;
 The [StringParameter](../reference/Chevere/Components/Parameter/StringParameter.md) component in charge of defining a parameter of type string. It support regex and `string` default value.
 
 ```php
-use Chevere\Components\Parameter\StringParameter;
-use Chevere\Components\Regex\Regex;
+use Chevere\Parameter\StringParameter;
+use Chevere\Regex\Regex;
 
 (new StringParameter())
     ->withDefault(value: 'id-000')
@@ -116,8 +116,8 @@ The [Parameters](../reference/Chevere/Components/Parameter/Parameters.md) compon
 Create Parameters instance by passing the required parameters on construct.
 
 ```php
-use Chevere\Components\Parameter\Parameters;
-use Chevere\Components\Parameter\IntegerParameter;
+use Chevere\Parameter\Parameters;
+use Chevere\Parameter\IntegerParameter;
 
 $parameters = new Parameters(
     id: (new IntegerParameter())
@@ -130,7 +130,7 @@ $parameters = new Parameters(
 The `withAdded` method is used to add required parameters.
 
 ```php
-use Chevere\Components\Parameter\StringParameter;
+use Chevere\Parameter\StringParameter;
 
 $parameters->withAdded(
     name: new StringParameter();
@@ -142,7 +142,7 @@ $parameters->withAdded(
 The `withAddedOptional` method is used to add optional parameters.
 
 ```php
-use Chevere\Components\Parameter\IntegerParameter;
+use Chevere\Parameter\IntegerParameter;
 
 $parameters->withAddedOptional(
     priority: (new IntegerParameter())
@@ -155,7 +155,7 @@ $parameters->withAddedOptional(
 The `withModify` method is used to modify parameters.
 
 ```php
-use Chevere\Components\Parameter\IntegerParameter;
+use Chevere\Parameter\IntegerParameter;
 
 $parameters->withModify(
     priority: (new IntegerParameter())
@@ -168,8 +168,8 @@ $parameters->withModify(
 The [Arguments](../reference/Chevere/Components/Parameter/Arguments.md) component in charge of providing arguments matching the declared [Parameters](#parameters).
 
 ```php
-use Chevere\Components\Parameter\Arguments;
-use Chevere\Components\Parameter\Parameters;
+use Chevere\Parameter\Arguments;
+use Chevere\Parameter\Parameters;
 
 new Arguments(
     parameters: new Parameters(
@@ -188,7 +188,7 @@ The `get` method is used to retrieve an argument "as-is", without type checking.
 In the example below `$argument` must be either casted as boolean or use a doc block annotation to provide type-hint while `$boolean` type gets hinted directly from the function return.
 
 ```php
-use Chevere\Components\Parameter\Arguments;
+use Chevere\Parameter\Arguments;
 
 /**
  * @var Arguments $arguments

@@ -7,7 +7,7 @@ The Filesystem component is in charge of interact with the filesystem, offering 
 The [Path](../reference/Chevere/Components/Filesystem/Path.md) component is charge of interact with filesystem paths.
 
 ```php
-use Chevere\Components\Filesystem\Path;
+use Chevere\Filesystem\Path;
 
 $path = new Path(absolute: '/home/var/the-path/');
 ```
@@ -78,8 +78,8 @@ $childPathFile  = $path->getChild(path: 'child-2/some-file.php'); // /home/var/c
 The [Dir](../reference/Chevere/Components/Filesystem/Dir.md) component is in charge of interact with filesystem directories.
 
 ```php
-use Chevere\Components\Filesystem\Dir;
-use Chevere\Components\Filesystem\Path;
+use Chevere\Filesystem\Dir;
+use Chevere\Filesystem\Path;
 use function Chevere\Components\Filesystem\dirForPath;
 
 $path = '/home/var/';
@@ -140,8 +140,8 @@ $childDir  = $dir->getChild(path: 'child/'); // /home/var/child/
 The [File](../reference/Chevere/Components/Filesystem/File.md) component in charge of interact with filesystem files.
 
 ```php
-use Chevere\Components\Filesystem\File;
-use Chevere\Components\Filesystem\Path;
+use Chevere\Filesystem\File;
+use Chevere\Filesystem\Path;
 use function Chevere\Components\Filesystem\fileForPath;
 
 $path = '/home/var/the-file.php';
@@ -227,9 +227,9 @@ $file->remove(); // file is gone
 The [FilePhp](../reference/Chevere/Components/Filesystem/FilePhp.md) component in charge of interact with PHP files.
 
 ```php
-use Chevere\Components\Filesystem\File;
-use Chevere\Components\Filesystem\FilePhp;
-use Chevere\Components\Filesystem\Path;
+use Chevere\Filesystem\File;
+use Chevere\Filesystem\FilePhp;
+use Chevere\Filesystem\Path;
 
 $absolute = '/home/var/the-file.php';
 $file = new File(new Path($absolute));
@@ -253,10 +253,10 @@ $filePhp->flush(); // OPCache cache is gone
 The [FilePhpReturn](../reference/Chevere/Components/Filesystem/FilePhpReturn.md) component in charge og interact with the return value of PHP files.
 
 ```php
-use Chevere\Components\Filesystem\File;
-use Chevere\Components\Filesystem\FilePhp;
-use Chevere\Components\Filesystem\FilePhpReturn;
-use Chevere\Components\Filesystem\Path;
+use Chevere\Filesystem\File;
+use Chevere\Filesystem\FilePhp;
+use Chevere\Filesystem\FilePhpReturn;
+use Chevere\Filesystem\Path;
 
 $absolute = '/home/var/the-file.php';
 $filePhp = new FilePhp(new File(new Path($absolute)));
@@ -289,7 +289,7 @@ $filePhpReturn->var();
 The `put` method puts the contents of a variable export into the PHP file as `<?php return $var;`. Type `object` will be stored with serialize.
 
 ```php
-use Chevere\Components\Variable\VarExportable;
+use Chevere\Variable\VarExportable;
 
 $varExportable = new VarExportable($var);
 $filePhpReturn->put($varExportable);

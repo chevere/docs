@@ -5,7 +5,7 @@ The [Serialize](../reference/Chevere/Components/Serialize/Serialize.md) componen
 ## Serialize a variable
 
 ```php
-use Chevere\Components\Serialize\Serialize;
+use Chevere\Serialize\Serialize;
 
 $serialize = new Serialize(var: $foo);
 ```
@@ -21,7 +21,7 @@ $serialize->toString();
 The [Deserialize](../reference/Chevere/Components/Serialize/Deserialize.md) component is in charge of handling [unserialize](https://www.php.net/unserialize).
 
 ```php
-use Chevere\Components\Serialize\Deserialize;
+use Chevere\Serialize\Deserialize;
 
 $deserialize = new Deserialize(serialized: $bar);
 ```

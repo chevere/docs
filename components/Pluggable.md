@@ -32,7 +32,7 @@ In the code below, calls to `event` method allows to emit an event when `set` me
 
 ```php
 use Chevere\Interfaces\Pluggable\PluggableAnchorsInterface;
-use Chevere\Components\Pluggable\Plug\Event\Traits\PluggableEventsTrait;
+use Chevere\Pluggable\Plug\Event\Traits\PluggableEventsTrait;
 use Chevere\Interfaces\Pluggable\Plug\Hook\PluggableHooksInterface;
 
 final class DoesSomething implements PluggableEventsInterface
@@ -93,7 +93,7 @@ In the code below, calling `hook` method allows to extend the behavior of the ba
 
 ```php
 use Chevere\Interfaces\Pluggable\PluggableAnchorsInterface;
-use Chevere\Components\Pluggable\Plug\Hook\Traits\PluggableHooksTrait;
+use Chevere\Pluggable\Plug\Hook\Traits\PluggableHooksTrait;
 use Chevere\Interfaces\Pluggable\Plug\Hook\PluggableHooksInterface;
 
 final class DoesSomething implements PluggableHooksInterface

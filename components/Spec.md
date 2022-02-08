@@ -7,8 +7,8 @@ The Spec component is in charge of creating a JSON representation for endpoints 
 The [SpecMaker](../reference/Chevere/Components/Spec/SpecMaker.md) is in charge of creating an application Spec.
 
 ```php
-use Chevere\Components\Spec\SpecMaker;
-use Chevere\Components\Router\Router;
+use Chevere\Spec\SpecMaker;
+use Chevere\Router\Router;
 use function Chevere\Components\Filesystem\dirForPath;
 
 /**

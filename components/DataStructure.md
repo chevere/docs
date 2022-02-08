@@ -11,7 +11,7 @@ The [Map](../reference/Chevere/Components/DataStructure/Map.md) component is in 
 Create a Map by passing named arguments of any type.
 
 ```php
-use Chevere\Components\DataStructure\Map;
+use Chevere\DataStructure\Map;
 
 $map = new Map(foo: $foo, bar: $bar);
 ```

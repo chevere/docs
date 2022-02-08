@@ -1,20 +1,34 @@
----
-home: true
-heroImage: /logo-transparent.svg
-heroText: Chevere
-tagline: Build extensible server-side progressive applications for modern PHP
-actionText: Get Started →
-actionLink: /get-started/
-features:
-- title: Clean & Typed
-  details: Enjoy an immutable and strong-typed clean codebase.
-- title: Extensible
-  details: Do more building pluggable software.
-- title: Modern & High-quality
-  details: All-new PHP 8 codebase with strict standards.
-footer: Made by Rodolfo Berrios
----
+# Get started
 
-![Code size](https://img.shields.io/github/languages/code-size/chevere/chevere?style=flat-square) [![Apache-2.0](https://img.shields.io/github/license/chevere/chevere?style=flat-square)](https://github.com/chevere/chevere/blob/0.1/LICENSE) [![Build](https://img.shields.io/github/workflow/status/chevere/chevere/Test?style=flat-square)](https://github.com/chevere/chevere/actions)
+Build extensible server-side progressive applications for modern PHP.
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=alert_status)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=security_rating)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=coverage)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=sqale_index)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![CodeFactor](https://www.codefactor.io/repository/github/chevere/chevere/badge)](https://www.codefactor.io/repository/github/chevere/chevere) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/b956754f8ff04aaa9ca24a6e4cc21661)](https://www.codacy.com/gh/chevere/chevere/dashboard)
+## What is Chevere?
+
+Chevere is a strict, strong-typed PHP development framework. It is the kind of stuff developers use to build *other* software, specially low-level applications as it is an small unbloated software package providing the core tooling needed to organize and run the logic of any given software application.
+
+💡 The term *chévere* is ubiquitous in Latin America, spreaded in every spanish speaking country and it means **cool/awesome**. We believe that anything can be chevere, specially PHP software.
+
+## Why Chevere and not X?
+
+Contrary to almost every PHP framework out there, Chevere is not designed for anything in specific and it doesn't embrace or forbid any application development model. Chevere enables you to be free, to iterate and explore.
+
+Of course that all frameworks seek that developers end up *writing less and doing more*, but you can't write less unless you give away some control and time. Nowadays we have more framework developers than PHP developers, which is bad without balance and excesively *frames* PHP developers into the given framework culture.
+
+Chevere is an anti-framework, is the stuff for those wanting to rely in good quality components and not needing the training wheels to move forward.
+
+## Clean & Typed
+
+Enjoy an immutable and strong-typed clean codebase. Chevere follows [Clean Code](http://cleancoder.com/products) principles, which can be resumed as the practice of creating code that is easy to understand, to change and maintain.
+
+## Extensible
+
+Do more building pluggable software with components. Chevere provides an immutable core library, a tooling for general purposes with enough flexibility to allow the creation a myriad of systems with the same know-how.
+
+## Modern & High quality
+
+All-new PHP 8 codebase with strict standards. Chevere has been designed from scratch for PHP 8, and it uses all the goodies added to it. On top of that it follows own high [quality](../architecture/standard/quality.md) standards.
+
+## Sponsors
+
+* [DocSearch](https://docsearch.algolia.com/) by Algolia for providing the search functionality in this documentation.
+* [JetBrains](https://www.jetbrains.com/opensource/) for providing software licensing for all their suite.

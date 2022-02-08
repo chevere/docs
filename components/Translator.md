@@ -98,7 +98,7 @@ The [PoMaker](../reference/Chevere/Components/Translator/PoMaker.md) component i
 Pass the `locale` and `domain`arguments to construct a PoMaker. For example, to create `messages.po` for Chilean Spanish:
 
 ```php
-use Chevere\Components\Translator\PoMaker;
+use Chevere\Translator\PoMaker;
 
 $poMaker = new PoMaker(locale: 'es-CL', domain: 'messages');
 ```
@@ -128,7 +128,7 @@ The [TranslatorMaker](../reference/Chevere/Components/Translator/TranslatorMaker
 Create TranslatorMaker by passing the `sourceDir` to read translation `.po` files, and the `targetDir` desired to store generated `.php` translation files.
 
 ```php
-use Chevere\Components\Translator\TranslatorMaker;
+use Chevere\Translator\TranslatorMaker;
 
 $translatorMaker = new TranslatorMaker(
     sourceDir: $source,
@@ -141,7 +141,7 @@ $translatorMaker = new TranslatorMaker(
 Method `withMakeTranslation` is used to generate the PHP translation file at `{targetDir}/{locale}/{domain}.php`.
 
 ```php
-use Chevere\Components\Translator\TranslatorMaker;
+use Chevere\Translator\TranslatorMaker;
 
 $translatorMaker = $translatorMaker->withMakeTranslation(
     locale: $locale,
@@ -158,7 +158,7 @@ The [TranslatorLoader](../reference/Chevere/Components/Translator/TranslatorLoad
 Create a TranslatorLoader by passing the load directory.
 
 ```php
-use Chevere\Components\Translator\TranslatorLoader;
+use Chevere\Translator\TranslatorLoader;
 
 $translatorLoader = new TranslatorLoader(loadDir: $dir);
 ```
@@ -183,7 +183,7 @@ The [TranslatorInstance](../reference/Chevere/Components/Translator/TranslatorIn
 A static instance can be provided by creating a new instance:
 
 ```php
-use Chevere\Components\Translator\TranslatorInstance;
+use Chevere\Translator\TranslatorInstance;
 
 new TranslatorInstance($translator);
 ```

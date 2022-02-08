@@ -9,7 +9,7 @@ A storable variable for Chevere is any PHP variable that can be stored as a stri
 ## Creating VarStorable
 
 ```php
-use Chevere\Components\VarStorable\VarStorable;
+use Chevere\VarStorable\VarStorable;
 
 $varStorable = new VarStorable(var: $var);
 ```
