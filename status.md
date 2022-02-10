@@ -3,7 +3,7 @@
 Project status is **under preview** and it shouldn't be used in production systems.
 
 ::: warning
-The framework is being used to provide the scaffolding required for [Chevereto V4](https://github.com/chevereto/chevereto). During this process the framework is being heavily modified.
+The framework is being used to provide the scaffolding required for [Chevereto V4](https://chevereto.com). During this process the framework is being heavily modified.
 :::
 
 ## Get notified

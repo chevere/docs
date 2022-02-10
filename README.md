@@ -4,17 +4,17 @@ Build extensible server-side progressive applications for modern PHP.
 
 ## What is Chevere?
 
-Chevere is a strict, strong-typed PHP development framework. It is the kind of stuff developers use to build *other* software, specially low-level applications as it is an small unbloated software package providing the core tooling needed to organize and run the logic of any given software application.
+Chevere is a strict, strong-typed, immutable PHP development framework. It is the kind of stuff developers use to build *other* software. It is an small software package providing the strictly necessary tooling for developing the logic of any given software application.
 
-💡 The term *chévere* is ubiquitous in Latin America, spreaded in every spanish speaking country and it means **cool/awesome**. We believe that anything can be chevere, specially PHP software.
+💡 The term *chévere* is ubiquitous in Latin America, known in every Spanish speaking country and it means **cool, awesome**.
 
 ## Why Chevere and not X?
 
-Contrary to almost every PHP framework out there, Chevere is not designed for anything in specific and it doesn't embrace or forbid any application development model. Chevere enables you to be free, to iterate and explore.
+Chevere top selling argument is quality. We enforce testing, full code coverage and mutation testing of all the components in our organization. Our code is tested and scrutinized using several code quality tools, with public reports and stats.
 
-Of course that all frameworks seek that developers end up *writing less and doing more*, but you can't write less unless you give away some control and time. Nowadays we have more framework developers than PHP developers, which is bad without balance and excesively *frames* PHP developers into the given framework culture.
+There's also our culture, where contrary to most PHP frameworks, Chevere is not designed for anything in specific and we don't embrace or forbid any development model. Chevere is the stuff for those needing to rely in good quality components without the bloated package.
 
-Chevere is an anti-framework, is the stuff for those wanting to rely in good quality components and not needing the training wheels to move forward.
+💡 Chevere is a tiny development layer (~400 kb) that you can use in any existing project.
 
 ## Clean & Typed
 
