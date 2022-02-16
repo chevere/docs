@@ -2,7 +2,7 @@
 
 ## System Requirements
 
-Chevere system requirements can be found in the [composer.json](https://github.com/chevere/chevere/blob/main/composer.json) file.
+💡 Chevere system requirements can be found in the `composer.json` file.
 
 ### PHP
 
@@ -22,7 +22,7 @@ The [chevere.ini](https://github.com/chevere/chevere/blob/main/chevere.ini) file
 * Requires [Composer](https://getcomposer.org/)
 
 ```sh
-composer require chevere/chevere dev-main
+composer require chevere/chevere
 ```
 
 The above command will install Chevere and its [dependencies](https://github.com/chevere/chevere/blob/main/composer.json) at `vendor/`.
@@ -35,6 +35,4 @@ Chevere will be available project-wide. Make sure to load `vendor/autoload.php` 
 require 'vendor/autoload.php';
 ```
 
-You can head to [Learn by Example](../developer/examples/repository.md) to pick-up some general idea on what you can do with this. You can also start learning the [Workflow](../components/Workflow.md), [Action](../components/Action.md), [Parameter](../components/Parameter.md) components which will allow you to get a progressive approach into the Chevere realm.
-
-There are also lots of [tests](https://github.com/chevere/chevere/tree/main/tests) to experiment and [run](../architecture/development/workspace.md#running-tests).
+Once installed you can start using any of the built-in [chevere](../chevere/README.md) components.

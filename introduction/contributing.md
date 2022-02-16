@@ -11,3 +11,7 @@ You can help to build a bigger project by doing the following:
 * Engaging in [GitHub discussions](https://github.com/chevere/chevere/discussions)
 * Mentioning Chevere to your friends or colleagues
 * Writing about it (guides, blog posts, etc.)
+
+## Contact
+
+You can contact the developer at `rodolfo@chevere.org`.

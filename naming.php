@@ -1,9 +1,8 @@
 <?php
 
 return [
-    'README.md' => 'Get started',
-    'status.md' => 'Status',
-    'version.md' => 'Version',
-    'installation.md' => 'Installation',
-    'contributing.md' => 'Contributing',
+    'introduction/' => '🤗 Intro',
+    'library/' => '🐘 Library',
+    'packages/' => '📦 Packages',
+    'developer/' => '🛸 Dev',
 ];

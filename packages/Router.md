@@ -36,7 +36,7 @@ Table below shows how system paths are interpreted as HTTP route paths for the [
 | /var/routing/articles/{id}/ | /articles/123/ | GET         |
 | /var/routing/post/          | /post/         | POST        |
 
-Each folder may define many [<methodName>.php](#methodnamephp) for each applicable HTTP method. Variables in the form of `{var}` are used to define dynamic route parameters known as [wildcards](#wildcards).
+<!-- Each folder may define many [<methodName>.php](#methodnamephp) for each applicable HTTP method. Variables in the form of `{var}` are used to define dynamic route parameters known as [wildcards](#wildcards). -->
 
 ### `<methodName>.php`
 
