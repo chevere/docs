@@ -2,8 +2,6 @@
 
 The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](Action.md), but it takes only input string parameters.
 
-## Why strings?
-
 Controller takes string parameters as it is intended to use them wired to:
 
 * CLI applications
@@ -25,7 +23,7 @@ final class SomeController extends Controller
 }
 ```
 
-### Controller getParameters
+### Controller input parameters
 
 Parameters are defined in the `getParameters` method (same as an action). Parameter types provided must be of type [StringParameter](Parameter.md#string-parameter).
 

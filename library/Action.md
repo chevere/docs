@@ -85,4 +85,14 @@ public function run(ArgumentsInterface $arguments): ResponseInterface
 }
 ```
 
-In the example above, an exception will be thrown if the response fails to provide the expected `StringParameter` type for `email`.
+In the example above, an exception will be thrown if the response fails to provide the expected `Chevere\Parameter\StringParameter` type for `email`.
+
+## Running actions
+
+Use `actionRun` function to run an action. This will return an object implementing the `Chevere\Action\ActionRun` interface.
+
+```php
+use function Chevere\Action\actionRun;
+
+$run = actionRun($action, id: 123);
+```
