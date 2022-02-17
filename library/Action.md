@@ -89,7 +89,7 @@ In the example above, an exception will be thrown if the response fails to provi
 
 ## Running actions
 
-Use `actionRun` function to run an action. This will return an object implementing the `Chevere\Action\ActionRun` interface.
+Use `actionRun` function to run an action. This will return an object implementing `Chevere\Action\Interfaces\ActionRunInterface`.
 
 ```php
 use function Chevere\Action\actionRun;
