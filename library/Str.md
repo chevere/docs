@@ -1,5 +1,7 @@
 # Str
 
+`🚧 OUTDATED DOCS`
+
 The `Chevere\Components\Str` namespace provides components that interact with strings, allowing [manipulation](#manipulation), [asserting](#asserting) and [boolean checking](#boolean-checking) for strings.
 
 ## Manipulation

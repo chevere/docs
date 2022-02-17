@@ -1,5 +1,7 @@
 # ClassMap
 
+`🚧 OUTDATED DOCS`
+
 The [ClassMap](../reference/Chevere/Components/ClassMap/ClassMap.md) component is in charge of collecting full-qualified class names.
 
 ## Creating ClassMap

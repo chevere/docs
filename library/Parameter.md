@@ -1,5 +1,7 @@
 # Parameter
 
+`🚧 OUTDATED DOCS`
+
 The [Parameter](../reference/Chevere/Components/Parameter/Parameter.md) component is in charge of providing extended type support with the ability to handle variadic typed parameters and its argument matching. It allows to provide variable parameter-argument type matching relying on the [Type](./Type.md) component.
 
 ## Creating a Parameter

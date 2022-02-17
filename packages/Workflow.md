@@ -1,5 +1,7 @@
 # Workflow
 
+`🚧 OUTDATED DOCS`
+
 The [Workflow](../reference/Chevere/Components/Workflow/Workflow.md) component provides the ability to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It allows to define a series of individual interconnected steps with goal to describe and execute a sequence of steps.
 
 ## Step

@@ -1,5 +1,7 @@
 # Cache
 
+`🚧 OUTDATED DOCS`
+
 The Cache component is in charge of providing a filesystem-based application cache layer. It is intended to be used to cache application states accelerated on top of [OPcache](https://www.php.net/opcache).
 
 ::: tip Learn by Example

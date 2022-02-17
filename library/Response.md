@@ -1,5 +1,7 @@
 # Response
 
+`🚧 OUTDATED DOCS`
+
 The [Response](../reference/Chevere/Components/Response/Response.md) component is in charge of handling responses.
 
 ## Creating Response

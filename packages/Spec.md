@@ -1,5 +1,7 @@
 # Spec
 
+`🚧 OUTDATED DOCS`
+
 The Spec component is in charge of creating a JSON representation for endpoints of a given [Router](./Router.md), allowing to provide instructions in how to interact with the application exposed endpoints.
 
 ## Creating Spec

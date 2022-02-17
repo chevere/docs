@@ -1,5 +1,7 @@
 # Regex
 
+`🚧 OUTDATED DOCS`
+
 The [Regex](../reference/Chevere/Components/Regex/Regex.md) component is in charge of providing tooling for regex patterns.
 
 ## Creating Regex

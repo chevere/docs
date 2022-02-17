@@ -1,5 +1,7 @@
 # Pluggable
 
+`🚧 OUTDATED DOCS`
+
 The `Chevere\Components\Pluggable` namespace provides components for providing pluggable logic, allowing instructions to be easily extended.
 
 ::: tip

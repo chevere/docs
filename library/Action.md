@@ -1,10 +1,10 @@
 # Action
 
-The [Action](../reference/Chevere/Components/Action/Action.md) component is in charge of providing a context for executing any given instruction.
+`🚧 OUTDATED DOCS`
+
+The Action component is in charge of providing a context for executing any given instruction.
 
 ## Defining an Action
-
-Action is the core building block for driving actions to the application. Code below defines class `SomeAction` by extending `Action`.
 
 ```php
 use Chevere\Action\Action;
@@ -17,7 +17,7 @@ final class SomeAction extends Action
 
 ### Description
 
-The `getDescription` method is used to define the action description.
+The `getDescription` method is used to define the action description. This is a short summary explaining the purpose of the action.
 
 ```php
 public function getDescription(): string
@@ -28,7 +28,7 @@ public function getDescription(): string
 
 ### Parameters
 
-The `getParameters` method is used to define the action [Parameters](../reference/Chevere/Components/Parameter/Parameters.md), which will be used to provide matching [run](#run) method arguments.
+The `getParameters` method is used to define the action Parameters, which will be used to provide matching [run](#run) method arguments.
 
 ```php
 use Chevere\Interfaces\Parameter\ParametersInterface;

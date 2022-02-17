@@ -1,5 +1,7 @@
 # Common
 
+`🚧 OUTDATED DOCS`
+
 The Common component provides general-purpose tooling.
 
 ## Description

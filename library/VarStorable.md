@@ -1,5 +1,7 @@
 # VarStorable
 
+`🚧 OUTDATED DOCS`
+
 The [VarStorable](../reference/Chevere/Components/VarStorable/VarStorable.md) component is in charge of handling a variable that can be stored (state).
 
 ## Storable variables

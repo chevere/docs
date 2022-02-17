@@ -1,5 +1,7 @@
 # Message
 
+`🚧 OUTDATED DOCS`
+
 The [Message](../reference/Chevere/Components/Message/Message.md) component allows to create messages with rich formatting support for console, HTML and plain text.
 
 ## Creating a Message

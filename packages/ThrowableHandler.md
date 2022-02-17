@@ -1,5 +1,7 @@
 # ThrowableHandler
 
+`🚧 OUTDATED DOCS`
+
 The [ThrowableHandler](../reference/Chevere/Components/ThrowableHandler/ThrowableHandler.md) component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text.
 
 ::: tip Learn by Example

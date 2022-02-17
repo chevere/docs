@@ -1,5 +1,7 @@
 # Writer
 
+`🚧 OUTDATED DOCS`
+
 The [WriterInterface](../reference/Chevere/Interfaces/Writer/WriterInterface.md) describes the interface for a component in charge of writing strings to streams.
 
 ::: tip Learn by Example

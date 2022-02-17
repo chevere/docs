@@ -1,5 +1,7 @@
 # Controller
 
+`🚧 OUTDATED DOCS`
+
 The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](Action.md), but it takes string parameters.
 
 ::: tip Learn by Example

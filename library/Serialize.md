@@ -1,5 +1,7 @@
 # Serialize
 
+`🚧 OUTDATED DOCS`
+
 The [Serialize](../reference/Chevere/Components/Serialize/Serialize.md) component is in charge of handling variable [serialize](https://www.php.net/serialize).
 
 ## Serialize a variable

@@ -1,5 +1,7 @@
 # VarDump
 
+`🚧 OUTDATED DOCS`
+
 The [VarDump](../reference/Chevere/Components/VarDump/VarDump.md) component provides an alternative to [var_dump](https://www.php.net/var-dump), but with a richer feature set including formatting for the generation of a myriad of dump documents.
 
 ::: tip Learn by Example

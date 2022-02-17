@@ -1,5 +1,7 @@
 # Filesystem
 
+`🚧 OUTDATED DOCS`
+
 The Filesystem component is in charge of interact with the filesystem, offering a myriad of related functionalities.
 
 ## Path

@@ -1,6 +1,7 @@
 # Router
 
-⚠️ OUTDATED DOCS
+`🚧 OUTDATED DOCS`
+
 
 The [Router](../reference/Chevere/Components/Router/Router.md) component is in charge of collecting [Routables](../reference/Chevere/Components/Router/Routables.md).
 
