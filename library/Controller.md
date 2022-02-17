@@ -1,26 +1,20 @@
 # Controller
 
-`🚧 OUTDATED DOCS`
+The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](Action.md), but it takes only input string parameters.
 
-The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](Action.md), but it takes string parameters.
+## Why strings?
 
-::: tip Learn by Example
-Check the Controller [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#00controllerphp) to learn playing with code.
-:::
-
-## String Parameters?
-
-Controller takes string parameters as it is intended to use them   _wired_ to:
+Controller takes string parameters as it is intended to use them wired to:
 
 * CLI applications
 * Web Servers
 * Application runners
 
-If you don't need to wire to these devices you should be using [Action](Action.md), which doesn't restrict the input parameter type.
+💡 If you don't need to wire instructions to these devices you should be using [Action](Action.md), which doesn't restrict the input parameter type.
 
 ## Creating a Controller
 
-Code below defines class `SomeController` by extending the base [Controller](../reference/Chevere/Components/Controller/Controller.md).
+Code below defines class `SomeController` by extending the base `Controller`.
 
 ```php
 use Chevere\Controller\Controller;
@@ -33,66 +27,19 @@ final class SomeController extends Controller
 
 ### Controller getParameters
 
-Parameters are defined in the `getParameters` method. Parameter types provided must be of type [StringParameter](Parameter.md#string-paramater).
+Parameters are defined in the `getParameters` method (same as an action). Parameter types provided must be of type [StringParameter](Parameter.md#string-parameter).
 
 ```php
-use Chevere\Parameter\StringParameter;
 use Chevere\Parameter\Interfaces\ParametersInterface;
+use function Chevere\Parameter\parameters;
+use function Chevere\Parameter\stringParameter;
 
 public function getParameters(): ParametersInterface
 {
-    return new Parameters(
-        id: new StringParameter(),
-        name: new StringParameter(),
-    );
-}
-```
-
-### Type Casting
-
-Type casting can be applied in the `run` method directly on each argument.
-
-```php
-use Chevere\Response\Response;
-use Chevere\Parameter\Interfaces\ArgumentsInterface;
-use Chevere\Response\Interfaces\ResponseInterface;
-
-public function run(ArgumentsInterface $arguments): ResponseInterface
-{
-    $id = (int) $arguments->getString('id');
-    $name = $arguments->getString('name');
-
-    // ...
-}
-```
-
-## Creating a ControllerWorkflow
-
-A Controller with built-in [Workflow](Workflow.md) integration allows to create controllers following the workflow pattern.
-
-Code below defines class `SomeWorkflowController` by extending the base [ControllerWorkflow](../reference/Chevere/Components/Controller/ControllerWorkflow.md).
-
-```php
-use Chevere\Controller\ControllerWorkflow;
-
-final class SomeWorkflowController extends ControllerWorkflow
-{
-    // ...
-}
-```
-
-### Controller getWorkflow
-
-Workflow is defined in the `getWorkflow` method.
-
-```php
-use Chevere\Workflow\Workflow;
-use Chevere\Workflow\Interfaces\WorkflowInterface;
-
-public function getWorkflow(): WorkflowInterface
-{
-    return new Workflow(
-        // ...
-    );
+    return
+        parameters(
+            id: stringParameter(),
+            name: stringParameter(),
+        );
 }
 ```
