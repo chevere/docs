@@ -14,7 +14,7 @@ This implementation **doesn't support** domain-related gettext functions for tra
 
 ## Translatable Functions
 
-All translatable [functions](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/functions.php) are provided at the `Chevere\Components\Translator` namespace.
+All translatable [functions](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/Translator/functions.php) are provided at the `Chevere\Translator` namespace.
 
 ## Singular
 
@@ -199,7 +199,7 @@ This will bind `$translator` as the runtime translator service.
 Function `getTranslator` allows to get the current registered Translator by [TranslatorInstance](#translatorinstance).
 
 ```php
-use function Chevere\Components\Translator\getTranslator;
+use function Chevere\Translator\getTranslator;
 
 $translator = getTranslator();
 ```

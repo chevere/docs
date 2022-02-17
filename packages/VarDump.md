@@ -12,7 +12,7 @@ Check the VarDump [examples](https://github.com/chevere/examples/tree/main/02.Va
 
 The following helper functions can be used to save boilerplate when needing to initialize a VarDump instance.
 
-* Namespace `Chevere\Components\VarDump`
+* Namespace `Chevere\VarDump`
   * `getVarDumpPlain` to create a plain var dump
   * `getVarDumpConsole` to create a console var dump
   * `getVarDumpHtml` to create a HTML var dump
@@ -27,7 +27,7 @@ In the example below, a VarDump is created with console colored formatting and o
 use Chevere\VarDump\Formatters\VarDumpConsoleFormatter;
 use Chevere\VarDump\Outputters\VarDumpConsoleOutputter;
 use Chevere\VarDump\VarDump;
-use function Chevere\Components\VarDump\getVarDumpConsole;
+use function Chevere\VarDump\getVarDumpConsole;
 
 $varDump = new VarDump(
     formatter: new VarDumpConsoleFormatter,
@@ -51,7 +51,7 @@ The method `process` is used to trigger the var dumping process. It requires to 
 
 ```php
 use Chevere\Writer\StreamWriter;
-use function Chevere\Components\Writer\streamFor;
+use function Chevere\Writer\streamFor;
 
 $varDump->process(
     writer: new StreamWriter(streamFor('php://stdout', 'w'))

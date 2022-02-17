@@ -26,7 +26,7 @@ Output is the channel used for writing when no error happens.
 
 ```php
 use Chevere\Writer\StreamWriter;
-use function Chevere\Components\Writer\streamFor;
+use function Chevere\Writer\streamFor;
 
 $writers = $writers
     ->withOutput(
@@ -42,7 +42,7 @@ Error is the channel for writing when some error happens.
 
 ```php
 use Chevere\Writer\StreamWriter;
-use function Chevere\Components\Writer\streamFor;
+use function Chevere\Writer\streamFor;
 
 $writers = $writers
     ->withError(
@@ -58,7 +58,7 @@ Debug is the channel for writing debug information.
 
 ```php
 use Chevere\Writer\StreamWriter;
-use function Chevere\Components\Writer\streamFor;
+use function Chevere\Writer\streamFor;
 
 $writers = $writers
     ->withDebug(
@@ -74,7 +74,7 @@ Log is the channel for writing log information.
 
 ```php
 use Chevere\Writer\StreamWriter;
-use function Chevere\Components\Writer\streamFor;
+use function Chevere\Writer\streamFor;
 
 $writers = $writers
     ->withLog(
@@ -94,7 +94,7 @@ Code below shows how to initiate a `StreamWriter` for a `given string`.
 
 ```php
 use Chevere\Writer\StreamWriter;
-use function Chevere\Components\Writer\streamForString;
+use function Chevere\Writer\streamForString;
 
 $writer = new StreamWriter(
     stream: streamForString('given string')

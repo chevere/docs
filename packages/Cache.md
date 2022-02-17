@@ -14,7 +14,7 @@ Create a Cache by passing the cache working directory.
 
 ```php
 use Chevere\Cache\Cache;
-use function Chevere\Components\Filesystem\dirForPath;
+use function Chevere\Filesystem\dirForPath;
 
 $cache = new Cache(dir: dirForPath('/to-cache/'));
 ```

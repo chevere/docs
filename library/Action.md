@@ -31,7 +31,7 @@ public function getDescription(): string
 The `getParameters` method is used to define the action Parameters, which will be used to provide matching [run](#run) method arguments.
 
 ```php
-use Chevere\Interfaces\Parameter\ParametersInterface;
+use Chevere\Parameter\Interfaces\ParametersInterface;
 use Chevere\Parameter\Parameters;
 use Chevere\Parameter\IntegerParameter;
 
@@ -49,7 +49,7 @@ public function getParameters(): ParametersInterface
 The `getResponseParameters` method is used to define the response data parameters, which will be checked against the response data provided in the [run](#run) method.
 
 ```php
-use Chevere\Interfaces\Parameter\ParametersInterface;
+use Chevere\Parameter\Interfaces\ParametersInterface;
 use Chevere\Parameter\Parameters;
 use Chevere\Parameter\IntegerParameter;
 
@@ -68,8 +68,8 @@ The `run` method is used to define the actual action instruction that will carri
 It must return a [Response](../reference/Chevere/Components/Response/Response.md) object.
 
 ```php
-use Chevere\Interfaces\Parameter\ArgumentsInterface;
-use Chevere\Interfaces\Response\ResponseInterface;
+use Chevere\Parameter\Interfaces\ArgumentsInterface;
+use Chevere\Response\Interfaces\ResponseInterface;
 
 public function run(ArgumentsInterface $arguments): ResponseInterface
 {

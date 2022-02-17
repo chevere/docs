@@ -82,7 +82,7 @@ The [Dir](../reference/Chevere/Components/Filesystem/Dir.md) component is in cha
 ```php
 use Chevere\Filesystem\Dir;
 use Chevere\Filesystem\Path;
-use function Chevere\Components\Filesystem\dirForPath;
+use function Chevere\Filesystem\dirForPath;
 
 $path = '/home/var/';
 $dir = new Dir(new Path($path))
@@ -144,7 +144,7 @@ The [File](../reference/Chevere/Components/Filesystem/File.md) component in char
 ```php
 use Chevere\Filesystem\File;
 use Chevere\Filesystem\Path;
-use function Chevere\Components\Filesystem\fileForPath;
+use function Chevere\Filesystem\fileForPath;
 
 $path = '/home/var/the-file.php';
 $file = new File(new Path($path));

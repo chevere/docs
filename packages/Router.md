@@ -78,7 +78,7 @@ The [RoutingDescriptorsMaker](../reference/Chevere/Components/Router/Routing/Rou
 
 ```php
 use Chevere\Router\Routing\RoutingDescriptorsMaker;
-use function Chevere\Components\Filesystem\dirForPath;
+use function Chevere\Filesystem\dirForPath;
 
 $routingDescriptorsMaker = new RoutingDescriptorsMaker(
     repository: 'app-routes'
@@ -95,7 +95,7 @@ The function `routerForRoutingDescriptors` allows to generate a router from Rout
 In the code below, `$router` is generated from `$routingDescriptors` and bound to `my-group`.
 
 ```php
-use function Chevere\Components\Router\Routing\routerForRoutingDescriptors;
+use function Chevere\Router\Routing\routerForRoutingDescriptors;
 
 $router = routerForRoutingDescriptors(descriptors: $routingDescriptors);
 ```

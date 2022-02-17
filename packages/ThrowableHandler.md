@@ -38,7 +38,7 @@ In the code below console, plain and HTML throwable documents are created by pas
 use Chevere\ThrowableHandler\Documents\ConsoleDocument;
 use Chevere\ThrowableHandler\Documents\HtmlDocument;
 use Chevere\ThrowableHandler\Documents\PlainDocument;
-use Chevere\Interfaces\ThrowableHandler\ThrowableHandler;
+use Chevere\ThrowableHandler\Interfaces\ThrowableHandler;
 
 /**
  * @var ThrowableHandler $handler

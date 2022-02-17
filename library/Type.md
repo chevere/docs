@@ -50,7 +50,7 @@ For [keywords](#keywords), the return value of `primitive` and `typeHinting` is 
 The `validate` method allows to validate any `$var` against the declared type.
 
 ```php
-use Chevere\Interfaces\Type\TypeInterface;
+use Chevere\Type\Interfaces\TypeInterface;
 
 /**
  * @var bool $validate

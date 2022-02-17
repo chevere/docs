@@ -2,7 +2,7 @@
 
 `🚧 OUTDATED DOCS`
 
-The `Chevere\Components\Str` namespace provides components that interact with strings, allowing [manipulation](#manipulation), [asserting](#asserting) and [boolean checking](#boolean-checking) for strings.
+The `Chevere\Str` namespace provides components that interact with strings, allowing [manipulation](#manipulation), [asserting](#asserting) and [boolean checking](#boolean-checking) for strings.
 
 ## Manipulation
 
@@ -32,7 +32,7 @@ Asserting strings refers to the process of asserting an argument of type `string
 The [StrAssert](../reference/Chevere/Components/Str/StrAssert.md)  component in charge of string asserting.
 
 ```php
-use new Chevere\Components\Str\StrAssert;
+use new Chevere\Str\StrAssert;
 
 (new StrAssert('A String'))
     ->notEmpty()
@@ -52,7 +52,7 @@ Bool string refers to the process of validating an argument of type `string` aga
 The [StrBool](../reference/Chevere/Components/Str/StrBool.md) component in charge of string validation.
 
 ```php
-use new Chevere\Components\Str\StrBool;
+use new Chevere\Str\StrBool;
 
 $string = 'Chévere es magnífico!';
 $strBool = new StrBool($string);

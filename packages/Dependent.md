@@ -2,7 +2,7 @@
 
 `🚧 OUTDATED DOCS`
 
-The `Chevere\Components\Dependent` namespace provides components for providing handling for object dependencies that must be injected.
+The `Chevere\Dependent` namespace provides components for providing handling for object dependencies that must be injected.
 
 The concept is known as [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
 
@@ -19,7 +19,7 @@ Use [DependentTrait](../reference/Chevere/Components/Dependent/Traits/DependentT
 :::
 
 ```php
-use Chevere\Interfaces\Dependent\DependentInterface;
+use Chevere\Dependent\Interfaces\DependentInterface;
 use Chevere\Dependent\Traits\DependentTrait;
 
 class MyDependent implements DependentInterface

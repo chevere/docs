@@ -37,7 +37,7 @@ Parameters are defined in the `getParameters` method. Parameter types provided m
 
 ```php
 use Chevere\Parameter\StringParameter;
-use Chevere\Interfaces\Parameter\ParametersInterface;
+use Chevere\Parameter\Interfaces\ParametersInterface;
 
 public function getParameters(): ParametersInterface
 {
@@ -54,8 +54,8 @@ Type casting can be applied in the `run` method directly on each argument.
 
 ```php
 use Chevere\Response\Response;
-use Chevere\Interfaces\Parameter\ArgumentsInterface;
-use Chevere\Interfaces\Response\ResponseInterface;
+use Chevere\Parameter\Interfaces\ArgumentsInterface;
+use Chevere\Response\Interfaces\ResponseInterface;
 
 public function run(ArgumentsInterface $arguments): ResponseInterface
 {
@@ -87,7 +87,7 @@ Workflow is defined in the `getWorkflow` method.
 
 ```php
 use Chevere\Workflow\Workflow;
-use Chevere\Interfaces\Workflow\WorkflowInterface;
+use Chevere\Workflow\Interfaces\WorkflowInterface;
 
 public function getWorkflow(): WorkflowInterface
 {

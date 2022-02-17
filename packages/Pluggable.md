@@ -2,7 +2,7 @@
 
 `🚧 OUTDATED DOCS`
 
-The `Chevere\Components\Pluggable` namespace provides components for providing pluggable logic, allowing instructions to be easily extended.
+The `Chevere\Pluggable` namespace provides components for providing pluggable logic, allowing instructions to be easily extended.
 
 ::: tip
 A class defining pluggable logic is known as _pluggable_.
@@ -33,9 +33,9 @@ Use [PluggableEventsTrait](../reference/Chevere/Components/Pluggable/Plug/Event/
 In the code below, calls to `event` method allows to emit an event when `set` method logic gets executed.
 
 ```php
-use Chevere\Interfaces\Pluggable\PluggableAnchorsInterface;
+use Chevere\Pluggable\InterfacePluggableAnchorsInterface;
 use Chevere\Pluggable\Plug\Event\Traits\PluggableEventsTrait;
-use Chevere\Interfaces\Pluggable\Plug\Hook\PluggableHooksInterface;
+use Chevere\Pluggable\Interfaces\Plug\Hook\PluggableHooksInterface;
 
 final class DoesSomething implements PluggableEventsInterface
 {
@@ -94,9 +94,9 @@ Use [PluggableHooksTrait](../reference/Chevere/Components/Pluggable/Plug/Hook/Tr
 In the code below, calling `hook` method allows to extend the behavior of the base `set` method.
 
 ```php
-use Chevere\Interfaces\Pluggable\PluggableAnchorsInterface;
+use Chevere\Pluggable\Interfaces\PluggableAnchorsInterface;
 use Chevere\Pluggable\Plug\Hook\Traits\PluggableHooksTrait;
-use Chevere\Interfaces\Pluggable\Plug\Hook\PluggableHooksInterface;
+use Chevere\Pluggable\Interfaces\Plug\Hook\PluggableHooksInterface;
 
 final class DoesSomething implements PluggableHooksInterface
 {

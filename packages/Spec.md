@@ -11,7 +11,7 @@ The [SpecMaker](../reference/Chevere/Components/Spec/SpecMaker.md) is in charge 
 ```php
 use Chevere\Spec\SpecMaker;
 use Chevere\Router\Router;
-use function Chevere\Components\Filesystem\dirForPath;
+use function Chevere\Filesystem\dirForPath;
 
 /**
  * @var Router $router

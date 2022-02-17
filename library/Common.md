@@ -13,7 +13,7 @@ Use [DescriptionTrait](https://github.com/Chevereto/chevere/blob/main/src/Chever
 :::
 
 ```php
-use Chevere\Interfaces\Common\DescriptionInterface;
+use Chevere\Common\Interfaces\DescriptionInterface;
 use Chevere\Common\Traits\DescriptionTrait;
 
 class MyDescribedClass implements DescriptionInterface
@@ -37,7 +37,7 @@ class MyDescribedClass implements DescriptionInterface
 [ToArrayInterface](../reference/Chevere/Interfaces/Common/ToArrayInterface.md) describes the interface for a class providing an array representation.
 
 ```php
-use Chevere\Interfaces\Common\ToArrayInterface;
+use Chevere\Common\Interfaces\ToArrayInterface;
 
 class MyToArrayClass implements ToArrayInterface
 {
@@ -55,7 +55,7 @@ class MyToArrayClass implements ToArrayInterface
 [ToStringInterface](../reference/Chevere/Interfaces/Common/ToStringInterface.md) describes the interface for a class providing a string representation.
 
 ```php
-use Chevere\Interfaces\Common\ToStringInterface;
+use Chevere\Common\Interfaces\ToStringInterface;
 
 class MyToStringClass implements ToStringInterface
 {
