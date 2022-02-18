@@ -1,141 +1,117 @@
 # Parameter
 
-`🚧 OUTDATED DOCS`
+The `Chevere/Parameter` namespace is in charge of providiong typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
 
-The [Parameter](../reference/Chevere/Components/Parameter/Parameter.md) component is in charge of providing extended type support with the ability to handle variadic typed parameters and its argument matching. It allows to provide variable parameter-argument type matching relying on the [Type](./Type.md) component.
+This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](./Type.md) component.
 
 ## Creating a Parameter
 
-In the code below, type for class `FullQualifiedName` is created with a description and an added attribute.
+Parameters can be created with ease using functions. All of these enables to prodive `$description`, `$default` and `...$attributes` for each parameter.
+
+### Array
+
+Use function `Chevere\Parameter\arrayParameter` to create a parameter of type `array`. It support default `array` value.
 
 ```php
-use Chevere\Parameter\Parameter;
-use Chevere\Type\Type;
+Use function Chevere\Parameter\arrayParameter;
 
-$parameter = new Parameter(
-    type: new Type('FullQualifiedName')
+$array = arrayParameter(default: ['do' => true]);
+```
+
+### Boolean
+
+Use function `Chevere\Parameter\booleanParameter` to create a parameter of type `boolean`. It support default `boolean` value.
+
+```php
+Use function Chevere\Parameter\booleanParameter;
+
+$boolean = booleanParameter(default: true);
+```
+
+### Float
+
+Use function `Chevere\Parameter\floatParameter` to create a parameter of type `float`. It support default `float` value.
+
+```php
+Use function Chevere\Parameter\floatParameter;
+
+$float = floatParameter(default: 12.3);
+```
+
+### Integer
+
+Use function `Chevere\Parameter\integerParameter` to create a parameter of type `integer`. It support `integer` default value.
+
+```php
+Use function Chevere\Parameter\integerParameter;
+
+$integer = integerParameter(default: 123);
+```
+
+### Object
+
+Use function `Chevere\Parameter\objectParameter` to create a parameter of type `object`.
+
+```php
+Use function Chevere\Parameter\objectParameter;
+
+$object = objectParameter('className');
+```
+
+### String
+
+Use function `Chevere\Parameter\stringParameter` to create a parameter of type `string`. It support regex and `string` default value.
+
+```php
+use Chevere\Regex\Regex;
+Use function Chevere\Parameter\stringParameter;
+
+$string = stringParameter(
+    default: 'id-000',
+    regex: new Regex('/^id-[\d]+$/')
 );
 ```
 
-### Description
-
-The `withDescription` method is used to provide the parameter description, which is a short summary explaining the purpose of the parameter.
-
-```php
-use Chevere\Parameter\Parameter;
-
-/**
- * @var Parameter $parameter
- */
-$parameter = $parameter
-    ->withDescription(description: 'Stuff for doing some');
-```
+The above `$string` parameter will require an argument like `id-123` to validate.
 
 ### Attributes
 
-The `withAddedAttribute` method is used to provide parameter attributes, which are flags that can tag the parameter.
+Parameters can be created passing attributes, which can be checked using `hasAttribute`.
 
 ```php
-use Chevere\Parameter\Parameter;
-
-/**
- * @var Parameter $parameter
- */
-$parameter = $parameter
-    ->withAddedAttribute('langEn', 'localeEn');
-$parameter->hasAttribute('langEn'); // true
+$parameter->hasAttribute('name');
 ```
-
-## Parameter types
-
-The following parameter type classes are provided for convenience.
-
-### Array Parameter
-
-The [ArrayParameter](../reference/Chevere/Components/Parameter/ArrayParameter.md) component in charge of defining a parameter of type array. It support default `array` value.
-
-```php
-use Chevere\Parameter\ArrayParameter;
-
-(new ArrayParameter())
-    ->withDefault(value: ['do' => true]);
-```
-
-### Boolean Parameter
-
-The [BooleanParameter](../reference/Chevere/Components/Parameter/BooleanParameter.md) component in charge of defining a parameter of type boolean. It support default `boolean` value.
-
-```php
-use Chevere\Parameter\BooleanParameter;
-
-(new BooleanParameter())
-    ->withDefault(value: true);
-```
-
-### Float Parameter
-
-The [FloatParameter](../reference/Chevere/Components/Parameter/FloatParameter.md) component in charge of defining a parameter of type float. It support default `float` value.
-
-```php
-use Chevere\Parameter\FloatParameter;
-
-(new FloatParameter())
-    ->withDefault(value: 12.3);
-```
-
-### Integer Parameter
-
-The [IntegerParameter](../reference/Chevere/Components/Parameter/IntegerParameter.md) component in charge of defining a parameter of type integer. It support `integer` default value.
-
-```php
-use Chevere\Parameter\IntegerParameter;
-
-(new IntegerParameter())
-    ->withDefault(value: 123);
-```
-
-### String Parameter
-
-The [StringParameter](../reference/Chevere/Components/Parameter/StringParameter.md) component in charge of defining a parameter of type string. It support regex and `string` default value.
-
-```php
-use Chevere\Parameter\StringParameter;
-use Chevere\Regex\Regex;
-
-(new StringParameter())
-    ->withDefault(value: 'id-000')
-    ->withRegex(regex: new Regex('/^id-[\d]+$/'));
-```
-
-The above parameter will require an argument like `id-123` to validate.
 
 ## Parameters
 
-The [Parameters](../reference/Chevere/Components/Parameter/Parameters.md) component in charge of collecting objects implementing the [ParameterInterface](../reference/Chevere/Interfaces/Parameter/ParameterInterface.md).
+The `Chevere/Parameter/Parameters` component in charge of collecting objects implementing the `Chevere/Parameter/Interfaces/ParameterInterface`.
+
+💡 Parameters members are handled as **required** by default.
 
 ### Creating Parameters
 
-Create Parameters instance by passing the required parameters on construct.
+Use function `Chevere\Parameter\parameters` to create a parameters collection.
 
 ```php
-use Chevere\Parameter\Parameters;
 use Chevere\Parameter\IntegerParameter;
 
-$parameters = new Parameters(
-    id: (new IntegerParameter())
-        ->withDefault(value: 123)
+$parameters = parameters(
+    id: integerParameter(
+        description: 'user id.',
+        default: 123,
+    ),
 );
 ```
 
 ### Adding Parameters
 
-The `withAdded` method is used to add required parameters.
+The `withAdded` method is used to add more required parameters.
 
 ```php
-use Chevere\Parameter\StringParameter;
+use function Chevere\Parameter\stringParameter;
 
-$parameters->withAdded(
-    name: new StringParameter();
+$parameters = $parameters->withAdded(
+    name: stringParameter();
 );
 ```
 
@@ -144,12 +120,11 @@ $parameters->withAdded(
 The `withAddedOptional` method is used to add optional parameters.
 
 ```php
-use Chevere\Parameter\IntegerParameter;
+use function Chevere\Parameter\integerParameter;
 
-$parameters->withAddedOptional(
-    priority: (new IntegerParameter())
-        ->withDefault(value: 0);
-)
+$parameters = $parameters->withAddedOptional(
+    priority: integerParameter(default: 0)
+);
 ```
 
 ### Modifying Parameters
@@ -157,31 +132,30 @@ $parameters->withAddedOptional(
 The `withModify` method is used to modify parameters.
 
 ```php
-use Chevere\Parameter\IntegerParameter;
+use function Chevere\Parameter\integerParameter;
 
-$parameters->withModify(
-    priority: (new IntegerParameter())
-        ->withDefault(value: 100);
-)
+$parameters = $parameters->withModify(
+    priority: integerParameter(default: 100)
+);
 ```
 
 ## Arguments
 
-The [Arguments](../reference/Chevere/Components/Parameter/Arguments.md) component in charge of providing arguments matching the declared [Parameters](#parameters).
+The `Chevere/Parameter/Arguments` component in charge of providing arguments matching the declared [Parameters](#parameters).
 
 ```php
 use Chevere\Parameter\Arguments;
-use Chevere\Parameter\Parameters;
+use function Chevere\Parameter\parameters;
+use function Chevere\Parameter\integerParameter;
 
-new Arguments(
-    parameters: new Parameters(
-        id: new IntegerParameter()
-    ),
-    id: 123
+$parameters = parameters(
+    id: integerParameter()
 );
+$data = ['id' => 123];
+$arguments = new Arguments($parameters, ...$data);
 ```
 
-The example above shows how to construct an Arguments instance by passing the Parameters and the matching named arguments.
+> **Note** If you pass `abc` instead of `123` the system will throw a `TypeException`.
 
 ### Retrieve an argument
 
@@ -196,8 +170,8 @@ use Chevere\Parameter\Arguments;
  * @var Arguments $arguments
  * @var bool $argument
  */
-$argument = $arguments->get(name: 'namedArgument');
-$boolean = $arguments->getBoolean(name: 'namedArgument');
+$argument = $arguments->get('namedArgument');
+$boolean = $arguments->getBoolean('namedArgument');
 ```
 
 The following methods are available to provide typed argument retrieval:
@@ -210,4 +184,4 @@ The following methods are available to provide typed argument retrieval:
 | `getFloat`   | `float`     |
 | `getArray`   | `array`     |
 
-> **Note** that the above methods will throw a [TypeException](../reference/Chevere/Exceptions/Core/TypeException.md) on type mismatch.
+> **Note** Above methods will throw a `TypeException` on type mismatch.
