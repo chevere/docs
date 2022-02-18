@@ -1,15 +1,15 @@
 # Response
 
-`🚧 OUTDATED DOCS`
-
-The [Response](../reference/Chevere/Components/Response/Response.md) component is in charge of handling responses.
+The `Chevere/Response/Response` component is in charge of handling responses.
 
 ## Creating Response
+
+Create a response by passing named data.
 
 ```php
 use Chevere\Response\Response;
 
-$response = new Response(foo: 'foo');
+$response = new Response(key: 'value');
 ```
 
 ## With data
@@ -17,23 +17,19 @@ $response = new Response(foo: 'foo');
 The `withData` method is used to set the Response data.
 
 ```php
-/**
- * @var mixed $foo
- * @var mixed $bar
- */
 $response = $response
     ->withData(foo: $foo, bar: $bar);
 ```
 
-## With status
+## With code
 
-The `withStatus` method is used to set Response status code.
+The `withCode` method is used to set Response code.
 
 ```php
-$response = $response->withStatus(code: 0);
+$response = $response->withCode(code: 0);
 ```
 
-### Status codes
+### Response codes
 
 | Code           | Description |
 | -------------- | ----------- |
@@ -42,10 +38,10 @@ $response = $response->withStatus(code: 0);
 
 ## UUID
 
-The `uuid` method is used to access to the Response [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+The `uuid` method is used to access to the Response [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) (V4).
 
 ```php
-$response->uuid();
+$uuid = $response->uuid();
 ```
 
 ## Token
@@ -53,7 +49,7 @@ $response->uuid();
 The `token` method is used to access to the Response token.
 
 ```php
-$response->token();
+$token = $response->token();
 ```
 
 ## Data
@@ -61,13 +57,13 @@ $response->token();
 The `data` method is used to access to the Response data.
 
 ```php
-$response->data();
+$data = $response->data();
 ```
 
-## Status
+## Code
 
-The `status` method is used to access to the Response status.
+The `code` method is used to access to the Response code.
 
 ```php
-$response->status();
+$code = $response->code();
 ```
