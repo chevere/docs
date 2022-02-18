@@ -26,13 +26,29 @@ The `withPut` method is used to put a value to the Map at the given key.
 $map = $map->withPut(foo: $foo, bar: $bar);
 ```
 
+### Counting keys
+
+The `count` method returns the number of keys mapped.
+
+```php
+$count = $map->count(); // integer
+```
+
+### Accessing keys
+
+The `keys` method is used to retrieve the map keys as an array.
+
+```php
+$keys = $map->keys();
+```
+
 ### Checking keys
 
 The `has` method is used to check if the Map contains the given key(s).
 
 ```php
-$map->has(key: 'foo'); // true
-$map->has(key: 'notFound'); // throws Throwable
+$map->has('foo'); // true
+$map->has('notFound'); // throws Throwable
 ```
 
 ### Asserting keys
@@ -40,8 +56,8 @@ $map->has(key: 'notFound'); // throws Throwable
 The `assertHas` method is used to assert if the Map contains the given key(s).
 
 ```php
-$map->assertHas(key: 'foo'); // true
-$map->assertHas(key: 'notFound'); // throws Throwable
+$map->assertHas('foo'); // true
+$map->assertHas('notFound'); // throws Throwable
 ```
 
 ### Get value
@@ -49,8 +65,8 @@ $map->assertHas(key: 'notFound'); // throws Throwable
 The `get` method is used to retrieve the Map value for the given key.
 
 ```php
-$getFoo = $map->get(key: 'foo'); // $foo
-$getBar = $map->get(key: 'bar'); // $bar
+$getFoo = $map->get('foo'); // $foo
+$getBar = $map->get('bar'); // $bar
 ```
 
 ### Typed Map
