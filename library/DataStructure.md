@@ -68,11 +68,3 @@ The `get` method is used to retrieve the Map value for the given key.
 $getFoo = $map->get('foo'); // $foo
 $getBar = $map->get('bar'); // $bar
 ```
-
-### Typed Map
-
-The `Chevere/DataStructure/Interfaces/MappedInterface` describes the interface for a component supporting mapping, like [Map](#map) which doesn't specify any typing.
-
-::: tip
-Use `Chevere/Components/DataStructure/Traits/MapTrait` to implement the `MappedInterface`.
-:::
