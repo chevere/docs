@@ -1,24 +1,20 @@
 # Writer
 
-`🚧 OUTDATED DOCS`
+The `Chevere/Writer` namespace provides components that interact with `output`, `error`, `debug` and `log`. A writer is defined by the `Chevere/Writer/Interfaces/WriterInterface`.
 
-The [WriterInterface](../reference/Chevere/Interfaces/Writer/WriterInterface.md) describes the interface for a component in charge of writing strings to streams.
+## Writers
 
-::: tip Learn by Example
-Check the Writer [example](https://github.com/chevere/examples/tree/main/00.HelloWorld#01writerphp) to learn directly playing with code.
-:::
-
-## Writers Container
-
-The [Writers](../reference/Chevere/Components/Writer/Writers.md) component describes a service container providing access to `out`, `error`, `debug` and `log` writers.
+The `Chevere/Writer/Writers` component describes a service container providing access to `output`, `error`, `debug` and `log` writers.
 
 ```php
 use Chevere\Writer\Writers;
 
 $writers = new Writers();
+$output = $writers->output(); // streamTemp
+$error = $writers->error(); // streamTemp
 ```
 
-By default, it populates `out` and `error` to two temp streams`. Methods [withOutput](#withoutput), [withError](#witherror), [withDebug](#withdebug) and [withLog](#withlog) can be used to specify each writer stream.
+Methods [withOutput](#withoutput), [withError](#witherror), [withDebug](#withdebug) and [withLog](#withlog) can be used to specify each writer stream.
 
 ### withOutput
 
@@ -88,9 +84,7 @@ $writers = $writers
 
 ### StreamWriter
 
-The [StreamWriter](../reference/Chevere/Components/Writer/StreamWriter.md) component is in charge of writing strings to a [stream](https://www.php.net/stream).
-
-Code below shows how to initiate a `StreamWriter` for a `given string`.
+The `Chevere/Writer/StreamWriter` component is in charge of writing strings to a stream.
 
 ```php
 use Chevere\Writer\StreamWriter;
@@ -100,4 +94,22 @@ $writer = new StreamWriter(
     stream: streamForString('given string')
 );
 $writer->write('write some');
+```
+
+### Streams
+
+Use function `Chevere\Writer\streamFor` to create an stream.
+
+```php
+use function Chevere\Writer\streamFor;
+
+$stream = streamFor('php://temp', mode: 'r+');
+```
+
+Use function `Chevere\Writers\streamTemp` to create a temp stream (r+).
+
+```php
+use function Chevere\Writer\streamTemp;
+
+$stream = streamTemp($content);
 ```
