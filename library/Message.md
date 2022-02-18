@@ -1,8 +1,6 @@
 # Message
 
-`🚧 OUTDATED DOCS`
-
-The [Message](../reference/Chevere/Components/Message/Message.md) component allows to create messages with rich formatting support for console, HTML and plain text.
+The `Chevere/Message/Message` component allows to create messages with rich formatting support for console, HTML and plain text.
 
 ## Creating a Message
 
@@ -10,8 +8,11 @@ A Message is created by passing a Message template. In the code below a new Mess
 
 ```php
 use Chevere\Message\Message;
+use function Chevere\Message\message;
 
-$message = new Message(template: 'Hello, %to%!');
+$message = new Message('Hello, %to%!');
+// It can be also created with:
+$message = message('Hello, %to%!');
 ```
 
 ## Replacing sub-strings
@@ -20,19 +21,12 @@ The `strtr` method allows to prepare sub-string replacement without formatting.
 
 ```php
 $message = $message
-    ->strtr(
-        search: '%to%',
-        replace: 'Rodolfo'
-    ); // Hello, Rodolfo!
+    ->strtr('%to%', 'Rodolfo'); // Hello, Rodolfo!
 ```
 
 ## Formatting
 
-A Message can be formatted using methods that take a `$search` needle and replace it with `$replace` prepared with the desired formatting.
-
-```php
-$message = new Message(template: '$0 $1 "%say" [**output**]');
-```
+A Message is formatted using methods that take `$search` needle and replace it with `$replace` strings.
 
 ### Emphasis
 
@@ -40,10 +34,7 @@ The `emphasis` method allows to prepare sub-string replacement with emphasis.
 
 ```php
 $message = $message
-    ->emphasis(
-        search: '$0',
-        replace: 'ERROR'
-    )
+    ->emphasis('%to%', 'Rodolfo') // Hello, <em>Rodolfo</em>!
 ```
 
 ### Strong
@@ -52,10 +43,7 @@ The `strong` method allows to prepare sub-string replacement with strong.
 
 ```php
 $message = $message
-    ->strong(
-        search: '$1',
-        replace: '/where-it-happened.php'
-    )
+    ->strong('%to%', 'Rodolfo') // Hello, <strong>Rodolfo</strong>!
 ```
 
 ### Underline
@@ -64,10 +52,7 @@ The `underline` method allows to prepare sub-string replacement with underline.
 
 ```php
 $message = $message
-    ->underline(
-        search: '%say',
-        replace: 'Por la cresta!'
-    )
+    ->underline('%to%', 'Rodolfo') // Hello, <underline>Rodolfo</underline>!
 ```
 
 ### Code
@@ -76,10 +61,7 @@ The `code` method allows to prepare sub-string replacement with code.
 
 ```php
 $message = $message
-    ->code(
-        search: '**output**',
-        replace: 'WhatChuchaHappen'
-    );
+    ->code('%to%', 'Rodolfo') // Hello, <code>Rodolfo</code>!
 ```
 
 ## Outputting
@@ -94,9 +76,7 @@ The `toConsole` method returns a console highlighted string.
 $message->toConsole();
 ```
 
-The console output is raw ASCII string which looks like the example below.
-
-> <em>ERROR</em> <strong>/where-it-happened.php</strong> <u>"Por la cresta!"</u> <code>[WhatChuchaHappen]</code>
+The console output is raw ASCII string, with color when supported.
 
 ### To HTML
 
@@ -106,18 +86,10 @@ The `toHtml` method returns a HTML highlighted string.
 $message->toHtml();
 ```
 
-```html
-<em>ERROR</em> <strong>/where-it-happened.php</strong> <u>"Por la cresta!"</u> <code>[WhatChuchaHappen]</code>
-```
-
 ### To string
 
 The `toString` method returns a plain string, no formatting.
 
 ```php
 $message->toString();
-```
-
-```txt
-ERROR /where-it-happened.php "Por la cresta!" [WhatChuchaHappen]
 ```
