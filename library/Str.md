@@ -1,6 +1,6 @@
 # Str
 
-`🚧 OUTDATED DOCS`
+`🚧 This component provides a lot of methods not documented here.`
 
 The `Chevere\Str` namespace provides components that interact with strings, allowing [manipulation](#manipulation), [asserting](#asserting) and [boolean checking](#boolean-checking) for strings.
 
@@ -8,7 +8,7 @@ The `Chevere\Str` namespace provides components that interact with strings, allo
 
 Manipulating strings refers to the process of altering an argument of type `string`.
 
-The [Str](../reference/Chevere/Components/Str/Str.md) component in charge of string manipulation.
+The `Chevere/Str/Str` component in charge of string manipulation.
 
 ```php
 use Chevere\Str\Str;
@@ -29,7 +29,7 @@ Asserting strings refers to the process of asserting an argument of type `string
 
 ### StrAssert
 
-The [StrAssert](../reference/Chevere/Components/Str/StrAssert.md)  component in charge of string asserting.
+The `Chevere/Str/StrAssert` component in charge of string asserting.
 
 ```php
 use new Chevere\Str\StrAssert;
@@ -47,18 +47,18 @@ In the code above, executing `notEmpty` won't raise any exception as `$string` i
 
 Bool string refers to the process of validating an argument of type `string` against methods that returns `bool`.
 
-### StrBool
+### StrCondition
 
-The [StrBool](../reference/Chevere/Components/Str/StrBool.md) component in charge of string validation.
+The `Chevere/Str/StrCondition` component in charge of string validation.
 
 ```php
-use new Chevere\Str\StrBool;
+use new Chevere\Str\StrCondition;
 
 $string = 'Chévere es magnífico!';
-$strBool = new StrBool($string);
-$strBool->endsWith('Rodo'); // false
-$strBool->contains('es'); // true
-$strBool->startsWith('Chévere'); // true
+$strCondition = new StrCondition($string);
+$strCondition->endsWith('Rodo'); // false
+$strCondition->contains('es'); // true
+$strCondition->startsWith('Chévere'); // true
 ```
 
 In the code above, `endsWith` returns `false` as `$string` doesn't ends with `Rodo`. Passing `es` to `contains` method and passing `Chévere` to `startsWith` method returns true as the conditions are meet.
