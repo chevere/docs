@@ -2,18 +2,14 @@
 
 Exceptions are error events that happens on runtime, that disrupts the execution of the software.
 
-::: tip Reference
-Check thee [Exceptions Reference](./../../reference/exceptions.md) to learn about all the interfaces available.
-:::
-
 ## Conventions
 
 Interfaces **must**:
 
 * Define a descriptive name
 * Named with `Exception` suffix
-* Extend `Chevere\Exceptions\Core\Exception`
-* Located at `Exceptions/<component>/` namespace
+* Extend `Chevere\Throwable\Exception`
+* Located at `Chevere/<component>/Exceptions` namespace
 
 ## Design
 
@@ -29,7 +25,7 @@ Use names that explain the context of the exception. For example, `SomeException
 
 ### Exception Message
 
-A [Message](../../components/Message.md) **should** explain the error event when needed.
+A [Message](../../library/Message.md) **should** explain the error event when needed.
 
 Exception messages **must**:
 

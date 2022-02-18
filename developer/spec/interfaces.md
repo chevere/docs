@@ -2,17 +2,13 @@
 
 Interfaces describe the public methods implemented by a given class. In Chevere, all components **must** define their own interface.
 
-::: tip Reference
-Check thee [Interfaces Reference](./../../reference/interfaces.md) to learn about all the interfaces available.
-:::
-
 ## Conventions
 
 Interfaces **must**:
 
 * Define a descriptive name
 * Named with `Interface` suffix
-* Located at `Interfaces/<component>/` namespace
+* Located at `Chevere/<component>/Interfaces` namespace
 
 ## Design
 

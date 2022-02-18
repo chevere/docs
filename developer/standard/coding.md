@@ -84,7 +84,6 @@ vendor/bin/ecs --config='.ecs/ecs.php' check file.php --fix
 
 Check the workspace documentation to configure [automatic code formatting](../development/workspace.md#coding-standards-formatting).
 
-
 ## Typing
 
 ### Type Hinting

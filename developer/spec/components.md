@@ -2,10 +2,6 @@
 
 Components are elements that provide concrete functionality.
 
-::: tip Reference
-Check the [Components Reference](../../reference/components.md) to learn about all the components available.
-:::
-
 ## Conventions
 
 Components **must**:
