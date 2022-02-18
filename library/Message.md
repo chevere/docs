@@ -88,8 +88,8 @@ $message->toHtml();
 
 ### To string
 
-The `toString` method returns a plain string, no formatting.
+The `__toString` method returns a plain string, no formatting.
 
 ```php
-$message->toString();
+$message->__toString();
 ```

@@ -16,10 +16,10 @@ $regex = new Regex('/^Hello World!$/');
 
 ### As-is (constructor)
 
-The `toString` method is used to access the pattern passed on instance creation.
+The `__toString` method is used to access the pattern passed on instance creation.
 
 ```php
-$regex->toString(); // /^Hello World!$/
+$regex->__toString(); // /^Hello World!$/
 ```
 
 ### Without delimiters

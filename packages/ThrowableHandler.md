@@ -51,5 +51,5 @@ $html = new HtmlDocument($handler);
 Use `toString` method to access the document contents. In the example below, the `$console` document is printed to the output.
 
 ```php
-echo $console->toString();
+echo $console->__toString();
 ```

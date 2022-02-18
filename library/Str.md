@@ -17,7 +17,7 @@ $str = (new Str('  THE STRING  '))
     ->lowercase()
     ->stripWhitespace();
 
-$result = $str->toString();
+$result = $str->__toString();
 // = "thestring";
 ```
 
