@@ -1,26 +1,26 @@
 # Serialize
 
-`🚧 OUTDATED DOCS`
-
-The [Serialize](../reference/Chevere/Components/Serialize/Serialize.md) component is in charge of handling variable [serialize](https://www.php.net/serialize).
+The `Chevere/Components/Serialize` namespace is in charge of handling variable serialize and deserialize.
 
 ## Serialize a variable
+
+The `Chevere/Serialize/Serialize` component is in charge of handling deserialize.
 
 ```php
 use Chevere\Serialize\Serialize;
 
-$serialize = new Serialize(var: $foo);
+$serialize = new Serialize($foo);
 ```
 
-The `toString` method is used to access the serialized variable.
+The `__toString` method is used to access the serialized variable.
 
 ```php
-$serialize->toString();
+$string = $serialize->__toString();
 ```
 
 ## Deserialize a variable
 
-The [Deserialize](../reference/Chevere/Components/Serialize/Deserialize.md) component is in charge of handling [unserialize](https://www.php.net/unserialize).
+The `Chevere/Serialize/Deserialize` component is in charge of handling deserialize.
 
 ```php
 use Chevere\Serialize\Deserialize;
@@ -33,7 +33,7 @@ $deserialize = new Deserialize(serialized: $bar);
 The `var` method is used to access the deserialized variable.
 
 ```php
-$deserialize->var();
+$var = $deserialize->var();
 ```
 
 ### Variable type
@@ -41,5 +41,5 @@ $deserialize->var();
 The `type` method is used to access the deserialized variable [type](Type.md).
 
 ```php
-$deserialize->type();
+$type = $deserialize->type();
 ```
