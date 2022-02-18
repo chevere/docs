@@ -2,7 +2,7 @@
 
 The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](Action.md), but it takes only input string parameters.
 
-Controller takes string parameters as it is intended to use them wired to:
+Controller is intended to use them wired to:
 
 * CLI applications
 * Web Servers
@@ -10,9 +10,9 @@ Controller takes string parameters as it is intended to use them wired to:
 
 💡 If you don't need to wire instructions to these devices you should be using [Action](Action.md), which doesn't restrict the input parameter type.
 
-## Creating a Controller
+## Defining a Controller
 
-Code below defines class `SomeController` by extending the base `Controller`.
+A Controller implements the `ControllerInterface`. You can extend `Controller` to quick create a controller:
 
 ```php
 use Chevere\Controller\Controller;

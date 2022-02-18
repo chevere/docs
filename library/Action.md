@@ -1,6 +1,6 @@
 # Action
 
-The Action component is in charge of providing a context for executing any given instruction. Its purpose is to provide a typed layer for handling input instructions to a system.
+The Action component is in charge of providing context for executing any given instruction. Its purpose is to provide a typed layer for handling input instructions to a system.
 
 This component enables to define input parameters, its regex validation, default values, description and expected return parameters.
 
@@ -69,7 +69,7 @@ public function getResponseParameters(): ParametersInterface
 
 ### Run
 
-The `run` method is used to define the action logic that will be executed by the action supervisor.
+The `run` method is used to define the action logic that will be executed by the action runner.
 
 ```php
 use Chevere\Parameter\Interfaces\ArgumentsInterface;

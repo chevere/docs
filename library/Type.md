@@ -27,9 +27,7 @@ Available keywords:
 - `Type::RESOURCE`
 - `Type::NULL`
 
-::: tip
-Full-qualified **class names** and **interface names** can be passed as type keyword.
-:::
+💡 Full-qualified **class names** and **interface names** can be passed as type keyword.
 
 ## Primitive & Type-hinting
 

@@ -18,6 +18,7 @@ The `withPut` method is used to add mapping for a  full-qualified class name:
 $classMap = $classMap->withPut(
     key_a: 'SomeClassName',
     my_key: 'stdClass'
+);
 ```
 
 ## Has class name

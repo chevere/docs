@@ -138,8 +138,6 @@ $workflow = $workflow
 
 Follow the recommended naming scheme for Workflow variables.
 
-This will make friendly to share and understand workflows for all layers of users of this framework.
-
 ### Injected variables
 
 Snake case `${var}` `${snake_case}`.

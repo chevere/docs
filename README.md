@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.svg
-heroText: Chevere Framework
+heroText: Chevere Library
 tagline: Build extensible server-side progressive applications for modern PHP
 actionText: Introduction →
 actionLink: /introduction/
