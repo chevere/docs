@@ -1,8 +1,6 @@
 # Regex
 
-`🚧 OUTDATED DOCS`
-
-The [Regex](../reference/Chevere/Components/Regex/Regex.md) component is in charge of providing tooling for regex patterns.
+The `Chevere/Regex/Regex` component is in charge of providing tooling for regex patterns.
 
 ## Creating Regex
 
@@ -11,7 +9,7 @@ Create a Regex by passing the pattern.
 ```php
 use Chevere\Regex\Regex;
 
-$regex = new Regex(pattern: '/^Hello World!$/');
+$regex = new Regex('/^Hello World!$/');
 ```
 
 ## Accessing Pattern
@@ -45,7 +43,7 @@ $regex->toNoDelimitersNoAnchors(); // Hello World!
 The `match` method provides [preg_match](https://www.php.net/preg-match).
 
 ```php
-$regex->match(string: 'Hello World!'); // [Hello World!]
+$regex->match('Hello World!'); // [Hello World!]
 ```
 
 The `matchAll` method provides [preg_match_all](https://www.php.net/preg-match-all).
