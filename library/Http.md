@@ -1,14 +1,12 @@
 # Http
 
-`🚧 OUTDATED DOCS`
-
 The Http component is in charge of providing typed HTTP methods according to [RFC 7231](https://tools.ietf.org/html/rfc7231).
 
-[MethodInterface](../reference/Chevere/Interfaces/Http/MethodInterface.md) describes the interface for the component in charge of defining an a HTTP method.
+The `Chevere/Interfaces/Http/MethodInterface` describes the interface for the component in charge of defining a HTTP method.
 
 ## ConnectMethod
 
-`CONNECT` defined by [ConnectMethod](../reference/Chevere/Components/Http/Methods/ConnectMethod.md).
+`CONNECT`
 
 Establish a tunnel to the server identified by the target resource.
 
@@ -20,7 +18,7 @@ $connect = new ConnectMethod();
 
 ## DeleteMethod
 
-`DELETE` defined by [DeleteMethod](../reference/Chevere/Components/Http/Methods/DeleteMethod.md).
+`DELETE`
 
 Remove all current representations of the target resource.
 
@@ -32,7 +30,7 @@ $delete = new DeleteMethod();
 
 ## GetMethod
 
-`GET` defined by [GetMethod](../reference/Chevere/Components/Http/Methods/GetMethod.md).
+`GET`
 
 Transfer a current representation of the target resource.
 
@@ -44,7 +42,7 @@ $get = new GetMethod();
 
 ## HeadMethod
 
-`HEAD` defined by [HeadMethod](../reference/Chevere/Components/Http/Methods/HeadMethod.md).
+`HEAD`
 
 Same as GET, but only transfer the status line and header section.
 
@@ -56,7 +54,7 @@ $head = new HeadMethod();
 
 ## OptionsMethod
 
-`OPTIONS` defined by [OptionsMethod](../reference/Chevere/Components/Http/Methods/OptionsMethod.md).
+`OPTIONS`
 
 Describe the communication options for the target resource.
 
@@ -68,7 +66,7 @@ $options = new OptionsMethod();
 
 ## PatchMethod
 
-`PATCH` defined by [PatchMethod](../reference/Chevere/Components/Http/Methods/PatchMethod.md).
+`PATCH`
 
 Apply partial modifications described in the request entity to the target resource.
 
@@ -80,7 +78,7 @@ $path = new PatchMethod();
 
 ## PostMethod
 
-`POST` defined by [PostMethod](../reference/Chevere/Components/Http/Methods/PostMethod.md).
+`POST`
 
 Perform resource-specific processing on the request payload.
 
@@ -92,7 +90,7 @@ $post = new PostMethod();
 
 ## PutMethod
 
-`PUT` defined by [PutMethod](../reference/Chevere/Components/Http/Methods/PutMethod.md).
+`PUT`
 
 Replace all current representations of the target resource with the request payload.
 
@@ -104,7 +102,7 @@ $put = new PutMethod();
 
 ## TraceMethod
 
-`TRACE` defined by [TraceMethod](../reference/Chevere/Components/Http/Methods/TraceMethod.md).
+`TRACE`
 
 Perform a message loop-back test along the path to the target resource.
 
