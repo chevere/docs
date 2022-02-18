@@ -1,8 +1,6 @@
 # Type
 
-`🚧 OUTDATED DOCS`
-
-The [Type](../reference/Chevere/Components/Type/Type.md) component is in charge of providing a layer for dynamic type handling.
+The `Chevere/Type/Type` component is in charge of providing a layer for dynamic type handling.
 
 ## Creating a Type
 
@@ -45,15 +43,34 @@ The return values for methods `primitive` and `typeHinting` is explained in the 
 
 For [keywords](#keywords), the return value of `primitive` and `typeHinting` is same as the keyword.
 
+## Validator
+
+The `validator` method provides access to the callable used to primitive validate the type.
+
+```php
+use Chevere\Type\Type;
+
+$type = new Type(Type::INTEGER);
+$validator = $type->validator(); // is_int
+```
+
 ## Validate
 
 The `validate` method allows to validate any `$var` against the declared type.
 
 ```php
-use Chevere\Type\Interfaces\TypeInterface;
+$validate = $type->validate($var);
+```
 
-/**
- * @var bool $validate
- */
-$validate = $type->validate(var: $var);
+## Check if is scalar
+
+The `isScalar` method returns true if the type is of type scalar.
+
+```php
+use Chevere\Type\Type;
+
+$type = new Type(Type::INTEGER);
+$isScalar = $type->isScalar(); // true
+$type = new Type(Type::OBJECT);
+$isScalar = $type->isScalar(); // false
 ```
