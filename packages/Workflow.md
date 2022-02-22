@@ -11,48 +11,58 @@ use function Chevere\Workflow\job;
 use function Chevere\Workflow\workflow;
 
 workflow(
-    fetch: job(
-        'FetchPayload',
-        payload: '${payload}'
-    ),
-    process: job(
-        'ProcessPodcast',
-        file: '${fetch:file}'
-    ),
-    optimize: job(
-        'OptimizePodcast',
-        file: '${fetch:file}'
-    ),
-    podcast: job(
-        'CreatePodcast',
-        file: '${fetch:file}'
-    )
+    fetch:
+        job(
+            'FetchPayload',
+            payload: '${payload}'
+        ),
+    process:
+        job(
+            'ProcessPodcast',
+            file: '${fetch:file}'
+        ),
+    optimize:
+        job(
+            'OptimizePodcast',
+            file: '${fetch:file}'
+        ),
+    podcast:
+        job(
+            'CreatePodcast',
+            file: '${fetch:file}'
+        )
         ->withDepends(
             'process',
             'optimize'
         ),
-    releaseTransistorFm: job('ReleaseTransistorFM')
+    releaseTransistorFm:
+        job('ReleaseTransistorFM')
+        ->withDepends(
+            'podcast'
+        ),
+    releaseApple:
+        job('ReleaseApple')
         ->withDepends(
             'podcast',
         ),
-    releaseApple: job('ReleaseApple')
-        ->withDepends(
-            'podcast',
-        ),
-    createTranscript: job('CreateTranscription')
+    createTranscript:
+        job('CreateTranscription')
         ->withDepends(
             'process'
         ),
-    translateTranscript: job('TranslateTranscription')
+    translateTranscript:
+        job('TranslateTranscription')
         ->withDepends(
             'createTranscript'
         ),
-    notifications: job('NotifySubscribers')
+    notifications:
+        job('NotifySubscribers')
         ->withDepends(
             'releaseTransistorFm',
             'releaseApple'
         ),
-    tweet: job('SendTweet')
+    tweet:
+        job('SendTweet')
         ->withDepends(
             'translateTranscript',
             'releaseTransistorFm',
@@ -61,29 +71,15 @@ workflow(
 );
 ```
 
-For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided by the WorkflowRunner. Jobs `validate` and `insert` are using [job response variables](#job-response-variable) for the expected response keys at `fetch` Job.
+For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided by the [WorkflowRunner](#running-a-workflow).
 
-👉 References to previous jobs (as in `${fetch:file}`) **implict declare** that the given job depends on the previous `fetch` step.
+👉 References to previous jobs (as in `${fetch:file}`) **implict declare** that the given job depends on the previous `fetch` job as it declares a [job response variables](#job-response-variable).
 
-## Running a Workflow
+🦄 Jobs will run in parallel (when available and if dependencies are meet). Refer to [dependencies](#dependencies) for sequential ejecution order.
 
-Following the previous example, this is how to run a Workflow:
+### Dependencies
 
-```php
-use Chevere\DataStructure\Map;
-use Chevere\Workflow\WorkflowRun;
-use Chevere\Workflow\WorkflowRunner;
-use function Chevere\Workflow\workflow;
-
-$workflow = workflow(/** ... **/);
-$arguments = [
-    'payload' => '{request payload}'
-];
-$workflowRun = new WorkflowRun($workflow, ...$arguments);
-$container = new Map();
-$workflowRunner = (new WorkflowRunner($workflowRun))
-    ->withRun($container);
-```
+Use `withDeps` method to explicit declare previous jobs as dependencies. The dependent job won't run until the dependencies are resolved.
 
 ## Job
 
@@ -132,3 +128,23 @@ A Workflow variable, injected by the WorkflowRunner. Regex `/^\${([\w-]*)}$/`.
 `${job_name:response_key}`
 
 The value for `response_key` for the `job_name` job response. Regex `/^\${([\w-]*)\:([\w-]*)}$/`.
+
+## Running a Workflow
+
+Following the previous example, this is how to run a Workflow:
+
+```php
+use Chevere\DataStructure\Map;
+use Chevere\Workflow\WorkflowRun;
+use Chevere\Workflow\WorkflowRunner;
+use function Chevere\Workflow\workflow;
+
+$workflow = workflow(/** ... **/);
+$arguments = [
+    'payload' => '{request payload}'
+];
+$workflowRun = new WorkflowRun($workflow, ...$arguments);
+$container = new Map();
+$workflowRunner = (new WorkflowRunner($workflowRun))
+    ->withRun($container);
+```
