@@ -30,17 +30,17 @@ public function getDescription(): string
 
 ## Run
 
-The `run` method is used to define the action logic that will be executed by the action runner. In the example below, an exception will be thrown if run response fails to provide the expected [response parameter](#response-parameters) signature.
+The `run` method is used to define the logic that will be executed. In the example below, an exception will be thrown if run response fails to provide the expected [response parameter](#response-parameters) signature.
 
 ```php
 use Chevere\Parameter\Interfaces\ArgumentsInterface;
 use Chevere\Response\Interfaces\ResponseInterface;
 
-public function run(int $id): ResponseInterface
+public function run(string $name): ResponseInterface
 {
     // ...
     return $this->getResponse(
-        email: (new User($id))->email
+        email: (new User($name))->email
     );
 }
 ```
@@ -55,9 +55,7 @@ The DescriptionAttribute will define the paramater description.
 use Chevere\Common\Attributes\DescriptionAttribute;
 
 public function run(
-    #[DescriptionAttribute('The user name.',
-        validate: '/^\w$/',
-    )]
+    #[DescriptionAttribute('The user name.')]
     string $name
 ) {
     // ...
@@ -103,5 +101,5 @@ Use `actionRun` function to run an action. This will return an object implementi
 ```php
 use function Chevere\Action\actionRun;
 
-$run = actionRun($action, id: 123);
+$run = actionRun($action, name: 'rodolfo');
 ```
