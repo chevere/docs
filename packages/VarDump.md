@@ -4,54 +4,81 @@
 composer require chevere/var-dump
 ```
 
-`🚧 OUTDATED DOCS`
+The `Chevere/VarDump` namespace component provides an alternative to [var_dump](https://www.php.net/var-dump) with a richer feature set, including formatting for the generation of a myriad of dump documents.
 
-The [VarDump](../reference/Chevere/Components/VarDump/VarDump.md) component provides an alternative to [var_dump](https://www.php.net/var-dump), but with a richer feature set including formatting for the generation of a myriad of dump documents.
+## Helpers
 
-::: tip Learn by Example
-Check the VarDump [examples](https://github.com/chevere/examples/tree/main/02.VarDump) to learn playing with code.
-:::
+💡 **TL;DR:** You can replace `var_dump` using the following helpers:
 
-## Formatters & Helpers
+### VarDump (vd)
+
+Function `vd` is a drop-in replacement for `var_dump`. It prints information about one or more variables to the output stream.
+
+```php
+vd($var);
+// moar code...
+```
+
+### VarDump and die (vdd)
+
+Function `vdd` does same as `vd`, but with `die(0)` which halts further execution.
+
+```php
+vdd($var); // muerto!
+```
+
+## Instances
 
 The following helper functions can be used to save boilerplate when needing to initialize a VarDump instance.
 
 * Namespace `Chevere\VarDump`
-  * `getVarDumpPlain` to create a plain var dump
-  * `getVarDumpConsole` to create a console var dump
-  * `getVarDumpHtml` to create a HTML var dump
+  * `varDumpPlain` to return a plain var dump
+  * `varDumpConsole` to return a console var dump
+  * `varDumpHtml` to return a HTML var dump
+  * `getVarDump` to retrieve the var dump instance
+  * `getVarDumpWriters` to retrieve the var dump writers
+
+## Customizing output stream
+
+By declaring `Chevere/VarDump/VarDumpInstance` you can change the default stream used by VarDump, including helpers `vd` and `vdd`.
 
 ## Initialization
 
-VarDump requires a formatter implementing [VarDumpFormatterInterface](../reference/Chevere/Interfaces/VarDump/VarDumpFormatterInterface.md) and a outputter implementing [VarOutputterInterface](../reference/Chevere/Interfaces/VarDump/VarOutputterInterface.md).
-
-In the example below, a VarDump is created with console colored formatting and output:
+A VarDump needs a format and an output. In the example below a VarDump is created with console colored formatting and output:
 
 ```php
-use Chevere\VarDump\Formatters\VarDumpConsoleFormatter;
-use Chevere\VarDump\Outputters\VarDumpConsoleOutputter;
+use Chevere\VarDump\Formats\VarDumpConsoleFormat;
+use Chevere\VarDump\Outputs\VarDumpConsoleOutput;
 use Chevere\VarDump\VarDump;
-use function Chevere\VarDump\getVarDumpConsole;
+use function Chevere\VarDump\varDumpConsole;
 
 $varDump = new VarDump(
-    formatter: new VarDumpConsoleFormatter,
-    outputter: new VarDumpConsoleOutputter
+    formatter: new VarDumpConsoleFormat,
+    outputter: new VarDumpConsoleOutput
 );
 // Same as:
-$varDump = getVarDumpConsole();
+$varDump = varDumpConsole();
 ```
 
 ## Passing variables
 
-The method `withVars` is used to pass variables (variadic).
+The method `withVars` is used to pass `...$variables` (variadic).
 
 ```php
 $varDump = $varDump->withVars('a var', [], null);
 ```
 
+## Shifting traces
+
+The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous backtraces should be removed.
+
+```php
+$varDump = $varDump->withShift(1); // removes the first trace
+```
+
 ## Process
 
-The method `process` is used to trigger the var dumping process. It requires to pass a [writer](Writer.md) where the dump information will be written.
+The method `process` is used to trigger the var dumping process. It requires to pass a [writer](../library/Writer.md) where the dump information will be written.
 
 ```php
 use Chevere\Writer\StreamWriter;
@@ -61,23 +88,3 @@ $varDump->process(
     writer: new StreamWriter(streamFor('php://stdout', 'w'))
 );
 ```
-
-## Shifting traces
-
-The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous backtraces should be removed.
-
-## Replacing `var_dump`
-
-Following functions can be used as drop-in replacement for [var_dump](https://www.php.net/var-dump).
-
-### xd
-
-Function [xd](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php#L75) is a drop-in replacement for `var_dump`. It prints information about one or more variables to the output stream.
-
-### xdd
-
-Function [xdd](https://github.com/chevere/chevere/blob/main/src/Chevere/Components/VarDump/functions.php#L101) does same as `xd`, but with `exit` which halts further execution.
-
-### Customizing output stream
-
-By declaring [VarDumpInstance](../reference/Chevere/Components/VarDump/VarDumpInstance.md) you can change the default stream used by `xd` and `xdd`.
