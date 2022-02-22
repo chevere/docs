@@ -4,11 +4,11 @@
 composer require chevere/workflow
 ```
 
-The `Chevere/Workflow` namespace provides the tooling to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It purpose is to allow to abstract instructions as logic units of interconnected async workflows.
+The `Chevere/Workflow` namespace provides the tooling to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract instructions as logic units of interconnected async jobs.
 
 ## Creating a Workflow
 
-To create a workflow pass the Workflow named [jobs](#job). In the example below, a workflow defines a podcast publishing:
+To create a workflow pass the Workflow named [jobs](#job). In the example below, a workflow defines a podcast publishing procedure:
 
 ```php
 use function Chevere\Workflow\job;
@@ -75,7 +75,7 @@ For the code above, `${payload}` is handled as a [workflow variable](#variables)
 
 👉 References to previous jobs (as in `${process:file}`) **implict declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
 
-🦄 Jobs will run in **parallel** (when available and if dependencies are meet). Refer to [dependencies](#dependencies) for sequential ejecution order.
+🦄 Jobs will run in **parallel** (when available and if dependencies are meet). Refer to [dependencies](#dependencies) for sequential run order.
 
 ### Dependencies
 
