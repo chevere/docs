@@ -1,166 +1,134 @@
 # Workflow
 
-`🚧 OUTDATED DOCS`
+The `Chevere/Workflow` namespace provides the tooling to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It purpose is to allow to abstract instructions as logic units of interconnected async workflows.
 
-The [Workflow](../reference/Chevere/Components/Workflow/Workflow.md) component provides the ability to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). It allows to define a series of individual interconnected steps with goal to describe and execute a sequence of steps.
+## Creating a Workflow
 
-## Step
-
-The [Step](../reference/Chevere/Components/Workflow/Step.md) component define an [Action](Action.md) with arguments to pass.
+To create a workflow pass the Workflow named [jobs](#job). In the example below, a workflow defines a podcast publishing:
 
 ```php
-use Chevere\Workflow\Step;
+use function Chevere\Workflow\job;
+use function Chevere\Workflow\workflow;
 
-new Step(action: 'SomeActionClass');
+workflow(
+    fetch: job(
+        'FetchPayload',
+        payload: '${payload}'
+    ),
+    process: job(
+        'ProcessPodcast',
+        file: '${fetch:file}'
+    ),
+    optimize: job(
+        'OptimizePodcast',
+        file: '${fetch:file}'
+    ),
+    podcast: job(
+        'CreatePodcast',
+        file: '${fetch:file}'
+    )
+        ->withDepends(
+            'process',
+            'optimize'
+        ),
+    releaseTransistorFm: job('ReleaseTransistorFM')
+        ->withDepends(
+            'podcast',
+        ),
+    releaseApple: job('ReleaseApple')
+        ->withDepends(
+            'podcast',
+        ),
+    createTranscript: job('CreateTranscription')
+        ->withDepends(
+            'process'
+        ),
+    translateTranscript: job('TranslateTranscription')
+        ->withDepends(
+            'createTranscript'
+        ),
+    notifications: job('NotifySubscribers')
+        ->withDepends(
+            'releaseTransistorFm',
+            'releaseApple'
+        ),
+    tweet: job('SendTweet')
+        ->withDepends(
+            'translateTranscript',
+            'releaseTransistorFm',
+            'releaseApple'
+        ),
+);
 ```
 
-The argument passed must be a class name implementing the [ActionInterface](../reference/Chevere/Interfaces/Action/ActionInterface.md).
+For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided by the WorkflowRunner. Jobs `validate` and `insert` are using [job response variables](#job-response-variable) for the expected response keys at `fetch` Job.
 
-### Step Parameters
+👉 References to previous jobs (as in `${fetch:file}`) **implict declare** that the given job depends on the previous `fetch` step.
 
-Parameters for the step are defined in the [Action Parameters](Action.md#parameters).
+## Running a Workflow
 
-### Step Arguments
+Following the previous example, this is how to run a Workflow:
+
+```php
+use Chevere\DataStructure\Map;
+use Chevere\Workflow\WorkflowRun;
+use Chevere\Workflow\WorkflowRunner;
+use function Chevere\Workflow\workflow;
+
+$workflow = workflow(/** ... **/);
+$arguments = [
+    'payload' => '{request payload}'
+];
+$workflowRun = new WorkflowRun($workflow, ...$arguments);
+$container = new Map();
+$workflowRunner = (new WorkflowRunner($workflowRun))
+    ->withRun($container);
+```
+
+## Job
+
+The `Chevere/Components/Workflow/Job` component defines an [Action](../library/Action.md) with arguments to pass, supporting direct arguments aswel previous jobs response keys.
+
+👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`.
+
+```php
+use function Chevere\Workflow\job;
+
+job(action: 'SomeActionClass', ...$namedArguments);
+```
+
+### Job Parameters
+
+Parameters for the job are defined in the [Action Run](../library/Action.md#run).
+
+### Job Arguments
 
 Arguments can be passed on constructor using named arguments.
 
 ```php
-use Chevere\Workflow\Step;
+use function Chevere\Workflow\job;
 
-new Step(
+job(
     'SomeActionClass'
     firstName: 'Rodolfo',
     lastName: 'Berrios'
 );
 ```
 
-For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeActionClass` when running the Workflow. These arguments will be matched against the Parameters defined at the Action.
+For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeActionClass` when running the Workflow. These arguments will be matched against the Parameters defined at `SomeActionClass::run()`.
 
-The `withArguments` method can be used to modify the step arguments.
+### Job Variables
 
-## Creating a Workflow
+Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any previous Job.
 
-To create a workflow pass the Workflow named [steps](#step):
+### Workflow variables
 
-```php
-use Chevere\Workflow\Workflow;
+`${workflow_variable}`
 
-$workflow = new Workflow(
-    fetch: new Step(
-        'FetchAction',
-        payload: '${payload}'
-    ),
-);
-```
+A Workflow variable, injected by the WorkflowRunner. Regex `/^\${([\w-]*)}$/`.
 
-For the code above, `${payload}` is declared as a [reference](#references), the actual value for it should be provided by the WorkflowRunner.
+### Job response variable
 
-## References
+`${job_name:response_key}`
 
-Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any existing Step.
-
-| Expression                | Meaning                                                          |
-| ------------------------- | ---------------------------------------------------------------- |
-| `${workflow_variable}`    | A Workflow variable (need to be injected).                       |
-| `${stepName:responseKey}` | The value at key `responseKey` for the `stepName` step response. |
-
-## Adding Steps
-
-The `withAdded` method allows to add steps to an existing Workflow.
-
-For the code below, steps `validate` and `insert` are using [references](#references) for the expected response keys at `fetch` Step.
-
-```php
-use Chevere\Workflow\Step;
-
-$workflow = $workflow
-    ->withAdded(
-        validate: new Step(
-            'ValidateAction',
-            email: '${fetch:email}',
-            username: '${fetch:username}',
-        ),
-        insert: new Step(
-            'InsertAction',
-            email: '${fetch:email}',
-            username: '${fetch:username}',
-        )
-    );
-```
-
-## Adding Steps Before and After
-
-The `withAddedBefore` and `withAddedAfter` methods allows to add steps before/after another step.
-
-For example, consider this workflow:
-
-* Fetch
-* Validate
-* Insert
-
-The requirement is to extend to this, with sorting:
-
-* (add) Logging 
-* Fetch
-* Validate
-* (add) ValidateMore
-* Insert
-* (add) Caching
-
-```php
-use Chevere\Workflow\Step;
-
-$workflow = $workflow
-    ->withAddedBefore(
-        'fetch',
-        logging: new Step(
-            'LogAction',
-            device: '${LOG_DEVICE}'
-        )
-    )
-    ->withAddedAfter(
-        'validate',
-        validateMore: new Step(
-            'ValidateMoreAction',
-            payload: '${payload}'
-        )
-    )
-    ->withAddedAfter(
-        'insert',
-        caching: new Step(
-            'CachingAction',
-            userId: '${insert:userId}'
-        )
-    );
-```
-
-## Workflow variable naming
-
-Follow the recommended naming scheme for Workflow variables.
-
-### Injected variables
-
-Snake case `${var}` `${snake_case}`.
-
-### Step names
-
-Camel case `step` `stepName`.
-
-### Referenced variables
-
-Camel case `${step:key}` `${stepName:responseKey}`.
-
-## Workflow dependencies
-
-Workflow is aware of actions implementing the [DependentInterface](../reference/Chevere/Interfaces/Dependent/DependentInterface.md). All Action dependencies will be collected by the Workflow.
-
-Use the method `dependencies` to get access to the dependencies for a given Workflow.
-
-```php
-$workflow->dependencies();
-```
-
-`Work in progress`
-
-* WorkflowRun
-* Workflow provider
+The value for `response_key` for the `job_name` job response. Regex `/^\${([\w-]*)\:([\w-]*)}$/`.

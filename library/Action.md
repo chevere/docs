@@ -17,7 +17,7 @@ final class SomeAction extends Action
 }
 ```
 
-### Description
+## Description
 
 The `getDescription` method is used to define the action description, which is a short summary explaining the purpose of the action.
 
@@ -28,29 +28,58 @@ public function getDescription(): string
 }
 ```
 
-### Input Parameters
+## Run
 
-The `getParameters` method is used to define the action Parameters, which will be used to provide matching [run](#run) method arguments.
-
-💡 **Related:** Check the [Parameter](Parameter.md) documentation.
+The `run` method is used to define the action logic that will be executed by the action runner. In the example below, an exception will be thrown if run response fails to provide the expected [response parameter](#response-parameters) signature.
 
 ```php
-use Chevere\Parameter\Interfaces\ParametersInterface;
-use function Chevere\Parameter\parameters;
-use function Chevere\Parameter\integerParameter;
+use Chevere\Parameter\Interfaces\ArgumentsInterface;
+use Chevere\Response\Interfaces\ResponseInterface;
 
-public function getParameters(): ParametersInterface
+public function run(int $id): ResponseInterface
 {
-    return
-        parameters(
-            id: integerParameter(
-                description: 'The user id.',
-            )
-        );
+    // ...
+    return $this->getResponse(
+        email: (new User($id))->email
+    );
 }
 ```
 
-### Response Parameters
+💡 Attributes can be used to provide more context for run parameters and save some boilerplate.
+
+### Description attribute
+
+The DescriptionAttribute will define the paramater description.
+
+```php
+use Chevere\Common\Attributes\DescriptionAttribute;
+
+public function run(
+    #[DescriptionAttribute('The user name.',
+        validate: '/^\w$/',
+    )]
+    string $name
+) {
+    // ...
+}
+```
+
+### Regex attribute
+
+The RegexAttribute applied to `string` will require the paramater to validate the given regular expression.
+
+```php
+use Chevere\Regex\Attributes\RegexAttribute;
+
+public function run(
+    #[RegexAttribute('/^\w$/')]
+    string $name
+) {
+    // ...
+}
+```
+
+## Response Parameters
 
 The `getResponseParameters` method is used to define the  parameters which will be checked against the response data provided in the [run](#run) method.
 
@@ -66,26 +95,6 @@ public function getResponseParameters(): ParametersInterface
     );
 }
 ```
-
-### Run
-
-The `run` method is used to define the action logic that will be executed by the action runner.
-
-```php
-use Chevere\Parameter\Interfaces\ArgumentsInterface;
-use Chevere\Response\Interfaces\ResponseInterface;
-
-public function run(ArgumentsInterface $arguments): ResponseInterface
-{
-    $id = $arguments->getInteger('id');
-
-    return $this->getResponse(
-        email: (new User($id))->email
-    );
-}
-```
-
-In the example above, an exception will be thrown if the response fails to provide the expected `Chevere\Parameter\StringParameter` type for `email`.
 
 ## Running actions
 

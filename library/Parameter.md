@@ -74,14 +74,6 @@ $string = stringParameter(
 
 The above `$string` parameter will require an argument like `id-123` to validate.
 
-### Attributes
-
-Parameters can be created passing attributes, which can be checked using `hasAttribute`.
-
-```php
-$parameter->hasAttribute('name');
-```
-
 ## Parameters
 
 The `Chevere/Parameter/Parameters` component in charge of collecting objects implementing the `Chevere/Parameter/Interfaces/ParameterInterface`.
