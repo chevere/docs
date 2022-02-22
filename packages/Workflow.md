@@ -11,71 +11,67 @@ use function Chevere\Workflow\job;
 use function Chevere\Workflow\workflow;
 
 workflow(
-    fetch:
-        job(
-            'FetchPayload',
-            payload: '${payload}'
-        ),
     process:
         job(
             'ProcessPodcast',
-            file: '${fetch:file}'
+            payload: '${payload}'
         ),
     optimize:
         job(
-            'OptimizePodcast',
-            file: '${fetch:file}'
+            'OptimizeFile',
+            file: '${process:file}'
         ),
     podcast:
         job(
             'CreatePodcast',
-            file: '${fetch:file}'
-        )
-        ->withDepends(
-            'process',
-            'optimize'
+            file: '${optimize:file}',
+            request: '${process:request}'
         ),
     releaseTransistorFm:
-        job('ReleaseTransistorFM')
-        ->withDepends(
-            'podcast'
+        job(
+            'ReleaseTransistorFM',
+            podcast: '${podcast:object}'
         ),
     releaseApple:
-        job('ReleaseApple')
-        ->withDepends(
-            'podcast',
+        job(
+            'ReleaseApple',
+            podcast: '${podcast:object}'
         ),
     createTranscript:
-        job('CreateTranscription')
-        ->withDepends(
-            'process'
+        job(
+            'CreateTranscript',
+            file: '${optimize:file}'
         ),
     translateTranscript:
-        job('TranslateTranscription')
-        ->withDepends(
-            'createTranscript'
+        job(
+            'TranslateTranscript',
+            script: '${createTranscript:script}'
         ),
     notifications:
-        job('NotifySubscribers')
+        job(
+            'NotifySubscribers',
+            podcast: '${podcast:object}',
+        )
         ->withDepends(
-            'releaseTransistorFm',
-            'releaseApple'
+            'releaseTransistorFm', 'releaseApple'
         ),
     tweet:
-        job('SendTweet')
+        job(
+            'SendReleaseTweet',
+            fm: '${releaseTransistorFm:url}',
+            apple: '${releaseApple:url}',
+        )
         ->withDepends(
             'translateTranscript',
-            'releaseTransistorFm',
-            'releaseApple'
         ),
 );
 ```
 
 For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided by the [WorkflowRunner](#running-a-workflow).
 
-👉 References to previous jobs (as in `${fetch:file}`) **implict declare** that the given job depends on the previous `fetch` job as it declares a [job response variables](#job-response-variable).
+👉 References to previous jobs (as in `${process:file}`) **implict declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
 
-🦄 Jobs will run in parallel (when available and if dependencies are meet). Refer to [dependencies](#dependencies) for sequential ejecution order.
+🦄 Jobs will run in **parallel** (when available and if dependencies are meet). Refer to [dependencies](#dependencies) for sequential ejecution order.
 
 ### Dependencies
 
@@ -93,11 +89,11 @@ use function Chevere\Workflow\job;
 job(action: 'SomeActionClass', ...$namedArguments);
 ```
 
-### Job Parameters
+### Parameters
 
 Parameters for the job are defined in the [Action Run](../library/Action.md#run).
 
-### Job Arguments
+### Arguments
 
 Arguments can be passed on constructor using named arguments.
 
@@ -113,7 +109,7 @@ job(
 
 For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeActionClass` when running the Workflow. These arguments will be matched against the Parameters defined at `SomeActionClass::run()`.
 
-### Job Variables
+### Variables
 
 Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any previous Job.
 
