@@ -1,5 +1,9 @@
 # ThrowableHandler
 
+```sh
+composer require chevere/throwable-handler
+```
+
 `🚧 OUTDATED DOCS`
 
 The [ThrowableHandler](../reference/Chevere/Components/ThrowableHandler/ThrowableHandler.md) component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text.

@@ -1,5 +1,9 @@
 # Translator
 
+```sh
+composer require chevere/translator
+```
+
 `🚧 OUTDATED DOCS`
 
 The Translator component is in charge of providing generation and loading for translations.
