@@ -71,7 +71,7 @@ workflow(
 );
 ```
 
-For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided by the [WorkflowRunner](#running-a-workflow).
+For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided by [WorkflowRun](#running-a-workflow).
 
 👉 References to previous jobs (as in `${process:file}`) **implict declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
 
@@ -131,20 +131,15 @@ The value for `response_key` for the `job_name` job response. Regex `/^\${([\w-]
 
 ## Running a Workflow
 
-Following the previous example, this is how to run a Workflow:
+To run a Workflow you need a `Chevere\Workflow\WorkflowRun` and a [Map](../library/DataStructure.md#map) container for the services you need to expose at Workflow layer.
 
 ```php
-use Chevere\DataStructure\Map;
-use Chevere\Workflow\WorkflowRun;
-use Chevere\Workflow\WorkflowRunner;
 use function Chevere\Workflow\workflow;
+use function Chevere\Workflow\workflowRun;
 
 $workflow = workflow(/** ... **/);
 $arguments = [
     'payload' => '{request payload}'
 ];
-$workflowRun = new WorkflowRun($workflow, ...$arguments);
-$container = new Map();
-$workflowRunner = (new WorkflowRunner($workflowRun))
-    ->withRun($container);
+$run = workflowRun($workflow, $arguments);
 ```

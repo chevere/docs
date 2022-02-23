@@ -79,7 +79,7 @@ public function run(
 
 ## Response Parameters
 
-The `getResponseParameters` method is used to define the  parameters which will be checked against the response data provided in the [run](#run) method.
+The `getResponseParameters` method is used to define the parameters which will be checked against the response data provided in the [run](#run) method.
 
 ```php
 use Chevere\Parameter\Interfaces\ParametersInterface;
@@ -94,12 +94,59 @@ public function getResponseParameters(): ParametersInterface
 }
 ```
 
+## Container
+
+💡 Action supports [Container](Container.md), enabling to provide services for Actions. A service should be understood as any *persistent* reference, which doesn't depend on the `run` signature.
+
+### Requiring services
+
+The `getContainerParameters` method is used to define the services **required** by the Action.
+
+```php
+use Chevere\Parameter\Interfaces\ParametersInterface;
+use function Chevere\Parameter\parameters;
+use function Chevere\Parameter\objectParameter;
+use PDO;
+use Redis;
+
+public function getContainerParameters(): ParametersInterface
+{
+    return parameters(
+        pdo: objectParameter(PDO::class),
+        redis: objectParameter(Redis::class),
+    );
+}
+```
+
+For the code above, the action runner a `InvalidArgumentException` will be thrown if both `pdo` and `redis` services aren't provided. Also, a `TypeError` if `pdo` or `redis` doesn't implement the required interface.
+
+### Injecting a container
+
+Use `withContainer` method to pass container implementing `Psr\Container\ContainerInterface` to the action.
+
+```php
+use Chevere\Container\Container;
+
+$action = new SomeAction();
+$action = $action->withContainer($container);
+```
+
+For the code above, a `InvalidArgumentException` will be thrown if `$container` doesn't provide the services required by `SomeAction`.
+
+### Accesing the container
+
+use `container` to access the action container instance.
+
+```php
+$container = $action->container();
+```
+
 ## Running actions
 
-Use `actionRun` function to run an action. This will return an object implementing `Chevere\Action\Interfaces\ActionRunInterface`.
+Use `runner` function to run an action. This will return an object implementing `Chevere\Response\Interfaces\ResponseInterface`.
 
 ```php
 use function Chevere\Action\actionRun;
 
-$run = actionRun($action, name: 'rodolfo');
+$response = $action->runner();
 ```
