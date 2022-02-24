@@ -1,12 +1,12 @@
 # Action
 
-The Action component is in charge of providing context for executing any given instruction. Its purpose is to provide a typed layer for handling input instructions to a system.
-
-This component enables to define input parameters, its regex validation, default values, description and expected return parameters.
+The Action component is in charge of providing context for executing any instruction. Its purpose is to provide a typed layer for handling input instructions to a system.
 
 ## Defining an Action
 
-An action implements the `ActionInterface`. You can extend `Action` to quick create an action:
+An action implements the `Chevee\Action\Interfaces\ActionInterface`.
+
+👉 You can extend `Action` to quick create an action:
 
 ```php
 use Chevere\Action\Action;
@@ -30,7 +30,9 @@ public function getDescription(): string
 
 ## Run
 
-The `run` method is used to define the logic that will be executed. You can define as many arguments you need, of any type. The return type must be of type `array`.
+The `run` method is used to define the logic that will be executed. The return type must be of type `array`.
+
+💡 You can define as many arguments you need, of any type.
 
 ```php
 use Chevere\Parameter\Interfaces\ArgumentsInterface;
@@ -45,7 +47,7 @@ public function run(string $name): array
 }
 ```
 
-💡 Attributes can be used to provide more context for run parameters and save some boilerplate.
+👉 Attributes can be used to provide more context for run parameters and save some boilerplate.
 
 ### Description attribute
 
@@ -64,7 +66,7 @@ public function run(
 
 ### Regex attribute
 
-The RegexAttribute applied to `string` will require the paramater to validate the given regular expression.
+The RegexAttribute applied to `string` will require the paramater to validate the defined regular expression.
 
 ```php
 use Chevere\Regex\Attributes\RegexAttribute;
@@ -97,6 +99,8 @@ public function getResponseParameters(): ParametersInterface
 ## Container
 
 Action supports [Container](Container.md), enabling to provide services for Actions. A service should be understood as any *persistent* reference, which doesn't depend on the `run` signature.
+
+👏 You can use *any* PSR-compatible container.
 
 ### Requiring services
 

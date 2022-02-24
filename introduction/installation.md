@@ -24,7 +24,7 @@ The [chevere.ini](https://github.com/chevere/chevere/blob/main/chevere.ini) file
 composer require chevere/chevere
 ```
 
-The above command will install Chevere and its [dependencies](https://github.com/chevere/chevere/blob/main/composer.json) at `vendor/`.
+The above command will install Chevere and its dependencies at `vendor/`.
 
 ## Now what?
 
@@ -34,4 +34,4 @@ Chevere will be available project-wide. Make sure to load `vendor/autoload.php` 
 require 'vendor/autoload.php';
 ```
 
-Once installed you can start using any of the built-in [chevere](../chevere/README.md) components.
+Once installed you can start using any of the built-in [components](../library/README.md).
