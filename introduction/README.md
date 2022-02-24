@@ -26,5 +26,4 @@ All-new PHP 8 codebase with strict standards. Chevere has been designed from scr
 
 ## Sponsors
 
-* [DocSearch](https://docsearch.algolia.com/) by Algolia for providing the search functionality in this documentation.
 * [JetBrains](https://www.jetbrains.com/opensource/) for providing software licensing for all their suite.
