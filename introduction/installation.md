@@ -13,7 +13,6 @@ Chevere is built and tested for [unix-like systems](../architecture/development/
 * [ext-json](https://www.php.net/json)
 * [ext-ds](https://www.php.net/ds)
 * [ext-mbstring](https://www.php.net/mbstring)
-* [ext-zend-opcache](https://www.php.net/opcache)
 
 The [chevere.ini](https://github.com/chevere/chevere/blob/main/chevere.ini) file provides the PHP settings required for Chevere.
 
