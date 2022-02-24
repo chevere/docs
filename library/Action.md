@@ -30,18 +30,18 @@ public function getDescription(): string
 
 ## Run
 
-The `run` method is used to define the logic that will be executed. In the example below, an exception will be thrown if run response fails to provide the expected [response parameter](#response-parameters) signature.
+The `run` method is used to define the logic that will be executed. You can define as many arguments you need, of any type. The return type must be of type `array`.
 
 ```php
 use Chevere\Parameter\Interfaces\ArgumentsInterface;
 use Chevere\Response\Interfaces\ResponseInterface;
 
-public function run(string $name): ResponseInterface
+public function run(string $name): array
 {
     // ...
-    return $this->getResponse(
-        email: (new User($name))->email
-    );
+    return [
+        'email' => $user->email
+    ];
 }
 ```
 
@@ -57,7 +57,7 @@ use Chevere\Common\Attributes\DescriptionAttribute;
 public function run(
     #[DescriptionAttribute('The user name.')]
     string $name
-) {
+): array {
     // ...
 }
 ```
@@ -72,7 +72,7 @@ use Chevere\Regex\Attributes\RegexAttribute;
 public function run(
     #[RegexAttribute('/^\w$/')]
     string $name
-) {
+): array {
     // ...
 }
 ```
@@ -96,7 +96,7 @@ public function getResponseParameters(): ParametersInterface
 
 ## Container
 
-💡 Action supports [Container](Container.md), enabling to provide services for Actions. A service should be understood as any *persistent* reference, which doesn't depend on the `run` signature.
+Action supports [Container](Container.md), enabling to provide services for Actions. A service should be understood as any *persistent* reference, which doesn't depend on the `run` signature.
 
 ### Requiring services
 
@@ -135,10 +135,15 @@ For the code above, a `InvalidArgumentException` will be thrown if `$container` 
 
 ### Accesing the container
 
-use `container` to access the action container instance.
+Use `container` method to access the action container instance.
 
 ```php
-$container = $action->container();
+public function run(string $name): array
+{
+    $container = $this->container();
+    $pdo = $container->get('pdo');
+    // ...
+}
 ```
 
 ## Running actions
@@ -148,5 +153,6 @@ Use `runner` function to run an action. This will return an object implementing 
 ```php
 use function Chevere\Action\actionRun;
 
-$response = $action->runner();
+// ...
+$response = $action->runner(name: 'godlike');
 ```
