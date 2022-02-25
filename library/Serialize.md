@@ -4,7 +4,7 @@ The Serialize component is in charge of handling variable serialize and deserial
 
 ## Serialize a variable
 
-The `Chevere/Serialize/Serialize` component is in charge of handling deserialize.
+The `Chevere/Serialize/Serialize` component is in charge of handling serialize.
 
 ```php
 use Chevere\Serialize\Serialize;

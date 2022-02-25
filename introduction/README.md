@@ -20,7 +20,7 @@ Do more building pluggable software with components. Chevere provides an immutab
 
 ### Modern & High quality
 
-All-new PHP 8 codebase with strict standards. Chevere has been designed from scratch for PHP 8, and it uses all the goodies added to it. On top of that it follows own high [quality](../architecture/standard/quality.md) standards.
+All-new PHP 8 codebase with strict standards. Chevere has been designed from scratch for PHP 8, and it uses all the goodies added to it. On top of that it follows own high [quality](../developer/standard/quality.md) standards.
 
 ## Who makes Chevere?
 
