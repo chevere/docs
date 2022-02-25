@@ -25,19 +25,11 @@ final class SomeController extends Controller
 
 ### Controller input parameters
 
-Parameters are defined in the `getParameters` method (same as an action). Parameter types provided must be of type [StringParameter](Parameter.md#string-parameter).
+Parameters are defined in the `run` method (same as an action), but it just takes strings.
 
 ```php
-use Chevere\Parameter\Interfaces\ParametersInterface;
-use function Chevere\Parameter\parameters;
-use function Chevere\Parameter\stringParameter;
-
-public function getParameters(): ParametersInterface
+public function run(string $pepito, string $paysTwice): array
 {
-    return
-        parameters(
-            id: stringParameter(),
-            name: stringParameter(),
-        );
+    return [];
 }
 ```

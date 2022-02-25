@@ -1,6 +1,6 @@
 # Container
 
-The `Chevere\Container\Container` component is an immutable implementation of `Psr\Container\ContainerInterface`.
+The Container component is an immutable implementation of `Psr\Container\ContainerInterface`.
 
 ## Creating a container
 

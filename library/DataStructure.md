@@ -1,8 +1,6 @@
 # DataStructure
 
-`🚧 OUTDATED DOCS`
-
-The `Chevere\DataStructure` namespace groups components providing typed immutable-like data structures, built on top of [php-ds](https://github.com/php-ds/ext-ds).
+The DataStructure component provides typed immutable-like data structures, built on top of [php-ds](https://github.com/php-ds/ext-ds).
 
 ## Map
 

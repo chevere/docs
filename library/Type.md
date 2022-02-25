@@ -1,6 +1,6 @@
 # Type
 
-The `Chevere/Type/Type` component is in charge of providing a layer for dynamic type handling.
+The Type component is in charge of providing a layer for dynamic type handling.
 
 ## Creating a Type
 

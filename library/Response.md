@@ -1,6 +1,6 @@
 # Response
 
-The `Chevere/Response/Response` component is in charge of handling responses.
+The Response component is in charge of providing a common response interface.
 
 ## Creating Response
 

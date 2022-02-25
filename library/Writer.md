@@ -1,6 +1,6 @@
 # Writer
 
-The `Chevere/Writer` namespace provides components that interact with output, error, debug and log streams.
+The Writer component provides components that interact with output, error, debug and log streams.
 
 A writer is defined by the `Chevere/Writer/Interfaces/WriterInterface`.
 

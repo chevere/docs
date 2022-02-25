@@ -1,8 +1,8 @@
 # Str
 
-`🚧 This component provides a lot of methods not documented here.`
+`🚧 A lot of methods aren't documented.`
 
-The `Chevere\Str` namespace provides components that interact with strings, allowing [manipulation](#manipulation), [asserting](#asserting) and [boolean checking](#boolean-checking) for strings.
+The Str component provides components that interact with strings, allowing [manipulation](#manipulation), [asserting](#asserting) and [boolean checking](#boolean-checking) for strings.
 
 ## Manipulation
 

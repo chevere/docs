@@ -1,6 +1,6 @@
 # Parameter
 
-The `Chevere/Parameter` namespace is in charge of providiong typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
+The Parameter component is in charge of providiong typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
 
 This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](./Type.md) component.
 

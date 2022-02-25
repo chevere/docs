@@ -1,6 +1,6 @@
 # VarSupport
 
-The `Chevere/VarSupport` namespace is in charge of providing extra tools for handling variables.
+The VarSupport component is in charge of providing extra tools for handling variables.
 
 ## VarObject
 

@@ -1,6 +1,6 @@
 # Message
 
-The `Chevere/Message/Message` component allows to create messages with rich formatting support for console, HTML and plain text.
+The Message component allows to create messages with rich formatting support for console, HTML and plain text.
 
 ## Creating a Message
 

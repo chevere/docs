@@ -1,6 +1,6 @@
 # Serialize
 
-The `Chevere/Components/Serialize` namespace is in charge of handling variable serialize and deserialize.
+The Serialize component is in charge of handling variable serialize and deserialize.
 
 ## Serialize a variable
 

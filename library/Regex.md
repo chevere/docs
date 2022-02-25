@@ -1,6 +1,6 @@
 # Regex
 
-The `Chevere/Regex/Regex` component is in charge of providing tooling for regex patterns.
+The Regex component is in charge of providing tooling for regex patterns.
 
 ## Creating Regex
 

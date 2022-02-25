@@ -152,7 +152,7 @@ public function run(string $name): array
 
 ## Running actions
 
-Use `runner` function to run an action. This will return an object implementing `Chevere\Response\Interfaces\ResponseInterface`.
+Use `runner` method to run the action. This will return an object implementing `Chevere\Response\Interfaces\ResponseInterface`.
 
 ```php
 use function Chevere\Action\actionRun;
