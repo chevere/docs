@@ -1,10 +1,12 @@
 # VarDump
 
+The **VarDump** component provides an alternative to [var_dump](https://www.php.net/var-dump) with a richer feature set, including formatting for the generation of a myriad of dump documents.
+
+## Installing
+
 ```sh
 composer require chevere/var-dump
 ```
-
-The `Chevere/VarDump` namespace component provides an alternative to [var_dump](https://www.php.net/var-dump) with a richer feature set, including formatting for the generation of a myriad of dump documents.
 
 ## Helpers
 

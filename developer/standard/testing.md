@@ -1,11 +1,5 @@
 # Testing Standard
 
-> Chevere tests are located at [Chevere\Tests](https://github.com/chevere/chevere/tree/main/Tests) namespace
-
-[Software testing](https://en.wikipedia.org/wiki/Software_testing) is the activity of checking software quality under a test. It is carried to ensure that the software system is free of errors. It helps to detect bugs, errors and missing requirements.
-
-Testing is about make sure that the software behave as expected and that the software will _responds_ in a predictable way every time.
-
 ## Testing Framework
 
 * Tests should be compatible with the latest [PHPUnit](https://phpunit.de/) production release.\

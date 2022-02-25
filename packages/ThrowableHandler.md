@@ -1,12 +1,14 @@
 # ThrowableHandler
 
+The **ThrowableHandler** component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents.
+
+👏 With this component you can create multiple exception documents, enabling to generate the document that you will display to end-user, the one for your logs and the one that you may want to see while on development.
+
+## Installing
+
 ```sh
 composer require chevere/throwable-handler
 ```
-
-The `Chevere/ThrowableHandler` component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents.
-
-👏 With this component you can create multiple exception documents, enabling to generate the document that you will display to end-user, the one for your logs and the one that you may want to see while on development.
 
 ## Handling exceptions
 

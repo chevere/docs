@@ -2,7 +2,7 @@
 
 Our quality standard exists to ensure the quality of the software by defining the minimum requirements to consider the software usable.
 
-Code delivered or used by Chevere **must be**:
+Code delivered by Chevere **must be**:
 
 * Documented
 * Tested

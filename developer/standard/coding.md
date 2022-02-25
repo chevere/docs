@@ -10,7 +10,7 @@ The coding standard exists as good practice for keeping the syntax cohesive as p
 
 ## Code Style
 
-Code style is provided using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard), defined at the [ecs.php](https://github.com/chevere/chevere/blob/main/.ecs/ecs.php) file, which extends [ecs-chevere.php](https://github.com/chevere/code-style/blob/main/.ecs/ecs-chevere.php).
+Code style is provided using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard), defined at the root `ecs.php` file which extends [ecs-chevere.php](https://github.com/chevere/code-style/blob/main/.ecs/ecs-chevere.php).
 
 ## Implementing in your project
 
@@ -20,29 +20,19 @@ Install EasyCodingStandard with composer.
 composer require symplify/easy-coding-standard --dev
 ```
 
-Install [chevere/code-style](https://github.com/chevere/code-style) remote repository as `code-style` in your project root. This will provide the `.ecs/` directory.
+### Download code-style
+
+Run this to download/update the code style.
 
 ```sh
-git remote add code-style https://github.com/chevere/code-style.git
+curl --create-dirs -O --output-dir .ecs https://raw.githubusercontent.com/chevere/code-style/main/.ecs/ecs-chevere.php
 ```
 
-### Retrieving assets
-
-Fetch `code-style` to download/update the base styling.
-
-```sh
-git fetch code-style
-```
-
-Merge `code-style` changes into your working branch (for example, `main`).
-
-```sh
-git merge code-style/main --allow-unrelated-histories
-```
+💡 For **Chevere packages** you can run `composer update-cs`
 
 ### `.ecs/ecs.php`
 
-* Create your `.ecs/ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file by importing the `ecs-chevere.php` file:
+Create your `.ecs/ecs.php` [configuration](https://github.com/symplify/easy-coding-standard#configuration) file by importing the `ecs-chevere.php` file:
 
 ```php
 <?php
@@ -92,7 +82,7 @@ Check the workspace documentation to configure [automatic code formatting](../de
 
 ## Code comments
 
-Comments in logic are ***very*** **discouraged** and it should be used only in the following cases:
+Comments in logic should be used only in the following cases:
 
 * `@codeCoverage` tags
 * Type hinting (for example, in loops)

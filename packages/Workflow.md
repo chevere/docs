@@ -1,10 +1,12 @@
 # Workflow
 
+The `Chevere/Workflow` namespace provides the tooling to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract instructions as logic units of interconnected async jobs.
+
+## Installing
+
 ```sh
 composer require chevere/workflow
 ```
-
-The `Chevere/Workflow` namespace provides the tooling to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract instructions as logic units of interconnected async jobs.
 
 ## Creating a Workflow
 

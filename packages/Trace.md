@@ -1,3 +1,7 @@
 # Trace
 
-`🚧 documentation not ready`
+## Installing
+
+```sh
+composer require chevere/trace
+```
