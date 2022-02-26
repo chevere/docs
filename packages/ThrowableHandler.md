@@ -21,7 +21,7 @@ Use function `Chevere\ThrowableHandler\handleAsPlain` to handle throwables as pl
 ```php
 use Chevere\ThrowableHandler\ThrowableHandler;
 
-set_exception_handler(ThrowableHandler::PLAIN_HANDLER);
+set_exception_handler(ThrowableHandler::PLAIN);
 ```
 
 ### handleAsConsole
@@ -31,7 +31,7 @@ Use function `Chevere\ThrowableHandler\handleAsConsole` to handle throwables as 
 ```php
 use Chevere\ThrowableHandler\ThrowableHandler;
 
-set_exception_handler(ThrowableHandler::CONSOLE_HANDLER);
+set_exception_handler(ThrowableHandler::CONSOLE);
 ```
 
 ### handleAsHtml
@@ -41,35 +41,35 @@ Use function `Chevere\ThrowableHandler\handleAsHtml` to handle throwables as HTM
 ```php
 use Chevere\ThrowableHandler\ThrowableHandler;
 
-set_exception_handler(ThrowableHandler::HTML_HANDLER);
+set_exception_handler(ThrowableHandler::HTML);
 ```
 
 ## Handing errors
 
 Use the following helpers to forward errors as exceptions.
 
-### errorsAsExceptions
+### errorAsException
 
-Use function `Chevere\ThrowableHandler\errorsAsExceptions` to handle errors as exceptions.
+Use function `Chevere\ThrowableHandler\errorAsException` to handle errors as exceptions.
 
 👉 By doing this the system will throw exception instead of emitting errors.
 
 ```php
 use Chevere\ThrowableHandler\ThrowableHandler;
 
-set_error_handler(ThrowableHandler::ERRORS_AS_EXCEPTIONS);
+set_error_handler(ThrowableHandler::ERROR_AS_EXCEPTION);
 ```
 
-### shutdownErrorsAsExceptions
+### shutdownErrorAsException
 
-Use function `Chevere\ThrowableHandler\shutdownErrorsAsExceptions` to register errors on shutdown.
+Use function `Chevere\ThrowableHandler\shutdownErrorAsException` to register errors on shutdown.
 
 👉 This will take care or register errors in shutdown by forwarding the error to the exception handler.
 
 ```php
 use Chevere\ThrowableHandler\ThrowableHandler;
 
-register_shutdown_function(ThrowableHandler::SHUTDOWN_ERRORS_AS_EXCEPTIONS);
+register_shutdown_function(ThrowableHandler::SHUTDOWN_ERROR_AS_EXCEPTION);
 ```
 
 ## Advanced usage
