@@ -12,7 +12,7 @@ module.exports = {
         }],
         ['meta', {
             name: 'theme-color',
-            content: '#23a8e0'
+            content: '#2a97ff'
         }],
         ['meta', {
             name: 'apple-mobile-web-app-capable',
@@ -29,7 +29,7 @@ module.exports = {
         ['link', {
             rel: 'mask-icon',
             href: '/logo.svg',
-            color: '#3eaf7c'
+            color: '#2a97ff'
         }],
         ['meta', {
             name: 'msapplication-TileImage',
