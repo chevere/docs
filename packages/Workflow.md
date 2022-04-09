@@ -1,6 +1,6 @@
 # Workflow
 
-The `Chevere/Workflow` namespace provides the tooling to define a runtime execution based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract instructions as logic units of interconnected async jobs.
+The `Chevere/Workflow` package provides tooling for define an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract procedure instructions as logic units of interconnected independent async jobs.
 
 ## Installing
 
@@ -10,7 +10,7 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a workflow pass the Workflow named [jobs](#job). In the example below, a workflow defines a podcast publishing procedure:
+To create a workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/Action.md) class name and its arguments. In the example below, a workflow defines a podcast publishing procedure:
 
 ```php
 use function Chevere\Workflow\job;
@@ -19,43 +19,43 @@ use function Chevere\Workflow\workflow;
 workflow(
     process:
         job(
-            'ProcessPodcast',
+            ProcessPodcast::class,
             payload: '${payload}'
         ),
     optimize:
         job(
-            'OptimizeFile',
+            OptimizeFile::class,
             file: '${process:file}'
         ),
     podcast:
         job(
-            'CreatePodcast',
+            CreatePodcast::class,
             file: '${optimize:file}',
             request: '${process:request}'
         ),
     releaseTransistorFm:
         job(
-            'ReleaseTransistorFM',
+            ReleaseTransistorFM::class,
             podcast: '${podcast:object}'
         ),
     releaseApple:
         job(
-            'ReleaseApple',
+            ReleaseApple::class,
             podcast: '${podcast:object}'
         ),
     createTranscript:
         job(
-            'CreateTranscript',
+            CreateTranscript::class,
             file: '${optimize:file}'
         ),
     translateTranscript:
         job(
-            'TranslateTranscript',
+            TranslateTranscript::class,
             script: '${createTranscript:script}'
         ),
     notifications:
         job(
-            'NotifySubscribers',
+            NotifySubscribers::class,
             podcast: '${podcast:object}',
         )
         ->withDepends(
@@ -63,7 +63,7 @@ workflow(
         ),
     tweet:
         job(
-            'SendReleaseTweet',
+            SendReleaseTweet::class,
             fm: '${releaseTransistorFm:url}',
             apple: '${releaseApple:url}',
         )
@@ -73,11 +73,11 @@ workflow(
 );
 ```
 
-For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided by [WorkflowRun](#running-a-workflow).
+For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided at [WorkflowRun](#running-a-workflow) layer.
 
-👉 References to previous jobs (as in `${process:file}`) **implict declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
+👉 References to previous jobs (as in `${process:file}`) **implicit declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
 
-🦄 Jobs will run in **parallel** (when available and if dependencies are meet). Refer to [dependencies](#dependencies) for sequential run order.
+🦄 Jobs will run in **parallel** by default. Refer to [dependencies](#dependencies) for sequential run order.
 
 ### Dependencies
 
@@ -85,14 +85,14 @@ Use `withDeps` method to explicit declare previous jobs as dependencies. The dep
 
 ## Job
 
-The `Chevere/Components/Workflow/Job` component defines an [Action](../library/Action.md) with arguments to pass, supporting direct arguments aswel previous jobs response keys.
+The `Chevere/Components/Workflow/Job` component defines an [Action](../library/Action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
 
-👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`.
+👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`. See [Action](../library/Action.md) component.
 
 ```php
 use function Chevere\Workflow\job;
 
-job(action: 'SomeActionClass', ...$namedArguments);
+job(action: SomeAction::class, ...$namedArguments);
 ```
 
 ### Parameters
@@ -107,13 +107,13 @@ Arguments can be passed on constructor using named arguments.
 use function Chevere\Workflow\job;
 
 job(
-    'SomeActionClass'
+    SomeAction::class
     firstName: 'Rodolfo',
     lastName: 'Berrios'
 );
 ```
 
-For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeActionClass` when running the Workflow. These arguments will be matched against the Parameters defined at `SomeActionClass::run()`.
+For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeAction` when running the Workflow. These arguments will be matched against the Parameters defined at `SomeAction::run()`.
 
 ### Variables
 
@@ -121,27 +121,41 @@ Referenced arguments can be used to bind arguments against Workflow variables or
 
 ### Workflow variables
 
-`${workflow_variable}`
+`${var} ${workflow_variable}`
 
-A Workflow variable, injected by the WorkflowRunner. Regex `/^\${([\w-]*)}$/`.
+A Workflow variable, injected by the WorkflowRunner. Regex `/^\${([\w]*)}$/`.
 
 ### Job response variable
 
-`${job_name:response_key}`
+`${job:key} ${job_name:response_key}`
 
-The value for `response_key` for the `job_name` job response. Regex `/^\${([\w-]*)\:([\w-]*)}$/`.
+The value for `response_key` for the `job_name` job response. Regex `/^\${([\w]*)\:([\w-]*)}$/`.
 
 ## Running a Workflow
 
-To run a Workflow you need a `Chevere\Workflow\WorkflowRun` and a [Map](../library/DataStructure.md#map) container for the services you need to expose at Workflow layer.
+To run a Workflow use the `Chevere\Workflow\workflowRun` function:
 
 ```php
+use Chevere\Container\Container;
 use function Chevere\Workflow\workflow;
 use function Chevere\Workflow\workflowRun;
 
+// Your workflow:
 $workflow = workflow(/** ... **/);
-$arguments = [
-    'payload' => '{request payload}'
+// Workflow ${variables}
+$vars = [
+    'payload' => 'the payload'
 ];
-$run = workflowRun($workflow, $arguments);
+// A PSR-Container for jobs services
+$container = new Container();
+$run = workflowRun($workflow, $vars, $container);
+```
+
+Variable `$run` will be assigned to a `Chevere\Workflow\Interfaces\WorkflowRunInterface` object, which you can query for obtaining data from the workflow runtime.
+
+```php
+// TRUE if has a job named `my_job`.
+$run->has('my_job');
+// A response object for the job's.
+$run->get('my_job');
 ```
