@@ -2,6 +2,10 @@
 
 The `Chevere/Workflow` package provides tooling for define an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract procedure instructions as logic units of interconnected independent async jobs.
 
+::: tip 💡 Workflow introduction
+ Read [Workflow for PHP](https://rodolfo.is/2022/04/09/workflow-php/) at Rodolfo's blog for a compressive introduction to this package.
+:::
+
 ## Installing
 
 ```sh
