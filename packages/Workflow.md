@@ -2,11 +2,15 @@
 
 The `Chevere/Workflow` package provides tooling for define an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract procedure instructions as logic units of interconnected independent async jobs.
 
+👏 With this package you can design a Workflow procedures in a similar fashion to GitHub Actions.
+
 ::: tip 💡 Workflow introduction
  Read [Workflow for PHP](https://rodolfo.is/2022/04/09/workflow-php/) at Rodolfo's blog for a compressive introduction to this package.
 :::
 
 ## Installing
+
+Workflow is available through [Packagist](https://packagist.org/packages/chevere/workflow) and the repository source is at [GitHub](https://github.com/chevere/workflow).
 
 ```sh
 composer require chevere/workflow
@@ -89,7 +93,7 @@ Use `withDeps` method to explicit declare previous jobs as dependencies. The dep
 
 ## Job
 
-The `Chevere/Components/Workflow/Job` component defines an [Action](../library/Action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
+The `Chevere/Workflow/Job` class defines an [Action](../library/Action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
 
 👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`. See [Action](../library/Action.md) component.
 

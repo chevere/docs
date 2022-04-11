@@ -1,10 +1,12 @@
 # ThrowableHandler
 
-The **ThrowableHandler** component provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents.
+The `Chevere/ThrowableHandler` package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents.
 
-👏 With this component you can create multiple exception documents, enabling to generate the document that you will display to end-user, the one for your logs and the one that you may want to see while on development.
+👏 With this package you can create multiple exception documents, enabling to generate the document that you will display to end-user, the one for your logs and the one that you may want to see while on development.
 
 ## Installing
+
+ThrowableHandler is available through [Packagist](https://packagist.org/packages/chevere/throwable-handler) and the repository source is at [GitHub](https://github.com/chevere/throwable-handler).
 
 ```sh
 composer require chevere/throwable-handler
