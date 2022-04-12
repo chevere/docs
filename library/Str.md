@@ -60,5 +60,3 @@ $strCondition->endsWith('Rodo'); // false
 $strCondition->contains('es'); // true
 $strCondition->startsWith('Chévere'); // true
 ```
-
-In the code above, `endsWith` returns `false` as `$string` doesn't ends with `Rodo`. Passing `es` to `contains` method and passing `Chévere` to `startsWith` method returns true as the conditions are meet.

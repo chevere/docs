@@ -4,7 +4,7 @@ The Action component is in charge of providing context for executing any instruc
 
 ## Defining an Action
 
-An action implements the `Chevee\Action\Interfaces\ActionInterface`.
+An action implements the `Chevere\Action\Interfaces\ActionInterface`.
 
 👉 You can extend `Action` to quick create an action:
 
@@ -47,37 +47,11 @@ public function run(string $name): array
 }
 ```
 
-👉 Attributes can be used to provide more context for run parameters and save some boilerplate.
+### Attributes
 
-### Description attribute
+Attributes can be used to provide context for run parameters.
 
-The DescriptionAttribute will define the paramater description.
-
-```php
-use Chevere\Common\Attributes\DescriptionAttribute;
-
-public function run(
-    #[DescriptionAttribute('The user name.')]
-    string $name
-): array {
-    // ...
-}
-```
-
-### Regex attribute
-
-The RegexAttribute applied to `string` will require the paramater to validate the defined regular expression.
-
-```php
-use Chevere\Regex\Attributes\RegexAttribute;
-
-public function run(
-    #[RegexAttribute('/^\w$/')]
-    string $name
-): array {
-    // ...
-}
-```
+👉 Refer to [ParameterAttribute](Parameter.md#parameterattribute) for attributes for parameters.
 
 ## Response Parameters
 
@@ -137,7 +111,7 @@ $action = $action->withContainer($container);
 
 For the code above, a `InvalidArgumentException` will be thrown if `$container` doesn't provide the services required by `SomeAction`.
 
-### Accesing the container
+### Accessing the container
 
 Use `container` method to access the action container instance.
 

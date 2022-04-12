@@ -1,12 +1,12 @@
 # Parameter
 
-The Parameter component is in charge of providiong typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
+The Parameter component is in charge of providing typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
 
 This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](./Type.md) component.
 
 ## Creating a Parameter
 
-Parameters can be created with ease using functions. All of these enables to prodive `$description`, `$default` and `...$attributes` for each parameter.
+Parameters can be created with ease using functions. All of these enables to provide `$description`, `$default` and `...$attributes` for each parameter.
 
 ### Array
 
@@ -97,7 +97,7 @@ $parameters = parameters(
 
 ### Adding Parameters
 
-The `withAdded` method is used to add more required parameters.
+The `withAdded` method is used to add required parameters.
 
 ```php
 use function Chevere\Parameter\stringParameter;
@@ -153,7 +153,7 @@ $arguments = new Arguments($parameters, ...$data);
 
 The `get` method is used to retrieve an argument "as-is", without type checking.
 
-In the example below `$argument` must be either casted as boolean or use a doc block annotation to provide type-hint while `$boolean` type gets hinted directly from the function return.
+In the example below `$argument` must be casted as boolean or use a doc block annotation to provide type-hint while `$boolean` type gets hinted directly from the function return.
 
 ```php
 use Chevere\Parameter\Arguments;
@@ -177,3 +177,30 @@ The following methods are available to provide typed argument retrieval:
 | `getArray`   | `array`     |
 
 > **Note** Above methods will throw a `TypeException` on type mismatch.
+
+## Attributes
+
+Attributes for parameters are provided at the `Chevere\Parameter\Attributes` namespace.
+
+### ParameterAttribute
+
+The generic `Chevere\Parameter\Attributes\ParameterAttribute` attribute enables to provide parameter description. In addition, to this it enables to define the regex matching for strings, numeric values and objects implementing [stringable](https://www.php.net/manual/en/class.stringable.php) interface.
+
+```php
+use Chevere\Parameter\Attributes\ParameterAttribute;
+
+function mucho(
+    #[ParameterAttribute(regex: '/^[0-9]{2}$/')]
+    int $id  
+);
+
+function macho(
+    #[ParameterAttribute('The name', '/^\W+$/')]
+    string $name
+);
+
+function man(
+    #[ParameterAttribute('No time to talk')]
+    User $user
+);
+```
