@@ -74,7 +74,7 @@ $varDump = $varDump->withVars('a var', [], null);
 
 ## Shifting traces
 
-The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous backtraces should be removed.
+The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous backtrace should be removed.
 
 ```php
 $varDump = $varDump->withShift(1); // removes the first trace
@@ -82,7 +82,7 @@ $varDump = $varDump->withShift(1); // removes the first trace
 
 ## Process
 
-The method `process` is used to trigger the var dumping process. It requires to pass a [writer](../library/Writer.md) where the dump information will be written.
+The method `process` is used to trigger the var dumping process. It requires to pass a [writer](../library/writer.md) where the dump information will be written.
 
 ```php
 use Chevere\Writer\StreamWriter;
