@@ -20,7 +20,7 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/Action.md) class name and its arguments. In the example below, a workflow defines a podcast publishing procedure:
+To create a workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/action.md) class name and its arguments. In the example below, a workflow defines a podcast publishing procedure:
 
 ```php
 use function Chevere\Workflow\job;
@@ -95,9 +95,9 @@ Use `withDeps` method to explicit declare previous jobs as dependencies. The dep
 
 ## Job
 
-The `Chevere/Workflow/Job` class defines an [Action](../library/Action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
+The `Chevere/Workflow/Job` class defines an [Action](../library/action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
 
-👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`. See [Action](../library/Action.md) component.
+👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`. See [Action](../library/action.md) component.
 
 ```php
 use function Chevere\Workflow\job;
@@ -107,7 +107,7 @@ job(action: SomeAction::class, ...$namedArguments);
 
 ### Parameters
 
-Parameters for the job are defined in the [Action Run](../library/Action.md#run).
+Parameters for the job are defined in the [Action Run](../library/action.md#run).
 
 ### Arguments
 
