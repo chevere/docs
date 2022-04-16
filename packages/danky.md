@@ -1,6 +1,6 @@
 # Danky
 
-![Danky](../src/packages/danky/danky-social.jpg)
+![Danky](../src/packages/danky/danky-logo.svg)
 
 The `Chevere/Danky` package provides a native PHP template system.
 
