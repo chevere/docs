@@ -1,5 +1,7 @@
 # VarDump
 
+![VarDump](../src/packages/var-dump/var-dump-social.svg)
+
 The `Chevere\VarDump` package provides an alternative to [var_dump](https://www.php.net/var-dump) with a richer feature set, including formatting for the generation of a myriad of dump documents.
 
 ## Installing
