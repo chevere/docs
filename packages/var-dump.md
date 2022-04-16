@@ -21,8 +21,8 @@ composer require chevere/var-dump
 Function `vd` is a drop-in replacement for `var_dump`. It prints information about one or more variables to the output stream.
 
 ```php
-vd($var);
-// moar code...
+vd($var1, $var2,);
+// more code
 ```
 
 ### VarDump and die (vdd)
@@ -30,7 +30,8 @@ vd($var);
 Function `vdd` does same as `vd`, but with `die(0)` which halts further execution.
 
 ```php
-vdd($var); // muerto!
+vdd($var);
+// exit()
 ```
 
 ## Instances

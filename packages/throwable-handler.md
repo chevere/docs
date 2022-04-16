@@ -12,11 +12,11 @@ composer require chevere/throwable-handler
 
 ## Handling exceptions
 
-Use the following helpers to quickly handle an exception in different contexts. See [advanced usage](#advanced-usage) for more use strategies.
+Use the following helpers to handle an exception in different contexts. See [advanced usage](#advanced-usage) for other use strategies.
 
 ### handleAsPlain
 
-Use function `handleAsPlain` to handle throwables as plain text.
+Use function `handleAsPlain` to handle throwable as plain text.
 
 ```php
 use function Chevere\ThrowableHandler\handleAsPlain;
@@ -38,7 +38,7 @@ set_exception_handler(ThrowableHandler::PLAIN);
 
 ### handleAsConsole
 
-Use function `handleAsConsole` to handle throwables as console text.
+Use function `handleAsConsole` to handle throwable as console text.
 
 ```php
 use function Chevere\ThrowableHandler\handleAsConsole;
@@ -60,7 +60,7 @@ set_exception_handler(ThrowableHandler::CONSOLE);
 
 ### htmlHandler
 
-Use function `htmlHandler` to handle throwables as HTML.
+Use function `htmlHandler` to handle throwable as HTML.
 
 ```php
 use function Chevere\ThrowableHandler\htmlHandler;
@@ -166,7 +166,7 @@ $silent = $docSilent->__toString();
 
 For the code above, `$docLoud` contains debug information (Throwable info, file, line, trace and server) while `$docSilent` provides a generic message but referencing to the throwable handled id.
 
-### Muliple documents
+### Multiple documents
 
 💡 Multiple documents and contexts can be used to create a myriad of throwable handler documents.
 

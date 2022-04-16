@@ -22,7 +22,7 @@ A Danky template is a `.php` file returning a closure following this convention:
 - Can take any type of argument(s)
 - The return type **must** be of type string
 
-💡 In the code below, the return is an string formatted in [heredoc](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc) syntax. You can also use [nowdoc](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc), [double quoted](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double) and [single quoted](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.single) string representations.
+💡 In the code below, the return is an string formatted in [Heredoc](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc) syntax. You can also use [Nowdoc](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc), [double quoted](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double) and [single quoted](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.single) string representations.
 
 ```php
 <?php // h1.php
@@ -72,4 +72,4 @@ Danky paths for `import` can be absolute or relative and it also supports to pas
 
 Arguments for Danky functions must be passed to run the function.
 
-💡 Danky will check for missing variables, and it will emit an exception with all the missing variables.
+💡 Danky will check for missing variables, and it will emit an exception with the missing variables.
