@@ -2,8 +2,6 @@
 
 The `Chevere/ThrowableHandler` package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents.
 
-👏 With this package you can create multiple exception documents, enabling to generate the document that you will display to end-user, the one for your logs and the one that you may want to see while on development.
-
 ## Installing
 
 ThrowableHandler is available through [Packagist](https://packagist.org/packages/chevere/throwable-handler) and the repository source is at [GitHub](https://github.com/chevere/throwable-handler).
@@ -18,7 +16,19 @@ Use the following helpers to quickly handle an exception in different contexts. 
 
 ### handleAsPlain
 
-Use function `Chevere\ThrowableHandler\handleAsPlain` to handle throwables as plain text.
+Use function `handleAsPlain` to handle throwables as plain text.
+
+```php
+use function Chevere\ThrowableHandler\handleAsPlain;
+
+try {
+    // ...
+} catch(Throwable $e) {
+    handleAsPlain($e);
+}
+```
+
+Use `ThrowableHandler::PLAIN` to set plain handler for all exceptions.
 
 ```php
 use Chevere\ThrowableHandler\ThrowableHandler;
@@ -28,7 +38,19 @@ set_exception_handler(ThrowableHandler::PLAIN);
 
 ### handleAsConsole
 
-Use function `Chevere\ThrowableHandler\handleAsConsole` to handle throwables as console.
+Use function `handleAsConsole` to handle throwables as console text.
+
+```php
+use function Chevere\ThrowableHandler\handleAsConsole;
+
+try {
+    // ...
+} catch(Throwable $e) {
+    handleAsConsole($e);
+}
+```
+
+Use `ThrowableHandler::CONSOLE` to set console handler for all exceptions.
 
 ```php
 use Chevere\ThrowableHandler\ThrowableHandler;
@@ -36,9 +58,21 @@ use Chevere\ThrowableHandler\ThrowableHandler;
 set_exception_handler(ThrowableHandler::CONSOLE);
 ```
 
-### handleAsHtml
+### htmlHandler
 
-Use function `Chevere\ThrowableHandler\handleAsHtml` to handle throwables as HTML.
+Use function `htmlHandler` to handle throwables as HTML.
+
+```php
+use function Chevere\ThrowableHandler\htmlHandler;
+
+try {
+    // ...
+} catch(Throwable $e) {
+    htmlHandler($e);
+}
+```
+
+Use `ThrowableHandler::HTML` to set console handler for all exceptions.
 
 ```php
 use Chevere\ThrowableHandler\ThrowableHandler;
@@ -52,7 +86,7 @@ Use the following helpers to forward errors as exceptions.
 
 ### errorAsException
 
-Use function `Chevere\ThrowableHandler\errorAsException` to handle errors as exceptions.
+Use function `errorAsException` to handle errors as exceptions.
 
 👉 By doing this the system will throw exception instead of emitting errors.
 
@@ -64,7 +98,7 @@ set_error_handler(ThrowableHandler::ERROR_AS_EXCEPTION);
 
 ### shutdownErrorAsException
 
-Use function `Chevere\ThrowableHandler\shutdownErrorAsException` to register errors on shutdown.
+Use function `shutdownErrorAsException` to register errors on shutdown.
 
 👉 This will take care or register errors in shutdown by forwarding the error to the exception handler.
 
