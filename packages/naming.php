@@ -8,4 +8,5 @@ return [
     'var-dump.md' => 'VarDump',
     'workflow.md' => 'Workflow',
     'xr.md' => 'XR',
+    'danky.md' => 'Danky',
 ];
