@@ -14,7 +14,7 @@ Danky is available through [Packagist](https://packagist.org/packages/chevere/da
 composer require chevere/danky
 ```
 
-## Danky template
+## Templates
 
 A Danky template is a `.php` file returning a closure following this convention:
 
@@ -37,7 +37,7 @@ return function(string $text): string {
 };
 ```
 
-## Danky import
+## Import
 
 The `import` function runs a Danky template and it returns its evaluated value. To import a template pass its [path](#path) and its required [arguments](#arguments).
 
@@ -73,3 +73,23 @@ Danky paths for `import` can be absolute or relative and it also supports to pas
 Arguments for Danky functions must be passed to run the function.
 
 💡 Danky will check for missing variables, and it will emit an exception with the missing variables.
+
+## Extra Features
+
+Danky doesn't has extra features yet, but we are aware of the needs that usually sprout in the presentational layer. At this time we hope that the built-in PHP library will be enough for most use cases, and if you need help don't hesitate to [open an issue](https://github.com/chevere/danky/issues/new).
+
+### Escaping
+
+Danky doesn't provide escaping functionality. For that purpose you can use the built-in [String Functions](https://www.php.net/manual/en/ref.strings.php) of the standard PHP library.
+
+For example, using [htmlspecialchars](https://www.php.net/manual/en/function.htmlspecialchars.php):
+
+```php
+$safe  = htmlspecialchars($string, ENT_QUOTES, 'UTF-8')
+```
+
+👉 We encourage you to bring your own safe-string package, for example [voku/stringy](https://packagist.org/packages/voku/stringy) or even your own.
+
+### Filtering & Validation
+
+Danky doesn't provide filtering functionality. For that you can use the built-in [filter_var](https://www.php.net/manual/en/function.filter-var.php) function which provides a myriad of [filters](https://www.php.net/manual/en/filter.filters.php)  which can be used for filtering and validation.
