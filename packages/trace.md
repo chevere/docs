@@ -1,5 +1,7 @@
 # Trace
 
+![Trace](../src/packages/trace/trace-social-alt.svg)
+
 `🚧 under construction`
 
 ## Installing
