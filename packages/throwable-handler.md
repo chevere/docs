@@ -12,9 +12,67 @@ ThrowableHandler is available through [Packagist](https://packagist.org/packages
 composer require chevere/throwable-handler
 ```
 
-## Handling exceptions
+## Errors as exceptions
 
-Use the following helpers to handle an exception in different contexts. See [advanced usage](#advanced-usage) for other use strategies.
+Use the following helpers to forward errors as exceptions, which will be then handled by ThrowableHandler.
+
+### errorAsException
+
+Use function `ThrowableHandler::ERROR_AS_EXCEPTION` to handle errors as exceptions. By doing this the system will throw exception instead of emitting errors.
+
+```php
+use Chevere\ThrowableHandler\ThrowableHandler;
+
+set_error_handler(ThrowableHandler::ERROR_AS_EXCEPTION);
+```
+
+### shutdownErrorAsException
+
+Use function `ThrowableHandler::SHUTDOWN_ERROR_AS_EXCEPTION` to register errors on shutdown. This will take care or register errors in shutdown by forwarding the error to the exception handler.
+
+```php
+use Chevere\ThrowableHandler\ThrowableHandler;
+
+register_shutdown_function(ThrowableHandler::SHUTDOWN_ERROR_AS_EXCEPTION);
+```
+
+## Automatic handling
+
+Use the following helpers to quick handle throwables by registering global handlers.
+
+### Plain handler
+
+Use `ThrowableHandler::PLAIN` to set plain handler for all exceptions.
+
+```php
+use Chevere\ThrowableHandler\ThrowableHandler;
+
+set_exception_handler(ThrowableHandler::PLAIN);
+```
+
+### Console handler
+
+Use `ThrowableHandler::CONSOLE` to set console handler for all exceptions.
+
+```php
+use Chevere\ThrowableHandler\ThrowableHandler;
+
+set_exception_handler(ThrowableHandler::CONSOLE);
+```
+
+### HTML handler
+
+Use `ThrowableHandler::HTML` to set console handler for all exceptions.
+
+```php
+use Chevere\ThrowableHandler\ThrowableHandler;
+
+set_exception_handler(ThrowableHandler::HTML);
+```
+
+## Triggered handling
+
+Use the following helpers to quick handle catches for throwables.
 
 ### handleAsPlain
 
@@ -28,14 +86,6 @@ try {
 } catch(Throwable $e) {
     handleAsPlain($e);
 }
-```
-
-Use `ThrowableHandler::PLAIN` to set plain handler for all exceptions.
-
-```php
-use Chevere\ThrowableHandler\ThrowableHandler;
-
-set_exception_handler(ThrowableHandler::PLAIN);
 ```
 
 ### handleAsConsole
@@ -52,14 +102,6 @@ try {
 }
 ```
 
-Use `ThrowableHandler::CONSOLE` to set console handler for all exceptions.
-
-```php
-use Chevere\ThrowableHandler\ThrowableHandler;
-
-set_exception_handler(ThrowableHandler::CONSOLE);
-```
-
 ### htmlHandler
 
 Use function `htmlHandler` to handle throwable as HTML.
@@ -74,51 +116,15 @@ try {
 }
 ```
 
-Use `ThrowableHandler::HTML` to set console handler for all exceptions.
-
-```php
-use Chevere\ThrowableHandler\ThrowableHandler;
-
-set_exception_handler(ThrowableHandler::HTML);
-```
-
-## Handing errors
-
-Use the following helpers to forward errors as exceptions.
-
-### errorAsException
-
-Use function `errorAsException` to handle errors as exceptions.
-
-👉 By doing this the system will throw exception instead of emitting errors.
-
-```php
-use Chevere\ThrowableHandler\ThrowableHandler;
-
-set_error_handler(ThrowableHandler::ERROR_AS_EXCEPTION);
-```
-
-### shutdownErrorAsException
-
-Use function `shutdownErrorAsException` to register errors on shutdown.
-
-👉 This will take care or register errors in shutdown by forwarding the error to the exception handler.
-
-```php
-use Chevere\ThrowableHandler\ThrowableHandler;
-
-register_shutdown_function(ThrowableHandler::SHUTDOWN_ERROR_AS_EXCEPTION);
-```
-
-## Advanced usage
+## Manual handling
 
 ### Documents
 
 Generate context documents with information about the throwable.
 
-#### Plain
+#### Plain document
 
-Use `Chevere\ThrowableHandler\plainDocument` to create a plain text document.
+Use `plainDocument` to create a plain text document.
 
 ```php
 use function Chevere\ThrowableHandler\plainDocument;
@@ -127,9 +133,18 @@ $document = plainDocument($throwable);
 $plain = $document->__toString();
 ```
 
-#### Console
+Use `Documents\PlainDocument` to create a plain text document by passing its handler.
 
-Use `Chevere\ThrowableHandler\consoleDocument` to create a console document.
+```php
+use Chevere\ThrowableHandler\Documents\PlainDocument;
+
+$handler = throwableHandler($throwable);
+$document = new PlainDocument();
+```
+
+#### Console document
+
+Use `consoleDocument` to create a console document.
 
 ```php
 use function Chevere\ThrowableHandler\consoleDocument;
@@ -138,9 +153,18 @@ $document = consoleDocument($throwable);
 $console = $document->__toString();
 ```
 
-#### HTML
+Use `Documents\ConsoleDocument` to create a console document by passing its handler.
 
-Use `Chevere\ThrowableHandler\htmlDocument` to create an HTML document.
+```php
+use Chevere\ThrowableHandler\Documents\ConsoleDocument;
+
+$handler = throwableHandler($throwable);
+$document = new ConsoleDocument();
+```
+
+#### HTML document
+
+Use `htmlDocument` to create an HTML document.
 
 ```php
 use function Chevere\ThrowableHandler\htmlDocument;
@@ -149,17 +173,42 @@ $document = htmlDocument($throwable);
 $html = $document->__toString();
 ```
 
-### Debug
-
-The method `withDebug` in `Chevere\ThrowableHandler\Interfaces\ThrowableHandlerInterface` can be used to toggle debug information on generated documents.
+Use `Documents\HtmlDocument` to create a console document by passing its handler.
 
 ```php
-use Chevere\ThrowableHandler\Documents\ThrowableHandlerHtmlDocument;
+use Chevere\ThrowableHandler\Documents\HtmlDocument;
+
+$handler = throwableHandler($throwable);
+$document = new HtmlDocument();
+```
+
+### Multiple documents
+
+Multiple documents can be created **from the same** handler event:
+
+```php
+use Chevere\ThrowableHandler\Documents\ConsoleDocument;
+use Chevere\ThrowableHandler\Documents\HtmlDocument;
+use Chevere\ThrowableHandler\Documents\PlainDocument;
 use function Chevere\ThrowableHandler\throwableHandler;
 
 $handler = throwableHandler($throwable);
-$docLoud = new ThrowableHandlerHtmlDocument($handler);
-$docSilent = new ThrowableHandlerHtmlDocument(
+$consoleDoc = new ConsoleDocument($handler);
+$plainDoc = new PlainDocument($handler);
+$htmlDoc = new HtmlDocument($handler);
+```
+
+### Debug
+
+The method `withIsDebug` in `ThrowableHandlerInterface` can be used to toggle debug information on generated documents.
+
+```php
+use Chevere\ThrowableHandler\Documents\HtmlDocument;
+use function Chevere\ThrowableHandler\throwableHandler;
+
+$handler = throwableHandler($throwable);
+$docLoud = new HtmlDocument($handler);
+$docSilent = new HtmlDocument(
     $handler->withIsDebug(false)
 );
 $loud = $docLoud->__toString();
@@ -167,33 +216,3 @@ $silent = $docSilent->__toString();
 ```
 
 For the code above, `$docLoud` contains debug information (Throwable info, file, line, trace and server) while `$docSilent` provides a generic message but referencing to the throwable handled id.
-
-### Multiple documents
-
-💡 Multiple documents and contexts can be used to create a myriad of throwable handler documents.
-
-```php
-use Chevere\ThrowableHandler\Documents\ThrowableHandlerConsoleDocument;
-use Chevere\ThrowableHandler\Documents\ThrowableHandlerHtmlDocument;
-use Chevere\ThrowableHandler\Documents\ThrowableHandlerPlainDocument;
-use function Chevere\Writer\writers;
-
-$handler = throwableHandler($throwable);
-if (PHP_SAPI === 'cli') {
-    $docInternal = new ThrowableHandlerConsoleDocument($handler);
-} else {
-    $docInternal = new ThrowableHandlerPlainDocument($handler);
-    if (!headers_sent()) {
-        http_response_code(500);
-    }
-    $docPublic = new ThrowableHandlerHtmlDocument(
-        $handler->withIsDebug(true)
-    );
-    writers()->output()
-        ->write($docPublic->__toString() . "\n");
-}
-writers()->error()
-    ->write($docInternal->__toString() . "\n");
-```
-
-For the previous example, if the `PHP_SAPI === 'cli'` it will create a CLI internal document and write it to the error output stream. For `PHP_SAPI !== 'cli'`, it will generate a plain-text internal document and an HTML document (without debug) for displaying to the end-user.
