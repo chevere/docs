@@ -139,7 +139,7 @@ Use `Documents\PlainDocument` to create a plain text document by passing its han
 use Chevere\ThrowableHandler\Documents\PlainDocument;
 
 $handler = throwableHandler($throwable);
-$document = new PlainDocument();
+$document = new PlainDocument($throwable);
 ```
 
 #### Console document
@@ -159,7 +159,7 @@ Use `Documents\ConsoleDocument` to create a console document by passing its hand
 use Chevere\ThrowableHandler\Documents\ConsoleDocument;
 
 $handler = throwableHandler($throwable);
-$document = new ConsoleDocument();
+$document = new ConsoleDocument($throwable);
 ```
 
 #### HTML document
@@ -179,7 +179,7 @@ Use `Documents\HtmlDocument` to create a console document by passing its handler
 use Chevere\ThrowableHandler\Documents\HtmlDocument;
 
 $handler = throwableHandler($throwable);
-$document = new HtmlDocument();
+$document = new HtmlDocument($throwable);
 ```
 
 ### Multiple documents
@@ -211,8 +211,6 @@ $docLoud = new HtmlDocument($handler);
 $docSilent = new HtmlDocument(
     $handler->withIsDebug(false)
 );
-$loud = $docLoud->__toString();
-$silent = $docSilent->__toString();
 ```
 
-For the code above, `$docLoud` contains debug information (Throwable info, file, line, trace and server) while `$docSilent` provides a generic message but referencing to the throwable handled id.
+For the code above, `$docLoud` contains debug information (throwable info, file, line, trace and server) while `$docSilent` provides a generic message but referencing to the throwable handled id.
