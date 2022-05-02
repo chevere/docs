@@ -12,6 +12,13 @@ ThrowableHandler is available through [Packagist](https://packagist.org/packages
 composer require chevere/throwable-handler
 ```
 
+## Demo
+
+* [HTML](https://chevere.github.io/throwable-handler/demo/output/html.html)
+* [HTML (silent)](https://chevere.github.io/throwable-handler/demo/output/html-silent.html)
+* [Plain text](https://chevere.github.io/throwable-handler/demo/output/plain.txt)
+* [Console (asciinema)](https://asciinema.org/a/qqrx4VwYsLgMB5dmuSzSjr7G7)
+
 ## Errors as exceptions
 
 Use the following helpers to forward errors as exceptions, which will be then handled by ThrowableHandler.
