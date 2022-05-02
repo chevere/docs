@@ -7,7 +7,7 @@ The `Chevere/Danky` package provides a typed PHP template system.
 👏 With this package you can create re-usable, strict, highly-testable templates that work as classes.
 
 ::: tip 💡 Danky introduction
- Read [Danky, native templates for PHP](https://rodolfo.is/2022/04/17/danky-native-templates-php/) at Rodolfo's blog for a compressive introduction to this package.
+ Read [Danky, native templates for PHP](https://rodolfoberrios.com/2022/04/17/danky-native-templates-php/) at Rodolfo's blog for a compressive introduction to this package.
 :::
 
 ## Installing

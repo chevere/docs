@@ -7,7 +7,7 @@ The `Chevere/Workflow` package provides tooling for define an execution procedur
 👏 With this package you can design a Workflow procedures in a similar fashion to GitHub Actions.
 
 ::: tip 💡 Workflow introduction
- Read [Workflow for PHP](https://rodolfo.is/2022/04/09/workflow-php/) at Rodolfo's blog for a compressive introduction to this package.
+ Read [Workflow for PHP](https://rodolfoberrios.com/2022/04/09/workflow-php/) at Rodolfo's blog for a compressive introduction to this package.
 :::
 
 ## Installing
