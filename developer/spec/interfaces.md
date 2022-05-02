@@ -28,7 +28,7 @@ Parameters and return types **must** be typed against an scalar or an interface.
 
 Accessors refers to methods that **access to** an object property.
 
-Accessors **must be nouns** and named as the name of the property it retrieves. For example, the method `something` should be used to retrieve the value of `$this->something`.
+Accessors **must be nouns** and named as the property it retrieves. For example, the method `something` should be used to retrieve the value of `$this->something`.
 
 ```php
 public function something(): string;
@@ -56,7 +56,7 @@ Refer to [Immutability](./immutability.md).
 
 Immutables refers to methods that **returns an altered copy** of the original object.
 
-The `with` prefix is associated with immutables. For example, `withSomething`, `withoutSomething`, `withAddedStuff`, `withRemovedStuff`, etc.
+The `with` prefix **should** be used in immutable methods. For example, `withSomething`, `withoutSomething`, `withAddedStuff`, `withRemovedStuff`, etc.
 
 > Immutables = with*
 
@@ -64,4 +64,4 @@ The `with` prefix is associated with immutables. For example, `withSomething`, `
 
 Conditionals refers to methods that **returns boolean**, usually for object flagging.
 
-The `is` prefix is used in methods returning `bool`.
+The `is` prefix **must** be used in methods returning `bool`.
