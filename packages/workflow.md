@@ -85,7 +85,7 @@ workflow(
 
 For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided at [WorkflowRun](#running-a-workflow) layer.
 
-👉 References to previous jobs (as in `${process:file}`) **implicit declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
+👉 References to previous jobs as in `${process:file}` **implicit declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
 
 🦄 Jobs will run in **parallel** by default. Refer to [dependencies](#dependencies) for sequential run order.
 

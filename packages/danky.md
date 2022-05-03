@@ -54,7 +54,7 @@ echo
 Which echoes:
 
 ```html
-<quote>"Hello, world!"</quote>
+<quote>"Hello, world!" --Rodolfo</quote>
 ```
 
 ## Extra Features
