@@ -14,6 +14,8 @@ composer require chevere/throwable-handler
 
 ## Demo
 
+![HTML demo](../src/packages/throwable-handler/demo.svg)
+
 * [HTML](https://chevere.github.io/throwable-handler/demo/output/html.html)
 * [HTML (silent)](https://chevere.github.io/throwable-handler/demo/output/html-silent.html)
 * [Plain text](https://chevere.github.io/throwable-handler/demo/output/plain.txt)
