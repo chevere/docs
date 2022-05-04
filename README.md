@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.svg
 heroText: Chevere Library
-tagline: Build extensible server-side progressive applications for modern PHP
+tagline: High quality library for modern PHP
 actionText: Introduction →
 actionLink: /introduction/
 features:
