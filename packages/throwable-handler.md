@@ -19,7 +19,7 @@ composer require chevere/throwable-handler
 * [HTML](https://chevere.github.io/throwable-handler/demo/output/html.html)
 * [HTML (silent)](https://chevere.github.io/throwable-handler/demo/output/html-silent.html)
 * [Plain text](https://chevere.github.io/throwable-handler/demo/output/plain.txt)
-* [Console (asciinema)](https://asciinema.org/a/qqrx4VwYsLgMB5dmuSzSjr7G7)
+* [Console (asciinema)](https://asciinema.org/a/491732)
 
 ## Errors as exceptions
 

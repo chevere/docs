@@ -12,6 +12,14 @@ VarDump is available through [Packagist](https://packagist.org/packages/chevere/
 composer require chevere/var-dump
 ```
 
+## Demo
+
+![HTML demo](../src/packages/var-dump/demo.svg)
+
+* [HTML](https://chevere.github.io/var-dump/demo/output/html.html)
+* [Plain text](https://chevere.github.io/var-dump/demo/output/plain.txt)
+* [Console (asciinema)](https://asciinema.org/a/492994)
+
 ## Helpers
 
 💡 **TL;DR:** You can replace `var_dump` using the following helpers:
