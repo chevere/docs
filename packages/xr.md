@@ -1,4 +1,4 @@
-# XR
+# XR Debug
 
 ![XR](../src/packages/xr/xr-social.jpg)
 
@@ -6,8 +6,8 @@ The `Chevere\Xr` package provides a remote PHP debugger.
 
 👏 With this package you can debug PHP software without any fancy requirement. Runs anywhere!
 
-::: tip 💡 XR introduction
- Read [Hello, XR](https://rodolfoberrios.com/2022/01/06/hello-xr/) at Rodolfo's blog for a compressive introduction to this package.
+::: tip 💡 XR Debug introduction
+ Read [Hello, XR Debug](https://rodolfoberrios.com/2022/01/06/hello-xr/) at Rodolfo's blog for a compressive introduction to this package.
 :::
 
 ## Get Started
