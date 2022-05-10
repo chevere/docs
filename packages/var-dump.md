@@ -62,8 +62,8 @@ By declaring `Chevere/VarDump/VarDumpInstance` you can change the default stream
 A VarDump needs a format and an output. In the example below a VarDump is created with console colored formatting and output:
 
 ```php
-use Chevere\VarDump\Formats\VarDumpConsoleFormat;
-use Chevere\VarDump\Outputs\VarDumpConsoleOutput;
+use Chevere\VarDump\Formats\ConsoleFormat;
+use Chevere\VarDump\Outputs\ConsoleOutput;
 use Chevere\VarDump\VarDump;
 use function Chevere\VarDump\varDumpConsole;
 
