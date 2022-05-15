@@ -4,6 +4,10 @@
 
 The `Chevere/ThrowableHandler` package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents.
 
+::: tip 💡 ThrowableHandler introduction
+ Read [Throwable Handler for PHP](https://rodolfoberrios.com/2022/05/03/throwable-handler/) at Rodolfo's blog for a compressive introduction to this package.
+:::
+
 ## Installing
 
 ThrowableHandler is available through [Packagist](https://packagist.org/packages/chevere/throwable-handler) and the repository source is at [GitHub](https://github.com/chevere/throwable-handler).
