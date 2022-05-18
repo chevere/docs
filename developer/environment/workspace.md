@@ -24,10 +24,8 @@ For the example above, the header comment and `strict_types` declaration are aut
 
 This is a list of the extensions that the main developer recommends for using Visual Studio Code for developing Chevere. None of these are required, but it will improve the development experience.
 
-* [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
 * [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 * [PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver)
-* [PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit)
 * [Run on Save](https://marketplace.visualstudio.com/items?itemName=pucelle.run-on-save)
 
 ## Coding Standards Formatting
@@ -49,11 +47,3 @@ The [coding standard](../standard/coding.md) can be automatic implemented on sav
     ]
 }
 ```
-
-## Testing
-
-[PHPUnit Test Explorer](https://marketplace.visualstudio.com/items?itemName=recca0120.vscode-phpunit) provides inline tools for code execution and reviewing. It allows to easily handle all tests.
-
-## Code Coverage
-
-[Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters) provides visual feedback regarding covered lines right into the editor.

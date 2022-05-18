@@ -8,7 +8,7 @@ Chevere is build and tested on [Ubuntu](https://ubuntu.com/) `ubuntu-latest`.
 
 ## PHP
 
-Chevere is [PHP](https://php.net/) software.
+Chevere is [PHP](https://php.net/) software. We recommend using:
 
 * [PHP packages](https://deb.sury.org/) from Ondřej Surý.
 * [PHP extensions](https://www.php.net/manual/en/extensions.membership.php) provided by [PECL](https://pecl.php.net/).
