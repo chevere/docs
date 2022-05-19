@@ -41,7 +41,7 @@ composer require chevere/var-dump
 
 ## Helpers
 
-💡 **TL;DR:** You can replace `var_dump` using the following helpers:
+💡 **TL;DR:** You can replace `var_dump` in both CLI and HTTP context using the following helpers:
 
 ### VarDump (vd)
 
@@ -61,40 +61,36 @@ vdd($var);
 // exit()
 ```
 
-## Instances
+## Advanced usage
 
-The following helper functions can be used to save boilerplate when needing to initialize a VarDump instance.
-
-* Namespace `Chevere\VarDump`
-  * `varDumpPlain` to return a plain var dump
-  * `varDumpConsole` to return a console var dump
-  * `varDumpHtml` to return a HTML var dump
-  * `getVarDump` to retrieve the var dump instance
-  * `getVarDumpWriters` to retrieve the var dump writers
-
-## Customizing output stream
-
-By declaring `Chevere/VarDump/VarDumpInstance` you can change the default stream used by VarDump, including helpers `vd` and `vdd`.
-
-## Initialization
-
-A VarDump needs a format and an output. In the example below a VarDump is created with console colored formatting and output:
+A VarDump needs a format and an output. In the example below a VarDump object is created with console colored formatting and output:
 
 ```php
 use Chevere\VarDump\Formats\ConsoleFormat;
 use Chevere\VarDump\Outputs\ConsoleOutput;
 use Chevere\VarDump\VarDump;
-use function Chevere\VarDump\varDumpConsole;
+use function Chevere\VarDump\console;
 
 $varDump = new VarDump(
-    formatter: new VarDumpConsoleFormat,
-    outputter: new VarDumpConsoleOutput
+    formatter: new ConsoleFormat,
+    outputter: new ConsoleOutput
 );
 // Same as:
-$varDump = varDumpConsole();
+$varDump = console();
 ```
 
-## Passing variables
+### Instance helpers
+
+The following helper functions can be used to initialize a VarDump object.
+
+* Namespace `Chevere\VarDump`
+  * `plain` to return a plain VarDump
+  * `console` to return a console VarDump
+  * `html` to return a HTML VarDump
+  * `instance` to retrieve the VarDump instance
+  * `writers` to retrieve the VarDump writers
+
+### Passing variables
 
 The method `withVars` is used to pass `...$variables` (variadic).
 
@@ -102,7 +98,7 @@ The method `withVars` is used to pass `...$variables` (variadic).
 $varDump = $varDump->withVars('a var', [], null);
 ```
 
-## Shifting traces
+### Shifting traces
 
 The dump information could be affected by layers on top of VarDump, the method `withShift` can be used to indicate how many previous backtrace should be removed.
 
@@ -110,7 +106,7 @@ The dump information could be affected by layers on top of VarDump, the method `
 $varDump = $varDump->withShift(1); // removes the first trace
 ```
 
-## Process
+### Process
 
 The method `process` is used to trigger the var dumping process. It requires to pass a [writer](../library/writer.md) where the dump information will be written.
 
@@ -119,6 +115,21 @@ use Chevere\Writer\StreamWriter;
 use function Chevere\Writer\streamFor;
 
 $varDump->process(
-    writer: new StreamWriter(streamFor('php://stdout', 'w'))
+    writer: new StreamWriter(
+      streamFor('php://stdout', 'w')
+    )
 );
+```
+
+### Custom instance
+
+By initializing `Chevere/VarDump/VarDumpInstance` you can change the default VarDump context, used in helpers `vd` and `vdd`.
+
+In the code below, `html` has been passed to configure `VarDumpInstance` to handle everything as HTML.
+
+```php
+use Chevere\VarDump\VarDumpInstance;
+use function Chevere\VarDump\html;
+
+new VarDumpInstance(html());
 ```
