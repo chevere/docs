@@ -2,7 +2,7 @@
 
 ![ThrowableHandler](../src/packages/throwable-handler/throwable-handler-social-alt.svg)
 
-The `Chevere/ThrowableHandler` package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents.
+The `Chevere/ThrowableHandler` package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents. Its purpose is to ease the understanding of [Exceptions](https://www.php.net/manual/en/language.exceptions.php) on production systems.
 
 ::: tip 💡 ThrowableHandler introduction
  Read [Throwable Handler for PHP](https://rodolfoberrios.com/2022/05/03/throwable-handler/) at Rodolfo's blog for a compressive introduction to this package.
@@ -24,6 +24,19 @@ composer require chevere/throwable-handler
 * [HTML (silent)](https://chevere.github.io/throwable-handler/demo/output/html-silent.html)
 * [Plain text](https://chevere.github.io/throwable-handler/demo/output/plain.txt)
 * [Console (asciinema)](https://asciinema.org/a/491732)
+
+## Features
+
+* Multiple use modes (auto, triggered, manual)
+* Supports nested throwables (previous: `$e`)
+* Console document
+  * Colorful console output (where available)
+* Plain document
+  * Same as console (no-color)
+  * Same as copy HTML text
+* HTML document
+  * Responsive design (narrow devices)
+  * Silent mode for end-user
 
 ## Errors as exceptions
 
