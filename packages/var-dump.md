@@ -20,6 +20,25 @@ composer require chevere/var-dump
 * [Plain text](https://chevere.github.io/var-dump/demo/output/plain.txt)
 * [Console (asciinema)](https://asciinema.org/a/492994)
 
+## Features
+
+* Provides vd (VarDump) and vdd (VarDump & die) [helpers](#helpers)
+* Colorful typed variable introspection
+* Reports visibility
+* Detects circular references
+* Stream-based
+  * Writes line-by-line
+  * It can handle _really_ large documents
+* Provides caller information
+* Console document
+  * Colorful console output (where available)
+* Plain document
+  * Same as console (no-color)
+  * Same as copy HTML text
+* HTML document
+  * Colorful representation
+  * Portable (we also use it on [XR Debug](xr.md))
+
 ## Helpers
 
 💡 **TL;DR:** You can replace `var_dump` using the following helpers:
