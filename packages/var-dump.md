@@ -69,26 +69,40 @@ A VarDump needs a format and an output. In the example below a VarDump object is
 use Chevere\VarDump\Formats\ConsoleFormat;
 use Chevere\VarDump\Outputs\ConsoleOutput;
 use Chevere\VarDump\VarDump;
-use function Chevere\VarDump\console;
+use function Chevere\VarDump\varDumpConsole;
 
 $varDump = new VarDump(
     formatter: new ConsoleFormat,
     outputter: new ConsoleOutput
 );
 // Same as:
-$varDump = console();
+$varDump = varDumpConsole();
 ```
 
 ### Instance helpers
 
 The following helper functions can be used to initialize a VarDump object.
 
-* Namespace `Chevere\VarDump`
-  * `plain` to return a plain VarDump
-  * `console` to return a console VarDump
-  * `html` to return a HTML VarDump
-  * `instance` to retrieve the VarDump instance
-  * `writers` to retrieve the VarDump writers
+```php
+use function Chevere\VarDump\varDumpPlain;
+use function Chevere\VarDump\varDumpConsole;
+use function Chevere\VarDump\varDumpHtml;
+
+// Plain text
+$varDump = varDumpPlain();
+// Colored console
+$varDump = varDumpConsole();
+// HTML
+$varDump = varDumpHtml();
+```
+
+The `varDump` helper can be used to access to the [VarDumpInstance](#vardumpinstance). If no instance has been created it will provide a console VarDump.
+
+```php
+use function Chevere\VarDump\varDump;
+
+$varDump = varDump();
+```
 
 ### Passing variables
 
@@ -121,15 +135,21 @@ $varDump->process(
 );
 ```
 
-### Custom instance
+### VarDumpInstance
 
-By initializing `Chevere/VarDump/VarDumpInstance` you can change the default VarDump context, used in helpers `vd` and `vdd`.
+By initializing `Chevere/VarDump/VarDumpInstance` you can change the default VarDump context, which is used in `vd` and `vdd` helpers.
 
-In the code below, `html` has been passed to configure `VarDumpInstance` to handle everything as HTML.
+In the code below, `varDumpHtml` has been passed to configure `VarDumpInstance` to handle everything with HTML formatting.
 
 ```php
 use Chevere\VarDump\VarDumpInstance;
-use function Chevere\VarDump\html;
+use function Chevere\VarDump\varDump;
+use function Chevere\VarDump\varDumpHtml;
 
-new VarDumpInstance(html());
+// Default VarDump console
+$varDump = varDump();
+// Set instance to VarDump Html
+new VarDumpInstance(varDumpHtml());
+// Instance VarDump html
+$varDump = varDump();
 ```
