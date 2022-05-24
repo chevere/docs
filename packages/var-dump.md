@@ -9,7 +9,7 @@ The `Chevere\VarDump` package provides an alternative to [var_dump](https://www.
 VarDump is available through [Packagist](https://packagist.org/packages/chevere/var-dump) and the repository source is at [GitHub](https://github.com/chevere/var-dump).
 
 ```sh
-composer require chevere/var-dump
+composer require --dev chevere/var-dump
 ```
 
 ## Demo
@@ -18,7 +18,7 @@ composer require chevere/var-dump
 
 * [HTML](https://chevere.github.io/var-dump/demo/output/html.html)
 * [Plain text](https://chevere.github.io/var-dump/demo/output/plain.txt)
-* [Console (asciinema)](https://asciinema.org/a/492994)
+* [Console (asciinema)](https://asciinema.org/a/496889)
 
 ## Features
 
