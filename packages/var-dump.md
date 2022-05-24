@@ -4,6 +4,10 @@
 
 The `Chevere\VarDump` package provides an alternative to [var_dump](https://www.php.net/var-dump) with a richer feature set, including formatting for the generation of a myriad of dump documents.
 
+::: tip 💡 VarDump introduction
+ Read [VarDump for PHP](https://rodolfoberrios.com/2022/05/24/var/dump/) at Rodolfo's blog for a compressive introduction to this package.
+:::
+
 ## Installing
 
 VarDump is available through [Packagist](https://packagist.org/packages/chevere/var-dump) and the repository source is at [GitHub](https://github.com/chevere/var-dump).
