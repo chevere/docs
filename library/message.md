@@ -10,9 +10,9 @@ A Message is created by passing a Message template. In the code below a new Mess
 use Chevere\Message\Message;
 use function Chevere\Message\message;
 
-$message = new Message('Hello, %to%!');
-// It can be also created with:
 $message = message('Hello, %to%!');
+// It can be also created with:
+$message = new Message('Hello, %to%!');
 ```
 
 ## Replacing strings
@@ -25,10 +25,10 @@ use function Chevere\Message\message;
 $message = message('Hello, %to%!')
     ->withStrtr('Hell', 'H3LL')
     ->withEmphasis('%to%', 'Rodolfo');
-// H3LLo, Rodolfo!
+// H3LLo, <em>Rodolfo!</em>
 ```
 
-String replacement can be performed on anything, but we encourage using placeholders wrapped in `%`.
+💡 String replacement can be performed on anything, but we encourage using placeholders wrapped in `%`.
 
 ### Strtr
 
