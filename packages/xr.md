@@ -12,6 +12,6 @@ The `Chevere\Xr` package provides a remote PHP debugger.
 
 ## Get Started
 
-Check the documentation is at [XR-docs.chevere.org](https://xr-docs.chevere.org/).
+Check the documentation is at [xr-docs.chevere.org](https://xr-docs.chevere.org/).
 
 XR is available through [Packagist](https://packagist.org/packages/chevere/xr) and the repository source is at [GitHub](https://github.com/chevere/xr).
