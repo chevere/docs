@@ -15,58 +15,74 @@ $message = new Message('Hello, %to%!');
 $message = message('Hello, %to%!');
 ```
 
-## Replacing sub-strings
+## Replacing strings
 
-The `strtr` method allows to prepare sub-string replacement without formatting.
+A Message can be altered by chaining methods that enable to replace sub-strings. For example:
+
+```php
+use function Chevere\Message\message;
+
+$message = message('Hello, %to%!')
+    ->withStrtr('Hell', 'H3LL')
+    ->withEmphasis('%to%', 'Rodolfo');
+// H3LLo, Rodolfo!
+```
+
+String replacement can be performed on anything, but we encourage using placeholders wrapped in `%`.
+
+### Strtr
+
+The `withStrtr` method is used for string replacement without formatting.
 
 ```php
 $message = $message
-    ->strtr('%to%', 'Rodolfo'); // Hello, Rodolfo!
+    ->withStrtr('%to%', 'Rodolfo');
+// Hello, Rodolfo!
 ```
-
-## Formatting
-
-A Message is formatted using methods that take `$search` needle and replace it with `$replace` strings.
 
 ### Emphasis
 
-The `emphasis` method allows to prepare sub-string replacement with emphasis.
+The `withEmphasis` method is used for string replacement with emphasis.
 
 ```php
 $message = $message
-    ->emphasis('%to%', 'Rodolfo') // Hello, <em>Rodolfo</em>!
+    ->withEmphasis('%to%', 'Rodolfo')
+// Hello, <em>Rodolfo</em>!
 ```
 
 ### Strong
 
-The `strong` method allows to prepare sub-string replacement with strong.
+The `withStrong` method is used for string replacement with strong.
 
 ```php
 $message = $message
-    ->strong('%to%', 'Rodolfo') // Hello, <strong>Rodolfo</strong>!
+    ->withStrong('%to%', 'Rodolfo')
+// Hello, <strong>Rodolfo</strong>!
 ```
 
 ### Underline
 
-The `underline` method allows to prepare sub-string replacement with underline.
+The `withUnderline` method is used for string replacement with underline.
 
 ```php
 $message = $message
-    ->underline('%to%', 'Rodolfo') // Hello, <underline>Rodolfo</underline>!
+    ->withUnderline('%to%', 'Rodolfo')
+// Hello, <underline>Rodolfo</underline>!
 ```
 
 ### Code
 
-The `code` method allows to prepare sub-string replacement with code.
+The `withCode` method is used for string replacement with code.
 
 ```php
 $message = $message
-    ->code('%to%', 'Rodolfo') // Hello, <code>Rodolfo</code>!
+    ->withCode('%to%', 'Rodolfo')
+// Hello, <code>Rodolfo</code>!
 ```
 
-## Outputting
+## Output
 
-Formatting for the Message template is implemented on outputting. The resulting output strings vary depending on the target device.
+The resulting output strings vary depending on the target device.
 
 ### To Console
 
