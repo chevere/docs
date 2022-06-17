@@ -20,7 +20,9 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/action.md) class name and its arguments. In the example below, a workflow defines a podcast publishing procedure:
+To create a workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/action.md) class name and its arguments.
+
+In the example below, a workflow defines a podcast publishing procedure:
 
 ```php
 use function Chevere\Workflow\job;
@@ -87,12 +89,6 @@ For the code above, `${payload}` is handled as a [workflow variable](#variables)
 
 👉 References to previous jobs as in `${process:file}` **implicit declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
 
-🦄 Jobs will run in **parallel** by default. Refer to [dependencies](#dependencies) for sequential run order.
-
-### Dependencies
-
-Use `withDeps` method to explicit declare previous jobs as dependencies. The dependent job won't run until the dependencies are resolved.
-
 ## Job
 
 The `Chevere/Workflow/Job` class defines an [Action](../library/action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
@@ -107,7 +103,7 @@ job(action: SomeAction::class, ...$namedArguments);
 
 ### Parameters
 
-Parameters for the job are defined in the [Action Run](../library/action.md#run).
+Parameters for the job are defined in the [Action Run](../library/action.md#run) method.
 
 ### Arguments
 
@@ -125,21 +121,45 @@ job(
 
 For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeAction` when running the Workflow. These arguments will be matched against the Parameters defined at `SomeAction::run()`.
 
-### Variables
+### Variables & References
 
 Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any previous Job.
 
 ### Workflow variables
 
 `${var} ${workflow_variable}`
+Regex: `/^\${([\w]*)}$/`
 
-A Workflow variable, injected by the WorkflowRunner. Regex `/^\${([\w]*)}$/`.
+A Workflow variable, which must be injected by at Workflow run layer.
 
-### Job response variable
+### Job response reference
 
 `${job:key} ${job_name:response_key}`
+Regex: `/^\${([\w]*)\:([\w-]*)}$/`
 
-The value for `response_key` for the `job_name` job response. Regex `/^\${([\w]*)\:([\w-]*)}$/`.
+The value at `response_key` for the `job_name` Job response. 🦄 Workflow will **auto declare** previous jobs references as dependencies, you can also explicit declare [dependencies](#dependencies).
+
+### Dependencies
+
+Use `withDepends` method to explicit declare previous jobs as dependencies. The dependent job won't run until the dependencies are resolved.
+
+```php
+use function Chevere\Workflow\job;
+
+job(SomeAction::class)
+    ->withDepends('job1', 'job2');
+```
+
+### Synchronous jobs
+
+Jobs will run in **parallel (async)** by default, must use `withIsSync` method to use sync processing for running a job. Sync Jobs will always run in sequence.
+
+```php
+use function Chevere\Workflow\job;
+
+job(SomeAction::class)
+    ->withIsSync();
+```
 
 ## Running a Workflow
 
@@ -150,9 +170,9 @@ use Chevere\Container\Container;
 use function Chevere\Workflow\workflow;
 use function Chevere\Workflow\workflowRun;
 
-// Your workflow:
+// Your Workflow:
 $workflow = workflow(/** ... **/);
-// Workflow ${variables}
+// Workflow ${variables}:
 $vars = [
     'payload' => 'the payload'
 ];
