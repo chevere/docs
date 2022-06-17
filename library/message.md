@@ -23,9 +23,9 @@ A Message can be altered by chaining methods that enable to replace sub-strings.
 use function Chevere\Message\message;
 
 $message = message('Hello, %to%!')
-    ->withStrtr('Hell', 'H3LL')
+    ->withStrtr('Hello,', 'Hola')
     ->withEmphasis('%to%', 'Rodolfo');
-// H3LLo, <em>Rodolfo!</em>
+// Hola, <em>Rodolfo</em>!
 ```
 
 💡 String replacement can be performed on anything, but we encourage using placeholders wrapped in `%`.
