@@ -26,49 +26,51 @@ In the example below, a workflow defines a podcast publishing procedure:
 
 ```php
 use function Chevere\Workflow\job;
+use function Chevere\Workflow\reference;
+use function Chevere\Workflow\variable;
 use function Chevere\Workflow\workflow;
 
 workflow(
     process:
         job(
             ProcessPodcast::class,
-            payload: '${payload}'
+            payload: variable('payload')
         ),
     optimize:
         job(
             OptimizeFile::class,
-            file: '${process:file}'
+            file: reference('process', 'file')
         ),
     podcast:
         job(
             CreatePodcast::class,
-            file: '${optimize:file}',
-            request: '${process:request}'
+            file: reference('optimize', 'file',)
+            request: reference('process', 'request')
         ),
     releaseTransistorFm:
         job(
             ReleaseTransistorFM::class,
-            podcast: '${podcast:object}'
+            podcast: reference('podcast', 'object')
         ),
     releaseApple:
         job(
             ReleaseApple::class,
-            podcast: '${podcast:object}'
+            podcast: reference('podcast', 'object')
         ),
     createTranscript:
         job(
             CreateTranscript::class,
-            file: '${optimize:file}'
+            file: reference('optimize', 'file')
         ),
     translateTranscript:
         job(
             TranslateTranscript::class,
-            script: '${createTranscript:script}'
+            script: reference('createTranscript', 'script')
         ),
     notifications:
         job(
             NotifySubscribers::class,
-            podcast: '${podcast:object}',
+            podcast: reference('podcast', 'object'),
         )
         ->withDepends(
             'releaseTransistorFm', 'releaseApple'
@@ -76,8 +78,8 @@ workflow(
     tweet:
         job(
             SendReleaseTweet::class,
-            fm: '${releaseTransistorFm:url}',
-            apple: '${releaseApple:url}',
+            fm: reference('releaseTransistorFm', 'url'),
+            apple: reference('releaseApple', 'url'),
         )
         ->withDepends(
             'translateTranscript',
@@ -85,9 +87,9 @@ workflow(
 );
 ```
 
-For the code above, `${payload}` is handled as a [workflow variable](#variables), the actual value for it should be provided at [WorkflowRun](#running-a-workflow) layer.
+For the code above, `variable('payload')` declares a [workflow variable](#variables), the actual value for it should be provided at [WorkflowRun](#running-a-workflow) layer.
 
-👉 References to previous jobs as in `${process:file}` **implicit declare** that the given job depends on the previous `process` Job as it declares a [job response variables](#job-response-variable).
+👉 References to previous jobs as in `reference(job: 'process', key: 'file')` **implicit declare** that the given job depends on the previous Job `process` as it declares a [job response variables](#job-response-variable).
 
 ## Job
 
@@ -98,7 +100,7 @@ The `Chevere/Workflow/Job` class defines an [Action](../library/action.md) with 
 ```php
 use function Chevere\Workflow\job;
 
-job(action: SomeAction::class, ...$namedArguments);
+job(SomeAction::class, ...$namedArguments);
 ```
 
 ### Parameters
@@ -127,17 +129,25 @@ Referenced arguments can be used to bind arguments against Workflow variables or
 
 ### Workflow variables
 
-`${var} ${workflow_variable}`
-Regex: `/^\${([\w]*)}$/`
+A Workflow variable gets declared using function `variable`. This denotes a variable which must be injected by at Workflow run layer.
 
-A Workflow variable, which must be injected by at Workflow run layer.
+```php
+use function Chevere\Workflow\variable;
 
-### Job response reference
+variable('myVar');
+```
 
-`${job:key} ${job_name:response_key}`
-Regex: `/^\${([\w]*)\:([\w-]*)}$/`
+### Job reference
 
-The value at `response_key` for the `job_name` Job response. 🦄 Workflow will **auto declare** previous jobs references as dependencies, you can also explicit declare [dependencies](#dependencies).
+A Job reference gets declared using function `reference`. This denotes a reference to a response key returned by a previous Job. 🦄 Workflow will **auto declare** the referenced Job as [dependency](#dependencies).
+
+```php
+use function Chevere\Workflow\reference;
+
+reference(job: 'task', key: 'id');
+```
+
+For the code above, the reference indicates that it will pass the value of key `id` for the job `task`.
 
 ### Dependencies
 
@@ -172,7 +182,7 @@ use function Chevere\Workflow\workflowRun;
 
 // Your Workflow:
 $workflow = workflow(/** ... **/);
-// Workflow ${variables}:
+// Workflow variables:
 $vars = [
     'payload' => 'the payload'
 ];
