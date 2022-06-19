@@ -89,7 +89,7 @@ workflow(
 
 For the code above, `variable('payload')` declares a [workflow variable](#variables), the actual value for it should be provided at [WorkflowRun](#running-a-workflow) layer.
 
-👉 References to previous jobs as in `reference(job: 'process', key: 'file')` **implicit declare** that the given job depends on the previous Job `process` as it declares a [job response variables](#job-response-variable).
+References to previous jobs as in `reference('process', 'file')` **implicit declare** that the given job depends on the previous Job `process` as it declares a [job reference](#job-reference).
 
 ## Job
 
