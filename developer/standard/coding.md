@@ -22,10 +22,12 @@ composer require symplify/easy-coding-standard --dev
 
 ### Download code-style
 
-Run this to download/update the code style.
+Run this to download/update the base code style.
 
 ```sh
-curl --create-dirs -O --output-dir .ecs https://raw.githubusercontent.com/chevere/code-style/main/.ecs/ecs-chevere.php
+mkdir -p .ecs \
+    && cd .ecs \
+    && curl -O https://raw.githubusercontent.com/chevere/code-style/main/.ecs/ecs-chevere.php
 ```
 
 💡 For **Chevere packages** you can run `composer update-cs`
@@ -39,10 +41,10 @@ Create your `.ecs/ecs.php` [configuration](https://github.com/symplify/easy-codi
 
 declare(strict_types=1);
 
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symplify\EasyCodingStandard\Config\ECSConfig;
 use Symplify\EasyCodingStandard\ValueObject\Option;
 
-return static function (ContainerConfigurator $containerConfigurator): void {
+return static function (ECSConfig $containerConfigurator): void {
     $containerConfigurator->import(__DIR__ . '/ecs-chevere.php');
     $parameters = $containerConfigurator->parameters();
     $parameters->set(Option::SKIP, [
