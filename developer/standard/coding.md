@@ -72,7 +72,7 @@ To format code style you need to run:
 vendor/bin/ecs --config='.ecs/ecs.php' check file.php --fix
 ```
 
-Check the workspace documentation to configure [automatic code formatting](../development/workspace.md#coding-standards-formatting).
+Check the workspace documentation to configure [automatic code formatting](../environment/workspace.md#coding-standards-formatting).
 
 ## Typing
 

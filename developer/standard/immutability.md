@@ -107,7 +107,7 @@ $immutable->string(); // ref#1 default
 $clone->string(); // ref#2 val
 ```
 
-As properties are protected/private by [convention](./conventions.md), the property `$string` of `$immutable` can't be altered in public context without creating a new copy of the original object, which implies a new reference thus immutability.
+As properties are protected/private by [convention](../spec/components.md#conventions), the property `$string` of `$immutable` can't be altered in public context without creating a new copy of the original object, which implies a new reference thus immutability.
 
 ### DeepCopy
 

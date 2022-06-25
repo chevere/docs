@@ -6,7 +6,7 @@
 
 ### PHP
 
-Chevere is built and tested for [unix-like systems](../architecture/development/system.md).
+Chevere is built and tested for [unix-like systems](../developer/environment/system.md#operating-system).
 
 * [PHP 8](https://www.php.net/releases/8.0)
 * [ext-ctype](https://www.php.net/ctype)

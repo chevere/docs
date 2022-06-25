@@ -38,7 +38,7 @@ $var = $deserialize->var();
 
 ### Variable type
 
-The `type` method is used to access the deserialized variable [type](Type.md).
+The `type` method is used to access the deserialized variable [type](type.md).
 
 ```php
 $type = $deserialize->type();

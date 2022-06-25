@@ -25,7 +25,7 @@ Use names that explain the context of the exception. For example, `SomeException
 
 ### Exception Message
 
-A [Message](../../library/Message.md) **should** explain the error event when needed.
+A [Message](../../library/message.md) **should** explain the error event when needed.
 
 Exception messages **must**:
 

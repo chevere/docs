@@ -1,6 +1,6 @@
 # Controller
 
-The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](Action.md), but it takes only input string parameters.
+The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](action.md), but it takes only input string parameters.
 
 Controller is intended to use them wired to:
 

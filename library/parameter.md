@@ -2,7 +2,7 @@
 
 The Parameter component is in charge of providing typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
 
-This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](./Type.md) component.
+This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](type.md) component.
 
 ## Creating a Parameter
 
@@ -191,7 +191,7 @@ use Chevere\Parameter\Attributes\ParameterAttribute;
 
 function mucho(
     #[ParameterAttribute(regex: '/^[0-9]{2}$/')]
-    int $id  
+    int $id
 );
 
 function macho(

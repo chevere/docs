@@ -52,7 +52,7 @@ public function doTheEvolution(): void;
 
 #### Immutables
 
-Refer to [Immutability](./immutability.md).
+Refer to [Immutability Standard](../standard/immutability.md).
 
 Immutables refers to methods that **returns an altered copy** of the original object.
 
