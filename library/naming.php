@@ -13,8 +13,8 @@ return [
     'regex.md' => 'Regex',
     'response.md' => 'Response',
     'serialize.md' => 'Serialize',
-    'str.md' => 'Str',
+    'string.md' => 'String',
     'type.md' => 'Type',
-    'var-support.md' => 'VarSupport',
+    'variable-support.md' => 'VariableSupport',
     'writer.md' => 'Writer',
 ];
