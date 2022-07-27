@@ -75,19 +75,19 @@ $childPathFile  = $path
     ->getChild('child-2/some-file.php'); // /home/var/child-2/some-child.php
 ```
 
-## Dir
+## Directory
 
 The `Chevere/Filesystem/Dir` component is in charge of interact with filesystem directories.
 
 ```php
-use Chevere\Filesystem\Dir;
+use Chevere\Filesystem\Directory;
 use Chevere\Filesystem\Path;
-use function Chevere\Filesystem\dirForPath;
+use function Chevere\Filesystem\directoryForPath;
 
 $path = '/home/var/';
-$dir = new Dir(new Path($path))
+$dir = new Directory(new Path($path));
 // It can be also created with:
-$dir = dirForPath($path);
+$dir = directoryForPath($path);
 ```
 
 ### Creating a Directory
@@ -146,9 +146,9 @@ The `removeIfExists` method removes the directory and its contents if the direct
 $removed = $dir->removeIfExists();
 ```
 
-### Getting Child Dir
+### Get child directory
 
-The `getChild` method allows to create new Dir instances for sub-dirs.
+The `getChild` method allows to create new Directory instances for sub-directories.
 
 ```php
 $childDir  = $dir->getChild('child/'); // /home/var/child/
@@ -311,33 +311,33 @@ The `raw` method returns the file return "as-is", equivalent to `return include 
 $filePhpReturn->raw();
 ```
 
-#### Var contents
+#### Variable contents
 
-The `var` method returns a PHP variable. If the return is a serialized string, it will attempt to deserialize the string to cast an object.
+The `variable` method returns a PHP variable. If the return is a serialized string, it will attempt to deserialize the string to cast an object.
 
 ```php
-$var = $filePhpReturn->var();
+$variable = $filePhpReturn->variable();
 ```
 
 #### Var contents typed
 
-The `varType` method does the same as `var`, but it validates the variable against the passed type.
+The `variableTyped` method does the same as `var`, but it validates the variable against the passed type.
 
 ```php
 use function Chevere\Type\typeInteger;
 
-$var = $filePhpReturn->varType(typeInteger());
+$variable = $filePhpReturn->variableTyped(typeInteger());
 ```
 
 ### Putting contents
 
-The `put` method puts the contents of a variable export into the PHP file as `<?php return $var;`.
+The `put` method puts the contents of a variable export into the PHP file as `<?php return $variable;`.
 
 Type `object` will be stored as `return 'serialized string';`.
 
 ```php
-use Chevere\VarSupport\VarStorable;
+use Chevere\VariableSupport\StorableVariable;
 
-$varStorable = new VarStorable($var);
-$filePhpReturn->put($varStorable);
+$StorableVariable = new StorableVariable($var);
+$filePhpReturn->put($StorableVariable);
 ```
