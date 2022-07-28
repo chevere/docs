@@ -47,6 +47,11 @@ module.exports = {
         docsBranch: 'main',
         smoothScroll: true,
         editLinks: true,
-        lastUpdated: true
+        lastUpdated: true,
+        algolia: {
+            apiKey: '5664ad27446dd05d69939957c8c81c4f',
+            indexName: 'chevere',
+            appId: 'E23304Y20V',
+        }
     },
 };
