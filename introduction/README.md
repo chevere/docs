@@ -6,7 +6,7 @@ Chevere is a strict, strong-typed PHP development library. It is the kind of stu
 
 💡 The term *chévere* is ubiquitous in Latin America, spreaded in every spanish speaking country and it means **cool/awesome**. We believe that anything can be chevere, specially PHP software.
 
-## Why Chevere
+## Core concepts
 
 ### Clean & Typed
 
@@ -19,6 +19,15 @@ A core library tooling for general purposes, with enough flexibility to allow th
 ### Modern & High quality
 
 All-new PHP 8 codebase with strict standards. Chevere has been designed from scratch for PHP 8, and it uses all the goodies added to it. On top of that it follows own high [quality](../developer/standard/quality.md) standards.
+
+## Why Chevere and not X?
+
+...Or if you can use software from well-known vendors with dozen  releases all the time and hundreds of contributors, why you should use our stuff?
+
+* This codebase is measured top-quality, highly maintainable software.
+* In the event this project gets [bus factor](https://en.wikipedia.org/wiki/Bus_factor) zero it will require a minimum investment to keep your projects delivering.
+* Backed by a [self-hosted software](https://chevereto.com) used in thousand of different server configurations.
+* The foundation is being crafted to last 20 years. We started in 2018.
 
 ## Who makes Chevere?
 
