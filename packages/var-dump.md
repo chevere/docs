@@ -32,7 +32,7 @@ composer require --dev chevere/var-dump
 * Detects circular references
 * Stream-based
   * Writes line-by-line
-  * It can handle _really_ large documents
+  * Handles _really_ large documents
 * Provides caller information
 * Console document
   * Colorful console output (where available)
