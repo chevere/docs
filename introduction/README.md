@@ -35,5 +35,6 @@ Chevere is driven by [Chevereto](https://chevereto.com) and is made by the same 
 
 ## Sponsors
 
-* [JetBrains](https://www.jetbrains.com/opensource/) provides software licensing for all their suite.
+* [JetBrains](https://www.jetbrains.com/opensource/) provides software licensing.
+* [Tinkerwell](https://tinkerwell.app/) provides software licensing.
 * [Algolia](https://algolia.com) provides the search feature for this documentation.
