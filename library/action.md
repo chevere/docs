@@ -38,7 +38,7 @@ The `run` method is used to define the logic that will be executed. The return t
 use Chevere\Parameter\Interfaces\ArgumentsInterface;
 use Chevere\Response\Interfaces\ResponseInterface;
 
-public function run(string $name): array
+public function run(User $user): array
 {
     // ...
     return [
