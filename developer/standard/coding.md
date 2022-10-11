@@ -46,8 +46,7 @@ use Symplify\EasyCodingStandard\ValueObject\Option;
 
 return static function (ECSConfig $ecsConfig): void {
     $ecsConfig->import(__DIR__ . '/ecs-chevere.php');
-    $parameters = $ecsConfig->parameters();
-    $parameters->set(Option::SKIP, [
+    $ecsConfig->skip([
         __DIR__ . '/vendor/*',
     ]);
 };
