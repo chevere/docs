@@ -1,8 +1,8 @@
 # Status
 
-The Chevere project status is on **pre-release** and it can be safely used in production systems.
+The Chevere project is **production ready** and it can be safely used in production systems.
 
-During pre-release, Chevere releases are tagged as `0.x.y`, where increments on `x` denote API changes.
+Chevere releases are tagged as `0.x.y`, where increments on `x` denote API changes.
 
 ## Get notified
 

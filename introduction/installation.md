@@ -9,10 +9,6 @@
 Chevere is built and tested for [unix-like systems](../developer/environment/system.md#operating-system).
 
 * [PHP 8](https://www.php.net/releases/8.0)
-* [ext-ctype](https://www.php.net/ctype)
-* [ext-json](https://www.php.net/json)
-* [ext-ds](https://www.php.net/ds)
-* [ext-mbstring](https://www.php.net/mbstring)
 
 The [chevere.ini](https://github.com/chevere/chevere/blob/main/chevere.ini) file provides the PHP settings required for Chevere.
 
