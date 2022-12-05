@@ -2,7 +2,7 @@
 
 ![Router](../src/packages/router/router-logo.svg)
 
-The `Chevere/Router` package provides a strict, strong typed router for [HttpController](../library/controller.md#httpcontroller).
+The `Chevere/Router` package provides a strict, strong typed router for [HttpController](../library/http-controller.md).
 
 ## Installing
 
@@ -32,9 +32,9 @@ router(
             GET: new HomeGetController(),
         ),
         route(
-            path: '/page/{id}',
-            GET: new PageGetController(),
-            POST: new PagePostController(),
+            path: '/product/{id}',
+            GET: new ProductGetController(),
+            POST: new ProductPostController(),
         ),
     ),
     api: routes(
@@ -43,8 +43,8 @@ router(
             GET: new ApiGetController(),
         ),
         route(
-            path: '/api/page',
-            DELETE: new ApiDeletePageController(),
+            path: '/api/product',
+            DELETE: new ApiDeleteProductController(),
         ),
     )
 );
@@ -69,24 +69,24 @@ route(
 
 ### Wildcards
 
-Route path can define **wildcards**, enabling to pass dynamic route-path-based arguments to Controllers. In the example below, wildcard `{id}` determines a dynamic `run` argument for `PageGetController`.
+Route path can define **wildcards**, enabling to pass dynamic route-path-based arguments to Controllers. In the example below, wildcard `{id}` determines a dynamic `run` argument for `ProductGetController`.
 
 ```php
 use function Chevere\Router\route;
 
 route(
-    path: '/page/{id}',
-    GET: new PageGetController(),
+    path: '/product/{id}',
+    GET: new ProductGetController(),
 ),
 ```
 
-At `PageGetController` we define the regex for this `{id}` wildcard by using `StringAttribute` annotation.
+At `ProductGetController` we define the regex for this `{id}` wildcard by using `StringAttribute` annotation.
 
 ```php
 use Chevere\Controller\HttpController;
 use Chevere\Parameter\Attributes\StringAttribute;
 
-class PageGetController extends HttpController
+class ProductGetController extends HttpController
 {
     public function run(
         #[StringAttribute('/^[1-9]\d*/')]
@@ -97,11 +97,11 @@ class PageGetController extends HttpController
 }
 ```
 
-For the request `/page/123` the system will first check match of `123` against `/^[1-9]\d*/` and then it will pass `123` to the `run` method. Requests failing to match the defined regex will throw a HTTP 404 error.
+For the request `/product/123` the system will first check match of `123` against `/^[1-9]\d*/` and then it will pass `123` to the `run` method. Requests failing to match the defined regex will throw a HTTP 404 error.
 
 ### Additional attributes
 
-Route may define **Name** and **view** attributes. In the example below the Route at `/` gets a name and view binding.
+Route may define **name** and **view** attributes. In the example below the Route at `/` gets a name and view binding.
 
 ```php
 use Chevere\Controller\HttpMiddleware;
@@ -109,7 +109,7 @@ use function Chevere\Router\route;
 
 route(
     path: '/',
-    name: 'My Homepage',
+    name: 'My Home',
     view: 'home/default',
     GET: new HomeGetController(),
 );

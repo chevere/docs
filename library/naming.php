@@ -5,6 +5,7 @@ return [
     'class-map.md' => 'ClassMap',
     'container.md' => 'Container',
     'controller.md' => 'Controller',
+    'http-controller.md' => 'HttpController',
     'data-structure.md' => 'DataStructure',
     'filesystem.md' => 'Filesystem',
     'http.md' => 'Http',
