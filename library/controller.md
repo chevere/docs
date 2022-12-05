@@ -33,3 +33,42 @@ public function run(string $pepito, string $paysTwice): array
     return [];
 }
 ```
+
+## HttpController
+
+An HttpController is a special controller meant to be used in the context of HTTP requests. The HttpController extends Controller by adding request parameters (GET, POST, FILES and Middleware).
+
+### Accept
+
+HttpController enables to define accepted parameters for GET, POST and FILES. In the example below `MyController` defines which parameters will accept and on runtime, it will check against these accept methods to throw an error when trying to define parameters not accepted.
+
+```php
+use Chevere\Controller\HttpController;
+
+use function Chevere\Parameter\parameters;
+use function Chevere\Parameter\stringParameter;
+
+class MyController extends HttpController
+{
+    public function acceptGet(): ParametersInterface
+    {
+        return parameters(
+            foo: stringParameter('/^[a-z]+$/'),
+        );
+    }
+
+    public function acceptPost(): ParametersInterface
+    {
+        return parameters(
+            bar: stringParameter('/^[1-9]+$/'),
+        );
+    }
+
+    public function acceptFiles(): ParametersInterface
+    {
+        return parameters(
+            myFile: arrayParameter(),
+        );
+    }
+}
+```

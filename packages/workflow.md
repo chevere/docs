@@ -1,6 +1,6 @@
 # Workflow
 
-![Workflow](../src/packages/workflow/workflow-social-alt.svg)
+![Workflow](../src/packages/workflow/workflow-logo.svg)
 
 The `Chevere/Workflow` package provides tooling for define an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract procedure instructions as logic units of interconnected independent async jobs.
 
