@@ -76,6 +76,22 @@ Set FILES parameters using the `withFiles` method. It will only accept arguments
 $controller = $controller->withFiles($_FILES);
 ```
 
+## With Middleware
+
+Define middleware using `withMiddleware` method by passing a collection of [PSR Middleware](https://www.php-fig.org/psr/psr-15/) objects.
+
+```php
+use Chevere\Controller\HttpMiddleware;
+
+$middleware = new HttpMiddleware(
+    new PsrMiddleware(),
+    new AnotherPsrMiddleware()
+);
+$controller = $controller->withMiddleware($middleware);
+```
+
+Middleware priority goes from top to bottom, first in first out (FIFO).
+
 ## GET
 
 Use method `get` to read the GET parameters.
@@ -104,4 +120,14 @@ Use method `files` to read the FILES parameters.
 $files = $controller->files();
 // within $this context:
 $this->files();
+```
+
+## Middleware
+
+Use method `middleware` to read the `HttpMiddleware` collection.
+
+```php
+$middleware = $controller->middleware();
+// within $this context:
+$this->middleware();
 ```
