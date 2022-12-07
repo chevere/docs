@@ -2,7 +2,7 @@
 
 ![Router](../src/packages/router/router-logo.svg)
 
-The `Chevere/Router` package provides a strict, strong typed router for [HttpController](../library/http-controller.md).
+The `Chevere/Router` package provides a strict, strong typed router for HTTP requests.
 
 ## Installing
 
@@ -11,6 +11,16 @@ Router is available through [Packagist](https://packagist.org/packages/chevere/r
 ```sh
 composer require chevere/router
 ```
+
+## Features
+
+* Define path, name, view, middleware and HTTP method to controller binding using named arguments.
+* HTTP method binding works with [HttpController](../library/http-controller.md) objects.
+* Wildcards (`{id}` in the code above) inherits regex from parameter attributes at controller layer.
+  * Can be implicit (`{id}`) or explicit (`{id:[0-9]+}`).
+  * Detects conflicts for all endpoints.
+* Supports route groups, define `web`, `api`, `admin` and any group you may need to add.
+* Supports [PSR middleware](https://www.php-fig.org/psr/psr-15/).
 
 ## Creating a Router
 
