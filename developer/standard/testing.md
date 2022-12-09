@@ -33,12 +33,6 @@ To run tests with code coverage report at `./build/coverage/`:
 vendor/bin/phpunit -c phpunit-report.xml
 ```
 
-To run filtered tests use the `--filter` option:
-
-```shell
-vendor/bin/phpunit -c phpunit-report.xml --filter ActionTest
-```
-
 ::: tip
 Check [PHPUnit Documentation](https://phpunit.de/documentation.html) for all available options.
 :::
