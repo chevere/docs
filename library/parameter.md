@@ -1,56 +1,86 @@
 # Parameter
 
+Namespace `Chevere\Parameter`
+
 The Parameter component is in charge of providing typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
 
 This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](type.md) component.
 
-## Creating a Parameter
+## Array Parameter
 
-Parameters can be created with ease using functions. All of these enables to provide `$description`, `$default` and `...$attributes` for each parameter.
-
-### Array
-
-Use function `Chevere\Parameter\arrayParameter` to create a parameter of type `array`. It support default `array` value.
+Use function `arrayParameter` to create a parameter of type `ArrayParameterInterface`.
 
 ```php
 Use function Chevere\Parameter\arrayParameter;
 
-$array = arrayParameter(default: ['do' => true]);
+$array = arrayParameter();
 ```
 
-### Boolean
+## Boolean Parameter
 
-Use function `Chevere\Parameter\booleanParameter` to create a parameter of type `boolean`. It support default `boolean` value.
+Use function `booleanParameter` to create a parameter of type `BooleanParameterInterface`.
 
 ```php
 Use function Chevere\Parameter\booleanParameter;
 
-$boolean = booleanParameter(default: true);
+$boolean = booleanParameter();
 ```
 
-### Float
+## File Parameter
 
-Use function `Chevere\Parameter\floatParameter` to create a parameter of type `float`. It support default `float` value.
+Use function `fileParameter` to create a parameter of type `FileParameterInterface`.
+
+```php
+Use function Chevere\Parameter\fileParameter;
+Use function Chevere\Parameter\stringParameter;
+
+$file = fileParameter();
+$fileB = fileParameter(
+    name: stringParameter(),
+    size: integerParameter(
+        minimum: 1000,
+        maximum: 500000
+    ),
+    type: stringParameter(
+        '/^image\/*$/'
+    )
+);
+```
+
+🪄 For the code above, `$fileB` parameter must meet the size requirement (bytes) and be of MIME type `image/*`.
+
+## Float Parameter
+
+Use function `floatParameter` to create a parameter of type `FloatParameterInterface`.
 
 ```php
 Use function Chevere\Parameter\floatParameter;
 
-$float = floatParameter(default: 12.3);
+$float = floatParameter();
 ```
 
-### Integer
+## Integer Parameter
 
-Use function `Chevere\Parameter\integerParameter` to create a parameter of type `integer`. It support `integer` default value.
+Use function `integerParameter` to create a parameter of type `IntegerParameterInterface`.
 
 ```php
 Use function Chevere\Parameter\integerParameter;
 
-$integer = integerParameter(default: 123);
+$integerA = integerParameter();
+$integerB = integerParameter(
+    minimum: 0,
+    maximum: 100
+);
+$integerC = integerParameter(
+    accept: [1,2,3]
+);
 ```
 
-### Object
+🪄 For the code above, `$integerB` parameter must be between range `0,100` and for `$integerC` it will accept only values in `1,2,3`.
 
-Use function `Chevere\Parameter\objectParameter` to create a parameter of type `object`.
+## Object Parameter
+
+Use function `objectParameter` to create a parameter of type `ObjectParameterInterface`.
 
 ```php
 Use function Chevere\Parameter\objectParameter;
@@ -58,52 +88,44 @@ Use function Chevere\Parameter\objectParameter;
 $object = objectParameter('className');
 ```
 
-### String
+## String Parameter
 
-Use function `Chevere\Parameter\stringParameter` to create a parameter of type `string`. It support regex and `string` default value.
+Use function `stringParameter` to create a parameter of type `StringParameterInterface`.
 
 ```php
 use Chevere\Regex\Regex;
 Use function Chevere\Parameter\stringParameter;
 
 $string = stringParameter(
-    default: 'id-000',
-    regex: new Regex('/^id-[\d]+$/')
+    regex: '/^id-[\d]+$/'
 );
 ```
 
-The above `$string` parameter will require an argument like `id-123` to validate.
+🪄 For the code above, `$string` parameter will require an argument like `id-123` to validate.
 
 ## Parameters
 
-The `Chevere/Parameter/Parameters` component in charge of collecting objects implementing the `Chevere/Parameter/Interfaces/ParameterInterface`.
-
-💡 Parameters members are handled as **required** by default.
+The `Parameters` component in charge of collecting objects implementing the `Interfaces/ParameterInterface`.
 
 ### Creating Parameters
 
-Use function `Chevere\Parameter\parameters` to create a parameters collection.
+Use function `parameters` to create a Parameters collection of required arguments.
 
 ```php
-use Chevere\Parameter\IntegerParameter;
+use function Chevere\Parameter\parameters;
 
 $parameters = parameters(
-    id: integerParameter(
-        description: 'user id.',
-        default: 123,
-    ),
+    id: $integer,
 );
 ```
 
-### Adding Parameters
+### Adding Required Parameters
 
-The `withAdded` method is used to add required parameters.
+The `withAddedRequired` method is used to add required parameters.
 
 ```php
-use function Chevere\Parameter\stringParameter;
-
-$parameters = $parameters->withAdded(
-    name: stringParameter();
+$parameters = $parameters->withAddedRequired(
+    name: $string;
 );
 ```
 
@@ -112,10 +134,8 @@ $parameters = $parameters->withAdded(
 The `withAddedOptional` method is used to add optional parameters.
 
 ```php
-use function Chevere\Parameter\integerParameter;
-
 $parameters = $parameters->withAddedOptional(
-    priority: integerParameter(default: 0)
+    priority: $integer->withDefault(0)
 );
 ```
 
@@ -127,13 +147,47 @@ The `withModify` method is used to modify parameters.
 use function Chevere\Parameter\integerParameter;
 
 $parameters = $parameters->withModify(
-    priority: integerParameter(default: 100)
+    priority: $integer->withDefault(100)
 );
 ```
 
+### Retrieving Parameters
+
+Use method `get` to retrieve a parameter identified by its name.
+
+```php
+use Chevere\Parameter\Interfaces\ParameterInterface;
+
+/** @var ParameterInterface **/
+$parameter = $parameters->get('name');
+```
+
+Use `get<Type>` methods to retrieve a typed parameter identified by its name.
+
+```php
+$array = $parameters->getArray('name');
+$boolean = $parameters->getBoolean('name');
+$file = $parameters->getFile('name');
+$float = $parameters->getFloat('name');
+$integer = $parameters->getInteger('name');
+$object = $parameters->getObject('name');
+$string = $parameters->getString('name');
+```
+
+The following methods are available to provide typed parameter retrieval:
+
+| Method       | Return type                 |
+| ------------ | --------------------------- |
+| `getArray`   | `ArrayParameterInterface`   |
+| `getBoolean` | `BooleanParameterInterface` |
+| `getFile`    | `FloatParameterInterface`   |
+| `getFloat`   | `FloatParameterInterface`   |
+| `getInteger` | `IntegerParameterInterface` |
+| `getString`  | `StringParameterInterface`  |
+
 ## Arguments
 
-The `Chevere/Parameter/Arguments` component in charge of providing arguments matching the declared [Parameters](#parameters).
+The `Arguments` component in charge of providing arguments matching the declared [Parameters](#parameters).
 
 ```php
 use Chevere\Parameter\Arguments;
@@ -147,60 +201,63 @@ $data = ['id' => 123];
 $arguments = new Arguments($parameters, ...$data);
 ```
 
-> **Note** If you pass `abc` instead of `123` the system will throw a `TypeException`.
+🪄 For the code above, if you pass `abc` instead of `123` the system will throw a `TypeException` as Arguments provide a type check layer for Parameters.
 
 ### Retrieve an argument
 
 The `get` method is used to retrieve an argument "as-is", without type checking.
 
-In the example below `$argument` must be casted as boolean or use a doc block annotation to provide type-hint while `$boolean` type gets hinted directly from the function return.
-
 ```php
-use Chevere\Parameter\Arguments;
-
 /**
- * @var Arguments $arguments
  * @var bool $argument
  */
-$argument = $arguments->get('namedArgument');
-$boolean = $arguments->getBoolean('namedArgument');
+$argument = $arguments->get('name');
+```
+
+Use `get<Type>` methods for retrieving a typed argument.
+
+```php
+$argument = $arguments->get('name');
+$array = $arguments->getArray('name');
+$boolean = $arguments->getBoolean('name');
+$float = $arguments->getFloat('name');
+$integer = $arguments->getInteger('name');
+$string = $arguments->getString('name');
 ```
 
 The following methods are available to provide typed argument retrieval:
 
 | Method       | Return type |
 | ------------ | ----------- |
-| `getBoolean` | `boolean`   |
-| `getString`  | `string`    |
-| `getInteger` | `integer`   |
-| `getFloat`   | `float`     |
 | `getArray`   | `array`     |
-
-> **Note** Above methods will throw a `TypeException` on type mismatch.
+| `getBoolean` | `boolean`   |
+| `getFloat`   | `float`     |
+| `getInteger` | `integer`   |
+| `getString`  | `string`    |
 
 ## Attributes
 
-Attributes for parameters are provided at the `Chevere\Parameter\Attributes` namespace.
+Attributes for parameters are provided at the `Attributes` namespace.
 
-### ParameterAttribute
+### StringAttribute
 
-The generic `Chevere\Parameter\Attributes\ParameterAttribute` attribute enables to provide parameter description. In addition, to this it enables to define the regex matching for strings, numeric values and objects implementing [stringable](https://www.php.net/manual/en/class.stringable.php) interface.
+The `Attributes\StringAttribute` attribute provides attributes for parameters of type `string`.
 
 ```php
-use Chevere\Parameter\Attributes\ParameterAttribute;
+use Chevere\Parameter\Attributes\StringAttribute;
 
 function mucho(
-    #[ParameterAttribute(regex: '/^[0-9]{2}$/')]
-    int $id
+    #[StringAttribute('/^[0-9]{2}$/')]
+    string $id
 );
 
 function macho(
-    #[ParameterAttribute('The name', '/^\W+$/')]
+    #[StringAttribute('/^\W+$/', 'The name')]
     string $name
 );
 
 function man(
-    #[ParameterAttribute('No time to talk')]
-    User $user
+    #[StringAttribute(description: 'No time to talk')]
+    string $user
 );
 ```
