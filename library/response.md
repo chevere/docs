@@ -1,5 +1,7 @@
 # Response
 
+Namespace `Chevere\Response`
+
 The Response component is in charge of providing a common response interface.
 
 ## Creating Response
@@ -9,7 +11,10 @@ Create a response by passing named data.
 ```php
 use Chevere\Response\Response;
 
-$response = new Response(key: 'value');
+$response = new Response(
+    key: 'value',
+    user: 'rodo',
+);
 ```
 
 ## With data
@@ -38,32 +43,32 @@ $response = $response->withCode(code: 0);
 
 ## UUID
 
-The `uuid` method is used to access to the Response [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) (V4).
+The `uuid` method is used to access to the Response [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) (V4) `string`.
 
 ```php
-$uuid = $response->uuid();
+$string = $response->uuid();
 ```
 
 ## Token
 
-The `token` method is used to access to the Response token.
+The `token` method is used to access to the Response token `string`.
 
 ```php
-$token = $response->token();
+$tstring = $response->token();
 ```
 
 ## Data
 
-The `data` method is used to access to the Response data.
+The `data` method is used to access to the Response data `array`.
 
 ```php
-$data = $response->data();
+$array = $response->data();
 ```
 
 ## Code
 
-The `code` method is used to access to the Response code.
+The `code` method is used to access to the Response code `int`.
 
 ```php
-$code = $response->code();
+$integer = $response->code();
 ```
