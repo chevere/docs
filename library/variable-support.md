@@ -1,17 +1,20 @@
 # VariableSupport
 
+Namespace `Chevere\VariableSupport`
+
 The VariableSupport component is in charge of providing extra tools for handling variables.
 
 ## ObjectVariable
 
-The `Chevere/VariableSupport/ObjectVariable` component is in charge of handling an object variable.
+The `ObjectVariable` component is in charge of handling an object variable.
 
 ### Creating ObjectVariable
 
 ```php
 use Chevere\VariableSupport\ObjectVariable;
 
-$objectVariable = new ObjectVariable($var);
+$object = new ObjectVariable($var);
+$var = $object->variable();
 ```
 
 ### Assert clonable
@@ -19,12 +22,12 @@ $objectVariable = new ObjectVariable($var);
 Use `assertClonable` to assert if the object variable can be cloned.
 
 ```php
-$objectVariable->assertClonable();
+$boolean = $object->assertClonable();
 ```
 
 ## StorableVariable
 
-The `Chevere/VariableSupport/StorableVariable` component is in charge of handling a variable that can be stored (state).
+The `StorableVariable` component is in charge of handling a variable that can be stored (state).
 
 A storable variable for Chevere is any PHP variable that can be stored as a string representation. All variable types can be stored in PHP with the exception of type `resource`.
 
@@ -33,7 +36,8 @@ A storable variable for Chevere is any PHP variable that can be stored as a stri
 ```php
 use Chevere\VariableSupport\StorableVariable;
 
-$StorableVariable = new StorableVariable($var);
+$storable = new StorableVariable($var);
+$var = $storable->variable();
 ```
 
 ### Export
@@ -41,7 +45,7 @@ $StorableVariable = new StorableVariable($var);
 The `toExport` method provides a shortcut for `var_export($var, true)`.
 
 ```php
-$export = $StorableVariable->toExport();
+$string = $storable->toExport();
 ```
 
 ### Serialize
@@ -49,5 +53,5 @@ $export = $StorableVariable->toExport();
 The `toSerialize` method provides a shortcut for `serialize($var)`.
 
 ```php
-$serialize = $StorableVariable->toSerialize();
+$string = $storable->toSerialize();
 ```
