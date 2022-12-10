@@ -1,8 +1,10 @@
 # VarDump
 
+Namespace `Chevere\VarDump`
+
 ![VarDump](../src/packages/var-dump/var-dump-logo.svg)
 
-The `Chevere\VarDump` package provides an alternative to [var_dump](https://www.php.net/var-dump) with a richer feature set, including formatting for the generation of a myriad of dump documents.
+The VarDump package provides an alternative to [var_dump](https://www.php.net/var-dump) with a richer feature set, including formatting for the generation of a myriad of dump documents.
 
 ::: tip 💡 VarDump introduction
  Read [VarDump for PHP](https://rodolfoberrios.com/2022/05/24/var-dump/) at Rodolfo's blog for a compressive introduction to this package.

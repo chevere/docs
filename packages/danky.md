@@ -1,8 +1,10 @@
 # Danky
 
+Namespace `Chevere\Danky`
+
 ![Danky](../src/packages/danky/danky-logo.svg)
 
-The `Chevere/Danky` package provides a typed PHP template system.
+The Danky package provides a typed PHP template system.
 
 👏 With this package you can create re-usable, strict, highly-testable templates that work as classes.
 

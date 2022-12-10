@@ -1,8 +1,10 @@
 # ThrowableHandler
 
+Namespace `Chevere\ThrowableHandler`
+
 ![ThrowableHandler](../src/packages/throwable-handler/throwable-handler-logo.svg)
 
-The `Chevere/ThrowableHandler` package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents. Its purpose is to ease the understanding of [Exceptions](https://www.php.net/manual/en/language.exceptions.php) on production systems.
+The ThrowableHandler package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents. Its purpose is to ease the understanding of [Exceptions](https://www.php.net/manual/en/language.exceptions.php) on production systems.
 
 ::: tip 💡 ThrowableHandler introduction
  Read [Throwable Handler for PHP](https://rodolfoberrios.com/2022/05/03/throwable-handler/) at Rodolfo's blog for a compressive introduction to this package.

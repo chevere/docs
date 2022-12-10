@@ -1,8 +1,10 @@
 # Router
 
+Namespace `Chevere\Router`
+
 ![Router](../src/packages/router/router-logo.svg)
 
-The `Chevere/Router` package provides a strict, strong typed router for HTTP requests.
+The Router package provides a strict, strong typed router for HTTP requests.
 
 ::: tip 💡 Router introduction
  Read [Router for PHP](https://rodolfoberrios.com/2022/12/07/chevere-router/) at Rodolfo's blog for a compressive introduction to this package.

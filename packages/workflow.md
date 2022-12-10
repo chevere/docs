@@ -1,8 +1,10 @@
 # Workflow
 
+Namespace `Chevere\Workflow`
+
 ![Workflow](../src/packages/workflow/workflow-logo.svg)
 
-The `Chevere/Workflow` package provides tooling for define an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract procedure instructions as logic units of interconnected independent async jobs.
+The Workflow package provides tooling for define an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract procedure instructions as logic units of interconnected independent async jobs.
 
 👏 With this package you can design a Workflow procedures in a similar fashion to GitHub Actions.
 
