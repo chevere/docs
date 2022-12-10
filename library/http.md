@@ -1,8 +1,10 @@
 # Http
 
+Namespace `Chevere\Http`
+
 The Http component is in charge of providing typed HTTP methods according to [RFC 7231](https://tools.ietf.org/html/rfc7231).
 
-The `Chevere/Interfaces/Http/MethodInterface` describes the interface for the component in charge of defining a HTTP method.
+The `Interfaces\MethodInterface` describes the interface for the component in charge of defining a HTTP method.
 
 ## ConnectMethod
 
