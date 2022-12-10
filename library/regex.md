@@ -1,6 +1,8 @@
 # Regex
 
-The Regex component is in charge of providing tooling for regex patterns.
+Namespace `Chevere\Regex`
+
+The Regex component is in charge of providing tooling for [regular expression](https://en.wikipedia.org/wiki/Regular_expression) (regex) patterns.
 
 ## Creating Regex
 
@@ -12,14 +14,15 @@ use Chevere\Regex\Regex;
 $regex = new Regex('/^Hello World!$/');
 ```
 
-## Accessing Pattern
+## Regex pattern
 
 ### As-is (constructor)
 
 The `__toString` method is used to access the pattern passed on instance creation.
 
 ```php
-$regex->__toString(); // /^Hello World!$/
+$string = $regex->__toString();
+// /^Hello World!$/
 ```
 
 ### Without delimiters
@@ -27,7 +30,8 @@ $regex->__toString(); // /^Hello World!$/
 The `toNoDelimiters` method is used to access to the regex pattern without delimiters.
 
 ```php
-$regex->toNoDelimiters(); // ^Hello World!$
+$string = $regex->toNoDelimiters();
+// ^Hello World!$
 ```
 
 ### Without delimiters and anchors
@@ -35,25 +39,40 @@ $regex->toNoDelimiters(); // ^Hello World!$
 The `toNoDelimitersNoAnchors` method is used to access to the regex pattern without delimiters and anchors.
 
 ```php
-$regex->toNoDelimitersNoAnchors(); // Hello World!
+$string = $regex->toNoDelimitersNoAnchors();
+// Hello World!
 ```
 
-## String matching
+## Match
 
 The `match` method provides [preg_match](https://www.php.net/preg-match).
 
 ```php
-$regex->match('Hello World!'); // [Hello World!]
+$array = $regex->match('Hello World!');
+// [Hello World!]
 ```
+
+## Assert Match
+
+The `assertMatch` method asserts that the string matches. It throws `Exceptions\NoMatchException` when failing to assert.
+
+```php
+$regex->assertMatch('Hello World!');
+```
+
+## Match All
 
 The `matchAll` method provides [preg_match_all](https://www.php.net/preg-match-all).
 
 ```php
-$regex->matchAll(); // Hello World!
+$regex->matchAll();
+// [Hello World!]
 ```
 
-## Attributes
+## Assert Match All
 
-## RegexAttribute
+The `assertMatchAll` method asserts that the string matches all. It throws `Exceptions\NoMatchException` when failing to assert.
 
-The `Chevere\Regex\Attribute\RegexAttribute` attribute enables to define a matching regex anywhere attributes are supported.
+```php
+$regex->assertMatchAll('Hello World!');
+```
