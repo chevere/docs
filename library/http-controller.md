@@ -1,8 +1,10 @@
 # HttpController
 
-An HttpController is a special [controller](controller.md) meant to be used in the context of HTTP requests. The HttpController extends Controller by adding request [parameters](parameter.md) (GET, POST, FILES) and Middleware.
+Namespace `Chevere\Controller`
 
-All HttpController implement the `Chevere\Controller\HttpControllerInterface`.
+The HttpController is a special [controller](controller.md) meant to be used in the context of HTTP requests. The HttpController extends Controller by adding request [parameters](parameter.md) (GET, POST, FILES) and Middleware.
+
+All HttpController implement the `Interfaces\HttpControllerInterface`.
 
 ## Accept GET
 
@@ -41,13 +43,15 @@ public function acceptPost(): ParametersInterface
 Define accepted parameters for FILES using the `acceptFiles` method.
 
 ```php
-use function Chevere\Parameter\parameters;
-use function Chevere\Parameter\stringParameter;
 
-public function acceptFiles(): ParametersInterface
+use Chevere\Parameter\Interfaces\ArrayParameterInterface;
+use function Chevere\Parameter\arrayParameter;
+use function Chevere\Parameter\fileParameter;
+
+public function acceptFiles(): ArrayParameterInterface
 {
-    return parameters(
-        myFile: arrayParameter(),
+    return arrayParameter(
+        myFile: fileParameter(),
     );
 }
 ```
@@ -57,7 +61,8 @@ public function acceptFiles(): ParametersInterface
 Set GET parameters using the `withGet` method. It will only accept arguments complying with [Accept GET](#accept-get).
 
 ```php
-$controller = $controller->withGet($_GET);
+$controller = $controller
+    ->withGet($_GET);
 ```
 
 ## With POST
@@ -65,7 +70,8 @@ $controller = $controller->withGet($_GET);
 Set POST parameters using the `withPost` method. It will only accept arguments complying with [Accept POST](#accept-post).
 
 ```php
-$controller = $controller->withPost($_POST);
+$controller = $controller
+    ->withPost($_POST);
 ```
 
 ## With FILES
@@ -73,7 +79,8 @@ $controller = $controller->withPost($_POST);
 Set FILES parameters using the `withFiles` method. It will only accept arguments complying with [Accept FILES](#accept-files).
 
 ```php
-$controller = $controller->withFiles($_FILES);
+$controller = $controller
+    ->withFiles($_FILES);
 ```
 
 ## With Middleware
@@ -87,7 +94,8 @@ $middleware = new HttpMiddleware(
     new PsrMiddleware(),
     new AnotherPsrMiddleware()
 );
-$controller = $controller->withMiddleware($middleware);
+$controller = $controller
+    ->withMiddleware($middleware);
 ```
 
 Middleware priority goes from top to bottom, first in first out (FIFO).
