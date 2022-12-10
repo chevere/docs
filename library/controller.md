@@ -1,18 +1,18 @@
 # Controller
 
-The Controller component is a special type of action in charge of handling external-driven instructions. It is the same as [Action](action.md), but it takes only input string parameters.
+Namespace `Chevere\Controller`
+
+The Controller component is a special type of [Action](action.md) in charge of handling incoming instructions. Its `run` method only takes parameters of type `string`.
 
 Controller is intended to use them wired to:
 
+* Web Servers (see [HttpController](http-controller.md) and [Router](../packages/router.md))
 * CLI applications
-* Web Servers
 * Application runners
-
-💡 If you don't need to wire instructions to these devices you should be using [Action](Action.md), which doesn't restrict the input parameter type.
 
 ## Defining a Controller
 
-A Controller implements the `ControllerInterface`. You can extend `Controller` to quick create a controller:
+A Controller implements the `Interfaces\ControllerInterface`. You can extend `Controller` to quick create a compliant Controller:
 
 ```php
 use Chevere\Controller\Controller;
@@ -23,13 +23,31 @@ final class SomeController extends Controller
 }
 ```
 
-### Controller input parameters
+## Run Parameters
 
-Parameters are defined in the `run` method (same as an action), but it just takes strings.
+Parameters are defined in the `run` method, same as an [Action](action.md#run), but it just takes strings.
 
 ```php
 public function run(string $pepito, string $paysTwice): array
 {
-    return [];
+    // ...
+}
+```
+
+## Parameter Attribute
+
+Use [StringAttribute](attribute.md#stringattribute) to hint run parameters. This enables to validate these parameters against a [Regex](regex.md) match when using the [getResponse](action.md#get-response) method.
+
+```php
+use Chevere\Attribute\StringAttribute;
+
+public function run(
+    #[StringAttribute('/^[a-z]$/')]
+    string $pepito,
+    #[StringAttribute('/^[a-zA-Z]+$/', 'What it does')]
+    string $paysTwice
+): array
+{
+    // ...
 }
 ```
