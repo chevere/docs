@@ -1,10 +1,12 @@
 # Action
 
+Namespace `Chevere\Action`
+
 The Action component is in charge of providing context for executing any instruction. Its purpose is to provide a typed layer for handling input instructions to a system.
 
 ## Defining an Action
 
-An action implements the `Chevere\Action\Interfaces\ActionInterface`.
+An action implements the `Interfaces\ActionInterface`.
 
 👉 You can extend `Action` to quick create an action:
 
@@ -36,7 +38,6 @@ The `run` method is used to define the logic that will be executed. The return t
 
 ```php
 use Chevere\Parameter\Interfaces\ArgumentsInterface;
-use Chevere\Response\Interfaces\ResponseInterface;
 
 public function run(User $user): array
 {
@@ -51,7 +52,7 @@ public function run(User $user): array
 
 Attributes can be used to provide context for run parameters.
 
-👉 Refer to [ParameterAttribute](Parameter.md#parameterattribute) for attributes for parameters.
+👉 Refer to [Attribute](attribute.md) for parameter attributes.
 
 ## Response Parameters
 
@@ -126,11 +127,10 @@ public function run(string $name): array
 
 ## Running actions
 
-Use `runner` method to run the action. This will return an object implementing `Chevere\Response\Interfaces\ResponseInterface`.
+Use `getResponse` method to run the action and return an object implementing `Chevere\Response\Interfaces\ResponseInterface`.
 
 ```php
-use function Chevere\Action\actionRun;
-
-// ...
-$response = $action->runner(name: 'godlike');
+$response = $action->getResponse(name: 'godlike');
 ```
+
+🪄 When using `getResponse` all parameter checking will be executed on your behalf. Do no use `run` as it won't perform any checking.
