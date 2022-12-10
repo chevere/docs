@@ -234,30 +234,3 @@ The following methods are available to provide typed argument retrieval:
 | `getFloat`   | `float`     |
 | `getInteger` | `integer`   |
 | `getString`  | `string`    |
-
-## Attributes
-
-Attributes for parameters are provided at the `Attributes` namespace.
-
-### StringAttribute
-
-The `Attributes\StringAttribute` attribute provides attributes for parameters of type `string`.
-
-```php
-use Chevere\Parameter\Attributes\StringAttribute;
-
-function mucho(
-    #[StringAttribute('/^[0-9]{2}$/')]
-    string $id
-);
-
-function macho(
-    #[StringAttribute('/^\W+$/', 'The name')]
-    string $name
-);
-
-function man(
-    #[StringAttribute(description: 'No time to talk')]
-    string $user
-);
-```
