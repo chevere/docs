@@ -1,8 +1,10 @@
 # Container
 
+Namespace `Chevere\Container`
+
 The Container component is an immutable implementation of `Psr\Container\ContainerInterface`.
 
-## Creating a container
+## Creating a Container
 
 ```php
 use Chevere\Container\Container;
@@ -12,24 +14,28 @@ $container = new Container();
 
 ## Putting services
 
-💡 A service can be of *any* type.
+Use method `withPut` to put services into the Container. A service can be of *any* type.
 
 ```php
-use Redis;
-
-$service = new Redis();
-$id = 'wea';
-$container = $container->withPut($id, $service);
+$container = $container
+    ->withPut(
+        redis: new Redis(),
+    );
 ```
 
-## Check if contains service
+## Has service
+
+Use method `has` to tell if Container has a service identified by its name.
 
 ```php
-$contains = $container->has($id); // true if has wea
+$true = $container->has('redis');
+$false = $container->has('pdo');
 ```
 
 ## Get service
 
+Use method `get` to access the service identified by its name.
+
 ```php
-$wea = $container->get($id); // $wea = $service
+$redis = $container->get('redis');
 ```
