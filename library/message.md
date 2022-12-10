@@ -1,5 +1,7 @@
 # Message
 
+Namespace `Chevere\Message`
+
 The Message component allows to create messages with rich formatting support for console, HTML and plain text.
 
 ## Creating a Message
@@ -10,9 +12,9 @@ A Message is created by passing a Message template. In the code below a new Mess
 use Chevere\Message\Message;
 use function Chevere\Message\message;
 
-$message = message('Hello, %to%!');
-// It can be also created with:
 $message = new Message('Hello, %to%!');
+// It can be also created with:
+$message = message('Hello, %to%!');
 ```
 
 ## Replacing strings
@@ -23,20 +25,20 @@ A Message can be altered by chaining methods that enable to replace sub-strings.
 use function Chevere\Message\message;
 
 $message = message('Hello, %to%!')
-    ->withStrtr('Hello,', 'Hola')
+    ->withTranslate('Hello,', 'Hola')
     ->withEmphasis('%to%', 'Rodolfo');
 // Hola, <em>Rodolfo</em>!
 ```
 
 💡 String replacement can be performed on anything, but we encourage using placeholders wrapped in `%`.
 
-### Strtr
+### Translate
 
-The `withStrtr` method is used for string replacement without formatting.
+The `withTranslate` method is used for string replacement without formatting.
 
 ```php
 $message = $message
-    ->withStrtr('%to%', 'Rodolfo');
+    ->withTranslate('%to%', 'Rodolfo');
 // Hello, Rodolfo!
 ```
 
