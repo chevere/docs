@@ -1,8 +1,10 @@
 # Type
 
+Namespace `Chevere\Type`
+
 The Type component is in charge of providing a layer for dynamic type handling.
 
-## Creating a Type
+## Creating Type
 
 A Type gets created by passing a `type` [keyword](#type-keywords).
 
@@ -16,16 +18,16 @@ $type = new Type(Type::STRING);
 
 Available keywords:
 
-- `Type::BOOLEAN`
-- `Type::INTEGER`
-- `Type::FLOAT`
-- `Type::STRING`
 - `Type::ARRAY`
-- `Type::OBJECT`
+- `Type::BOOLEAN`
 - `Type::CALLABLE`
+- `Type::FLOAT`
+- `Type::INTEGER`
 - `Type::ITERABLE`
-- `Type::RESOURCE`
 - `Type::NULL`
+- `Type::OBJECT`
+- `Type::RESOURCE`
+- `Type::STRING`
 
 💡 Full-qualified **class names** and **interface names** can be passed as type keyword.
 
@@ -39,7 +41,7 @@ The return values for methods `primitive` and `typeHinting` is explained in the 
 | SomeClass     | `className`     | `SomeClass`     |
 | SomeInterface | `interfaceName` | `SomeInterface` |
 
-For [keywords](#keywords), the return value of `primitive` and `typeHinting` is same as the keyword.
+For [keywords](#type-keywords), the return value of `primitive` and `typeHinting` is same as the keyword.
 
 ## Validator
 
@@ -49,7 +51,8 @@ The `validator` method provides access to the callable used to primitive validat
 use Chevere\Type\Type;
 
 $type = new Type(Type::INTEGER);
-$validator = $type->validator(); // is_int
+$callable = $type->validator();
+// is_int
 ```
 
 ## Validate
@@ -57,7 +60,7 @@ $validator = $type->validator(); // is_int
 The `validate` method allows to validate any `$var` against the declared type.
 
 ```php
-$validate = $type->validate($var);
+$boolean = $type->validate($var);
 ```
 
 ## Check if is scalar
@@ -67,8 +70,8 @@ The `isScalar` method returns true if the type is of type scalar.
 ```php
 use Chevere\Type\Type;
 
-$type = new Type(Type::INTEGER);
-$isScalar = $type->isScalar(); // true
-$type = new Type(Type::OBJECT);
-$isScalar = $type->isScalar(); // false
+$integerType = new Type(Type::INTEGER);
+$true = $integerType->isScalar();
+$objectType = new Type(Type::OBJECT);
+$false = $type->isScalar();
 ```
