@@ -1,26 +1,28 @@
 # Writer
 
+Namespace `Chevere\Writer`
+
 The Writer component provides components that interact with output, error, debug and log streams.
 
-A writer is defined by the `Chevere/Writer/Interfaces/WriterInterface`.
+A Writer is defined by the `Interfaces\WriterInterface`.
 
 ## Writers
 
-The `Chevere/Writer/Writers` component describes a service container providing access to `output`, `error`, `debug` and `log` writers.
+The `Writers` component describes a service container providing access to `output`, `error`, `debug` and `log` writers.
 
 ```php
 use Chevere\Writer\Writers;
 
 $writers = new Writers();
-$output = $writers->output(); // streamTemp
-$error = $writers->error(); // streamTemp
+$output = $writers->output();
+$error = $writers->error();
 ```
 
 Methods [withOutput](#withoutput), [withError](#witherror), [withDebug](#withdebug) and [withLog](#withlog) can be used to specify each writer stream.
 
 ### withOutput
 
-Output is the channel used for writing when no error happens.
+Output is the channel used for writing output.
 
 ```php
 use Chevere\Writer\StreamWriter;
@@ -29,14 +31,14 @@ use function Chevere\Writer\streamFor;
 $writers = $writers
     ->withOutput(
         writer: new StreamWriter(
-            streamFor('/var/debug/output', 'w')
+            streamFor('/var/stream/output', 'w')
         )
     );
 ```
 
 ### withError
 
-Error is the channel for writing when some error happens.
+Error is the channel for writing errors.
 
 ```php
 use Chevere\Writer\StreamWriter;
@@ -45,14 +47,14 @@ use function Chevere\Writer\streamFor;
 $writers = $writers
     ->withError(
         writer: new StreamWriter(
-            streamFor('/var/debug/error', 'w')
+            streamFor('/var/stream/error', 'w')
         )
     );
 ```
 
 ### withDebug
 
-Debug is the channel for writing debug information.
+Debug is the channel for writing debug.
 
 ```php
 use Chevere\Writer\StreamWriter;
@@ -61,7 +63,7 @@ use function Chevere\Writer\streamFor;
 $writers = $writers
     ->withDebug(
         writer: new StreamWriter(
-            streamFor('/var/debug/error', 'w')
+            streamFor('/var/stream/debug', 'w')
         )
     );
 ```
@@ -77,16 +79,14 @@ use function Chevere\Writer\streamFor;
 $writers = $writers
     ->withLog(
         writer: new StreamWriter(
-            streamFor('/var/debug/error', 'w')
+            streamFor('/var/stream/log', 'w')
         )
     );
 ```
 
-## Concrete Writers
+## StreamWriter
 
-### StreamWriter
-
-The `Chevere/Writer/StreamWriter` component is in charge of writing strings to a stream.
+The `StreamWriter` component is in charge of writing strings to a stream.
 
 ```php
 use Chevere\Writer\StreamWriter;
@@ -100,15 +100,18 @@ $writer->write('write some');
 
 ### Streams
 
-Use function `Chevere\Writer\streamFor` to create an stream.
+Use function `streamFor` to create an stream.
 
 ```php
 use function Chevere\Writer\streamFor;
 
-$stream = streamFor('php://temp', mode: 'r+');
+$stream = streamFor(
+    stream: 'php://temp',
+    mode: 'r+'
+);
 ```
 
-Use function `Chevere\Writers\streamTemp` to create a temp stream (r+).
+Use function `streamTemp` to create a temp stream (rw+).
 
 ```php
 use function Chevere\Writer\streamTemp;
