@@ -1,10 +1,12 @@
 # Serialize
 
+Namespace `Chevere\Serialize`
+
 The Serialize component is in charge of handling variable serialize and deserialize.
 
 ## Serialize a variable
 
-The `Chevere/Serialize/Serialize` component is in charge of handling serialize.
+The `Serialize` component is in charge of handling serialize.
 
 ```php
 use Chevere\Serialize\Serialize;
@@ -20,20 +22,20 @@ $string = $serialize->__toString();
 
 ## Deserialize a variable
 
-The `Chevere/Serialize/Deserialize` component is in charge of handling deserialize.
+The `Deserialize` component is in charge of handling deserialize.
 
 ```php
 use Chevere\Serialize\Deserialize;
 
-$deserialize = new Deserialize(serialized: $bar);
+$deserialize = new Deserialize($bar);
 ```
 
 ### Access variable
 
-The `var` method is used to access the deserialized variable.
+The `variable` method is used to access the deserialized variable.
 
 ```php
-$var = $deserialize->var();
+$mixed = $deserialize->variable();
 ```
 
 ### Variable type
