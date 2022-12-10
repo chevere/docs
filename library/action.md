@@ -125,12 +125,13 @@ public function run(string $name): array
 }
 ```
 
-## Running actions
+## Get Response
 
-Use `getResponse` method to run the action and return an object implementing `Chevere\Response\Interfaces\ResponseInterface`.
+Use `getResponse` method to **run the action** and return an object implementing `Chevere\Response\Interfaces\ResponseInterface`.
+
+All parameter checking will be executed on your behalf. Note: Do no use `run` as it won't perform any checking.
 
 ```php
-$response = $action->getResponse(name: 'godlike');
+$response = $action
+    ->getResponse(name: 'godlike');
 ```
-
-🪄 When using `getResponse` all parameter checking will be executed on your behalf. Do no use `run` as it won't perform any checking.
