@@ -1,10 +1,12 @@
 # Filesystem
 
+Namespace `Chevere\Filesystem`
+
 The Filesystem component is in charge of interact with the filesystem, offering a myriad of related functionalities.
 
 ## Path
 
-The `Chevere/Filesystem/Path` component is charge of interact with filesystem paths.
+The `Path` component is charge of interact with filesystem paths (files and folders).
 
 ```php
 use Chevere\Filesystem\Path;
@@ -19,7 +21,7 @@ $path = new Path('/home/var/the-path/');
 The `exist` method determines if the path exists. It returns `true` when a path exists in the filesystem.
 
 ```php
-$pathExists = $path->exists();
+$boolean = $path->exists();
 ```
 
 #### Path is Writable
@@ -27,7 +29,7 @@ $pathExists = $path->exists();
 The `isWritable` method determines if the path is writable. It returns `true` when a path is writable and it supports NFS mounts.
 
 ```php
-$pathIsWritable = $path->isWritable();
+$boolean = $path->isWritable();
 ```
 
 #### Path is Readable
@@ -35,7 +37,7 @@ $pathIsWritable = $path->isWritable();
 The `isReadable` method determines if the path is readable. It returns `true` when a path is readable.
 
 ```php
-$pathIsReadable = $path->isReadable();
+$boolean = $path->isReadable();
 ```
 
 #### Path is Directory
@@ -43,7 +45,7 @@ $pathIsReadable = $path->isReadable();
 The `isDir` method determines if the path is a directory. It returns `true` when a path exists in the filesystem and it is a directory.
 
 ```php
-$pathIsDir = $path->isDir();
+$boolean = $path->isDir();
 ```
 
 #### Path is File
@@ -51,7 +53,7 @@ $pathIsDir = $path->isDir();
 The `isFile` method determines if the path is a file. It returns `true` when a path exists in the filesystem and it is a file.
 
 ```php
-$pathIsFile = $path->isFile();
+$boolean = $path->isFile();
 ```
 
 ### Altering a Path
@@ -69,15 +71,15 @@ $path->chmod(0777);
 The `getChild` method allows to create new Path instances for sub-paths.
 
 ```php
-$childPathDir  = $path
-    ->getChild('child/'); // /home/var/child/
-$childPathFile  = $path
-    ->getChild('child-2/some-file.php'); // /home/var/child-2/some-child.php
+$childPathDirectory = $path
+    ->getChild('child/');
+$childPathFile = $path
+    ->getChild('child-2/some-file.php');
 ```
 
 ## Directory
 
-The `Chevere/Filesystem/Dir` component is in charge of interact with filesystem directories.
+The `Directory` component is in charge of interact with filesystem directories.
 
 ```php
 use Chevere\Filesystem\Directory;
@@ -85,9 +87,11 @@ use Chevere\Filesystem\Path;
 use function Chevere\Filesystem\directoryForPath;
 
 $path = '/home/var/';
-$dir = new Directory(new Path($path));
+$directory = new Directory(
+    new Path($path)
+);
 // It can be also created with:
-$dir = directoryForPath($path);
+$directory = directoryForPath($path);
 ```
 
 ### Creating a Directory
@@ -95,13 +99,13 @@ $dir = directoryForPath($path);
 The `create` method creates the directory in the filesystem. The method takes the argument `int $mode` for the octal mode.
 
 ```php
-$dir->create(0755);
+$directory->create(0755);
 ```
 
 The `createIfNotExists` method does exactly the same as `create`, but only if the directory doesn't exists.
 
 ```php
-$dir->createIfNotExists(0755);
+$directory->createIfNotExists(0755);
 ```
 
 ### Checking a Directory
@@ -111,7 +115,7 @@ $dir->createIfNotExists(0755);
 The `exist` method determines if the directory exists. It returns `true` when a directory exists in the filesystem.
 
 ```php
-$dirExists = $dir->exists();
+$boolean = $directory->exists();
 ```
 
 #### Assert Directory Exists
@@ -121,7 +125,7 @@ The `assertExists` method asserts if the directory exists. Throws exception when
 ```php
 use Chevere\Exceptions\Filesystem\DirNotExistsException;
 
-$dir->assertExists(); // Throws DirNotExistsException
+$directory->assertExists(); // Throws DirNotExistsException
 ```
 
 ### Removing Directory contents
@@ -129,21 +133,21 @@ $dir->assertExists(); // Throws DirNotExistsException
 The `removeContents` method removes the contents of the directory.
 
 ```php
-$removed = $dir->removeContents(); // dir is now empty
+$removed = $directory->removeContents(); // dir is now empty
 ```
 
 ### Removing a Directory
 
-The `remove` method removes the directory and its contents.
+The `remove` method removes the directory and its contents. It returns an `array<int, string>` with the items removed.
 
 ```php
-$removed = $dir->remove(); // dir is gone
+$array = $directory->remove();
 ```
 
 The `removeIfExists` method removes the directory and its contents if the directory exists.
 
 ```php
-$removed = $dir->removeIfExists();
+$array = $directory->removeIfExists();
 ```
 
 ### Get child directory
@@ -151,12 +155,13 @@ $removed = $dir->removeIfExists();
 The `getChild` method allows to create new Directory instances for sub-directories.
 
 ```php
-$childDir  = $dir->getChild('child/'); // /home/var/child/
+$childDirectory  = $directory
+    ->getChild('child/');
 ```
 
 ## File
 
-The `Chevere/Filesystem/File` component in charge of interact with filesystem files.
+The `File` component in charge of interact with filesystem files.
 
 ```php
 use Chevere\Filesystem\File;
@@ -164,7 +169,9 @@ use Chevere\Filesystem\Path;
 use function Chevere\Filesystem\fileForPath;
 
 $path = '/home/var/the-file.php';
-$file = new File(new Path($path));
+$file = new File(
+    new Path($path)
+);
 // It can be also created with:
 $file = fileForPath($path);
 ```
@@ -198,17 +205,15 @@ $file->put($contents);
 The `exist` method determines if the file exists. It returns `true` when a file exists in the filesystem.
 
 ```php
-$fileExists = $file->exists();
+$boolean = $file->exists();
 ```
 
 #### Assert File Exists
 
-The `assertExists` method asserts if the file exists. Throws exception when the file doesn't exists in the filesystem.
+The `assertExists` method asserts if the file exists. Throws `Exceptions\FileNotExistsException` when the file doesn't exists in the filesystem.
 
 ```php
-use Chevere\Exceptions\Filesystem\FileNotExistsException;
-
-$file->assertExists(); // Throws FileNotExistsException
+$file->assertExists();
 ```
 
 #### File is PHP
@@ -216,7 +221,7 @@ $file->assertExists(); // Throws FileNotExistsException
 The `isPhp` method determines if the file name is a PHP file. It returns `true` when the file name ends with `.php`.
 
 ```php
-$fileIsPhp = $file->isPhp(); // bool
+$boolean = $file->isPhp();
 ```
 
 ### Reading a File
@@ -226,15 +231,15 @@ $fileIsPhp = $file->isPhp(); // bool
 The `contents` method retrieve the contents of the file. It returns `string` with the file contents.
 
 ```php
-$contents = $file->getContents(); // raw file contents
+$string = $file->getContents();
 ```
 
 #### File Checksum
 
-The `checksum` method retrieve the checksum of the file. It returns `string` with the file checksum.
+The `checksum` method retrieve the checksum of the file. It returns `string` with the file checksum (SHA256 default).
 
 ```php
-$checksum = $file->getChecksum(); // sha256'd
+$string = $file->getChecksum();
 ```
 
 > FileInterface::CHECKSUM_ALGO determines the algorithm used for file hashing.
@@ -244,18 +249,18 @@ $checksum = $file->getChecksum(); // sha256'd
 The `remove` method removes the file.
 
 ```php
-$file->remove(); // file is gone
+$file->remove();
 ```
 
 The `removeIfExists` method removes the file if exist.
 
 ```php
-$file->removeIfExists(); // doesn't throw assert exists
+$file->removeIfExists();
 ```
 
 ## File PHP
 
-The `Chevere/Filesystem/FilePhp` component in charge of interact with PHP files.
+The `FilePhp` component in charge of interact with PHP files.
 
 ```php
 use Chevere\Filesystem\File;
@@ -264,7 +269,9 @@ use Chevere\Filesystem\Path;
 use function Chevere\Filesystem\filePhpForPath;
 
 $absolute = '/home/var/the-file.php';
-$file = new File(new Path($absolute));
+$file = new File(
+    new Path($absolute)
+);
 $filePhp = new FilePhp($file);
 // It can be also created with:
 $filePhp = filePhpForPath($absolute);
@@ -272,19 +279,21 @@ $filePhp = filePhpForPath($absolute);
 
 ### Caching
 
-The `cache` method will cache the PHP file. The `flush` method will destroy the cache.
+The `compileCache` method will cache the PHP file (OPcache).
 
 ```php
-$filePhp->compileCache(); // OPCache cache
-$filePhp->flushCache(); // OPCache cache is gone
-
+$filePhp->compileCache();
 ```
 
-> Cache works with OPCache.
+The `flushCache` method will destroy the cache (OPcache).
+
+```php
+$filePhp->flushCache();
+```
 
 ## File PHP Return
 
-The `Chevere/Filesystem/FilePhpReturn` component in charge of interact with the return value of PHP files.
+The `FilePhpReturn` component in charge of interact with the return value of PHP files.
 
 ```php
 use Chevere\Filesystem\File;
@@ -294,7 +303,11 @@ use Chevere\Filesystem\Path;
 use function Chevere\Filesystem\filePhpReturnForPath;
 
 $absolute = '/home/var/the-file.php';
-$filePhp = new FilePhp(new File(new Path($absolute)));
+$filePhp = new FilePhp(
+    new File(
+        new Path($absolute)
+    )
+);
 $filePhpReturn = new FilePhpReturn($filePhp);
 // It can be also created with:
 $filePhp = filePhpReturnForPath($absolute);
@@ -308,7 +321,7 @@ $filePhp = filePhpReturnForPath($absolute);
 The `raw` method returns the file return "as-is", equivalent to `return include <file>`.
 
 ```php
-$filePhpReturn->raw();
+$mixed = $filePhpReturn->raw();
 ```
 
 #### Variable contents
@@ -316,7 +329,7 @@ $filePhpReturn->raw();
 The `variable` method returns a PHP variable. If the return is a serialized string, it will attempt to deserialize the string to cast an object.
 
 ```php
-$variable = $filePhpReturn->variable();
+$mixed = $filePhpReturn->variable();
 ```
 
 #### Var contents typed
@@ -326,7 +339,10 @@ The `variableTyped` method does the same as `var`, but it validates the variable
 ```php
 use function Chevere\Type\typeInteger;
 
-$variable = $filePhpReturn->variableTyped(typeInteger());
+$integer = $filePhpReturn
+    ->variableTyped(
+        typeInteger()
+    );
 ```
 
 ### Putting contents
@@ -338,6 +354,6 @@ Type `object` will be stored as `return 'serialized string';`.
 ```php
 use Chevere\VariableSupport\StorableVariable;
 
-$StorableVariable = new StorableVariable($var);
-$filePhpReturn->put($StorableVariable);
+$storable = new StorableVariable($var);
+$filePhpReturn->put($storable);
 ```
