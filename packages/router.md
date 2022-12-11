@@ -1,8 +1,8 @@
 # Router
 
-Namespace `Chevere\Router`
-
 ![Router](../src/packages/router/router-logo.svg)
+
+Namespace `Chevere\Router`
 
 The Router package provides a strict, strong typed router for HTTP requests.
 

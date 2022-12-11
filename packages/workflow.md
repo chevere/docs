@@ -1,8 +1,8 @@
 # Workflow
 
-Namespace `Chevere\Workflow`
-
 ![Workflow](../src/packages/workflow/workflow-logo.svg)
+
+Namespace `Chevere\Workflow`
 
 The Workflow package provides tooling for define an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract procedure instructions as logic units of interconnected independent async jobs.
 

@@ -1,8 +1,8 @@
 # Danky
 
-Namespace `Chevere\Danky`
-
 ![Danky](../src/packages/danky/danky-logo.svg)
+
+Namespace `Chevere\Danky`
 
 The Danky package provides a typed PHP template system.
 

@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Chevere',
-    description: 'A PHP library for building clean applications.',
+    description: 'High quality PHP software.',
     head: [
         ['link', {
             rel: 'icon',

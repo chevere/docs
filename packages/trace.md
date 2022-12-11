@@ -1,8 +1,8 @@
 # Trace
 
-Namespace `Chevere\Trace`
-
 ![Trace](../src/packages/trace/trace-logo.svg)
+
+Namespace `Chevere\Trace`
 
 The Trace package provides [debug_backtrace](https://www.php.net/debug-backtrace) abstraction and formatting.
 

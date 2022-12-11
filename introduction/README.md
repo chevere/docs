@@ -2,9 +2,9 @@
 
 ## What is Chevere?
 
-Chevere is a strict, strong-typed PHP development library. It is the kind of stuff developers use to build *other* software, specially low-level applications as it is an small unbloated software package providing the core tooling needed to organize and run the logic of any given software application.
+Chevere is a strict, strong-typed PHP development library. It is the stuff developers use to build *other* software, specially low-level applications as it is an small software package providing the core tooling needed to organize and run the logic of any given software application.
 
-💡 The term *chévere* is ubiquitous in Latin America, spreaded in every spanish speaking country and it means **cool/awesome**. We believe that anything can be chevere, specially PHP software.
+💡 The term *chévere* is ubiquitous in Latin America, known in every Spanish speaking country and it means **cool/awesome**. We believe that anything can be chevere, specially PHP software.
 
 ## Core concepts
 
@@ -14,7 +14,7 @@ Enjoy an immutable and strong-typed clean codebase. Chevere follows [Clean Code]
 
 ### Extensible
 
-A core library tooling for general purposes, with enough flexibility to allow the creation a myriad of systems with the same know-how. We also provide packages for very specific needs.
+A core library tooling for general purposes, with enough flexibility to allow the creation a myriad of systems with the same know-how. We also provide packages for specific needs.
 
 ### Modern & High quality
 
@@ -22,16 +22,29 @@ All-new PHP 8 codebase with strict standards. Chevere has been designed from scr
 
 ## Why Chevere and not X?
 
-...Or if you can use software from well-known vendors with dozen  releases all the time and hundreds of contributors, why you should use our stuff?
+...Or if you can use software from *well-known* vendors why you should use Chevere?
 
-* This codebase is measured top-quality, highly maintainable software.
-* In the event this project gets [bus factor](https://en.wikipedia.org/wiki/Bus_factor) zero it will require a minimum investment to keep your projects delivering.
-* Backed by a [self-hosted software](https://chevereto.com) used in thousand of different server configurations.
-* The foundation is being crafted to last 20 years. We started in 2018.
+Main selling point for Chevere is its high quality with a superb clean syntax. You can tell that by interacting with Chevere and because the code is scrutinized by several third-party tools.
+
+Vendors which business is to measure code quality say that Chevere is top tier quality. It is day and night when the arguments to use a codebase are vague subjective terms like *expressive syntax* or *well-maintained* compared to objetive code measure metrics.
+
+## Why quality matters?
+
+...Or why focus in quality when *well-known* vendors may have 2,000 contributors and 70,000 stars? How does quality matters more than that?
+
+A contributor is anyone who touched a single line up to a maintainer that has been since the beginning. Check your well-known vendor contributors tab and pay attention to who is still working on it and determine the [bus factor](https://en.wikipedia.org/wiki/Bus_factor). Do you think that a contributor who touched the code ten years ago and never came back will take the shore of maintaining anything?
+
+Then there's popularity, which is associated with the stars counter. While is true that more users means better community, their role on the continuity of the project is overestimate. We are talking about users building software on top, not direct end-users. They don't have the same experience neither the intentions to go one layer below as that's the reason they use a library/framework on the first place.
+
+When building software we depend on other's work but rarely assume the dependency costs. Developers assume that crowded projects will keep delivering as is the motto of FLOSS, but it doesn't apply to all the software. The real world is different and there are countless crowded projects that either died or stall.
+
+Quality matters more because in the event a project gets zero maintainers it will require a minimum investment on your end to keep your projects delivering without depending on anybody else. How comfortable you will feel inheriting a top-tier codebase compared to a mess? How much can you wait to someone from the community to take the jump?
 
 ## Who makes Chevere?
 
-Chevere is driven by [Chevereto](https://chevereto.com) and is made by the same author ([Rodolfo Berrios](https://rodolfoberrios.com), hi). Chevere was created as the supporting framework for Chevereto, and Chevereto supports Chevere's development.
+Chevere is driven by [Chevereto](https://chevereto.com) and is made by the same author ([Rodolfo Berrios](https://rodolfoberrios.com), hi) with solid 18+ years of experience building systems.
+
+Chevere was created as the supporting framework for Chevereto, and Chevereto supports Chevere's development.
 
 ## Sponsors
 
