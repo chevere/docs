@@ -318,7 +318,7 @@ $filePhp = filePhpReturnForPath($absolute);
 
 #### Get return
 
-The `get` method returns the file return "as-is", equivalent to `return include <file>`.
+The `get` method returns the file return "as-is", equivalent to `return require <file>`.
 
 ```php
 $mixed = $filePhpReturn->get();
