@@ -29,7 +29,7 @@ $boolean = $object->assertClonable();
 
 The `StorableVariable` component is in charge of handling a variable that can be stored (state).
 
-A storable variable for Chevere is any PHP variable that can be stored as a string representation. All variable types can be stored in PHP with the exception of type `resource`.
+A storable variable for Chevere is any PHP variable that can be stored as a string representation. All variable types can be stored with the exception of type `resource`.
 
 ### Creating StorableVariable
 
@@ -42,10 +42,14 @@ $var = $storable->variable();
 
 ### Export
 
-The `toExport` method provides a shortcut for `var_export($var, true)`.
+The `toExport` method exports the variable, this return value should be used when creating a file return.
 
 ```php
-$string = $storable->toExport();
+$export = $storable->toExport();
+file_put_contents(
+    'file-return.php',
+    '<?php return '.$export.';'
+);
 ```
 
 ### Serialize
