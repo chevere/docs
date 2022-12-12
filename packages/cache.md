@@ -28,7 +28,7 @@ $cache = new Cache($directory);
 
 ## With Put
 
-The `withPut` method is used to cache a PHP [storable variable](../library/variable-support.md#storablevariable).
+The `withPut` method is used to cache PHP [storable variable](../library/variable-support.md#storablevariable).
 
 ```php
 use Chevere\Cache\Cache;
@@ -56,19 +56,38 @@ The `exists` method is used to determine if cache exists for `$key`.
 $boolean = $cache->exists($key);
 ```
 
-## Get
+## Get Item
 
-The `get` method is used to retrieve a cached entry at the given `$key`. It returns the cached `$var`.
+The `get` method is used to retrieve a cached Item at the given `$key`.
 
 ```php
-use Chevere\Cache\Cache;
+$item = $cache->get($key);
+```
 
-$var = $cache->get($key);
+### Get Item variable
+
+The `get` method returns the PHP variable for the Cache Item.
+
+```php
+$mixed = $item->get();
+```
+
+### Get Item variable typed
+
+The `get<Type>` methods does the same as [get](#get-item-variable), but it type-hint the return value.
+
+```php
+$array => $item->getArray();
+$boolean => $item->getBoolean();
+$float => $item->getFloat();
+$integer => $item->getInteger();
+$object => $item->getObject();
+$string => $item->getString();
 ```
 
 ## With Remove
 
-The `withRemove` method is used to remove a item from the Cache repository at the given `$key`.
+The `withRemove` method is used to remove a Item from the Cache repository at the given `$key`.
 
 ```php
 $cache = $cache->withRemove($key);
