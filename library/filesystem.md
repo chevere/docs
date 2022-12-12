@@ -316,33 +316,27 @@ $filePhp = filePhpReturnForPath($absolute);
 
 ### Reading File PHP Return
 
-#### Raw contents
+#### Get return
 
-The `raw` method returns the file return "as-is", equivalent to `return include <file>`.
-
-```php
-$mixed = $filePhpReturn->raw();
-```
-
-#### Variable contents
-
-The `variable` method returns a PHP variable. If the return is a serialized string, it will attempt to deserialize the string to cast an object.
+The `get` method returns the file return "as-is", equivalent to `return include <file>`.
 
 ```php
-$mixed = $filePhpReturn->variable();
+$mixed = $filePhpReturn->get();
 ```
 
-#### Var contents typed
+#### Get return typed
 
-The `variableTyped` method does the same as `var`, but it validates the variable against the passed type.
+The `get<Type>` method does the same as `get`, but it validates the variable against the target type.
 
 ```php
 use function Chevere\Type\typeInteger;
 
-$integer = $filePhpReturn
-    ->variableTyped(
-        typeInteger()
-    );
+$array => $filePhpReturn->getArray();
+$boolean => $filePhpReturn->getBoolean();
+$float => $filePhpReturn->getFloat();
+$integer => $filePhpReturn->getInteger();
+$object => $filePhpReturn->getObject();
+$string => $filePhpReturn->getString();
 ```
 
 ### Putting contents
