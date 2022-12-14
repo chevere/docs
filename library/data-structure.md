@@ -2,11 +2,11 @@
 
 Namespace `Chevere\DataStructure`
 
-The DataStructure component provides typed immutable-like data structures, built on top of [php-ds](https://github.com/php-ds/ext-ds).
+The DataStructure component provides typed immutable-like data structures.
 
 ## Map
 
-The Map component is in charge of extending [DS\Map](https://www.php.net/ds-map) functionality.
+A Map is a sequential collection of key-value pairs. Keys can be of type `integer` and `string`.
 
 ### Creating Map
 
