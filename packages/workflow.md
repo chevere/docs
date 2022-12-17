@@ -24,7 +24,7 @@ composer require chevere/workflow
 
 To create a Workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/action.md) class name and its arguments.
 
-In the example below, a Workflow describes a simple image uploading procedure.
+In the example below, a Workflow describes an image uploading procedure.
 
 ```php
 use function Chevere\Workflow\job;
