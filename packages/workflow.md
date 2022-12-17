@@ -22,9 +22,9 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/action.md) class name and its arguments.
+To create a Workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/action.md) class name and its arguments.
 
-In the example below, a workflow defines a podcast publishing procedure:
+In the example below, a Workflow describes a simple image uploading procedure.
 
 ```php
 use function Chevere\Workflow\job;
@@ -32,104 +32,56 @@ use function Chevere\Workflow\reference;
 use function Chevere\Workflow\variable;
 use function Chevere\Workflow\workflow;
 
-workflow(
-    process:
-        job(
-            ProcessPodcast::class,
-            payload: variable('payload')
-        ),
-    optimize:
-        job(
-            OptimizeFile::class,
-            file: reference('process', 'file')
-        ),
-    podcast:
-        job(
-            CreatePodcast::class,
-            file: reference('optimize', 'file',)
-            request: reference('process', 'request')
-        ),
-    releaseTransistorFm:
-        job(
-            ReleaseTransistorFM::class,
-            podcast: reference('podcast', 'object')
-        ),
-    releaseApple:
-        job(
-            ReleaseApple::class,
-            podcast: reference('podcast', 'object')
-        ),
-    createTranscript:
-        job(
-            CreateTranscript::class,
-            file: reference('optimize', 'file')
-        ),
-    translateTranscript:
-        job(
-            TranslateTranscript::class,
-            script: reference('createTranscript', 'script')
-        ),
-    notifications:
-        job(
-            NotifySubscribers::class,
-            podcast: reference('podcast', 'object'),
-        )
-        ->withDepends(
-            'releaseTransistorFm', 'releaseApple'
-        ),
-    tweet:
-        job(
-            SendReleaseTweet::class,
-            fm: reference('releaseTransistorFm', 'url'),
-            apple: reference('releaseApple', 'url'),
-        )
-        ->withDepends(
-            'translateTranscript',
-        ),
+$workflow = workflow(
+    getUser: job(
+        GetUser::class,
+        request: variable('payload')
+    ),
+    validate: job(
+        ValidateImage::class,
+        size: 100000,
+        mime: 'image/png',
+        file: variable('file')
+    ),
+    setName: job(
+        NameFile::class,
+        prefix: variable('timestamp'),
+    ),
+    store: job(
+        StoreFile::class,
+        file: variable('file'),
+        name: reference('setName:output')
+    ),
 );
 ```
 
-For the code above, `variable('payload')` declares a [workflow variable](#variables), the actual value for it should be provided at [WorkflowRun](#running-a-workflow) layer.
+For the code above, `variable('payload')`, `variable('file')` and `variable('timestamp')` declares a [Workflow variable](#variable) that will be passed when [running](#running-workflow) the Workflow. At `reference('setName:output')` it declares a [job reference](#reference) which uses the return value key `output` of `setName` Job.
 
-References to previous jobs as in `reference('process', 'file')` **implicit declare** that the given job depends on the previous Job `process` as it declares a [job reference](#job-reference).
-
-## Job
-
-The `Chevere/Workflow/Job` class defines an [Action](../library/action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
-
-👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`. See [Action](../library/action.md) component.
+The graph for the Workflow previously defined looks like this:
 
 ```php
-use function Chevere\Workflow\job;
-
-job(SomeAction::class, ...$namedArguments);
+//$workflow->jobs()->graph();
+[
+    ['getUser', 'validate', 'setName'],
+    ['store']
+];
 ```
 
-### Parameters
+The graph above says that `getUser`, `validate` and `setName` runs in parallel and `store` runs after `setName`. When using references it is implicit declared that the given job depends on the previous reference.
 
-Parameters for the job are defined in the [Action Run](../library/action.md#run) method.
-
-### Arguments
-
-Arguments can be passed on constructor using named arguments.
+To complete the example, here's how to [run](#running-workflow) the Workflow previously defined:
 
 ```php
-use function Chevere\Workflow\job;
+use function Chevere\Workflow\run;
 
-job(
-    SomeAction::class
-    firstName: 'Rodolfo',
-    lastName: 'Berrios'
-);
+run($workflow, [
+    'payload' => $_REQUEST,
+    'file' => '/path/to/file',
+    'timestamp' => time(),
+]);
 ```
 
-For the code above, arguments `Rodolfo` and `Berrios` will be passed to `SomeAction` when running the Workflow. These arguments will be matched against the Parameters defined at `SomeAction::run()`.
-
-### Variables & References
-
-Referenced arguments can be used to bind arguments against Workflow variables or responses returned by any previous Job.
-
-### Workflow variables
+## Variable
 
 A Workflow variable gets declared using function `variable`. This denotes a variable which must be injected by at Workflow run layer.
 
@@ -139,9 +91,9 @@ use function Chevere\Workflow\variable;
 variable('myVar');
 ```
 
-### Job reference
+### Reference
 
-A Job reference gets declared using function `reference`. This denotes a reference to a response key returned by a previous Job. 🦄 Workflow will **auto declare** the referenced Job as [dependency](#dependencies).
+A Job reference gets declared using function `reference`. This denotes a reference to a response key returned by a previous Job. It will **auto declare** the referenced Job as [dependency](#dependencies).
 
 ```php
 use function Chevere\Workflow\reference;
@@ -149,55 +101,95 @@ use function Chevere\Workflow\reference;
 reference(job: 'task', key: 'id');
 ```
 
-For the code above, the reference indicates that it will pass the value of key `id` for the job `task`.
+## Job
 
-### Dependencies
+The `Job` class defines an [Action](../library/action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
 
-Use `withDepends` method to explicit declare previous jobs as dependencies. The dependent job won't run until the dependencies are resolved.
+👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`. See the [Action](../library/action.md) component.
 
 ```php
 use function Chevere\Workflow\job;
 
-job(SomeAction::class)
-    ->withDepends('job1', 'job2');
+job(getOptions::class, ...$argument);
+```
+
+Argument can be passed passed "as-is", [variable](#variable) or [reference](#reference) on constructor using named arguments.
+
+```php
+job(
+    getOptions::class
+    repo: 'public',
+    role: variable('role'),
+    user: reference('getRate', 'hourly'),
+);
+```
+
+For the code above, argument `name` will be passed "as-is" (`Rodolfo`) to `SomeAction`, arguments `role` and `rate` will be dynamic provided. When running the Workflow these arguments will be matched against the Parameters defined at the [run](../library/action.md#run) method for `SomeAction`.
+
+### Conditional running
+
+Method `withRunIf` enables to pass arguments of type [variable](#variable) or [reference](#reference) for conditionally running a Job.
+
+```php
+job(
+    CompressImage::class,
+    file: variable('file')
+)
+    ->withRunIf(
+        variable('compress_images'),
+        reference('getOptions', 'image_compress')
+    )
+```
+
+For the code above, all conditions must meet to run the Job: The variable `compress_images` and the reference `getOptions:image_compress` must be `true`.
+
+### Dependencies
+
+Use `withDepends` method to explicit declare previous jobs as dependencies. The dependent Job won't run until the dependencies are resolved.
+
+```php
+job(SomeAction::class)->withDepends('job1', 'job2');
 ```
 
 ### Synchronous jobs
 
-Jobs will run in **parallel (async)** by default, must use `withIsSync` method to use sync processing for running a job. Sync Jobs will always run in sequence.
+Jobs will run in **parallel (async)** by default, must use `withIsSync` method to use sync processing for running a Job. Sync Jobs will always run in sequence.
 
 ```php
-use function Chevere\Workflow\job;
-
-job(SomeAction::class)
-    ->withIsSync();
+job(SomeAction::class)->withIsSync();
 ```
 
-## Running a Workflow
+## Running Workflow
 
-To run a Workflow use the `Chevere\Workflow\workflowRun` function:
+To run a Workflow use the `run` function by passing a Workflow and an `array` for its arguments (variables) if any.
+
+```php
+use function Chevere\Workflow\run;
+
+$run = run($workflow, $arguments);
+```
+
+Variable `$run` will be assigned to an object implementing `Interfaces\RunInterface`, which you can query for obtaining data from the workflow runtime.
+
+```php
+use Chevere\DataStructure\Interfaces\VectorInterface;
+use Chevere\Response\Interfaces\ResponseInterface;
+
+$run->keys(): array;
+$run->uuid(): string;
+$run->workflow(): WorkflowInterface;
+$run->arguments(): ArgumentsInterface;
+$run->skip(): VectorInterface;
+$run->getResponse(string $job): ResponseInterface;
+```
+
+### Injecting services
+
+Pass a [PSR-Container](../library/action.md#container) for injecting services that will be available at Action layer.
 
 ```php
 use Chevere\Container\Container;
-use function Chevere\Workflow\workflow;
-use function Chevere\Workflow\workflowRun;
 
-// Your Workflow:
-$workflow = workflow(/** ... **/);
-// Workflow variables:
-$vars = [
-    'payload' => 'the payload'
-];
-// A PSR-Container for jobs services
 $container = new Container();
-$run = workflowRun($workflow, $vars, $container);
-```
-
-Variable `$run` will be assigned to a `Chevere\Workflow\Interfaces\WorkflowRunInterface` object, which you can query for obtaining data from the workflow runtime.
-
-```php
-// TRUE if has a job named `my_job`.
-$run->has('my_job');
-// A response object for the job's.
-$run->get('my_job');
+$run = run($workflow, $arguments, $container);
 ```
