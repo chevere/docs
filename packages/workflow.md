@@ -118,13 +118,13 @@ Argument can be passed passed "as-is", [variable](#variable) or [reference](#ref
 ```php
 job(
     getOptions::class
-    repo: 'public',
+    context: 'public',
     role: variable('role'),
-    user: reference('getRate', 'hourly'),
+    userId: reference('getUser', 'id'),
 );
 ```
 
-For the code above, argument `name` will be passed "as-is" (`Rodolfo`) to `SomeAction`, arguments `role` and `rate` will be dynamic provided. When running the Workflow these arguments will be matched against the Parameters defined at the [run](../library/action.md#run) method for `SomeAction`.
+For the code above, argument `context` will be passed "as-is" (`public`) to `SomeAction`, arguments `role` and `userId` will be dynamic provided. When running the Workflow these arguments will be matched against the Parameters defined at the [run](../library/action.md#run) method for `SomeAction`.
 
 ### Conditional running
 
