@@ -55,7 +55,10 @@ $workflow = workflow(
 );
 ```
 
-For the code above, `variable('payload')`, `variable('file')` and `variable('timestamp')` declares a [Workflow variable](#variable) that will be passed when [running](#running-workflow) the Workflow. At `reference('setName:output')` it declares a [job reference](#reference) which uses the return value key `output` of `setName` Job.
+For the code above:
+
+* `variable('payload')`, `variable('file')` and `variable('timestamp')` declares a [Workflow variable](#variable) that will be passed when [running](#running-workflow) the Workflow.
+* At `reference('setName:output')` it declares a [job reference](#reference) which uses the return value key `output` of `setName` Job.
 
 The graph for the Workflow previously defined looks like this:
 
@@ -67,18 +70,21 @@ The graph for the Workflow previously defined looks like this:
 ];
 ```
 
-The graph above says that `getUser`, `validate` and `setName` runs in parallel and `store` runs after `setName`. When using references it is implicit declared that the given job depends on the previous reference.
+The graph above says that `getUser`, `validate` and `setName` runs in parallel, and `store` runs after `setName`. When using references it is implicit declared that the given Job depends on the previous reference.
 
 To complete the example, here's how to [run](#running-workflow) the Workflow previously defined:
 
 ```php
 use function Chevere\Workflow\run;
 
-run($workflow, [
-    'payload' => $_REQUEST,
-    'file' => '/path/to/file',
-    'timestamp' => time(),
-]);
+run(
+    workflow: $workflow,
+    arguments: [
+        'payload' => $_REQUEST,
+        'file' => '/path/to/file',
+        'timestamp' => time(),
+    ]
+);
 ```
 
 ## Variable
@@ -148,12 +154,12 @@ For the code above, all conditions must meet to run the Job: The variable `compr
 Use `withDepends` method to explicit declare previous jobs as dependencies. The dependent Job won't run until the dependencies are resolved.
 
 ```php
-job(SomeAction::class)->withDepends('job1', 'job2');
+job(SomeAction::class)->withDepends('jobName');
 ```
 
 ### Synchronous jobs
 
-Jobs will run in **parallel (async)** by default, must use `withIsSync` method to use sync processing for running a Job. Sync Jobs will always run in sequence.
+Jobs will run in **parallel (async)** by default. Use `withIsSync` method to use sync processing when running a Job. Sync Job will always run in sequence.
 
 ```php
 job(SomeAction::class)->withIsSync();
