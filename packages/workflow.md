@@ -34,21 +34,21 @@ use function Chevere\Workflow\workflow;
 
 $workflow = workflow(
     getUser: job(
-        GetUser::class,
+        new GetUser(),
         request: variable('payload')
     ),
     validate: job(
-        ValidateImage::class,
+        new ValidateImage(),
         size: 100000,
         mime: 'image/png',
         file: variable('file')
     ),
     setName: job(
-        NameFile::class,
+        new NameFile(),
         prefix: variable('timestamp'),
     ),
     store: job(
-        StoreFile::class,
+        new StoreFile(),
         file: variable('file'),
         name: reference('setName:output')
     ),
@@ -116,14 +116,14 @@ The `Job` class defines an [Action](../library/action.md) with arguments to pass
 ```php
 use function Chevere\Workflow\job;
 
-job(getOptions::class, ...$argument);
+job(new getOptions(), ...$argument);
 ```
 
 Argument can be passed passed "as-is", [variable](#variable) or [reference](#reference) on constructor using named arguments.
 
 ```php
 job(
-    getOptions::class
+    new getOptions()
     context: 'public',
     role: variable('role'),
     userId: reference('getUser', 'id'),
@@ -138,7 +138,7 @@ Method `withRunIf` enables to pass arguments of type [variable](#variable) or [r
 
 ```php
 job(
-    CompressImage::class,
+    new CompressImage(),
     file: variable('file')
 )
     ->withRunIf(
@@ -154,7 +154,7 @@ For the code above, all conditions must meet to run the Job: The variable `compr
 Use `withDepends` method to explicit declare previous jobs as dependencies. The dependent Job won't run until the dependencies are resolved.
 
 ```php
-job(SomeAction::class)->withDepends('jobName');
+job(new SomeAction())->withDepends('jobName');
 ```
 
 ### Synchronous jobs
@@ -162,7 +162,7 @@ job(SomeAction::class)->withDepends('jobName');
 Jobs will run in **parallel (async)** by default. Use `withIsSync` method to use sync processing when running a Job. Sync Job will always run in sequence.
 
 ```php
-job(SomeAction::class)->withIsSync();
+job(new SomeAction())->withIsSync();
 ```
 
 ## Running Workflow
