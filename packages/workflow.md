@@ -22,31 +22,35 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a Workflow define its named Jobs. A [Job](#job) is defined by passing an [Action](../library/action.md) object and its arguments.
+To create a Workflow define its named Jobs. A [Job](#job) is created by passing an [Action](../library/action.md) object and its arguments, which can be raw values [Variables](#variable) adn [References](#reference).
+
+### With Synchronous jobs
+
+A synchronous job block execution until it gets resolved. Use function `sync` to create a synchronous job.
 
 In the example below a Workflow describes an image uploading procedure.
 
 ```php
-use function Chevere\Workflow\job;
+use function Chevere\Workflow\sync;
 use function Chevere\Workflow\reference;
 use function Chevere\Workflow\variable;
 use function Chevere\Workflow\workflow;
 
 workflow(
-    user: job(
+    user: sync(
         new GetUser(),
         request: variable('payload')
     ),
-    validate: job(
+    validate: sync(
         new ValidateImage(),
         mime: 'image/png',
         file: variable('file')
     ),
-    meta: job(
+    meta: sync(
         new GetMeta(),
         file: variable('file'),
     ),
-    store: job(
+    store: sync(
         new StoreFile(),
         file: variable('file'),
         name: reference('meta:name'),
@@ -65,12 +69,14 @@ The graph for this Workflow looks like this:
 ```php
 //$workflow->jobs()->graph();
 [
-    ['user', 'validate', 'meta'],
+    ['user'],
+    ['validate'],
+    ['meta'],
     ['store']
 ];
 ```
 
-The graph above says that `user`, `validate` and `meta` runs in parallel, and `store` runs after `user` and `meta`. When using references is implicit declared that the given Job depends on the reference.
+The graph above says that all jobs run one after each other as all jobs are defined using `sync`.
 
 To complete the example, here's how to [Run](#running-workflow) the Workflow previously defined:
 
@@ -82,6 +88,74 @@ run(
     arguments: [
         'payload' => $_REQUEST,
         'file' => '/path/to/file',
+    ]
+);
+```
+
+### With Asynchronous jobs
+
+A asynchronous job runs non-blocking, in parallel. Use function `async` to create an asynchronous job.
+
+In the example below a Workflow describes an image creation procedure for multiple image sizes.
+
+```php
+use function Chevere\Workflow\sync;
+use function Chevere\Workflow\reference;
+use function Chevere\Workflow\variable;
+use function Chevere\Workflow\workflow;
+
+workflow(
+    thumb: async(
+        new ImageResize(),
+        image: variable('image'),
+        width: 100,
+        height: 100,
+        fit: 'thumb'
+    ),
+    medium: async(
+        new ImageResize(),
+        image: variable('image'),
+        width: 500,
+        fit: 'resizeByW'
+    ),
+    poster: async(
+        new ImageResize(),
+        image: variable('image'),
+        width: 1500,
+        fit: 'resizeByW'
+    ),
+    store: sync(
+        new StoreFiles(),
+        ...[
+            reference('thumb:filename'),
+            reference('medium:filename'),
+            reference('poster:filename'),
+        ]
+    ),
+);
+```
+
+The graph for this Workflow looks like this:
+
+```php
+//$workflow->jobs()->graph();
+[
+    ['thumb', 'medium', 'poster'],
+    ['store']
+];
+```
+
+The graph above says that `thumb`, `medium` and `poster` run in parallel non-blocking. Store runs blocking.
+
+To complete the example, here's how to [Run](#running-workflow) the Workflow previously defined:
+
+```php
+use function Chevere\Workflow\run;
+
+run(
+    workflow: $workflow,
+    arguments: [
+        'image' => '/path/to/file',
     ]
 );
 ```
