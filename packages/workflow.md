@@ -4,9 +4,9 @@
 
 Namespace `Chevere\Workflow`
 
-The Workflow package provides tooling for define an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to allow to abstract procedure instructions as logic units of interconnected independent async jobs.
+The Workflow package provides tooling for defining an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to abstract logic instructions as units of interconnected independent jobs.
 
-👏 With this package you can design a Workflow procedures in a similar fashion to GitHub Actions.
+👏 With this package you can design a workflow procedure in a similar fashion to GitHub Actions.
 
 ::: tip 💡 Workflow introduction
  Read [Workflow for PHP](https://rodolfoberrios.com/2022/04/09/workflow-php/) at Rodolfo's blog for a compressive introduction to this package.
@@ -22,9 +22,9 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a Workflow, define the Workflow named [jobs](#job). A job is defined by passing an [Action](../library/action.md) class name and its arguments.
+To create a Workflow define its named Jobs. A [Job](#job) is defined by passing an [Action](../library/action.md) object and its arguments.
 
-In the example below, a Workflow describes an image uploading procedure.
+In the example below a Workflow describes an image uploading procedure.
 
 ```php
 use function Chevere\Workflow\job;
@@ -32,47 +32,47 @@ use function Chevere\Workflow\reference;
 use function Chevere\Workflow\variable;
 use function Chevere\Workflow\workflow;
 
-$workflow = workflow(
-    getUser: job(
+workflow(
+    user: job(
         new GetUser(),
         request: variable('payload')
     ),
     validate: job(
         new ValidateImage(),
-        size: 100000,
         mime: 'image/png',
         file: variable('file')
     ),
-    setName: job(
-        new NameFile(),
-        prefix: variable('timestamp'),
+    meta: job(
+        new GetMeta(),
+        file: variable('file'),
     ),
     store: job(
         new StoreFile(),
         file: variable('file'),
-        name: reference('setName:output')
+        name: reference('meta:name'),
+        user: reference('user:output')
     ),
 );
 ```
 
 For the code above:
 
-* `variable('payload')`, `variable('file')` and `variable('timestamp')` declares a [Workflow variable](#variable) that will be passed when [running](#running-workflow) the Workflow.
-* At `reference('setName:output')` it declares a [job reference](#reference) which uses the return value key `output` of `setName` Job.
+* `variable('payload')` and `variable('file')` declares a [Variable](#variable).
+* `reference('meta:meta')` and `reference('user:output')` declares a [Reference](#reference).
 
-The graph for the Workflow previously defined looks like this:
+The graph for this Workflow looks like this:
 
 ```php
 //$workflow->jobs()->graph();
 [
-    ['getUser', 'validate', 'setName'],
+    ['user', 'validate', 'meta'],
     ['store']
 ];
 ```
 
-The graph above says that `getUser`, `validate` and `setName` runs in parallel, and `store` runs after `setName`. When using references it is implicit declared that the given Job depends on the previous reference.
+The graph above says that `user`, `validate` and `meta` runs in parallel, and `store` runs after `user` and `meta`. When using references is implicit declared that the given Job depends on the reference.
 
-To complete the example, here's how to [run](#running-workflow) the Workflow previously defined:
+To complete the example, here's how to [Run](#running-workflow) the Workflow previously defined:
 
 ```php
 use function Chevere\Workflow\run;
@@ -82,7 +82,6 @@ run(
     arguments: [
         'payload' => $_REQUEST,
         'file' => '/path/to/file',
-        'timestamp' => time(),
     ]
 );
 ```
@@ -126,7 +125,7 @@ job(
     new getOptions()
     context: 'public',
     role: variable('role'),
-    userId: reference('getUser', 'id'),
+    userId: reference('user', 'id'),
 );
 ```
 
