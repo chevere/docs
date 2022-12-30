@@ -94,7 +94,7 @@ run(
 
 ### With Asynchronous jobs
 
-A asynchronous job runs non-blocking, in parallel. Use function `async` to create an asynchronous job.
+A asynchronous job runs in paraller, non-blocking. Use function `async` to create an asynchronous job.
 
 In the example below a Workflow describes an image creation procedure for multiple image sizes.
 
@@ -126,11 +126,9 @@ workflow(
     ),
     store: sync(
         new StoreFiles(),
-        ...[
-            reference('thumb:filename'),
-            reference('medium:filename'),
-            reference('poster:filename'),
-        ]
+        reference('thumb:filename'),
+        reference('medium:filename'),
+        reference('poster:filename'),
     ),
 );
 ```
@@ -145,7 +143,7 @@ The graph for this Workflow looks like this:
 ];
 ```
 
-The graph above says that `thumb`, `medium` and `poster` run in parallel non-blocking. Store runs blocking.
+The graph above says that `thumb`, `medium` and `poster` run non-blocking. Job `store` runs blocking.
 
 To complete the example, here's how to [Run](#running-workflow) the Workflow previously defined:
 
@@ -184,19 +182,31 @@ reference(job: 'task', key: 'id');
 
 The `Job` class defines an [Action](../library/action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
 
-👉 The `action` parameter must be a class name implementing the `Chevere/Action/Interfaces/ActionInterface`. See the [Action](../library/action.md) component.
+👉 The `action` parameter must be a class name implementing the `ActionInterface`. See the [Action](../library/action.md) component.
+
+Argument can be passed passed "as-is", [variable](#variable) or [reference](#reference) on constructor using named arguments.
+
+### Synchronous Job
 
 ```php
 use function Chevere\Workflow\job;
 
-job(new getOptions(), ...$argument);
+sync(new SomeAction(), ...$argument);
 ```
 
-Argument can be passed passed "as-is", [variable](#variable) or [reference](#reference) on constructor using named arguments.
+### Asynchronous Job
 
 ```php
-job(
-    new getOptions()
+use function Chevere\Workflow\job;
+
+async(new SomeAction(), ...$argument);
+```
+
+### Job variables and references
+
+```php
+sync(
+    new SomeAction()
     context: 'public',
     role: variable('role'),
     userId: reference('user', 'id'),
@@ -207,20 +217,20 @@ For the code above, argument `context` will be passed "as-is" (`public`) to `Som
 
 ### Conditional running
 
-Method `withRunIf` enables to pass arguments of type [variable](#variable) or [reference](#reference) for conditionally running a Job.
+Method `withRunIf` enables to pass arguments of type [Variable](#variable) or [Reference](#reference) for conditionally running a Job.
 
 ```php
-job(
+sync(
     new CompressImage(),
     file: variable('file')
 )
     ->withRunIf(
-        variable('compress_images'),
-        reference('getOptions', 'image_compress')
+        variable('compressImage'),
+        reference('SomeAction', 'doImageCompress')
     )
 ```
 
-For the code above, all conditions must meet to run the Job: The variable `compress_images` and the reference `getOptions:image_compress` must be `true`.
+For the code above, all conditions must meet to run the Job: The variable `compressImage` and the reference `SomeAction:doImageCompress` must be `true`.
 
 ### Dependencies
 
@@ -228,14 +238,6 @@ Use `withDepends` method to explicit declare previous jobs as dependencies. The 
 
 ```php
 job(new SomeAction())->withDepends('jobName');
-```
-
-### Synchronous jobs
-
-Jobs will run in **parallel (async)** by default. Use `withIsSync` method to use sync processing when running a Job. Sync Job will always run in sequence.
-
-```php
-job(new SomeAction())->withIsSync();
 ```
 
 ## Running Workflow
