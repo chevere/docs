@@ -242,27 +242,15 @@ job(new SomeAction())->withDepends('jobName');
 
 ## Running Workflow
 
-To run a Workflow use the `run` function by passing a Workflow and an `array` for its arguments (variables) if any.
+To run a Workflow use the `run` function by passing a Workflow and an `array` for its variables (if any).
 
 ```php
 use function Chevere\Workflow\run;
 
-$run = run($workflow, $arguments);
+$run = run($workflow, $variables);
 ```
 
 Variable `$run` will be assigned to an object implementing `Interfaces\RunInterface`, which you can query for obtaining data from the workflow runtime.
-
-```php
-use Chevere\DataStructure\Interfaces\VectorInterface;
-use Chevere\Response\Interfaces\ResponseInterface;
-
-$run->keys(): array;
-$run->uuid(): string;
-$run->workflow(): WorkflowInterface;
-$run->arguments(): ArgumentsInterface;
-$run->skip(): VectorInterface;
-$run->getResponse(string $job): ResponseInterface;
-```
 
 ### Injecting services
 
@@ -272,5 +260,5 @@ Pass a [PSR-Container](../library/action.md#container) for injecting services th
 use Chevere\Container\Container;
 
 $container = new Container();
-$run = run($workflow, $arguments, $container);
+$run = run($workflow, $variables, $container);
 ```
