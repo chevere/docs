@@ -1,82 +1,84 @@
 # HttpController
 
-Namespace `Chevere\Controller`
+Namespace `Chevere\HttpController`
 
-The HttpController is a special [controller](controller.md) meant to be used in the context of HTTP requests. The HttpController extends Controller by adding request [parameters](parameter.md) (GET, POST, FILES) and Middleware.
+The HttpController component is a special [controller](controller.md) meant to be used in the context of HTTP requests. The HttpController extends Controller by adding request [parameters](parameter.md) (query string, body, files) and Middleware.
 
-All HttpController implement the `Interfaces\HttpControllerInterface`.
+HttpController implements the `Interfaces\HttpControllerInterface`.
 
-## Accept GET
+## Accept Query
 
-Define accepted parameters for GET using the `acceptGet` method.
+Define accepted parameters for query string using the `acceptQuery` method.
 
 ```php
 use function Chevere\Parameter\parameters;
-use function Chevere\Parameter\stringParameter;
+use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\stringp;
 
-public function acceptGet(): ParametersInterface
+public function acceptQuery(): ArrayTypeParameterInterface
 {
-    return parameters(
-        foo: stringParameter('/^[a-z]+$/'),
+    return arrayp(
+        foo: stringp('/^[a-z]+$/'),
     );
 }
 ```
 
-## Accept POST
+## Accept Body
 
-Define accepted parameters for POST using the `acceptPost` method.
+Define accepted parameters for body using the `acceptBody` method.
 
 ```php
 use function Chevere\Parameter\parameters;
-use function Chevere\Parameter\stringParameter;
+use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\stringp;
 
-public function acceptPost(): ParametersInterface
+public function acceptBody(): ArrayTypeParameterInterface
 {
-    return parameters(
-        bar: stringParameter('/^[1-9]+$/'),
+    return arrayp(
+        bar: stringp('/^[1-9]+$/'),
     );
 }
 ```
 
-## Accept FILES
+## Accept Files
 
 Define accepted parameters for FILES using the `acceptFiles` method.
 
 ```php
 
 use Chevere\Parameter\Interfaces\ArrayParameterInterface;
-use function Chevere\Parameter\arrayParameter;
-use function Chevere\Parameter\fileParameter;
+use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\filep;
 
-public function acceptFiles(): ArrayParameterInterface
+public function acceptFiles(): ArrayTypeParameterInterface
 {
-    return arrayParameter(
-        myFile: fileParameter(),
+    return arrayp(
+        myFile: filep(),
     );
 }
 ```
 
-## With GET
+## With Query
 
-Set GET parameters using the `withGet` method. It will only accept arguments complying with [Accept GET](#accept-get).
-
-```php
-$controller = $controller
-    ->withGet($_GET);
-```
-
-## With POST
-
-Set POST parameters using the `withPost` method. It will only accept arguments complying with [Accept POST](#accept-post).
+Set query parameters using the `withQuery` method. It will only accept arguments complying with [Accept Query](#accept-query).
 
 ```php
 $controller = $controller
-    ->withPost($_POST);
+    ->withQuery($_GET);
 ```
 
-## With FILES
+## With Body
 
-Set FILES parameters using the `withFiles` method. It will only accept arguments complying with [Accept FILES](#accept-files).
+Set body parameters using the `withBody` method. It will only accept arguments complying with [Accept Body](#accept-body).
+
+```php
+$controller = $controller
+    ->withBody($_POST);
+```
+
+## With Files
+
+Set files parameters using the `withFiles` method. It will only accept arguments complying with [Accept Files](#accept-files).
 
 ```php
 $controller = $controller
@@ -100,34 +102,28 @@ $controller = $controller
 
 Middleware priority goes from top to bottom, first in first out (FIFO).
 
-## GET
+## Query
 
-Use method `get` to read the GET parameters.
-
-```php
-$get = $controller->get();
-// within $this context:
-$this->get();
-```
-
-## POST
-
-Use method `post` to read the POST parameters.
+Use method `query` to read query parameters.
 
 ```php
-$post = $controller->post();
-// within $this context:
-$this->post();
+$query = $controller->query();
 ```
 
-## FILES
+## Body
 
-Use method `files` to read the FILES parameters.
+Use method `body` to read the body parameters.
+
+```php
+$post = $controller->body();
+```
+
+## Files
+
+Use method `files` to read the files parameters.
 
 ```php
 $files = $controller->files();
-// within $this context:
-$this->files();
 ```
 
 ## Middleware
