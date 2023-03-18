@@ -56,16 +56,17 @@ Attributes can be used to provide context for run parameters.
 
 ## Response Parameters
 
-The `getResponseParameters` method is used to define the parameters which will be checked against the response data provided in the [run](#run) method.
+The `acceptResponse` method is used to define the parameters which will be checked against the response data provided in the [run](#run) method.
 
 ```php
-use Chevere\Parameter\Interfaces\ParametersInterface;
+use Chevere\Parameter\Interfaces\ArrayTypeParameterInterface;
+use function Chevere\Parameter\arrayp;
 use function Chevere\Parameter\parameters;
 use function Chevere\Parameter\stringParameter;
 
-public function getResponseParameters(): ParametersInterface
+public function acceptResponse(): ArrayTypeParameterInterface
 {
-    return parameters(
+    return arrayp(
         email: stringParameter()
     );
 }
