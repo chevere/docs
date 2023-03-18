@@ -4,233 +4,317 @@ Namespace `Chevere\Parameter`
 
 The Parameter component is in charge of providing typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
 
-This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](type.md) component.
+This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](type.md) component. It enables to validate arguments and any data-structure.
 
 ## Array Parameter
 
-Use function `arrayParameter` to create a parameter of type `ArrayParameterInterface`.
+Use function `arrayp` to create a parameter of type `ArrayParameterInterface`. It uses named parameters to map validation for a fixed array.
 
 ```php
-Use function Chevere\Parameter\arrayParameter;
+use function Chevere\Parameter\arrayp;
 
-$array = arrayParameter();
+// Empty array
+$parameter = arrayp();
+// Array with 'a' key having any string value
+$parameter = arrayp(
+    a: stringp(),
+);
+```
+
+### Array assertion
+
+Use function `assertArray` to validate an array parameter against a fixed array argument.
+
+```php
+use function Chevere\Parameter\assertArray;
+
+$parameter = arrayp(
+    a: stringp(),
+    b: integerp(),
+);
+$argument = [
+    'a' => 'Hello world',
+    'b' => 123
+];
+assertArray($parameter, $argument);
 ```
 
 ## Boolean Parameter
 
-Use function `booleanParameter` to create a parameter of type `BooleanParameterInterface`.
+Use function `booleanp` to create a parameter of type `BooleanParameterInterface`.
 
 ```php
-Use function Chevere\Parameter\booleanParameter;
+use function Chevere\Parameter\booleanp;
 
-$boolean = booleanParameter();
+$parameter = booleanp();
+```
+
+### Boolean assertion
+
+Use function `assertBoolean` to validate a boolean parameter against a boolean argument.
+
+```php
+use function Chevere\Parameter\assertBoolean;
+
+$parameter = booleanp();
+$argument = true;
+assertBoolean($parameter, $argument);
 ```
 
 ## File Parameter
 
-Use function `fileParameter` to create a parameter of type `FileParameterInterface`.
+Use function `filep` to create a parameter of type `FileParameterInterface`.
 
 ```php
-Use function Chevere\Parameter\fileParameter;
-Use function Chevere\Parameter\stringParameter;
+use function Chevere\Parameter\filep;
 
-$file = fileParameter();
-$fileB = fileParameter(
-    name: stringParameter(),
-    size: integerParameter(
+// Any file
+$parameter = filep();
+```
+
+### File assertion
+
+Use function `assertFile` to validate a file parameter against a file argument.
+
+```php
+use function Chevere\Parameter\assertFile;
+
+$parameter = filep(
+    // Name starting with chevere
+    name: stringp('/^chevere/'),
+    // Limited range size
+    size: integerp(
         minimum: 1000,
         maximum: 500000
     ),
-    type: stringParameter(
-        '/^image\/*$/'
-    )
+    // Image types
+    type: stringp('/^image\/*$/')
 );
-```
+$argument = [
+    'name' => 'chevere.png',
+    'size' => 1234,
+    'type' => 'image/png'
 
-🪄 For the code above, `$fileB` parameter must meet the size requirement (bytes) and be of MIME type `image/*`.
+];
+assertFile($parameter, $argument);
+```
 
 ## Float Parameter
 
-Use function `floatParameter` to create a parameter of type `FloatParameterInterface`.
+Use function `floatp` to create a parameter of type `FloatParameterInterface`. A float parameter can have properties `minimum`, `maximum` and `accept`.
 
 ```php
-Use function Chevere\Parameter\floatParameter;
+use function Chevere\Parameter\floatp;
 
-$float = floatParameter();
+// Any float
+$float = floatp();
+// Limited range float
+$float = floatp(
+    minimum: 0,
+    maximum: 100
+);
+// Exact float match
+$float = floatp(
+    accept: [1, 2, 3]
+);
+```
+
+### Float assertion
+
+Use function `assertFloat` to validate a float parameter against a float argument.
+
+```php
+use function Chevere\Parameter\assertFloat;
+
+$parameter = floatp(
+    minimum: 0.0,
+    maximum: 10.0
+);
+$argument = 5.5;
+assertFloat($parameter, $argument);
+```
+
+## Generic Parameter
+
+Use function `genericp` to create a parameter of type `GenericParameterInterface`. A generic parameter is used to match a variable collection of `n-items`.
+
+```php
+use function Chevere\Parameter\genericp;
+
+// For a collection of integer keys
+// and string values
+$parameter = genericp(
+    stringp(),
+);
+```
+
+### Generic assertion
+
+Use function `assertGeneric` to validate a generic parameter against a generic argument.
+
+```php
+use function Chevere\Parameter\assertGeneric;
+
+$parameter = genericp(
+    K: integerp(minimum: 0),
+    V: arrayp(
+        id: stringp(),
+        name: stringp(),
+    ),
+);
+$argument = [
+    0 => [
+        'id' => '123e4567',
+        'name' => 'Rodolfo'
+    ],
+    1 => [
+        'id' => '123e4568',
+        'name' => 'Alejandro'
+    ],
+    // ...
+];
+assertGeneric($parameter, $argument);
 ```
 
 ## Integer Parameter
 
-Use function `integerParameter` to create a parameter of type `IntegerParameterInterface`.
+Use function `integerp` to create a parameter of type `IntegerParameterInterface`. An integer parameter can have properties `minimum`, `maximum` and `accept`.
 
 ```php
-Use function Chevere\Parameter\integerParameter;
+use function Chevere\Parameter\integerp;
 
-$integerA = integerParameter();
-$integerB = integerParameter(
+// Any integer
+$integer = integerp();
+// Limited range integer
+$integer = integerp(
     minimum: 0,
     maximum: 100
 );
-$integerC = integerParameter(
-    accept: [1,2,3]
+// Exact integer match
+$integer = integerp(
+    accept: [1, 2, 3]
 );
 ```
 
-🪄 For the code above, `$integerB` parameter must be between range `0,100` and for `$integerC` it will accept only values in `1,2,3`.
+### Integer assertion
+
+Use function `assertInteger` to validate an integer parameter against an integer argument.
+
+```php
+use function Chevere\Parameter\assertInteger;
+
+$parameter = integerp(
+    minimum: 0.0,
+    maximum: 10.0
+);
+$argument = 5.5;
+assertInteger($parameter, $argument);
+```
+
+## Null Parameter
+
+Use function `nullp` to create a parameter of type `NullParameterInterface`.
+
+```php
+use function Chevere\Parameter\nullp;
+
+$null = nullp();
+```
+
+### Null assertion
+
+Use function `assertNull` to validate a null parameter against a null argument.
+
+```php
+use function Chevere\Parameter\assertNull;
+
+$parameter = nullp();
+$argument = null;
+assertNull($parameter, $argument);
+```
 
 ## Object Parameter
 
-Use function `objectParameter` to create a parameter of type `ObjectParameterInterface`.
+Use function `objectp` to create a parameter of type `ObjectParameterInterface`.
 
 ```php
-Use function Chevere\Parameter\objectParameter;
+use function Chevere\Parameter\objectp;
 
-$object = objectParameter('className');
+$object = objectp(stdClass::class);
+```
+
+### Object assertion
+
+Use function `assertObject` to validate an object parameter against an object argument.
+
+```php
+use function Chevere\Parameter\assertObject;
+
+$parameter = objectp();
+$argument = new stdClass();
+assertObject($parameter, $argument);
 ```
 
 ## String Parameter
 
-Use function `stringParameter` to create a parameter of type `StringParameterInterface`.
+Use function `stringp` to create a parameter of type `StringParameterInterface`. A string parameter can define a `regex` for string matching.
 
 ```php
-use Chevere\Regex\Regex;
-Use function Chevere\Parameter\stringParameter;
+use function Chevere\Parameter\stringp;
 
-$string = stringParameter(
-    regex: '/^id-[\d]+$/'
+// Any string
+$parameter = stringp();
+// A string like id-123
+$string = stringp('/^id-[\d]+$/');
+```
+
+### String assertion
+
+Use function `assertString` to validate a string parameter against a string argument.
+
+```php
+use function Chevere\Parameter\assertString;
+
+$parameter = stringp('/^a|b|c$/');
+$argument = 'a';
+assertString($parameter, $argument);
+```
+
+## Union Parameter
+
+Use function `unionp` to create a parameter of type `UnionParameterInterface`. An union parameter works similar to PHP's union type as it enables to validate an argument against multiple types.
+
+```php
+use function Chevere\Parameter\unionp;
+
+// Any string or null
+$union = unionp(stringp(), nullp());
+// Any digit string or any integer
+$union = unionp(
+    stringp('/^\d+$/'),
+    integerp()
 );
 ```
 
-🪄 For the code above, `$string` parameter will require an argument like `id-123` to validate.
+### Union assertion
 
-## Parameters
-
-The `Parameters` component in charge of collecting objects implementing the `Interfaces/ParameterInterface`.
-
-### Creating Parameters
-
-Use function `parameters` to create a Parameters collection of required arguments.
+Use function `assertUnion` to validate an union parameter against a mixed argument.
 
 ```php
-use function Chevere\Parameter\parameters;
+use function Chevere\Parameter\assertUnion;
 
-$parameters = parameters(
-    id: $integer,
-);
+$union = unionp(stringp(), integerp());
+assertUnion($parameter, 'abc');
+assertUnion($parameter, 0);
 ```
 
-### Adding Required Parameters
+## Argument assertion
 
-The `withAddedRequired` method is used to add required parameters.
+Use function `assertArgument` to validate a parameter against an argument of any type. Useful when there's no certainty on the argument type.
 
 ```php
-$parameters = $parameters->withAddedRequired(
-    name: $string;
-);
+use function Chevere\Parameter\assertArgument;
+
+$parameter = stringp();
+assertArgument($parameter, $argument);
 ```
-
-### Adding Optional Parameters
-
-The `withAddedOptional` method is used to add optional parameters.
-
-```php
-$parameters = $parameters->withAddedOptional(
-    priority: $integer->withDefault(0)
-);
-```
-
-### Modifying Parameters
-
-The `withModify` method is used to modify parameters.
-
-```php
-use function Chevere\Parameter\integerParameter;
-
-$parameters = $parameters->withModify(
-    priority: $integer->withDefault(100)
-);
-```
-
-### Retrieving Parameters
-
-Use method `get` to retrieve a parameter identified by its name.
-
-```php
-use Chevere\Parameter\Interfaces\ParameterInterface;
-
-/** @var ParameterInterface **/
-$parameter = $parameters->get('name');
-```
-
-Use `get<Type>` methods to retrieve a typed parameter identified by its name.
-
-```php
-$array = $parameters->getArray('name');
-$boolean = $parameters->getBoolean('name');
-$file = $parameters->getFile('name');
-$float = $parameters->getFloat('name');
-$integer = $parameters->getInteger('name');
-$object = $parameters->getObject('name');
-$string = $parameters->getString('name');
-```
-
-The following methods are available to provide typed parameter retrieval:
-
-| Method       | Return type                 |
-| ------------ | --------------------------- |
-| `getArray`   | `ArrayParameterInterface`   |
-| `getBoolean` | `BooleanParameterInterface` |
-| `getFile`    | `FloatParameterInterface`   |
-| `getFloat`   | `FloatParameterInterface`   |
-| `getInteger` | `IntegerParameterInterface` |
-| `getString`  | `StringParameterInterface`  |
-
-## Arguments
-
-The `Arguments` component in charge of providing arguments matching the declared [Parameters](#parameters).
-
-```php
-use Chevere\Parameter\Arguments;
-use function Chevere\Parameter\parameters;
-use function Chevere\Parameter\integerParameter;
-
-$parameters = parameters(
-    id: integerParameter()
-);
-$data = ['id' => 123];
-$arguments = new Arguments($parameters, ...$data);
-```
-
-🪄 For the code above, if you pass `abc` instead of `123` the system will throw a `TypeException` as Arguments provide a type check layer for Parameters.
-
-### Retrieve an argument
-
-The `get` method is used to retrieve an argument "as-is", without type checking.
-
-```php
-/**
- * @var bool $argument
- */
-$argument = $arguments->get('name');
-```
-
-Use `get<Type>` methods for retrieving a typed argument.
-
-```php
-$argument = $arguments->get('name');
-$array = $arguments->getArray('name');
-$boolean = $arguments->getBoolean('name');
-$float = $arguments->getFloat('name');
-$integer = $arguments->getInteger('name');
-$string = $arguments->getString('name');
-```
-
-The following methods are available to provide typed argument retrieval:
-
-| Method       | Return type |
-| ------------ | ----------- |
-| `getArray`   | `array`     |
-| `getBoolean` | `boolean`   |
-| `getFloat`   | `float`     |
-| `getInteger` | `integer`   |
-| `getString`  | `string`    |
