@@ -1,8 +1,6 @@
 # Status
 
-The Chevere project is **production ready** and it can be safely used in production systems.
-
-Chevere releases are tagged as `0.x.y`, where increments on `x` denote API changes.
+The Chevere project is on version `3.0`.
 
 ## Get notified
 
