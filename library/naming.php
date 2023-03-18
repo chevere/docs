@@ -2,7 +2,6 @@
 
 return [
     'action.md' => 'Action',
-    'class-map.md' => 'ClassMap',
     'container.md' => 'Container',
     'controller.md' => 'Controller',
     'http-controller.md' => 'HttpController',
