@@ -4,26 +4,48 @@ Namespace `Chevere\Parameter`
 
 The Parameter component is in charge of providing typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
 
-This component enables to provide **dynamic** parameter-argument type matching relying on the [Type](type.md) component. It enables to validate arguments and any data-structure.
+This component provide dynamic parameter-argument type matching relying on the [Type](type.md) component. It enables to validate any type of arguments under any kind of data-structure.
 
 ## Array Parameter
 
-Use function `arrayp` to create a parameter of type `ArrayParameterInterface`. It uses named parameters to map validation for a fixed array.
+Use function `arrayp` to create an array parameter for required array keys, use function `arrayop` to create an array parameter for optional array keys. For both functions it returns an object implementing `ArrayParameterInterface`.
 
 ```php
 use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\arrayop;
 
 // Empty array
 $parameter = arrayp();
-// Array with 'a' key having any string value
-$parameter = arrayp(
-    a: stringp(),
-);
+// With required 'a' key
+$parameter = arrayp(a: stringp());
+// With optional 'a' key
+$parameter = arrayop(a: stringp());
 ```
+
+### With parameters
+
+Use method `withRequired` to define **required** parameters to an existing object implementing `ArrayParameterInterface`.
+
+```php
+$parameter = $parameter
+    ->withRequired(
+        username: stringp(),
+        email: stringp()
+    );
+```
+
+Use method `withOptional` to define **optional** parameters to an existing object implementing `ArrayParameterInterface`.
+
+```php
+$parameter = $parameter
+    ->withOptional(email: stringp());
+```
+
+👉 **Note:** Optional parameters will be validated only if a matching key is provided.
 
 ### Array assertion
 
-Use function `assertArray` to validate an array parameter against a fixed array argument.
+Use function `assertArray` to validate an array parameter against an array argument. It returns the *typed* array.
 
 ```php
 use function Chevere\Parameter\assertArray;
@@ -36,12 +58,26 @@ $argument = [
     'a' => 'Hello world',
     'b' => 123
 ];
-assertArray($parameter, $argument);
+$assert = assertArray($parameter, $argument);
+// $assert same as $argument
+```
+
+If you define a **default value** for any parameter the system will fill in that value when not provided.
+
+```php
+use function Chevere\Parameter\assertArray;
+
+$parameter = arrayp(
+    foo: integerp(default: 100),
+);
+$argument = [];
+$assert = assertArray($parameter, $argument);
+// $assert = ['foo' => 100];
 ```
 
 ## Boolean Parameter
 
-Use function `booleanp` to create a parameter of type `BooleanParameterInterface`.
+Use function `booleanp` to create a parameter implementing `BooleanParameterInterface`.
 
 ```php
 use function Chevere\Parameter\booleanp;
@@ -63,7 +99,7 @@ assertBoolean($parameter, $argument);
 
 ## File Parameter
 
-Use function `filep` to create a parameter of type `FileParameterInterface`.
+Use function `filep` to create a parameter implementing `FileParameterInterface`.
 
 ```php
 use function Chevere\Parameter\filep;
@@ -101,7 +137,7 @@ assertFile($parameter, $argument);
 
 ## Float Parameter
 
-Use function `floatp` to create a parameter of type `FloatParameterInterface`. A float parameter can have properties `minimum`, `maximum` and `accept`.
+Use function `floatp` to create a parameter implementing `FloatParameterInterface`. A float parameter can have properties `minimum`, `maximum` and `accept`.
 
 ```php
 use function Chevere\Parameter\floatp;
@@ -136,7 +172,7 @@ assertFloat($parameter, $argument);
 
 ## Generic Parameter
 
-Use function `genericp` to create a parameter of type `GenericParameterInterface`. A generic parameter is used to match a variable collection of `n-items`.
+Use function `genericp` to create a parameter implementing `GenericParameterInterface`. A generic parameter is used to match a variable collection of `n-items`.
 
 ```php
 use function Chevere\Parameter\genericp;
@@ -178,7 +214,7 @@ assertGeneric($parameter, $argument);
 
 ## Integer Parameter
 
-Use function `integerp` to create a parameter of type `IntegerParameterInterface`. An integer parameter can have properties `minimum`, `maximum` and `accept`.
+Use function `integerp` to create a parameter implementing `IntegerParameterInterface`. An integer parameter can have properties `minimum`, `maximum` and `accept`.
 
 ```php
 use function Chevere\Parameter\integerp;
@@ -213,7 +249,7 @@ assertInteger($parameter, $argument);
 
 ## Null Parameter
 
-Use function `nullp` to create a parameter of type `NullParameterInterface`.
+Use function `nullp` to create a parameter implementing `NullParameterInterface`.
 
 ```php
 use function Chevere\Parameter\nullp;
@@ -235,7 +271,7 @@ assertNull($parameter, $argument);
 
 ## Object Parameter
 
-Use function `objectp` to create a parameter of type `ObjectParameterInterface`.
+Use function `objectp` to create a parameter implementing `ObjectParameterInterface`.
 
 ```php
 use function Chevere\Parameter\objectp;
@@ -257,7 +293,7 @@ assertObject($parameter, $argument);
 
 ## String Parameter
 
-Use function `stringp` to create a parameter of type `StringParameterInterface`. A string parameter can define a `regex` for string matching.
+Use function `stringp` to create a parameter implementing `StringParameterInterface`. A string parameter can define a `regex` for string matching.
 
 ```php
 use function Chevere\Parameter\stringp;
@@ -282,7 +318,7 @@ assertString($parameter, $argument);
 
 ## Union Parameter
 
-Use function `unionp` to create a parameter of type `UnionParameterInterface`. An union parameter works similar to PHP's union type as it enables to validate an argument against multiple types.
+Use function `unionp` to create a parameter implementing `UnionParameterInterface`. An union parameter works similar to PHP's union type as it enables to validate an argument against multiple types.
 
 ```php
 use function Chevere\Parameter\unionp;
