@@ -6,8 +6,6 @@ Namespace `Chevere\Workflow`
 
 The Workflow package provides tooling for defining an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to abstract logic instructions as units of interconnected independent jobs.
 
-👏 With this package you can design a workflow procedure in a similar fashion to GitHub Actions.
-
 ::: tip 💡 Workflow introduction
  Read [Workflow for PHP](https://rodolfoberrios.com/2022/04/09/workflow-php/) at Rodolfo's blog for a compressive introduction to this package.
 :::
@@ -22,11 +20,11 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a Workflow define its named Jobs. A [Job](#job) is created by passing an [Action](../library/action.md) object and its arguments, which can be raw values [Variables](#variable) adn [References](#reference).
+To create a Workflow define its named Jobs. A [Job](#job) is created by passing an [Action](../library/action.md) object and its arguments, which can be raw values,  [Variables](#variable) and/or [References](#reference) to another job's output.
 
 ### With Synchronous jobs
 
-A synchronous job block execution until it gets resolved. Use function `sync` to create a synchronous job.
+Use function `sync` to create a synchronous job. A synchronous job block execution until it gets resolved.
 
 In the example below a Workflow describes an image uploading procedure.
 
@@ -59,12 +57,10 @@ workflow(
 );
 ```
 
-For the code above:
-
 * `variable('payload')` and `variable('file')` declares a [Variable](#variable).
 * `reference('meta:meta')` and `reference('user:output')` declares a [Reference](#reference).
 
-The graph for this Workflow looks like this:
+The graph for this Workflow says that all jobs run one after each other as all jobs are defined using `sync`.
 
 ```php
 //$workflow->jobs()->graph();
@@ -75,8 +71,6 @@ The graph for this Workflow looks like this:
     ['store']
 ];
 ```
-
-The graph above says that all jobs run one after each other as all jobs are defined using `sync`.
 
 To complete the example, here's how to [Run](#running-workflow) the Workflow previously defined:
 
@@ -94,7 +88,7 @@ run(
 
 ### With Asynchronous jobs
 
-A asynchronous job runs in paraller, non-blocking. Use function `async` to create an asynchronous job.
+Use function `async` to create an asynchronous job. An asynchronous job runs in parallel, non-blocking.
 
 In the example below a Workflow describes an image creation procedure for multiple image sizes.
 
@@ -133,7 +127,7 @@ workflow(
 );
 ```
 
-The graph for this Workflow looks like this:
+The graph for this Workflow says that `thumb`, `medium` and `poster` run non-blocking. Job `store` runs blocking (another node).
 
 ```php
 //$workflow->jobs()->graph();
@@ -142,8 +136,6 @@ The graph for this Workflow looks like this:
     ['store']
 ];
 ```
-
-The graph above says that `thumb`, `medium` and `poster` run non-blocking. Job `store` runs blocking.
 
 To complete the example, here's how to [Run](#running-workflow) the Workflow previously defined:
 
@@ -160,7 +152,7 @@ run(
 
 ## Variable
 
-A Workflow variable gets declared using function `variable`. This denotes a variable which must be injected by at Workflow run layer.
+Use function `variable` to declare a Workflow variable. This denotes a variable which must be injected by at Workflow run layer.
 
 ```php
 use function Chevere\Workflow\variable;
@@ -170,7 +162,7 @@ variable('myVar');
 
 ### Reference
 
-A Job reference gets declared using function `reference`. This denotes a reference to a response key returned by a previous Job. It will **auto declare** the referenced Job as [dependency](#dependencies).
+Use function `reference` to declare a Job reference. This denotes a reference to a response key returned by a previous Job. It will **auto declare** the referenced Job as [dependency](#dependencies).
 
 ```php
 use function Chevere\Workflow\reference;
@@ -180,11 +172,7 @@ reference(job: 'task', key: 'id');
 
 ## Job
 
-The `Job` class defines an [Action](../library/action.md) with arguments to pass, supporting direct arguments and variable references to previous jobs response keys.
-
-👉 The `action` parameter must be a class name implementing the `ActionInterface`. See the [Action](../library/action.md) component.
-
-Argument can be passed passed "as-is", [variable](#variable) or [reference](#reference) on constructor using named arguments.
+The `Job` class defines an [Action](../library/action.md) with arguments which can be passed passed "as-is", [variable](#variable) or [reference](#reference) on constructor using named arguments.
 
 ### Synchronous Job
 
@@ -208,7 +196,7 @@ async(new SomeAction(), ...$argument);
 sync(
     new SomeAction()
     context: 'public',
-    role: variable('role'),
+    role: variable('role'),This function can define `description`.
     userId: reference('user', 'id'),
 );
 ```
