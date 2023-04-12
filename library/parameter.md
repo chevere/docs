@@ -77,7 +77,7 @@ $assert = assertArray($parameter, $argument);
 
 ## Boolean Parameter
 
-Use function `booleanp` to create a parameter implementing `BooleanParameterInterface`.
+Use function `booleanp` to create a parameter implementing `BooleanParameterInterface`. This function can define `description` and a `default` value.
 
 ```php
 use function Chevere\Parameter\booleanp;
@@ -99,7 +99,7 @@ assertBoolean($parameter, $argument);
 
 ## File Parameter
 
-Use function `filep` to create a parameter implementing `FileParameterInterface`.
+Use function `filep` to create a parameter implementing `FileParameterInterface`. This function can define `description`, `name`, `type` and `tmp_name`.
 
 ```php
 use function Chevere\Parameter\filep;
@@ -137,7 +137,7 @@ assertFile($parameter, $argument);
 
 ## Float Parameter
 
-Use function `floatp` to create a parameter implementing `FloatParameterInterface`. A float parameter can have properties `minimum`, `maximum` and `accept`.
+Use function `floatp` to create a parameter implementing `FloatParameterInterface`. This function can define `description`, `default` value, `minimum` value, `maximum` value and a float list of `accept` values.
 
 ```php
 use function Chevere\Parameter\floatp;
@@ -172,7 +172,9 @@ assertFloat($parameter, $argument);
 
 ## Generic Parameter
 
-Use function `genericp` to create a parameter implementing `GenericParameterInterface`. A generic parameter is used to match a variable collection of `n-items`.
+Use function `genericp` to create a parameter implementing `GenericParameterInterface`. This function can define a parameter value `V` and parameter key `K`.
+
+💡 A generic parameter is used to match a variable collection of `n-items`.
 
 ```php
 use function Chevere\Parameter\genericp;
@@ -214,7 +216,7 @@ assertGeneric($parameter, $argument);
 
 ## Integer Parameter
 
-Use function `integerp` to create a parameter implementing `IntegerParameterInterface`. An integer parameter can have properties `minimum`, `maximum` and `accept`.
+Use function `integerp` to create a parameter implementing `IntegerParameterInterface`. This function can define `description`, `default` value, `minimum` value, `maximum` value and a integer list of `accept` values.
 
 ```php
 use function Chevere\Parameter\integerp;
@@ -249,7 +251,7 @@ assertInteger($parameter, $argument);
 
 ## Null Parameter
 
-Use function `nullp` to create a parameter implementing `NullParameterInterface`.
+Use function `nullp` to create a parameter implementing `NullParameterInterface`. This function can define `description`.
 
 ```php
 use function Chevere\Parameter\nullp;
@@ -271,7 +273,7 @@ assertNull($parameter, $argument);
 
 ## Object Parameter
 
-Use function `objectp` to create a parameter implementing `ObjectParameterInterface`.
+Use function `objectp` to create a parameter implementing `ObjectParameterInterface`. This function can define a `clasName` and a `description`.
 
 ```php
 use function Chevere\Parameter\objectp;
@@ -293,15 +295,59 @@ assertObject($parameter, $argument);
 
 ## String Parameter
 
-Use function `stringp` to create a parameter implementing `StringParameterInterface`. A string parameter can define a `regex` for string matching.
+Use function `stringp` to create a parameter implementing `StringParameterInterface`. This function can define a `regex` for string matching, a `description` and a `default` value.
 
 ```php
 use function Chevere\Parameter\stringp;
 
 // Any string
 $parameter = stringp();
-// A string like id-123
+// A string matching id-123
 $string = stringp('/^id-[\d]+$/');
+```
+
+### Enum string
+
+Use function `enump` to create an enum string parameter. This function takes strings used for the enumeration.
+
+```php
+use function Chevere\Parameter\enum;
+
+// A string matching on OR off
+$parameter = enum('on', 'off');
+```
+
+### Date string
+
+Use function `datep` to create a date string parameter for `YYYY-MM-DD`. This function can define `description` and a `default` value.
+
+```php
+use function Chevere\Parameter\datep;
+
+// A YYYY-MM-DD string
+$parameter = datep();
+```
+
+### Time string
+
+Use function `timep` to create a time string parameter for `hh:mm:ss`. This function can define `description` and a `default` value.
+
+```php
+use function Chevere\Parameter\timep;
+
+// A hh:mm:ss string
+$parameter = timep();
+```
+
+### Datetime string
+
+Use function `datetimep` to create a datetime string parameter for `YYYY-MM-DD hh:mm:ss`. This function can define `description` and a `default` value.
+
+```php
+use function Chevere\Parameter\datetimep;
+
+// A YYYY-MM-DD hh:mm:ss
+$parameter = datetimep();
 ```
 
 ### String assertion
