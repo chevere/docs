@@ -4,8 +4,8 @@ Chevere [milestones](https://github.com/chevere/chevere/milestones) and [release
 
 ## Stable
 
-Current stable version is `1.0`.
+Current stable version is `2.0`.
 
 ## Development
 
-Current development branch is `2.0`.
+Current development branch is `3.0`.
