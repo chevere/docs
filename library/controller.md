@@ -6,7 +6,7 @@ The Controller component is a special type of [Action](action.md) in charge of h
 
 Controller is intended to use them wired to:
 
-* Web Servers (see [HttpController](http-controller.md) and [Router](../packages/router.md))
+* Web Servers (see [Http](../packages/http.md) and [Router](../packages/router.md))
 * CLI applications
 * Application runners
 
@@ -28,7 +28,10 @@ final class SomeController extends Controller
 Parameters are defined in the `run` method, same as an [Action](action.md#run), but it just takes strings.
 
 ```php
-public function run(string $pepito, string $paysTwice): array
+public function run(
+    string $pepito,
+    string $paysTwice
+): array
 {
     // ...
 }
