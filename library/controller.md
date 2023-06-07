@@ -36,15 +36,15 @@ public function run(string $pepito, string $paysTwice): array
 
 ## Parameter Attribute
 
-Use [StringAttribute](attribute.md#stringattribute) to hint run parameters. This enables to validate these parameters against a [Regex](regex.md) match when using the [getResponse](action.md#get-response) method.
+Use [StringRegex](attribute.md#stringregex) to hint run parameters. This enables to validate these parameters against a [Regex](regex.md) match when using the [getResponse](action.md#get-response) method.
 
 ```php
-use Chevere\Attribute\StringAttribute;
+use Chevere\Attribute\StringRegex;
 
 public function run(
-    #[StringAttribute('/^[a-z]$/')]
+    #[StringRegex('/^[a-z]$/')]
     string $pepito,
-    #[StringAttribute('/^[a-zA-Z]+$/', 'What it does')]
+    #[StringRegex('/^[a-zA-Z]+$/', 'What it does')]
     string $paysTwice
 ): array
 {

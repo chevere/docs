@@ -96,16 +96,16 @@ route(
 ),
 ```
 
-At `ProductGetController` we define the regex for this `{id}` wildcard by using `StringAttribute` annotation.
+At `ProductGetController` we define the regex for this `{id}` wildcard by using `StringRegex` annotation.
 
 ```php
 use Chevere\Controller\HttpController;
-use Chevere\Parameter\Attributes\StringAttribute;
+use Chevere\Parameter\Attributes\StringRegex;
 
 class ProductGetController extends HttpController
 {
     public function run(
-        #[StringAttribute('/^[1-9]\d*/')]
+        #[StringRegex('/^[1-9]\d*/')]
         string $id
     ): array {
         // ...
