@@ -17,9 +17,9 @@ use function Chevere\Parameter\arrayop;
 // Empty array
 $parameter = arrayp();
 // With required 'a' key
-$parameter = arrayp(a: stringp());
+$parameter = arrayp(a: string());
 // With optional 'a' key
-$parameter = arrayop(a: stringp());
+$parameter = arrayop(a: string());
 ```
 
 ### With parameters
@@ -29,8 +29,8 @@ Use method `withRequired` to define **required** parameters to an existing objec
 ```php
 $parameter = $parameter
     ->withRequired(
-        username: stringp(),
-        email: stringp()
+        username: string(),
+        email: string()
     );
 ```
 
@@ -38,7 +38,7 @@ Use method `withOptional` to define **optional** parameters to an existing objec
 
 ```php
 $parameter = $parameter
-    ->withOptional(email: stringp());
+    ->withOptional(email: string());
 ```
 
 👉 **Note:** Optional parameters will be validated only if a matching key is provided.
@@ -51,8 +51,8 @@ Use function `assertArray` to validate an array parameter against an array argum
 use function Chevere\Parameter\assertArray;
 
 $parameter = arrayp(
-    a: stringp(),
-    b: integerp(),
+    a: string(),
+    b: integer(),
 );
 $argument = [
     'a' => 'Hello world',
@@ -68,7 +68,7 @@ If you define a **default value** for any parameter the system will fill in that
 use function Chevere\Parameter\assertArray;
 
 $parameter = arrayp(
-    foo: integerp(default: 100),
+    foo: integer(default: 100),
 );
 $argument = [];
 $assert = assertArray($parameter, $argument);
@@ -77,12 +77,12 @@ $assert = assertArray($parameter, $argument);
 
 ## Boolean Parameter
 
-Use function `booleanp` to create a parameter implementing `BooleanParameterInterface`. This function can define `description` and a `default` value.
+Use function `boolean` to create a parameter implementing `BooleanParameterInterface`. This function can define `description` and a `default` value.
 
 ```php
-use function Chevere\Parameter\booleanp;
+use function Chevere\Parameter\boolean;
 
-$parameter = booleanp();
+$parameter = boolean();
 ```
 
 ### Boolean assertion
@@ -92,20 +92,20 @@ Use function `assertBoolean` to validate a boolean parameter against a boolean a
 ```php
 use function Chevere\Parameter\assertBoolean;
 
-$parameter = booleanp();
+$parameter = boolean();
 $argument = true;
 assertBoolean($parameter, $argument);
 ```
 
 ## File Parameter
 
-Use function `filep` to create a parameter implementing `FileParameterInterface`. This function can define `description`, `name`, `type` and `tmp_name`.
+Use function `file` to create a parameter implementing `FileParameterInterface`. This function can define `description`, `name`, `type` and `tmp_name`.
 
 ```php
-use function Chevere\Parameter\filep;
+use function Chevere\Parameter\file;
 
 // Any file
-$parameter = filep();
+$parameter = file();
 ```
 
 ### File assertion
@@ -115,16 +115,16 @@ Use function `assertFile` to validate a file parameter against a file argument.
 ```php
 use function Chevere\Parameter\assertFile;
 
-$parameter = filep(
+$parameter = file(
     // Name starting with chevere
-    name: stringp('/^chevere/'),
+    name: string('/^chevere/'),
     // Limited range size
-    size: integerp(
+    size: integer(
         minimum: 1000,
         maximum: 500000
     ),
     // Image types
-    type: stringp('/^image\/*$/')
+    type: string('/^image\/*$/')
 );
 $argument = [
     'name' => 'chevere.png',
@@ -137,20 +137,20 @@ assertFile($parameter, $argument);
 
 ## Float Parameter
 
-Use function `floatp` to create a parameter implementing `FloatParameterInterface`. This function can define `description`, `default` value, `minimum` value, `maximum` value and a float list of `accept` values.
+Use function `float` to create a parameter implementing `FloatParameterInterface`. This function can define `description`, `default` value, `minimum` value, `maximum` value and a float list of `accept` values.
 
 ```php
-use function Chevere\Parameter\floatp;
+use function Chevere\Parameter\float;
 
 // Any float
-$float = floatp();
+$float = float();
 // Limited range float
-$float = floatp(
+$float = float(
     minimum: 0,
     maximum: 100
 );
 // Exact float match
-$float = floatp(
+$float = float(
     accept: [1, 2, 3]
 );
 ```
@@ -162,7 +162,7 @@ Use function `assertFloat` to validate a float parameter against a float argumen
 ```php
 use function Chevere\Parameter\assertFloat;
 
-$parameter = floatp(
+$parameter = float(
     minimum: 0.0,
     maximum: 10.0
 );
@@ -172,17 +172,17 @@ assertFloat($parameter, $argument);
 
 ## Generic Parameter
 
-Use function `genericp` to create a parameter implementing `GenericParameterInterface`. This function can define a parameter value `V` and parameter key `K`.
+Use function `generic` to create a parameter implementing `GenericParameterInterface`. This function can define a parameter value `V` and parameter key `K`.
 
 💡 A generic parameter is used to match a variable collection of `n-items`.
 
 ```php
-use function Chevere\Parameter\genericp;
+use function Chevere\Parameter\generic;
 
 // For a collection of integer keys
 // and string values
-$parameter = genericp(
-    stringp(),
+$parameter = generic(
+    string(),
 );
 ```
 
@@ -193,11 +193,11 @@ Use function `assertGeneric` to validate a generic parameter against a generic a
 ```php
 use function Chevere\Parameter\assertGeneric;
 
-$parameter = genericp(
-    K: integerp(minimum: 0),
+$parameter = generic(
+    K: integer(minimum: 0),
     V: arrayp(
-        id: stringp(),
-        name: stringp(),
+        id: string(),
+        name: string(),
     ),
 );
 $argument = [
@@ -216,20 +216,20 @@ assertGeneric($parameter, $argument);
 
 ## Integer Parameter
 
-Use function `integerp` to create a parameter implementing `IntegerParameterInterface`. This function can define `description`, `default` value, `minimum` value, `maximum` value and a integer list of `accept` values.
+Use function `integer` to create a parameter implementing `IntegerParameterInterface`. This function can define `description`, `default` value, `minimum` value, `maximum` value and a integer list of `accept` values.
 
 ```php
-use function Chevere\Parameter\integerp;
+use function Chevere\Parameter\integer;
 
 // Any integer
-$integer = integerp();
+$integer = integer();
 // Limited range integer
-$integer = integerp(
+$integer = integer(
     minimum: 0,
     maximum: 100
 );
 // Exact integer match
-$integer = integerp(
+$integer = integer(
     accept: [1, 2, 3]
 );
 ```
@@ -241,7 +241,7 @@ Use function `assertInteger` to validate an integer parameter against an integer
 ```php
 use function Chevere\Parameter\assertInteger;
 
-$parameter = integerp(
+$parameter = integer(
     minimum: 0.0,
     maximum: 10.0
 );
@@ -251,12 +251,12 @@ assertInteger($parameter, $argument);
 
 ## Null Parameter
 
-Use function `nullp` to create a parameter implementing `NullParameterInterface`. This function can define `description`.
+Use function `null` to create a parameter implementing `NullParameterInterface`. This function can define `description`.
 
 ```php
-use function Chevere\Parameter\nullp;
+use function Chevere\Parameter\null;
 
-$null = nullp();
+$null = null();
 ```
 
 ### Null assertion
@@ -266,19 +266,19 @@ Use function `assertNull` to validate a null parameter against a null argument.
 ```php
 use function Chevere\Parameter\assertNull;
 
-$parameter = nullp();
+$parameter = null();
 $argument = null;
 assertNull($parameter, $argument);
 ```
 
 ## Object Parameter
 
-Use function `objectp` to create a parameter implementing `ObjectParameterInterface`. This function can define a `clasName` and a `description`.
+Use function `object` to create a parameter implementing `ObjectParameterInterface`. This function can define a `clasName` and a `description`.
 
 ```php
-use function Chevere\Parameter\objectp;
+use function Chevere\Parameter\object;
 
-$object = objectp(stdClass::class);
+$object = object(stdClass::class);
 ```
 
 ### Object assertion
@@ -288,22 +288,22 @@ Use function `assertObject` to validate an object parameter against an object ar
 ```php
 use function Chevere\Parameter\assertObject;
 
-$parameter = objectp();
+$parameter = object();
 $argument = new stdClass();
 assertObject($parameter, $argument);
 ```
 
 ## String Parameter
 
-Use function `stringp` to create a parameter implementing `StringParameterInterface`. This function can define a `regex` for string matching, a `description` and a `default` value.
+Use function `string` to create a parameter implementing `StringParameterInterface`. This function can define a `regex` for string matching, a `description` and a `default` value.
 
 ```php
-use function Chevere\Parameter\stringp;
+use function Chevere\Parameter\string;
 
 // Any string
-$parameter = stringp();
+$parameter = string();
 // A string matching id-123
-$string = stringp('/^id-[\d]+$/');
+$string = string('/^id-[\d]+$/');
 ```
 
 ### Enum string
@@ -319,35 +319,35 @@ $parameter = enum('on', 'off');
 
 ### Date string
 
-Use function `datep` to create a date string parameter for `YYYY-MM-DD`. This function can define `description` and a `default` value.
+Use function `date` to create a date string parameter for `YYYY-MM-DD`. This function can define `description` and a `default` value.
 
 ```php
-use function Chevere\Parameter\datep;
+use function Chevere\Parameter\date;
 
 // A YYYY-MM-DD string
-$parameter = datep();
+$parameter = date();
 ```
 
 ### Time string
 
-Use function `timep` to create a time string parameter for `hh:mm:ss`. This function can define `description` and a `default` value.
+Use function `time` to create a time string parameter for `hh:mm:ss`. This function can define `description` and a `default` value.
 
 ```php
-use function Chevere\Parameter\timep;
+use function Chevere\Parameter\time;
 
 // A hh:mm:ss string
-$parameter = timep();
+$parameter = time();
 ```
 
 ### Datetime string
 
-Use function `datetimep` to create a datetime string parameter for `YYYY-MM-DD hh:mm:ss`. This function can define `description` and a `default` value.
+Use function `datetime` to create a datetime string parameter for `YYYY-MM-DD hh:mm:ss`. This function can define `description` and a `default` value.
 
 ```php
-use function Chevere\Parameter\datetimep;
+use function Chevere\Parameter\datetime;
 
 // A YYYY-MM-DD hh:mm:ss
-$parameter = datetimep();
+$parameter = datetime();
 ```
 
 ### String assertion
@@ -357,24 +357,24 @@ Use function `assertString` to validate a string parameter against a string argu
 ```php
 use function Chevere\Parameter\assertString;
 
-$parameter = stringp('/^a|b|c$/');
+$parameter = string('/^a|b|c$/');
 $argument = 'a';
 assertString($parameter, $argument);
 ```
 
 ## Union Parameter
 
-Use function `unionp` to create a parameter implementing `UnionParameterInterface`. An union parameter works similar to PHP's union type as it enables to validate an argument against multiple types.
+Use function `union` to create a parameter implementing `UnionParameterInterface`. An union parameter works similar to PHP's union type as it enables to validate an argument against multiple types.
 
 ```php
-use function Chevere\Parameter\unionp;
+use function Chevere\Parameter\union;
 
 // Any string or null
-$union = unionp(stringp(), nullp());
+$union = union(string(), null());
 // Any digit string or any integer
-$union = unionp(
-    stringp('/^\d+$/'),
-    integerp()
+$union = union(
+    string('/^\d+$/'),
+    integer()
 );
 ```
 
@@ -385,7 +385,7 @@ Use function `assertUnion` to validate an union parameter against a mixed argume
 ```php
 use function Chevere\Parameter\assertUnion;
 
-$union = unionp(stringp(), integerp());
+$union = union(string(), integer());
 assertUnion($parameter, 'abc');
 assertUnion($parameter, 0);
 ```
@@ -397,6 +397,6 @@ Use function `assertArgument` to validate a parameter against an argument of any
 ```php
 use function Chevere\Parameter\assertArgument;
 
-$parameter = stringp();
+$parameter = string();
 assertArgument($parameter, $argument);
 ```

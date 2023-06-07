@@ -9,4 +9,5 @@ return [
     'workflow.md' => 'Workflow',
     'xr.md' => 'XR Debug',
     'danky.md' => 'Danky',
+    'http.md' => 'Http',
 ];
