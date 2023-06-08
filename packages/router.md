@@ -21,7 +21,7 @@ composer require chevere/router
 ## Features
 
 * Define path, name, view, middleware and HTTP method to controller binding using named arguments.
-* HTTP method binding works with [HttpController](../library/http-controller.md) objects.
+* HTTP method binding works with [Controller](../library/http-controller.md) objects.
 * Wildcards (`{id}` in the code above) inherits regex from parameter attributes at controller layer.
   * Can be implicit (`{id}`) or explicit (`{id:[0-9]+}`).
   * Detects conflicts for all endpoints.
@@ -34,52 +34,72 @@ To create a Router, define a group name and its routes.
 
 In the example below, the `web` group defines two routes and its corresponding endpoints for [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) to HTTP controller binding. Another group `api`, defines routing for API endpoints.
 
-💡 Consider Router groups as namespaces, which resolves in the same website context.
+Consider Router groups as namespaces, which resolves in the same website context. HTTP method `HEAD` is automatic added when defining `GET`.
 
 ```php
+use function Chevere\Router\bind;
+use function Chevere\Router\route;
 use function Chevere\Router\router;
 use function Chevere\Router\routes;
-use function Chevere\Router\route;
 
 router(
     web: routes(
         route(
             path: '/',
-            GET: new HomeGetController(),
+            name: 'rootWeb',
+            GET: WebGetController::class,
         ),
         route(
-            path: '/product/{id}',
-            GET: new ProductGetController(),
-            POST: new ProductPostController(),
+            path: '/comment/{id}',
+            name: 'comment',
+            GET: CommentGetController::class,
+            POST: CommentPostController::class,
         ),
     ),
     api: routes(
         route(
             path: '/api',
-            GET: new ApiGetController(),
+            name: 'rootApi',
+            GET: ApiGetController::class,
         ),
         route(
-            path: '/api/product',
-            DELETE: new ApiDeleteProductController(),
+            path: '/api/order/{id}',
+            name: 'orders',
+            DELETE: bind(
+                OrderDeleteController::class,
+                OrderDeleteMiddleware::class
+            )
         ),
     )
 );
 ```
 
-🪄 HTTP method `HEAD` is automatic added when defining `GET`.
+## Bind
 
-## Routes
+Use function `bind` to create an object implementing `BindInterface`. This is used to bind Controller, Middleware and view for an endpoint.
 
-A Route is the building block for Router, on its most elemental representation it defines a path that will be routed to a HTTP endpoint.
+```php
+use function Chevere\Router\bind;
 
-In the example below, the [run method](../library/action.md#run) of `HomeGetController` will be executed when resolving requests to `/`.
+bind(
+    controller: MyController::class,
+    middleware: SomeMiddleware::class,
+    view: 'MyNamedView'
+);
+```
+
+## Route
+
+Route is the building block for Router, on its most elemental representation it defines a path that will be routed to a HTTP endpoint. In the example below, the [run method](../library/action.md#run) of `WebGetController` will be executed when resolving requests to `GET /`, after passing `CorsMiddleware`.
 
 ```php
 use function Chevere\Router\route;
 
 route(
     path: '/',
-    GET: new HomeGetController(),
+    name: 'rootWeb',
+    middleware: CorsMiddleware::class,
+    GET: WebGetController::class,
 );
 ```
 
@@ -92,17 +112,17 @@ use function Chevere\Router\route;
 
 route(
     path: '/product/{id}',
-    GET: new ProductGetController(),
+    GET: ProductGetController::class,
 ),
 ```
 
 At `ProductGetController` we define the regex for this `{id}` wildcard by using `StringRegex` annotation.
 
 ```php
-use Chevere\Controller\HttpController;
+use Chevere\Http\Controller;
 use Chevere\Parameter\Attributes\StringRegex;
 
-class ProductGetController extends HttpController
+class ProductGetController extends Controller
 {
     public function run(
         #[StringRegex('/^[1-9]\d*/')]
@@ -115,9 +135,9 @@ class ProductGetController extends HttpController
 
 For the request `/product/123` the system will first check match of `123` against `/^[1-9]\d*/` and then it will pass `123` to the `run` method. Requests failing to match the defined regex will throw a HTTP 404 error.
 
-### Additional attributes
+### Middleware
 
-Route may define **name** and **view** attributes. In the example below the Route at `/` gets a name and view binding.
+Route can define **HTTP Middleware**, which is a collection of objects implementing `Psr\Http\Server\MiddlewareInterface`. In the example below, `CheckAuthToken` determines the validity of the request and `RedirectIfLoggedIn` will redirect to another location (usually the user profile). Middleware can be also applied for each HTTP Controller binding using the [bind](#bind) function.
 
 ```php
 use Chevere\Controller\HttpMiddleware;
@@ -125,26 +145,27 @@ use function Chevere\Router\route;
 
 route(
     path: '/',
-    name: 'My Home',
-    view: 'home/default',
-    GET: new HomeGetController(),
+    middleware: middlewares(
+        CheckAuthToken::class,
+        RedirectIfLoggedIn::class,
+    ),
+    GET: bind(
+        controller: WebGetController::class,
+        middleware: RootLogger::class
+    ),
 );
 ```
 
-### Middleware
+### View
 
-Route can define **HTTP Middleware**, which is a collection of objects implementing `Psr\Http\Server\MiddlewareInterface`. In the example below, `CheckAuthToken` determines the validity of the request and `RedirectIfLoggedIn` will redirect to another location (usually the user profile).
+Route endpoints can define a view value by passing the `view` argument to the [bind](#bind) function.
 
 ```php
-use Chevere\Controller\HttpMiddleware;
-use function Chevere\Router\route;
-
 route(
     path: '/',
-    middleware: new HttpMiddleware(
-        new CheckAuthToken(),
-        new RedirectIfLoggedIn(),
+    GET: bind(
+        controller: WebGetController::class,
+        view: 'web-home'
     )
-    GET: new HomeGetController(),
 );
 ```
