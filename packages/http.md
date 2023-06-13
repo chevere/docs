@@ -6,6 +6,18 @@ Namespace `Chevere\Http`
 
 The Http package provides tooling for building HTTP components.
 
+::: tip 💡 Http introduction
+ Read [Chevere Http](https://rodolfoberrios.com/2023/06/13/http/) at Rodolfo's blog for a compressive introduction to this package.
+:::
+
+## Installing
+
+Http is available through [Packagist](https://packagist.org/packages/chevere/http) and the repository source is at [GitHub](https://github.com/chevere/http).
+
+```sh
+composer require chevere/http
+```
+
 ## Controller
 
 The Http Controller component is a special [controller](../library/controller.md) meant to be used in the context of HTTP requests. It extends [Action](../library/action.md) by adding request [parameters](../library/parameter.md) (query string, body, files) and attributes for statuses and headers.
