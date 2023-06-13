@@ -1,8 +1,10 @@
 # Http
 
+![Http](../src/packages/http/http-logo.svg)
+
 Namespace `Chevere\Http`
 
-The Http package provides tooling for building HTTP components according to [RFC 7231](https://tools.ietf.org/html/rfc7231).
+The Http package provides tooling for building HTTP components.
 
 ## Controller
 
@@ -147,6 +149,14 @@ use Chevere\Http\Controller;
 final class MyResourceGet extends Controller
 ```
 
+Use function `classHeaders` to get an array of Header attributes for a given class.
+
+```php
+use function Chevere\Http\classHeaders;
+
+classHeaders(MyResourceGet::class);
+```
+
 ### Status
 
 Status response codes can be defined using `Status` attribute by passing the primary known status code. Additional status codes can be passed.
@@ -157,6 +167,14 @@ use Chevere\Http\Controller;
 
 #[Status(200, 404)]
 final class MyResourceGet extends Controller
+```
+
+Use function `classStatus` to get the Status attribute of a given class.
+
+```php
+use function Chevere\Http\classStatus;
+
+classStatus(MyResourceGet::class);
 ```
 
 ## HTTP Methods
