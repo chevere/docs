@@ -77,7 +77,7 @@ The Schwager API spec has the following format:
 }
 ```
 
-## Creating API spec
+## Creating Spec
 
 To create an API spec pass an object implementing `RouterInterface` and a `DocumentSchema`. Optionally, you can provide one or more `ServerSchema` objects.
 
@@ -100,7 +100,7 @@ $server = new ServerSchema(
 $spec = new Spec($router, $document, $server);
 ```
 
-## Accessing API spec
+## Reading Spec
 
 Use method `toArray` to get the printer-ready array needed to export to other formats.
 
