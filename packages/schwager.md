@@ -115,6 +115,8 @@ The `arrayFilter*` functions provided by the [Standard](../library/standard.md) 
 To recursive filter the array by value `$v` and key `$k`:
 
 ```php
+use function Chevere\Standard\arrayFilterBoth;
+
 $array = arrayFilterBoth($spec->toArray(), function ($v, $k) {
     return match (true) {
         $v === null => false, // 1
