@@ -53,7 +53,7 @@ The Schwager API spec has the following format:
                     "query": {
                         <QUERY_SCHEMA>
                     },
-                    "response": {
+                    "responses": {
                         "<STATUS_CODE>": [
                             {
                                 "headers": {
