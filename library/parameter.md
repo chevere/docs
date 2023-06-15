@@ -8,18 +8,15 @@ This component provide dynamic parameter-argument type matching relying on the [
 
 ## Array Parameter
 
-Use function `arrayp` to create an array parameter for required array keys, use function `arrayop` to create an array parameter for optional array keys. For both functions it returns an object implementing `ArrayParameterInterface`.
+Use function `arrayp` to create an array parameter for required array keys.
 
 ```php
 use function Chevere\Parameter\arrayp;
-use function Chevere\Parameter\arrayop;
 
 // Empty array
 $parameter = arrayp();
 // With required 'a' key
 $parameter = arrayp(a: string());
-// With optional 'a' key
-$parameter = arrayop(a: string());
 ```
 
 ### With parameters
@@ -42,6 +39,19 @@ $parameter = $parameter
 ```
 
 👉 **Note:** Optional parameters will be validated only if a matching key is provided.
+
+### Array String
+
+Use function `arrayString` to create an array parameter for required array keys. It only supports string parameters.
+
+```php
+use function Chevere\Parameter\arrayString;
+use function Chevere\Parameter\string;
+
+$parameter = arrayString(
+    test: string(),
+);
+```
 
 ### Array assertion
 
