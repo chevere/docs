@@ -38,11 +38,11 @@ The Schwager API spec has the following general format:
             "name": "<PATH_NAME>",
             "group": "<PATH_GROUP>",
             "regex": "<PATH_REGEX>",
-            "wildcards": {
-                "<WILDCARD>": {
+            "variables": {
+                "<VARIABLE>": {
                     "type": "string",
-                    "description": "<WILDCARD_DESCRIPTION>",
-                    "regex": "<WILDCARD_REGEX>"
+                    "description": "<VARIABLE_DESCRIPTION>",
+                    "regex": "<VARIABLE_REGEX>"
                 }
             },
             "endpoints": {
@@ -57,6 +57,7 @@ The Schwager API spec has the following general format:
                     "responses": {
                         "<STATUS_CODE>": [
                             {
+                                "context": <RESPONSE_CONTEXT>,
                                 "headers": {
                                     <RESPONSE_HEADERS>
                                 },
@@ -100,13 +101,16 @@ For each path it takes the following properties:
 * `<PATH_GROUP>`
 * `<PATH_REGEX>`
 
-### Wildcards
+### Variables
 
-Path wildcards are mapped by name within the `wildcards` property. Wildcards, also known as path variables, are always of type string.
+Path variables are mapped by name within the `variables` property.
 
-* `<WILDCARD>`
-* `<WILDCARD_DESCRIPTION>`
-* `<WILDCARD_REGEX>`
+* `<VARIABLE>`
+
+For each variable it provides the following properties. Path variables are always of type string.
+
+* `<VARIABLE_DESCRIPTION>`
+* `<VARIABLE_REGEX>`
 
 ### Endpoints
 
@@ -172,6 +176,7 @@ Endpoint responses are mapped by status code within the `responses` property. St
 
 Schwager supports multiple responses for the same status code. For each response it provides the following properties:
 
+* `<RESPONSE_CONTEXT>`
 * `<RESPONSE_HEADERS>`
 * `<BODY_RESPONSE_SCHEMA>`
 

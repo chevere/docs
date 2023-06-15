@@ -22,10 +22,10 @@ composer require chevere/router
 
 * Define path, name, view, middleware and HTTP method to controller binding using named arguments.
 * HTTP method binding works with [Controller](../library/http-controller.md) objects.
-* Wildcards (`{id}` in the code above) inherits regex from parameter attributes at controller layer.
+* Path variables inherits regex from parameter attributes at controller layer.
   * Can be implicit (`{id}`) or explicit (`{id:[0-9]+}`).
   * Detects conflicts for all endpoints.
-* Supports route groups, define `web`, `api`, `admin` and any group you may need to add.
+* Supports route groups.
 * Supports [PSR middleware](https://www.php-fig.org/psr/psr-15/).
 
 ## Creating a Router
@@ -103,9 +103,9 @@ route(
 );
 ```
 
-### Wildcards
+### Variables
 
-Route path can define **wildcards**, enabling to pass dynamic route-path-based arguments to Controllers. In the example below, wildcard `{id}` determines a dynamic `run` argument for `ProductGetController`.
+Route path can define **variables**, enabling to pass dynamic route-path-based arguments to Controllers. In the example below, variable `{id}` determines a dynamic `run` argument for `ProductGetController`.
 
 ```php
 use function Chevere\Router\route;
@@ -116,7 +116,7 @@ route(
 ),
 ```
 
-At `ProductGetController` we define the regex for this `{id}` wildcard by using `StringRegex` annotation.
+At `ProductGetController` define the regex for this `{id}` variable by using `StringRegex` annotation.
 
 ```php
 use Chevere\Http\Controller;
