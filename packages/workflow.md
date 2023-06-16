@@ -36,20 +36,20 @@ use function Chevere\Workflow\workflow;
 
 workflow(
     user: sync(
-        new GetUser(),
+        GetUser::class,
         request: variable('payload')
     ),
     validate: sync(
-        new ValidateImage(),
+        ValidateImage::class,
         mime: 'image/png',
         file: variable('file')
     ),
     meta: sync(
-        new GetMeta(),
+        GetMeta::class,
         file: variable('file'),
     ),
     store: sync(
-        new StoreFile(),
+        StoreFile::class,
         file: variable('file'),
         name: reference('meta:name'),
         user: reference('user:output')
@@ -100,26 +100,26 @@ use function Chevere\Workflow\workflow;
 
 workflow(
     thumb: async(
-        new ImageResize(),
+        ImageResize::class,
         image: variable('image'),
         width: 100,
         height: 100,
         fit: 'thumb'
     ),
     medium: async(
-        new ImageResize(),
+        ImageResize::class,
         image: variable('image'),
         width: 500,
         fit: 'resizeByW'
     ),
     poster: async(
-        new ImageResize(),
+        ImageResize::class,
         image: variable('image'),
         width: 1500,
         fit: 'resizeByW'
     ),
     store: sync(
-        new StoreFiles(),
+        StoreFiles::class,
         reference('thumb:filename'),
         reference('medium:filename'),
         reference('poster:filename'),
@@ -179,7 +179,10 @@ The `Job` class defines an [Action](../library/action.md) with arguments which c
 ```php
 use function Chevere\Workflow\job;
 
-sync(new SomeAction(), ...$argument);
+sync(
+    SomeAction::class,
+    ...$argument
+);
 ```
 
 ### Asynchronous Job
@@ -187,14 +190,17 @@ sync(new SomeAction(), ...$argument);
 ```php
 use function Chevere\Workflow\job;
 
-async(new SomeAction(), ...$argument);
+async(
+    SomeAction::class,
+    ...$argument
+);
 ```
 
 ### Job variables and references
 
 ```php
 sync(
-    new SomeAction()
+    SomeAction::class
     context: 'public',
     role: variable('role'),This function can define `description`.
     userId: reference('user', 'id'),
@@ -209,7 +215,7 @@ Method `withRunIf` enables to pass arguments of type [Variable](#variable) or [R
 
 ```php
 sync(
-    new CompressImage(),
+    CompressImage::class,
     file: variable('file')
 )
     ->withRunIf(
@@ -225,7 +231,7 @@ For the code above, all conditions must meet to run the Job: The variable `compr
 Use `withDepends` method to explicit declare previous jobs as dependencies. The dependent Job won't run until the dependencies are resolved.
 
 ```php
-job(new SomeAction())->withDepends('jobName');
+job(SomeAction::class)->withDepends('jobName');
 ```
 
 ## Running Workflow
