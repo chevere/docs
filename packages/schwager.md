@@ -6,9 +6,9 @@ Namespace `Chevere\Schwager`
 
 The Schwager package provides an API spec generator for the [Router](router.md) package.
 
-<!-- ::: tip 💡 Schwager introduction
- Read [Schwager API](https://rodolfoberrios.com/404) at Rodolfo's blog for a compressive introduction to this package.
-::: -->
+::: tip 💡 Schwager introduction
+ Read [Schwager API](https://rodolfoberrios.com/2023/06/20/schwager-api/) at Rodolfo's blog for a compressive introduction to this package.
+:::
 
 ## Installing
 
