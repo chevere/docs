@@ -82,3 +82,60 @@ use function Chevere\Standard\getBits;
 $bits = getBits(7);
 // [1, 2, 4]
 ```
+
+## arrayChangeKey
+
+This function enables to change key(s) in an array.
+
+```php
+use function Chevere\Standard\arrayChangeKey;
+
+$array = [
+    'foo' => 1,
+];
+$change = arrayChangeKey($array, foo: 'baz');
+// ['baz' => 1]
+```
+
+## arrayPrefixKeys
+
+This function enables to prefix all keys in an array.
+
+```php
+use function Chevere\Standard\arrayPrefixKeys;
+
+$array = [
+    'foo' => 1,
+];
+$prefixed = arrayPrefixKeys($array, 'v.');
+// ['v.foo' => 1]
+```
+
+## arrayUnsetKey
+
+This function enables to unset key(s) in an array.
+
+```php
+use function Chevere\Standard\arrayUnsetKey;
+
+$array = [
+    'foo' => 1,
+];
+$unset = arrayUnsetKey($array, 'foo');
+// []
+```
+
+## arrayFromKey
+
+This function enables to create a new array by selecting key(s) in an array.
+
+```php
+use function Chevere\Standard\arrayFromKey;
+
+$array = [
+    'foo' => 1,
+    'bar' => 2,
+];
+$unset = arrayFromKey($array, 'foo');
+// ['foo' => 1]
+```
