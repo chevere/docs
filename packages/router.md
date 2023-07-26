@@ -116,16 +116,16 @@ route(
 ),
 ```
 
-At `ProductGetController` define the regex for this `{id}` variable by using `StringRegex` annotation.
+At `ProductGetController` define the regex for this `{id}` variable by using `Regex` annotation.
 
 ```php
 use Chevere\Http\Controller;
-use Chevere\Parameter\Attributes\StringRegex;
+use Chevere\Attributes\Regex;
 
 class ProductGetController extends Controller
 {
     public function run(
-        #[StringRegex('/^[1-9]\d*/')]
+        #[Regex('/^[1-9]\d*/')]
         string $id
     ): array {
         // ...
