@@ -19,64 +19,51 @@ final class SomeAction extends Action
 }
 ```
 
-## Description
-
-The `description` method is used to define the action description, a short summary explaining the purpose of the action.
-
-```php
-public static function description(): string
-{
-    return 'It gets the user email.';
-}
-```
-
-## Run
-
-The `run` method is used to define the logic that will be executed. The return type must be of type `array`.
-
-💡 You can define as many arguments you need, of any type.
-
-```php
-public function run(User $user): array
-{
-    // ...
-    return [
-        'email' => $user->email
-    ];
-}
-```
-
 ### Attributes
 
-Attributes can be used to provide context for run parameters.
+Attributes can be used to provide context for Action (class) and run method parameters.
 
 👉 Refer to [Attribute](attribute.md) for parameter attributes.
 
-## Response Parameters
+## Run
 
-The `acceptResponse` method is used to define the parameters which will be checked against the response data provided in the [run](#run) method.
+The `run` method is used to define the logic that will be executed. In the example below the `Regex` attribute adds input validation for email addresses on `@chevere.org` only.
 
 ```php
-use Chevere\Parameter\Interfaces\ArrayTypeParameterInterface;
-use function Chevere\Parameter\arrayp;
-use function Chevere\Parameter\parameters;
-use function Chevere\Parameter\string;
+use Chevere\Attributes\Regex;
 
-public function acceptResponse(): ArrayTypeParameterInterface
+protected function run(
+    #[Regex('/^[\w-\.]+@chevere\.org$/')]
+    string $email
+): int
 {
-    return arrayp(
-        email: string()
-    );
+    // ...
+    return $id;
 }
 ```
 
+## Response Parameters
+
+The `acceptResponse` method is used to define the parameter which will be checked against the response typed in the [run](#run) method.
+
+```php
+use Chevere\Parameter\Interfaces\ParameterInterface;
+use function Chevere\Parameter\integer;
+
+public static function acceptResponse(): ParameterInterface
+{
+    return integer(minimum: 1);
+}
+```
+
+The example above defines to accept a response of type integer with a minimum value of `1`. If `run` return is `0` if will raise an exception.
+
 ## Get Response
 
-Use `getResponse` method to **run the action** and return an object implementing `Chevere\Response\Interfaces\ResponseInterface`.
-
-All parameter checking will be executed on your behalf. Note: Do no use `run` as it won't perform any checking.
+Use `getResponse` method to **run the action**. It returns a `CastInterface` object.
 
 ```php
 $response = $action
-    ->getResponse(name: 'godlike');
+    ->getResponse(email: 'godlike@chevere.org');
+$string = $response->string();
 ```
