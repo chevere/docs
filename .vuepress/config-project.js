@@ -42,6 +42,7 @@ module.exports = {
     ],
     themeConfig: {
         logo: '/logo.svg',
+        pwa: false,
         repo: 'chevere/chevere',
         docsRepo: 'chevere/docs',
         docsBranch: 'main',
