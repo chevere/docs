@@ -2,9 +2,9 @@
 
 Namespace `Chevere\Parameter`
 
-The Parameter component is in charge of providing typed variable parameter support. Its purpose is to provide an abstraction layer around parameter-argument.
+The Parameter component is in charge of providing an user-land typed layer abstraction around parameter-argument. Intended to be used in I/O validation systems, this component provide dynamic parameter-argument type matching relying on the [Type](type.md) component.
 
-This component provide dynamic parameter-argument type matching relying on the [Type](type.md) component. It enables to validate any type of arguments under any kind of data-structure.
+To summarize, Parameter enables to validate any type of arguments for any kind of data-structure.
 
 ## Array Parameter
 
