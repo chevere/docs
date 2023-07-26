@@ -1,28 +1,101 @@
 # Attribute
 
-Namespace `Chevere\Attribute`
+Namespace `Chevere\Attribute` & `Chevere\Attribute`
 
-The Attribute component is in charge of providing [attributes](https://www.php.net/attribute).
+Chevere provides [attributes](https://www.php.net/attribute) which are used to provide extra context to several symbols.
 
-## StringRegex
+## Tools
 
-The `StringRegex` attribute provides context for parameters of type `string`, enabling to define a [Regex](regex.md) and a description.
+💡 At namespace `Chevere\Attribute` you can find tooling for working with attributes.
+
+### hasAttribute
+
+Use function `hasAttribute` to determine if a reflection has an attribute.
 
 ```php
-use Chevere\Attribute\StringRegex;
+use function Chevere\Attribute\hasAttribute;
 
-function mucho(
-    #[StringRegex('/^[0-9]{2}$/')]
+$boolean = hasAttribute($reflection, 'AttributeName');
+```
+
+### getAttribute
+
+Use function `getAttribute` to get an attribute.
+
+```php
+use function Chevere\Attribute\getAttribute;
+
+$attribute = getAttribute($reflection, 'AttributeName');
+```
+
+### getDescription
+
+Use function `getDescription` to get a [Description](#description) attribute.
+
+```php
+use function Chevere\Attribute\getDescription;
+
+$attribute = getDescription($reflection, 'AttributeName');
+```
+
+### getRegex
+
+Use function `getRegex` to get a [Regex](#regex) attribute.
+
+```php
+use function Chevere\Attribute\getRegex;
+
+$attribute = getRegex($reflection, 'AttributeName');
+```
+
+## Description
+
+The `Description` attribute enables to define something. use `getDescription` to read this attribute.
+
+```php
+use Chevere\Attributes\Regex;
+
+function myFunction(
+    #[Regex('/^[0-9]{2}$/')]
+    #[Description('Two digits')]
     string $id
-);
+): void {
+    // ..
+}
 
-function macho(
-    #[StringRegex('/^\W+$/', 'The name')]
-    string $name
-);
+class MyAction {
+    public function run(
+        #[Regex('/^\w+$/')]
+        #[Description('Any word character')]
+        string $name
+    ): array
+    {
+        // ...
+    }
+}
+```
 
-function man(
-    #[StringRegex(description: 'No time to talk')]
-    string $user
-);
+## Regex
+
+The `Regex` attribute enables to define [Regex](regex.md) for parameters of type `string`.
+
+```php
+use Chevere\Attributes\Regex;
+
+function myFunction(
+    #[Regex('/^[0-9]{2}$/')]
+    string $id
+): void {
+    // ..
+}
+
+class MyAction {
+    public function run(
+        #[Regex('/^\w+$/')]
+        string $name
+    ): array
+    {
+        // ...
+    }
+}
 ```
