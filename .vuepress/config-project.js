@@ -4,11 +4,7 @@ module.exports = {
     head: [
         ['link', {
             rel: 'icon',
-            href: `/logo.svg`
-        }],
-        ['link', {
-            rel: 'manifest',
-            href: '/manifest.json'
+            href: '/logo.svg'
         }],
         ['meta', {
             name: 'theme-color',
