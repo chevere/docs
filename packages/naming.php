@@ -7,7 +7,7 @@ return [
     'trace.md' => 'Trace',
     'var-dump.md' => 'VarDump',
     'workflow.md' => 'Workflow',
-    'xr.md' => 'XR Debug',
+    'xr.md' => 'xrDebug',
     'danky.md' => 'Danky',
     'http.md' => 'Http',
 ];

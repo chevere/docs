@@ -43,7 +43,7 @@ composer require --dev chevere/var-dump
   * Same as copy HTML text
 * HTML document
   * Colorful representation
-  * Portable (we also use it on [XR Debug](xr.md))
+  * Portable (also used on [xrDebug](xr.md))
 
 ## Helpers
 
