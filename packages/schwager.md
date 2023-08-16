@@ -48,21 +48,27 @@ The Schwager API spec has the following general format:
             "endpoints": {
                 "<METHOD>": {
                     "description": "<ENDPOINT_DESCRIPTION>",
-                    "body": {
-                        <REQUEST_BODY_SCHEMA>
-                    },
-                    "query": {
-                        <REQUEST_QUERY_SCHEMA>
+                    "request" : {
+                        "headers": {
+                            <REQUEST_HEADERS>
+                        },
+                        "query": {
+                            <REQUEST_QUERY_SCHEMA>
+                        },
+                        "body":  {
+                            <REQUEST_BODY_SCHEMA>
+                        },
+
                     },
                     "responses": {
                         "<STATUS_CODE>": [
                             {
-                                "context": <RESPONSE_CONTEXT>,
+                                "context": "<RESPONSE_CONTEXT>",
                                 "headers": {
                                     <RESPONSE_HEADERS>
                                 },
                                 "body": {
-                                    <BODY_RESPONSE_SCHEMA>
+                                    <RESPONSE_BODY_SCHEMA>
                                 }
                             },
                         ]
@@ -84,7 +90,7 @@ Properties for API identification.
 
 ### Servers
 
-The `servers` array indicate the server(s) available for interacting with the API. Useful for systems requiring sandbox and testing environments.
+The `servers` array indicate the server(s) available for interacting with the API.
 
 * `<SERVER_URL>`
 * `<SERVER_DESCRIPTION>`
@@ -117,60 +123,25 @@ For each variable it provides the following properties. Path variables are alway
 Path endpoints are mapped by HTTP method name within the `endpoints` property.
 
 * `<METHOD>`
-
-For each endpoint it provides the following properties:
-
 * `<ENDPOINT_DESCRIPTION>`
-* `<REQUEST_BODY_SCHEMA>`
+
+### Schemas
+
+The body schema `*_BODY_SCHEMA` describes the payload body. It supports [parameter](../library/parameter.md) schema of any type.
+
+The query schema `REQUEST_QUERY_SCHEMA` describes the request query string. It supports an array of [strings](../library/parameter.md#array-string).
+
+### Request
+
+Request metadata is taken from the [Request](./http.md#request) attribute
+
+* `<REQUEST_HEADERS>`
 * `<REQUEST_QUERY_SCHEMA>`
-
-### Body schema
-
-The body schema is defined by [Array Parameter](../library/parameter.md#array-parameter). It supports parameters of any type.
-
-```json
-{
-    "type": "array#map",
-    "description": "",
-    "default": null,
-    "parameters": {
-        "myParameter": {
-            "required": true,
-            "type": "float",
-            "description": "",
-            "default": null,
-            "minimum": 16.5,
-            "maximum": null,
-            "accept": [],
-        }
-    }
-}
-```
-
-### Query schema
-
-The query schema is defined by [Array String Parameter](../library/parameter.md#array-string). It only supports string types.
-
-```json
-{
-    "type": "array#map",
-    "description": "",
-    "default": null,
-    "parameters": {
-        "myParameter": {
-            "required": false,
-            "type": "string",
-            "description": "",
-            "default": null,
-            "regex": "^.*$",
-        }
-    }
-}
-```
+* `<REQUEST_BODY_SCHEMA>`
 
 ### Responses
 
-Endpoint responses are mapped by status code within the `responses` property. Status codes are taken from the [Status](./http.md#status) attribute, for both HTTP Controller and Middleware.
+Endpoint responses are mapped by status code within the `responses` property. Response metadata is taken from the [Response](./http.md#response) attribute
 
 * `<STATUS_CODE>`
 
@@ -179,14 +150,6 @@ Schwager supports multiple responses for the same status code. For each response
 * `<RESPONSE_CONTEXT>`
 * `<RESPONSE_HEADERS>`
 * `<BODY_RESPONSE_SCHEMA>`
-
-Response headers are taken from the [Headers](./http.md#header) attribute.
-
-```json
-{
-    "headerName" : "headerValue"
-}
-```
 
 ## Creating API spec
 

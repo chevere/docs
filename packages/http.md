@@ -146,47 +146,53 @@ Middleware priority goes from top to bottom, first in first out (FIFO).
 
 Use [attributes](https://www.php.net/manual/en/language.attributes.overview.php) to add context for [Controller](#controller) and [Middleware](#middleware).
 
-### Header
+### Request
 
-Response headers can be defined using `Header` attribute for each one of the header lines needed.
+Request metadata can be defined using the `Request` attribute. It supports to define multiple Header arguments.
 
 ```php
-use Chevere\Http\Attributes\Header;
+use Chevere\Http\Attributes\Request;
+use Chevere\Http\Header;
 use Chevere\Http\Controller;
 
-#[
-    Header('Content-Disposition', 'attachment'),
-    Header('Content-Type', 'application/json')
-]
+#[Request(
+    new Header('Accept', 'application/json'),
+    new Header('Connection', 'keep-alive')
+)]
 final class MyResourceGet extends Controller
 ```
 
-Use function `classHeaders` to get an array of Header attributes for a given class.
+Use function `getRequest` to read the `Request` attribute.
 
 ```php
-use function Chevere\Http\classHeaders;
+use function Chevere\Http\getRequest;
 
-classHeaders(MyResourceGet::class);
+getRequest(MyResourceGet::class);
 ```
 
-### Status
+### Response
 
-Status response codes can be defined using `Status` attribute by passing the primary known status code. Additional status codes can be passed.
+Response metadata can be defined using the `Response` attribute. It supports to define Status and multiple Header arguments.
 
 ```php
-use Chevere\Http\Attributes\Status;
+use Chevere\Http\Attributes\Response;
+use Chevere\Http\Header;
 use Chevere\Http\Controller;
 
-#[Status(200, 404)]
+#[Response(
+    new Status(200),
+    new Header('Content-Disposition', 'attachment'),
+    new Header('Content-Type', 'application/json')
+)]
 final class MyResourceGet extends Controller
 ```
 
-Use function `classStatus` to get the Status attribute of a given class.
+Use function `getResponse` to read the `Response` attribute.
 
 ```php
-use function Chevere\Http\classStatus;
+use function Chevere\Http\getResponse;
 
-classStatus(MyResourceGet::class);
+getResponse(MyResourceGet::class);
 ```
 
 ## HTTP Methods
