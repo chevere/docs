@@ -22,7 +22,7 @@ For the example above, the header comment and `strict_types` declaration are aut
 
 ### Extensions
 
-This is a list of the extensions that the main developer recommends for using Visual Studio Code for developing Chevere. None of these are required, but it will improve the development experience.
+This is a list of the extensions recommended when using Visual Studio Code for developing Chevere.
 
 * [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 * [PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver)

@@ -2,7 +2,7 @@
 
 ## Testing Software
 
-* Tests should be compatible with the latest [PHPUnit](https://phpunit.de/) production release.\
+* Tests should be compatible with latest [PHPUnit](https://phpunit.de/) production release.\
 * Code coverage requires to install [pcov](https://github.com/krakjoe/pcov).
 
 ## Requirements
