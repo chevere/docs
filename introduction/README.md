@@ -37,5 +37,4 @@ Chevere was created as the supporting framework for Chevereto, and Chevereto sup
 ## Sponsors
 
 * [JetBrains](https://www.jetbrains.com/opensource/) provides software licensing.
-* [Tinkerwell](https://tinkerwell.app/) provides software licensing.
 * [Algolia](https://algolia.com) provides the search feature for this documentation.
