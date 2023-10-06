@@ -60,7 +60,7 @@ The example above defines to accept a response of type integer with a minimum va
 
 ## Get Response
 
-Use `getResponse` method to **run the action**. It returns a `CastInterface` object.
+Use `getResponse` method to **run the action**. It returns a `CastArgumentInterface` object.
 
 ```php
 $response = $action

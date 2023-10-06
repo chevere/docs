@@ -20,7 +20,7 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a Workflow define its named Jobs. A [Job](#job) is created by passing an [Action](../library/action.md) object and its arguments, which can be raw values,  [Variables](#variable) and/or [References](#reference) to another job's output.
+To create a Workflow define its named Jobs. A [Job](#job) is created by passing an [Action](../library/action.md) name and its arguments, which can be raw values,  [Variables](#variable) and/or [References](#reference) to another job's output.
 
 ### With Synchronous jobs
 
