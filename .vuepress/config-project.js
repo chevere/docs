@@ -4,7 +4,7 @@ module.exports = {
     head: [
         ['link', {
             rel: 'icon',
-            href: '/logo.svg'
+            href: '/logo.png'
         }],
         ['meta', {
             name: 'theme-color',
@@ -20,16 +20,7 @@ module.exports = {
         }],
         ['link', {
             rel: 'apple-touch-icon',
-            href: '/logo.svg'
-        }],
-        ['link', {
-            rel: 'mask-icon',
-            href: '/logo.svg',
-            color: '#2a97ff'
-        }],
-        ['meta', {
-            name: 'msapplication-TileImage',
-            content: '/logo.svg'
+            href: '/logo.png'
         }],
         ['meta', {
             name: 'msapplication-TileColor',
