@@ -20,11 +20,50 @@ composer require chevere/workflow
 
 ## Creating a Workflow
 
-To create a Workflow define its named Jobs. A [Job](#job) is created by passing an [Action](../library/action.md) name and its arguments, which can be raw values,  [Variables](#variable) and/or [References](#reference) to another job's output.
+To create a Workflow define its named Jobs.
 
-### With Synchronous jobs
+A [Job](#job) is created by passing an [Action](../library/action.md) and its *expected* run arguments which can be raw values,  [Variables](#variable) and/or [References](#reference) to another job's output.
 
-Use function `sync` to create a synchronous job. A synchronous job block execution until it gets resolved.
+The syntax for writing Workflow jobs require `name` for job's name, `sync/async` depending on job run method, and named `parameter` bding for each Action run parameter.
+
+```plain
+<name>: <sync|async>(
+    <action>,
+    <parameter>: <variable|reference|raw>,
+)
+```
+
+For example, for the given `MyAction` action:
+
+```php
+use function Chevere\Action\Action;
+
+class MyAction extends Action
+{
+    protected function run(string $foo, string $bar): array
+    {
+        return [];
+    }
+}
+```
+
+You would be able to write Workflows like this:
+
+```php
+use function Chevere\Workflow\sync;
+
+workflow(
+    greet: sync(
+        new MyAction(),
+        foo: variable('super'),
+        bar: variable('taldo'),
+    )
+);
+```
+
+### With synchronous jobs
+
+Use function `sync` to create a synchronous job, which block execution until it gets resolved.
 
 In the example below a Workflow describes an image uploading procedure.
 
@@ -36,34 +75,34 @@ use function Chevere\Workflow\workflow;
 
 workflow(
     user: sync(
-        GetUser::class,
+        new GetUser(),
         request: variable('payload')
     ),
     validate: sync(
-        ValidateImage::class,
+        new ValidateImage(),
         mime: 'image/png',
         file: variable('file')
     ),
     meta: sync(
-        GetMeta::class,
+        new GetMeta(),
         file: variable('file'),
     ),
     store: sync(
-        StoreFile::class,
+        new StoreFile(),
         file: variable('file'),
-        name: reference('meta:name'),
-        user: reference('user:output')
+        name: reference('meta', 'name'),
+        user: reference('user')
     ),
 );
 ```
 
 * `variable('payload')` and `variable('file')` declares a [Variable](#variable).
-* `reference('meta:meta')` and `reference('user:output')` declares a [Reference](#reference).
+* `reference('meta', 'name')` and `reference('user')` declares a [Reference](#reference).
 
 The graph for this Workflow says that all jobs run one after each other as all jobs are defined using `sync`.
 
 ```php
-//$workflow->jobs()->graph();
+//$workflow->jobs()->graph()->toArray();
 [
     ['user'],
     ['validate'],
@@ -86,9 +125,9 @@ run(
 );
 ```
 
-### With Asynchronous jobs
+### With asynchronous jobs
 
-Use function `async` to create an asynchronous job. An asynchronous job runs in parallel, non-blocking.
+Use function `async` to create an asynchronous job, which runs in parallel non-blocking.
 
 In the example below a Workflow describes an image creation procedure for multiple image sizes.
 
@@ -100,37 +139,33 @@ use function Chevere\Workflow\workflow;
 
 workflow(
     thumb: async(
-        ImageResize::class,
+        new ImageResize(),
         image: variable('image'),
         width: 100,
         height: 100,
         fit: 'thumb'
     ),
     medium: async(
-        ImageResize::class,
+        new ImageResize(),
         image: variable('image'),
         width: 500,
         fit: 'resizeByW'
     ),
-    poster: async(
-        ImageResize::class,
-        image: variable('image'),
-        width: 1500,
-        fit: 'resizeByW'
-    ),
     store: sync(
-        StoreFiles::class,
-        reference('thumb:filename'),
-        reference('medium:filename'),
-        reference('poster:filename'),
+        new StoreFiles(),
+        reference('thumb', 'filename'),
+        reference('medium', 'filename'),
     ),
 );
 ```
 
-The graph for this Workflow says that `thumb`, `medium` and `poster` run non-blocking. Job `store` runs blocking (another node).
+* `variable('image')` declares a [Variable](#variable).
+* `reference('thumb', 'filename')` and `reference('medium', 'filename')` declares a [Reference](#reference).
+
+The graph for this Workflow says that `thumb` and `medium` run non-blocking. Job `store` runs blocking (another node).
 
 ```php
-//$workflow->jobs()->graph();
+//$workflow->jobs()->graph()->toArray();
 [
     ['thumb', 'medium', 'poster'],
     ['store']
@@ -160,38 +195,48 @@ use function Chevere\Workflow\variable;
 variable('myVar');
 ```
 
-### Reference
+## Reference
 
-Use function `reference` to declare a Job reference. This denotes a reference to a response key returned by a previous Job. It will **auto declare** the referenced Job as [dependency](#dependencies).
+Use function `reference` to declare a Job reference. This denotes a reference to a response returned by a previous Job.
+
+🪄 When using a reference it will **auto declare** the referenced Job as [dependency](#dependencies).
 
 ```php
 use function Chevere\Workflow\reference;
 
-reference(job: 'task', key: 'id');
+reference(job: 'task');
+```
+
+References can be also made on a response member identified by `key`.
+
+```php
+use function Chevere\Workflow\reference;
+
+reference(job: 'task', key: 'name');
 ```
 
 ## Job
 
 The `Job` class defines an [Action](../library/action.md) with arguments which can be passed passed "as-is", [variable](#variable) or [reference](#reference) on constructor using named arguments.
 
-### Synchronous Job
+### Synchronous job
 
 ```php
 use function Chevere\Workflow\job;
 
 sync(
-    SomeAction::class,
+    new SomeAction(),
     ...$argument
 );
 ```
 
-### Asynchronous Job
+### Asynchronous job
 
 ```php
 use function Chevere\Workflow\job;
 
 async(
-    SomeAction::class,
+    new SomeAction(),
     ...$argument
 );
 ```
@@ -200,22 +245,22 @@ async(
 
 ```php
 sync(
-    SomeAction::class
+    new SomeAction(),
     context: 'public',
-    role: variable('role'),This function can define `description`.
+    role: variable('role'),
     userId: reference('user', 'id'),
 );
 ```
 
 For the code above, argument `context` will be passed "as-is" (`public`) to `SomeAction`, arguments `role` and `userId` will be dynamic provided. When running the Workflow these arguments will be matched against the Parameters defined at the [run](../library/action.md#run) method for `SomeAction`.
 
-### Conditional running
+### Run if
 
 Method `withRunIf` enables to pass arguments of type [Variable](#variable) or [Reference](#reference) for conditionally running a Job.
 
 ```php
 sync(
-    CompressImage::class,
+    new CompressImage(),
     file: variable('file')
 )
     ->withRunIf(
@@ -224,14 +269,15 @@ sync(
     )
 ```
 
-For the code above, all conditions must meet to run the Job: The variable `compressImage` and the reference `SomeAction:doImageCompress` must be `true`.
+For the code above, all conditions must meet to run the Job and both variable `compressImage` and the reference `SomeAction:doImageCompress` must be `true` to run the job.
 
 ### Dependencies
 
 Use `withDepends` method to explicit declare previous jobs as dependencies. The dependent Job won't run until the dependencies are resolved.
 
 ```php
-job(SomeAction::class)->withDepends('jobName');
+job(new SomeAction())
+    ->withDepends('jobName');
 ```
 
 ## Running Workflow
@@ -245,14 +291,3 @@ $run = run($workflow, $variables);
 ```
 
 Variable `$run` will be assigned to an object implementing `Interfaces\RunInterface`, which you can query for obtaining data from the workflow runtime.
-
-### Injecting services
-
-Pass a [PSR-Container](../library/action.md#container) for injecting services that will be available at Action layer.
-
-```php
-use Chevere\Container\Container;
-
-$container = new Container();
-$run = run($workflow, $variables, $container);
-```
