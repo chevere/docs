@@ -12,5 +12,18 @@ features:
   details: A general purpose tooling plus nifty packages.
 - title: Modern & High-quality
   details: All-new PHP ocho codebase with strict standards.
-footer: Chevere Software
 ---
+
+::: slot footer
+Apache 2.0 Licensed | Copyright © [Rodolfo Berrios](https://rodolfoberrios.com)
+:::
+
+# Quick start
+
+* Install using [Composer](https://packagist.org/packages/chevere/chevere)
+
+```php
+composer require chevere/chevere
+```
+
+* Use any library component in your code
