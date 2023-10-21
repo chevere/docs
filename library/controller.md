@@ -17,7 +17,7 @@ A Controller implements the `Interfaces\ControllerInterface`. You can extend `Co
 ```php
 use Chevere\Controller\Controller;
 
-final class SomeController extends Controller
+class SomeController extends Controller
 {
     // ...
 }

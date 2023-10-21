@@ -159,7 +159,7 @@ use Chevere\Http\Controller;
     new Header('Accept', 'application/json'),
     new Header('Connection', 'keep-alive')
 )]
-final class MyResourceGet extends Controller
+class MyResourceGet extends Controller
 ```
 
 Use function `getRequest` to read the `Request` attribute.
@@ -184,7 +184,7 @@ use Chevere\Http\Controller;
     new Header('Content-Disposition', 'attachment'),
     new Header('Content-Type', 'application/json')
 )]
-final class MyResourceGet extends Controller
+class MyResourceGet extends Controller
 ```
 
 Use function `getResponse` to read the `Response` attribute.

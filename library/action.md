@@ -13,7 +13,7 @@ An action implements the `Interfaces\ActionInterface`.
 ```php
 use Chevere\Action\Action;
 
-final class SomeAction extends Action
+class SomeAction extends Action
 {
     // ...
 }
