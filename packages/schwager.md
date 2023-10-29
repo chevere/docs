@@ -4,15 +4,15 @@
 
 Namespace `Chevere\Schwager`
 
-The Schwager package provides an API spec generator for the [Router](router.md) package.
+The Schwager package provides an API spec generator for the [Router](router.md) package. The complementary package [chevere/schwager-html](https://github.com/chevere/schwager-html) enables to create an HTML representation for Schwager.
 
 ::: tip 💡 Schwager introduction
- Read [Schwager API](https://rodolfoberrios.com/2023/06/20/schwager-api/) at Rodolfo's blog for a compressive introduction to this package.
+Read [Schwager API](https://rodolfoberrios.com/2023/06/20/schwager-api/) and [Schwager HTML](https://rodolfoberrios.com/2023/10/28/schwager-html/) at Rodolfo's blog for a compressive introduction to this package.
 :::
 
 ## Installing
 
-Schwager is available through [Packagist](https://packagist.org/packages/chevere/schwager) and the repository source is at [GitHub](https://github.com/chevere/schwager).
+Schwager is available through [Packagist](https://packagist.org/packages/chevere/schwager) and the repository source is at [chevere/schwager](https://github.com/chevere/schwager).
 
 ```sh
 composer require chevere/schwager
@@ -174,8 +174,6 @@ $server = new ServerSchema(
 $spec = new Spec($router, $document, $server);
 ```
 
-## Reading API spec
-
 Use method `toArray` to get the printer-ready array needed to export to other formats.
 
 ```php
@@ -184,37 +182,37 @@ $array = $spec->toArray();
 
 ## Filtering result
 
-The `arrayFilter*` functions provided by the [Standard](../library/standard.md) component can become handy to modify and/or filter the generated API spec. This is useful to remove `null` values, empty strings and redundant information.
+The `arrayFilter*` functions provided by the [Standard](../library/standard.md) component enable to modify and/or filter the generated API spec. This is useful to remove `null` values, empty strings and context-aware redundant information.
 
-To recursive filter the array by value `$v` and key `$k`:
+For example to recursive filter the array by value `$v` and key `$k`:
 
 ```php
 use function Chevere\Standard\arrayFilterBoth;
 
 $array = arrayFilterBoth($spec->toArray(), function ($v, $k) {
     return match (true) {
-        $v === null => false, // 1
-        $v === [] => false, // 2
-        $v === '' => false, // 3
-        $k === 'required' && $v === true => false, // 4
-        $k === 'regex' && $v === '^.*$' => false, // 5
-        $k === 'body' && $v === [ // 6
+        $v === null => false,
+        $v === [] => false,
+        $v === '' => false,
+        $k === 'required' && $v === true => false,
+        $k === 'regex' && $v === '^.*$' => false,
+        $k === 'body' && $v === [
             'type' => 'array#map',
         ] => false,
-        default => true, // 7
+        default => true,
     };
 });
 ```
 
-The `match` used in the code above indicates that:
+The `match` used in the code above indicates that for every key value pair:
 
-* `1` Remove if the value is `null`
-* `2` Remove if the value is `[]`
-* `3` Remove if the value is empty string
-* `4` Remove if the key is `required` and value is `true`
-* `5` Remove if the key is `regex` and value is `^.*$`
-* `6` Remove if the key is `body` and value is `['type' => 'array#map']`
-* `7` Keep everything else
+* Remove if the value is `null`
+* Remove if the value is `[]`
+* Remove if the value is empty string
+* Remove if the key is `required` and value is `true`
+* Remove if the key is `regex` and value is `^.*$`
+* Remove if the key is `body` and value is `['type' => 'array#map']`
+* (default) Keep as is
 
 For cases `1,2,3` the removal is for empty values while for cases `4,5,6` is because of redundant info.
 
