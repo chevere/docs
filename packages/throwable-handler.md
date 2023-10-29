@@ -12,7 +12,7 @@ The ThrowableHandler package provides handling for [throwable](https://www.php.n
 
 ## Installing
 
-ThrowableHandler is available through [Packagist](https://packagist.org/packages/chevere/throwable-handler) and the repository source is at [GitHub](https://github.com/chevere/throwable-handler).
+ThrowableHandler is available through [Packagist](https://packagist.org/packages/chevere/throwable-handler) and the repository source is at [chevere/throwable-handle](https://github.com/chevere/throwable-handler).
 
 ```sh
 composer require chevere/throwable-handler

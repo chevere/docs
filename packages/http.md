@@ -12,7 +12,7 @@ The Http package provides tooling for building HTTP components.
 
 ## Installing
 
-Http is available through [Packagist](https://packagist.org/packages/chevere/http) and the repository source is at [GitHub](https://github.com/chevere/http).
+Http is available through [Packagist](https://packagist.org/packages/chevere/http) and the repository source is at [chevere/http](https://github.com/chevere/http).
 
 ```sh
 composer require chevere/http

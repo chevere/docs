@@ -12,7 +12,7 @@ The VarDump package provides an alternative to [var_dump](https://www.php.net/va
 
 ## Installing
 
-VarDump is available through [Packagist](https://packagist.org/packages/chevere/var-dump) and the repository source is at [GitHub](https://github.com/chevere/var-dump).
+VarDump is available through [Packagist](https://packagist.org/packages/chevere/var-dump) and the repository source is at [chevere/var-dump](https://github.com/chevere/var-dump).
 
 ```sh
 composer require --dev chevere/var-dump

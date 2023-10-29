@@ -14,7 +14,7 @@ The Danky package provides a typed PHP template system.
 
 ## Installing
 
-Danky is available through [Packagist](https://packagist.org/packages/chevere/danky) and the repository source is at [GitHub](https://github.com/chevere/danky).
+Danky is available through [Packagist](https://packagist.org/packages/chevere/danky) and the repository source is at [chevere/danky](https://github.com/chevere/danky).
 
 ```sh
 composer require chevere/danky

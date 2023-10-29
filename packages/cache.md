@@ -8,7 +8,7 @@ The Cache package provides a filesystem-based cache for PHP. Its purpose is to e
 
 ## Installing
 
-Cache is available through [Packagist](https://packagist.org/packages/chevere/cache) and the repository source is at [GitHub](https://github.com/chevere/cache).
+Cache is available through [Packagist](https://packagist.org/packages/chevere/cache) and the repository source is at [chevere/cache](https://github.com/chevere/cache).
 
 ```sh
 composer require chevere/cache
