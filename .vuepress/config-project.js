@@ -33,7 +33,7 @@ module.exports = {
         repo: 'chevere/chevere',
         docsRepo: 'chevere/docs',
         docsBranch: 'main',
-        smoothScroll: true,
+        smoothScroll: false,
         editLinks: true,
         lastUpdated: true,
         algolia: {
