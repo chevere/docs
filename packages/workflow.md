@@ -12,7 +12,7 @@ The Workflow package provides tooling for defining an execution procedure based 
 
 ## Installing
 
-Workflow is available through [Packagist](https://packagist.org/packages/chevere/workflow) and the repository source is at [GitHub](https://github.com/chevere/workflow).
+Workflow is available through [Packagist](https://packagist.org/packages/chevere/workflow) and the repository source is at [chevere/workflow](https://github.com/chevere/workflow).
 
 ```sh
 composer require chevere/workflow
@@ -69,7 +69,7 @@ In the example below a Workflow describes an image uploading procedure.
 
 ```php
 use function Chevere\Workflow\sync;
-use function Chevere\Workflow\reference;
+use function Chevere\Workflow\response;
 use function Chevere\Workflow\variable;
 use function Chevere\Workflow\workflow;
 
@@ -90,14 +90,14 @@ workflow(
     store: sync(
         new StoreFile(),
         file: variable('file'),
-        name: reference('meta', 'name'),
-        user: reference('user')
+        name: response('meta', 'name'),
+        user: response('user')
     ),
 );
 ```
 
 * `variable('payload')` and `variable('file')` declares a [Variable](#variable).
-* `reference('meta', 'name')` and `reference('user')` declares a [Reference](#reference).
+* `response('meta', 'name')` and `reference('user')` declares a [Response](#response) reference.
 
 The graph for this Workflow says that all jobs run one after each other as all jobs are defined using `sync`.
 
@@ -117,11 +117,9 @@ To complete the example, here's how to [Run](#running-workflow) the Workflow pre
 use function Chevere\Workflow\run;
 
 run(
-    workflow: $workflow,
-    arguments: [
-        'payload' => $_REQUEST,
-        'file' => '/path/to/file',
-    ]
+    $workflow,
+    payload: $_REQUEST,
+    file: '/path/to/file',
 );
 ```
 
@@ -133,7 +131,7 @@ In the example below a Workflow describes an image creation procedure for multip
 
 ```php
 use function Chevere\Workflow\sync;
-use function Chevere\Workflow\reference;
+use function Chevere\Workflow\response;
 use function Chevere\Workflow\variable;
 use function Chevere\Workflow\workflow;
 
@@ -153,14 +151,14 @@ workflow(
     ),
     store: sync(
         new StoreFiles(),
-        reference('thumb', 'filename'),
-        reference('medium', 'filename'),
+        response('thumb', 'filename'),
+        response('medium', 'filename'),
     ),
 );
 ```
 
 * `variable('image')` declares a [Variable](#variable).
-* `reference('thumb', 'filename')` and `reference('medium', 'filename')` declares a [Reference](#reference).
+* `response('thumb', 'filename')` and `response('medium', 'filename')` declares a [Response](#response) reference.
 
 The graph for this Workflow says that `thumb` and `medium` run non-blocking. Job `store` runs blocking (another node).
 
@@ -195,29 +193,29 @@ use function Chevere\Workflow\variable;
 variable('myVar');
 ```
 
-## Reference
+## Response
 
-Use function `reference` to declare a Job reference. This denotes a reference to a response returned by a previous Job.
+Use function `response` to declare a Job response reference to a response returned by a previous Job.
 
 🪄 When using a reference it will **auto declare** the referenced Job as [dependency](#dependencies).
 
 ```php
-use function Chevere\Workflow\reference;
+use function Chevere\Workflow\response;
 
-reference(job: 'task');
+response(job: 'task');
 ```
 
 References can be also made on a response member identified by `key`.
 
 ```php
-use function Chevere\Workflow\reference;
+use function Chevere\Workflow\response;
 
-reference(job: 'task', key: 'name');
+response(job: 'task', key: 'name');
 ```
 
 ## Job
 
-The `Job` class defines an [Action](../library/action.md) with arguments which can be passed passed "as-is", [variable](#variable) or [reference](#reference) on constructor using named arguments.
+The `Job` class defines an [Action](../library/action.md) with arguments which can be passed passed "as-is", [variable](#variable) or [response](#response) on constructor using named arguments.
 
 ### Synchronous job
 
@@ -248,15 +246,15 @@ sync(
     new SomeAction(),
     context: 'public',
     role: variable('role'),
-    userId: reference('user', 'id'),
+    userId: response('user', 'id'),
 );
 ```
 
 For the code above, argument `context` will be passed "as-is" (`public`) to `SomeAction`, arguments `role` and `userId` will be dynamic provided. When running the Workflow these arguments will be matched against the Parameters defined at the [run](../library/action.md#run) method for `SomeAction`.
 
-### Run if
+### Conditional running
 
-Method `withRunIf` enables to pass arguments of type [Variable](#variable) or [Reference](#reference) for conditionally running a Job.
+Method `withRunIf` enables to pass arguments of type [Variable](#variable) or [Response](#response) for conditionally running a Job.
 
 ```php
 sync(
@@ -277,7 +275,7 @@ Use `withDepends` method to explicit declare previous jobs as dependencies. The 
 
 ```php
 job(new SomeAction())
-    ->withDepends('jobName');
+    ->withDepends('myJob');
 ```
 
 ## Running Workflow
@@ -287,7 +285,11 @@ To run a Workflow use the `run` function by passing a Workflow and an `array` fo
 ```php
 use function Chevere\Workflow\run;
 
-$run = run($workflow, $variables);
+$run = run($workflow, ...$variables);
 ```
 
-Variable `$run` will be assigned to an object implementing `Interfaces\RunInterface`, which you can query for obtaining data from the workflow runtime.
+Use `getResponse` to retrieve a job response as a `CastArgument` object which can be used to get a typed response.
+
+```php
+$string = $run->getResponse('myJob')->string();
+```
