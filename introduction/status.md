@@ -1,6 +1,6 @@
 # Status
 
-The Chevere project is on version `3.0`.
+The Chevere project is on version `4`.
 
 ## Get notified
 
