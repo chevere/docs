@@ -106,45 +106,7 @@ $parameter = boolean();
 $argument = true;
 assertBoolean($parameter, $argument);
 ```
-
-## File Parameter
-
-Use function `file` to create a parameter implementing `FileParameterInterface`. This function can define `description`, `name`, `type` and `tmp_name`.
-
-```php
-use function Chevere\Parameter\file;
-
-// Any file
-$parameter = file();
-```
-
-### File assertion
-
-Use function `assertFile` to validate a file parameter against a file argument.
-
-```php
-use function Chevere\Parameter\assertFile;
-
-$parameter = file(
-    // Name starting with chevere
-    name: string('/^chevere/'),
-    // Limited range size
-    size: integer(
-        minimum: 1000,
-        maximum: 500000
-    ),
-    // Image types
-    type: string('/^image\/*$/')
-);
-$argument = [
-    'name' => 'chevere.png',
-    'size' => 1234,
-    'type' => 'image/png'
-
-];
-assertFile($parameter, $argument);
-```
-
+˝
 ## Float Parameter
 
 Use function `float` to create a parameter implementing `FloatParameterInterface`. This function can define `description`, `default` value, `minimum` value, `maximum` value and a float list of `accept` values.
