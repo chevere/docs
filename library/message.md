@@ -2,111 +2,27 @@
 
 Namespace `Chevere\Message`
 
-The Message component allows to create messages with rich formatting support for console, HTML and plain text.
+The Message component allows to create markdown messages with template support.
 
 ## Creating a Message
 
-A Message is created by passing a Message template. In the code below a new Message is created with `Hello, %to%!`.
-
-```php
-use Chevere\Message\Message;
-use function Chevere\Message\message;
-
-$message = new Message('Hello, %to%!');
-// It can be also created with:
-$message = message('Hello, %to%!');
-```
-
-## Replacing strings
-
-A Message can be altered by chaining methods that enable to replace sub-strings. For example:
+Use function `message` to create a Message. In the code below a new Message is created with `Hello, **%tag%**!`, using named arguments you define the replacement pairs.
 
 ```php
 use function Chevere\Message\message;
 
-$message = message('Hello, %to%!')
-    ->withTranslate('Hello,', 'Hola')
-    ->withEmphasis('%to%', 'Rodolfo');
-// Hola, <em>Rodolfo</em>!
+$message = message(
+    'Hello, **%tag%**!',
+    tag: 'World'
+);
+// Hello, **World**!
 ```
 
-💡 String replacement can be performed on anything, but we encourage using placeholders wrapped in `%`.
+🪄 Message supports `%tag%`, `{{tag}}` and `{{ tag }}`.
 
-### Translate
+## To string
 
-The `withTranslate` method is used for string replacement without formatting.
-
-```php
-$message = $message
-    ->withTranslate('%to%', 'Rodolfo');
-// Hello, Rodolfo!
-```
-
-### Emphasis
-
-The `withEmphasis` method is used for string replacement with emphasis.
-
-```php
-$message = $message
-    ->withEmphasis('%to%', 'Rodolfo')
-// Hello, <em>Rodolfo</em>!
-```
-
-### Strong
-
-The `withStrong` method is used for string replacement with strong.
-
-```php
-$message = $message
-    ->withStrong('%to%', 'Rodolfo')
-// Hello, <strong>Rodolfo</strong>!
-```
-
-### Underline
-
-The `withUnderline` method is used for string replacement with underline.
-
-```php
-$message = $message
-    ->withUnderline('%to%', 'Rodolfo')
-// Hello, <underline>Rodolfo</underline>!
-```
-
-### Code
-
-The `withCode` method is used for string replacement with code.
-
-```php
-$message = $message
-    ->withCode('%to%', 'Rodolfo')
-// Hello, <code>Rodolfo</code>!
-```
-
-## Output
-
-The resulting output strings vary depending on the target device.
-
-### To Console
-
-The `toConsole` method returns a console highlighted string.
-
-```php
-$message->toConsole();
-```
-
-The console output is raw ASCII string, with color when supported.
-
-### To HTML
-
-The `toHtml` method returns a HTML highlighted string.
-
-```php
-$message->toHtml();
-```
-
-### To string
-
-The `__toString` method returns a plain string, no formatting.
+The `__toString` method return the message with translated placeholders.
 
 ```php
 $message->__toString();
