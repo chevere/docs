@@ -10,5 +10,6 @@ return [
     'xrdebug.md' => 'xrDebug',
     'danky.md' => 'Danky',
     'regex.md' => 'Regex',
+    'message.md' => 'Message',
     'http.md' => 'Http',
 ];
