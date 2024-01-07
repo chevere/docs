@@ -33,7 +33,7 @@ class MyAction {
 
 ## Regex
 
-The `Regex` attribute enables to define [Regex](regex.md) for parameters of type `string`.
+The `Regex` attribute enables to define [Regex](../packages/regex.md) for parameters of type `string`.
 
 ```php
 use Chevere\Attributes\Regex;

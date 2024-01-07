@@ -9,5 +9,6 @@ return [
     'workflow.md' => 'Workflow',
     'xrdebug.md' => 'xrDebug',
     'danky.md' => 'Danky',
+    'regex.md' => 'Regex',
     'http.md' => 'Http',
 ];
