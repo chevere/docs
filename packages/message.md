@@ -20,9 +20,9 @@ Use function `message` to create a Message by passing the message template. Use 
 
 Supported tags:
 
-* %tag%
-* {{tag}}
-* {{ tag }}
+* <code v-pre>%tag%</code>
+* <code v-pre>{{tag}}</code>
+* <code v-pre>{{ tag }}</code>
 
 ```php
 use function Chevere\Message\message;
