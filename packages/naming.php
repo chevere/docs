@@ -12,5 +12,6 @@ return [
     'data-structure.md' => 'DataStructure',
     'regex.md' => 'Regex',
     'message.md' => 'Message',
+    'writer.md' => 'Writer',
     'http.md' => 'Http',
 ];
