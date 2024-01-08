@@ -9,6 +9,7 @@ return [
     'workflow.md' => 'Workflow',
     'xrdebug.md' => 'xrDebug',
     'danky.md' => 'Danky',
+    'data-structure.md' => 'DataStructure',
     'regex.md' => 'Regex',
     'message.md' => 'Message',
     'http.md' => 'Http',
