@@ -18,16 +18,20 @@ composer require chevere/message
 
 Use function `message` to create a Message by passing the message template. Use named named arguments to define replacement pairs.
 
+Supported tags:
+
+* %tag%
+* {{tag}}
+* {{ tag }}
+
 ```php
 use function Chevere\Message\message;
 
 $message = message(
-    'Hello, **%tag%**!',
+    'Hello, %tag%!',
     tag: 'World'
 );
 ```
-
-🪄 Message supports `%tag%`, `{{tag}}` and `{{ tag }}` replacement template tags.
 
 ## To string
 
@@ -35,7 +39,7 @@ The `__toString` method return the message with translated placeholders.
 
 ```php
 $message->__toString();
-// Hello, **World**!
+// Hello, World!
 ```
 
 ## Utility methods
@@ -45,8 +49,8 @@ $message->__toString();
 Use `template` method to return the message template.
 
 ```php
-$message->replacements();
-// Hello, **%tag%**!
+$message->template();
+// Hello, %tag%!
 ```
 
 ### Replacements
