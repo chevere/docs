@@ -10,7 +10,7 @@ Parameter is a library around parameter-argument which provides additional funct
 
 Parameter enables to spawn dynamic parameters of any type with extra rules.
 
-For example, an integer of minimum value 10:
+For example, an integer of minimum value 10.
 
 ```php
 use function Chevere\Parameter\int;
@@ -19,7 +19,7 @@ $int = int(min: 10);
 $int($var); // exception if $var < 10
 ```
 
-In function or method parameters you can use attributes to define validation rules for parameters and return value:
+Use attributes to define validation rules for parameters and return value.
 
 ```php
 use Chevere\Parameter\Attributes\FloatAttr;
@@ -70,6 +70,8 @@ int(min: 1, max: 10)($var);
 ```
 
 ### Attribute-based usage
+
+Use attributes to define rules for parameters and return value.
 
 Use [attribute delegated validation](#attribute-delegated-validation) with the `validated()` function to go from this:
 
@@ -173,7 +175,7 @@ function myCallable(): ParameterInterface
 
 A Parameter is an object implementing `ParameterInterface`. There are several Parameter types, each one with its own validation rules. Every Parameter can define a `description` and a `default` value, plus additional validation rules depending on the type.
 
-A Parameter can be defined using functions and/or attributes, it takes the same arguments for both. Use attributes when needing to define rules for parameters and return value.
+A Parameter can be defined using functions and/or attributes, it takes the same arguments for both.
 
 When invoking a Parameter it will trigger validation against the passed argument.
 
@@ -489,10 +491,15 @@ Use `ArrayAttr` attribute to define an array parameter.
 
 ```php
 use Chevere\Parameter\Attributes\ArrayAttr;
-use Chevere\Parameter\Attributes\StringAttr;
+use Chevere\Parameter\Attributes\FloatAttr;
+use Chevere\Parameter\Attributes\IntAttr;
 
 #[ArrayAttr(
-    a: new StringAttr(),
+    id: new IntAttr(),
+    items: new ArrayAttr(
+        id: new IntAttr(),
+        price: new FloatAttr(),
+    ),
 )]
 ```
 
