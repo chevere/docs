@@ -1,18 +1,21 @@
 <?php
 
 return [
+    'action.md' => 'Action',
     'cache.md' => 'Cache',
+    'danky.md' => 'Danky',
+    'data-structure.md' => 'DataStructure',
+    'filesystem.md' => 'Filesystem',
+    'http.md' => 'Http',
+    'message.md' => 'Message',
+    'parameter.md' => 'Parameter',
+    'regex.md' => 'Regex',
     'router.md' => 'Router',
+    'serialize.md' => 'Serialize',
     'throwable-handler.md' => 'ThrowableHandler',
     'trace.md' => 'Trace',
     'var-dump.md' => 'VarDump',
     'workflow.md' => 'Workflow',
-    'xrdebug.md' => 'xrDebug',
-    'danky.md' => 'Danky',
-    'data-structure.md' => 'DataStructure',
-    'regex.md' => 'Regex',
-    'message.md' => 'Message',
     'writer.md' => 'Writer',
-    'parameter.md' => 'Parameter',
-    'http.md' => 'Http',
+    'xrdebug.md' => 'xrDebug',
 ];

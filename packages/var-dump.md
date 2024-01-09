@@ -2,9 +2,9 @@
 
 ![VarDump](../src/packages/var-dump/var-dump-logo.svg)
 
-Namespace `Chevere\VarDump`
+## Summary
 
-The VarDump package provides an alternative to [var_dump](https://www.php.net/var-dump) with a richer feature set, including formatting for the generation of a myriad of dump documents.
+Multi-purpose colorful modern alternative to [var_dump](https://www.php.net/manual/function.var-dump.php).
 
 ::: tip 💡 VarDump introduction
  Read [VarDump for PHP](https://rodolfoberrios.com/2022/05/24/var-dump/) at Rodolfo's blog for a compressive introduction to this package.
@@ -16,6 +16,16 @@ VarDump is available through [Packagist](https://packagist.org/packages/chevere/
 
 ```sh
 composer require --dev chevere/var-dump
+```
+
+## Quick start
+
+* Use `vd` to dump information about any variable (replaces `var_dump` and `dump`)
+* Use `vdd` to do the same as `vd` and `die(0)` (replaces `dd`)
+
+```php
+vd($myVar); // var dump
+vdd($myVar); // var dump and die
 ```
 
 ## Demo

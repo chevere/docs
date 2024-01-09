@@ -90,7 +90,7 @@ bind(
 
 ## Route
 
-Route is the building block for Router, on its most elemental representation it defines a path that will be routed to a HTTP endpoint. In the example below, the [run method](../library/action.md#run) of `WebGetController` will be executed when resolving requests to `GET /`, after passing `CorsMiddleware`.
+Route is the building block for Router, on its most elemental representation it defines a path that will be routed to a HTTP endpoint. In the example below, the [run method](https://chevere.org/packages/action#main-logic) of `WebGetController` will be executed when resolving requests to `GET /`, after passing `CorsMiddleware`.
 
 ```php
 use function Chevere\Router\route;
@@ -116,16 +116,16 @@ route(
 ),
 ```
 
-At `ProductGetController` define the regex for this `{id}` variable by using `Regex` annotation.
+At `ProductGetController` define the regex for this `{id}` variable by using `StringAttr` attribute.
 
 ```php
 use Chevere\Http\Controller;
-use Chevere\Attributes\Regex;
+use Chevere\Parameter\Attributes\StringAttr;
 
 class ProductGetController extends Controller
 {
-    public function run(
-        #[Regex('/^[1-9]\d*/')]
+    public function main(
+        #[StringAttr('/^[1-9]\d*/')]
         string $id
     ): array {
         // ...
@@ -140,8 +140,8 @@ For the request `/product/123` the system will first check match of `123` agains
 Route can define **HTTP Middleware**, which is a collection of objects implementing `Psr\Http\Server\MiddlewareInterface`. In the example below, `CheckAuthToken` determines the validity of the request and `RedirectIfLoggedIn` will redirect to another location (usually the user profile). Middleware can be also applied for each HTTP Controller binding using the [bind](#bind) function.
 
 ```php
-use Chevere\Controller\HttpMiddleware;
 use function Chevere\Router\route;
+use function Chevere\Router\middlewares;
 
 route(
     path: '/',

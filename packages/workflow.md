@@ -22,7 +22,7 @@ composer require chevere/workflow
 
 To create a Workflow define its named Jobs.
 
-A [Job](#job) is created by passing an [Action](../library/action.md) and its *expected* run arguments which can be raw values,  [Variables](#variable) and/or [References](#reference) to another job's output.
+A [Job](#job) is created by passing an [Action](https://chevere.org/packages/action) and its *expected* run arguments which can be raw values,  [Variables](#variable) and/or [References](#reference) to another job's output.
 
 The syntax for writing Workflow jobs require `name` for job's name, `sync/async` depending on job run method, and named `parameter` bding for each Action run parameter.
 
@@ -40,7 +40,7 @@ use function Chevere\Action\Action;
 
 class MyAction extends Action
 {
-    protected function run(string $foo, string $bar): array
+    protected function main(string $foo, string $bar): array
     {
         return [];
     }
@@ -215,7 +215,7 @@ response(job: 'task', key: 'name');
 
 ## Job
 
-The `Job` class defines an [Action](../library/action.md) with arguments which can be passed passed "as-is", [variable](#variable) or [response](#response) on constructor using named arguments.
+The `Job` class defines an [Action](https://chevere.org/packages/action) with arguments which can be passed passed "as-is", [variable](#variable) or [response](#response) on constructor using named arguments.
 
 ### Synchronous job
 
@@ -250,7 +250,7 @@ sync(
 );
 ```
 
-For the code above, argument `context` will be passed "as-is" (`public`) to `SomeAction`, arguments `role` and `userId` will be dynamic provided. When running the Workflow these arguments will be matched against the Parameters defined at the [run](../library/action.md#run) method for `SomeAction`.
+For the code above, argument `context` will be passed "as-is" (`public`) to `SomeAction`, arguments `role` and `userId` will be dynamic provided. When running the Workflow these arguments will be matched against the Parameters defined at the [run](https://chevere.org/packages/action#run) method for `SomeAction`.
 
 ### Conditional running
 

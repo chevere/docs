@@ -2,8 +2,6 @@
 
 ![Http](../src/packages/http/http-logo.svg)
 
-Namespace `Chevere\Http`
-
 The Http package provides tooling for building HTTP components.
 
 ::: tip 💡 Http introduction
@@ -20,7 +18,16 @@ composer require chevere/http
 
 ## Controller
 
-The Http Controller component is a special [controller](../library/controller.md) meant to be used in the context of HTTP requests. It extends [Action](../library/action.md) by adding request [parameters](../library/parameter.md) (query string, body, files) and attributes for statuses and headers.
+The Controller in Http is a special Controller meant to be used in the context of HTTP requests. It extends [Action](https://chevere.org/packages/action) by adding request [parameters](https://chevere.org/packages/parameter.md) (query string, body, files) and attributes for statuses and headers.
+
+```php
+use Chevere\Http\Controller;
+
+class UsersPostController extends Controller
+{
+    // ...
+}
+```
 
 ### Accept Query
 
@@ -45,12 +52,12 @@ public static function acceptQuery(): ArrayStringParameterInterface
 Define accepted parameters for body using the `acceptBody` method.
 
 ```php
-use Chevere\Parameter\Interfaces\ArrayTypeParameterInterface;
+use Chevere\Parameter\Interfaces\ArrayParameterInterface;
 use function Chevere\Parameter\arrayp;
 use function Chevere\Parameter\parameters;
 use function Chevere\Parameter\string;
 
-public static function acceptBody(): ArrayTypeParameterInterface
+public static function acceptBody(): ArrayParameterInterface
 {
     return arrayp(
         bar: string('/^[1-9]+$/'),
@@ -68,7 +75,7 @@ use Chevere\Parameter\Interfaces\ArrayParameterInterface;
 use function Chevere\Parameter\arrayp;
 use function Chevere\Parameter\file;
 
-public static function acceptFiles(): ArrayTypeParameterInterface
+public static function acceptFiles(): ArrayParameterInterface
 {
     return arrayp(
         myFile: file(),
@@ -159,7 +166,7 @@ use Chevere\Http\Controller;
     new Header('Accept', 'application/json'),
     new Header('Connection', 'keep-alive')
 )]
-class MyResourceGet extends Controller
+class ResourceGetController extends Controller
 ```
 
 Use function `getRequest` to read the `Request` attribute.
@@ -167,7 +174,7 @@ Use function `getRequest` to read the `Request` attribute.
 ```php
 use function Chevere\Http\getRequest;
 
-getRequest(MyResourceGet::class);
+getRequest(ResourceGetController::class);
 ```
 
 ### Response
@@ -184,7 +191,7 @@ use Chevere\Http\Controller;
     new Header('Content-Disposition', 'attachment'),
     new Header('Content-Type', 'application/json')
 )]
-class MyResourceGet extends Controller
+class ResourceGetController extends Controller
 ```
 
 Use function `getResponse` to read the `Response` attribute.
@@ -192,7 +199,7 @@ Use function `getResponse` to read the `Response` attribute.
 ```php
 use function Chevere\Http\getResponse;
 
-getResponse(MyResourceGet::class);
+getResponse(ResourceGetController::class);
 ```
 
 ## HTTP Methods

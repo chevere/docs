@@ -2,9 +2,9 @@
 
 ![Trace](../src/packages/trace/trace-logo.svg)
 
-Namespace `Chevere\Trace`
+## Summary
 
-The Trace package provides [debug_backtrace](https://www.php.net/debug-backtrace) abstraction and formatting.
+Tooling for handling [debug_backtrace](https://www.php.net/manual/en/function.debug-backtrace.php) items.
 
 ## Installing
 
@@ -16,7 +16,7 @@ composer require chevere/trace
 
 ## Creating a Trace
 
-Create a Trace by passing a PHP `debug_backtrace` array and a format object. In the example below we use the `PlainFormat`.
+Create a Trace by passing a PHP `debug_backtrace` array and a format object.
 
 ```php
 use Chevere\Trace\Formats\PlainFormat;
