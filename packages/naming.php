@@ -13,5 +13,6 @@ return [
     'regex.md' => 'Regex',
     'message.md' => 'Message',
     'writer.md' => 'Writer',
+    'parameter.md' => 'Parameter',
     'http.md' => 'Http',
 ];
