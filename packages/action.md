@@ -186,10 +186,10 @@ public function main(
 
 ## Parameter Attributes
 
-Use `StringAttr` to validate a string:
+Use `StringAttr` to validate string:
 
 ```php
-use Chevere\Attributes\StringAttr;
+use Chevere\Parameter\Attributes\StringAttr;
 
 public function main(
     #[StringAttr('/^[a-z]$/')]
