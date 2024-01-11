@@ -4,7 +4,7 @@
 
 ## Summary
 
-The Action package provides a I/O convention on top of [Parameter](https://chevere.org/packages/parameter).
+This software provides an object oriented convention around [Parameter](https://chevere.org/packages/parameter).
 
 ## Installing
 
