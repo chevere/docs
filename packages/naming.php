@@ -18,4 +18,5 @@ return [
     'workflow.md' => 'Workflow',
     'writer.md' => 'Writer',
     'xrdebug.md' => 'xrDebug',
+    'sql2p.md' => 'SQL2P',
 ];
