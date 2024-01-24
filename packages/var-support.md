@@ -1,8 +1,12 @@
-# VariableSupport
+# VarSupport
 
-Namespace `Chevere\VariableSupport`
+## Summary
 
-The VariableSupport component is in charge of providing extra tools for handling variables.
+Extra tools for handling variables.
+
+## Installing
+
+VarSupport is available through [Packagist](https://packagist.org/packages/chevere/var-support) and the repository source is at [chevere/var-support](https://github.com/chevere/var-support).
 
 ## ObjectVariable
 
@@ -11,7 +15,7 @@ The `ObjectVariable` component is in charge of handling an object variable.
 ### Creating ObjectVariable
 
 ```php
-use Chevere\VariableSupport\ObjectVariable;
+use Chevere\VarSupport\ObjectVariable;
 
 $object = new ObjectVariable($var);
 $var = $object->variable();
@@ -34,7 +38,7 @@ A storable variable for Chevere is any PHP variable that can be stored as a stri
 ### Creating StorableVariable
 
 ```php
-use Chevere\VariableSupport\StorableVariable;
+use Chevere\VarSupport\StorableVariable;
 
 $storable = new StorableVariable($var);
 $var = $storable->variable();

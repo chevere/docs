@@ -19,4 +19,5 @@ return [
     'writer.md' => 'Writer',
     'xrdebug.md' => 'xrDebug',
     'sql2p.md' => 'SQL2P',
+    'var-support.md' => 'VarSupport',
 ];

@@ -1,8 +1,12 @@
 # Filesystem
 
-Namespace `Chevere\Filesystem`
+## Summary
 
-The Filesystem component is in charge of interact with the filesystem, offering a myriad of related functionalities.
+Filesystem related functionalities.
+
+## Installing
+
+Filesystem is available through [Packagist](https://packagist.org/packages/chevere/filesystem) and the repository source is at [chevere/filesystem](https://github.com/chevere/filesystem).
 
 ## Path
 
@@ -123,7 +127,7 @@ $boolean = $directory->exists();
 The `assertExists` method asserts if the directory exists. Throws exception when the directory doesn't exists in the filesystem.
 
 ```php
-use Chevere\Exceptions\Filesystem\DirNotExistsException;
+use Chevere\Filesystem\Exceptions\DirNotExistsException;
 
 $directory->assertExists(); // Throws DirNotExistsException
 ```

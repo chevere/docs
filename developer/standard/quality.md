@@ -19,7 +19,6 @@ We use the following third-party CI services:
 
 * [SonarCloud](https://sonarcloud.io/)
 * [CodeFactor](https://www.codefactor.io/)
-* [Codacy](https://www.codacy.com/)
 * [Stryker Mutator](https://stryker-mutator.io/)
 
 ## Extensively tested
@@ -32,7 +31,7 @@ To ensure the quality of the tests, all Chevere software requires **mutation tes
 
 All Chevere software **must** be documented.
 
-We use [docs-deploy](https://github.com/chevere/docs-deploy), which is our own documenting system.
+We use [docs-deploy](https://github.com/chevere/docs-deploy) documenting system.
 
 ## PHPStan Level 9
 

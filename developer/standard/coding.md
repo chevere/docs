@@ -93,5 +93,4 @@ Comments in logic should be used only in the following cases:
 DocBlock content should be **short** as possible, **relevant** and **omit** the obvious.
 
 * Use markdown
-* `@throws` must be provided for all known exceptions
 * `@param` and `@return` should be avoided (prefer typed code)

@@ -1,8 +1,14 @@
 # Standard
 
-Namespace `Chevere\Standard`
+## Summary
 
-The Standard component provides improvements and alternatives to PHP's standard function library.
+Improvements and alternatives to PHP's standard function library.
+
+## Installing
+
+Standard is available through [Packagist](https://packagist.org/packages/chevere/standard) and the repository source is at [chevere/standard](https://github.com/chevere/standard).
+
+The Standard component .
 
 ## arrayFilterBoth
 
