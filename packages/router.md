@@ -21,7 +21,7 @@ composer require chevere/router
 ## Features
 
 * Define path, name, view, middleware and HTTP method to controller binding using named arguments.
-* HTTP method binding works with [Controller](../library/http-controller.md) objects.
+* HTTP method binding works with [Controller](./http.md#controller) objects.
 * Path variables inherits regex from parameter attributes at controller layer.
   * Can be implicit (`{id}`) or explicit (`{id:[0-9]+}`).
   * Detects conflicts for all endpoints.

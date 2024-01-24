@@ -127,9 +127,9 @@ Path endpoints are mapped by HTTP method name within the `endpoints` property.
 
 ### Schemas
 
-The body schema `*_BODY_SCHEMA` describes the payload body. It supports [parameter](../library/parameter.md) schema of any type.
+The body schema `*_BODY_SCHEMA` describes the payload body. It supports [parameter](./parameter.md) schema of any type.
 
-The query schema `REQUEST_QUERY_SCHEMA` describes the request query string. It supports an array of [strings](../library/parameter.md#array-string).
+The query schema `REQUEST_QUERY_SCHEMA` describes the request query string. It supports an array of [strings](./parameter.md#array-string).
 
 ### Request
 
@@ -182,7 +182,7 @@ $array = $spec->toArray();
 
 ## Filtering result
 
-The `arrayFilter*` functions provided by the [Standard](../library/standard.md) component enable to modify and/or filter the generated API spec. This is useful to remove `null` values, empty strings and context-aware redundant information.
+The `arrayFilter*` functions provided by the [Standard](./standard.md) component enable to modify and/or filter the generated API spec. This is useful to remove `null` values, empty strings and context-aware redundant information.
 
 For example to recursive filter the array by value `$v` and key `$k`:
 
@@ -218,7 +218,7 @@ For cases `1,2,3` the removal is for empty values while for cases `4,5,6` is bec
 
 ## Export
 
-Use the built-in [Filesystem](../library/filesystem.md#file) component to store the converted array with native [json_encode](https://www.php.net/manual/en/function.json-encode.php) as a JSON file.
+Use the built-in [Filesystem](./filesystem.md#file) component to store the converted array with native [json_encode](https://www.php.net/manual/en/function.json-encode.php) as a JSON file.
 
 ```php
 use function Chevere\Filesystem\fileForPath;

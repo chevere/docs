@@ -16,13 +16,13 @@ composer require chevere/action
 
 ## Quick start
 
-Implement [ActionInterface](src/interfaces/ActionInterface.php) by using the [Action trait](#use-actiontrait) or by extending [Action abstract](#extend-action).
+Implement ActionInterface by using the [Action trait](#use-actiontrait) or by extending [Action abstract](#extend-action).
 
 ## Creating actions
 
 ### Use ActionTrait
 
-Create an action by using [ActionTrait](src/Traits/ActionTrait.php).
+Create an action by using ActionTrait.
 
 ```php
 use Chevere\Action\Interfaces\ActionInterface;
@@ -37,7 +37,7 @@ class MyAction implements ActionInterface
 
 ### Extend Action
 
-Create an Action by extending [Action](src/Action.php).
+Create an Action by extending Action.
 
 ```php
 use Chevere\Action\Action;

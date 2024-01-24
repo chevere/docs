@@ -8,8 +8,6 @@ Improvements and alternatives to PHP's standard function library.
 
 Standard is available through [Packagist](https://packagist.org/packages/chevere/standard) and the repository source is at [chevere/standard](https://github.com/chevere/standard).
 
-The Standard component .
-
 ## arrayFilterBoth
 
 This function enables to recursive filter an array by key and value. It improves on [array_filter](https://www.php.net/manual/en/function.array-filter.php).

@@ -53,7 +53,7 @@ vdd($myVar); // var dump and die
   * Same as copy HTML text
 * HTML document
   * Colorful representation
-  * Portable (also used on [xrDebug](xr.md))
+  * Portable (also used on [xrDebug](./xrdebug.md))
 
 ## Helpers
 
@@ -138,7 +138,7 @@ $varDump = $varDump->withShift(1); // removes the first trace
 
 ### Process
 
-The method `process` is used to trigger the var dumping process. It requires to pass a [writer](../library/writer.md) where the dump information will be written.
+The method `process` is used to trigger the var dumping process. It requires to pass a [writer](./writer.md) where the dump information will be written.
 
 ```php
 use Chevere\Writer\StreamWriter;

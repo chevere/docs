@@ -28,7 +28,7 @@ $cache = new Cache($directory);
 
 ## With Put
 
-The `withPut` method is used to cache PHP [storable variable](../library/variable-support.md#storablevariable).
+The `withPut` method is used to cache PHP [storable variable](./var-support.md#storablevariable).
 
 ```php
 use Chevere\Cache\Cache;

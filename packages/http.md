@@ -18,7 +18,7 @@ composer require chevere/http
 
 ## Controller
 
-The Controller in Http is a special Controller meant to be used in the context of HTTP requests. It extends [Action](https://chevere.org/packages/action) by adding request [parameters](https://chevere.org/packages/parameter.md) (query string, body, files) and attributes for statuses and headers.
+The Controller in Http is a special Controller meant to be used in the context of HTTP requests. It extends [Action](https://chevere.org/packages/action) by adding request [parameters](https://chevere.org/packages/parameter) (query string, body, files) and attributes for statuses and headers.
 
 ```php
 use Chevere\Http\Controller;
