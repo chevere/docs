@@ -1,14 +1,14 @@
+---
+sidebarDepth: 2
+---
+
 # Workflow
 
 ![Workflow](../src/packages/workflow/workflow-logo.svg)
 
-Namespace `Chevere\Workflow`
+## Summary
 
-The Workflow package provides tooling for defining an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to abstract logic instructions as units of interconnected independent jobs.
-
-::: tip 💡 Workflow introduction
- Read [Workflow for PHP](https://rodolfoberrios.com/2022/04/09/workflow-php/) at Rodolfo's blog for a compressive introduction to this package.
-:::
+A Workflow is a configurable stored procedure that will run one or more jobs. Jobs are independent from each other, but interconnected as you can pass response references between jobs. Jobs supports conditional running based on variables and previous job responses.
 
 ## Installing
 
@@ -18,11 +18,43 @@ Workflow is available through [Packagist](https://packagist.org/packages/chevere
 composer require chevere/workflow
 ```
 
-## Creating a Workflow
+## What it does?
+
+The Workflow package provides tooling for defining an execution procedure based on the [workflow pattern](https://en.wikipedia.org/wiki/Workflow_pattern). Its purpose is to abstract logic instructions as units of interconnected independent jobs.
+
+Instead of building a monolithic procedure, you define a Workflow made of jobs, enabling developers to easy test and maintain re-usable multi-purpose logic.
+
+::: tip 💡 Workflow introduction
+ Read [Workflow for PHP](https://rodolfoberrios.com/2022/04/09/workflow-php/) at Rodolfo's blog for a compressive introduction to this package.
+:::
+
+## How to use
+
+Workflow provides the following functions at the `Chevere\Workflow` namespace. Use these functions to define a Workflow, its variables and references for named jobs.
+
+| Function   | Purpose                              |
+| ---------- | ------------------------------------ |
+| `workflow` | Create workflow made of named jobs   |
+| `sync`     | Create synchronous blocking job      |
+| `async`    | Create asynchronous non-blocking job |
+| `variable` | Define workflow-level variable       |
+| `response` | Define a job response reference      |
+
+* A Job is defined by its [Action](https://chevere.org/library/action)
+* Jobs are independent from each other, define shared variables using function `variable`
+* Reference [job A response] -> [job B input] by using function `response`
+
+To produce logic with this package:
+
+1. Create a Workflow using function `workflow`
+2. Define jobs using function `sync` or `async`
+3. Run the Workflow using function `run`
+
+## Creating Workflow
 
 To create a Workflow define its named Jobs.
 
-A [Job](#job) is created by passing an [Action](https://chevere.org/packages/action) and its *expected* run arguments which can be raw values,  [Variables](#variable) and/or [References](#reference) to another job's output.
+A [Job](#creating-job) is created by passing an [Action](https://chevere.org/packages/action) and its *expected* run arguments which can be raw values,  [Variables](#variable) and/or [Responses](#response) to another job's output.
 
 The syntax for writing Workflow jobs require `name` for job's name, `sync/async` depending on job run method, and named `parameter` bding for each Action run parameter.
 
@@ -111,7 +143,7 @@ The graph for this Workflow says that all jobs run one after each other as all j
 ];
 ```
 
-To complete the example, here's how to [Run](#running-workflow) the Workflow previously defined:
+To complete the example, here's how to [Run](#running-a-workflow) the Workflow previously defined:
 
 ```php
 use function Chevere\Workflow\run;
@@ -170,7 +202,7 @@ The graph for this Workflow says that `thumb` and `medium` run non-blocking. Job
 ];
 ```
 
-To complete the example, here's how to [Run](#running-workflow) the Workflow previously defined:
+To complete the example, here's how to [Run](#running-a-workflow) the Workflow previously defined:
 
 ```php
 use function Chevere\Workflow\run;
@@ -183,7 +215,7 @@ run(
 );
 ```
 
-## Variable
+### Variable
 
 Use function `variable` to declare a Workflow variable. This denotes a variable which must be injected by at Workflow run layer.
 
@@ -193,11 +225,11 @@ use function Chevere\Workflow\variable;
 variable('myVar');
 ```
 
-## Response
+### Response
 
 Use function `response` to declare a Job response reference to a response returned by a previous Job.
 
-🪄 When using a reference it will **auto declare** the referenced Job as [dependency](#dependencies).
+🪄 When using a reponse it will **auto declare** the referenced Job as [dependency](#dependencies).
 
 ```php
 use function Chevere\Workflow\response;
@@ -213,7 +245,7 @@ use function Chevere\Workflow\response;
 response(job: 'task', key: 'name');
 ```
 
-## Job
+## Creating Job
 
 The `Job` class defines an [Action](https://chevere.org/packages/action) with arguments which can be passed passed "as-is", [variable](#variable) or [response](#response) on constructor using named arguments.
 
@@ -238,6 +270,8 @@ async(
     ...$argument
 );
 ```
+
+**Note:** Actions must support [serialization](https://www.php.net/manual/en/function.serialize.php) for being used on `async` jobs. For not serializable Actions as these interacting with connections (namely streams, database clients, etc.) you should use `sync` job.
 
 ### Job variables and references
 
@@ -278,7 +312,7 @@ job(new SomeAction())
     ->withDepends('myJob');
 ```
 
-## Running Workflow
+## Running a Workflow
 
 To run a Workflow use the `run` function by passing a Workflow and an `array` for its variables (if any).
 
@@ -292,4 +326,146 @@ Use `getResponse` to retrieve a job response as a `CastArgument` object which ca
 
 ```php
 $string = $run->getResponse('myJob')->string();
+```
+
+## Code Examples
+
+### Hello, world
+
+Run live example: `php demo/hello-world.php Rodolfo` - [view source](./demo/hello-world.php)
+
+The basic example Workflow defines a greet for a given username. The job `greet` is a named argument and it takes the `GreetAction` plus its run [arguments](https://chevere.org/library/action.html#run).
+
+```php
+use Chevere\Demo\Actions\Greet;
+use function Chevere\Workflow\run;
+use function Chevere\Workflow\sync;
+use function Chevere\Workflow\variable;
+use function Chevere\Workflow\workflow;
+
+$workflow = workflow(
+    greet: sync(
+        new Greet(),
+        username: variable('username'),
+    ),
+);
+```
+
+Use function `run` to run the Workflow, variables are passed as named arguments.
+
+```php
+$run = run(
+    $workflow,
+    username: 'MyUsername'
+);
+```
+
+### Async example
+
+Run live example: `php demo/image-resize.php` - [view source](./demo/image-resize.php)
+
+For this example Workflow defines an image resize procedure in two sizes. All jobs are defined as async, but as there are dependencies between jobs (see `variable` and `response`) the system resolves a suitable run strategy.
+
+```php
+use Chevere\Demo\Actions\ImageResize;
+use Chevere\Demo\Actions\StoreFile;
+use function Chevere\Workflow\async;
+use function Chevere\Workflow\response;
+use function Chevere\Workflow\run;
+use function Chevere\Workflow\variable;
+use function Chevere\Workflow\workflow;
+
+$workflow = workflow(
+    thumb: async(
+        new ImageResize(),
+        file: variable('image'),
+        fit: 'thumbnail',
+    ),
+    poster: async(
+        new ImageResize(),
+        file: variable('image'),
+        fit: 'poster',
+    ),
+    storeThumb: async(
+        new StoreFile(),
+        file: response('thumb'),
+        path: variable('savePath'),
+    ),
+    storePoster: async(
+        new StoreFile(),
+        file: response('poster'),
+        path: variable('savePath'),
+    )
+);
+```
+
+The graph for the Workflow above shows that `thumb` and `poster` run async, just like `storeThumb` and `storePoster` but the storage jobs run after the first dependency level gets resolved.
+
+```mermaid
+graph TD;
+    thumb-->storeThumb;
+    poster-->storePoster;
+```
+
+Use function `run` to run the Workflow, variables are passed as named arguments.
+
+```php
+use function Chevere\Workflow\run;
+
+$run = run(
+    $workflow,
+    image: '/path/to/image-to-upload.png',
+    savePath: '/path/to/storage/'
+);
+
+// Alternative syntax
+$variables = [
+    'image' => '/path/to/image-to-upload.png',
+    'savePath' => '/path/to/storage/'
+];
+$run = run($workflow, ...$variables);
+```
+
+Use `getReturn` to retrieve a job response as a `CastArgument` object which can be used to get a typed response.
+
+```php
+$thumbFile = $run->getReturn('thumb')->string();
+```
+
+### Conditional jobs
+
+Run live example: `php demo/run-if.php` - [view source](./demo/run-if.php)
+
+For this example Workflow defines a greet for a given username, but only if a `sayHello` variable is set to `true`.
+
+```php
+use Chevere\Demo\Actions\Greet;
+use function Chevere\Workflow\run;
+use function Chevere\Workflow\sync;
+use function Chevere\Workflow\variable;
+use function Chevere\Workflow\workflow;
+
+/*
+php demo/run-if.php Rodolfo
+php demo/run-if.php
+*/
+
+$workflow = workflow(
+    greet: sync(
+        new Greet(),
+        username: variable('username'),
+    )->withRunIf(
+        variable('sayHello')
+    ),
+);
+```
+
+Method `withRunIf` accepts one or more `variable` and `response` references. All conditions must be true at the same time for the job to run.
+
+## Debugging Workflow
+
+To debug a Workflow inspect the Jobs graph. It will show the job names and their dependencies for each execution level.
+
+```php
+$workflow->jobs()->graph()->toArray();
 ```
