@@ -1,6 +1,6 @@
 # Writer
 
-![Writer](../src/packages/writer/writer-logo.svg)
+![Writer](/src/packages/writer-logo.svg)
 
 ## Summary
 

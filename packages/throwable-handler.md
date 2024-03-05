@@ -1,6 +1,6 @@
 # ThrowableHandler
 
-![ThrowableHandler](../src/packages/throwable-handler/throwable-handler-logo.svg)
+![ThrowableHandler](/src/packages/throwable-handler-logo.svg)
 
 Namespace `Chevere\ThrowableHandler`
 
@@ -20,7 +20,7 @@ composer require chevere/throwable-handler
 
 ## Demo
 
-![HTML demo](../src/packages/throwable-handler/demo.svg)
+![HTML demo](/src/packages/throwable-handler-demo.svg)
 
 * [HTML](https://chevere.github.io/throwable-handler/demo/output/html.html)
 * [HTML (silent)](https://chevere.github.io/throwable-handler/demo/output/html-silent.html)

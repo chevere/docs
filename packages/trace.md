@@ -1,6 +1,6 @@
 # Trace
 
-![Trace](../src/packages/trace/trace-logo.svg)
+![Trace](/src/packages/trace-logo.svg)
 
 ## Summary
 

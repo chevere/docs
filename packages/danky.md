@@ -1,6 +1,6 @@
 # Danky
 
-![Danky](../src/packages/danky/danky-logo.svg)
+![Danky](/src/packages/danky-logo.svg)
 
 Namespace `Chevere\Danky`
 

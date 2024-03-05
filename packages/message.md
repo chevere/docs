@@ -1,6 +1,6 @@
 # Message
 
-![Message](../src/packages/message/message-logo.svg)
+![Message](/src/packages/message-logo.svg)
 
 ## Summary
 

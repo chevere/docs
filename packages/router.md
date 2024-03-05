@@ -1,6 +1,6 @@
 # Router
 
-![Router](../src/packages/router/router-logo.svg)
+![Router](/src/packages/router-logo.svg)
 
 Namespace `Chevere\Router`
 

@@ -1,6 +1,6 @@
 # Parameter
 
-![Parameter](../src/packages/parameter/parameter-logo.svg)
+![Parameter](/src/packages/parameter-logo.svg)
 
 ## Summary
 

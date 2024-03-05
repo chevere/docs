@@ -1,6 +1,6 @@
 # Schwager
 
-![Schwager](../src/packages/schwager/schwager-logo.svg)
+![Schwager](/src/packages/schwager-logo.svg)
 
 Namespace `Chevere\Schwager`
 

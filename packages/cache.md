@@ -1,6 +1,6 @@
 # Cache
 
-![Cache](../src/packages/cache/cache-logo.svg)
+![Cache](/src/packages/cache-logo.svg)
 
 Namespace `Chevere\Cache`
 

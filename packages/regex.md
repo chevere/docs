@@ -1,6 +1,6 @@
 # Regex
 
-![Regex](../src/packages/regex/regex-logo.svg)
+![Regex](/src/packages/regex-logo.svg)
 
 ## Summary
 

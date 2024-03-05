@@ -1,6 +1,6 @@
 # DataStructure
 
-![DataStructure](../src/packages/data-structure/data-structure-logo.svg)
+![DataStructure](/src/packages/data-structure-logo.svg)
 
 ## Summary
 

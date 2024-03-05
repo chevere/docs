@@ -4,7 +4,7 @@ sidebar: false
 
 # xrDebug
 
-![xrDebug](../src/packages/xrdebug/xrdebug-social.png)
+![xrDebug](/src/packages/xrdebug-social.png)
 
 The xrDebug package provides a lightweight portable debug utility.
 

@@ -1,6 +1,6 @@
 # VarDump
 
-![VarDump](../src/packages/var-dump/var-dump-logo.svg)
+![VarDump](/src/packages/var-dump-logo.svg)
 
 ## Summary
 
@@ -30,7 +30,7 @@ vdd($myVar); // var dump and die
 
 ## Demo
 
-![HTML demo](../src/packages/var-dump/demo.svg)
+![HTML demo](/src/packages/var-dump-demo.svg)
 
 * [HTML](https://chevere.github.io/var-dump/demo/output/html.html)
 * [Plain text](https://chevere.github.io/var-dump/demo/output/plain.txt)

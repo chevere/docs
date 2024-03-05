@@ -1,6 +1,6 @@
 # Action
 
-![Http](../src/packages/action/action-logo.svg)
+![Http](/src/packages/action-logo.svg)
 
 ## Summary
 

@@ -4,7 +4,7 @@ sidebarDepth: 2
 
 # Workflow
 
-![Workflow](../src/packages/workflow/workflow-logo.svg)
+![Workflow](/src/packages/workflow-logo.svg)
 
 ## Summary
 

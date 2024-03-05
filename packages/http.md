@@ -1,6 +1,6 @@
 # Http
 
-![Http](../src/packages/http/http-logo.svg)
+![Http](/src/packages/http-logo.svg)
 
 The Http package provides tooling for building HTTP components.
 
