@@ -1,6 +1,6 @@
 # SQL2P
 
-![SQL2P](../src/packages/sql2p/sql2p-logo.svg)
+![SQL2P](/src/packages/sql2p-logo.svg)
 
 ## Summary
 
