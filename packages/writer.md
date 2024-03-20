@@ -1,7 +1,5 @@
 # Writer
 
-![Writer](/src/packages/writer-logo.svg)
-
 ## Summary
 
 Writer provides tooling for writing to streams.

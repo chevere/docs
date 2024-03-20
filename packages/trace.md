@@ -1,7 +1,5 @@
 # Trace
 
-![Trace](/src/packages/trace-logo.svg)
-
 ## Summary
 
 Tooling for handling [debug_backtrace](https://www.php.net/manual/en/function.debug-backtrace.php) items.

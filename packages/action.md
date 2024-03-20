@@ -1,7 +1,5 @@
 # Action
 
-![Http](/src/packages/action-logo.svg)
-
 ## Summary
 
 This software provides an object oriented convention around [Parameter](https://chevere.org/packages/parameter).

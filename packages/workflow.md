@@ -4,8 +4,6 @@ sidebarDepth: 2
 
 # Workflow
 
-![Workflow](/src/packages/workflow-logo.svg)
-
 ## Summary
 
 A Workflow is a configurable stored procedure that will run one or more jobs. Jobs are independent from each other, but interconnected as you can pass response references between jobs. Jobs supports conditional running based on variables and previous job responses.

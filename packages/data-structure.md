@@ -1,7 +1,5 @@
 # DataStructure
 
-![DataStructure](/src/packages/data-structure-logo.svg)
-
 ## Summary
 
 DataStructure provides Map and Vector data structures.

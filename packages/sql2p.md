@@ -1,7 +1,5 @@
 # SQL2P
 
-![SQL2P](/src/packages/sql2p-logo.svg)
-
 ## Summary
 
 SQL2P generates [Parameter(s)](https://chevere.org/packages/parameter) for MySQL schemas. It represents database tables and its columns using the Parameter package.

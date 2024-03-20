@@ -1,7 +1,5 @@
 # VarDump
 
-![VarDump](/src/packages/var-dump-logo.svg)
-
 ## Summary
 
 Multi-purpose colorful modern alternative to [var_dump](https://www.php.net/manual/function.var-dump.php).

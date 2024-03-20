@@ -1,7 +1,5 @@
 # Parameter
 
-![Parameter](/src/packages/parameter-logo.svg)
-
 ## Summary
 
 Parameter is a library around parameter-argument which provides additional functionality with validation rules and schema introspection.

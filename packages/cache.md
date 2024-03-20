@@ -1,7 +1,5 @@
 # Cache
 
-![Cache](/src/packages/cache-logo.svg)
-
 Namespace `Chevere\Cache`
 
 The Cache package provides a filesystem-based cache for PHP. Its purpose is to enable a richer abstraction around file returns which are cached with [OPcache](https://www.php.net/opcache). It is intended to be used to cache and accelerate application state.

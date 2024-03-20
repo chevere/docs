@@ -1,7 +1,5 @@
 # Router
 
-![Router](/src/packages/router-logo.svg)
-
 Namespace `Chevere\Router`
 
 The Router package provides a strict, strong typed router for HTTP requests.

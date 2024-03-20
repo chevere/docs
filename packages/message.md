@@ -1,7 +1,5 @@
 # Message
 
-![Message](/src/packages/message-logo.svg)
-
 ## Summary
 
 Message enables to create strings with template tags support.

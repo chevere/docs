@@ -1,7 +1,5 @@
 # Schwager
 
-![Schwager](/src/packages/schwager-logo.svg)
-
 Namespace `Chevere\Schwager`
 
 The Schwager package provides an API spec generator for the [Router](router.md) package. The complementary package [chevere/schwager-html](https://github.com/chevere/schwager-html) enables to create an HTML representation for Schwager.
