@@ -88,7 +88,7 @@ bind(
 
 ## Route
 
-Route is the building block for Router, on its most elemental representation it defines a path that will be routed to a HTTP endpoint. In the example below, the [run method](https://chevere.org/packages/action#main-logic) of `WebGetController` will be executed when resolving requests to `GET /`, after passing `CorsMiddleware`.
+Route is the building block for Router, on its most elemental representation it defines a path that will be routed to a HTTP endpoint. In the example below, the [main method](https://chevere.org/packages/action#main-method) of `WebGetController` will be executed when resolving requests to `GET /`, after passing `CorsMiddleware`.
 
 ```php
 use function Chevere\Router\route;
