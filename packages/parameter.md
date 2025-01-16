@@ -2,7 +2,7 @@
 
 ## Summary
 
-Parameter is a library around parameter-argument which provides additional functionality with validation rules and schema introspection.
+Parameter is a library around parameter-argument which provides additional functionality with validation rules and schema introspection. Go to [chevere/action](https://github.com/chevere/action) for our object-oriented convention around this package.
 
 ## Installing
 
@@ -52,11 +52,61 @@ Validation can be triggered using `validated` (example above), [inline](#inline-
 
 Rules defined by each parameter provide a human-readable schema which allows to expose the validation criteria.
 
+## Reference
+
+Core types provided by Parameter.
+
+| Type                  | Helper     | Attribute      | Description                 |
+| --------------------- | ---------- | -------------- | --------------------------- |
+| [Array](#array)       | `arrayp`   | `ArrayAttr`    | Array with named parameters |
+| [Bool](#bool)         | `bool`     | `BoolAttr`     | Boolean                     |
+| [Float](#float)       | `float`    | `FloatAttr`    | Floating point number       |
+| [Int](#int)           | `int`      | `IntAttr`      | Integer                     |
+| [Iterable](#iterable) | `iterable` | `IterableAttr` | Iterable of key-value pairs |
+| [Mixed](#mixed)       | `mixed`    | --             | Mixed                       |
+| [Null](#null)         | `null`     | `NullAttr`     | Null                        |
+| [Object](#object)     | `object`   | --             | Object                      |
+| [String](#string)     | `string`   | `StringAttr`   | String matching a regex     |
+| [Union](#union)       | `union`    | `UnionAttr`    | Union of parameters         |
+
+[Array based-parameters](#array-based-parameters) provided.
+
+| Type                         | Helper        | Description              |
+| ---------------------------- | ------------- | ------------------------ |
+| [ArrayString](#array-string) | `arrayString` | Array with string values |
+| [File](#file)                | `file`        | File upload              |
+
+[String based-parameters](#string-based-parameters) provided.
+
+| Type                         | Helper       | Description     |
+| ---------------------------- | ------------ | --------------- |
+| [BoolString](#bool-string)   | `boolString` | Bool string     |
+| [Date](#date-string)         | `date`       | Date string     |
+| [Datetime](#datetime-string) | `datetime`   | Datetime string |
+| [Enum](#enum-string)         | `enum`       | Enum string     |
+| [IntString](#int-string)     | `intString`  | Int string      |
+| [Time](#time-string)         | `time`       | Time string     |
+
+[Int based-parameters](#int-based-parameters) provided.
+
+| Type                 | Helper    | Description |
+| -------------------- | --------- | ----------- |
+| [BoolInt](#bool-int) | `boolInt` | Bool int    |
+
+Non-type attributes provided.
+
+| Attribute                     | Description                                |
+| ----------------------------- | ------------------------------------------ |
+| [CallableAttr](#callableattr) | Forward parameter resolution to a callable |
+| [ReturnAttr](#returnattr)     | Return value validation                    |
+
 ## How to use
 
 Parameter provides an API which can be used to create parameters using functions and/or attributes. Parameter objects can be used directly in the logic while attributes requires a read step.
 
 ### Inline usage
+
+Inline usage refers to the direct use of functions to create parameters and validate arguments.
 
 Use [inline validation](#inline-validation) to go from this:
 
@@ -76,7 +126,7 @@ int(min: 1, max: 10)($var);
 
 ### Attribute-based usage
 
-Use attributes to define rules for parameters and return value.
+Attribute usage refers to the use of attributes to define parameters and return rules. You can use attribute notation for class properties, methods/functions parameters and return value.
 
 Use [attribute delegated validation](#attribute-delegated-validation) with the `validated()` function to go from this:
 
@@ -154,6 +204,23 @@ function myFunction(
 }
 ```
 
+### ReturnAttr
+
+Use `ReturnAttr` attribute to define a return value validation rule.
+
+```php
+use Chevere\Parameter\Attributes\ReturnAttr;
+use Chevere\Parameter\Attributes\StringAttr;
+
+#[ReturnAttr(
+    new StringAttr('/ok$/')
+)]
+function myFunction(): string
+{
+    return 'done ok';
+}
+```
+
 ### CallableAttr
 
 Attributes in PHP only support expressions you can use on class constants. Is not possible to directly define dynamic parameters using attributes.
@@ -176,13 +243,13 @@ function myCallable(): ParameterInterface
 #[CallableAttr('myCallable')]
 ```
 
-## Parameter types
+## Types
 
-A Parameter is an object implementing `ParameterInterface`. There are several Parameter types, each one with its own validation rules. Every Parameter can define a `description` and a `default` value, plus additional validation rules depending on the type.
+A Parameter is an object implementing `ParameterInterface`. Every Parameter can define a `description` and a `default` value, plus additional validation rules depending on the type.
 
-A Parameter can be defined using functions and/or attributes, it takes the same arguments for both.
+A Parameter can be defined using functions and/or attributes, it takes same arguments for both.
 
-When invoking a Parameter it will trigger validation against the passed argument.
+When invoking a Parameter `$param('value')` it will trigger validation against the passed argument.
 
 ## String
 
@@ -198,7 +265,7 @@ $string = string('/^bin-[\d]+$/');
 $string('bin-123');
 ```
 
-Use `StringAttr` attribute to define a string parameter.
+Use `StringAttr` attribute to define a string parameter using attribute notation.
 
 ```php
 use Chevere\Parameter\Attributes\StringAttr;
@@ -206,11 +273,11 @@ use Chevere\Parameter\Attributes\StringAttr;
 #[StringAttr('/^bin-[\d]+$/')]
 ```
 
-## String pseudo-parameters
+### String based-parameters
 
 The following parameters are based on String.
 
-### Enum string
+#### Enum string
 
 Use function `enum` to create a `StringParameter` matching a list of strings.
 
@@ -222,7 +289,7 @@ $enum('on');
 $enum('off');
 ```
 
-Use `EnumAttr` attribute to define an enum string parameter.
+Use `EnumAttr` attribute to define an enum string parameter using attribute notation.
 
 ```php
 use Chevere\Parameter\Attributes\EnumAttr;
@@ -230,7 +297,7 @@ use Chevere\Parameter\Attributes\EnumAttr;
 #[EnumAttr('on', 'off')]
 ```
 
-### Int string
+#### Int string
 
 Use function `intString` to create a `StringParameter` matching a string integers.
 
@@ -241,7 +308,7 @@ $int = intString();
 $int('100');
 ```
 
-### Bool string
+#### Bool string
 
 Use function `boolString` to create a `StringParameter` matching `0` and `1` strings.
 
@@ -253,7 +320,7 @@ $bool('0');
 $bool('1');
 ```
 
-### Date string
+#### Date string
 
 Use function `date` to create a `StringParameter` matching `YYYY-MM-DD` strings.
 
@@ -264,7 +331,7 @@ $date = date();
 $date('2021-01-01');
 ```
 
-### Time string
+#### Time string
 
 Use function `time` to create a `StringParameter` matching `hh:mm:ss` strings.
 
@@ -275,7 +342,7 @@ $time = time();
 $time('12:00:00');
 ```
 
-### Datetime string
+#### Datetime string
 
 Use function `datetime` to create a `StringParameter` matching `YYYY-MM-DD hh:mm:ss` strings.
 
@@ -307,7 +374,7 @@ $int = int(reject: [1, 2, 3]);
 $int(4);
 ```
 
-Use `IntAttr` attribute to define an integer parameter.
+Use `IntAttr` attribute to define an integer parameter using attribute notation.
 
 ```php
 use Chevere\Parameter\Attributes\IntAttr;
@@ -315,11 +382,11 @@ use Chevere\Parameter\Attributes\IntAttr;
 #[IntAttr(min: 0, max: 100)]
 ```
 
-## Int pseudo-parameters
+### Int based-parameters
 
 The following parameters are based on Int.
 
-### Bool int
+#### Bool int
 
 Use function `boolInt` to create a `IntParameter` matching `0` and `1` integers.
 
@@ -352,7 +419,7 @@ $float = float(reject: [1.5, 2.5, 3.5]);
 $float(4.5);
 ```
 
-Use `FloatAttr` attribute to define a float parameter.
+Use `FloatAttr` attribute to define a float parameter using attribute notation.
 
 ```php
 use Chevere\Parameter\Attributes\FloatAttr;
@@ -372,7 +439,7 @@ $bool(true);
 $bool(false);
 ```
 
-Use `BoolAttr` attribute to define a bool parameter.
+Use `BoolAttr` attribute to define a bool parameter using attribute notation.
 
 ```php
 use Chevere\Parameter\Attributes\BoolAttr;
@@ -391,7 +458,7 @@ $null = null();
 $null(null);
 ```
 
-Use `NullAttr` attribute to define a null parameter.
+Use `NullAttr` attribute to define a null parameter using attribute notation.
 
 ```php
 use Chevere\Parameter\Attributes\NullAttr;
@@ -410,7 +477,7 @@ $object = object(stdClass::class);
 $object(new stdClass());
 ```
 
-Use `ObjectAttr` attribute to define an object parameter.
+Use `ObjectAttr` attribute to define an object parameter using attribute notation.
 
 ```php
 use Chevere\Parameter\Attributes\ObjectAttr;
@@ -450,6 +517,19 @@ $union = union(
 );
 $union('100');
 $union(100);
+```
+
+Use `UnionAttr` attribute to define an union parameter using attribute notation.
+
+```php
+use Chevere\Parameter\Attributes\UnionAttr;
+use Chevere\Parameter\Attributes\FloatAttr;
+use Chevere\Parameter\Attributes\IntAttr;
+
+#[UnionAttr(
+    new IntAttr(),
+    new FloatAttr()
+)]
 ```
 
 ## Array
@@ -492,7 +572,7 @@ $array([
 ]);
 ```
 
-Use `ArrayAttr` attribute to define an array parameter.
+Use `ArrayAttr` attribute to define an array parameter using attribute notation.
 
 ```php
 use Chevere\Parameter\Attributes\ArrayAttr;
@@ -578,11 +658,11 @@ $array = $array
     ->withOptionalMinimum(1);
 ```
 
-## Array pseudo-parameters
+### Array based-parameters
 
 The following parameters are based on Array.
 
-### Array String
+#### Array String
 
 Use function `arrayString` to create an `ArrayStringParameterInterface` for string values. It only supports string parameters.
 
@@ -596,7 +676,7 @@ $array = arrayString(
 $array(['test' => 'foo']);
 ```
 
-### File
+#### File
 
 Use function `file` to create an `ArrayParameter` for file uploads.
 
@@ -673,7 +753,209 @@ $iterable([
 ]);
 ```
 
-## Cookbook
+## Helpers
+
+### parameters
+
+Use function `parameters` to create a `Parameters` instance.
+
+```php
+use function Chevere\Parameters\parameters;
+use function Chevere\Parameters\string;
+
+$parameters = parameters(foo: string());
+```
+
+### arguments
+
+Use function `arguments` to create a `Arguments` instance.
+
+```php
+use function Chevere\Parameters\arguments;
+use function Chevere\Parameters\string;
+
+$arguments = arguments($parameters, ['foo' => 'bar']);
+```
+
+### assertNamedArgument
+
+Use function `assertNamedArgument` to assert a named argument.
+
+```php
+use function Chevere\Parameters\assertNamedArgument;
+use function Chevere\Parameters\int;
+use function Chevere\Parameters\parameters;
+
+$parameter = int(min: 10);
+assertNamedArgument(
+    name: 'foo',
+    parameter: $parameter,
+    argument: 20
+);
+```
+
+### toParameter
+
+Use function `toParameter` to create a `ParameterInterface` instance from a type string. In the example below the resulting `$parameter` will be an `IntParameter`.
+
+```php
+use function Chevere\Parameters\toParameter;
+
+$parameter = toParameter('int');
+```
+
+### arrayFrom
+
+Use function `arrayFrom` to create an [Array parameter](#array) from another array parameter. In the example below the resulting `$array` will contain only `name` and `id` keys as defined in `$source`.
+
+```php
+use function Chevere\Parameters\arrayFrom;
+use function Chevere\Parameters\arrayp;
+use function Chevere\Parameters\int;
+use function Chevere\Parameters\string;
+
+$source = arrayp(
+    id: int(),
+    name: string(),
+    email: string(),
+    age: int(),
+);
+$array = arrayFrom($source, 'name', 'id');
+```
+
+### takeKeys
+
+Use function `takeKeys` to retrieve an array with the keys from a parameter. In the example below `$keys` will contain `id` and `size`.
+
+```php
+use function Chevere\Parameters\arrayp;
+use function Chevere\Parameters\int;
+use function Chevere\Parameters\takeKeys;
+
+$array = arrayp(
+    id: int(),
+    size: int(),
+);
+$keys = takeKeys($array);
+```
+
+### takeFrom
+
+Use function `takeFrom` to retrieve an iterator with the desired keys from a parameter. In the example below `$iterator` will yield `size` and `name` keys.
+
+```php
+use function Chevere\Parameters\arrayp;
+use function Chevere\Parameters\int;
+use function Chevere\Parameters\string;
+use function Chevere\Parameters\takeFrom;
+
+$array = arrayp(
+    id: int(min: 0),
+    size: int(min: 100),
+    name: string(),
+);
+$iterator = takeFrom($array, 'size', 'name');
+```
+
+### parametersFrom
+
+Use function `parametersFrom` to create a `Parameters` with desired keys from a parameter. In the example below `$parameters` will contain `size` and `name` keys.
+
+```php
+use function Chevere\Parameters\arrayp;
+use function Chevere\Parameters\int;
+use function Chevere\Parameters\string;
+use function Chevere\Parameters\parametersFrom;
+
+$array = arrayp(
+    id: int(min: 0),
+    size: int(min: 100),
+    name: string(),
+);
+$parameters = parametersFrom($array, 'size', 'name');
+```
+
+### getParameters
+
+Use function `getParameters` to retrieve a `Parameters` instance from an object implementing either `ParameterAccessInterface` or `ParametersInterface`.
+
+```php
+use function Chevere\Parameters\getParameters;
+
+$parameters = getParameters($object);
+```
+
+### getType
+
+Use function `getType` to retrieve the type as is known by this library.
+
+```php
+use function Chevere\Parameters\getType;
+
+$type = getType(1); // int
+```
+
+### parameterAttr
+
+Use function `parameterAttr` to retrieve an object implementing `ParameterAttributeInterface` from a function or class method parameter.
+
+```php
+use function Chevere\Parameters\parameterAttr;
+use Chevere\Parameter\Attributes\StringAttr;
+
+
+function myFunction(
+    #[StringAttr('/^bin-[\d]+$/')]
+    string $foo
+): void {
+    // ...
+}
+
+$stringAttr = parameterAttr('foo', 'myFunction');
+$stringAttr('bin-123');
+```
+
+### reflectionToParameters
+
+Use function `reflectionToParameters` to retrieve a `Parameters` instance from a `ReflectionFunction` or `ReflectionMethod` instance.
+
+```php
+use function Chevere\Parameter\reflectionToParameters;
+
+$parameters = reflectionToParameters($reflection);
+```
+
+### reflectionToReturn
+
+Use function `reflectionToReturn` to retrieve a `ParameterInterface` instance from a `ReflectionFunction` or `ReflectionMethod` instance.
+
+```php
+use function Chevere\Parameter\reflectionToReturn;
+
+$parameter = reflectionToReturn($reflection);
+```
+
+### reflectedParameterAttribute
+
+Use function `reflectedParameterAttribute` to retrieve an object implementing `ParameterAttributeInterface` from a `ReflectionParameter` instance.
+
+```php
+use function Chevere\Parameter\reflectedParameterAttribute;
+
+$parameterAttribute = reflectedParameterAttribute($reflectionParameter);
+```
+
+### validated
+
+Use function `validated` to validate a function or method arguments.
+
+```php
+use function Chevere\Parameter\validated;
+
+$result = validated('myFunction', $arg1, $arg2,);
+```
+
+## Examples
 
 ### Inline validation
 
@@ -923,7 +1205,7 @@ function myIterable(
 
 Use function `returnAttr()` on the function/method body.
 
-* Validate int [min: 0, max: 5] return:
+* Validate int `min: 0, max: 5` return:
 
 ```php
 use Chevere\Parameter\Attributes\IntAttr;
