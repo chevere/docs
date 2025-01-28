@@ -13,7 +13,7 @@ Our standard requires that code delivered by Chevere **must be**:
 
 The code is continuously analyzed by many systems and third-party tools. All our packages will showcase a signature like this on the main `README.md` file:
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=alert_status)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=security_rating)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=coverage)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=chevere_chevere&metric=sqale_index)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![CodeFactor](https://www.codefactor.io/repository/github/chevere/chevere/badge)](https://www.codefactor.io/repository/github/chevere/chevere)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=chevere_workflow&metric=alert_status)](https://sonarcloud.io/dashboard?id=chevere_workflow) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_workflow&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=chevere_workflow) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_workflow&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=chevere_workflow) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=chevere_workflow&metric=security_rating)](https://sonarcloud.io/dashboard?id=chevere_workflow) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=chevere_workflow&metric=coverage)](https://sonarcloud.io/dashboard?id=chevere_workflow) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=chevere_workflow&metric=sqale_index)](https://sonarcloud.io/dashboard?id=chevere_chevere) [![CodeFactor](https://www.codefactor.io/repository/github/chevere/chevere/badge)](https://www.codefactor.io/repository/github/chevere/chevere)
 
 We use the following third-party CI services:
 
@@ -25,7 +25,7 @@ We use the following third-party CI services:
 
 All Chevere software **must** be tested.
 
-To ensure the quality of the tests, all Chevere software requires **mutation testing**.
+To ensure the quality of the tests, code coverage is a **minimum** of 90%, and mutation testing is **required**.
 
 ## Well documented
 

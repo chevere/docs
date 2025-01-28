@@ -1,14 +1,15 @@
 # Coding Standard
 
-The coding standard exists as good practice for keeping the syntax cohesive as possible.
+The coding standard exists as good practice for keeping the syntax cohesive as possible. We have created our own coding standard which can be automatic implemented in your project.
 
 ## Casing
 
 * `PascalCase` for classes and interfaces
 * `SCREAMING_SNAKE_CASE` for constants
+* `snake_case` for HTTP parameters, database columns
 * `camelCase` for everything else
 
-## Code Style
+## Code style
 
 Code style is provided using [EasyCodingStandard](https://github.com/symplify/easy-coding-standard), defined at the root `ecs.php` file which extends [ecs-chevere.php](https://github.com/chevere/code-style/blob/main/.ecs/ecs-chevere.php).
 
@@ -42,7 +43,6 @@ Create your `.ecs/ecs.php` [configuration](https://github.com/symplify/easy-codi
 declare(strict_types=1);
 
 use Symplify\EasyCodingStandard\Config\ECSConfig;
-use Symplify\EasyCodingStandard\ValueObject\Option;
 
 return static function (ECSConfig $ecsConfig): void {
     $ecsConfig->import(__DIR__ . '/ecs-chevere.php');
@@ -75,11 +75,33 @@ vendor/bin/ecs --config='.ecs/ecs.php' check file.php --fix
 
 Check the workspace documentation to configure [automatic code formatting](../environment/workspace.md#coding-standards-formatting).
 
+### Composer commands
+
+Add the following scripts to your `composer.json` file:
+
+```json
+{
+    "scripts": {
+        "cs:update": "mkdir -p .ecs && cd .ecs && curl -O https://raw.githubusercontent.com/chevere/code-style/main/.ecs/ecs-chevere.php",
+        "ecs": "vendor/bin/ecs --config='.ecs/ecs.php'",
+        "ecs:check": "composer ecs check",
+        "ecs:fix": "composer ecs check --fix"
+    }
+}
+```
+
 ## Typing
 
-### Type Hinting
+### Type hinting
 
-* All parameters, properties and return expressions **should** be type hinted
+* All parameters, properties and return expressions **must** be type hinted
+
+### Errors
+
+Errors **must** be clear and concise, and must be evident where it came from.
+
+* Markdown format
+* One (1) line per error
 
 ## Code comments
 
@@ -92,5 +114,5 @@ Comments in logic should be used only in the following cases:
 
 DocBlock content should be **short** as possible, **relevant** and **omit** the obvious.
 
-* Use markdown
-* `@param` and `@return` should be avoided (prefer typed code)
+* Markdown format
+* `@param` and `@return` should be avoided (prefer type hinting)
