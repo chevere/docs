@@ -157,7 +157,7 @@ Use `plainDocument` to create a plain text document.
 ```php
 use function Chevere\ThrowableHandler\plainDocument;
 
-$document = plainDocument($throwable);
+$document = plainDocument($e);
 $plain = $document->__toString();
 ```
 
@@ -167,7 +167,7 @@ Use `Documents\PlainDocument` to create a plain text document by passing its han
 use Chevere\ThrowableHandler\Documents\PlainDocument;
 
 $handler = throwableHandler($throwable);
-$document = new PlainDocument($throwable);
+$document = new PlainDocument($handler);
 ```
 
 #### Console document
@@ -177,7 +177,7 @@ Use `consoleDocument` to create a console document.
 ```php
 use function Chevere\ThrowableHandler\consoleDocument;
 
-$document = consoleDocument($throwable);
+$document = consoleDocument($e);
 $console = $document->__toString();
 ```
 
@@ -186,8 +186,8 @@ Use `Documents\ConsoleDocument` to create a console document by passing its hand
 ```php
 use Chevere\ThrowableHandler\Documents\ConsoleDocument;
 
-$handler = throwableHandler($throwable);
-$document = new ConsoleDocument($throwable);
+$handler = throwableHandler($e);
+$document = new ConsoleDocument($handler);
 ```
 
 #### HTML document
@@ -207,7 +207,7 @@ Use `Documents\HtmlDocument` to create a console document by passing its handler
 use Chevere\ThrowableHandler\Documents\HtmlDocument;
 
 $handler = throwableHandler($throwable);
-$document = new HtmlDocument($throwable);
+$document = new HtmlDocument($handler);
 ```
 
 ### Multiple documents
@@ -220,7 +220,7 @@ use Chevere\ThrowableHandler\Documents\HtmlDocument;
 use Chevere\ThrowableHandler\Documents\PlainDocument;
 use function Chevere\ThrowableHandler\throwableHandler;
 
-$handler = throwableHandler($throwable);
+$handler = throwableHandler($e);
 $consoleDoc = new ConsoleDocument($handler);
 $plainDoc = new PlainDocument($handler);
 $htmlDoc = new HtmlDocument($handler);
@@ -234,7 +234,7 @@ The method `withIsDebug` in `ThrowableHandlerInterface` can be used to toggle de
 use Chevere\ThrowableHandler\Documents\HtmlDocument;
 use function Chevere\ThrowableHandler\throwableHandler;
 
-$handler = throwableHandler($throwable);
+$handler = throwableHandler($e);
 $docLoud = new HtmlDocument($handler);
 $docSilent = new HtmlDocument(
     $handler->withIsDebug(false)
