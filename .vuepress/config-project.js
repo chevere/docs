@@ -7,10 +7,6 @@ module.exports = {
             href: '/logo.png'
         }],
         ['meta', {
-            name: 'theme-color',
-            content: '#2a97ff'
-        }],
-        ['meta', {
             name: 'apple-mobile-web-app-capable',
             content: 'yes'
         }],
