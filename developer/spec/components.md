@@ -1,4 +1,4 @@
-# Components Spec
+# Components spec
 
 Components are elements that provide concrete functionality.
 
@@ -6,16 +6,16 @@ Components are elements that provide concrete functionality.
 
 Components **must**:
 
-* Define a descriptive name
-* Have one single responsibility
-* Name properties as nouns
-* Declare private/protected properties only
-* Implement a defined [interface](interfaces.md)
+* Define a descriptive name.
+* Have a single responsibility.
+* Name properties as nouns.
+* Declare private/protected properties only.
+* Implement a defined [interface](interfaces.md).
 
 Components **should**:
 
-* Prefer composition over inherence
-* Prefer to implement immutability
+* Prefer composition over inheritance.
+* Prefer to implement immutability.
 
 ## Design
 
