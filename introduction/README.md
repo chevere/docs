@@ -20,6 +20,10 @@ Chevere offers a vast collection of packages that provide the flexibility to cre
 
 Built entirely for PHP 8, Chevere uses cutting-edge features while adhering to strict quality standards as detailed in the [quality guidelines](../developer/standard/quality.md).
 
+### Tested
+
+Chevere undergoes rigorous testing, including extensive code coverage and mutation testing, as detailed in the [testing guidelines](../developer/standard/testing.md).
+
 ## Who makes Chevere?
 
 Chevere is driven by [Chevereto](https://chevereto.com) and developed by its creator, [Rodolfo Berrios](https://rodolfoberrios.com).
