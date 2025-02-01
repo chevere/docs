@@ -1,6 +1,6 @@
-# Danky
+# Danky (*)
 
-Namespace `Chevere\Danky`
+**Note:** This package is experimental, not stable.
 
 The Danky package provides a typed PHP template system.
 

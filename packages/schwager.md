@@ -1,6 +1,6 @@
-# Schwager
+# Schwager (*)
 
-Namespace `Chevere\Schwager`
+**Note:** This package is experimental, not stable.
 
 The Schwager package provides an API spec generator for the [Router](router.md) package. The complementary package [chevere/schwager-html](https://github.com/chevere/schwager-html) enables to create an HTML representation for Schwager.
 

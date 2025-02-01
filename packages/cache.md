@@ -1,4 +1,6 @@
-# Cache
+# Cache (*)
+
+**Note:** This package is experimental, not stable.
 
 Namespace `Chevere\Cache`
 
