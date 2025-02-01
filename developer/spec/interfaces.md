@@ -1,4 +1,4 @@
-# Interfaces Spec
+# Interfaces spec
 
 Interfaces describe the public methods implemented by a given class. In Chevere, all components **must** define their own interface.
 
@@ -7,8 +7,8 @@ Interfaces describe the public methods implemented by a given class. In Chevere,
 Interfaces **must**:
 
 * Define a descriptive name
-* Named with `Interface` suffix
-* Located at `Chevere/<component>/Interfaces` namespace
+* Be named with the `Interface` suffix
+* Be located in the `Chevere/<component>/Interfaces` namespace
 
 ## Design
 
@@ -18,17 +18,17 @@ Each interface should describe a unique public procedure that **may** be impleme
 
 ### Typing
 
-Parameters and return types **must** be typed against an scalar or an interface.
+Parameters and return types **must** be typed against a scalar or an interface.
 
-> Parameters and return types **should not** be typed against concrete implementations
+> Parameters and return types **should not** be typed against concrete implementations.
 
 ### Method naming
 
 #### Accessors
 
-Accessors refers to methods that **access to** an object property.
+Accessors refer to methods that **access** an object property.
 
-Accessors **must be nouns** and named as the property it retrieves. For example, the method `something` should be used to retrieve the value of `$this->something`.
+Accessors **must be nouns** and named as the property they retrieve. For example, the method `something` should be used to retrieve the value of `$this->something`.
 
 ```php
 public function something(): string;
@@ -38,9 +38,9 @@ public function something(): string;
 
 #### Actions
 
-Actions refers to when the object must **do something**. These actions could return _anything_ or just `void`.
+Actions refer to when the object must **do something**. These actions could return _anything_ or just `void`.
 
-A verb **should** be prefixed for any given action. For example, `getSome`, `setValue` or `doStuff`.
+A verb **should** be prefixed for any given action. For example, `getSome`, `setValue`, or `doStuff`.
 
 > Actions = verbs
 
@@ -54,7 +54,7 @@ public function doTheEvolution(): void;
 
 Refer to [Immutability Standard](../standard/immutability.md).
 
-Immutables refers to methods that **returns an altered copy** of the original object.
+Immutables refer to methods that **return an altered copy** of the original object.
 
 The `with` prefix **should** be used in immutable methods. For example, `withSomething`, `withoutSomething`, `withAddedStuff`, `withRemovedStuff`, etc.
 
@@ -62,6 +62,6 @@ The `with` prefix **should** be used in immutable methods. For example, `withSom
 
 #### Conditionals
 
-Conditionals refers to methods that **returns boolean**, usually for object flagging.
+Conditionals refer to methods that **return a boolean**, usually for object flagging.
 
 The `is` prefix **must** be used in methods returning `bool`.
