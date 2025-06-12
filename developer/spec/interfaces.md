@@ -64,4 +64,4 @@ The `with` prefix **should** be used in immutable methods. For example, `withSom
 
 Conditionals refer to methods that **return a boolean**, usually for object flagging.
 
-The `is` prefix **must** be used in methods returning `bool`.
+Either `is` or `has` prefixes **must** be used in methods returning `bool`.
