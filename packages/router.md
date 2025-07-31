@@ -38,6 +38,7 @@ $router = router($routes);
 // Handle request
 $routed = routed($serverRequest, $router, $responseFactory, $container);
 $response = $routed->response();
+$return = $routed->return(); // Controller return value
 ```
 
 ## What it does
