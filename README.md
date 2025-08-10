@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.svg
 heroText: Chevere
-tagline: High quality library for building PHP software
+tagline: High quality library for building modern PHP software
 actionText: Introduction →
 actionLink: /introduction/
 ---
@@ -13,7 +13,7 @@ Apache 2.0 Licensed | Copyright © [Rodolfo Berrios](https://rodolfoberrios.com)
 
 # Quick start
 
-Install all packages using [Composer](https://packagist.org/packages/chevere/chevere)
+Install mainline packages using [Composer](https://packagist.org/packages/chevere/chevere)
 
 ```sh
 composer require chevere/chevere

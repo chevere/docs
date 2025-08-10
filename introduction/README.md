@@ -2,7 +2,7 @@
 
 ## What is Chevere?
 
-Chevere is a strictly typed PHP development library that provides essential tooling to build high-quality applications. It emphasizes clean code principles, robust type safety, and leverages modern PHP 8+ features.
+Chevere is a PHP development library that provides tooling to build high-quality applications. It emphasizes on clean code principles, robust type safety, strictness and full immutability. Chevere is designed to be lighter yet extensible, allowing developers to create a wide range of modern systems with a consistent approach.
 
 💡 The term *chévere* is widely used in Latin America to mean **cool/awesome** in Spanish-speaking countries.
 
