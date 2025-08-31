@@ -2,12 +2,12 @@
 
 ![ThrowableHandler](/src/packages/throwable-handler-logo.svg)
 
-Namespace `Chevere\ThrowableHandler`
+## Summary
 
-The ThrowableHandler package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents. Its purpose is to ease the understanding of [Exceptions](https://www.php.net/manual/en/language.exceptions.php) on production systems.
+The ThrowableHandler package provides handling for [throwable](https://www.php.net/throwable) with rich formatting support for console, HTML and plain text documents. Its purpose is to ease the understanding of [Exceptions](https://www.php.net/manual/en/language.exceptions.php) on production systems by providing a consistent and user-friendly output.
 
 ::: tip 💡 ThrowableHandler introduction
- Read [Throwable Handler for PHP](https://rodolfoberrios.com/2022/05/03/throwable-handler/) at Rodolfo's blog for a compressive introduction to this package.
+Read [Throwable Handler for PHP](https://rodolfoberrios.com/2022/05/03/throwable-handler/) at Rodolfo's blog for a comprehensive introduction to this package.
 :::
 
 ## Installing
@@ -17,6 +17,31 @@ ThrowableHandler is available through [Packagist](https://packagist.org/packages
 ```sh
 composer require chevere/throwable-handler
 ```
+
+## Quick start
+
+For quick catch-all use, first register ThrowableHandler to handle all errors.
+
+```php
+use Chevere\ThrowableHandler\ThrowableHandler;
+
+set_error_handler(ThrowableHandler::ERROR_AS_EXCEPTION);
+register_shutdown_function(ThrowableHandler::SHUTDOWN_ERROR_AS_EXCEPTION);
+```
+
+Then register your exception handler, you can choose:
+
+* `ThrowableHandler::PLAIN`
+* `ThrowableHandler::CONSOLE`
+* `ThrowableHandler::HTML`
+
+```php
+use Chevere\ThrowableHandler\ThrowableHandler;
+
+set_exception_handler(ThrowableHandler::PLAIN);
+```
+
+Keep reading the documentation for more advanced usage and configuration options.
 
 ## Demo
 
