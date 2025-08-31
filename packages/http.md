@@ -1,12 +1,18 @@
+---
+sidebarDepth: 3
+---
+
 # Http
 
 ## Summary
 
-The Http package provides tooling for building HTTP components.
+Http is a library for creating HTTP components (Controller, Middleware, Header, Status) for [chevere/router](https://chevere.org/packages/router). It is compatible with the following [PHP-FIG](https://www.php-fig.org) PSR:
 
-::: tip 💡 Http introduction
- Read [Chevere Http](https://rodolfoberrios.com/2023/06/13/http/) at Rodolfo's blog for a compressive introduction to this package.
-:::
+- PSR-7: HTTP message interfaces
+- PSR-17: HTTP Factories
+- PSR-18: HTTP Client
+
+Read [Chevere Http](https://rodolfoberrios.com/2023/06/13/http/) at Rodolfo's blog for a compressive introduction to this package.
 
 ## Installing
 
@@ -29,19 +35,37 @@ class UsersPostController extends Controller
 }
 ```
 
+### Accept Headers
+
+Define accepted parameters for headers using the `acceptHeaders` method.
+
+```php
+use Chevere\Parameter\Interfaces\ArrayStringParameterInterface;
+use function Chevere\Parameter\arrayString;
+use function Chevere\Parameter\parameters;
+use function Chevere\Parameter\string;
+
+public static function acceptHeaders(): ArrayStringParameterInterface
+{
+    return arrayString(
+        ...['Webhook-Id' => string()],
+    );
+}
+```
+
 ### Accept Query
 
 Define accepted parameters for query string using the `acceptQuery` method.
 
 ```php
 use Chevere\Parameter\Interfaces\ArrayStringParameterInterface;
-use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\arrayString;
 use function Chevere\Parameter\parameters;
 use function Chevere\Parameter\string;
 
 public static function acceptQuery(): ArrayStringParameterInterface
 {
-    return arrayp(
+    return arrayString(
         foo: string('/^[a-z]+$/'),
     );
 }
@@ -83,31 +107,24 @@ public static function acceptFiles(): ArrayParameterInterface
 }
 ```
 
-### With Query
+### With Server Request
 
-Set query parameters using the `withQuery` method. It will only accept arguments complying with [Accept Query](#accept-query).
+Use method `withServerRequest` to inject a [PSR-7 ServerRequest](https://www.php-fig.org/psr/psr-7/#31-psrhttpmessageserverrequestinterface) instance. This will assert the request against the defined `accept*` methods.
 
 ```php
+use Psr\Http\Message\ServerRequestInterface;
+
 $controller = $controller
-    ->withQuery($_GET);
+    ->withServerRequest($request);
 ```
 
-### With Body
+### Headers
 
-Set body parameters using the `withBody` method. It will only accept arguments complying with [Accept Body](#accept-body).
-
-```php
-$controller = $controller
-    ->withBody($_POST);
-```
-
-### With Files
-
-Set files parameters using the `withFiles` method. It will only accept arguments complying with [Accept Files](#accept-files).
+Use method `headers` to read headers parameters.
 
 ```php
-$controller = $controller
-    ->withFiles($_FILES);
+$headers = $controller->headers();
+$header = $headers->required('Webhook-Id');
 ```
 
 ### Query
@@ -116,14 +133,28 @@ Use method `query` to read query parameters.
 
 ```php
 $query = $controller->query();
+$foo = $query->required('foo');
 ```
 
 ### Body
 
-Use method `body` to read the body parameters.
+Use method `bodyParsed` to read the body parameters parsed.
 
 ```php
-$post = $controller->body();
+$parsed = $controller->bodyParsed();
+$bar = $parsed->required('bar')->int();
+```
+
+Use method `bodyStream` to return the body stream.
+
+```php
+$stream = $controller->bodyStream();
+```
+
+Use method `body` to return the body casted.
+
+```php
+$cast = $controller->body();
 ```
 
 ### Files
