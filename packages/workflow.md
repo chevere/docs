@@ -63,7 +63,7 @@ use Chevere\Action\Action;
 
 class MyAction extends Action
 {
-    protected function main(string $foo): string
+    public function __invoke(string $foo): string
     {
         return "Hello, {$foo}";
     }
@@ -174,7 +174,7 @@ Job arguments can be passed in three ways:
 ```php
 class SomeAction extends Action
 {
-    protected function main(
+    public function __invoke(
         string $context,
         int $userId,
         mixed ...$bag,
@@ -390,17 +390,15 @@ $run = run($workflow, ...$variables);
 
 ### Access Job response
 
-Use `response` to retrieve a job response as a `CastArgument` object which can be used to get a typed response.
+Use `response` to retrieve a job response as a `Typed` object which can be used to get a typed response.
 
 ```php
 $thumbFile = $run->response('thumb')->string();
 ```
 
-🪄 If the response is of type `array|ArrayAccess` you can shortcut key access casting.
+🪄 If the response is of type `array` you can shortcut key type-safe access.
 
 ```php
-use function Chevere\Parameter\cast;
-
 $id = $run->response('user', 'id')->int();
 ```
 
@@ -459,7 +457,7 @@ try {
 
 ## Demo
 
-See the [demo](https://github.com/chevere/workflow/tree/1.0/demo) directory for a set of examples.
+See the [demo](https://github.com/chevere/workflow/tree/2.0/demo) directory for a set of examples.
 
 ## Testing
 
