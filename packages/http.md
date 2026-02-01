@@ -180,6 +180,68 @@ $middlewares = middlewares(
 
 Middleware priority goes from top to bottom, first in first out (FIFO).
 
+### Middleware with Arguments
+
+Use `MiddlewareNameWithArgumentsTrait` to define Middleware with arguments:
+
+```php
+use Chevere\Http\Interfaces\MiddlewareNameInterface;
+use Chevere\Http\Traits\MiddlewareNameWithArgumentsTrait;
+use Nyholm\Psr7\Factory\Psr17Factory;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\MiddlewareInterface;
+
+class AllowListMiddleware implements MiddlewareInterface
+{
+    use MiddlewareNameWithArgumentsTrait;
+
+    private string $allowList;
+
+    public function setUp(string $allowList): void
+    {
+        $this->allowList = $allowList;
+    }
+
+    public static function with(string $allowList): MiddlewareNameInterface
+    {
+        return static::middlewareName(...get_defined_vars());
+    }
+
+    public function process(
+        ServerRequestInterface $request,
+        RequestHandlerInterface $handler,
+    ): ResponseInterface {
+        if ($this->allowList === '') {
+            return $handler->handle($request);
+        }
+        $remoteAddress = $request->getServerParams()['REMOTE_ADDR'] ?? '';
+        if ($remoteAddress === '') {
+            return (new Psr17Factory())
+                ->createResponse(
+                    400,
+                    'Unable to determine client IP address'
+                );
+        }
+        if (! isIpAllowed($remoteAddress, $this->allowList)) {
+            return (new Psr17Factory())
+                ->createResponse(
+                    403,
+                    'Access denied from your IP address'
+                );
+        }
+
+        return $handler->handle($request);
+    }
+}
+```
+
+This allows to pass MiddlewareName with constructor arguments (as in when defining [routes](https://chevere.org/packages/router)):
+
+```php
+$middlewareName = AllowListMiddleware::with('192.168.1.1');
+```
+
 ## Attributes
 
 Use [attributes](https://www.php.net/manual/en/language.attributes.overview.php) to add context for [Controller](#controller) and [Middleware](#middleware).
