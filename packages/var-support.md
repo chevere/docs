@@ -8,6 +8,10 @@ Extra tools for handling variables.
 
 VarSupport is available through [Packagist](https://packagist.org/packages/chevere/var-support) and the repository source is at [chevere/var-support](https://github.com/chevere/var-support).
 
+```sh
+composer require chevere/var-support
+```
+
 ## ObjectVariable
 
 The `ObjectVariable` component is in charge of handling an object variable.
