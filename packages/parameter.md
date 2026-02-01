@@ -100,11 +100,7 @@ Non-type attributes provided.
 | [CallableAttr](#callableattr) | Forward parameter resolution to a callable |
 | [ReturnAttr](#returnattr)     | Return value validation                    |
 
-## How to use
-
-Parameter provides an API which can be used to create parameters using functions and/or attributes. Parameter objects can be used directly in the logic while attributes requires a read step.
-
-### Inline usage
+## Inline usage
 
 Inline usage refers to the direct use of functions to create parameters and validate arguments.
 
@@ -119,12 +115,125 @@ if($var > 10 || $var < 1) {
 To this:
 
 ```php
-use function \Chevere\Parameter\int;
+use function Chevere\Parameter\int;
 
 int(min: 1, max: 10)($var);
 ```
 
-### Attribute-based usage
+When invoking a Parameter `$param($arg)` or `$param->__invoke($arg)` it will trigger validation against the passed argument and return the validated argument:
+
+* Will fill-in any missing optional parameters with their default values.
+* Will exclude any extra unexpected parameters.
+
+## Arguments
+
+The Arguments object is the counterpart of Parameters. It holds the actual arguments validated against a Parameters instance, enabling type-safe interaction by parameter name or position. It supports nested data structures and optional parameters.
+
+```php
+use function Chevere\Parameter\parameters;
+use function Chevere\Parameter\arguments;
+use function Chevere\Parameter\int;
+use function Chevere\Parameter\string;
+
+$parameters = parameters(
+    id: int(min: 1),
+    name: string('/^[A-Z]{1}\w+$/'),
+)->withOptional(
+    email: string(),
+);
+$data = [
+    'id' => 1,
+    'name' => 'Pepe'
+];
+$arguments = arguments($parameters, $data);
+```
+
+## Put arguments
+
+Use method `withPut()` to create a new Arguments instance with an added or replaced argument by name or position.
+
+```php
+$arguments = $arguments->withPut('email', 'mail@chevere.org');
+```
+
+## Arguments array
+
+Use method `toArray()` to retrieve the arguments as an array.
+
+```php
+$array = $arguments->toArray();
+```
+
+Use method `toArrayFill()` to retrieve the arguments as an array including optional parameters with their default values.
+
+```php
+$array = $arguments->toArrayFill();
+```
+
+## Check if argument exists
+
+Use method `has()` to check if an argument exists by name or position.
+
+```php
+$arguments->has('id'); // true
+$arguments->has('poto'); // false
+```
+
+## Get argument value (mixed)
+
+Use method `get()` to retrieve argument value by name or position. Return type as `mixed`.
+
+```php
+$id = $arguments->get('id'); // 1
+```
+
+## Get argument value (typed)
+
+Use method `required()` to retrieve a explicit required argument value by name or position. It returns as `TypedInterface`, enabling type-safe access to the value. The method `optional()` can be used to retrieve an optional argument value.
+
+```php
+$id = $arguments->required('id')->int(); // 1
+$email = $arguments->optional('email')?->string(); // null
+```
+
+## Nested arguments
+
+Use method `nested()` to retrieve nested Arguments instances, enabling type-safe access to nested data structures.
+
+```php
+use function Chevere\Parameter\parameters;
+use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\string;
+
+$parameters = parameters(
+    meta: arrayp(
+        custom_data: arrayp(
+            product: string(),
+            product_id_external: string(),
+        )
+    ),
+);
+$data = [
+    'meta' => [
+        'custom_data' => [
+            'product' => 'Book',
+            'product_id_external' => 'book_987654321',
+        ],
+    ],
+];
+$arguments = arguments($parameters, $data);
+$product = $arguments
+    ->nested('meta', 'custom_data')
+    ->required('product')->string(); // 'Book'
+```
+
+When working with objects implementing `ParametersAccessInterface` (for example, `ArrayParameterInterface`) you can use method `parameters()` to retrieve the Parameters instance used to validate the Arguments instance.
+
+```php
+$parameters = $arguments->parameters();
+```
+
+## Attribute usage
 
 Attribute usage refers to the use of attributes to define parameters and return rules. You can use attribute notation for class properties, methods/functions parameters and return value.
 
@@ -156,7 +265,7 @@ use function Chevere\Parameter\validated;
     new StringAttr('/ok$/')
 )]
 function myFunction(
-    #[IntAttr(min: 1, max: 10)]
+    #[IntAttr(min: 1, max: 10,)]
     int $var
 ): string
 {
@@ -186,8 +295,8 @@ Use [attribute inline validation](#attribute-inline-validation) for manual valid
 use Chevere\Parameter\Attributes\IntAttr;
 use Chevere\Parameter\Attributes\ReturnAttr;
 use Chevere\Parameter\Attributes\StringAttr;
-use function Chevere\Parameter\valid;
-use function Chevere\Parameter\returnAttr;
+use function Chevere\Parameter\Attributes\assertArguments;
+use function Chevere\Parameter\Attributes\assertReturn;
 
 #[ReturnAttr(
     new StringAttr('/ok$/')
@@ -197,11 +306,26 @@ function myFunction(
     int $var
 ): string
 {
-    valid(); // valid $var
+    assertArguments(); // valid $var
     $return = 'ok';
+    assertReturn($return);
 
-    return returnAttr()($return); // valid $return
+    return $return;
 }
+```
+
+### Native attributes support
+
+Parameter will understand/complement [native attribute](https://www.php.net/manual/reserved.attributes.php) annotations.
+
+`#[SensitiveParameter]`
+
+```php
+function myFunction(
+    #[SensitiveParameter]
+    #[IntAttr(min: 1)]
+    int $var
+): void;
 ```
 
 ### ReturnAttr
@@ -245,11 +369,38 @@ function myCallable(): ParameterInterface
 
 ## Types
 
-A Parameter is an object implementing `ParameterInterface`. Every Parameter can define a `description` and a `default` value, plus additional validation rules depending on the type.
+A Parameter is an object implementing `ParameterInterface`. Every Parameter can define a `description`, `default` value, `sensitive` flag, plus additional validation rules depending on the type.
 
-A Parameter can be defined using functions and/or attributes, it takes same arguments for both.
+A Parameter can be defined using functions or attributes, it takes same arguments for both.
 
-When invoking a Parameter `$param('value')` it will trigger validation against the passed argument.
+### Immutable methods
+
+A Parameter provides immutable methods to re-define its rules. Every `with` method returns a new instance preserving the original state. This enables to create Parameter variations from a base definition.
+
+```php
+// Base generic methods
+public function withDescription(string $description): self;
+public function withIsSensitive(bool $isSensitive = true): self;
+```
+
+Immutable methods of a Parameter can be used to re-define its rules. For example, `IntParameter` provides additional methods to define integer range:
+
+```php
+use function Chevere\Parameter\int;
+
+$int = int(min: 0, max: 100);
+// Same as:
+$int = int()->withMin(0)->withMax(100);
+```
+
+Methods unique to each parameter:
+
+* IntParameter: `withMin`, `withMax`, `withAccept`, `withReject`
+* FloatParameter: `withMin`, `withMax`, `withAccept`, `withReject`
+* StringParameter: `withRegex`
+* ArrayParameter: `withRequired`, `withOptional`, `withModify`, `withMakeOptional`, `withMakeRequired`, `without`, `withOptionalMinimum`
+* ObjectParameter: `withClassName`
+* IterableParameter: `withKey`, `withValue`
 
 ## String
 
@@ -1106,14 +1257,14 @@ $result = $return($result); // Validates result
 
 ### Attribute inline validation
 
-Use `valid()` on the function/method body to trigger validation for arguments.
+Use `assertArguments()` on the function/method body to trigger validation for arguments.
 
 * Validate an string enum for `Hugo`, `Paco`, `Luis`:
 * Validate a min float value of `1000`:
 
 ```php
 use Chevere\Parameter\Attributes\EnumAttr;
-use function Chevere\Parameter\validate;
+use function Chevere\Parameter\Attributes\assertArguments;
 
 function myEnum(
     #[EnumAttr('Hugo', 'Paco', 'Luis')]
@@ -1122,10 +1273,10 @@ function myEnum(
     float $money
 ): void
 {
-    valid();
+    assertArguments();
     // Or single...
-    valid('name');
-    valid('money');
+    assertArguments('name');
+    assertArguments('money');
 }
 $arg1 = 'Paco';
 $arg2 = 1000.50;
@@ -1136,14 +1287,14 @@ myEnum($arg1, $arg2);
 
 ```php
 use Chevere\Parameter\Attributes\IntAttr;
-use function Chevere\Parameter\validate;
+use function Chevere\Parameter\Attributes\assertArguments;
 
 function myInt(
     #[IntAttr(reject: [0, 100])]
     int $id
 ): void
 {
-    valid();
+    assertArguments();
 }
 $value = 50;
 myInt($value);
@@ -1156,7 +1307,7 @@ use Chevere\Parameter\Attributes\ArrayAttr;
 use Chevere\Parameter\Attributes\IntAttr;
 use Chevere\Parameter\Attributes\StringAttr;
 use Chevere\Parameter\Attributes\IterableAttr;
-use function Chevere\Parameter\validate;
+use function Chevere\Parameter\Attributes\assertArguments;
 
 function myArray(
     #[ArrayAttr(
@@ -1172,7 +1323,7 @@ function myArray(
     array $spooky
 ): void
 {
-    valid();
+    assertArguments();
 }
 $value = [
     'id' => 10,
@@ -1190,7 +1341,7 @@ myArray($value);
 ```php
 use Chevere\Parameter\Attributes\IntAttr;
 use Chevere\Parameter\Attributes\IterableAttr;
-use function Chevere\Parameter\validate;
+use function Chevere\Parameter\Attributes\assertArguments;
 
 function myIterable(
     #[IterableAttr(
@@ -1199,18 +1350,18 @@ function myIterable(
     array $list = [0,1,2]
 ): void
 {
-    valid();
+    assertArguments();
 }
 ```
 
-Use function `returnAttr()` on the function/method body.
+Use function `assertReturn($value)` on the function/method body.
 
 * Validate int `min: 0, max: 5` return:
 
 ```php
 use Chevere\Parameter\Attributes\IntAttr;
 use Chevere\Parameter\Attributes\ReturnAttr;
-use function Chevere\Parameter\returnAttr;
+use function Chevere\Parameter\Attributes\assertReturn;
 
 #[ReturnAttr(
     new IntAttr(min: 0, max: 5)
@@ -1218,8 +1369,9 @@ use function Chevere\Parameter\returnAttr;
 public function myReturnInt(): int
 {
     $result = 1;
+    assertReturn($result);
 
-    return returnAttr()($result);
+    return $result;
 }
 ```
 
@@ -1230,7 +1382,7 @@ use Chevere\Parameter\Attributes\ArrayAttr;
 use Chevere\Parameter\Attributes\IntAttr;
 use Chevere\Parameter\Attributes\StringAttr;
 use Chevere\Parameter\Attributes\ReturnAttr;
-use function Chevere\Parameter\returnAttr;
+use function Chevere\Parameter\Attributes\assertReturn;
 
 #[ReturnAttr(
     new ArrayAttr(
@@ -1245,7 +1397,7 @@ public function myReturnArray(): array
         'name' => 'Peoples Hernandez'
     ];
 
-    return returnAttr()($result);
+    return assertReturn($result);
 }
 ```
 
