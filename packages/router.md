@@ -53,11 +53,11 @@ For example, to resolve this:
 
 ```plain
 GET /product/123
-    -> ProductGet::main(123):context
+    -> ProductGet->__invoke(123):context
     -> product.twig
 
 DELETE /product/123
-    -> ProductDelete::main(123)
+    -> ProductDelete->__invoke(123)
 ```
 
 You need to write the following route code:
@@ -75,7 +75,7 @@ And the HTTP controllers may look like this:
 ```php
 class ProductGet extends Controller
 {
-    protected function main(string $id): array
+    public function __invoke(string $id): array
     {
         // ...
         return $context;
@@ -84,7 +84,7 @@ class ProductGet extends Controller
 
 class ProductDelete extends Controller
 {
-    protected function main(string $id): void
+    public function __invoke(string $id): void
     {
         // ...
     }
@@ -164,10 +164,10 @@ Dynamic routes use variable wildcards (`{variable}` syntax) to denote variable p
 route('/products/{id}', GET: MyController::class);
 ```
 
-Where `MyController::main` method parameters must match the defined wildcards:
+Where `MyController` class method `__invoke()` parameters must match the defined wildcards:
 
 ```php
-protected function main(string $id) {...}
+public function __invoke(string $id) {...}
 ```
 
 Path variables implicit match against `[^/]+`. To customize use `StringAttr` on main’s function parameters.
@@ -175,7 +175,7 @@ Path variables implicit match against `[^/]+`. To customize use `StringAttr` on 
 ```php
 use Chevere\Parameter\Attributes\StringAttr;
 
-protected function main(
+public function __invoke(
     #[StringAttr('/\d+/')]
     string $id
 ) {
