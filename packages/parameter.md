@@ -4,7 +4,9 @@
 
 **Chevere Parameter** is a library for building dynamic, validated parameters with type-safe rules and schema introspection. It enables you to define rich validation constraints for any PHP type, from simple scalars to deeply nested arrays, using either helper functions or attributes, eliminating boilerplate validation logic across your codebase.
 
-See [chevere/action](https://github.com/chevere/action) for our object-oriented convention around this package.
+* **[chevere/action](https://chevere.org/packages/action)**: Implements the action design pattern for encapsulating business logic, utilizing this package for comprehensive parameter validation.
+* **[chevere/router](https://chevere.org/packages/router)**: Offers powerful routing with built-in parameter validation for handling HTTP requests and responses.
+* **[chevere/sql2p](https://chevere.org/packages/sql2p)**: Transforms SQL queries into parameter definitions, enabling automated validation of database inputs and outputs.
 
 ## Installing
 
@@ -195,20 +197,19 @@ Common methods available on all parameters:
 
 ```php
 $parameter->withDescription('A human-readable label');
-$parameter->withIsSensitive(); // marks value as sensitive (omitted from error messages)
+$parameter->withIsSensitive(true); // marks value as sensitive (omitted from error messages)
+$parameter->withDefault($defaultValue); // sets a default value used when the parameter is optional and not provided
 ```
 
 Methods specific to each parameter type:
 
-| Parameter           | Immutable methods                                                                                                      |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `IntParameter`      | `withMin`, `withMax`, `withAccept`, `withReject`, `withDefault`                                                        |
-| `FloatParameter`    | `withMin`, `withMax`, `withAccept`, `withReject`, `withDefault`                                                        |
-| `StringParameter`   | `withRegex`, `withDefault`                                                                                             |
-| `BoolParameter`     | `withDefault`                                                                                                          |
-| `ArrayParameter`    | `withRequired`, `withOptional`, `withModify`, `withMakeOptional`, `withMakeRequired`, `without`, `withOptionalMinimum` |
-| `ObjectParameter`   | `withClassName`                                                                                                        |
-| `IterableParameter` | `withKey`, `withValue`                                                                                                 |
+| Parameter         | Immutable methods                                                                                                      |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `IntParameter`    | `withMin`, `withMax`, `withAccept`, `withReject`                                                                       |
+| `FloatParameter`  | `withMin`, `withMax`, `withAccept`, `withReject`                                                                       |
+| `StringParameter` | `withRegex`                                                                                                            |
+| `ArrayParameter`  | `withRequired`, `withOptional`, `withModify`, `withMakeOptional`, `withMakeRequired`, `without`, `withOptionalMinimum` |
+| `ObjectParameter` | `withClassName`,                                                                                                       |
 
 ### Schema introspection
 
