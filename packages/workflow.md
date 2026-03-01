@@ -53,12 +53,12 @@ echo $result->response('greet')->string();
 
 Workflow is built around four main concepts:
 
-| Concept      | Description                                                       |
-| ------------ | ----------------------------------------------------------------- |
-| **Job**      | A unit of work (Action class or Closure) that produces a response |
-| **Variable** | External input provided when running the workflow                 |
-| **Response** | Reference to output from a previous job                           |
-| **Graph**    | Automatic execution order based on job dependencies               |
+| Concept      | Description                                         |
+| ------------ | --------------------------------------------------- |
+| **Job**      | A unit of work that produces a response             |
+| **Variable** | External input provided when running the workflow   |
+| **Response** | Reference to output from a previous job             |
+| **Graph**    | Automatic execution order based on job dependencies |
 
 ### How It Works
 
@@ -83,7 +83,7 @@ Workflow is built around four main concepts:
 
 ## Jobs
 
-Jobs are the building blocks of a workflow. Each job wraps an executable unit (Action or Closure) and declares its input arguments.
+Jobs are the building blocks of a workflow. Each job wraps an executable unit ([Action](https://chevere.org/packages/action), [Closure](https://www.php.net/manual/en/class.closure.php) or any PHP [callable](https://www.php.net/manual/en/language.types.callable.php)) and declares its input arguments.
 
 ### Creating Jobs with Closures
 
@@ -192,7 +192,13 @@ workflow(
 );
 ```
 
-Jobs can define I/O rules via [chevere/parameter](https://chevere.org/packages/parameter). Workflow derives parameter and return definitions from the closure signature or Action reflection, and validates inputs and responses at runtime.
+Jobs can define I/O rules via [chevere/parameter](https://chevere.org/packages/parameter). Workflow derives parameter and return definitions from the callable signature or Action reflection and validates inputs and responses at runtime.
+
+### Integration with Chevere
+
+Workflow works seamlessly with the `chevere/parameter` and `chevere/action` packages. When you declare parameter rules with `chevere/parameter` (types, ranges, or custom validators), those rules travel with the job definitions and are applied automatically at runtime. Workflow performs the validation layer for you before invoking jobs so callers don't need to repeat input or response checks. The same integration applies to `chevere/action` Action classes: parameter and return definitions are derived from action signatures and validated by Workflow.
+
+These integrations are optional extras. You do not have to use `chevere/parameter` or `chevere/action` to use Workflow, but opting in gives stronger guarantees and reduces validation boilerplate across jobs.
 
 ---
 
@@ -238,14 +244,14 @@ $workflow = workflow(
 );
 ```
 
-### Accessing Nested Response Keys
+### Accessing Nested Response Keys/Properties
 
-When a job returns an array, access specific keys:
+When a job returns `array` or `object`, access specific keys/properties directly in `response()`:
 
 ```php
-response('user')           // Entire response
-response('user', 'id')     // $response['id']
-response('user', 'profile') // $response['profile']
+response('user')           // job:user       Entire response object
+response('user', 'id')     // job:user->id   id property from object response
+response('post', 'id')     // job:post['id'] id key from array response
 ```
 
 ---
@@ -630,4 +636,19 @@ $result = run($workflow,
     lang: 'es',
     needsTranslation: true
 );
+```
+
+---
+
+## Demo
+
+Run the included examples:
+
+```sh
+php demo/hello-world.php          # Basic workflow
+php demo/chevere.php              # Chained jobs
+php demo/closure.php              # Using closures
+php demo/sync-vs-async.php        # Performance comparison
+php demo/image-resize.php         # Parallel processing
+php demo/run-if.php               # Conditional execution
 ```
