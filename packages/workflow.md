@@ -387,7 +387,7 @@ Workflow's graph can be rendered as a Mermaid flowchart for visualization. Each 
 Generate a Mermaid flowchart using `Mermaid::generate()`:
 
 ```php
-workflow(
+$workflow = workflow(
     ja: async(
         fn (): int => 1
     ),
@@ -421,9 +421,6 @@ workflow(
         j: response('j3')
     ),
 );
-```
-
-```php
 $mermaid = Mermaid::generate($workflow);
 ```
 
