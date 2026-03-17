@@ -2,7 +2,7 @@
 sidebarDepth: 3
 ---
 
-# Workflow
+# Workflow for Laravel
 
 ## Summary
 
