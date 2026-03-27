@@ -51,6 +51,25 @@ echo $result->response('greet')->string();
 // Output: Hello, World!
 ```
 
+## Workflow Provider Convention
+
+Implement `WorkflowProviderInterface` to expose a workflow definition from a class:
+
+```php
+use Chevere\Workflow\Interfaces\WorkflowProviderInterface;
+use Chevere\Workflow\Interfaces\WorkflowInterface;
+
+class MyProvider implements WorkflowProviderInterface
+{
+    public static function workflow(): WorkflowInterface
+    {
+        return workflow(/* ... */);
+    }
+}
+```
+
+This is the recommended pattern for packages and applications. It separates workflow configuration from execution logic and enables discovery by tooling such as the **Chevere Workflow VSCode extension**.
+
 ## Core Concepts
 
 Workflow is built around four main concepts:
@@ -447,8 +466,8 @@ Where:
 
 * ***if* res(ja)**
   Job `jb` runs only if job `ja` response is truthy
-* ***ifNot* var(var) 1 true**
-  Job `jb` runs only if `var` variable is not equal to `1` or `true`
+* ***ifNot* var(var)**
+  Job `jb` runs only if `var` variable is not falsy
 * **j1->id @ j2(n:)**
   Job `j1` response key/property `id` is used as argument `n` for job `j2`
 * **j1->name @ j2(m:)**
@@ -770,6 +789,32 @@ class OrderProcessor
     }
 }
 ```
+
+---
+
+## Lint Mode
+
+Set the `CHEVERE_WORKFLOW_LINT_ENABLE=1` environment variable to enable lint mode. In this mode both `Workflow` and `Job` collect parameter violations instead of throwing on errors, and generate a Mermaid graph on construction.
+
+```sh
+CHEVERE_WORKFLOW_LINT_ENABLE=1 php my-workflow.php
+```
+
+Call `$workflow->lint()` to get a JSON report with violations and the Mermaid diagram:
+
+```php
+$workflow = workflow(
+    step: sync(MyAction::class, value: variable('input'))
+);
+
+$report = $workflow->lint();
+// {
+//   "violations": [...],
+//   "mermaid": "graph TB;\n    ..."
+// }
+```
+
+Lint mode is intended for development and CI pipelines to inspect workflow definitions without halting on the first error.
 
 ---
 
