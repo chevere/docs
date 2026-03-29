@@ -20,6 +20,11 @@ sidebarDepth: 3
 
 You define jobs and how they connect and depend on each other, **Chevere Workflow** figures out the execution order and runs them accordingly.
 
+## Integrations
+
+* **[VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Chevere.vscode-workflow)**: Complete language server support plus graph visualization
+* **[Laravel Integration](https://chevere.org/packages/workflow-laravel)**: Package for integrating with Laravel applications
+
 ## Installing
 
 Workflow is available through [Packagist](https://packagist.org/packages/chevere/workflow) and the repository source is at [chevere/workflow](https://github.com/chevere/workflow).
@@ -852,10 +857,37 @@ public function testWorkflowGraph(): void
         b: async(ActionB::class),
         c: sync(ActionC::class, x: response('a'), y: response('b'))
     );
-
     $graph = $workflow->jobs()->graph()->toArray();
 
     $this->assertSame([['a', 'b'], ['c']], $graph);
+}
+```
+
+### Testing Workflow Providers with PHPUnit
+
+Use `Chevere\Workflow\Traits\WorkflowProviderTestTrait` in PHPUnit test cases to assert provider correctness:
+
+| Method                                      | Description                                                    |
+| ------------------------------------------- | -------------------------------------------------------------- |
+| `assertWorkflowProvider($provider)`         | Asserts the class implements `WorkflowProviderInterface`       |
+| `assertWorkflowGraph($expected, $workflow)` | Asserts the workflow jobs dependency graph matches `$expected` |
+
+When passing a class string to `assertWorkflowGraph`, it also calls `assertWorkflowProvider` internally.
+
+```php
+use Chevere\Workflow\Traits\WorkflowProviderTestTrait;
+
+class MyWorkflowProviderTest extends PHPUnit\Framework\TestCase
+{
+    use WorkflowProviderTestTrait;
+
+    public function testProviderGraph(): void
+    {
+        $this->assertWorkflowGraph(
+            [['a', 'b'], ['c']],
+            MyProvider::class
+        );
+    }
 }
 ```
 
