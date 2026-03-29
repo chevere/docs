@@ -7,6 +7,7 @@
 * **[chevere/action](https://chevere.org/packages/action)**: Implements the action design pattern for encapsulating business logic, utilizing this package for comprehensive parameter validation.
 * **[chevere/router](https://chevere.org/packages/router)**: Offers powerful routing with built-in parameter validation for handling HTTP requests and responses.
 * **[chevere/sql2p](https://chevere.org/packages/sql2p)**: Transforms SQL queries into parameter definitions, enabling automated validation of database inputs and outputs.
+* **[chevere/workflow](https://chevere.org/packages/workflow)**: Provides a workflow engine for defining and executing multi-step processes, using this package for parameter validation across workflow jobs.
 
 ## Installing
 
@@ -104,18 +105,19 @@ $param->schema();
 
 ### Core types
 
-| Type                  | Helper     | Attribute   | Description                               |
-| --------------------- | ---------- | ----------- | ----------------------------------------- |
-| [String](#string)     | `string`   | `_string`   | String, optionally matching a regex       |
-| [Int](#int)           | `int`      | `_int`      | Integer with optional range/accept/reject |
-| [Float](#float)       | `float`    | `_float`    | Float with optional range/accept/reject   |
-| [Bool](#bool)         | `bool`     | `_bool`     | Boolean                                   |
-| [Null](#null)         | `null`     | `_null`     | Null                                      |
-| [Object](#object)     | `object`   | —           | Object of a given class                   |
-| [Mixed](#mixed)       | `mixed`    | `_mixed`    | Any type                                  |
-| [Array](#array)       | `arrayp`   | `_arrayp`   | Array with named parameters               |
-| [Iterable](#iterable) | `iterable` | `_iterable` | Iterable with generic key/value           |
-| [Union](#union)       | `union`    | `_union`    | Value matching at least one parameter     |
+| Type                     | Helper      | Attribute    | Description                                   |
+| ------------------------ | ----------- | ------------ | --------------------------------------------- |
+| [String](#string)        | `string`    | `_string`    | String, optionally matching a regex           |
+| [Int](#int)              | `int`       | `_int`       | Integer with optional range/accept/reject     |
+| [Float](#float)          | `float`     | `_float`     | Float with optional range/accept/reject       |
+| [Bool](#bool)            | `bool`      | `_bool`      | Boolean                                       |
+| [Null](#null)            | `null`      | `_null`      | Null                                          |
+| [Object](#object)        | `object`    | —            | Object of a given class                       |
+| [Mixed](#mixed)          | `mixed`     | `_mixed`     | Any type                                      |
+| [Array](#array)          | `arrayp`    | `_arrayp`    | Array with named parameters                   |
+| [Iterable](#iterable)    | `iterable`  | `_iterable`  | Iterable with generic key/value               |
+| [Union](#union)          | `union`     | `_union`     | Value matching at least one parameter         |
+| [UnionNull](#union-null) | `unionNull` | `_unionNull` | Value matching at least one parameter or null |
 
 ### Derived types
 
@@ -506,6 +508,8 @@ $union('100'); // '100'
 $union(100);   // 100
 ```
 
+## UnionNull
+
 You can also use `unionNull()` as a shorthand for nullable unions:
 
 ```php
@@ -520,13 +524,11 @@ $maybeInt(null); // null
 Attribute notation:
 
 ```php
-use Chevere\Parameter\Attributes\_union;
-use Chevere\Parameter\Attributes\_float;
+use Chevere\Parameter\Attributes\_null;
 use Chevere\Parameter\Attributes\_int;
 
-#[_union(
-    new _int(),
-    new _float()
+#[_unionNull(
+    new _int()
 )]
 ```
 
@@ -1202,6 +1204,24 @@ use function Chevere\Parameter\int;
 
 $keys = takeKeys(arrayp(id: int(), size: int()));
 // ['id', 'size']
+```
+
+### takeOne
+
+Retrieve a single key-parameter pair as an array.
+
+```php
+use function Chevere\Parameter\takeOne;
+use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\int;
+use function Chevere\Parameter\string;
+
+$array = arrayp(
+    id: int(min: 0),
+    size: int(min: 100),
+    name: string(),
+);
+$parameter = takeOne($array, 'size');
 ```
 
 ### takeFrom
