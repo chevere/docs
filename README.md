@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.svg
 heroText: Chevere
-tagline: High quality library for building modern PHP software
+tagline: High quality library for building PHP software
 actionText: Introduction →
 actionLink: /introduction/
 ---

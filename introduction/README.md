@@ -8,6 +8,8 @@ sidebarDepth: 3
 
 Chevere is a PHP development library that provides tooling to build high-quality applications. It emphasizes on clean code principles, robust type safety, strictness and full immutability. Chevere is designed to be lighter yet extensible, allowing developers to create a wide range of modern systems with a consistent approach.
 
+Chevere is the supporting library for [Chevereto](https://chevereto.com) project. Chevere is the result of years of experience building and maintaining a large-scale self-hosted application, and it embodies the best practices and lessons learned from that experience.
+
 💡 The term *chévere* is widely used in Latin America to mean **cool/awesome** in Spanish-speaking countries.
 
 ## Philosophy & Design Principles
@@ -58,9 +60,8 @@ Chevere undergoes rigorous testing, including extensive code coverage and mutati
 
 ## Who makes Chevere?
 
-Chevere is driven by [Chevereto](https://chevereto.com) and developed by its creator, [Rodolfo Berrios](https://rodolfoberrios.com).
+Chevere development is driven by [Chevereto](https://chevereto.com) and made by the same creator, [Rodolfo Berrios](https://rodolfoberrios.com).
 
 ## Sponsors
 
-- [JetBrains](https://www.jetbrains.com/opensource/) provides software licensing.
 - [Algolia](https://algolia.com) powers the search functionality for this documentation.
