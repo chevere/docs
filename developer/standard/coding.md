@@ -40,14 +40,7 @@ Create your `.ecs/ecs.php` [configuration](https://github.com/symplify/easy-codi
 
 declare(strict_types=1);
 
-use Symplify\EasyCodingStandard\Config\ECSConfig;
-
-return static function (ECSConfig $ecsConfig): void {
-    $ecsConfig->import(__DIR__ . '/ecs-chevere.php');
-    $ecsConfig->skip([
-        __DIR__ . '/vendor/*',
-    ]);
-};
+return require __DIR__ . '/ecs-chevere.php';
 ```
 
 ### Custom header comment
@@ -68,7 +61,7 @@ file that was distributed with this source code.
 To format code style, run:
 
 ```sh
-vendor/bin/ecs --config='.ecs/ecs.php' check file.php --fix
+vendor/bin/ecs --config='.ecs/ecs.php' file.php --fix
 ```
 
 Check the workspace documentation to configure [automatic code formatting](../environment/workspace.md#coding-standards-formatting).
