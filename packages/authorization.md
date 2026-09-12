@@ -26,41 +26,42 @@ use Chevere\Authorization\Role;
 use Chevere\Authorization\Roles;
 use Chevere\Authorization\RolesMask;
 
-// Define roles. Each bit must be a power of two: 1, 2, 4, 8...
-$user = new Role(
-    4, // bit
+$userRole = new Role(
+    4, // bit power of two: 1, 2, 4, 8...
     'user', // name
-    PostPermission::View // permission granted
+    'post.draft', // permission granted as a string
+    PostPermission::View // permission granted via enum
 );
 
-$editor = new Role(
+$editorRole = new Role(
     2,
     'editor',
-    $user, // inherits all permissions from $user
+    $userRole, // inherits all permissions from $userRole
     PostPermission::Edit,
     PostPermission::Create
 );
 
-$admin = new Role(
+$adminRole = new Role(
     1,
     'admin',
-    ...PostPermission::values(),
-    ...UserPermission::values()
+    ...PostPermission::permits(),
+    ...UserPermission::permits(),
+    ...EditorPermission::permits()
 );
 
-$roles = new Roles($admin, $editor, $user);
+$roles = new Roles($adminRole, $editorRole, $userRole);
 $rolesMask = new RolesMask($roles);
 
 // Assert a bit mask has a given permission (throws if not)
-$rolesMask($bitmask, ...$permission);
+$rolesMask->__invoke($bitmask, ...$permission);
 
 // Or check without throwing
 $bool = $rolesMask->contains($bitmask, ...$permission);
 ```
 
-## Permissions
+## Permission
 
-A permission set is a string-backed PHP enum that implements `PermissionInterface`. Each case represents a permission.
+Permission argument allows for a string, a `PermissionInterface` instance, or a backed enum representing the permission. The `PermissionInterface` adds the methods `value()` and `permits(): PermissionsInterface`, can be implemented with `PermissionTrait`.
 
 ```php
 use Chevere\Authorization\Interfaces\PermissionInterface;
@@ -90,16 +91,17 @@ If a role inherits from another role, it gains all of that role's permissions on
 ```php
 use Chevere\Authorization\Role;
 
-$user = new Role(
+$userRole = new Role(
     4,
     'user',
+    'post.draft',
     PostPermission::View
 );
 
-$editor = new Role(
+$editorRole = new Role(
     2,
     'editor',
-    $user, // inherits everything $user can do
+    $userRole, // inherits everything $userRole can do
     PostPermission::Edit,
     PostPermission::Create
 );
@@ -110,8 +112,8 @@ $editor = new Role(
 Use method `bit()` to get the role's own bit value.
 
 ```php
-$user->bit(); // 4
-$editor->bit(); // 2
+$userRole->bit(); // 4
+$editorRole->bit(); // 2
 ```
 
 ### Role name
@@ -119,8 +121,8 @@ $editor->bit(); // 2
 Use method `name()` to get the role's name.
 
 ```php
-$user->name(); // 'user'
-$editor->name(); // 'editor'
+$userRole->name(); // 'user'
+$editorRole->name(); // 'editor'
 ```
 
 ### Role mask
@@ -128,8 +130,8 @@ $editor->name(); // 'editor'
 Use method `mask()` to get the role's own bit combined with the bits of any inherited role(s).
 
 ```php
-$user->mask(); // 4
-$editor->mask(); // 6 (2 | 4, since $editor inherits from $user)
+$userRole->mask(); // 4
+$editorRole->mask(); // 6 (2 | 4, since $editor inherits from $userRole)
 ```
 
 ### Role inherits
@@ -137,8 +139,8 @@ $editor->mask(); // 6 (2 | 4, since $editor inherits from $user)
 Use method `inherits()` to get the list of roles this role inherits from.
 
 ```php
-$user->inherits(); // []
-$editor->inherits(); // [$user]
+$userRole->inherits(); // []
+$editorRole->inherits(); // [$userRole]
 ```
 
 ### Role permissions
@@ -146,8 +148,8 @@ $editor->inherits(); // [$user]
 Use method `permissions()` to get every permission the role has, including inherited ones.
 
 ```php
-$user->permissions(); // [PostPermission::View]
-$editor->permissions(); // [PostPermission::View, PostPermission::Edit, PostPermission::Create]
+$userRole->permissions(); // ['post.draft', PostPermission::View]
+$editorRole->permissions(); // ['post.draft', PostPermission::View, PostPermission::Edit, PostPermission::Create]
 ```
 
 ### Role grants
@@ -155,24 +157,24 @@ $editor->permissions(); // [PostPermission::View, PostPermission::Edit, PostPerm
 Use method `grants()` to get only the permissions the role adds itself, excluding anything inherited.
 
 ```php
-$user->grants(); // [PostPermission::View]
-$editor->grants(); // [PostPermission::Edit, PostPermission::Create]
+$userRole->grants(); // ['post.draft', PostPermission::View]
+$editorRole->grants(); // [PostPermission::Edit, PostPermission::Create]
 ```
 
-## Assigning Role(s) to a participant
+## Assigning Role(s) to an user
 
-To assign one or more roles to a participant, sum up the bits of the roles they belong to. This sum is the participant's bit mask.
+To assign one or more roles to an user, sum up the bits of the roles they belong to. This sum is the user's bit mask.
 
 ```php
-$marketing = new Role(16, 'marketing', ...);
-$staff = new Role(8, 'staff', ...);
+$marketingRole = new Role(16, 'marketing', ...);
+$staffRole = new Role(8, 'staff', ...);
 
-// A participant with just the "staff" role
-$staffUser = $user->setBitmask($staff->bit());
+// An user with just the "staff" role
+$staffUser = $user->setBitmask($staffRole->bit());
 
-// A user with both "staff" and "marketing" roles
+// An user with both "staff" and "marketing" roles
 $comboUser = $user->setBitmask(
-    $staff->bit() | $marketing->bit()
+    $staffRole->bit() | $marketingRole->bit()
 );
 ```
 
@@ -183,7 +185,7 @@ $comboUser = $user->setBitmask(
 ```php
 use Chevere\Authorization\Roles;
 
-$roles = new Roles($user, $admin, $editor);
+$roles = new Roles($userRole, $adminRole, $editorRole);
 ```
 
 ### Roles mask
@@ -199,16 +201,17 @@ $roles->mask(); // 7 (1 | 2 | 4)
 Use method `find()` to look up a role by its name.
 
 ```php
-$roles->find('admin'); // $admin
+$roles->find('admin'); // $adminRole
 ```
 
 ### Roles has
 
-Use method `has()` to check whether the collection contains role(s) matching the given bit(s).
+Use method `has()` to check whether the collection contains role(s) matching the given mask(s) or bit(s).
 
 ```php
-$roles->has(2); // true, because $admin has bit 2
+$roles->has(2); // true, because $adminRole has bit 2
 $roles->has(1, 2); // true, both bits are present
+$roles->has(3); // true, 3 = 1 | 2
 ```
 
 ### Roles get
@@ -216,7 +219,7 @@ $roles->has(1, 2); // true, both bits are present
 Use method `get()` to retrieve a role by its bit value.
 
 ```php
-$roles->get(2); // $admin
+$roles->get(2); // $adminRole
 ```
 
 ### Roles forMask
@@ -224,7 +227,7 @@ $roles->get(2); // $admin
 Use method `forMask()` to get every role that is part of a given bit mask.
 
 ```php
-$roles->forMask(1 | 2); // Roles containing $user (bit 1) and $admin (bit 2)
+$roles->forMask(1 | 2); // Roles containing $userRole (bit 1) and $adminRole (bit 2)
 $roles->forMask(3); // Same result, since 3 = 1 | 2
 ```
 
@@ -236,9 +239,16 @@ Use method `permissions()` to get every permission granted across all roles in t
 $roles->permissions();
 ```
 
+This returns a `Permissions` object that can be used to check for specific permissions across all roles.
+
+```php
+$roles->permissions()->contains('post.draft'); // true
+$roles->permissions()->contains('not.exists'); // false
+```
+
 ## RolesMask
 
-`RolesMask` builds a lookup table that maps each permission to the combination of role bits that grant it. Once built, checking whether a participant's bit mask satisfies a permission is a simple bitwise comparison, no database or loop required.
+`RolesMask` builds a lookup table that maps each permission to the combination of role bits that grant it. Once built, checking whether a participant's bit mask satisfies a permission is a simple bitwise comparison.
 
 ```php
 use Chevere\Authorization\RolesMask;
@@ -252,8 +262,8 @@ Use method `__invoke()` to assert a permission. Throws an exception if the given
 
 ```php
 $rolesMask($mask, ...$permission);
-$rolesMask(1, PostPermission::CREATE);
-$rolesMask(2, PostPermission::DELETE);
+$rolesMask->__invoke(1, PostPermission::Create); // pass
+$rolesMask->__invoke(2, PostPermission::Delete); // throws
 ```
 
 ### Contains permission
@@ -266,4 +276,4 @@ $bool = $rolesMask->contains($mask, ...$permission);
 
 ## Limitations
 
-Role bits are stored in a single integer, which caps this system at **63 combinable roles** (2<sup>63</sup> − 1).
+Role bits are stored in as a unique integer power of two, which caps this system at **63 combinable roles** (2<sup>63</sup> − 1).
