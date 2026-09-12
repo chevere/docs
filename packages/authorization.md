@@ -44,9 +44,9 @@ $editorRole = new Role(
 $adminRole = new Role(
     1,
     'admin',
-    ...PostPermission::permits(),
-    ...UserPermission::permits(),
-    ...EditorPermission::permits()
+    ...PostPermission::permissions(),
+    ...UserPermission::permissions(),
+    ...EditorPermission::permissions()
 );
 
 $roles = new Roles($adminRole, $editorRole, $userRole);
@@ -61,7 +61,7 @@ $bool = $rolesMask->contains($bitmask, ...$permission);
 
 ## Permission
 
-Permission argument allows for a string, a `PermissionInterface` instance, or a backed enum representing the permission. The `PermissionInterface` adds the methods `value()` and `permits(): PermissionsInterface`, can be implemented with `PermissionTrait`.
+Permission argument allows for a string, a `PermissionInterface` instance, or a backed enum representing the permission. The `PermissionInterface` adds the methods `value()` and `permissions(): PermissionsInterface`, can be implemented with `PermissionTrait`.
 
 ```php
 use Chevere\Authorization\Interfaces\PermissionInterface;
