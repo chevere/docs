@@ -136,24 +136,71 @@ Define output validation rules:
 ```php
 use Chevere\Action\Action;
 use Chevere\Parameter\Interfaces\ParameterInterface;
-use function Chevere\Parameter\arrayOf;
+use function Chevere\Parameter\arrayp;
 use function Chevere\Parameter\int;
+use function Chevere\Parameter\string;
 
 class GetUserAction extends Action
 {
     public function __invoke(int $userId): array
     {
         $this->assertArguments($userId);
-        $result = ['id' => $userId, 'name' => 'John'];
+        $result = [
+            'id' => $userId,
+            'name' => 'John'
+        ];
         return $this->assertReturn($result);
     }
 
     public static function acceptReturn(): ParameterInterface
     {
-        return arrayOf(
-            int(key: 'id', min: 1),
-            string(key: 'name', minLength: 1),
+        return arrayp(
+            id: int(min: 1),
+            name: string(minLength: 1),
         );
+    }
+}
+```
+
+### Using `acceptReturnHook()`
+
+Define a hook to modify the return value before validation:
+
+```php
+use Chevere\Action\Action;
+use Chevere\Parameter\Interfaces\ArrayParameterInterface;
+use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\string;
+
+class GetUserAction extends Action
+{
+    private bool $isAdmin;
+
+    public function __invoke(int $userId): array
+    {
+        $result = [
+            'id' => $userId,
+            'name' => 'John',
+            'email' => 'john@example.com'
+        ];
+        return $this->assertReturn($result);
+    }
+
+    public static function acceptReturn(): ArrayParameterInterface
+    {
+        return arrayp(
+            id: string(),
+            name: string(),
+        )->withOptional(
+            email: string()
+        );
+    }
+
+    public function acceptReturnHook(ArrayParameterInterface $return): ArrayParameterInterface
+    {
+        return $this->isAdmin
+            ? $return->withMakeRequired('email')
+            : $return->without('email');
     }
 }
 ```
