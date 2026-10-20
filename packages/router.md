@@ -170,13 +170,13 @@ Where `MyController` class method `__invoke()` parameters must match the defined
 public function __invoke(string $id) {...}
 ```
 
-Path variables implicit match against `[^/]+`. To customize use `StringAttr` on main’s function parameters.
+Path variables implicit match against `[^/]+`. To customize use `_string` on main’s function parameters.
 
 ```php
-use Chevere\Parameter\Attributes\StringAttr;
+use Chevere\Parameter\Attributes\_string;
 
 public function __invoke(
-    #[StringAttr('/\d+/')]
+    #[_string('/\d+/')]
     string $id
 ) {
     // $id is digits only
@@ -397,19 +397,16 @@ $callback = function (ContainerInterface $container): ContainerInterface {
 
 ### Routed outcome
 
-Use method `hasThrowable()` to tell if routing throws an exception. Use method `throwable()` to access the exception (if any).
+Use method `throwable()` to access the exception (if any).
 
 ```php
-$hasThrowable = $routed->hasThrowable(); // bool
-$throwable = $routed->throwable();
+$throwable = $routed->throwable(); // ?Throwable
 ```
 
 The system is flexible as it enables to define catch-all strategies. For example, you may want to catch `ControllerException` objects and pass-by everything else.
 
 ```php
-if ($routed->hasThrowable()
-    && ! ($routed->throwable() instanceof ControllerException)
-) {
+if (! ($routed->throwable() instanceof ControllerException)) {
     throw $routed->throwable();
 }
 ```

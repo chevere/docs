@@ -29,7 +29,7 @@ The Controller in Http is a special Controller meant to be used in the context o
 ```php
 use Chevere\Http\Controller;
 
-class UsersPostController extends Controller
+class ResourceGet extends Controller
 {
     // ...
 }
@@ -91,7 +91,7 @@ public static function acceptBody(): ArrayParameterInterface
 
 ### Accept Files
 
-Define accepted parameters for FILES using the `acceptFiles` method.
+Define accepted parameters for `$_FILES` using the `acceptFiles` method.
 
 ```php
 
@@ -107,15 +107,15 @@ public static function acceptFiles(): ArrayParameterInterface
 }
 ```
 
-### With Server Request
+### With Request
 
-Use method `withServerRequest` to inject a [PSR-7 ServerRequest](https://www.php-fig.org/psr/psr-7/#31-psrhttpmessageserverrequestinterface) instance. This will assert the request against the defined `accept*` methods.
+Use method `withRequest` to inject a [PSR-7 ServerRequest](https://www.php-fig.org/psr/psr-7/#31-psrhttpmessageserverrequestinterface) instance. This will assert the request against the defined `accept*` methods.
 
 ```php
 use Psr\Http\Message\ServerRequestInterface;
 
 $controller = $controller
-    ->withServerRequest($request);
+    ->withRequest($request);
 ```
 
 ### Headers
@@ -151,18 +151,116 @@ Use method `bodyStream` to return the body stream.
 $stream = $controller->bodyStream();
 ```
 
-Use method `body` to return the body casted.
+Use method `body` to return the body typed.
 
 ```php
-$cast = $controller->body();
+$string = $controller->body()->string();
 ```
 
 ### Files
 
-Use method `files` to read the files parameters.
+Use method `files` to access the files parameters, in the format of `$_FILES` arguments.
 
 ```php
 $files = $controller->files();
+$files->required('myFile')->array(); // $_FILES['myFile']
+```
+
+Use method `uploadedFiles` to read the files as a map of [PSR-7 UploadedFile](https://www.php-fig.org/psr/psr-7/#16-uploaded-files) instances.
+
+```php
+$uploadedFiles = $controller->uploadedFiles();
+$myFile = $uploadedFiles->get('myFile');
+```
+
+## ControllerException
+
+Use `ControllerException` to throw errors at the controller layer.
+
+```php
+use Chevere\Http\Controller;
+use Chevere\Http\Exceptions\ControllerException;
+
+class ResourceGet extends Controller
+{
+    public function __invoke(): void
+    {
+        throw new ControllerException('Resource not found', 404);
+    }
+}
+```
+
+### Problem details for HTTP APIs (RFC 9457)
+
+Problem details for HTTP APIs [RFC 9457](https://www.rfc-editor.org/info/rfc9457/) provide a standardized way to convey machine-readable details of errors in HTTP responses. You can use `ControllerException` to return problem details in a structured format.
+
+```php
+use Chevere\Http\Controller;
+use Chevere\Http\Exceptions\ControllerException;
+
+class ResourcePatch extends Controller
+{
+    public function __invoke(): void
+    {
+        $this->addError('email', 'Disposable email addresses are not permitted');
+        throw new ControllerException(code: 422, errors: $this->errors());
+    }
+}
+```
+
+Both `ControllerInterface` and `ControllerException` provide the public `errors` method to access the errors associated with the controller or exception.
+
+### Exception with Return
+
+With `ControllerException` you can define a `return` property matching the controller `acceptReturn` context. This will enable to return a structured response to the client, while still throwing an exception.
+
+```php
+use Chevere\Http\Attributes\Response;
+use Chevere\Http\Controller;
+use Chevere\Http\Exceptions\ControllerException;
+use Chevere\Http\Header;
+use Chevere\Http\Status;
+use Chevere\Parameter\Interfaces\ArrayParameterInterface;
+use function Chevere\Parameter\arrayp;
+use function Chevere\Parameter\string;
+
+class ResourceGet extends Controller
+{
+    public function __invoke(): array
+    {
+        if($happyPath) {
+            return [
+                'message' => 'Your account is confirmed. You can now continue.',
+                'link' => [
+                    'href' => '/apps',
+                    'text' => 'Go to Apps ->',
+                ],
+            ];
+        }
+        throw new ControllerException(
+            'Verification link not found',
+            404,
+            return: [
+                'message' => 'The verification link may have expired, been already used, or is invalid.',
+                'link' => [
+                    'href' => '/signup',
+                    'text' => 'Return to Signup',
+                ],
+            ]
+        );
+    }
+
+    public static function acceptReturn(): ArrayParameterInterface
+    {
+        return arrayp(
+            message: string(),
+            link: arrayp(
+                href: string(),
+                text: string()
+            )
+        );
+    }
+}
 ```
 
 ## Middleware
@@ -236,7 +334,7 @@ class AllowListMiddleware implements MiddlewareInterface
 }
 ```
 
-This allows to pass MiddlewareName with constructor arguments (as in when defining [routes](https://chevere.org/packages/router)):
+This allows to pass MiddlewareName with constructor arguments, as when defining [routes](https://chevere.org/packages/router):
 
 ```php
 $middlewareName = AllowListMiddleware::with('192.168.1.1');
@@ -244,11 +342,30 @@ $middlewareName = AllowListMiddleware::with('192.168.1.1');
 
 ## Attributes
 
-Use [attributes](https://www.php.net/manual/en/language.attributes.overview.php) to add context for [Controller](#controller) and [Middleware](#middleware).
+Use [attributes](https://www.php.net/manual/en/language.attributes.overview.php) to add context for [Controller](#controller) and [Middleware](#middleware). The context defined by the attributes is understood by the [Router](https://chevere.org/packages/router) and [Schwager](https://chevere.org/packages/schwager) packages, to hint status codes, headers and to generate HTTP API documentation.
+
+### Description
+
+Use the `Description` attribute to add a description explaining the purpose of a Controller or Middleware.
+
+```php
+use Chevere\Http\Attributes\Description;
+
+#[Description('This is a description')]
+class ResourceGet extends Controller
+```
+
+Use function `descriptionAttribute` to read the `Description` attribute.
+
+```php
+use function Chevere\Http\descriptionAttribute;
+
+descriptionAttribute(ResourceGet::class);
+```
 
 ### Request
 
-Request metadata can be defined using the `Request` attribute. It supports to define multiple Header arguments.
+Use the `Request` attribute to define request metadata for a Controller or Middleware. It supports to define multiple Header arguments.
 
 ```php
 use Chevere\Http\Attributes\Request;
@@ -259,20 +376,20 @@ use Chevere\Http\Controller;
     new Header('Accept', 'application/json'),
     new Header('Connection', 'keep-alive')
 )]
-class ResourceGetController extends Controller
+class ResourceGet extends Controller
 ```
 
-Use function `getRequest` to read the `Request` attribute.
+Use function `requestAttribute` to read the `Request` attribute.
 
 ```php
-use function Chevere\Http\getRequest;
+use function Chevere\Http\requestAttribute;
 
-getRequest(ResourceGetController::class);
+requestAttribute(ResourceGet::class);
 ```
 
 ### Response
 
-Response metadata can be defined using the `Response` attribute. It supports to define Status and multiple Header arguments.
+Use the `Response` attribute to define response metadata for a Controller or Middleware. It supports to define Status and multiple Header arguments.
 
 ```php
 use Chevere\Http\Attributes\Response;
@@ -280,17 +397,17 @@ use Chevere\Http\Header;
 use Chevere\Http\Controller;
 
 #[Response(
-    new Status(200),
+    new Status(200, error: 400),
     new Header('Content-Disposition', 'attachment'),
     new Header('Content-Type', 'application/json')
 )]
-class ResourceGetController extends Controller
+class ResourceGet extends Controller
 ```
 
-Use function `getResponse` to read the `Response` attribute.
+Use function `responseAttribute` to read the `Response` attribute.
 
 ```php
-use function Chevere\Http\getResponse;
+use function Chevere\Http\responseAttribute;
 
-getResponse(ResourceGetController::class);
+responseAttribute(ResourceGet::class);
 ```
